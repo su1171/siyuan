@@ -1,0 +1,93 @@
+{
+	"ID": "20220924141737-z6ah3oq",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220924141737-z6ah3oq",
+		"title": "云计算大纲",
+		"updated": "20220924153501"
+	},
+	"Children": [
+		{
+			"ID": "20220924142530-z39h3uh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924142530-z39h3uh",
+				"updated": "20220924144235"
+			}
+		},
+		{
+			"ID": "20220924144152-379efz1",
+			"Type": "NodeIFrame",
+			"Data": "\u003ciframe src=\"http://wap.mobiletrain.org/dg/yunjisuan.html\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 426px; height: 513px;\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220924144152-379efz1",
+				"updated": "20220924144222"
+			}
+		},
+		{
+			"ID": "20220924144233-q4ejci6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220924144233-q4ejci6",
+				"updated": "20220924153317"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "安全"
+				}
+			]
+		},
+		{
+			"ID": "20220924153317-v9ob08u",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220924153317-v9ob08u",
+				"updated": "20220924153501"
+			},
+			"Children": [
+				{
+					"ID": "20220924153340-g4eku3x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220924153340-g4eku3x",
+						"updated": "20220924153501"
+					},
+					"Children": [
+						{
+							"ID": "20220924153340-25566vh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220924153340-25566vh",
+								"updated": "20220924153501"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220924152347-ocrz39u",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "PAM认证"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220924153344-qsu670x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924153344-qsu670x"
+			}
+		}
+	]
+}

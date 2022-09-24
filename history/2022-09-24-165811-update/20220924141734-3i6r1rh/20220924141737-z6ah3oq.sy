@@ -1,0 +1,45 @@
+{
+	"ID": "20220924141737-z6ah3oq",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220924141737-z6ah3oq",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924161604-bcrg9ri\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:96,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924144152-379efz1\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "云计算大纲",
+		"updated": "20220924165157"
+	},
+	"Children": [
+		{
+			"ID": "20220924142530-z39h3uh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924142530-z39h3uh",
+				"updated": "20220924165157"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "http://wap.mobiletrain.org/dg/yunjisuan.html",
+					"TextMarkTextContent": "http://wap.mobiletrain.org/dg/yunjisuan.html"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "mark",
+					"TextMarkTextContent": "云计算大纲"
+				}
+			]
+		},
+		{
+			"ID": "20220924165115-zjfrogq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924165115-zjfrogq"
+			}
+		}
+	]
+}

@@ -1,0 +1,257 @@
+/* ————————————————————————————color字体颜色———————————————————————————— */
+
+span[style="color: var(--b3-font-color8);"] {
+    font-weight: inherit;
+    color: #7a878b70 !important;
+}
+
+span[style="color: var(--b3-font-color9);"] {
+    font-family: "宋体" !important;
+    color: inherit !important;
+}
+
+span[style="color: var(--b3-font-color10);"] {
+    font-family: "楷体" !important;
+    color: inherit !important;
+}
+
+span[style="color: var(--b3-font-color11);"] {
+    font-family: "微软雅黑" !important;
+    font-weight: bold;
+    color: inherit !important;
+}
+
+span[style="color: var(--b3-font-color12);"] {
+    color: inherit !important;
+    font-size: 1.3em;
+    font-weight: inherit;
+}
+
+span[style="color: var(--b3-font-color13);"] {
+    color: transparent !important;
+    background-color: #d5d5d6 !important;
+    border-radius: 2px;
+    font-weight: inherit;
+}
+
+span[style="color: var(--b3-font-color13);"]:hover {
+    color: #d5d5d6 !important;
+    background-color: transparent !important;
+}
+
+/* ————————————————————————————background背景颜色———————————————————————————— */
+
+div[style="background-color: var(--b3-font-background9);"],
+span[style="background-color: var(--b3-font-background9);"] {
+    color: var(--b3-font-color9);
+}
+
+div[style="background-color: var(--b3-font-background10);"],
+span[style="background-color: var(--b3-font-background10);"] {
+    color: var(--b3-font-color10);
+}
+
+div[style="background-color: var(--b3-font-background11);"],
+span[style="background-color: var(--b3-font-background11);"] {
+    color: var(--b3-font-color11);
+}
+
+div[style="background-color: var(--b3-font-background12);"],
+span[style="background-color: var(--b3-font-background12);"] {
+    color: var(--b3-font-color12);
+}
+
+/* 设置第13个背景色为挖空效果 */
+span[style="background-color: var(--b3-font-background13);"] {
+    color: transparent !important;
+    background-color: transparent !important;
+    border-bottom: 2px solid gray !important;
+    border-radius: var(--b3-border-radius-none) !important;
+    font-weight: 400 !important;
+    transition: color 0.1s ease-in-out;
+}
+
+span[style="background-color: var(--b3-font-background13);"]:hover {
+    color: inherit !important;
+}
+
+/* ————————————————————————————面板———————————————————————————— */
+/* total */
+.b3-color__square {
+    height: 23px;
+    width: 23px;
+    border-radius: var(--b3-border-radius-noraml);
+    box-shadow: none;
+    border: var(--b3-border-normal);
+}
+
+/* item */
+.b3-color__square[data-type="color"] {
+    position: relative;
+    z-index: 2;
+    background-color: transparent !important;
+}
+
+.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-"]:before {
+    display: inline-block;
+    position: absolute;
+    font-family: "微软雅黑";
+    font-weight: 600;
+    font-size: 1.3em;
+    left: center;
+    top: center;
+    z-index: -1;
+}
+
+/* 设置文字介绍 */
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color1)"]:before {
+    content: "红";
+    color: var(--b3-font-color1);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color2)"]:before {
+    content: "橙";
+    color: var(--b3-font-color2);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color3)"]:before {
+    content: "黄";
+    color: var(--b3-font-color3);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color4)"]:before {
+    content: "绿";
+    color: var(--b3-font-color4);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color5)"]:before {
+    content: "青";
+    color: var(--b3-font-color5);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color6)"]:before {
+    content: "蓝";
+    color: var(--b3-font-color6);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color7)"]:before {
+    content: "紫";
+    color: var(--b3-font-color7);
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color8)"]:before {
+    content: "灰";
+    color: #7a878b70;
+}
+
+/* 设置字体样式 */
+.p[data-type="NodeParagraph"][style="background-color: var(--b3-font-color9);"],
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color9)"]:before {
+    content: "宋";
+    font-family: "宋体";
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color10)"]:before {
+    content: "楷";
+    font-family: "楷体";
+    font-size: 1.4em;
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color11)"]:before {
+    content: "黑";
+    font-family: "黑体";
+}
+
+/* 设置曲线样式 */
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color12)"]:before {
+    content: "+";
+    font-size: 2em;
+    position: absolute;
+    top: -0.33em;
+}
+
+.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color13)"] {
+    color: transparent !important;
+    background-color: #d5d5d6 !important;
+}
+
+/* ——————————————————————为样式中13种背景设置格式—————————————————————— */
+/* 设置统一的背景样式 */
+.b3-color__square[data-type="backgroundColor"] {
+    position: relative;
+    z-index: 2;
+}
+
+.b3-color__square[data-type="backgroundColor"][style*="background-color:var(--b3-font-"]:before {
+    display: inline-block;
+    position: absolute;
+    font-family: "微软雅黑";
+    font-weight: 600;
+    font-size: 1.3em;
+    left: center;
+    top: center;
+    z-index: -1;
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background1)"]:before {
+    content: "红";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background2)"]:before {
+    content: "橙";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background3)"]:before {
+    content: "黄";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background4)"]:before {
+    content: "绿";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background5)"]:before {
+    content: "青";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background6)"]:before {
+    content: "蓝";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background7)"]:before {
+    content: "紫";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background8)"]:before {
+    content: "灰";
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background9)"]:before {
+    content: "红";
+    color: var(--b3-font-color9);
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background10)"]:before {
+    content: "黄";
+    color: var(--b3-font-color10);
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background11)"]:before {
+    content: "蓝";
+    color: var(--b3-font-color11);
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background12)"]:before {
+    content: "绿";
+    color: var(--b3-font-color12);
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"]:before {
+    content: "空";
+    color: transparent;
+    border-bottom: 2px solid var(--b3-theme-on-background) !important;
+    box-sizing: border-box;
+}
+
+.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"]:hover:before {
+    color: var(--b3-theme-on-background);
+}

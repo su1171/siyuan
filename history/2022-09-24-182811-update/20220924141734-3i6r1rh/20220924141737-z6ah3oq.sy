@@ -1,0 +1,204 @@
+{
+	"ID": "20220924141737-z6ah3oq",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220924141737-z6ah3oq",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924161604-bcrg9ri\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:96,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924144152-379efz1\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "云计算大纲",
+		"updated": "20220924182757"
+	},
+	"Children": [
+		{
+			"ID": "20220924142530-z39h3uh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924142530-z39h3uh",
+				"updated": "20220924165157"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "http://wap.mobiletrain.org/dg/yunjisuan.html",
+					"TextMarkTextContent": "http://wap.mobiletrain.org/dg/yunjisuan.html"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "mark",
+					"TextMarkTextContent": "云计算大纲"
+				}
+			]
+		},
+		{
+			"ID": "20220924170324-8rxho02",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924170324-8rxho02",
+				"updated": "20220924170341"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "大纲："
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/Linux系统服务及管理-20220924170239-a3luma6.xmind",
+					"TextMarkTextContent": "Linux系统服务及管理.xmind"
+				}
+			]
+		},
+		{
+			"ID": "20220924170354-k0su02o",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20220924170354-k0su02o",
+				"updated": "20220924182550"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "一 Linux系统服务及管理"
+				}
+			]
+		},
+		{
+			"ID": "20220924182550-ladtn7t",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182550-ladtn7t"
+			}
+		},
+		{
+			"ID": "20220924182554-9jnm1uh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20220924182554-9jnm1uh",
+				"updated": "20220924182757"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1. 文件管理"
+				}
+			]
+		},
+		{
+			"ID": "20220924182617-5kmwqvj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182617-5kmwqvj"
+			}
+		},
+		{
+			"ID": "20220924182618-27hrufv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220924182618-27hrufv",
+				"updated": "20220924182635"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.1 文件目录类"
+				}
+			]
+		},
+		{
+			"ID": "20220924182635-13yuvjt",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182635-13yuvjt"
+			}
+		},
+		{
+			"ID": "20220924182636-lj3lpde",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220924182636-lj3lpde",
+				"updated": "20220924182651"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.2 查看编辑文件类"
+				}
+			]
+		},
+		{
+			"ID": "20220924182651-gy6jxf8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182651-gy6jxf8"
+			}
+		},
+		{
+			"ID": "20220924182656-56rjx82",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220924182656-56rjx82",
+				"updated": "20220924182709"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.3 压缩文件类"
+				}
+			]
+		},
+		{
+			"ID": "20220924182710-3fsh6w6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182710-3fsh6w6"
+			}
+		},
+		{
+			"ID": "20220924182710-qxoernm",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220924182710-qxoernm",
+				"updated": "20220924182722"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.4 三剑客"
+				}
+			]
+		},
+		{
+			"ID": "20220924182734-qbvzayc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182734-qbvzayc"
+			}
+		},
+		{
+			"ID": "20220924182735-5cpsl0z",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182735-5cpsl0z"
+			}
+		},
+		{
+			"ID": "20220924182604-fghkdd1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924182604-fghkdd1"
+			}
+		}
+	]
+}

@@ -1,0 +1,102 @@
+/* 面板全局设置 */
+
+@import (css) url(/appearance/themes/Dark+/style/module/config.css);
+@import (css) url(/widgets/custom.css);
+
+// 添加 1 级辅助线
+.guides(@base, @depth) {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: @base + 16px * @depth;
+        width: var(--custom-list-guides-line-width);
+        height: 100%;
+        // background-color: white;
+        background-color: var(--custom-list-guides-line-color);
+        z-index: 1;
+    }
+}
+
+// 添加 10 级辅助线
+.tree(@base-root, @base-default) {
+
+    // absolute 定位需要上级元素使用 absolute 或 relative 定位方法
+    ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    ul.b3-list {
+        >ul {
+            .guides(@base-root, 0);
+
+            >ul {
+                .guides(@base-default, 1);
+
+                >ul {
+                    .guides(@base-default, 2);
+
+                    >ul {
+                        .guides(@base-default, 3);
+
+                        >ul {
+                            .guides(@base-default, 4);
+
+                            >ul {
+                                .guides(@base-default, 5);
+
+                                >ul {
+                                    .guides(@base-default, 6);
+
+                                    >ul {
+                                        .guides(@base-default, 7);
+
+                                        >ul {
+                                            .guides(@base-default, 8);
+
+                                            >ul {
+                                                .guides(@base-default, 9);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 鼠标悬浮更改辅助线颜色
+        ul:hover::before {
+            background-color: var(--b3-theme-primary-lighter);
+        }
+    }
+}
+
+// 移动端侧边分栏
+#sidebar {
+    .tree(16px, 13px);
+}
+
+// 桌面端侧边分栏
+[data-type='wnd'][data-id] {
+    min-height: 0%;
+    margin: var(--custom-panel-distance);
+    border-radius: var(--custom-border-radius);
+
+    /* 侧边分栏面板 */
+    .file-tree:not(.sy__file) {
+        .tree(12px, 12px);
+
+    }
+
+    .file-tree.sy__file {
+        .block__icons+div:hover {
+            .tree(15px, 12px);
+        }
+    }
+
+}

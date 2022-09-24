@@ -1,0 +1,220 @@
+{
+	"ID": "20220924144300-ixdsb7j",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"custom-auto-num-h": "0",
+		"custom-location": "20220924211751-4g8gpoc",
+		"custom-mark": "display",
+		"id": "20220924144300-ixdsb7j",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924145411-en03qc0\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924191403-lndvhrk\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:192,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924191400-k4km9v4\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "命令列表",
+		"updated": "20220924214158"
+	},
+	"Children": [
+		{
+			"ID": "20220924195432-f817lbq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924195432-f817lbq",
+				"updated": "20220924203636"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924201119-2g98nwy",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "pwd"
+				}
+			]
+		},
+		{
+			"ID": "20220924200212-6xzbok0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924200212-6xzbok0",
+				"updated": "20220924200908"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924200643-3h2x8ye",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "ls"
+				}
+			]
+		},
+		{
+			"ID": "20220924200008-0alx4wm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924200008-0alx4wm",
+				"updated": "20220924201716"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924200954-myzp1ep",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "cd"
+				}
+			]
+		},
+		{
+			"ID": "20220924200001-5s6yzmo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924200001-5s6yzmo",
+				"updated": "20220924202357"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202006-kkk9y8i",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "mkdir"
+				}
+			]
+		},
+		{
+			"ID": "20220924202358-jgm5rov",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924202358-jgm5rov",
+				"updated": "20220924203430"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202009-4fl6pd7",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "rmdir"
+				}
+			]
+		},
+		{
+			"ID": "20220924204046-uqnb8p3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924204046-uqnb8p3",
+				"updated": "20220924204048"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202014-6gofihh",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "rm"
+				}
+			]
+		},
+		{
+			"ID": "20220924203435-pgszcu1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924203435-pgszcu1",
+				"updated": "20220924204831"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202017-yesq833",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "touch"
+				}
+			]
+		},
+		{
+			"ID": "20220924205025-cvkeoph",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924205025-cvkeoph",
+				"updated": "20220924205857"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202024-77t9bp1",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "cp"
+				}
+			]
+		},
+		{
+			"ID": "20220924205902-vi9ivy3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924205902-vi9ivy3",
+				"updated": "20220924210824"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202027-fzq4cvn",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "alias"
+				}
+			]
+		},
+		{
+			"ID": "20220924210830-1aq43en",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924210830-1aq43en",
+				"updated": "20220924211755"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202030-62rlvpq",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "bash"
+				}
+			]
+		},
+		{
+			"ID": "20220924211800-f4pc6et",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924211800-f4pc6et",
+				"updated": "20220924211803"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202033-bpf2n0r",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "exit"
+				}
+			]
+		},
+		{
+			"ID": "20220924211751-4g8gpoc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924211751-4g8gpoc",
+				"updated": "20220924214158"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924202037-o2eab03",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "mv"
+				}
+			]
+		}
+	]
+}

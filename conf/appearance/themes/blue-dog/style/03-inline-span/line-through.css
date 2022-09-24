@@ -1,0 +1,9 @@
+/* 删除线 */
+.b3-typography s,
+.b3-typography span[data-type~=s],
+.protyle-wysiwyg s,
+.protyle-wysiwyg span[data-type~=s] {
+    text-decoration: line-through;
+    text-decoration-color: #55555a3f;
+    color: #55555a44;
+}

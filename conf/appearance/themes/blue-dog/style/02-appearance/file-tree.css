@@ -1,0 +1,164 @@
+/* 修改 文档树 大纲 收集箱 文字的颜色 */
+.block__logo {
+    color: #80808080;
+}
+
+/* 取消文档树、大纲、反向链接左边的icon，感觉显示重复了 */
+.block__logo svg {
+    display: none;
+}
+
+/* 文档树、大纲、反向链接顶部的背景颜色 */
+.block__icons {
+    background-color: #f3f3f5;
+    border-bottom: 2px dashed var(--b3-border-color);
+    padding-top: 9px;
+}
+
+/* 文档树引用数字的颜色 */
+.counter {
+    color: #55555a5d;
+}
+
+.counter:hover {
+    background-color: transparent !important;
+}
+
+/* 无子文档的文档前面添加符号 */
+.b3-list-item.b3-list-item--hide-action .b3-list-item__toggle.fn__hidden::before {
+    content: "◦";
+    font-size: 2em;
+    position: absolute;
+    visibility: visible;
+    margin-bottom: 2px;
+    color: #8080804d;
+}
+
+/* 设置文档树前面的＞符号颜色 */
+.fn__flex-1.fn__flex-column.file-tree .b3-list-item__arrow {
+    color: #8080804d;
+}
+
+/* 点击文档树emoji不弹出修改窗口（防止误触） */
+span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
+    pointer-events: none;
+}
+
+/* 笔记本之间的间隔 */
+.sy__file ul.b3-list.b3-list--background {
+    border-radius: 1px;
+    margin: 6px 4px 6px 14px;
+    outline: 1px solid rgba(231, 231, 231, 1);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+[data-type="navigation-root"] {
+    height: 32px;
+}
+
+/* 给文档树，大纲设置背景颜色 */
+.fn__flex-1.fn__flex-column.file-tree:not(.file-tree .sy__file) {
+    background-color: white;
+}
+
+.sy__file>.fn__flex-1 {
+    background-color: #f3f3f5 !important;
+}
+
+/* 设置反链面板图标位置（不设置对不齐） */
+.backlinkList.fn__flex-1 .b3-list-item .popover__block {
+    margin-left: 4px;
+}
+
+
+
+/* ------------------------------------文档树文字设置为灰色------------------------------- */
+.b3-list-item__text {
+    color: var(--b3-theme-on-surface);
+}
+
+/* -----------------------------文档树focus------------------------------- */
+
+/* 颜色 */
+.b3-list--background .b3-list-item--focus .b3-list-item__text,
+.b3-list--background .b3-list-item--focus .b3-list-item__graphic,
+.b3-list--background .b3-list-item--focus .b3-list-item__icon svg {
+    color: var(--b3-theme-primary);
+}
+
+/* 背景 */
+.b3-list--background .b3-list-item--focus {
+    background-color: var(--b3-theme-tm2) !important;
+}
+
+/* -----------------------------文档树hover-------------------------------- */
+
+/* 颜色 */
+.b3-list--background .b3-list-item:hover .b3-list-item__text,
+.b3-list--background .b3-list-item:hover .b3-list-item__graphic,
+.b3-list--background .b3-list-item:hover .b3-list-item__icon svg {
+    color: var(--b3-theme-on-surface);
+}
+
+/* 背景 */
+.b3-list--background .b3-list-item:hover {
+    background-color: var(--b3-theme-tm-gray) !important;
+}
+
+/* 文档树辅助线（来自于Rem Craft主题） */
+.b3-list:not(.b3-list--border) .b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item {
+    margin-left: 6px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 rgba(255, 255, 255, 1) inset, 36px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 12px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 rgba(255, 255, 255, 1) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 rgba(255, 255, 255, 1) inset, 58px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 18px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 rgba(255, 255, 255, 1) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 rgba(255, 255, 255, 1) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 rgba(255, 255, 255, 1) inset, 80px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 24px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 rgba(255, 255, 255, 1) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 rgba(255, 255, 255, 1) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 rgba(255, 255, 255, 1) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 rgba(255, 255, 255, 1) inset, 102px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 30px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 rgba(255, 255, 255, 1) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 rgba(255, 255, 255, 1) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 rgba(255, 255, 255, 1) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 rgba(255, 255, 255, 1) inset, 102px 0 rgba(231, 231, 231, 1) inset, 123px 0 rgba(255, 255, 255, 1) inset, 124px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 36px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 rgba(255, 255, 255, 1) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 rgba(255, 255, 255, 1) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 rgba(255, 255, 255, 1) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 rgba(255, 255, 255, 1) inset, 102px 0 rgba(231, 231, 231, 1) inset, 123px 0 rgba(255, 255, 255, 1) inset, 124px 0 rgba(231, 231, 231, 1) inset, 145px 0 rgba(255, 255, 255, 1) inset, 146px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 42px
+}

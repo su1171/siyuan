@@ -1,0 +1,12 @@
+/* 使用方法：取消注释，使代码生效。删除前面和后面的斜杠和星号（删除代码前后就行，不需要删除文字前后的） */
+
+
+/* 01 取消隐藏顶部dock栏 */
+/* #toolbar .toolbar__item svg {
+    opacity: 1 !important;
+} */
+
+/* 02 隐藏文档树中笔记本和文档前面的emoji */
+/* .sy__file .b3-list-item__icon {
+    display: none;
+} */

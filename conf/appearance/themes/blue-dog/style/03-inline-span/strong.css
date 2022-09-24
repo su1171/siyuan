@@ -1,0 +1,8 @@
+/* 加粗 */
+.b3-typography strong,
+.b3-typography span[data-type~=strong],
+.protyle-wysiwyg strong,
+.protyle-wysiwyg span[data-type~=strong] {
+    color: inherit;
+    font-weight: bold;
+}

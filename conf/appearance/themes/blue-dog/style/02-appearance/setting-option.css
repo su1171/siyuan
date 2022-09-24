@@ -1,0 +1,28 @@
+/* ————————————————————设置界面颜色———————————————————— */
+/* 设置界面左栏背景颜色 */
+.b3-dialog--open .b3-dialog__container ul.b3-tab-bar.b3-list.b3-list--background {
+    background-color: #fafbfc !important;
+    border-right: 1px solid var(--b3-border-color);
+}
+
+/* 设置界面左侧item文字颜色 */
+li.b3-list-item--focus.b3-list-item.b3-list-item--big {
+    color: var(--b3-theme-primary);
+}
+
+/* 给设置界面选择的地方加上边框 */
+.b3-dialog--open .b3-dialog__container .b3-select {
+    box-shadow: inset 0 0 0 1px var(--b3-theme-on-surface);
+}
+
+/* 取消集市里边主题预览图鼠标悬浮时的动画 */
+.b3-card:hover {
+    background-color: var(--b3-theme-background) !important;
+    box-shadow: none;
+    transform: none !important;
+}
+
+.b3-card {
+    box-shadow: none;
+    border: 1px solid var(--b3-border-color1);
+}

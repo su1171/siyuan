@@ -1,0 +1,7 @@
+/* 上标和下标 */
+.b3-typography span[data-type~=sub],
+.protyle-wysiwyg span[data-type~=sub],
+.b3-typography span[data-type~=sup],
+.protyle-wysiwyg span[data-type~=sup] {
+    color: var(--b3-theme-primary);
+}

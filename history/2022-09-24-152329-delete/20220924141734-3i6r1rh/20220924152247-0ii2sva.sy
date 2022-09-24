@@ -1,0 +1,20 @@
+{
+	"ID": "20220924152247-0ii2sva",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220924152247-0ii2sva",
+		"title": "Untitled",
+		"updated": "20220924152247"
+	},
+	"Children": [
+		{
+			"ID": "20220924152247-dq5i5i3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924152247-dq5i5i3",
+				"updated": "20220924152247"
+			}
+		}
+	]
+}

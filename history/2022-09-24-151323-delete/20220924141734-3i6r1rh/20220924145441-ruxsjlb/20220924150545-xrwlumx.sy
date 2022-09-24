@@ -1,0 +1,42 @@
+{
+	"ID": "20220924150545-xrwlumx",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220924150545-xrwlumx",
+		"title": "PAM认证",
+		"updated": "20220924150834"
+	},
+	"Children": [
+		{
+			"ID": "20220924150545-7zpkecn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924150545-7zpkecn",
+				"updated": "20220924150833"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "配置文件路径"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "/etc/pam.d"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220924150834-ep3cvq2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924150834-ep3cvq2"
+			}
+		}
+	]
+}
