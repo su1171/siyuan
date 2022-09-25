@@ -3,11 +3,11 @@
 	"Spec": "1",
 	"Type": "NodeDocument",
 	"Properties": {
-		"custom-location": "20220925205828-c9frtwg",
+		"custom-location": "20220925220227-6kczjxo",
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220925135204-g5n9hca\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220925135238-zarkdee\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:1780,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220925143155-x7c9bcq\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20220925221033"
+		"updated": "20220925220425"
 	},
 	"Children": [
 		{
@@ -6878,7 +6878,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135245-pnwhk0j",
-				"updated": "20220925221033"
+				"updated": "20220925220425"
 			},
 			"Children": [
 				{
@@ -7025,18 +7025,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925205807-qh3hasr",
-						"updated": "20220925221033"
+						"updated": "20220925205827"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\t-e\t\t\t可在同一行执行多条命令\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925214228-yi1era6",
-							"TextMarkTextContent": "示例"
+							"Data": "\t\t-e\t\t\t可在同一行执行多条命令"
 						}
 					]
 				},

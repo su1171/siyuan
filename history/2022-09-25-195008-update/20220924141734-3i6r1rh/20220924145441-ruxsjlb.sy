@@ -3,11 +3,11 @@
 	"Spec": "1",
 	"Type": "NodeDocument",
 	"Properties": {
-		"custom-location": "20220925205828-c9frtwg",
+		"custom-location": "20220925194607-s9xi7l5",
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220925135204-g5n9hca\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220925135238-zarkdee\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:1780,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220925143155-x7c9bcq\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20220925221033"
+		"updated": "20220925195006"
 	},
 	"Children": [
 		{
@@ -5757,7 +5757,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135228-nshl2v8",
-				"updated": "20220925202112"
+				"updated": "20220925195006"
 			},
 			"Children": [
 				{
@@ -5851,7 +5851,7 @@
 						"colgroup": "width: 71px;|",
 						"id": "20220925172447-xww7j9s",
 						"style": "text-align: center;",
-						"updated": "20220925195750"
+						"updated": "20220925193828"
 					},
 					"Children": [
 						{
@@ -5866,58 +5866,36 @@
 											"Type": "NodeTableCell",
 											"Data": "th",
 											"Properties": {
-												"colspan": "2"
+												"colspan": "1"
 											},
 											"Children": [
 												{
 													"Type": "NodeText",
-													"Data": "tar命令选项列表"
+													"Data": "-c "
 												}
 											]
 										},
 										{
 											"Type": "NodeKramdownSpanIAL",
-											"Data": "{: colspan=\"2\"}"
+											"Data": "{: colspan=\"1\"}"
 										},
 										{
 											"Type": "NodeTableCell",
 											"Data": "th",
 											"TableCellAlign": 2,
 											"Properties": {
-												"class": "fn__none",
 												"colspan": "1"
-											}
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "创建打包文件"
+												}
+											]
 										},
 										{
 											"Type": "NodeKramdownSpanIAL",
-											"Data": "{: colspan=\"1\" class=\"fn__none\"}"
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "-c"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"TableCellAlign": 2,
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "创建打包文件"
+											"Data": "{: colspan=\"1\"}"
 										}
 									]
 								}
@@ -6153,21 +6131,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925193229-suv3zdx",
-						"updated": "20220925202057"
+						"updated": "20220925194813"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "打包并压缩"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\ttar\t-zcf\t打包后的文件名及路径\t要打包的文件"
+							"Data": "\t\t打包并压缩\t\t\ttar\t-zcf\t打包后的文件名及路径\t要打包的文件"
 						}
 					]
 				},
@@ -6176,21 +6145,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925193607-7nq17a2",
-						"updated": "20220925202059"
+						"updated": "20220925193742"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "解压缩"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t\ttar \t-zxf\t要解压的文件\t\t"
+							"Data": "\t\t解压缩\t\t\t\ttar \t-zxf\t要解压的文件\t\t"
 						}
 					]
 				},
@@ -6199,21 +6159,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925194607-s9xi7l5",
-						"updated": "20220925202102"
+						"updated": "20220925194934"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "解压缩至指定目录"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t\ttar \t-zxf \t要解压的文件\t-C\t指定目录"
+							"Data": "\t\t解压缩至指定目录\t\ttar \t-zxf \t要解压的文件\t-C\t指定目录"
 						}
 					]
 				},
@@ -6222,120 +6173,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925195001-b9j9j9r",
-						"updated": "20220925202112"
+						"updated": "20220925195006"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "使用绝对路径压缩文件"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "时：必须在绝对路径中使用空格\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "mark",
-							"TextMarkTextContent": "注意空格的位置，空格之前的层级关系将不被打包，仅作为定位使用。"
-						}
-					]
-				},
-				{
-					"ID": "20220925195044-9dv8m5r",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925195044-9dv8m5r",
-						"updated": "20220925201402"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "code",
-							"TextMarkTextContent": "tar\t-zcf\t打包后的文件名及路径   -C\t/home/1/空格test/"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "mark",
-							"TextMarkTextContent": "打包test文件夹"
-						}
-					]
-				},
-				{
-					"ID": "20220925200603-3w95mdm",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925200603-3w95mdm",
-						"updated": "20220925201445"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "code",
-							"TextMarkTextContent": "tar\t-zcf\t打包后的文件名及路径   -C \t/home/1/test/空格wang.sh"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "mark",
-							"TextMarkTextContent": "打包wang.sh文件"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925201048-pr8mntc",
-							"TextMarkTextContent": "不使用空格的情况"
-						}
-					]
-				},
-				{
-					"ID": "20220925200722-yxkmbj4",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925200722-yxkmbj4",
-						"updated": "20220925201431"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "code",
-							"TextMarkTextContent": "tar\t-zcf\t打包后的文件名及路径   -C \t/home/1/test/空格."
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "mark",
-							"TextMarkTextContent": "打包test文件夹下的所有文件"
+							"Data": "\t\t使用"
 						}
 					]
 				},
@@ -6344,13 +6187,7 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925173105-oh8wpfe"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t"
-						}
-					]
+					}
 				},
 				{
 					"Type": "NodeSuperBlockCloseMarker"
@@ -6369,7 +6206,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135231-9fe5j9n",
-				"updated": "20220925204824"
+				"updated": "20220925135231"
 			},
 			"Children": [
 				{
@@ -6381,339 +6218,18 @@
 				},
 				{
 					"ID": "20220925135152-ugrsa5p",
-					"Type": "NodeList",
-					"ListData": {},
+					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925135152-ugrsa5p",
-						"updated": "20220925201603"
-					},
-					"Children": [
-						{
-							"ID": "20220925201603-zxdx5hi",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220925201603-zxdx5hi",
-								"updated": "20220925201603"
-							},
-							"Children": [
-								{
-									"ID": "20220925201603-2xdmqu0",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220925201603-2xdmqu0",
-										"updated": "20220925201610"
-									},
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "grep"
-										},
-										{
-											"Type": "NodeText",
-											"Data": "​"
-										}
-									]
-								}
-							]
-						}
-					]
+						"updated": "20220925135231"
+					}
 				},
 				{
-					"ID": "20220925201611-b4e46e7",
+					"ID": "20220925135152-1v9bx20",
 					"Type": "NodeParagraph",
 					"Properties": {
-						"id": "20220925201611-b4e46e7",
-						"updated": "20220925203937"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t文本搜索工具\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"Properties": {
-								"style": "background-color: var(--custom-block-super-background-color); font-family: var(--b3-font-family);"
-							},
-							"TextMarkType": "file-annotation-ref",
-							"TextMarkFileAnnotationRefID": "assets/Linux-20220924144344-aab25wa.pdf/20220924145751-xlzos7b",
-							"TextMarkTextContent": "手写笔记"
-						},
-						{
-							"Type": "NodeKramdownSpanIAL",
-							"Data": "{: style=\"background-color: var(--custom-block-super-background-color); font-family: var(--b3-font-family);\"}"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "    \t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "block-ref",
-							"TextMarkBlockRefID": "20220925135233-dtqanrz",
-							"TextMarkBlockRefSubtype": "d",
-							"TextMarkTextContent": "单引号与双引号的使用区别"
-						}
-					]
-				},
-				{
-					"ID": "20220925203930-3jnlhhi",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203930-3jnlhhi"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\tgrep\t[options] \t[过滤条件]\t文件"
-						}
-					]
-				},
-				{
-					"ID": "20220925202424-0syfwph",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202424-0syfwph",
-						"updated": "20220925202444"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-v\t\t\t对结果取反"
-						}
-					]
-				},
-				{
-					"ID": "20220925202445-o4ov1vv",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202445-o4ov1vv",
-						"updated": "20220925202458"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-i\t\t\t忽略大小写"
-						}
-					]
-				},
-				{
-					"ID": "20220925202500-5tv579o",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202500-5tv579o",
-						"updated": "20220925202546"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-B\u003cn\u003e\t\t显示匹配的那行，和"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "之前的n行"
-						}
-					]
-				},
-				{
-					"ID": "20220925202549-hf4cz5z",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202549-hf4cz5z",
-						"updated": "20220925202632"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-A\u003cn\u003e\t\t显示匹配的那行，和"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "之后的n行"
-						}
-					]
-				},
-				{
-					"ID": "20220925202633-cgybipz",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202633-cgybipz",
-						"updated": "20220925202738"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-C\u003cn\u003e\t\t显示匹配的那行，和"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "前后各n行"
-						}
-					]
-				},
-				{
-					"ID": "20220925202757-tkb9qjm",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202757-tkb9qjm",
-						"updated": "20220925204355"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-c\t\t\t显示匹配到的有几行\t\t\t\t\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925204334-8kjt95l",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925202835-y8gzz68",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202835-y8gzz68",
-						"updated": "20220925202925"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-E\t\t\t支持扩展正则\t\tgrep -E\t\u003c==\u003e  egerp"
-						}
-					]
-				},
-				{
-					"ID": "20220925202928-45jpzgw",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202928-45jpzgw",
-						"updated": "20220925204434"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-n\t\t\t显示匹配到的行号\t\t\t\t\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925204420-nhpzf5o",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925202952-p71v9gz",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202952-p71v9gz",
-						"updated": "20220925204601"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-o\t\t\t只显示匹配到的内容\t\t\t\t\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925204507-kxe55a3",
-							"TextMarkTextContent": "示例"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "  每匹配到一次将换行一次"
-						}
-					]
-				},
-				{
-					"ID": "20220925203019-dq6m2dm",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203019-dq6m2dm",
-						"updated": "20220925204701"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-w\t\t\t精确匹配内容\t\t\t\t\t\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925204656-f60yv72",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925203043-p87a58p",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203043-p87a58p",
-						"updated": "20220925204824"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-b\t\t\t显示匹配到的行，和这行"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "首个"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "匹配到的字符是"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "全文"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "的第几个字符\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925204746-dkmn2e2",
-							"TextMarkTextContent": "示例\t"
-						}
-					]
-				},
-				{
-					"ID": "20220925203020-alxxj88",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203020-alxxj88",
-						"updated": "20220925203409"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-f\u003c规则文件\u003e\t按规则文件过滤。规则文件中，含有一个或多个规则，一行为一个"
-						}
-					]
-				},
-				{
-					"ID": "20220925202634-kg09f7b",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925202634-kg09f7b"
+						"id": "20220925135152-1v9bx20",
+						"updated": "20220925135231"
 					}
 				},
 				{
@@ -6726,20 +6242,14 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20220925135152-o5x8ddg"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "\t"
-				}
-			]
+			}
 		},
 		{
 			"ID": "20220925135233-dtqanrz",
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135233-dtqanrz",
-				"updated": "20220925203838"
+				"updated": "20220925135234"
 			},
 			"Children": [
 				{
@@ -6751,107 +6261,11 @@
 				},
 				{
 					"ID": "20220925135152-qtfmpn0",
-					"Type": "NodeList",
-					"ListData": {},
+					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925135152-qtfmpn0",
-						"updated": "20220925203537"
-					},
-					"Children": [
-						{
-							"ID": "20220925203537-2cs4ogg",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220925203537-2cs4ogg",
-								"updated": "20220925203537"
-							},
-							"Children": [
-								{
-									"ID": "20220925203537-l0958wo",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220925203537-l0958wo",
-										"updated": "20220925203552"
-									},
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "单引号与双引号的使用区别"
-										},
-										{
-											"Type": "NodeText",
-											"Data": "​"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220925203552-tmlahyk",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203552-tmlahyk",
-						"updated": "20220925203838"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t单引号：内容作为字符串使用，"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "不解析"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "变量等。"
-						}
-					]
-				},
-				{
-					"ID": "20220925203647-1rs2n20",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203647-1rs2n20",
-						"updated": "20220925203755"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t双引号：内容将被解析，变量等特殊字符"
-						}
-					]
-				},
-				{
-					"ID": "20220925203756-h738oyc",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925203756-h738oyc",
-						"updated": "20220925203833"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t不使用引号  "
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "等价于"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "  双引号"
-						}
-					]
+						"updated": "20220925135234"
+					}
 				},
 				{
 					"ID": "20220925135152-mpe2ph4",
@@ -6878,7 +6292,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135245-pnwhk0j",
-				"updated": "20220925221033"
+				"updated": "20220925135245"
 			},
 			"Children": [
 				{
@@ -6890,595 +6304,11 @@
 				},
 				{
 					"ID": "20220925135235-c53p04b",
-					"Type": "NodeList",
-					"ListData": {},
+					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925135235-c53p04b",
-						"updated": "20220925205010"
-					},
-					"Children": [
-						{
-							"ID": "20220925205010-aponcce",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220925205010-aponcce",
-								"updated": "20220925205010"
-							},
-							"Children": [
-								{
-									"ID": "20220925205010-1fvbvdy",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220925205010-1fvbvdy",
-										"updated": "20220925205019"
-									},
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "sed"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220925205035-4syk827",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205035-4syk827",
-						"updated": "20220925205147"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t文本流编辑器（行处理编辑器）主要用来自动编辑文件。\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "file-annotation-ref",
-							"TextMarkFileAnnotationRefID": "assets/Linux-20220924144344-aab25wa.pdf/20220925205029-n83lfbp",
-							"TextMarkTextContent": "手写笔记 sed"
-						}
-					]
-				},
-				{
-					"ID": "20220925205031-e4ssqvm",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205031-e4ssqvm",
-						"updated": "20220925205244"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t命令 | sed   [options]   '匹配条件和操作指令'"
-						}
-					]
-				},
-				{
-					"ID": "20220925205246-6zlbhn7",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205246-6zlbhn7",
-						"updated": "20220925205301"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tsed   [options]   '匹配条件和操作指令'\t文件"
-						}
-					]
-				},
-				{
-					"ID": "20220925205653-0gupkrw",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205653-0gupkrw",
-						"updated": "20220925211920"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-n\t\t\t仅显示处理后的结果\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211802-qpsvzcx",
-							"TextMarkTextContent": "加-n示例"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211914-g1oqshn",
-							"TextMarkTextContent": "不加-n示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925205751-9hlzz56",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205751-9hlzz56",
-						"updated": "20220925205806"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-r\t\t\t支持扩展正则"
-						}
-					]
-				},
-				{
-					"ID": "20220925205807-qh3hasr",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205807-qh3hasr",
-						"updated": "20220925221033"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-e\t\t\t可在同一行执行多条命令\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925214228-yi1era6",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925205828-c9frtwg",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205828-c9frtwg",
-						"updated": "20220925205901"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-f\u003c规则文件\u003e\t按规则文件执行"
-						}
-					]
-				},
-				{
-					"ID": "20220925205905-cihq0t3",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205905-cihq0t3",
-						"updated": "20220925210013"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-i[备份后缀名]\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "修改源文件。"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "若填写了备份后缀名则会先备份后修改"
-						}
-					]
-				},
-				{
-					"ID": "20220925205302-c9wmrdi",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220925205302-c9wmrdi",
-						"updated": "20220925210043"
-					},
-					"Children": [
-						{
-							"ID": "20220925210043-cvyx2f8",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220925210043-cvyx2f8",
-								"updated": "20220925210043"
-							},
-							"Children": [
-								{
-									"ID": "20220925210043-rwy9ur1",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220925210043-rwy9ur1",
-										"updated": "20220925210047"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "匹配条件"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220925210051-3uz9mb4",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210051-3uz9mb4",
-						"updated": "20220925211848"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tnumber\t\t\t直接匹配第number行\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211802-qpsvzcx",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925210122-870glgb",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210122-870glgb",
-						"updated": "20220925210200"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tfirst~step\t\t从第first行开始，步长为step"
-						}
-					]
-				},
-				{
-					"ID": "20220925210201-wrxe9i0",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210201-wrxe9i0",
-						"updated": "20220925210215"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t$\t\t\t\t匹配最后一行"
-						}
-					]
-				},
-				{
-					"ID": "20220925210215-iu6d36z",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210215-iu6d36z",
-						"updated": "20220925212619"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t/正则/\t\t\t使用正则表达式匹配行\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212613-y2mzr1n",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925210243-9j0m4q5",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210243-9j0m4q5",
-						"updated": "20220925212157"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tn"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "sub",
-							"TextMarkTextContent": "1"
-						},
-						{
-							"Type": "NodeText",
-							"Data": ",n"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "sub",
-							"TextMarkTextContent": "2"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t从n1行到n2行之间的所有行\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212144-aifoeh0",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925210354-xgpdf4m",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210354-xgpdf4m",
-						"updated": "20220925212315"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tn1,+m\t\t\t从n1行开始及后面的m行\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212303-11ynfvf",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925220227-6kczjxo",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925220227-6kczjxo",
-						"updated": "20220925220425"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t/^正则/  ,  / ^正则/\t匹配某个开头到某个开头的行"
-						}
-					]
-				},
-				{
-					"ID": "20220925205019-ue9z1vx",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925205019-ue9z1vx"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t"
-						}
-					]
-				},
-				{
-					"ID": "20220925210531-h8do2by",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220925210531-h8do2by",
-						"updated": "20220925210533"
-					},
-					"Children": [
-						{
-							"ID": "20220925210533-i1l33qg",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220925210533-i1l33qg",
-								"updated": "20220925210533"
-							},
-							"Children": [
-								{
-									"ID": "20220925210533-ibf1xpb",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220925210533-ibf1xpb",
-										"updated": "20220925210548"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "操作指令"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220925210548-nresdun",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210548-nresdun",
-						"updated": "20220925211854"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tp\t\t\t\t打印当前匹配行的内容\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211802-qpsvzcx",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925210612-9rih0yv",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210612-9rih0yv",
-						"updated": "20220925212029"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tl\t\t\t\t打印当前匹配行的内容（显示控制字符，如回车等）\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212017-zyckt07",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925210655-j1m4gbd",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210655-j1m4gbd",
-						"updated": "20220925212116"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t=\t\t\t\t打印当前读取的数据所在行数\t\t\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212107-56f4ahl",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925210733-87x9apy",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210733-87x9apy",
-						"updated": "20220925211352"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\ta text\t\t\t在匹配的行后追加文本 text。text中可包含换行符"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "mark",
-							"TextMarkTextContent": "\\n"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "（实现追加多行的情况）"
-						}
-					]
-				},
-				{
-					"ID": "20220925210829-6onzugd",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210829-6onzugd",
-						"updated": "20220925210852"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\ti  text\t\t\t在匹配的数据行前插入文本 text"
-						}
-					]
-				},
-				{
-					"ID": "20220925210853-tiqdsyj",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210853-tiqdsyj",
-						"updated": "20220925210922"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\td\t\t\t\t删除匹配的数据行（整行）"
-						}
-					]
-				},
-				{
-					"ID": "20220925210923-29pnlfc",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210923-29pnlfc",
-						"updated": "20220925210950"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tc  text\t\t\t将匹配的数据行的内容用  text  替换"
-						}
-					]
-				},
-				{
-					"ID": "20220925210950-dn2cfrg",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210950-dn2cfrg",
-						"updated": "20220925211527"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\ts/正则/text/\t\t将正则匹配到的内容，用  text  替换。s/正则/text/g   g代表"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "贪婪模式"
-						}
-					]
-				},
-				{
-					"ID": "20220925210910-n9uw81m",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925210910-n9uw81m",
-						"updated": "20220925211118"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tr  文件名\t\t\t将文件中的内容追加到匹配行后面"
-						}
-					]
-				},
-				{
-					"ID": "20220925211118-omj8rpy",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925211118-omj8rpy",
-						"updated": "20220925211144"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tw\t文件名\t\t将匹配到的内容写入到文件中"
-						}
-					]
+						"updated": "20220925135245"
+					}
 				},
 				{
 					"ID": "20220925135236-op74fxb",

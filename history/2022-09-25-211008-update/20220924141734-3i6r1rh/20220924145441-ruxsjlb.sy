@@ -3,11 +3,11 @@
 	"Spec": "1",
 	"Type": "NodeDocument",
 	"Properties": {
-		"custom-location": "20220925205828-c9frtwg",
+		"custom-location": "20220925210655-j1m4gbd",
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220925135204-g5n9hca\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220925135238-zarkdee\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:1780,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220925143155-x7c9bcq\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20220925221033"
+		"updated": "20220925211007"
 	},
 	"Children": [
 		{
@@ -6878,7 +6878,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135245-pnwhk0j",
-				"updated": "20220925221033"
+				"updated": "20220925211007"
 			},
 			"Children": [
 				{
@@ -6981,28 +6981,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925205653-0gupkrw",
-						"updated": "20220925211920"
+						"updated": "20220925205750"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\t-n\t\t\t仅显示处理后的结果\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211802-qpsvzcx",
-							"TextMarkTextContent": "加-n示例"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211914-g1oqshn",
-							"TextMarkTextContent": "不加-n示例"
+							"Data": "\t\t-n\t\t\t仅显示处理后的结果"
 						}
 					]
 				},
@@ -7025,18 +7009,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925205807-qh3hasr",
-						"updated": "20220925221033"
+						"updated": "20220925205827"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\t-e\t\t\t可在同一行执行多条命令\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925214228-yi1era6",
-							"TextMarkTextContent": "示例"
+							"Data": "\t\t-e\t\t\t可在同一行执行多条命令"
 						}
 					]
 				},
@@ -7121,18 +7099,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210051-3uz9mb4",
-						"updated": "20220925211848"
+						"updated": "20220925210120"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\tnumber\t\t\t直接匹配第number行\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211802-qpsvzcx",
-							"TextMarkTextContent": "示例"
+							"Data": "\tnumber\t\t\t直接匹配第number行"
 						}
 					]
 				},
@@ -7169,18 +7141,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210215-iu6d36z",
-						"updated": "20220925212619"
+						"updated": "20220925210243"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t/正则/\t\t\t使用正则表达式匹配行\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212613-y2mzr1n",
-							"TextMarkTextContent": "示例"
+							"Data": "\t/正则/\t\t\t使用正则表达式匹配行"
 						}
 					]
 				},
@@ -7189,7 +7155,7 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210243-9j0m4q5",
-						"updated": "20220925212157"
+						"updated": "20220925210354"
 					},
 					"Children": [
 						{
@@ -7212,13 +7178,7 @@
 						},
 						{
 							"Type": "NodeText",
-							"Data": "\t\t\t从n1行到n2行之间的所有行\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212144-aifoeh0",
-							"TextMarkTextContent": "示例"
+							"Data": "\t\t\t从n1行到n2行之间的所有行"
 						}
 					]
 				},
@@ -7227,32 +7187,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210354-xgpdf4m",
-						"updated": "20220925212315"
+						"updated": "20220925210523"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\tn1,+m\t\t\t从n1行开始及后面的m行\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212303-11ynfvf",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220925220227-6kczjxo",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925220227-6kczjxo",
-						"updated": "20220925220425"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t/^正则/  ,  / ^正则/\t匹配某个开头到某个开头的行"
+							"Data": "\tn1,+m\t\t\t从n1行开始及后面的m行"
 						}
 					]
 				},
@@ -7313,18 +7253,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210548-nresdun",
-						"updated": "20220925211854"
+						"updated": "20220925210611"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\tp\t\t\t\t打印当前匹配行的内容\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925211802-qpsvzcx",
-							"TextMarkTextContent": "示例"
+							"Data": "\tp\t\t\t\t打印当前匹配行的内容"
 						}
 					]
 				},
@@ -7333,18 +7267,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210612-9rih0yv",
-						"updated": "20220925212029"
+						"updated": "20220925210654"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\tl\t\t\t\t打印当前匹配行的内容（显示控制字符，如回车等）\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212017-zyckt07",
-							"TextMarkTextContent": "示例"
+							"Data": "\tl\t\t\t\t打印当前匹配行的内容（显示控制字符，如回车等）"
 						}
 					]
 				},
@@ -7353,18 +7281,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210655-j1m4gbd",
-						"updated": "20220925212116"
+						"updated": "20220925210731"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t=\t\t\t\t打印当前读取的数据所在行数\t\t\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220925212107-56f4ahl",
-							"TextMarkTextContent": "示例"
+							"Data": "\t=\t\t\t\t打印当前读取的数据所在行数"
 						}
 					]
 				},
@@ -7373,21 +7295,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210733-87x9apy",
-						"updated": "20220925211352"
+						"updated": "20220925210829"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\ta text\t\t\t在匹配的行后追加文本 text。text中可包含换行符"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "mark",
-							"TextMarkTextContent": "\\n"
-						},
-						{
-							"Type": "NodeText",
-							"Data": "（实现追加多行的情况）"
+							"Data": "\ta text\t\t\t在匹配的行后追加文本 text"
 						}
 					]
 				},
@@ -7438,17 +7351,12 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20220925210950-dn2cfrg",
-						"updated": "20220925211527"
+						"updated": "20220925211007"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\ts/正则/text/\t\t将正则匹配到的内容，用  text  替换。s/正则/text/g   g代表"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "贪婪模式"
+							"Data": "\ts///"
 						}
 					]
 				},
@@ -7456,27 +7364,12 @@
 					"ID": "20220925210910-n9uw81m",
 					"Type": "NodeParagraph",
 					"Properties": {
-						"id": "20220925210910-n9uw81m",
-						"updated": "20220925211118"
+						"id": "20220925210910-n9uw81m"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\tr  文件名\t\t\t将文件中的内容追加到匹配行后面"
-						}
-					]
-				},
-				{
-					"ID": "20220925211118-omj8rpy",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220925211118-omj8rpy",
-						"updated": "20220925211144"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tw\t文件名\t\t将匹配到的内容写入到文件中"
+							"Data": "\t"
 						}
 					]
 				},

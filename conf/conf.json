@@ -70,7 +70,7 @@
     "sort": 4
   },
   "editor": {
-    "fontSize": 16,
+    "fontSize": 15,
     "fontFamily": "",
     "codeSyntaxHighlightLineNum": true,
     "codeTabSpaces": 0,
@@ -200,6 +200,7 @@
                 {
                   "children": [
                     {
+                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20220924204553-h4rr7p5",
@@ -207,11 +208,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20220924204553-h4rr7p5",
                         "scrollAttr": {
-                          "endId": "20220925145022-n97icb7",
+                          "endId": "20220925214228-yi1era6",
                           "focusEnd": 0,
-                          "focusId": "20220925141149-ubqkn2j",
+                          "focusId": "20220925214228-yi1era6",
                           "focusStart": 0,
-                          "scrollTop": 3180,
+                          "scrollTop": 3808.800048828125,
                           "startId": "20220925102223-9ilbld0"
                         }
                       },
@@ -221,7 +222,6 @@
                       "title": "资料库"
                     },
                     {
-                      "active": true,
                       "children": {
                         "instance": "Asset",
                         "path": "assets/Linux-20220924144344-aab25wa.pdf"
@@ -230,11 +230,32 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "Linux-20220924144344-aab25wa.pdf"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924210939-k0oh1k6",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924210939-k0oh1k6",
+                        "scrollAttr": {
+                          "endId": "20220924210939-41ictt2",
+                          "focusEnd": 118,
+                          "focusId": "20220924210939-41ictt2",
+                          "focusStart": 118,
+                          "scrollTop": 400,
+                          "startId": "20220924210939-41ictt2"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "20220924210939"
                     }
                   ],
                   "height": "",
                   "instance": "Wnd",
-                  "width": "795px"
+                  "width": "519px"
                 },
                 {
                   "children": [
@@ -250,7 +271,7 @@
                           "focusEnd": 0,
                           "focusId": "20220924195432-f817lbq",
                           "focusStart": 0,
-                          "scrollTop": 577,
+                          "scrollTop": 876,
                           "startId": "20220924195432-f817lbq"
                         }
                       },
@@ -260,7 +281,6 @@
                       "title": "命令列表"
                     },
                     {
-                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20220924141737-z6ah3oq",
@@ -270,9 +290,9 @@
                         "scrollAttr": {
                           "endId": "20220924213405-lqqgg5v",
                           "focusEnd": 0,
-                          "focusId": "20220925174017-7b1v9ud",
+                          "focusId": "20220924182651-gy6jxf8",
                           "focusStart": 0,
-                          "scrollTop": 196.8000030517578,
+                          "scrollTop": 918,
                           "startId": "20220924142530-z39h3uh"
                         }
                       },
@@ -282,16 +302,20 @@
                       "title": "云计算大纲"
                     },
                     {
+                      "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20220924202037-o2eab03",
+                        "blockId": "20220925135228-nshl2v8",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924145441-ruxsjlb",
                         "scrollAttr": {
-                          "endId": "20220924202044-x5cldp6",
-                          "scrollTop": 1663,
-                          "startId": "20220924202017-yesq833"
+                          "endId": "20220925135239-ezptj1r",
+                          "focusEnd": 18,
+                          "focusId": "20220925205828-c9frtwg",
+                          "focusStart": 18,
+                          "scrollTop": 3184,
+                          "startId": "20220925135151-iqkfw6e"
                         }
                       },
                       "docIcon": "",
@@ -461,7 +485,6 @@
   },
   "readonly": false,
   "localIPs": [
-    "192.168.42.132",
     "192.168.137.28",
     "192.168.159.1",
     "192.168.100.1",
