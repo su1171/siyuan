@@ -1,0 +1,310 @@
+{
+	"ID": "20220924204553-h4rr7p5",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"custom-location": "20220925102224-dayhgjv",
+		"id": "20220924204553-h4rr7p5",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924204553-0zw8a2p\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924221658-svo7der\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:361,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924204553-0zw8a2p\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "资料库",
+		"updated": "20220924221652"
+	},
+	"Children": [
+		{
+			"ID": "20220925102223-9ilbld0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220925102223-9ilbld0",
+				"updated": "20220925102233"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/Linux-20220924144344-aab25wa.pdf",
+					"TextMarkTextContent": "Linux.pdf"
+				}
+			]
+		},
+		{
+			"ID": "20220925102224-dayhgjv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220925102224-dayhgjv"
+			}
+		},
+		{
+			"ID": "20220925102224-9icak7b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220925102224-9icak7b"
+			}
+		},
+		{
+			"ID": "20220924204553-0zw8a2p",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924204553-0zw8a2p",
+				"updated": "20220925102157"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220924204607-szr95su.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220924204608-yyftd47",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924204608-yyftd47",
+				"updated": "20220924221652"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "max-width: 556px;",
+						"style": "width: 546px;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220924221652-h7zoyth.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"width: 546px;\" parent-style=\"max-width: 556px;\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220924221658-svo7der",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220924221658-svo7der",
+				"updated": "20220924222015"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220924222015-fs3al43.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220925102106-f2swbfl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220925102106-f2swbfl",
+				"updated": "20220925102107"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220925102107-9wleowx.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220925102111-q3x9g6k",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220925102111-q3x9g6k",
+				"updated": "20220925103340"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220925103340-nkitrai.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20220925104230-2gkjjsz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220925104230-2gkjjsz",
+				"updated": "20220925104230"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20220925104230-cx90c9k.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		}
+	]
+}
