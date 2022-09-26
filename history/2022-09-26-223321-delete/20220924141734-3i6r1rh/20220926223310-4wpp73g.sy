@@ -1,0 +1,20 @@
+{
+	"ID": "20220926223310-4wpp73g",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220926223310-4wpp73g",
+		"title": "daily note",
+		"updated": "20220926223310"
+	},
+	"Children": [
+		{
+			"ID": "20220926223310-yfl2iej",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926223310-yfl2iej",
+				"updated": "20220926223310"
+			}
+		}
+	]
+}

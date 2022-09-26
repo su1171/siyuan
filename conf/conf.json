@@ -58,7 +58,7 @@
     "alwaysSelectOpenedFile": false,
     "openFilesUseCurrentTab": false,
     "refCreateSavePath": "",
-    "createDocNameTemplate": "{{now | date \"20060102150405\"}}",
+    "createDocNameTemplate": "{{now | date \"2006年01月02日\"}}",
     "maxListCount": 512,
     "maxOpenTabCount": 8,
     "allowCreateDeeper": false,
@@ -70,7 +70,7 @@
     "sort": 4
   },
   "editor": {
-    "fontSize": 15,
+    "fontSize": 16,
     "fontFamily": "",
     "codeSyntaxHighlightLineNum": true,
     "codeTabSpaces": 0,
@@ -192,94 +192,13 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "0px",
+              "size": "236px",
               "type": "left"
             },
             {
               "children": [
                 {
                   "children": [
-                    {
-                      "active": true,
-                      "children": {
-                        "action": "",
-                        "blockId": "20220924204553-h4rr7p5",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20220924204553-h4rr7p5",
-                        "scrollAttr": {
-                          "endId": "20220925214228-yi1era6",
-                          "focusEnd": 0,
-                          "focusId": "20220925214228-yi1era6",
-                          "focusStart": 0,
-                          "scrollTop": 3808.800048828125,
-                          "startId": "20220925102223-9ilbld0"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "资料库"
-                    },
-                    {
-                      "children": {
-                        "instance": "Asset",
-                        "path": "assets/Linux-20220924144344-aab25wa.pdf"
-                      },
-                      "icon": "iconPDF",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "Linux-20220924144344-aab25wa.pdf"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20220924210939-k0oh1k6",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20220924210939-k0oh1k6",
-                        "scrollAttr": {
-                          "endId": "20220924210939-41ictt2",
-                          "focusEnd": 118,
-                          "focusId": "20220924210939-41ictt2",
-                          "focusStart": 118,
-                          "scrollTop": 400,
-                          "startId": "20220924210939-41ictt2"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "20220924210939"
-                    }
-                  ],
-                  "height": "",
-                  "instance": "Wnd",
-                  "width": "519px"
-                },
-                {
-                  "children": [
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20220924144300-ixdsb7j",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20220924144300-ixdsb7j",
-                        "scrollAttr": {
-                          "endId": "20220925153201-fyyndww",
-                          "focusEnd": 0,
-                          "focusId": "20220924195432-f817lbq",
-                          "focusStart": 0,
-                          "scrollTop": 876,
-                          "startId": "20220924195432-f817lbq"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "命令列表"
-                    },
                     {
                       "children": {
                         "action": "",
@@ -290,9 +209,9 @@
                         "scrollAttr": {
                           "endId": "20220924213405-lqqgg5v",
                           "focusEnd": 0,
-                          "focusId": "20220924182651-gy6jxf8",
+                          "focusId": "20220924182927-xrdrhyf",
                           "focusStart": 0,
-                          "scrollTop": 918,
+                          "scrollTop": 2992,
                           "startId": "20220924142530-z39h3uh"
                         }
                       },
@@ -305,28 +224,87 @@
                       "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20220925135228-nshl2v8",
+                        "blockId": "20220924152347-w1w5tjs",
                         "instance": "Editor",
                         "mode": "wysiwyg",
-                        "rootId": "20220924145441-ruxsjlb",
+                        "rootId": "20220924152347-w1w5tjs",
                         "scrollAttr": {
-                          "endId": "20220925135239-ezptj1r",
-                          "focusEnd": 18,
-                          "focusId": "20220925205828-c9frtwg",
-                          "focusStart": 18,
-                          "scrollTop": 3184,
-                          "startId": "20220925135151-iqkfw6e"
+                          "endId": "20220926223719-csaxdd7",
+                          "focusEnd": 0,
+                          "focusId": "20220926223719-csaxdd7",
+                          "focusStart": 0,
+                          "scrollTop": 556,
+                          "startId": "20220926214455-pyd8z7h"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "命令详解"
+                      "title": "2022年9月24日"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220926223621-11a65pa",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220926223621-11a65pa",
+                        "scrollAttr": {
+                          "endId": "20220926223621-fzroa6j",
+                          "focusEnd": 0,
+                          "focusId": "20220926223621-fzroa6j",
+                          "focusStart": 0,
+                          "scrollTop": 0,
+                          "startId": "20220926223621-fzroa6j"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "流水"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924210939-k0oh1k6",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924210939-k0oh1k6",
+                        "scrollAttr": {
+                          "endId": "20220926212348-jhcuojy",
+                          "scrollTop": 136,
+                          "startId": "20220924210939-41ictt2"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "20220924210939"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924144300-ixdsb7j",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924144300-ixdsb7j",
+                        "scrollAttr": {
+                          "endId": "20220926213909-e6m1lh1",
+                          "focusEnd": 0,
+                          "focusId": "20220926213909-e6m1lh1",
+                          "focusStart": 0,
+                          "scrollTop": 620,
+                          "startId": "20220924195432-f817lbq"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "命令列表"
                     }
                   ],
                   "height": "",
                   "instance": "Wnd",
-                  "resize": "lr",
                   "width": ""
                 }
               ],
@@ -351,7 +329,7 @@
               "direction": "tb",
               "instance": "Layout",
               "resize": "lr",
-              "size": "0px",
+              "size": "373px",
               "type": "right"
             }
           ],
@@ -389,7 +367,7 @@
         {
           "hotkeyLangId": "fileTree",
           "icon": "iconFiles",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
             "width": 236
@@ -447,18 +425,18 @@
           "icon": "iconGraph",
           "show": false,
           "size": {
-            "height": 135,
-            "width": 287
+            "height": 354,
+            "width": 420
           },
           "type": "graph"
         },
         {
           "hotkeyLangId": "globalGraph",
           "icon": "iconGlobalGraph",
-          "show": false,
+          "show": true,
           "size": {
             "height": 285,
-            "width": 321
+            "width": 373
           },
           "type": "globalGraph"
         }
@@ -467,10 +445,10 @@
         {
           "hotkeyLangId": "backlinks",
           "icon": "iconLink",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
-            "width": 420
+            "width": 373
           },
           "type": "backlink"
         }
@@ -485,17 +463,16 @@
   },
   "readonly": false,
   "localIPs": [
-    "192.168.137.28",
+    "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
     "192.168.110.40",
-    "192.168.137.1",
     "127.0.0.1"
   ],
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.2.0",
+    "kernelVersion": "2.2.1",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -505,7 +482,7 @@
     "appDir": "D:\\Program Files (x86)\\siyuan\\resources",
     "confDir": "F:\\0901\\MarkDown教程\\siyuan\\conf",
     "dataDir": "F:\\0901\\MarkDown教程\\siyuan\\data",
-    "networkServe": false,
+    "networkServe": true,
     "networkProxy": {
       "scheme": "",
       "host": "",
@@ -550,7 +527,7 @@
     "virtualRefDoc": true
   },
   "stat": {
-    "docCount": 7
+    "docCount": 6
   },
   "api": {
     "token": "uin95woksk9wpovr"

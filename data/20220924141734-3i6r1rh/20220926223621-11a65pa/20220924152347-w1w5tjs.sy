@@ -1,0 +1,554 @@
+{
+	"ID": "20220924152347-w1w5tjs",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"custom-location": "20220926191655-zfq5y87",
+		"id": "20220924152347-w1w5tjs",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924153155-obpm5id\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924193413-dl41y42\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:0,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924193413-dl41y42\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "2022年9月24日",
+		"updated": "20220926223719"
+	},
+	"Children": [
+		{
+			"ID": "20220926214455-pyd8z7h",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926214455-pyd8z7h"
+			}
+		},
+		{
+			"ID": "20220926214458-yivbqd0",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220926214458-yivbqd0",
+				"updated": "20220926221032"
+			},
+			"Children": [
+				{
+					"ID": "20220926220503-bswjadf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"fold": "0",
+						"id": "20220926220503-bswjadf",
+						"updated": "20220926220738"
+					},
+					"Children": [
+						{
+							"ID": "20220926220503-0tzr3jv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220926220503-0tzr3jv",
+								"updated": "20220926220531"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "命令的执行优先级"
+								}
+							]
+						},
+						{
+							"ID": "20220926220533-w0xtoro",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220926220533-w0xtoro",
+								"updated": "20220926220738"
+							},
+							"Children": [
+								{
+									"ID": "20220926220531-qizfs3c",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926220531-qizfs3c"
+									},
+									"Children": [
+										{
+											"ID": "20220926220531-z7lwq6u",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926220531-z7lwq6u",
+												"updated": "20220926220613"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "第一顺位执行用绝对路径或相对路径执行的命令"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220926220614-oo75xtd",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926220614-oo75xtd"
+									},
+									"Children": [
+										{
+											"ID": "20220926220614-9ppy9j8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926220614-9ppy9j8",
+												"updated": "20220926220624"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "第二顺位执行别名"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220926220624-681x1cm",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926220624-681x1cm"
+									},
+									"Children": [
+										{
+											"ID": "20220926220624-7hg2h4a",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926220624-7hg2h4a",
+												"updated": "20220926220644"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "第三顺位执行Bash的内部命令"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220926220645-qbtmh1e",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926220645-qbtmh1e",
+										"updated": "20220926220738"
+									},
+									"Children": [
+										{
+											"ID": "20220926220645-jet2io3",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926220645-jet2io3",
+												"updated": "20220926220738"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "第四顺位执行按照$PATH环境定义的目录查找顺序找到的第一个命令"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220926214548-37hdwlx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926214548-37hdwlx",
+				"updated": "20220926221032"
+			}
+		},
+		{
+			"ID": "20220926221022-e4vbdbx",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220926221022-e4vbdbx",
+				"updated": "20220926221125"
+			},
+			"Children": [
+				{
+					"ID": "20220926221125-xz8xp4h",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220926221125-xz8xp4h",
+						"updated": "20220926221125"
+					},
+					"Children": [
+						{
+							"ID": "20220926221125-3ha504z",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220926221125-3ha504z",
+								"updated": "20220926221132"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "别名alias"
+								}
+							]
+						},
+						{
+							"ID": "20220926221134-fcq8g6k",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220926221134-fcq8g6k"
+							},
+							"Children": [
+								{
+									"ID": "20220926221133-6wp9s8r",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926221133-6wp9s8r"
+									},
+									"Children": [
+										{
+											"ID": "20220926221133-eew813g",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926221133-eew813g",
+												"updated": "20220926221200"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "让别名永久生效"
+												}
+											]
+										},
+										{
+											"ID": "20220926221204-wytqkry",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220926221204-wytqkry"
+											},
+											"Children": [
+												{
+													"ID": "20220926221203-dnoyp4d",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220926221203-dnoyp4d"
+													},
+													"Children": [
+														{
+															"ID": "20220926221203-tmkrr2y",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220926221203-tmkrr2y",
+																"updated": "20220926221320"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "在用户家目录下的 .bashrc  文件中定义别名"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220926221257-i93egq5",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926221257-i93egq5"
+									},
+									"Children": [
+										{
+											"ID": "20220926221257-ehq5d7g",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926221257-ehq5d7g",
+												"updated": "20220926221344"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "设置别名"
+												}
+											]
+										},
+										{
+											"ID": "20220926221345-ck542uv",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220926221345-ck542uv"
+											},
+											"Children": [
+												{
+													"ID": "20220926221345-3jdhvx1",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220926221345-3jdhvx1"
+													},
+													"Children": [
+														{
+															"ID": "20220926221345-pz7jzyz",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220926221345-pz7jzyz",
+																"updated": "20220926221421"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "alias    别名=命令   [options]"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220926221422-t2zazcz",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926221422-t2zazcz"
+									},
+									"Children": [
+										{
+											"ID": "20220926221422-t66ddbx",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926221422-t66ddbx",
+												"updated": "20220926221435"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "查看别名"
+												}
+											]
+										},
+										{
+											"ID": "20220926221439-o6pb6hm",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220926221439-o6pb6hm"
+											},
+											"Children": [
+												{
+													"ID": "20220926221437-uh67w05",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220926221437-uh67w05"
+													},
+													"Children": [
+														{
+															"ID": "20220926221437-jsnqihz",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220926221437-jsnqihz",
+																"updated": "20220926221441"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "alias"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220926221442-o7guquf",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220926221442-o7guquf"
+									},
+									"Children": [
+										{
+											"ID": "20220926221442-4wugvxg",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220926221442-4wugvxg",
+												"updated": "20220926221450"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "删除别名"
+												}
+											]
+										},
+										{
+											"ID": "20220926221452-k87qhl4",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220926221452-k87qhl4"
+											},
+											"Children": [
+												{
+													"ID": "20220926221451-covtojh",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220926221451-covtojh"
+													},
+													"Children": [
+														{
+															"ID": "20220926221451-z44rd2j",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220926221451-z44rd2j",
+																"updated": "20220926221504"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "unalias   要删除的别名"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220926221504-xbos06x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926221504-xbos06x"
+			}
+		},
+		{
+			"ID": "20220926221527-rytcvak",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220926221527-rytcvak",
+				"updated": "20220926221733"
+			},
+			"Children": [
+				{
+					"ID": "20220926221723-c06v327",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220926221723-c06v327",
+						"updated": "20220926221733"
+					},
+					"Children": [
+						{
+							"ID": "20220926221723-l7gfplb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220926221723-l7gfplb",
+								"updated": "20220926221733"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "bash常用快捷键"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220926223717-qwgznvc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926223717-qwgznvc"
+			}
+		},
+		{
+			"ID": "20220926223719-csaxdd7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926223719-csaxdd7"
+			}
+		}
+	]
+}

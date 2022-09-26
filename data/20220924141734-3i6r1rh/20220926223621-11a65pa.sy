@@ -1,0 +1,20 @@
+{
+	"ID": "20220926223621-11a65pa",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220926223621-11a65pa",
+		"title": "流水",
+		"updated": "20220926223630"
+	},
+	"Children": [
+		{
+			"ID": "20220926223621-fzroa6j",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926223621-fzroa6j",
+				"updated": "20220926223621"
+			}
+		}
+	]
+}

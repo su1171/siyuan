@@ -7,11 +7,11 @@
             },
             "toolbar-theme-location-record": {
                 "default": false,
-                "state": true
+                "state": false
             },
             "toolbar-theme-menu-block": {
                 "default": false,
-                "state": true
+                "state": false
             },
             "toolbar-theme-style-itemtext": {
                 "default": false,
@@ -23,7 +23,7 @@
             },
             "toolbar-theme-style-guides": {
                 "default": false,
-                "state": true
+                "state": false
             },
             "toolbar-theme-style-mark": {
                 "default": false,
@@ -35,7 +35,7 @@
             },
             "toolbar-theme-typewriter-switch": {
                 "default": false,
-                "state": false
+                "state": true
             },
             "toolbar-theme-dock-fold": {
                 "default": false

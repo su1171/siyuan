@@ -1,0 +1,20 @@
+{
+	"ID": "20220926223310-llattzb",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220926223310-llattzb",
+		"title": "2022",
+		"updated": "20220926223310"
+	},
+	"Children": [
+		{
+			"ID": "20220926223310-hnnmdif",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220926223310-hnnmdif",
+				"updated": "20220926223310"
+			}
+		}
+	]
+}
