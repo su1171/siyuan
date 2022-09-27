@@ -1,0 +1,339 @@
+{
+	"ID": "20220927171331-stlnc0u",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220927171331-stlnc0u",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220927171331-hzusp96\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220927171337-x085ti8\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:4.800000190734863,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220927171337-x085ti8\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "2022年09月27日",
+		"updated": "20220927184309"
+	},
+	"Children": [
+		{
+			"ID": "20220927171331-hzusp96",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927171331-hzusp96",
+				"updated": "20220927171331"
+			}
+		},
+		{
+			"ID": "20220927171334-ub0rexy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927171334-ub0rexy"
+			}
+		},
+		{
+			"ID": "20220927171334-wqsb2e4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927171334-wqsb2e4",
+				"updated": "20220927171415"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t\t"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220927171223-rlpip95",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "ls"
+				}
+			]
+		},
+		{
+			"ID": "20220927171334-kdr81p4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927171334-kdr81p4",
+				"updated": "20220927171335"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "ls"
+				}
+			]
+		},
+		{
+			"ID": "20220927171337-x085ti8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927171337-x085ti8",
+				"updated": "20220927182451"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "二十日是\t\t"
+				}
+			]
+		},
+		{
+			"ID": "20220927182458-eeoh9yy",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220927182458-eeoh9yy",
+				"updated": "20220927182500"
+			},
+			"Children": [
+				{
+					"ID": "20220927182500-m2lracg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927182500-m2lracg",
+						"updated": "20220927182500"
+					},
+					"Children": [
+						{
+							"ID": "20220927182500-a6u0vfd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927182500-a6u0vfd",
+								"updated": "20220927182505"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "v地方上班\t\t"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220927184054-831abcy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927184054-831abcy",
+				"updated": "20220927184057"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t     "
+				}
+			]
+		},
+		{
+			"ID": "20220927184057-xuzjp2s",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220927184057-xuzjp2s",
+				"updated": "20220927184309"
+			},
+			"Children": [
+				{
+					"ID": "20220927184159-2uktmnv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184159-2uktmnv",
+						"updated": "20220927184159"
+					},
+					"Children": [
+						{
+							"ID": "20220927184159-p5ieho6",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184159-p5ieho6",
+								"updated": "20220927184225"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "1111111112"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220927184251-sdszdv6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184251-sdszdv6"
+					},
+					"Children": [
+						{
+							"ID": "20220927184251-b89j5m4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184251-b89j5m4",
+								"updated": "20220927184252"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "1111111"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220927184253-s6nvifj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184253-s6nvifj"
+					},
+					"Children": [
+						{
+							"ID": "20220927184253-iggbtdh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184253-iggbtdh",
+								"updated": "20220927184254"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "333333"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220927184254-41voait",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184254-41voait"
+					},
+					"Children": [
+						{
+							"ID": "20220927184254-rq2g3fl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184254-rq2g3fl",
+								"updated": "20220927184255"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "444444"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220927184256-xfvwgsm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184256-xfvwgsm"
+					},
+					"Children": [
+						{
+							"ID": "20220927184256-dtb9z1e",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184256-dtb9z1e",
+								"updated": "20220927184257"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "555555"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220927184257-c4nsib4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184257-c4nsib4"
+					},
+					"Children": [
+						{
+							"ID": "20220927184257-h1du9jl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184257-h1du9jl",
+								"updated": "20220927184259"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "6666666"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220927184259-k4bpxer",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927184259-k4bpxer",
+						"updated": "20220927184309"
+					},
+					"Children": [
+						{
+							"ID": "20220927184259-hdj0l00",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927184259-hdj0l00",
+								"updated": "20220927184309"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "7777777"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220927184235-rc8iaj0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927184235-rc8iaj0"
+			}
+		}
+	]
+}

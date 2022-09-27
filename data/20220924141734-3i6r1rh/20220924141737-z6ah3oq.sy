@@ -5,9 +5,9 @@
 	"Properties": {
 		"custom-location": "20220924213405-lqqgg5v",
 		"id": "20220924141737-z6ah3oq",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924213405-lqqgg5v\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:1920,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182927-m55ft1t\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:8,\u0026amp;quot;focusEnd\u0026amp;quot;:8}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220924213405-lqqgg5v\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:400,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "云计算大纲",
-		"updated": "20220926200224"
+		"updated": "20220927230701"
 	},
 	"Children": [
 		{
@@ -1192,10 +1192,11 @@
 			]
 		},
 		{
-			"ID": "20220924183128-2ss7db1",
+			"ID": "20220927173009-hitxzo7",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220924183128-2ss7db1"
+				"id": "20220927173009-hitxzo7",
+				"updated": "20220927173114"
 			}
 		},
 		{
@@ -1744,10 +1745,48 @@
 			]
 		},
 		{
-			"ID": "20220924213405-lqqgg5v",
-			"Type": "NodeParagraph",
+			"ID": "20220927230534-qyrcv3c",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/Notetocard\" data-src=\"/widgets/Notetocard\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
 			"Properties": {
-				"id": "20220924213405-lqqgg5v"
+				"id": "20220927230534-qyrcv3c",
+				"updated": "20220927230534"
+			}
+		},
+		{
+			"ID": "20220927230541-mbpoh6d",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/cc-kityminder\" data-src=\"/widgets/cc-kityminder\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220927230541-mbpoh6d",
+				"updated": "20220927230541"
+			}
+		},
+		{
+			"ID": "20220927230547-yfypxbc",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/drawio\" data-src=\"/widgets/drawio\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220927230547-yfypxbc",
+				"updated": "20220927230547"
+			}
+		},
+		{
+			"ID": "20220927230557-lhvcpz0",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/Note Backlinks\" data-src=\"/widgets/Note Backlinks\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220927230557-lhvcpz0",
+				"updated": "20220927230557"
+			}
+		},
+		{
+			"ID": "20220927230701-k5uimyz",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/Note Map\" data-src=\"/widgets/Note Map\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220927230701-k5uimyz",
+				"updated": "20220927230701"
 			}
 		}
 	]

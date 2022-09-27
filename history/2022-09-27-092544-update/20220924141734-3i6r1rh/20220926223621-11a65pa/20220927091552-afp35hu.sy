@@ -1,0 +1,120 @@
+{
+	"ID": "20220927091552-afp35hu",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220927091552-afp35hu",
+		"title": "2022年09月27日",
+		"updated": "20220927092158"
+	},
+	"Children": [
+		{
+			"ID": "20220927091552-q611udg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927091552-q611udg",
+				"updated": "20220927091555"
+			}
+		},
+		{
+			"ID": "20220927091556-kq8j2ke",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220927091556-kq8j2ke",
+				"updated": "20220927091558"
+			},
+			"Children": [
+				{
+					"ID": "20220927091558-16tpxoo",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927091558-16tpxoo",
+						"updated": "20220927091558"
+					},
+					"Children": [
+						{
+							"ID": "20220927091558-dz69t92",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927091558-dz69t92",
+								"updated": "20220927091613"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "yum配置公网源"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220927091615-wz43wcp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927091615-wz43wcp"
+			}
+		},
+		{
+			"ID": "20220927092157-lwhy8dj",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220927092157-lwhy8dj",
+				"updated": "20220927092158"
+			},
+			"Children": [
+				{
+					"ID": "20220927092158-8fjqe8i",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220927092158-8fjqe8i",
+						"updated": "20220927092158"
+					},
+					"Children": [
+						{
+							"ID": "20220927092158-wtse2o3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220927092158-wtse2o3",
+								"updated": "20220927092208"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "CA证书"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220927092209-g10armi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927092209-g10armi",
+				"updated": "20220927092210"
+			}
+		},
+		{
+			"ID": "20220927091852-t0mbiix",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927091852-t0mbiix"
+			}
+		}
+	]
+}

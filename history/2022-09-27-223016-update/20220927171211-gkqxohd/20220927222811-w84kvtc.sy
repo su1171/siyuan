@@ -1,0 +1,52 @@
+{
+	"ID": "20220927222811-w84kvtc",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220927222811-w84kvtc",
+		"title": "2022年09月27日",
+		"updated": "20220927222859"
+	},
+	"Children": [
+		{
+			"ID": "20220927222811-274b73t",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927222811-274b73t",
+				"updated": "20220927222811"
+			}
+		},
+		{
+			"ID": "20220927222814-9r96mqp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927222814-9r96mqp"
+			}
+		},
+		{
+			"ID": "20220927222819-e7wa80g",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/Note Backlinks\" data-src=\"/widgets/Note Backlinks\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220927222819-e7wa80g",
+				"updated": "20220927222819"
+			}
+		},
+		{
+			"ID": "20220927222852-u6bb7kw",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/Note Map\" data-src=\"/widgets/Note Map\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220927222852-u6bb7kw",
+				"updated": "20220927222852"
+			}
+		},
+		{
+			"ID": "20220927222859-rgjofrm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220927222859-rgjofrm"
+			}
+		}
+	]
+}

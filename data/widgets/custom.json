@@ -38,7 +38,8 @@
                 "state": true
             },
             "toolbar-theme-dock-fold": {
-                "default": false
+                "default": false,
+                "state": true
             },
             "toolbar-theme-readonly": {
                 "default": false,
@@ -46,6 +47,31 @@
             }
         },
         "location": {},
-        "dock": {}
+        "dock": {
+            "file": {
+                "fold": true
+            },
+            "outline": {
+                "fold": false
+            },
+            "inbox": {
+                "fold": false
+            },
+            "bookmark": {
+                "fold": false
+            },
+            "tag": {
+                "fold": false
+            },
+            "graph": {
+                "fold": false
+            },
+            "globalGraph": {
+                "fold": false
+            },
+            "backlink": {
+                "fold": false
+            }
+        }
     }
 }
