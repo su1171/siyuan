@@ -1,0 +1,19 @@
+/* ---------------------------------------------------键盘按键kbd和行内代码设置一样的格式--------------------------------------------- */
+
+
+/* 键盘kbd样式 */
+.b3-typography kbd,
+.b3-typography span[data-type~=kbd],
+.protyle-wysiwyg kbd,
+.protyle-wysiwyg span[data-type~=kbd] {
+    border: var(--b3-border-kbd);
+    border-bottom: 0.1em solid gray !important;
+    border-radius: var(--b3-border-radius-noraml);
+    color: gray;
+    background-color: var(--b3-theme-background2);
+    font-family: var(--b3-font-family-code);
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+}
+
+/* ---------------------------------------------------键盘按键 END--------------------------------------------- */

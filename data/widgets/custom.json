@@ -11,7 +11,7 @@
             },
             "toolbar-theme-menu-block": {
                 "default": false,
-                "state": false
+                "state": true
             },
             "toolbar-theme-style-itemtext": {
                 "default": false,

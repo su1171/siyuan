@@ -1,0 +1,20 @@
+{
+	"ID": "20220929211035-ny0lsx7",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220929211035-ny0lsx7",
+		"title": "2022年09月29日",
+		"updated": "20220929211035"
+	},
+	"Children": [
+		{
+			"ID": "20220929211035-hrmptqq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929211035-hrmptqq",
+				"updated": "20220929211035"
+			}
+		}
+	]
+}

@@ -1,0 +1,959 @@
+{
+	"ID": "20220928143836-vdfvn6e",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220928143836-vdfvn6e",
+		"title": "2022年09月28日",
+		"updated": "20220928152754"
+	},
+	"Children": [
+		{
+			"ID": "20220928143836-u6ivl40",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220928143836-u6ivl40",
+				"updated": "20220928144606"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/云计算课程笔记第二册-Linux网络服务 1-20220928144606-8mzz34n.pdf",
+					"TextMarkTextContent": "云计算课程笔记第二册-Linux网络服务 1.pdf"
+				}
+			]
+		},
+		{
+			"ID": "20220928143841-1i72t92",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20220928143841-1i72t92",
+				"updated": "20220928143905"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "DHCP服务配置"
+				}
+			]
+		},
+		{
+			"ID": "20220928143905-tx4um7y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220928143905-tx4um7y"
+			}
+		},
+		{
+			"ID": "20220928143907-8og9ygh",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220928143907-8og9ygh",
+				"updated": "20220928145723"
+			},
+			"Children": [
+				{
+					"ID": "20220928143908-01m51pg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220928143908-01m51pg",
+						"updated": "20220928145723"
+					},
+					"Children": [
+						{
+							"ID": "20220928143908-zp8uwae",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220928143908-zp8uwae",
+								"updated": "20220928143934"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "服务端安装dhcpd\t软件"
+								}
+							]
+						},
+						{
+							"ID": "20220928143937-6wjf9sh",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220928143937-6wjf9sh",
+								"updated": "20220928145723"
+							},
+							"Children": [
+								{
+									"ID": "20220928143936-1nk2mta",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20220928143936-1nk2mta"
+									},
+									"Children": [
+										{
+											"ID": "20220928143936-2n8n3b1",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928143936-2n8n3b1",
+												"updated": "20220928144012"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "将配置模板输出到配置文件"
+												}
+											]
+										},
+										{
+											"ID": "20220928144018-6lxtc45",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220928144018-6lxtc45"
+											},
+											"Children": [
+												{
+													"ID": "20220928144015-u88bfn1",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928144015-u88bfn1"
+													},
+													"Children": [
+														{
+															"ID": "20220928144015-gbrz92u",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928144015-gbrz92u",
+																"updated": "20220928144114"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "配置模板：/usr/share/doc/dfcp-版本/dhcpd.conf.example"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220928144116-y0rtcml",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928144116-y0rtcml"
+													},
+													"Children": [
+														{
+															"ID": "20220928144116-sxx6j5k",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928144116-sxx6j5k",
+																"updated": "20220928144224"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "配置文件：/etc/dhcp/dhcpd.conf"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220928144236-873vi5d",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928144236-873vi5d"
+													},
+													"Children": [
+														{
+															"ID": "20220928144236-w84kdkx",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928144236-w84kdkx",
+																"updated": "20220928150141"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "使用 \tcat  模板\t\u003e\t配置文件"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220928144705-9dxlhak",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20220928144705-9dxlhak"
+									},
+									"Children": [
+										{
+											"ID": "20220928144705-x06mrac",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928144705-x06mrac",
+												"updated": "20220928144728"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "配置配置文件"
+												}
+											]
+										},
+										{
+											"ID": "20220928144729-dur4ela",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220928144729-dur4ela"
+											},
+											"Children": [
+												{
+													"ID": "20220928144729-7dvc9vt",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928144729-7dvc9vt"
+													},
+													"Children": [
+														{
+															"ID": "20220928144729-87awvkt",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928144729-87awvkt",
+																"updated": "20220928144745"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "file-annotation-ref",
+																	"TextMarkFileAnnotationRefID": "assets/云计算课程笔记第二册-Linux网络服务 1-20220928144606-8mzz34n.pdf/20220928144644-uq4qam0",
+																	"TextMarkTextContent": "最简配置"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220928144746-a3tto4g",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928144746-a3tto4g"
+													},
+													"Children": [
+														{
+															"ID": "20220928144746-54odzoz",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928144746-54odzoz",
+																"updated": "20220928144927"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "最少需要配置\t网段\t\t子网掩码\t\tip地址池\t网关"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220928145224-74g1glt",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220928145224-74g1glt",
+										"updated": "20220928145723"
+									},
+									"Children": [
+										{
+											"ID": "20220928145224-6f62cfc",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928145224-6f62cfc",
+												"updated": "20220928145723"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "关闭防火墙\t"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "systemctl stop firewalld"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220928144928-ujoslaj",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20220928144928-ujoslaj",
+										"updated": "20220928150651"
+									},
+									"Children": [
+										{
+											"ID": "20220928144928-fn0uk30",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928144928-fn0uk30",
+												"updated": "20220928145011"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "启动dhcpd服务"
+												}
+											]
+										},
+										{
+											"ID": "20220928145013-xj13cgr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928145013-xj13cgr",
+												"updated": "20220928145213"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "systemctl\tstart\tdhcpd"
+												}
+											]
+										},
+										{
+											"ID": "20220928145055-fltypfo",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220928145055-fltypfo",
+												"updated": "20220928145121"
+											},
+											"Children": [
+												{
+													"ID": "20220928145121-dhdwi0n",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928145121-dhdwi0n",
+														"updated": "20220928145121"
+													},
+													"Children": [
+														{
+															"ID": "20220928145121-06o51yi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928145121-06o51yi",
+																"updated": "20220928145209"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "查看服务启动状态\t"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "code",
+																	"TextMarkTextContent": "systemctl\tstatus\tdhcpd"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "​"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220928145729-z10uc4b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220928145729-z10uc4b"
+					},
+					"Children": [
+						{
+							"ID": "20220928145729-060p3l1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220928145729-060p3l1",
+								"updated": "20220928150521"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "客户端"
+								}
+							]
+						},
+						{
+							"ID": "20220928150526-bvmbawe",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220928150526-bvmbawe"
+							},
+							"Children": [
+								{
+									"ID": "20220928150526-fempw9p",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220928150526-fempw9p"
+									},
+									"Children": [
+										{
+											"ID": "20220928150526-dl6xtuz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928150526-dl6xtuz",
+												"updated": "20220928150543"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "将获取IP的方式改为dhcp自动获取"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220928150543-4eygi3w",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220928150543-4eygi3w"
+									},
+									"Children": [
+										{
+											"ID": "20220928150543-oadfeb1",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928150543-oadfeb1",
+												"updated": "20220928150546"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "重启网卡"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220928150614-3qcqkno",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220928150614-3qcqkno",
+				"updated": "20220928150618"
+			}
+		},
+		{
+			"ID": "20220928143841-iwrxmgu",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20220928143841-iwrxmgu",
+				"updated": "20220928152754"
+			},
+			"Children": [
+				{
+					"ID": "20220928150838-h6ah3rk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220928150838-h6ah3rk",
+						"updated": "20220928152754"
+					},
+					"Children": [
+						{
+							"ID": "20220928150838-kmp8670",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220928150838-kmp8670",
+								"updated": "20220928151423"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "dhcp中继"
+								}
+							]
+						},
+						{
+							"ID": "20220928152739-um7etuq",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220928152739-um7etuq",
+								"updated": "20220928152754"
+							},
+							"Children": [
+								{
+									"ID": "20220928151424-l66sbin",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220928151424-l66sbin"
+									},
+									"Children": [
+										{
+											"ID": "20220928151424-u3gs3w4",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928151424-u3gs3w4",
+												"updated": "20220928151431"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "dhcp服务器"
+												}
+											]
+										},
+										{
+											"ID": "20220928151433-xw0ng8f",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220928151433-xw0ng8f"
+											},
+											"Children": [
+												{
+													"ID": "20220928151432-wpfnzz9",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928151432-wpfnzz9"
+													},
+													"Children": [
+														{
+															"ID": "20220928151432-ofmmw2v",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928151432-ofmmw2v",
+																"updated": "20220928151503"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "dhcp服务器需要设置固定ip地址与网关"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220928151504-v4fardg",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928151504-v4fardg"
+													},
+													"Children": [
+														{
+															"ID": "20220928151504-ujyzbj8",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928151504-ujyzbj8",
+																"updated": "20220928152005"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "修改dhcp配置文件\t\t"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "file-annotation-ref",
+																	"TextMarkFileAnnotationRefID": "assets/云计算课程笔记第二册-Linux网络服务 1-20220928144606-8mzz34n.pdf/20220928151955-xqba14y",
+																	"TextMarkTextContent": "dhcp中继配置"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220928152007-fp9tyam",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928152007-fp9tyam"
+													},
+													"Children": [
+														{
+															"ID": "20220928152007-xxl34y5",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928152007-xxl34y5",
+																"updated": "20220928152044"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "需要为几个网段提供dhcp服务就需要设置几次subnet模块"
+																}
+															]
+														},
+														{
+															"ID": "20220928152352-1ndj5er",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20220928152352-1ndj5er"
+															},
+															"Children": [
+																{
+																	"ID": "20220928152351-0jr4n5h",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220928152351-0jr4n5h"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220928152351-j5g70be",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220928152351-j5g70be",
+																				"updated": "20220928152456"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "同时需要添加服务器所在网段的\t  subnet模块\t大括号内为空即可"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220928152456-uahzl5k",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220928152456-uahzl5k",
+										"updated": "20220928152754"
+									},
+									"Children": [
+										{
+											"ID": "20220928152456-cj3moek",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220928152456-cj3moek",
+												"updated": "20220928152750"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "软路由"
+												}
+											]
+										},
+										{
+											"ID": "20220928152754-hm85ny3",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220928152754-hm85ny3"
+											},
+											"Children": [
+												{
+													"ID": "20220928152752-w0ypmc7",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928152752-w0ypmc7"
+													},
+													"Children": [
+														{
+															"ID": "20220928152752-fblyeob",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928152752-fblyeob",
+																"updated": "20220928152846"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "添加多块网卡，分别连接各个网段"
+																}
+															]
+														},
+														{
+															"ID": "20220928153017-edpa98z",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20220928153017-edpa98z"
+															},
+															"Children": [
+																{
+																	"ID": "20220928153016-ob1meqk",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220928153016-ob1meqk"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220928153016-67s9cz2",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220928153016-67s9cz2",
+																				"updated": "20220928153221"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "网卡需要配置静态ip为\t192.168.x.1"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20220928153051-s7z86i6",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220928153051-s7z86i6"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220928153051-kez8gke",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220928153051-kez8gke",
+																				"updated": "20220928153110"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "配置好一个后cp多份，分别改名改ip"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220928150859-8s3wwxv",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220928150859-8s3wwxv"
+													},
+													"Children": [
+														{
+															"ID": "20220928150859-dj5b8h0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220928150859-dj5b8h0",
+																"updated": "20220928153406"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "开启路由转发功能"
+																}
+															]
+														},
+														{
+															"ID": "20220928153407-f4qs3o9",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20220928153407-f4qs3o9"
+															},
+															"Children": [
+																{
+																	"ID": "20220928153406-q2q1w2m",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220928153406-q2q1w2m"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220928153406-3vvjvhi",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220928153406-3vvjvhi"
+																			}
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220928143845-ktveama",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220928143845-ktveama"
+			}
+		},
+		{
+			"ID": "20220928143845-7leumu0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220928143845-7leumu0"
+			}
+		},
+		{
+			"ID": "20220928143845-n9j224f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220928143845-n9j224f"
+			}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"ID": "20220929100844-14pn54x",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220929100844-14pn54x",
+		"title": "2022年09月29日",
+		"updated": "20220929100844"
+	},
+	"Children": [
+		{
+			"ID": "20220929100844-0f1o5ao",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929100844-0f1o5ao",
+				"updated": "20220929100844"
+			}
+		}
+	]
+}
