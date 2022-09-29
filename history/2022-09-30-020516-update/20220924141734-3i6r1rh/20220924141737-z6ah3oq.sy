@@ -6,9 +6,9 @@
 		"custom-list-guides": "1",
 		"custom-location": "20220924213405-lqqgg5v",
 		"id": "20220924141737-z6ah3oq",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220929211248-5rtpfov\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:6019.2001953125,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220930021636-q7f4vyr\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220927230701-k5uimyz\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:0,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182550-ladtn7t\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "云计算",
-		"updated": "20220930021636"
+		"updated": "20220930020447"
 	},
 	"Children": [
 		{
@@ -2664,7 +2664,6 @@
 			"Type": "NodeHeading",
 			"HeadingLevel": 3,
 			"Properties": {
-				"fold": "1",
 				"id": "20220930001940-77pl5l6",
 				"updated": "20220930002601"
 			},
@@ -2680,8 +2679,6 @@
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930002004-3oe1iy3",
 				"updated": "20220930002010"
 			},
@@ -2721,8 +2718,6 @@
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930002004-9lo11uy",
 				"updated": "20220930002059"
 			},
@@ -2771,8 +2766,6 @@
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930002004-kscdl9x",
 				"updated": "20220930002049"
 			},
@@ -2821,7 +2814,6 @@
 			"Type": "NodeHeading",
 			"HeadingLevel": 3,
 			"Properties": {
-				"fold": "1",
 				"id": "20220930001821-p3xwq28",
 				"updated": "20220930013823"
 			},
@@ -2837,8 +2829,6 @@
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930013823-1j7fms9",
 				"updated": "20220930015024"
 			},
@@ -3151,7 +3141,6 @@
 			"Type": "NodeHeading",
 			"HeadingLevel": 3,
 			"Properties": {
-				"fold": "1",
 				"id": "20220930001821-t2d5at1",
 				"updated": "20220930015417"
 			},
@@ -3168,8 +3157,6 @@
 			"ListData": {},
 			"Properties": {
 				"custom-list-guides": "1",
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930015423-afi0rlv",
 				"updated": "20220930020047"
 			},
@@ -3182,7 +3169,6 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"fold": "1",
 						"id": "20220930015437-oai4sas",
 						"updated": "20220930015437"
 					},
@@ -3200,89 +3186,79 @@
 									"Data": "格式"
 								}
 							]
-						},
+						}
+					]
+				},
+				{
+					"ID": "20220930015439-b4z8348",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220930015439-b4z8348"
+					},
+					"Children": [
 						{
-							"ID": "20220930020604-deqf3mq",
-							"Type": "NodeList",
-							"ListData": {},
+							"ID": "20220930015439-ah7issr",
+							"Type": "NodeParagraph",
 							"Properties": {
-								"id": "20220930020604-deqf3mq"
+								"id": "20220930015439-ah7issr",
+								"updated": "20220930015746"
 							},
 							"Children": [
 								{
-									"ID": "20220930015439-b4z8348",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20220930015439-b4z8348"
-									},
-									"Children": [
-										{
-											"ID": "20220930015439-ah7issr",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20220930015439-ah7issr",
-												"updated": "20220930015746"
-											},
-											"Children": [
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "["
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "kbd",
-													"TextMarkTextContent": "空格"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "  判断体 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "kbd",
-													"TextMarkTextContent": "空格"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": " ]\t中括号内必须由"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong kbd",
-													"TextMarkTextContent": "空格"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "分开。"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "若内容满足则为"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "真"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "，否则为"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "假"
-												}
-											]
-										}
-									]
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "["
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "空格"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "  判断体 "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "kbd",
+									"TextMarkTextContent": "空格"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": " ]\t中括号内必须由"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong kbd",
+									"TextMarkTextContent": "空格"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "分开。"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "若内容满足则为"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "真"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "，否则为"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "假"
 								}
 							]
 						}
@@ -3296,8 +3272,8 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"fold": "1",
-						"id": "20220930015747-vmbgmsy"
+						"id": "20220930015747-vmbgmsy",
+						"updated": "20220930020047"
 					},
 					"Children": [
 						{
@@ -3319,7 +3295,8 @@
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20220930015816-cilck4v"
+								"id": "20220930015816-cilck4v",
+								"updated": "20220930020047"
 							},
 							"Children": [
 								{
@@ -3330,7 +3307,8 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"id": "20220930015813-oy1n3vn"
+										"id": "20220930015813-oy1n3vn",
+										"updated": "20220930020047"
 									},
 									"Children": [
 										{
@@ -3524,10 +3502,8 @@
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930015324-2hck1mc",
-				"updated": "20220930020057"
+				"updated": "20220930020217"
 			},
 			"Children": [
 				{
@@ -3538,9 +3514,8 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"fold": "1",
 						"id": "20220930020057-giv8g3w",
-						"updated": "20220930020057"
+						"updated": "20220930020217"
 					},
 					"Children": [
 						{
@@ -3562,7 +3537,8 @@
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20220930020110-yz7jyrz"
+								"id": "20220930020110-yz7jyrz",
+								"updated": "20220930020217"
 							},
 							"Children": [
 								{
@@ -3573,7 +3549,8 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"id": "20220930020109-7jb13vj"
+										"id": "20220930020109-7jb13vj",
+										"updated": "20220930020217"
 									},
 									"Children": [
 										{
@@ -3683,10 +3660,8 @@
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930001822-uecj76o",
-				"updated": "20220930020223"
+				"updated": "20220930020447"
 			},
 			"Children": [
 				{
@@ -3697,9 +3672,8 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"fold": "1",
 						"id": "20220930020223-c70i6zp",
-						"updated": "20220930020223"
+						"updated": "20220930020447"
 					},
 					"Children": [
 						{
@@ -3766,42 +3740,8 @@
 											"ID": "20220930020516-ji1wxwr",
 											"Type": "NodeParagraph",
 											"Properties": {
-												"id": "20220930020516-ji1wxwr",
-												"updated": "20220930020528"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "-e\t文件存在"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20220930020529-6lee2of",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20220930020529-6lee2of"
-									},
-									"Children": [
-										{
-											"ID": "20220930020529-kqfyp58",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20220930020529-kqfyp58",
-												"updated": "20220930020549"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "-d\t文件存在并且是一个目录"
-												}
-											]
+												"id": "20220930020516-ji1wxwr"
+											}
 										}
 									]
 								}
@@ -3815,264 +3755,8 @@
 			"ID": "20220930020429-xmbnhdv",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
 				"id": "20220930020429-xmbnhdv",
 				"updated": "20220930020431"
-			}
-		},
-		{
-			"ID": "20220930020757-dhnqqn4",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
-				"id": "20220930020757-dhnqqn4"
-			}
-		},
-		{
-			"ID": "20220930020758-ga9cwhw",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
-				"id": "20220930020758-ga9cwhw"
-			}
-		},
-		{
-			"ID": "20220930020758-g1eoth8",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
-				"id": "20220930020758-g1eoth8"
-			}
-		},
-		{
-			"ID": "20220930020758-s2vw8w5",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
-				"id": "20220930020758-s2vw8w5"
-			}
-		},
-		{
-			"ID": "20220930020758-3suwosc",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
-				"id": "20220930020758-3suwosc"
-			}
-		},
-		{
-			"ID": "20220930020758-g0aif7w",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"fold": "1",
-				"heading-fold": "1",
-				"id": "20220930020758-g0aif7w"
-			}
-		},
-		{
-			"ID": "20220930020943-8bbbtvz",
-			"Type": "NodeHeading",
-			"HeadingLevel": 3,
-			"Properties": {
-				"id": "20220930020943-8bbbtvz",
-				"updated": "20220930021113"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "2.1.4 for循环"
-				}
-			]
-		},
-		{
-			"ID": "20220930021113-1ghr0ny",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20220930021113-1ghr0ny",
-				"updated": "20220930021632"
-			},
-			"Children": [
-				{
-					"ID": "20220930021115-djvkbro",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"fold": "0",
-						"id": "20220930021115-djvkbro",
-						"updated": "20220930021632"
-					},
-					"Children": [
-						{
-							"ID": "20220930021115-uj8wit7",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20220930021115-uj8wit7",
-								"updated": "20220930021117"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "基本格式"
-								}
-							]
-						},
-						{
-							"ID": "20220930021520-vqbnta6",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20220930021520-vqbnta6",
-								"updated": "20220930021541"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "for 变量名 in 取值列表\ndo\n  命令\ndone\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						},
-						{
-							"ID": "20220930021524-8ndry3h",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20220930021524-8ndry3h",
-								"updated": "20220930021620"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "for((i=1;i\u003c=5;i++));do echo $i;done\n# 使用（（））双括号，可以支持C语言的一些命令\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						},
-						{
-							"ID": "20220930021528-jkwdiv5",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20220930021528-jkwdiv5",
-								"updated": "20220930021632"
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20220930021335-8kfmbgm",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930021335-8kfmbgm",
-				"updated": "20220930021342"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "\t~~~shell"
-				}
-			]
-		},
-		{
-			"ID": "20220930021257-3iq9x8b",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20220930021257-3iq9x8b",
-				"updated": "20220930021636"
-			},
-			"Children": [
-				{
-					"ID": "20220930021636-8mxucv8",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20220930021636-8mxucv8",
-						"updated": "20220930021636"
-					},
-					"Children": [
-						{
-							"ID": "20220930021636-q7f4vyr",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20220930021636-q7f4vyr",
-								"updated": "20220930021636"
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20220930021257-205cqhs",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930021257-205cqhs"
-			}
-		},
-		{
-			"ID": "20220930020758-snmc86n",
-			"Type": "NodeHeading",
-			"HeadingLevel": 1,
-			"Properties": {
-				"id": "20220930020758-snmc86n",
-				"updated": "20220930020935"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "一级标题"
-				}
-			]
-		},
-		{
-			"ID": "20220930020936-qxiazom",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930020936-qxiazom"
-			}
-		},
-		{
-			"ID": "20220930020921-dy3fi33",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930020921-dy3fi33"
 			}
 		},
 		{
@@ -4190,9 +3874,8 @@
 		{
 			"ID": "20220927230557-lhvcpz0",
 			"Type": "NodeWidget",
-			"Data": "\u003ciframe src=\"/widgets/Note Backlinks\" data-src=\"/widgets/Note Backlinks\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"height: 316px; width: 934px;\"\u003e\u003c/iframe\u003e",
+			"Data": "\u003ciframe src=\"/widgets/Note Backlinks\" data-src=\"/widgets/Note Backlinks\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"height: 269px; width: 758px;\"\u003e\u003c/iframe\u003e",
 			"Properties": {
-				"custom-backmentions-expand": "true",
 				"id": "20220927230557-lhvcpz0",
 				"updated": "20220929211352"
 			}

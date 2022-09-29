@@ -5,9 +5,9 @@
 	"Properties": {
 		"custom-location": "20220926205607-fog9eh6",
 		"id": "20220924145441-ruxsjlb",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220925135239-m2rrdh5\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930005025-5c47t9e\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:5052,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220929202742-41u9v72\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:24,\u0026amp;quot;focusEnd\u0026amp;quot;:24}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220925135236-wsh9a15\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220927222831-fqw37e4\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:4257.60009765625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220925135239-ezptj1r\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20220930012537"
+		"updated": "20220930000243"
 	},
 	"Children": [
 		{
@@ -11193,11 +11193,11 @@
 			}
 		},
 		{
-			"ID": "20220930000615-zqi6elo",
+			"ID": "20220929235656-wune1dw",
 			"Type": "NodeSuperBlock",
 			"Properties": {
-				"id": "20220930000615-zqi6elo",
-				"updated": "20220930000658"
+				"id": "20220929235656-wune1dw",
+				"updated": "20220930000243"
 			},
 			"Children": [
 				{
@@ -11213,7 +11213,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20220929202742-7jgxnb4",
-						"updated": "20220930000658"
+						"updated": "20220930000306"
 					},
 					"Children": [
 						{
@@ -11225,7 +11225,7 @@
 							},
 							"Properties": {
 								"id": "20220929235658-pjy9snv",
-								"updated": "20220930000658"
+								"updated": "20220930000306"
 							},
 							"Children": [
 								{
@@ -11260,8 +11260,7 @@
 									"Type": "NodeList",
 									"ListData": {},
 									"Properties": {
-										"id": "20220930000306-3h0pub8",
-										"updated": "20220930000658"
+										"id": "20220930000306-3h0pub8"
 									},
 									"Children": [
 										{
@@ -11299,23 +11298,15 @@
 												"Marker": "Kg=="
 											},
 											"Properties": {
-												"id": "20220930000424-3s6z4wa",
-												"updated": "20220930000658"
+												"id": "20220930000424-3s6z4wa"
 											},
 											"Children": [
 												{
 													"ID": "20220930000424-5nsgo7i",
 													"Type": "NodeParagraph",
 													"Properties": {
-														"id": "20220930000424-5nsgo7i",
-														"updated": "20220930000658"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "-u\u003c变量名\u003e        从当前环境删除此变量"
-														}
-													]
+														"id": "20220930000424-5nsgo7i"
+													}
 												}
 											]
 										}
@@ -11326,17 +11317,24 @@
 					]
 				},
 				{
-					"ID": "20220929202742-hi2cssf",
+					"ID": "20220930000243-tzzyzg3",
 					"Type": "NodeParagraph",
 					"Properties": {
-						"id": "20220929202742-hi2cssf",
-						"updated": "20220930000616"
+						"id": "20220930000243-tzzyzg3",
+						"updated": "20220930000243"
 					}
 				},
 				{
 					"Type": "NodeSuperBlockCloseMarker"
 				}
 			]
+		},
+		{
+			"ID": "20220929202742-hi2cssf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929202742-hi2cssf"
+			}
 		},
 		{
 			"ID": "20220929202742-b9hihqz",
@@ -11346,384 +11344,39 @@
 			}
 		},
 		{
-			"ID": "20220930000932-h543hjc",
-			"Type": "NodeSuperBlock",
-			"Properties": {
-				"id": "20220930000932-h543hjc",
-				"updated": "20220930001237"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20220929202742-y02uhsr",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220929202742-y02uhsr",
-						"updated": "20220930000933"
-					},
-					"Children": [
-						{
-							"ID": "20220930000933-d7bdbsu",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930000933-d7bdbsu",
-								"updated": "20220930000933"
-							},
-							"Children": [
-								{
-									"ID": "20220930000933-9ft1q3g",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930000933-9ft1q3g",
-										"updated": "20220930000940"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "source"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220930000941-vz3yfjz",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930000941-vz3yfjz",
-						"updated": "20220930001005"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tsource命令也称为“点命令”，"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "strong",
-							"TextMarkTextContent": "通常用“.”来替代"
-						}
-					]
-				},
-				{
-					"ID": "20220930001057-dyiikqk",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220930001057-dyiikqk",
-						"updated": "20220930001333"
-					},
-					"Children": [
-						{
-							"ID": "20220930001059-cxd96bl",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930001059-cxd96bl",
-								"updated": "20220930001059"
-							},
-							"Children": [
-								{
-									"ID": "20220930001059-qatqwga",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930001059-qatqwga",
-										"updated": "20220930001223"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "通常用于重新执行刚修改的初始化文件，使之立即生效   "
-										},
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "a",
-											"TextMarkAHref": "siyuan://blocks/20220929213614-nkdnood",
-											"TextMarkTextContent": "示例"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ID": "20220930001305-yr9bn7d",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930001305-yr9bn7d",
-								"updated": "20220930001333"
-							},
-							"Children": [
-								{
-									"ID": "20220930001305-dnzhu46",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930001305-dnzhu46",
-										"updated": "20220930001314"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "用来执行脚本"
-										}
-									]
-								},
-								{
-									"ID": "20220930001317-pkbdhe1",
-									"Type": "NodeList",
-									"ListData": {},
-									"Properties": {
-										"id": "20220930001317-pkbdhe1",
-										"updated": "20220930001333"
-									},
-									"Children": [
-										{
-											"ID": "20220930001316-ft2jgxx",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"id": "20220930001316-ft2jgxx",
-												"updated": "20220930001333"
-											},
-											"Children": [
-												{
-													"ID": "20220930001316-hem95g2",
-													"Type": "NodeCodeBlock",
-													"IsFencedCodeBlock": true,
-													"Properties": {
-														"id": "20220930001316-hem95g2",
-														"updated": "20220930001333"
-													},
-													"Children": [
-														{
-															"Type": "NodeCodeBlockFenceOpenMarker",
-															"Data": "```"
-														},
-														{
-															"Type": "NodeCodeBlockFenceInfoMarker",
-															"CodeBlockInfo": "c2hlbGw="
-														},
-														{
-															"Type": "NodeCodeBlockCode",
-															"Data": "source filename\t\t# filename必须是可执行的脚本文件\n或者\n. filename\t\t\t# 注意“.”号后面还有一个空格\n"
-														},
-														{
-															"Type": "NodeCodeBlockFenceCloseMarker",
-															"Data": "```"
-														}
-													]
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220930001237-02wtpp8",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930001237-02wtpp8"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
-		},
-		{
-			"ID": "20220930001435-zhh4zmb",
+			"ID": "20220929202742-y02uhsr",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930001435-zhh4zmb",
-				"updated": "20220930002744"
+				"id": "20220929202742-y02uhsr"
 			}
 		},
 		{
-			"ID": "20220930002750-lqs0k2p",
-			"Type": "NodeSuperBlock",
+			"ID": "20220929202742-wneeugt",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930002750-lqs0k2p",
-				"updated": "20220930004336"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20220929202742-avcgn7u",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220929202742-avcgn7u",
-						"updated": "20220930002751"
-					},
-					"Children": [
-						{
-							"ID": "20220930002751-xqu4whs",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930002751-xqu4whs",
-								"updated": "20220930002751"
-							},
-							"Children": [
-								{
-									"ID": "20220930002751-b69kpna",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930002751-b69kpna",
-										"updated": "20220930002753"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "read"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220930002753-dr44e5l",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930002753-dr44e5l",
-						"updated": "20220930002756"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tread 内部命令被用来从标准输入读取单行数据。这个命令可以用来读取键盘输入，当使用重定向的时候，可以读取文件中的一行数据。"
-						}
-					]
-				},
-				{
-					"ID": "20220930003007-wyjt5ms",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930003007-wyjt5ms",
-						"updated": "20220930003023"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tread  [options]  "
-						}
-					]
-				},
-				{
-					"ID": "20220930003051-24oam0o",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930003051-24oam0o",
-						"updated": "20220930003126"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-p  \"这里是提示信息\"\t在要求用户输入时，显示提示信息"
-						}
-					]
-				},
-				{
-					"ID": "20220930003126-fpw8dm5",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930003126-fpw8dm5",
-						"updated": "20220930004201"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-t  n\t\t\t\t\t指定read等待输入的秒数，超时返回一个非零值\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220930001209-yiv1h7q",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"ID": "20220930002945-wve1hor",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930002945-wve1hor"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-s \t\t\t\t\t安静模式，在输入字符时不再屏幕上显示，例如login时输入密码。"
-						}
-					]
-				},
-				{
-					"ID": "20220930004223-lt44t1b",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930004223-lt44t1b",
-						"updated": "20220930004306"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-n \u003c数字\u003e\t\t\t后跟一个数字，定义输入文本的长度，很实用。"
-						}
-					]
-				},
-				{
-					"ID": "20220930004331-tm378w3",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930004331-tm378w3",
-						"updated": "20220930004336"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t-r 屏蔽\\\t\t\t\t如果没有该选项，则\\作为一个转义字符，有的话 \\就是个正常的字符了。"
-						}
-					]
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
+				"id": "20220929202742-wneeugt"
+			}
+		},
+		{
+			"ID": "20220929202742-sa3jq21",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929202742-sa3jq21"
+			}
+		},
+		{
+			"ID": "20220929202742-avcgn7u",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929202742-avcgn7u"
+			}
+		},
+		{
+			"ID": "20220929202742-z1g73o8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929202742-z1g73o8"
+			}
 		},
 		{
 			"ID": "20220929202742-w4fh5e3",
@@ -11733,139 +11386,18 @@
 			}
 		},
 		{
-			"ID": "20220930004413-9jxemlj",
-			"Type": "NodeSuperBlock",
+			"ID": "20220929202742-1ck2hsk",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930004413-9jxemlj",
-				"updated": "20220930005010"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20220929202742-1ck2hsk",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220929202742-1ck2hsk",
-						"updated": "20220930004653"
-					},
-					"Children": [
-						{
-							"ID": "20220930004414-f8jkr3x",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930004414-f8jkr3x",
-								"updated": "20220930004653"
-							},
-							"Children": [
-								{
-									"ID": "20220930004414-t333dyt",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930004414-t333dyt",
-										"updated": "20220930004419"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "export"
-										}
-									]
-								},
-								{
-									"ID": "20220930004419-89ekxsl",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930004419-89ekxsl",
-										"updated": "20220930004653"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "export 可新增，修改或删除环境变量，供后续执行的程序使用。export 的效力仅限于该次登陆操作。"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220929202742-41u9v72",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220929202742-41u9v72",
-						"updated": "20220930004749"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\texport \t[options]\t\t[变量名=变量值]"
-						}
-					]
-				},
-				{
-					"ID": "20220930004750-u42zszv",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930004750-u42zszv",
-						"updated": "20220930004820"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-p\t\t\t列出当前环境所有环境变量"
-						}
-					]
-				},
-				{
-					"ID": "20220930004928-bkkvvc0",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930004928-bkkvvc0",
-						"updated": "20220930005010"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-n \u003c变量名\u003e\t删除指定的变量。变量实际上并未删除，只是不会输出到后续指令的执行环境中。"
-						}
-					]
-				},
-				{
-					"ID": "20220930004902-z32uj4m",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930004902-z32uj4m",
-						"updated": "20220930004926"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t- 定义环境变量\t\t\t"
-						},
-						{
-							"Type": "NodeTextMark",
-							"TextMarkType": "a",
-							"TextMarkAHref": "siyuan://blocks/20220930004921-yfa5o4d",
-							"TextMarkTextContent": "示例"
-						}
-					]
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
+				"id": "20220929202742-1ck2hsk"
+			}
+		},
+		{
+			"ID": "20220929202742-41u9v72",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929202742-41u9v72"
+			}
 		},
 		{
 			"ID": "20220929202742-bzfv2gn",
@@ -11875,411 +11407,17 @@
 			}
 		},
 		{
-			"ID": "20220930005024-dhidehe",
-			"Type": "NodeSuperBlock",
-			"Properties": {
-				"id": "20220930005024-dhidehe",
-				"updated": "20220930012537"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20220929202742-qs1phst",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220929202742-qs1phst",
-						"updated": "20220930005035"
-					},
-					"Children": [
-						{
-							"ID": "20220930005035-1wvouu1",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930005035-1wvouu1",
-								"updated": "20220930005035"
-							},
-							"Children": [
-								{
-									"ID": "20220930005035-sy4ch1v",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930005035-sy4ch1v",
-										"updated": "20220930005037"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "free"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220930005037-5uziuii",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005037-5uziuii",
-						"updated": "20220930005057"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tfree指令会显示内存的使用情况，包括实体内存，虚拟的交换文件内存，共享内存区段，以及系统核心使用的缓冲区等。"
-						}
-					]
-				},
-				{
-					"ID": "20220930005058-6wrwizh",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005058-6wrwizh",
-						"updated": "20220930005333"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\tfree \t\t[options]"
-						}
-					]
-				},
-				{
-					"ID": "20220930005339-01ffkzo",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005339-01ffkzo",
-						"updated": "20220930005423"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-b \t\t\t以Byte为单位显示内存使用情况。"
-						}
-					]
-				},
-				{
-					"ID": "20220930005428-q135ba6",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005428-q135ba6"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-k 　\t\t以KB为单位显示内存使用情况。"
-						}
-					]
-				},
-				{
-					"ID": "20220930005440-gbp7oyb",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005440-gbp7oyb"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-m 　\t\t以MB为单位显示内存使用情况。"
-						}
-					]
-				},
-				{
-					"ID": "20220930005451-byh8d17",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005451-byh8d17",
-						"updated": "20220930005506"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-h 　\t\t以合适的单位显示内存使用情况，最大为三位数，自动计算对应的单位值。"
-						}
-					]
-				},
-				{
-					"ID": "20220927222831-fqw37e4",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220927222831-fqw37e4"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-o 　\t\t不显示缓冲区调节列。"
-						}
-					]
-				},
-				{
-					"ID": "20220930005524-kvjk2pc",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005524-kvjk2pc",
-						"updated": "20220930005529"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-s\u003c间隔秒数\u003e \t持续观察内存使用状况。"
-						}
-					]
-				},
-				{
-					"ID": "20220930005536-tw7859y",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930005536-tw7859y",
-						"updated": "20220930005543"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "\t\t\t-t \t\t\t显示内存总和列。"
-						}
-					]
-				},
-				{
-					"ID": "20220930012254-hixqqi2",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20220930012254-hixqqi2",
-						"updated": "20220930012537"
-					},
-					"Children": [
-						{
-							"ID": "20220930012537-w1wr926",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20220930012537-w1wr926",
-								"updated": "20220930012537"
-							},
-							"Children": [
-								{
-									"ID": "20220930012537-fa8c2uo",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20220930012537-fa8c2uo",
-										"updated": "20220930012537"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "表头"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220930005656-k1o6syw",
-					"Type": "NodeTable",
-					"TableAligns": [
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					"Properties": {
-						"colgroup": "||width: 63px;||",
-						"id": "20220930005656-k1o6syw",
-						"style": "text-align: center;",
-						"updated": "20220930012157"
-					},
-					"Children": [
-						{
-							"Type": "NodeTableHead",
-							"Data": "thead",
-							"Children": [
-								{
-									"Type": "NodeTableRow",
-									"Data": "tr",
-									"Children": [
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "total"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "used"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "free"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "shared"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "buffers/cached"
-												}
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "总和"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "已使用"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "未使用"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "多个进程共享的内存总额"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "磁盘缓存的大小"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20220930010141-bfluf7r",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20220930010141-bfluf7r",
-						"updated": "20220930012157"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
-		},
-		{
-			"ID": "20220930005024-go5aa3k",
+			"ID": "20220929202742-qs1phst",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930005024-go5aa3k"
+				"id": "20220929202742-qs1phst"
 			}
 		},
 		{
-			"ID": "20220930005025-npjvplo",
+			"ID": "20220927222831-fqw37e4",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930005025-npjvplo"
-			}
-		},
-		{
-			"ID": "20220930005025-sxsqsax",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930005025-sxsqsax"
-			}
-		},
-		{
-			"ID": "20220930010126-4tj0tok",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930010126-4tj0tok"
-			}
-		},
-		{
-			"ID": "20220930005025-zp4kj8j",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930005025-zp4kj8j"
-			}
-		},
-		{
-			"ID": "20220930005025-5c47t9e",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930005025-5c47t9e"
+				"id": "20220927222831-fqw37e4"
 			}
 		}
 	]

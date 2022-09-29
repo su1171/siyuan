@@ -4,9 +4,9 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20220929092530-sufdwxv",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220929092530-mt77deg\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930020834-8k7rm7e\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:400,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220929221505-hlvwk7g\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:4,\u0026amp;quot;focusEnd\u0026amp;quot;:4}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220929092530-mt77deg\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220929095604-qfbbot1\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:530.4000244140625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220929093153-2djnhih\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "2022年09月29日",
-		"updated": "20220930020841"
+		"updated": "20220930005016"
 	},
 	"Children": [
 		{
@@ -32,7 +32,7 @@
 			},
 			"Properties": {
 				"id": "20220929092535-4jet3zs",
-				"updated": "20220930010210"
+				"updated": "20220930005016"
 			},
 			"Children": [
 				{
@@ -371,13 +371,11 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"id": "20220929220503-tyi8y0n",
-						"updated": "20220930010210"
+						"id": "20220929220503-tyi8y0n"
 					},
 					"Children": [
 						{
-							"Type": "NodeTaskListItemMarker",
-							"TaskListItemChecked": true
+							"Type": "NodeTaskListItemMarker"
 						},
 						{
 							"ID": "20220929220503-emjahwq",
@@ -739,6 +737,7 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
+						"fold": "1",
 						"id": "20220929170645-a7ltsly",
 						"updated": "20220929170802"
 					},
@@ -973,28 +972,8 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20220929170101-pdxm3pi",
-				"updated": "20220930020834"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "常用判断条件"
-				}
-			]
-		},
-		{
-			"ID": "20220930020834-8k7rm7e",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930020834-8k7rm7e",
-				"updated": "20220930020841"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "去打麻将萨克我就二分"
-				}
-			]
+				"updated": "20220929170101"
+			}
 		}
 	]
 }

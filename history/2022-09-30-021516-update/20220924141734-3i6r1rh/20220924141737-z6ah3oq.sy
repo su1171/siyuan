@@ -6,9 +6,9 @@
 		"custom-list-guides": "1",
 		"custom-location": "20220924213405-lqqgg5v",
 		"id": "20220924141737-z6ah3oq",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220929211248-5rtpfov\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:6019.2001953125,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220930021636-q7f4vyr\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220927230701-k5uimyz\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:0,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182550-ladtn7t\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "云计算",
-		"updated": "20220930021636"
+		"updated": "20220930021115"
 	},
 	"Children": [
 		{
@@ -3896,7 +3896,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20220930021113-1ghr0ny",
-				"updated": "20220930021632"
+				"updated": "20220930021115"
 			},
 			"Children": [
 				{
@@ -3909,7 +3909,7 @@
 					"Properties": {
 						"fold": "0",
 						"id": "20220930021115-djvkbro",
-						"updated": "20220930021632"
+						"updated": "20220930021115"
 					},
 					"Children": [
 						{
@@ -3925,67 +3925,25 @@
 									"Data": "基本格式"
 								}
 							]
-						},
+						}
+					]
+				},
+				{
+					"ID": "20220930021515-dh4mvhc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220930021515-dh4mvhc"
+					},
+					"Children": [
 						{
-							"ID": "20220930021520-vqbnta6",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20220930021520-vqbnta6",
-								"updated": "20220930021541"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "for 变量名 in 取值列表\ndo\n  命令\ndone\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						},
-						{
-							"ID": "20220930021524-8ndry3h",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20220930021524-8ndry3h",
-								"updated": "20220930021620"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "for((i=1;i\u003c=5;i++));do echo $i;done\n# 使用（（））双括号，可以支持C语言的一些命令\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						},
-						{
-							"ID": "20220930021528-jkwdiv5",
+							"ID": "20220930021515-nqwbm4p",
 							"Type": "NodeParagraph",
 							"Properties": {
-								"id": "20220930021528-jkwdiv5",
-								"updated": "20220930021632"
+								"id": "20220930021515-nqwbm4p"
 							}
 						}
 					]
@@ -4008,36 +3966,10 @@
 		},
 		{
 			"ID": "20220930021257-3iq9x8b",
-			"Type": "NodeList",
-			"ListData": {},
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930021257-3iq9x8b",
-				"updated": "20220930021636"
-			},
-			"Children": [
-				{
-					"ID": "20220930021636-8mxucv8",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20220930021636-8mxucv8",
-						"updated": "20220930021636"
-					},
-					"Children": [
-						{
-							"ID": "20220930021636-q7f4vyr",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20220930021636-q7f4vyr",
-								"updated": "20220930021636"
-							}
-						}
-					]
-				}
-			]
+				"id": "20220930021257-3iq9x8b"
+			}
 		},
 		{
 			"ID": "20220930021257-205cqhs",

@@ -4,9 +4,9 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20220929211029-j2rk9en",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220929211136-g3d3y9l\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930002211-3i9a99m\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:2023.199951171875,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220930002311-m6w47vc\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:4,\u0026amp;quot;focusEnd\u0026amp;quot;:4}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220929211136-g3d3y9l\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220929211029-h6l1c9m\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:332,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220929211138-yrte4w4\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:11,\u0026amp;quot;focusEnd\u0026amp;quot;:11}",
 		"title": "大纲",
-		"updated": "20220930001709"
+		"updated": "20220929211138"
 	},
 	"Children": [
 		{
@@ -1454,30 +1454,78 @@
 							]
 						},
 						{
-							"ID": "20220930012831-dyqrwwv",
+							"ID": "20220930001528-ebixlj7",
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20220930012831-dyqrwwv"
+								"id": "20220930001528-ebixlj7",
+								"updated": "20220930001709"
 							},
 							"Children": [
 								{
-									"ID": "20220930012831-ln4s5tf",
+									"ID": "20220930001527-41stazc",
 									"Type": "NodeListItem",
 									"ListData": {
 										"BulletChar": 42,
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"id": "20220930012831-ln4s5tf"
+										"id": "20220930001527-41stazc",
+										"updated": "20220930001709"
 									},
 									"Children": [
 										{
-											"ID": "20220930012831-z5hicio",
+											"ID": "20220930001527-unqibsv",
 											"Type": "NodeParagraph",
 											"Properties": {
-												"id": "20220930012831-z5hicio"
-											}
+												"id": "20220930001527-unqibsv",
+												"updated": "20220930001558"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "shell基础"
+												}
+											]
+										},
+										{
+											"ID": "20220930001650-xkpkuza",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930001650-xkpkuza",
+												"updated": "20220930001709"
+											},
+											"Children": [
+												{
+													"ID": "20220930001649-khc3c1m",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930001649-khc3c1m",
+														"updated": "20220930001709"
+													},
+													"Children": [
+														{
+															"ID": "20220930001649-apf7b7l",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930001649-apf7b7l",
+																"updated": "20220930001709"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "shell脚本三种执行方式的区别"
+																}
+															]
+														}
+													]
+												}
+											]
 										}
 									]
 								}
@@ -1486,34 +1534,6 @@
 					]
 				}
 			]
-		},
-		{
-			"ID": "20220930012739-kk42pcx",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930012739-kk42pcx",
-				"updated": "20220930012750"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "`"
-				}
-			]
-		},
-		{
-			"ID": "20220930012712-w53fl7j",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930012712-w53fl7j"
-			}
-		},
-		{
-			"ID": "20220930012715-jlzxx49",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930012715-jlzxx49"
-			}
 		},
 		{
 			"ID": "20220930001607-kfeuu7f",
