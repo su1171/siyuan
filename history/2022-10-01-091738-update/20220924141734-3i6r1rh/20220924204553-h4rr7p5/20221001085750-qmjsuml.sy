@@ -1,0 +1,100 @@
+{
+	"ID": "20221001085750-qmjsuml",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221001085750-qmjsuml",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20221001085757-s5ambuk\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001090326-mrxeggy\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:0,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001085910-nub9wwd\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:16,\u0026amp;quot;focusEnd\u0026amp;quot;:16}",
+		"title": "文档",
+		"updated": "20221001090326"
+	},
+	"Children": [
+		{
+			"ID": "20221001085757-s5ambuk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001085757-s5ambuk",
+				"updated": "20221001085940"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/Linux-20220924144344-aab25wa.pdf",
+					"TextMarkTextContent": "linux手写笔记"
+				}
+			]
+		},
+		{
+			"ID": "20221001085750-2ipyxf9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001085750-2ipyxf9",
+				"updated": "20221001085834"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/Shell脚本教程-20221001085834-re5qysh.pdf",
+					"TextMarkTextContent": "Shell脚本教程.pdf"
+				}
+			]
+		},
+		{
+			"ID": "20221001085835-ehe3s2h",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001085835-ehe3s2h",
+				"updated": "20221001085848"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/MySQL教程-20221001085848-2mkv6fv.pdf",
+					"TextMarkTextContent": "MySQL教程.pdf"
+				}
+			]
+		},
+		{
+			"ID": "20221001085836-voux2mq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001085836-voux2mq",
+				"updated": "20221001085910"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/鸟哥的 Linux 私房菜：基础学习篇 第四版 wizardforcel z-lib.org-20221001085910-ib7fvv2.pdf",
+					"TextMarkTextContent": "鸟哥的 Linux 私房菜：基础学习篇 第四版.pdf"
+				}
+			]
+		},
+		{
+			"ID": "20221001085910-nub9wwd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001085910-nub9wwd",
+				"updated": "20221001090325"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/shell脚本特训大全100例-20221001090325-8qd984p.docx",
+					"TextMarkTextContent": "shell脚本特训大全100例.docx"
+				}
+			]
+		},
+		{
+			"ID": "20221001090326-mrxeggy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001090326-mrxeggy"
+			}
+		}
+	]
+}

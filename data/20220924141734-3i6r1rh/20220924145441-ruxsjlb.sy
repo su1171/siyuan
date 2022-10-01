@@ -5,9 +5,9 @@
 	"Properties": {
 		"custom-location": "20220926205607-fog9eh6",
 		"id": "20220924145441-ruxsjlb",
-		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220925135239-m2rrdh5\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930005025-5c47t9e\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:5052,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220929202742-41u9v72\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:24,\u0026amp;quot;focusEnd\u0026amp;quot;:24}",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220930002750-lqs0k2p\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001150313-6hh6429\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:3401.60009765625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001223413-jf6oyr5\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20220930012537"
+		"updated": "20221001223413"
 	},
 	"Children": [
 		{
@@ -11568,7 +11568,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220930002750-lqs0k2p",
-				"updated": "20220930004336"
+				"updated": "20221001091055"
 			},
 			"Children": [
 				{
@@ -11717,6 +11717,98 @@
 						{
 							"Type": "NodeText",
 							"Data": "\t\t-r 屏蔽\\\t\t\t\t如果没有该选项，则\\作为一个转义字符，有的话 \\就是个正常的字符了。"
+						}
+					]
+				},
+				{
+					"ID": "20220930161549-pu7a0ri",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20220930161549-pu7a0ri",
+						"updated": "20221001091055"
+					},
+					"Children": [
+						{
+							"ID": "20220930161600-1y1n1jb",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20220930161600-1y1n1jb",
+								"updated": "20221001091055"
+							},
+							"Children": [
+								{
+									"ID": "20220930161600-c4fuokb",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20220930161600-c4fuokb",
+										"updated": "20220930161618"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "read换行"
+										}
+									]
+								},
+								{
+									"ID": "20221001091001-hl4dtdw",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001091001-hl4dtdw"
+									}
+								},
+								{
+									"ID": "20220930161619-28p33f1",
+									"Type": "NodeCodeBlock",
+									"IsFencedCodeBlock": true,
+									"Properties": {
+										"id": "20220930161619-28p33f1",
+										"updated": "20221001091010"
+									},
+									"Children": [
+										{
+											"Type": "NodeCodeBlockFenceOpenMarker",
+											"Data": "```"
+										},
+										{
+											"Type": "NodeCodeBlockFenceInfoMarker",
+											"CodeBlockInfo": "c2hlbGw="
+										},
+										{
+											"Type": "NodeCodeBlockCode",
+											"Data": "read  -p $'这是提示信息\\n'   x    \t#必须使用单引号，前面加$符，加换行符\n"
+										},
+										{
+											"Type": "NodeCodeBlockFenceCloseMarker",
+											"Data": "```"
+										}
+									]
+								},
+								{
+									"ID": "20221001091006-b8toonh",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001091006-b8toonh",
+										"updated": "20221001091055"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "或者  "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "printf \u0026quot;\\n\u0026quot;"
+										}
+									]
+								}
+							]
 						}
 					]
 				},
@@ -12248,18 +12340,146 @@
 			}
 		},
 		{
-			"ID": "20220930005025-npjvplo",
-			"Type": "NodeParagraph",
+			"ID": "20221001141007-lo6wizw",
+			"Type": "NodeSuperBlock",
 			"Properties": {
-				"id": "20220930005025-npjvplo"
-			}
-		},
-		{
-			"ID": "20220930005025-sxsqsax",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20220930005025-sxsqsax"
-			}
+				"id": "20221001141007-lo6wizw",
+				"updated": "20221001143643"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20220930005025-npjvplo",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20220930005025-npjvplo",
+						"updated": "20221001141012"
+					},
+					"Children": [
+						{
+							"ID": "20221001141009-348jlgz",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001141009-348jlgz",
+								"updated": "20221001141012"
+							},
+							"Children": [
+								{
+									"ID": "20221001141009-lp98spb",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001141009-lp98spb",
+										"updated": "20221001141012"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "时间戳"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221001141012-sgb9jct",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001141012-sgb9jct",
+						"updated": "20221001143641"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "\tlinux中有三种时间戳分别是 atime ，ctime ， mtime"
+						}
+					]
+				},
+				{
+					"ID": "20221001143007-yqrrbvv",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001143007-yqrrbvv",
+						"updated": "20221001143642"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "\tatime：访问时间。\t\t"
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "strong",
+							"TextMarkTextContent": "访问文件内容"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "会更改这个时间"
+						}
+					]
+				},
+				{
+					"ID": "20221001143018-i6onvrk",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001143018-i6onvrk",
+						"updated": "20221001143643"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "\tctime：更改时间\t\t"
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "strong",
+							"TextMarkTextContent": "修改文件内容"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "会更改这个时间"
+						}
+					]
+				},
+				{
+					"ID": "20221001143132-dzj6j5r",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001143132-dzj6j5r",
+						"updated": "20221001143643"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "\tmtime：改动时间\t\t"
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "strong",
+							"TextMarkTextContent": "修改文件内容与修改文件权限"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "会更改这个时间"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
 		},
 		{
 			"ID": "20220930010126-4tj0tok",
@@ -12269,18 +12489,922 @@
 			}
 		},
 		{
-			"ID": "20220930005025-zp4kj8j",
+			"ID": "20221001150325-u8iyx4p",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221001150325-u8iyx4p",
+				"updated": "20221001151456"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20220930005025-zp4kj8j",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20220930005025-zp4kj8j",
+						"updated": "20221001151456"
+					},
+					"Children": [
+						{
+							"ID": "20221001150327-u3qpwew",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001150327-u3qpwew",
+								"updated": "20221001151456"
+							},
+							"Children": [
+								{
+									"ID": "20221001150327-kuwmpss",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001150327-kuwmpss",
+										"updated": "20221001150348"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "suid（set uid）"
+										}
+									]
+								},
+								{
+									"ID": "20221001150350-47duntc",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001150350-47duntc",
+										"updated": "20221001150529"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "SUID (Set UID)是Linux中的一种特殊权限,其功能为用户运行某个程序时，如果该程序有SUID权限，那么程序运行为进程时，进程的属主不是发起者，而是程序文件所属的属主。但是SUID权限的设置"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "只针对二进制可执行文件"
+										},
+										{
+											"Type": "NodeText",
+											"Data": ",对于非可执行文件设置SUID没有任何意义。"
+										}
+									]
+								},
+								{
+									"ID": "20221001150439-5irkvbq",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221001150439-5irkvbq",
+										"updated": "20221001151456"
+									},
+									"Children": [
+										{
+											"ID": "20221001150433-vnqdbqe",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "0",
+												"id": "20221001150433-vnqdbqe",
+												"updated": "20221001151456"
+											},
+											"Children": [
+												{
+													"ID": "20221001150433-eijyhtr",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221001150433-eijyhtr",
+														"updated": "20221001150445"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "设置权限"
+														}
+													]
+												},
+												{
+													"ID": "20221001150457-82jvige",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221001150457-82jvige"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "chmod u+s filename   设置SUID位\nchmod u-s filename   去掉SUID设置\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221001150638-6qe8nw6",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221001150638-6qe8nw6",
+												"updated": "20221001150747"
+											},
+											"Children": [
+												{
+													"ID": "20221001150638-m5rorui",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221001150638-m5rorui",
+														"updated": "20221001150646"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "查看权限"
+														}
+													]
+												},
+												{
+													"ID": "20221001150653-2zyprpl",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221001150653-2zyprpl",
+														"updated": "20221001150747"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "ls -l  ，原x权限的位置被s权限替代，代表此文件有了suid的权限"
+														}
+													]
+												},
+												{
+													"ID": "20221001150647-obnq9m1",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221001150647-obnq9m1",
+														"updated": "20221001150650"
+													},
+													"Children": [
+														{
+															"Type": "NodeImage",
+															"Data": "span",
+															"Children": [
+																{
+																	"Type": "NodeBang"
+																},
+																{
+																	"Type": "NodeOpenBracket"
+																},
+																{
+																	"Type": "NodeLinkText",
+																	"Data": "image"
+																},
+																{
+																	"Type": "NodeCloseBracket"
+																},
+																{
+																	"Type": "NodeOpenParen"
+																},
+																{
+																	"Type": "NodeLinkDest",
+																	"Data": "assets/image-20221001150650-hw7vvhm.png"
+																},
+																{
+																	"Type": "NodeCloseParen"
+																}
+															]
+														},
+														{
+															"Type": "NodeText",
+															"Data": "​"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221001150622-zz1uec8",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001150622-zz1uec8",
+						"updated": "20221001150625"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221001150312-rj1so6z",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930005025-zp4kj8j"
+				"id": "20221001150312-rj1so6z"
 			}
 		},
 		{
-			"ID": "20220930005025-5c47t9e",
+			"ID": "20221001150803-a44zsci",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221001150803-a44zsci",
+				"updated": "20221001152025"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221001150313-old3r2t",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221001150313-old3r2t",
+						"updated": "20221001152025"
+					},
+					"Children": [
+						{
+							"ID": "20221001150805-s6k7zzq",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001150805-s6k7zzq",
+								"updated": "20221001152025"
+							},
+							"Children": [
+								{
+									"ID": "20221001150805-3ik4rl9",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001150805-3ik4rl9",
+										"updated": "20221001150948"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "sgid"
+										}
+									]
+								},
+								{
+									"ID": "20221001150809-7ypf6yr",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001150809-7ypf6yr",
+										"updated": "20221001152022"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "对可执行文件设置sgid"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "：其它用户执行改文件时，将以此文件所属组的权限执行"
+										}
+									]
+								},
+								{
+									"ID": "20221001151709-qx9o1b4",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001151709-qx9o1b4",
+										"updated": "20221001152025"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "对目录设置sgid"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "：该目录下创建的所有文件或文件夹都会保持同样的属组权限属性（就相当于创建的文件或目录都会保持与上一级目录相同的属组）"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221001151503-yoauk81",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001151503-yoauk81"
+							},
+							"Children": [
+								{
+									"ID": "20221001151503-303fizl",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001151503-303fizl",
+										"updated": "20221001151507"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "设置权限"
+										}
+									]
+								},
+								{
+									"ID": "20221001151507-x5d70j8",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001151507-x5d70j8",
+										"updated": "20221001151524"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "chmod g+s filename   设置SGID位\nchmod g-s filename   去掉SGID设置"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221001150313-hzvt0az",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001150313-hzvt0az",
+						"updated": "20221001150803"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221001150313-9wyt92y",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930005025-5c47t9e"
+				"id": "20221001150313-9wyt92y"
 			}
+		},
+		{
+			"ID": "20221001152111-o1p2cb1",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221001152111-o1p2cb1",
+				"updated": "20221001152542"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221001150313-m13qs0b",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221001150313-m13qs0b",
+						"updated": "20221001152542"
+					},
+					"Children": [
+						{
+							"ID": "20221001152113-0pujtd4",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001152113-0pujtd4",
+								"updated": "20221001152113"
+							},
+							"Children": [
+								{
+									"ID": "20221001152113-5josqdr",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001152113-5josqdr",
+										"updated": "20221001152115"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "sbit"
+										}
+									]
+								},
+								{
+									"ID": "20221001152116-yjqqztb",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001152116-yjqqztb",
+										"updated": "20221001152118"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "SBIT 权限仅对目录有效，一旦目录设定了 SBIT 权限，则用户在此目录下创建的文件或目录，就只有自己和 root 才有权利修改或删除该文件"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221001152155-j8jybin",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001152155-j8jybin",
+								"updated": "20221001152542"
+							},
+							"Children": [
+								{
+									"ID": "20221001152155-lavykfe",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001152155-lavykfe",
+										"updated": "20221001152158"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "设置"
+										}
+									]
+								},
+								{
+									"ID": "20221001152508-i9e7947",
+									"Type": "NodeCodeBlock",
+									"IsFencedCodeBlock": true,
+									"Properties": {
+										"id": "20221001152508-i9e7947",
+										"updated": "20221001152542"
+									},
+									"Children": [
+										{
+											"Type": "NodeCodeBlockFenceOpenMarker",
+											"Data": "```"
+										},
+										{
+											"Type": "NodeCodeBlockFenceInfoMarker",
+											"CodeBlockInfo": "c2hlbGw="
+										},
+										{
+											"Type": "NodeCodeBlockCode",
+											"Data": "chmod o+t test01  ## 添加SBIT权限\nchmod o-t test01  ## 删除sbit权限\n"
+										},
+										{
+											"Type": "NodeCodeBlockFenceCloseMarker",
+											"Data": "```"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221001152203-jvsmh5o",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001152203-jvsmh5o"
+					}
+				},
+				{
+					"ID": "20221001152204-rhgnf9q",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221001152204-rhgnf9q",
+						"updated": "20221001152206"
+					},
+					"Children": [
+						{
+							"ID": "20221001152206-0v23zxt",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001152206-0v23zxt",
+								"updated": "20221001152206"
+							},
+							"Children": [
+								{
+									"ID": "20221001152206-9lvthlj",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001152206-9lvthlj",
+										"updated": "20221001152209"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "查看"
+										}
+									]
+								},
+								{
+									"ID": "20221001152209-7s31y9m",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001152209-7s31y9m",
+										"updated": "20221001152247"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "ls -l  ，原其他人的可执行权限被 t 占位"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221001152249-tju853q",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001152249-tju853q",
+						"updated": "20221001152421"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "\t"
+						},
+						{
+							"Type": "NodeImage",
+							"Data": "span",
+							"Properties": {
+								"parent-style": "max-width: 481px;",
+								"style": "width: 471px;"
+							},
+							"Children": [
+								{
+									"Type": "NodeBang"
+								},
+								{
+									"Type": "NodeOpenBracket"
+								},
+								{
+									"Type": "NodeLinkText",
+									"Data": "image"
+								},
+								{
+									"Type": "NodeCloseBracket"
+								},
+								{
+									"Type": "NodeOpenParen"
+								},
+								{
+									"Type": "NodeLinkDest",
+									"Data": "assets/image-20221001152421-waef0b8.png"
+								},
+								{
+									"Type": "NodeCloseParen"
+								}
+							]
+						},
+						{
+							"Type": "NodeKramdownSpanIAL",
+							"Data": "{: style=\"width: 471px;\" parent-style=\"max-width: 481px;\"}"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​"
+						}
+					]
+				},
+				{
+					"ID": "20221001150313-t83w34k",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001150313-t83w34k",
+						"updated": "20221001152112"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221001150313-4w8zj6p",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001150313-4w8zj6p"
+			}
+		},
+		{
+			"ID": "20221001220337-nqh6cpw",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221001220337-nqh6cpw",
+				"updated": "20221001223413"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221001220329-mxfrjpb",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221001220329-mxfrjpb",
+						"updated": "20221001223413"
+					},
+					"Children": [
+						{
+							"ID": "20221001220339-97plpe8",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001220339-97plpe8",
+								"updated": "20221001223413"
+							},
+							"Children": [
+								{
+									"ID": "20221001220339-l4anuhw",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220339-l4anuhw",
+										"updated": "20221001220359"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "echo原地刷新效果"
+										}
+									]
+								},
+								{
+									"ID": "20221001222116-4c461xi",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001222116-4c461xi"
+									}
+								},
+								{
+									"ID": "20221001222113-tqr7mpe",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001222113-tqr7mpe"
+									},
+									"Children": [
+										{
+											"Type": "NodeImage",
+											"Data": "span",
+											"Children": [
+												{
+													"Type": "NodeBang"
+												},
+												{
+													"Type": "NodeOpenBracket"
+												},
+												{
+													"Type": "NodeLinkText",
+													"Data": "image"
+												},
+												{
+													"Type": "NodeCloseBracket"
+												},
+												{
+													"Type": "NodeOpenParen"
+												},
+												{
+													"Type": "NodeLinkDest",
+													"Data": "assets/image-20221001221051-fpnzbig.png"
+												},
+												{
+													"Type": "NodeCloseParen"
+												}
+											]
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										}
+									]
+								},
+								{
+									"ID": "20221001222422-ai2y83j",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001222422-ai2y83j",
+										"updated": "20221001223156"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "a",
+											"TextMarkAHref": "assets/echo原地刷新输出-20221001223156-7xu6c8n.avi",
+											"TextMarkTextContent": "echo原地刷新输出.avi"
+										}
+									]
+								},
+								{
+									"ID": "20221001223413-jf6oyr5",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001223413-jf6oyr5"
+									}
+								},
+								{
+									"ID": "20221001220728-z72ldbv",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220728-z72ldbv",
+										"updated": "20221001220741"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "-n\t不换行"
+										}
+									]
+								},
+								{
+									"ID": "20221001220408-ghlw8r7",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220408-ghlw8r7",
+										"updated": "20221001220432"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "-e\t支持解析特殊字符"
+										}
+									]
+								},
+								{
+									"ID": "20221001220438-uhgp1ia",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220438-uhgp1ia",
+										"updated": "20221001220516"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\\r\t光标移至行首"
+										}
+									]
+								},
+								{
+									"ID": "20221001220538-63bhzdv",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220538-63bhzdv",
+										"updated": "20221001220617"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\\c\t最后不加换行符号"
+										}
+									]
+								},
+								{
+									"ID": "20221001220831-wvrgrw9",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220831-wvrgrw9"
+									}
+								},
+								{
+									"ID": "20221001220620-tze464o",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001220620-tze464o",
+										"updated": "20221001220725"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "a",
+											"TextMarkAHref": "siyuan://blocks/20221001220645-msnglsr",
+											"TextMarkTextContent": "其它参数"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221001222106-gm35c2t",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221001222106-gm35c2t"
+							},
+							"Children": [
+								{
+									"ID": "20221001222106-l0wjwdf",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221001222106-l0wjwdf"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221001220333-zzjchit",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221001220333-zzjchit",
+						"updated": "20221001220338"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221001220330-1nozukv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221001220330-1nozukv"
+			}
+		},
+		{
+			"ID": "20221001150313-6hh6429",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221001150313-6hh6429",
+				"updated": "20221001150318"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "底部"
+				}
+			]
 		}
 	]
 }

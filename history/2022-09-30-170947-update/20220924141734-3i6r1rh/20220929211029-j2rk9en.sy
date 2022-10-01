@@ -1,0 +1,1674 @@
+{
+	"ID": "20220929211029-j2rk9en",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20220929211029-j2rk9en",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220929211136-g3d3y9l\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930153941-ww8lcv7\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:700,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220930153848-hnkvflk\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:7,\u0026amp;quot;focusEnd\u0026amp;quot;:7}",
+		"title": "大纲",
+		"updated": "20220930170804"
+	},
+	"Children": [
+		{
+			"ID": "20220929211136-g3d3y9l",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220929211136-g3d3y9l"
+			}
+		},
+		{
+			"ID": "20220930153847-x1gh9ag",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"custom-type": "map",
+				"id": "20220930153847-x1gh9ag",
+				"updated": "20220930170804"
+			},
+			"Children": [
+				{
+					"ID": "20220930153847-vgh89ou",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220930153847-vgh89ou",
+						"updated": "20220930153847"
+					},
+					"Children": [
+						{
+							"ID": "20220930153847-zagw9ik",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220930153847-zagw9ik",
+								"updated": "20220930153847"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "siyuan://blocks/20220924170354-k0su02o",
+									"TextMarkTextContent": "1 Linux系统服务及管理"
+								}
+							]
+						},
+						{
+							"ID": "20220930153847-kbjy6jx",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220930153847-kbjy6jx",
+								"updated": "20220930153847"
+							},
+							"Children": [
+								{
+									"ID": "20220930153847-ym9yvqn",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-ym9yvqn",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-pal86fi",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-pal86fi",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924182554-9jnm1uh",
+													"TextMarkTextContent": "1.1 文件管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-n7qg1a3",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-n7qg1a3",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-gxodfxt",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-gxodfxt",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-7dyoui2",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-7dyoui2",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182618-27hrufv",
+																	"TextMarkTextContent": "1.1.1 文件目录类"
+																}
+															]
+														},
+														{
+															"ID": "20220930153847-i7b9ua0",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20220930153847-i7b9ua0",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"ID": "20220930153847-ah2bl7g",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220930153847-ah2bl7g",
+																		"updated": "20220930153847"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220930153847-cnhuzcy",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220930153847-cnhuzcy",
+																				"updated": "20220930153847"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "a",
+																					"TextMarkAHref": "siyuan://blocks/20220924182635-13yuvjt",
+																					"TextMarkTextContent": "基础命令"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20220930153847-w0f8rs0",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220930153847-w0f8rs0",
+																		"updated": "20220930153847"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220930153847-znox2i5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220930153847-znox2i5",
+																				"updated": "20220930153847"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "a",
+																					"TextMarkAHref": "siyuan://blocks/20220925160908-pn0qhjb",
+																					"TextMarkTextContent": "1.1.1.2 查看文件"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-02ntlp9",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-02ntlp9",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-xohrav3",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-xohrav3",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182636-lj3lpde",
+																	"TextMarkTextContent": "1.1.2 查看编辑文件类"
+																}
+															]
+														},
+														{
+															"ID": "20220930153847-6uahxr0",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20220930153847-6uahxr0",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"ID": "20220930153847-dt7j4sx",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20220930153847-dt7j4sx",
+																		"updated": "20220930153847"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20220930153847-bqcpz11",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20220930153847-bqcpz11",
+																				"updated": "20220930153847"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "a",
+																					"TextMarkAHref": "siyuan://blocks/20220925155354-3tns9iu",
+																					"TextMarkTextContent": "1.1.2.1 vi编辑器的使用"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-d80va8e",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-d80va8e",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-t6vb8bd",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-t6vb8bd",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182656-56rjx82",
+																	"TextMarkTextContent": "1.1.3 压缩文件类"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-9ctlwdm",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-9ctlwdm",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-ogd0j58",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-ogd0j58",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182710-qxoernm",
+																	"TextMarkTextContent": "1.1.4 三剑客"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-00q1brv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-00q1brv",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-sb5bota",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-sb5bota",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924182834-vgk4hpp",
+													"TextMarkTextContent": "1.2用户和组管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-8pqy33r",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-8pqy33r",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-1nasnx4",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-1nasnx4",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-tuv3wp2",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-tuv3wp2",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182856-z1e543h",
+																	"TextMarkTextContent": "1.2.1用户相关"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-75oag2r",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-75oag2r",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-z736lra",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-z736lra",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182907-szu7uui",
+																	"TextMarkTextContent": "1.2.2 组相关"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-rim1nkl",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-rim1nkl",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-bz0rvi2",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-bz0rvi2",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182916-kb72wwy",
+																	"TextMarkTextContent": "1.2.3 密码相关"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-i5c6gjf",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-i5c6gjf",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-7unbzd3",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-7unbzd3",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924182927-m55ft1t",
+													"TextMarkTextContent": "1.3 权限管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-jwf1tg5",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-jwf1tg5",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-cgxqohn",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-cgxqohn",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-3fcw0xj",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-3fcw0xj",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183013-f0t7ikx",
+																	"TextMarkTextContent": "1.3.1 文件权限"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-gvoob3z",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-gvoob3z",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-bl6cq74",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-bl6cq74",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183028-zzh0l9s",
+																	"TextMarkTextContent": "1.3.2 用户权限"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-ykn7pj2",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-ykn7pj2",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-gk6kwh4",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-gk6kwh4",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924183052-e225jeh",
+													"TextMarkTextContent": "1.4 软件管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-h52o4mv",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-h52o4mv",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-vzk11qf",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-vzk11qf",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-92wk1cw",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-92wk1cw",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183107-jyq3u2h",
+																	"TextMarkTextContent": "1.4.1 rpm包管理"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-c71fbd3",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-c71fbd3",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-men459o",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-men459o",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183118-f149vro",
+																	"TextMarkTextContent": "1.4.2 yum管理"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-nlcozjc",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-nlcozjc",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-90bgm75",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-90bgm75",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183129-w6a2cz7",
+																	"TextMarkTextContent": "1.4.3 编译安装"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-194vlw5",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-194vlw5",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-oz11r41",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-oz11r41",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924183333-mmpw7ws",
+													"TextMarkTextContent": "1.5 进程管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-co56ab3",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-co56ab3",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-z1fey4p",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-z1fey4p",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-d3144h7",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-d3144h7",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183436-26wpyvr",
+																	"TextMarkTextContent": "1.5.1 查看进程"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-9mpw9lg",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-9mpw9lg",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-q51rwpb",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-q51rwpb",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183448-rh9rz7d",
+																	"TextMarkTextContent": "1.5.2 杀死进程"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-ojt2uhu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-ojt2uhu",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-5v4yh57",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-5v4yh57",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924182734-qbvzayc",
+													"TextMarkTextContent": "1.6. 磁盘管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-18600j1",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-18600j1",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-okmauq2",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-okmauq2",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-wiaywfy",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-wiaywfy",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183548-7ttowrk",
+																	"TextMarkTextContent": "1.6.1 磁盘分区"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-04vclb0",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-04vclb0",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-8hu0d6g",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-8hu0d6g",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924182735-5cpsl0z",
+																	"TextMarkTextContent": "1.6.2 LVM 逻辑卷管理"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-i3gmxbp",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-i3gmxbp",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-hhm6wc4",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-hhm6wc4",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183633-ma6vckx",
+																	"TextMarkTextContent": "1.6.3 raid磁盘阵列"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-7v4r72b",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-7v4r72b",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-y4fyn58",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-y4fyn58",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924183738-gvhs34w",
+													"TextMarkTextContent": "1.7 服务管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-waemij5",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-waemij5",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-wswrt0x",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-wswrt0x",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-q6r6rot",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-q6r6rot",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183802-34b6qok",
+																	"TextMarkTextContent": "1.7.1 系统服务控制"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-ivk357s",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-ivk357s",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153847-epsdygj",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153847-epsdygj",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924183821-58kethn",
+													"TextMarkTextContent": "1.8 网络管理"
+												}
+											]
+										},
+										{
+											"ID": "20220930153847-cd6v9gz",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153847-cd6v9gz",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-wd45eut",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-wd45eut",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153847-ivpdgin",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153847-ivpdgin",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183831-fjmi422",
+																	"TextMarkTextContent": "1.8.1 网络配置"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-6n93xc3",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-6n93xc3",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-iuoijj0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-iuoijj0",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924183849-ifmhmmf",
+																	"TextMarkTextContent": "1.8.2 网络端口相关"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-h20plth",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-h20plth",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-3l6t80p",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-3l6t80p",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924184029-wyud72x",
+																	"TextMarkTextContent": "1.8.3 网络其它"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-7pmikls",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-7pmikls",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153848-qyozcnw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153848-qyozcnw",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924184038-064adka",
+													"TextMarkTextContent": "1.9 系统相关"
+												}
+											]
+										},
+										{
+											"ID": "20220930153848-jcvey5d",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153848-jcvey5d",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-txm29si",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-txm29si",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-sl98hrl",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-sl98hrl",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924184047-lpuhucq",
+																	"TextMarkTextContent": "1.9.1 系统安全相关"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-vde59la",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-vde59la",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-zcxf3l9",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-zcxf3l9",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924184105-mvpjhfd",
+																	"TextMarkTextContent": "1.9.2 用户提权"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930153847-7xtovk1",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-7xtovk1",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153848-pd0izvl",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153848-pd0izvl",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220924184144-2nmkhsw",
+													"TextMarkTextContent": "1.10 杂项"
+												}
+											]
+										},
+										{
+											"ID": "20220930153848-8w1fz48",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153848-8w1fz48",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-ki5aofm",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-ki5aofm",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-5mjetkf",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-5mjetkf",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220924184153-uhx45oz",
+																	"TextMarkTextContent": "1.10.1 计划任务"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220930153847-gwh4jj0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220930153847-gwh4jj0",
+						"updated": "20220930153847"
+					},
+					"Children": [
+						{
+							"ID": "20220930153848-pb4qo7r",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220930153848-pb4qo7r",
+								"updated": "20220930153847"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "siyuan://blocks/20220930001821-4wn9s2o",
+									"TextMarkTextContent": "2 shell脚本"
+								}
+							]
+						},
+						{
+							"ID": "20220930153848-h0dwo2k",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220930153848-h0dwo2k",
+								"updated": "20220930153847"
+							},
+							"Children": [
+								{
+									"ID": "20220930153847-vrvllky",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930153847-vrvllky",
+										"updated": "20220930153847"
+									},
+									"Children": [
+										{
+											"ID": "20220930153848-o8x83pt",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930153848-o8x83pt",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "siyuan://blocks/20220930001932-myssfgk",
+													"TextMarkTextContent": "2.1 shell脚本基础"
+												}
+											]
+										},
+										{
+											"ID": "20220930153848-gd0d9wj",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20220930153848-gd0d9wj",
+												"updated": "20220930153847"
+											},
+											"Children": [
+												{
+													"ID": "20220930153847-8awixwh",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-8awixwh",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-nlqq72r",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-nlqq72r",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220930001940-77pl5l6",
+																	"TextMarkTextContent": "2.1.1 shell脚本三种执行方式的区别"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-90k9esy",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-90k9esy",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-378lol1",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-378lol1",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220930001821-p3xwq28",
+																	"TextMarkTextContent": "2.1.2 特殊变量"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-3d2tnc2",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-3d2tnc2",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-wgfefv7",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-wgfefv7",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220930001821-t2d5at1",
+																	"TextMarkTextContent": "2.1.3 常用判断条件"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20220930153847-14b621z",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20220930153847-14b621z",
+														"updated": "20220930153847"
+													},
+													"Children": [
+														{
+															"ID": "20220930153848-hnkvflk",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20220930153848-hnkvflk",
+																"updated": "20220930153847"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20220930020943-8bbbtvz",
+																	"TextMarkTextContent": "2.1.4 for循环"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20220930153847-qp5hct0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20220930153847-qp5hct0",
+						"updated": "20220930170804"
+					},
+					"Children": [
+						{
+							"ID": "20220930153848-qo9ailg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20220930153848-qo9ailg",
+								"updated": "20220930170445"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "a",
+									"TextMarkAHref": "siyuan://blocks/20220930020758-snmc86n",
+									"TextMarkTextContent": "3 环境搭建"
+								}
+							]
+						},
+						{
+							"ID": "20220930170450-yo4io45",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20220930170450-yo4io45",
+								"updated": "20220930170804"
+							},
+							"Children": [
+								{
+									"ID": "20220930170447-6u2lpiv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930170447-6u2lpiv"
+									},
+									"Children": [
+										{
+											"ID": "20220930170447-oxq6616",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930170447-oxq6616",
+												"updated": "20220930170524"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "3.1 dhcp服务器"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930170526-7yecfsh",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930170526-7yecfsh"
+									},
+									"Children": [
+										{
+											"ID": "20220930170526-u44ernr",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930170526-u44ernr",
+												"updated": "20220930170723"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "3.2 FTP服务"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930170724-zmz3m2u",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930170724-zmz3m2u"
+									},
+									"Children": [
+										{
+											"ID": "20220930170724-76jkq1a",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930170724-76jkq1a",
+												"updated": "20220930170746"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "3.3 samba服务器"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20220930170747-l5f4avg",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20220930170747-l5f4avg",
+										"updated": "20220930170804"
+									},
+									"Children": [
+										{
+											"ID": "20220930170747-yawpc0h",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20220930170747-yawpc0h",
+												"updated": "20220930170804"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "3.4 DNS域名解析服务"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20220930153941-ww8lcv7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220930153941-ww8lcv7"
+			}
+		}
+	]
+}
