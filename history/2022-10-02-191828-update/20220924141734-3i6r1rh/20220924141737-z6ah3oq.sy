@@ -8,7 +8,7 @@
 		"id": "20220924141737-z6ah3oq",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930161452-vv098mx\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:469.6000061035156,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182618-27hrufv\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:11}",
 		"title": "云计算",
-		"updated": "20221002204730"
+		"updated": "20221002190838"
 	},
 	"Children": [
 		{
@@ -1836,56 +1836,6 @@
 			]
 		},
 		{
-			"ID": "20221002200818-ksx16gh",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221002200818-ksx16gh",
-				"updated": "20221002200858"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "静态查看进程可以使用  "
-				},
-				{
-					"Type": "NodeTextMark",
-					"TextMarkType": "block-ref",
-					"TextMarkBlockRefID": "20221002200940-el1sjvp",
-					"TextMarkBlockRefSubtype": "s",
-					"TextMarkTextContent": "ps "
-				},
-				{
-					"Type": "NodeText",
-					"Data": " 命令"
-				}
-			]
-		},
-		{
-			"ID": "20221002200859-hz1hck9",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221002200859-hz1hck9",
-				"updated": "20221002204730"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "动态查看进程使用 "
-				},
-				{
-					"Type": "NodeTextMark",
-					"TextMarkType": "block-ref",
-					"TextMarkBlockRefID": "20221002201857-0kxdn50",
-					"TextMarkBlockRefSubtype": "s",
-					"TextMarkTextContent": "top"
-				},
-				{
-					"Type": "NodeText",
-					"Data": " 命令"
-				}
-			]
-		},
-		{
 			"ID": "20220924183448-6s5q1v0",
 			"Type": "NodeParagraph",
 			"Properties": {
@@ -3279,7 +3229,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20221002190733-c9h87s7",
-				"updated": "20221002191114"
+				"updated": "20221002190838"
 			},
 			"Children": [
 				{
@@ -3368,8 +3318,7 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"id": "20221002190849-lsecwli",
-						"updated": "20221002190924"
+						"id": "20221002190849-lsecwli"
 					},
 					"Children": [
 						{
@@ -3391,8 +3340,7 @@
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20221002190911-icb7wp3",
-								"updated": "20221002190924"
+								"id": "20221002190911-icb7wp3"
 							},
 							"Children": [
 								{
@@ -3403,8 +3351,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"id": "20221002190908-dib9tg0",
-										"updated": "20221002190924"
+										"id": "20221002190908-dib9tg0"
 									},
 									"Children": [
 										{
@@ -3417,18 +3364,7 @@
 											"Children": [
 												{
 													"Type": "NodeText",
-													"Data": "使用 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221002191428-bk4avzf",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "fg"
-												},
-												{
-													"Type": "NodeText",
-													"Data": " 命令"
+													"Data": "使用 fg 命令"
 												}
 											]
 										}
@@ -3446,8 +3382,7 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"id": "20221002190925-wm5zo8x",
-						"updated": "20221002191001"
+						"id": "20221002190925-wm5zo8x"
 					},
 					"Children": [
 						{
@@ -3469,8 +3404,7 @@
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20221002190949-s0dqe26",
-								"updated": "20221002191001"
+								"id": "20221002190949-s0dqe26"
 							},
 							"Children": [
 								{
@@ -3481,8 +3415,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"id": "20221002190948-9c3qdoj",
-										"updated": "20221002191001"
+										"id": "20221002190948-9c3qdoj"
 									},
 									"Children": [
 										{
@@ -3495,18 +3428,7 @@
 											"Children": [
 												{
 													"Type": "NodeText",
-													"Data": "使用 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221002192054-a5iwx9c",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "bg"
-												},
-												{
-													"Type": "NodeText",
-													"Data": " 命令"
+													"Data": "使用 bg 命令"
 												}
 											]
 										}
@@ -3573,18 +3495,7 @@
 											"Children": [
 												{
 													"Type": "NodeText",
-													"Data": "使用 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221002200448-vvsom52",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "nohup "
-												},
-												{
-													"Type": "NodeText",
-													"Data": "命令"
+													"Data": "使用 nohup 命令"
 												}
 											]
 										}

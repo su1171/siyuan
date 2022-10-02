@@ -194,7 +194,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "0px",
+              "size": "188px",
               "type": "left"
             },
             {
@@ -202,8 +202,110 @@
                 {
                   "children": [
                     {
-                      "children": {},
-                      "instance": "Tab"
+                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924145441-ruxsjlb",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924145441-ruxsjlb",
+                        "scrollAttr": {
+                          "endId": "20221001150313-6hh6429",
+                          "focusEnd": 22,
+                          "focusId": "20221002201947-dyoe3bo",
+                          "focusStart": 22,
+                          "scrollTop": 9121.11328125,
+                          "startId": "20220930004413-9jxemlj"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "命令详解"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924204553-h4rr7p5",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924204553-h4rr7p5",
+                        "scrollAttr": {
+                          "endId": "20221001220645-tij50ei",
+                          "focusEnd": 0,
+                          "focusId": "20221002204546-ktaugu4",
+                          "focusStart": 0,
+                          "scrollTop": 13709,
+                          "startId": "20220924204608-yyftd47"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "资料库"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924141737-z6ah3oq",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924141737-z6ah3oq",
+                        "scrollAttr": {
+                          "endId": "20221001143855-8wafklz",
+                          "focusEnd": 0,
+                          "focusId": "20220924183448-6s5q1v0",
+                          "focusStart": 0,
+                          "scrollTop": 4093,
+                          "startId": "20220924142530-z39h3uh"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "云计算"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220929211029-j2rk9en",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220929211029-j2rk9en",
+                        "scrollAttr": {
+                          "endId": "20221001153408-i8o303i",
+                          "focusEnd": 11,
+                          "focusId": "20221001153410-4b0zmaj",
+                          "focusStart": 11,
+                          "scrollTop": 109,
+                          "startId": "20220930153941-ww8lcv7"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "大纲"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221001085750-qmjsuml",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221001085750-qmjsuml",
+                        "scrollAttr": {
+                          "endId": "20221001090326-mrxeggy",
+                          "focusEnd": 8,
+                          "focusId": "20221001085910-nub9wwd",
+                          "focusStart": 8,
+                          "scrollTop": 0,
+                          "startId": "20221001085757-s5ambuk"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "文档"
                     }
                   ],
                   "height": "",
@@ -280,10 +382,10 @@
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
-            "width": 249
+            "width": 188
           },
           "type": "outline"
         },
@@ -366,12 +468,12 @@
   },
   "readonly": false,
   "localIPs": [
+    "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
     "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
-    "192.168.137.1",
     "127.0.0.1"
   ],
   "accessAuthCode": "",

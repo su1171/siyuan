@@ -7,7 +7,7 @@
 		"id": "20220924204553-h4rr7p5",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924204608-yyftd47\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001220645-tij50ei\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:9999.2001953125,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001220645-msnglsr\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:63,\u0026amp;quot;focusEnd\u0026amp;quot;:63}",
 		"title": "资料库",
-		"updated": "20221002204926"
+		"updated": "20221002204549"
 	},
 	"Children": [
 		{
@@ -2186,53 +2186,25 @@
 			]
 		},
 		{
-			"ID": "20221002204917-vmm2cco",
+			"ID": "20221002204546-ktaugu4",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221002204917-vmm2cco"
+				"id": "20221002204546-ktaugu4"
 			}
 		},
 		{
-			"ID": "20221002204926-gqliy7d",
-			"Type": "NodeSuperBlock",
+			"ID": "20221002204546-3yrjv5f",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221002204926-gqliy7d",
-				"updated": "20221002204926"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221002204546-ktaugu4",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221002204546-ktaugu4",
-						"updated": "20221002204926"
-					},
-					"Children": [
-						{
-							"Type": "NodeText",
-							"Data": "[root@localhost ~]# top -b -n 1 \u003e /root/top.log\n#让top命令只执行一次，然后把执行结果保存到top.log文件中，这样就能看到所有的进程了"
-						}
-					]
-				},
-				{
-					"ID": "20221002204547-0jqr4um",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221002204547-0jqr4um",
-						"updated": "20221002204926"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
+				"id": "20221002204546-3yrjv5f"
+			}
+		},
+		{
+			"ID": "20221002204547-0jqr4um",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221002204547-0jqr4um"
+			}
 		},
 		{
 			"ID": "20221002204547-ccg5hvu",

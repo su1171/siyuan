@@ -8,7 +8,7 @@
 		"id": "20220924141737-z6ah3oq",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930161452-vv098mx\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:469.6000061035156,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182618-27hrufv\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:11}",
 		"title": "云计算",
-		"updated": "20221002204730"
+		"updated": "20221002200914"
 	},
 	"Children": [
 		{
@@ -1845,18 +1845,7 @@
 			"Children": [
 				{
 					"Type": "NodeText",
-					"Data": "静态查看进程可以使用  "
-				},
-				{
-					"Type": "NodeTextMark",
-					"TextMarkType": "block-ref",
-					"TextMarkBlockRefID": "20221002200940-el1sjvp",
-					"TextMarkBlockRefSubtype": "s",
-					"TextMarkTextContent": "ps "
-				},
-				{
-					"Type": "NodeText",
-					"Data": " 命令"
+					"Data": "静态查看进程可以使用  ps  命令"
 				}
 			]
 		},
@@ -1865,23 +1854,12 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221002200859-hz1hck9",
-				"updated": "20221002204730"
+				"updated": "20221002200914"
 			},
 			"Children": [
 				{
 					"Type": "NodeText",
-					"Data": "动态查看进程使用 "
-				},
-				{
-					"Type": "NodeTextMark",
-					"TextMarkType": "block-ref",
-					"TextMarkBlockRefID": "20221002201857-0kxdn50",
-					"TextMarkBlockRefSubtype": "s",
-					"TextMarkTextContent": "top"
-				},
-				{
-					"Type": "NodeText",
-					"Data": " 命令"
+					"Data": "动态查看进程使用 top 命令"
 				}
 			]
 		},
