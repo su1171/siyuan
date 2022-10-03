@@ -7,7 +7,7 @@
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220930002750-lqs0k2p\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001150313-6hh6429\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:3401.60009765625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001223413-jf6oyr5\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20221003175128"
+		"updated": "20221003153644"
 	},
 	"Children": [
 		{
@@ -1993,13 +1993,7 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20220924202020-nqlq79d"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-				}
-			]
+			}
 		},
 		{
 			"ID": "20220924202042-r97h9jc",
@@ -18370,7 +18364,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221003153350-4yc64b6",
-				"updated": "20221003154040"
+				"updated": "20221003153644"
 			},
 			"Children": [
 				{
@@ -18386,7 +18380,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221003152434-hvsgo2b",
-						"updated": "20221003154040"
+						"updated": "20221003153644"
 					},
 					"Children": [
 						{
@@ -18440,7 +18434,7 @@
 							},
 							"Properties": {
 								"id": "20221003153418-dbsfx14",
-								"updated": "20221003154040"
+								"updated": "20221003153644"
 							},
 							"Children": [
 								{
@@ -18448,58 +18442,12 @@
 									"Type": "NodeParagraph",
 									"Properties": {
 										"id": "20221003153418-vfe9c56",
-										"updated": "20221003153704"
+										"updated": "20221003153644"
 									},
 									"Children": [
 										{
 											"Type": "NodeText",
-											"Data": "格式\t\tmkfs  [options]   分区路径"
-										}
-									]
-								},
-								{
-									"ID": "20221003153705-zklcs6w",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003153705-zklcs6w",
-										"updated": "20221003154040"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "\t\t\t-t\t\t指定文件系统类型，若不指定，将使用 ext2  支持（btrfs   ext2   "
-										},
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": " ext4"
-										},
-										{
-											"Type": "NodeText",
-											"Data": "    minix   vfat  cramfs  ext3    fat     msdos   "
-										},
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "xfs"
-										},
-										{
-											"Type": "NodeText",
-											"Data": "）"
-										}
-									]
-								},
-								{
-									"ID": "20221003153808-o1ef0dn",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003153808-o1ef0dn",
-										"updated": "20221003153907"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "\t\t\t-c\t\t检查该分区是否有坏轨"
+											"Data": "格式\t\tmkfs  "
 										}
 									]
 								}
@@ -18528,99 +18476,18 @@
 			}
 		},
 		{
-			"ID": "20221003154230-pv0g745",
-			"Type": "NodeSuperBlock",
+			"ID": "20221003152434-6semwwq",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003154230-pv0g745",
-				"updated": "20221003154349"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221003152434-6semwwq",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20221003152434-6semwwq",
-						"updated": "20221003154349"
-					},
-					"Children": [
-						{
-							"ID": "20221003154231-z59pyd5",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003154231-z59pyd5",
-								"updated": "20221003154349"
-							},
-							"Children": [
-								{
-									"ID": "20221003154231-an36sz2",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003154231-an36sz2",
-										"updated": "20221003154232"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "mount"
-										}
-									]
-								},
-								{
-									"ID": "20221003154233-3rtyg81",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003154233-3rtyg81",
-										"updated": "20221003154240"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "挂载分区"
-										}
-									]
-								},
-								{
-									"ID": "20221003154240-uwx4ot1",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003154240-uwx4ot1",
-										"updated": "20221003154349"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "格式   mount  [options]  要挂载的设备路径   挂载点"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003152434-gdi6s4b",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221003152434-gdi6s4b",
-						"updated": "20221003154230"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
+				"id": "20221003152434-6semwwq"
+			}
+		},
+		{
+			"ID": "20221003152434-gdi6s4b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221003152434-gdi6s4b"
+			}
 		},
 		{
 			"ID": "20221003152434-0r66goi",
@@ -18630,459 +18497,24 @@
 			}
 		},
 		{
-			"ID": "20221003160624-lu8eplz",
-			"Type": "NodeSuperBlock",
-			"Properties": {
-				"id": "20221003160624-lu8eplz",
-				"updated": "20221003160913"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221003152434-cb22km7",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20221003152434-cb22km7",
-						"updated": "20221003160913"
-					},
-					"Children": [
-						{
-							"ID": "20221003160625-qciq0ko",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003160625-qciq0ko",
-								"updated": "20221003160913"
-							},
-							"Children": [
-								{
-									"ID": "20221003160625-k7979g0",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003160625-k7979g0",
-										"updated": "20221003160627"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "resize2fs"
-										}
-									]
-								},
-								{
-									"ID": "20221003160724-idk4nbn",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003160724-idk4nbn",
-										"updated": "20221003160847"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "刷新ext4 文件系统"
-										}
-									]
-								},
-								{
-									"ID": "20221003160848-hya3d8k",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003160848-hya3d8k",
-										"updated": "20221003160913"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "格式   resize2fs  [options] 分区路径"
-										}
-									]
-								},
-								{
-									"ID": "20221003160931-3z8uubd",
-									"Type": "NodeTable",
-									"TableAligns": [
-										0,
-										0
-									],
-									"Properties": {
-										"colgroup": "|",
-										"id": "20221003160931-3z8uubd",
-										"updated": "20221003160931"
-									},
-									"Children": [
-										{
-											"Type": "NodeTableHead",
-											"Data": "thead",
-											"Children": [
-												{
-													"Type": "NodeTableRow",
-													"Data": "tr",
-													"Children": [
-														{
-															"Type": "NodeTableCell",
-															"Data": "th",
-															"Children": [
-																{
-																	"Type": "NodeText",
-																	"Data": "-d"
-																}
-															]
-														},
-														{
-															"Type": "NodeTableCell",
-															"Data": "th",
-															"Children": [
-																{
-																	"Type": "NodeText",
-																	"Data": "打开调试特性"
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											"Type": "NodeTableRow",
-											"Data": "tr",
-											"Children": [
-												{
-													"Type": "NodeTableCell",
-													"Data": "td",
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "-p"
-														}
-													]
-												},
-												{
-													"Type": "NodeTableCell",
-													"Data": "td",
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "打印已完成的百分比进度条"
-														}
-													]
-												}
-											]
-										},
-										{
-											"Type": "NodeTableRow",
-											"Data": "tr",
-											"Children": [
-												{
-													"Type": "NodeTableCell",
-													"Data": "td",
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "-f"
-														}
-													]
-												},
-												{
-													"Type": "NodeTableCell",
-													"Data": "td",
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "强制执行调整大小操作，覆盖掉安全检查操作"
-														}
-													]
-												}
-											]
-										},
-										{
-											"Type": "NodeTableRow",
-											"Data": "tr",
-											"Children": [
-												{
-													"Type": "NodeTableCell",
-													"Data": "td",
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "-F"
-														}
-													]
-												},
-												{
-													"Type": "NodeTableCell",
-													"Data": "td",
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "开始执行调整大小前，刷新文件系统设备的缓冲区"
-														}
-													]
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003152434-1b13nyj",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221003152434-1b13nyj",
-						"updated": "20221003160624"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
-		},
-		{
-			"ID": "20221003160621-wgp0pog",
+			"ID": "20221003152434-cb22km7",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003160621-wgp0pog"
+				"id": "20221003152434-cb22km7"
 			}
 		},
 		{
-			"ID": "20221003161048-zfogtj9",
-			"Type": "NodeSuperBlock",
+			"ID": "20221003152434-1b13nyj",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003161048-zfogtj9",
-				"updated": "20221003160621"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221003160621-ym74q6l",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20221003160621-ym74q6l",
-						"updated": "20221003161132"
-					},
-					"Children": [
-						{
-							"ID": "20221003161050-ojzuis6",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003161050-ojzuis6",
-								"updated": "20221003161132"
-							},
-							"Children": [
-								{
-									"ID": "20221003161050-hf927d5",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003161050-hf927d5",
-										"updated": "20221003161051"
-									},
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "xfs_growfs"
-										}
-									]
-								},
-								{
-									"ID": "20221003161052-ljiy1nr",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003161052-ljiy1nr",
-										"updated": "20221003161102"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "刷新 xfs 文件系统"
-										}
-									]
-								},
-								{
-									"ID": "20221003161102-hn0v1ln",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003161102-hn0v1ln",
-										"updated": "20221003161132"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "格式   \t"
-										},
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "xfs_growfs    分区路径"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003160621-a2ynxzk",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221003160621-a2ynxzk"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
+				"id": "20221003152434-1b13nyj"
+			}
 		},
 		{
 			"ID": "20221003152434-rrijlkw",
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221003152434-rrijlkw"
-			}
-		},
-		{
-			"ID": "20221003175126-h4vct0u",
-			"Type": "NodeSuperBlock",
-			"Properties": {
-				"id": "20221003175126-h4vct0u",
-				"updated": "20221003175128"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221003161221-9pcpux4",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20221003161221-9pcpux4",
-						"updated": "20221003175128"
-					},
-					"Children": [
-						{
-							"ID": "20221003175128-zbusld5",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003175128-zbusld5",
-								"updated": "20221003175128"
-							},
-							"Children": [
-								{
-									"ID": "20221003175128-z8h8kzm",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003175128-z8h8kzm",
-										"updated": "20221003175204"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "mdadm"
-										}
-									]
-								},
-								{
-									"ID": "20221003175338-hk353t4",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003175338-hk353t4",
-										"updated": "20221003175354"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "管理READ磁盘整列组"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ID": "20221003175354-zfrhc89",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003175354-zfrhc89"
-							},
-							"Children": [
-								{
-									"ID": "20221003175354-vi6icym",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003175354-vi6icym"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003161222-pxqj2qz",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221003161222-pxqj2qz",
-						"updated": "20221003175127"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
-		},
-		{
-			"ID": "20221003161222-atqtad4",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161222-atqtad4"
-			}
-		},
-		{
-			"ID": "20221003161222-1kpz34q",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161222-1kpz34q"
-			}
-		},
-		{
-			"ID": "20221003161222-9dew46g",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161222-9dew46g"
 			}
 		},
 		{

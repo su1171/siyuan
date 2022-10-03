@@ -7,7 +7,7 @@
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220930002750-lqs0k2p\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001150313-6hh6429\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:3401.60009765625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001223413-jf6oyr5\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20221003175128"
+		"updated": "20220924202020"
 	},
 	"Children": [
 		{
@@ -18964,105 +18964,25 @@
 			}
 		},
 		{
-			"ID": "20221003175126-h4vct0u",
-			"Type": "NodeSuperBlock",
+			"ID": "20221003161221-w06x53d",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003175126-h4vct0u",
-				"updated": "20221003175128"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221003161221-9pcpux4",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20221003161221-9pcpux4",
-						"updated": "20221003175128"
-					},
-					"Children": [
-						{
-							"ID": "20221003175128-zbusld5",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003175128-zbusld5",
-								"updated": "20221003175128"
-							},
-							"Children": [
-								{
-									"ID": "20221003175128-z8h8kzm",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003175128-z8h8kzm",
-										"updated": "20221003175204"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "mdadm"
-										}
-									]
-								},
-								{
-									"ID": "20221003175338-hk353t4",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003175338-hk353t4",
-										"updated": "20221003175354"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "管理READ磁盘整列组"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ID": "20221003175354-zfrhc89",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221003175354-zfrhc89"
-							},
-							"Children": [
-								{
-									"ID": "20221003175354-vi6icym",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221003175354-vi6icym"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003161222-pxqj2qz",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221003161222-pxqj2qz",
-						"updated": "20221003175127"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
+				"id": "20221003161221-w06x53d"
+			}
+		},
+		{
+			"ID": "20221003161221-9pcpux4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221003161221-9pcpux4"
+			}
+		},
+		{
+			"ID": "20221003161222-pxqj2qz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221003161222-pxqj2qz"
+			}
 		},
 		{
 			"ID": "20221003161222-atqtad4",

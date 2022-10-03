@@ -8,7 +8,7 @@
 		"id": "20220924141737-z6ah3oq",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930161452-vv098mx\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:469.6000061035156,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182618-27hrufv\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:11}",
 		"title": "云计算",
-		"updated": "20221003222145"
+		"updated": "20221003195051"
 	},
 	"Children": [
 		{
@@ -7659,7 +7659,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20221003194750-fygtzvi",
-				"updated": "20221003212456"
+				"updated": "20221003195051"
 			},
 			"Children": [
 				{
@@ -7699,7 +7699,7 @@
 					},
 					"Properties": {
 						"id": "20221003195028-nzdecau",
-						"updated": "20221003212456"
+						"updated": "20221003195051"
 					},
 					"Children": [
 						{
@@ -7708,7 +7708,7 @@
 							"IsFencedCodeBlock": true,
 							"Properties": {
 								"id": "20221003195028-ke2mcu8",
-								"updated": "20221003212456"
+								"updated": "20221003195051"
 							},
 							"Children": [
 								{
@@ -7721,7 +7721,7 @@
 								},
 								{
 									"Type": "NodeCodeBlockCode",
-									"Data": "my_array=(A B \"C\" D)\n\necho \"第一个元素为: ${my_array[0]}\"\necho \"第二个元素为: ${my_array[1]}\"\necho \"第三个元素为: ${my_array[2]}\"\necho \"第四个元素为: ${my_array[3]}\"\n"
+									"Data": "my_array=(A B \"C\" D)\n\necho \"第一个元素为: ${my_array[0]}\"\necho \"第二个元素为: ${my_array[1]}\"\necho \"第三个元素为: ${my_array[2]}\"\necho \"第四个元素为: ${my_array[3]}\"\n\n"
 								},
 								{
 									"Type": "NodeCodeBlockFenceCloseMarker",
@@ -7735,486 +7735,10 @@
 		},
 		{
 			"ID": "20220930222012-ghsrqp8",
-			"Type": "NodeList",
-			"ListData": {},
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930222012-ghsrqp8",
-				"updated": "20221003212613"
-			},
-			"Children": [
-				{
-					"ID": "20221003212458-p687ior",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212458-p687ior",
-						"updated": "20221003212458"
-					},
-					"Children": [
-						{
-							"ID": "20221003212458-eee2x5n",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212458-eee2x5n",
-								"updated": "20221003212510"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "不要求所有元素的类型相同"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003212512-d1c5ym9",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212512-d1c5ym9",
-						"updated": "20221003212613"
-					},
-					"Children": [
-						{
-							"ID": "20221003212512-0wrapgn",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212512-0wrapgn",
-								"updated": "20221003212613"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "获取数组中所有的元素"
-								}
-							]
-						},
-						{
-							"ID": "20221003212614-nhx4x13",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003212614-nhx4x13",
-								"updated": "20221003212727"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "${nums[*]} \t# 将元素视为一个整体\n${nums[@]}\t# 将元素视为单独个体\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212735-hvxp5jc",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212735-hvxp5jc",
-				"updated": "20221003212901"
-			},
-			"Children": [
-				{
-					"ID": "20221003212846-zpy4ism",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212846-zpy4ism",
-						"updated": "20221003212901"
-					},
-					"Children": [
-						{
-							"ID": "20221003212846-23x7z4w",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212846-23x7z4w",
-								"updated": "20221003212901"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "获取数组元素个数"
-								}
-							]
-						},
-						{
-							"ID": "20221003212902-3tzd0cw",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003212902-3tzd0cw",
-								"updated": "20221003212908"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "${#array_name[@]}\n${#array_name[*]}\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212739-m6bjkfc",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212739-m6bjkfc",
-				"updated": "20221003213054"
-			},
-			"Children": [
-				{
-					"ID": "20221003212957-85cp4fl",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212957-85cp4fl",
-						"updated": "20221003213054"
-					},
-					"Children": [
-						{
-							"ID": "20221003212957-rvydcw3",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212957-rvydcw3",
-								"updated": "20221003212957"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "如果某个元素是字符串，还可以通过指定下标的方式获得该元素的长度"
-								}
-							]
-						},
-						{
-							"ID": "20221003213011-52d344j",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003213011-52d344j",
-								"updated": "20221003213054"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "${#arr[2]}  \t# 假设2号元素是字符串，获取字符串的长度\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212740-xn9z56p",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212740-xn9z56p",
-				"updated": "20221003213232"
-			},
-			"Children": [
-				{
-					"ID": "20221003213205-vpcu0gj",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003213205-vpcu0gj",
-						"updated": "20221003213232"
-					},
-					"Children": [
-						{
-							"ID": "20221003213205-ndruah6",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213205-ndruah6",
-								"updated": "20221003213212"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "数组拼接"
-								}
-							]
-						},
-						{
-							"ID": "20221003213215-1kz0lzc",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213215-1kz0lzc",
-								"updated": "20221003213215"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "所谓 Shell 数组拼接（数组合并），就是将两个数组连接成一个数组。"
-								}
-							]
-						},
-						{
-							"ID": "20221003213215-ss0dzno",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213215-ss0dzno",
-								"updated": "20221003213224"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "拼接数组的思路是：先利用"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "code",
-									"TextMarkTextContent": "@"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "或"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "code",
-									"TextMarkTextContent": "*"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，将数组扩展成列表，然后再合并到一起。具体格式如下："
-								}
-							]
-						},
-						{
-							"ID": "20221003213224-36wzesj",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003213224-36wzesj",
-								"updated": "20221003213232"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "array_new=(${array1[@]}  ${array2[@]})\narray_new=(${array1[*]}  ${array2[*]})\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						},
-						{
-							"ID": "20221003213215-a702c7s",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213215-a702c7s",
-								"updated": "20221003213215"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "两种方式是等价的，选择其一即可。其中，array1 和 array2 是需要拼接的数组，array_new 是拼接后形成的新数组。"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212740-90n7eoz",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212740-90n7eoz",
-				"updated": "20221003213320"
-			},
-			"Children": [
-				{
-					"ID": "20221003213252-m1mdime",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003213252-m1mdime",
-						"updated": "20221003213320"
-					},
-					"Children": [
-						{
-							"ID": "20221003213252-a6ih2ls",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213252-a6ih2ls",
-								"updated": "20221003213257"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "删除数组元素"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-xpbp0me",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-xpbp0me",
-								"updated": "20221003213309"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "在 Shell 中，使用 "
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "unset "
-								},
-								{
-									"Type": "NodeText",
-									"Data": "关键字来"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "删除数组元素"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，具体格式如下：unset array_name[index]"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-unat214",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-unat214",
-								"updated": "20221003213300"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "其中，array_name 表示数组名，index 表示数组下标。"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-xkl6cv7",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-xkl6cv7",
-								"updated": "20221003213317"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "如果"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "不写下标"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，而是写成下面的形式：unset array_name"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-qiwaaal",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-qiwaaal",
-								"updated": "20221003213320"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "那么就是"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "删除整个数组"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，所有元素都会消失。"
-								}
-							]
-						}
-					]
-				}
-			]
+				"id": "20220930222012-ghsrqp8"
+			}
 		},
 		{
 			"ID": "20220930161452-vv098mx",
@@ -8748,12 +8272,12 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20220930020921-dy3fi33",
-				"updated": "20221003222145"
+				"updated": "20220930155023"
 			},
 			"Children": [
 				{
 					"Type": "NodeText",
-					"Data": "\t"
+					"Data": "\t~~~shell"
 				}
 			]
 		},

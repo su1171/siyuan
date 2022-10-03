@@ -8,7 +8,7 @@
 		"id": "20220924141737-z6ah3oq",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930161452-vv098mx\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:469.6000061035156,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182618-27hrufv\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:11}",
 		"title": "云计算",
-		"updated": "20221003222145"
+		"updated": "20221003144620"
 	},
 	"Children": [
 		{
@@ -1962,63 +1962,7 @@
 			"ID": "20220924183735-uf7fl98",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220924183735-uf7fl98",
-				"updated": "20221003152250"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "磁盘分区"
-				}
-			]
-		},
-		{
-			"ID": "20221003152251-u4e0qav",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003152251-u4e0qav"
-			}
-		},
-		{
-			"ID": "20221003152251-q0t6z0m",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003152251-q0t6z0m"
-			}
-		},
-		{
-			"ID": "20221003152251-6eeenzq",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003152251-6eeenzq",
-				"updated": "20221003152255"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "磁盘格式化"
-				}
-			]
-		},
-		{
-			"ID": "20221003152245-lx0ko6k",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003152245-lx0ko6k"
-			}
-		},
-		{
-			"ID": "20221003152245-lr6st5m",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003152245-lr6st5m"
-			}
-		},
-		{
-			"ID": "20221003152245-vew0j0n",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003152245-vew0j0n"
+				"id": "20220924183735-uf7fl98"
 			}
 		},
 		{
@@ -2094,7 +2038,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20221003143225-ixlkowb",
-				"updated": "20221003154516"
+				"updated": "20221003143230"
 			},
 			"Children": [
 				{
@@ -2165,9 +2109,7 @@
 						"Marker": "Kg=="
 					},
 					"Properties": {
-						"fold": "0",
-						"id": "20221003143513-bxyuwxa",
-						"updated": "20221003154516"
+						"id": "20221003143513-bxyuwxa"
 					},
 					"Children": [
 						{
@@ -2175,13 +2117,12 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221003143513-cn5ukvb",
-								"updated": "20221003154516"
+								"updated": "20221003143529"
 							},
 							"Children": [
 								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "建立LVM的步骤"
+									"Type": "NodeText",
+									"Data": "建立LVM的步骤"
 								}
 							]
 						},
@@ -2190,8 +2131,7 @@
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20221003143531-kf94ebk",
-								"updated": "20221003154158"
+								"id": "20221003143531-kf94ebk"
 							},
 							"Children": [
 								{
@@ -2237,19 +2177,12 @@
 											"Type": "NodeParagraph",
 											"Properties": {
 												"id": "20221003143605-wnhbz2x",
-												"updated": "20221003153137"
+												"updated": "20221003143627"
 											},
 											"Children": [
 												{
 													"Type": "NodeText",
 													"Data": "将物理分区建立成物理卷（pv）"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003144631-zq4r51y",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "pvcreate"
 												}
 											]
 										}
@@ -2271,19 +2204,12 @@
 											"Type": "NodeParagraph",
 											"Properties": {
 												"id": "20221003143628-uan1jno",
-												"updated": "20221003153146"
+												"updated": "20221003143715"
 											},
 											"Children": [
 												{
 													"Type": "NodeText",
 													"Data": "接下来把物理卷整合为卷组（vg），卷组可以动态的调整大小。"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003150114-h78lfm1",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "vgcreate"
 												}
 											]
 										}
@@ -2305,69 +2231,12 @@
 											"Type": "NodeParagraph",
 											"Properties": {
 												"id": "20221003143716-303ppb0",
-												"updated": "20221003153150"
+												"updated": "20221003143804"
 											},
 											"Children": [
 												{
 													"Type": "NodeText",
 													"Data": "最后将卷组划分为逻辑卷（lv），逻辑卷等同于分区，需要格式化和挂载"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref strong",
-													"TextMarkBlockRefID": "20221003150841-ajtbrpg",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "lvcreate"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221003153153-geg3xd0",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003153153-geg3xd0",
-										"updated": "20221003154158"
-									},
-									"Children": [
-										{
-											"ID": "20221003153153-wuq3od6",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003153153-wuq3od6",
-												"updated": "20221003154158"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "格式化使用  "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003153350-4yc64b6",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "mkfs"
-												},
-												{
-													"Type": "NodeText",
-													"Data": " 命令， 挂载使用 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003154230-pv0g745",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "mount"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "  命令"
 												}
 											]
 										}
@@ -2380,372 +2249,73 @@
 			]
 		},
 		{
-			"ID": "20221003154528-yrya9ds",
-			"Type": "NodeSuperBlock",
+			"ID": "20221003143928-os8qj0m",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003154528-yrya9ds",
-				"updated": "20221003152909"
+				"id": "20221003143928-os8qj0m",
+				"updated": "20221003143945"
+			}
+		},
+		{
+			"ID": "20221003143946-38wnpjp",
+			"Type": "NodeTable",
+			"TableAligns": [
+				0,
+				0,
+				0,
+				0
+			],
+			"Properties": {
+				"colgroup": "|||",
+				"id": "20221003143946-38wnpjp",
+				"updated": "20221003144620"
 			},
 			"Children": [
 				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "col"
-				},
-				{
-					"ID": "20221003143946-38wnpjp",
-					"Type": "NodeTable",
-					"TableAligns": [
-						0,
-						0,
-						0,
-						0
-					],
-					"Properties": {
-						"colgroup": "|||",
-						"id": "20221003143946-38wnpjp",
-						"updated": "20221003152909"
-					},
+					"Type": "NodeTableHead",
+					"Data": "thead",
 					"Children": [
 						{
-							"Type": "NodeTableHead",
-							"Data": "thead",
-							"Children": [
-								{
-									"Type": "NodeTableRow",
-									"Data": "tr",
-									"Children": [
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "功能"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "物理卷管理（pv）"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "卷组管理（vg）"
-												}
-											]
-										},
-										{
-											"Type": "NodeTableCell",
-											"Data": "th",
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "逻辑卷管理"
-												}
-											]
-										}
-									]
-								}
-							]
-						},
-						{
 							"Type": "NodeTableRow",
 							"Data": "tr",
 							"Children": [
 								{
 									"Type": "NodeTableCell",
-									"Data": "td",
+									"Data": "th",
 									"Children": [
 										{
 											"Type": "NodeText",
-											"Data": "扫描 scan"
+											"Data": "功能"
 										}
 									]
 								},
 								{
 									"Type": "NodeTableCell",
-									"Data": "td",
+									"Data": "th",
 									"Children": [
 										{
 											"Type": "NodeText",
-											"Data": "pvscan"
+											"Data": "物理卷管理（pv）"
 										}
 									]
 								},
 								{
 									"Type": "NodeTableCell",
-									"Data": "td",
+									"Data": "th",
 									"Children": [
 										{
 											"Type": "NodeText",
-											"Data": "vgscan"
-										},
-										{
-											"Type": "NodeBr",
-											"Data": "br"
+											"Data": "卷组管理（vg）"
 										}
 									]
 								},
 								{
 									"Type": "NodeTableCell",
-									"Data": "td",
+									"Data": "th",
 									"Children": [
 										{
 											"Type": "NodeText",
-											"Data": "lvscan"
-										},
-										{
-											"Type": "NodeBr",
-											"Data": "br"
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "创建 create"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "pvcreate"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "vgcreate"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "block-ref strong",
-											"TextMarkBlockRefID": "20221003150841-ajtbrpg",
-											"TextMarkBlockRefSubtype": "s",
-											"TextMarkTextContent": "lvcreate"
-										},
-										{
-											"Type": "NodeBr",
-											"Data": "br"
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "显示 display"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "pvdisplay （pvs）"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "vgdisplay （vgs）"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "lvdisplay （lvs）"
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "删除 remove"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "pvremove"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "vgremove"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "lvremove"
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "扩展 extend"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td"
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "block-ref",
-											"TextMarkBlockRefID": "20221003152438-n6t6oun",
-											"TextMarkBlockRefSubtype": "s",
-											"TextMarkTextContent": "vgextend"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "block-ref",
-											"TextMarkBlockRefID": "20221003152708-qf6q93i",
-											"TextMarkBlockRefSubtype": "s",
-											"TextMarkTextContent": "lvextend"
-										}
-									]
-								}
-							]
-						},
-						{
-							"Type": "NodeTableRow",
-							"Data": "tr",
-							"Children": [
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "减少 reduce"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td"
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "vgreduce"
-										}
-									]
-								},
-								{
-									"Type": "NodeTableCell",
-									"Data": "td",
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "lvreduce"
+											"Data": "逻辑卷管理"
 										}
 									]
 								}
@@ -2754,369 +2324,290 @@
 					]
 				},
 				{
-					"ID": "20221003143928-os8qj0m",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221003143928-os8qj0m",
-						"updated": "20221003154528"
-					}
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "扫描 scan"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "pvscan"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vgscan"
+								},
+								{
+									"Type": "NodeBr",
+									"Data": "br"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvscan"
+								},
+								{
+									"Type": "NodeBr",
+									"Data": "br"
+								}
+							]
+						}
+					]
 				},
 				{
-					"Type": "NodeSuperBlockCloseMarker"
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "创建 create"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "pvcreate"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vgcreate"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvcreate"
+								},
+								{
+									"Type": "NodeBr",
+									"Data": "br"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "显示 display"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "pvdisplay （pvs）"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vgdisplay （vgs）"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvdisplay （lvs）"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "删除 remove"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "pvremove"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vgremove"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvremove"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "扩展 extend"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td"
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vgextend"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvextend"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeTableRow",
+					"Data": "tr",
+					"Children": [
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "减少 reduce"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td"
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "vgreduce"
+								}
+							]
+						},
+						{
+							"Type": "NodeTableCell",
+							"Data": "td",
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvreduce"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
 		{
 			"ID": "20221003142912-uszc06a",
-			"Type": "NodeList",
-			"ListData": {},
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003142912-uszc06a",
-				"updated": "20221003160832"
-			},
-			"Children": [
-				{
-					"ID": "20221003154544-i3tacpj",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003154544-i3tacpj",
-						"updated": "20221003160832"
-					},
-					"Children": [
-						{
-							"ID": "20221003154544-hnd094d",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003154544-hnd094d",
-								"updated": "20221003154548"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "扩容"
-								}
-							]
-						},
-						{
-							"ID": "20221003154559-apcwuh5",
-							"Type": "NodeList",
-							"ListData": {},
-							"Properties": {
-								"id": "20221003154559-apcwuh5",
-								"updated": "20221003160832"
-							},
-							"Children": [
-								{
-									"ID": "20221003154556-0fbwlix",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003154556-0fbwlix",
-										"updated": "20221003160832"
-									},
-									"Children": [
-										{
-											"ID": "20221003154556-ia2si6p",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003154556-ia2si6p",
-												"updated": "20221003154606"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "扩容逻辑卷"
-												}
-											]
-										},
-										{
-											"ID": "20221003154627-gq6juj4",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003154627-gq6juj4",
-												"updated": "20221003154649"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "使用  "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003152708-qf6q93i",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "lvextend"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "  命令"
-												}
-											]
-										},
-										{
-											"ID": "20221003160411-7doj6bu",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003160411-7doj6bu",
-												"updated": "20221003160832"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "扩容后需要刷新文件系统 ext4文件系统使用命令 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "resize2fs"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "  ，xfs文件系统使用   "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "xfs_growfs"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221003154715-vydepps",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003154715-vydepps"
-									},
-									"Children": [
-										{
-											"ID": "20221003154715-f1r1sf5",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003154715-f1r1sf5",
-												"updated": "20221003154723"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "扩容卷组"
-												}
-											]
-										},
-										{
-											"ID": "20221003154734-mlpgntc",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003154734-mlpgntc",
-												"updated": "20221003154951"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "添加物理卷，使用 "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003144631-zq4r51y",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "pvcreate"
-												},
-												{
-													"Type": "NodeText",
-													"Data": " 命令"
-												}
-											]
-										},
-										{
-											"ID": "20221003154904-t62cakc",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003154904-t62cakc",
-												"updated": "20221003154928"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "卷组扩容 使用命令  "
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "block-ref",
-													"TextMarkBlockRefID": "20221003152438-n6t6oun",
-													"TextMarkBlockRefSubtype": "s",
-													"TextMarkTextContent": "vgextend "
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003155010-t0oscfi",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003155010-t0oscfi",
-						"updated": "20221003155537"
-					},
-					"Children": [
-						{
-							"ID": "20221003155010-sj0gadq",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003155010-sj0gadq",
-								"updated": "20221003155031"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "删除LVM"
-								}
-							]
-						},
-						{
-							"ID": "20221003155022-btkvvst",
-							"Type": "NodeList",
-							"ListData": {},
-							"Properties": {
-								"id": "20221003155022-btkvvst",
-								"updated": "20221003155537"
-							},
-							"Children": [
-								{
-									"ID": "20221003155021-xdlpqc8",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003155021-xdlpqc8"
-									},
-									"Children": [
-										{
-											"ID": "20221003155021-o9t1tb2",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003155021-o9t1tb2",
-												"updated": "20221003155053"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "要按顺序删除"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221003155053-datf95i",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003155053-datf95i"
-									},
-									"Children": [
-										{
-											"ID": "20221003155053-97v08j0",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003155053-97v08j0",
-												"updated": "20221003155541"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "删除  LV（逻辑卷） 使用命令 lvremove ，必须在非挂载状态下才能卸载，解除挂载使用命令 umount"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221003155129-k93aht5",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003155129-k93aht5"
-									},
-									"Children": [
-										{
-											"ID": "20221003155129-q2otj2q",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003155129-q2otj2q",
-												"updated": "20221003155535"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "删除 VG（卷组)   使用命令 vgremove"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221003155155-dxy4fvf",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221003155155-dxy4fvf",
-										"updated": "20221003155537"
-									},
-									"Children": [
-										{
-											"ID": "20221003155155-e5o75af",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221003155155-e5o75af",
-												"updated": "20221003155537"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "删除  PV（物理卷） 使用命令 pvremove"
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
+				"id": "20221003142912-uszc06a"
+			}
 		},
 		{
 			"ID": "20221003142912-pcm654c",
@@ -3144,48 +2635,7 @@
 			"ID": "20220924183650-iu209es",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220924183650-iu209es",
-				"updated": "20221003175810"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "\t"
-				},
-				{
-					"Type": "NodeTextMark",
-					"TextMarkType": "file-annotation-ref",
-					"TextMarkFileAnnotationRefID": "assets/Linux-20220924144344-aab25wa.pdf/20221003175805-u4k1w15",
-					"TextMarkTextContent": "手写笔记READ阵列"
-				}
-			]
-		},
-		{
-			"ID": "20221003161409-k118ncg",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161409-k118ncg"
-			}
-		},
-		{
-			"ID": "20221003161409-6l8vnxe",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161409-6l8vnxe"
-			}
-		},
-		{
-			"ID": "20221003161409-2kiuezs",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161409-2kiuezs"
-			}
-		},
-		{
-			"ID": "20221003161409-py73t98",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221003161409-py73t98"
+				"id": "20220924183650-iu209es"
 			}
 		},
 		{
@@ -4808,21 +4258,8 @@
 			"ID": "20220930001929-v6q04og",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930001929-v6q04og",
-				"updated": "20221003182635"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": " "
-				},
-				{
-					"Type": "NodeTextMark",
-					"TextMarkType": "a",
-					"TextMarkAHref": "https://blog.csdn.net/admans/article/details/125617465",
-					"TextMarkTextContent": "shell 编程100例"
-				}
-			]
+				"id": "20220930001929-v6q04og"
+			}
 		},
 		{
 			"ID": "20220930001932-myssfgk",
@@ -7453,69 +6890,10 @@
 		},
 		{
 			"ID": "20220930164431-t5nnf75",
-			"Type": "NodeList",
-			"ListData": {},
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930164431-t5nnf75",
-				"updated": "20221003181925"
-			},
-			"Children": [
-				{
-					"ID": "20221003181846-qv2tbcd",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003181846-qv2tbcd",
-						"updated": "20221003181925"
-					},
-					"Children": [
-						{
-							"ID": "20221003181846-0ne0cwl",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003181846-0ne0cwl",
-								"updated": "20221003181854"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "while死循环"
-								}
-							]
-						},
-						{
-							"ID": "20221003181855-4hpnx8z",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003181855-4hpnx8z",
-								"updated": "20221003181925"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "while :\ndo\n\t语句\ndone\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
+				"id": "20220930164431-t5nnf75"
+			}
 		},
 		{
 			"ID": "20220930164432-q07gdl0",
@@ -7526,695 +6904,47 @@
 		},
 		{
 			"ID": "20220930164432-66vehy8",
-			"Type": "NodeHeading",
-			"HeadingLevel": 3,
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930164432-66vehy8",
-				"updated": "20221003182001"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "2.1.9 shell随机数"
-				}
-			]
+				"id": "20220930164432-66vehy8"
+			}
 		},
 		{
-			"ID": "20221003182003-b7w1y1i",
-			"Type": "NodeList",
-			"ListData": {},
+			"ID": "20220930214403-4ypkf1l",
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221003182003-b7w1y1i",
-				"updated": "20221003183248"
-			},
-			"Children": [
-				{
-					"ID": "20221003182006-lizvlam",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003182006-lizvlam",
-						"updated": "20221003182006"
-					},
-					"Children": [
-						{
-							"ID": "20221003182006-xa9e04f",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003182006-xa9e04f",
-								"updated": "20221003182226"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "RANDOM 为系统自带的系统变量,值为 0‐32767的随机数。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003182227-9l093an",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003182227-9l093an",
-						"updated": "20221003183248"
-					},
-					"Children": [
-						{
-							"ID": "20221003182227-d1tql75",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003182227-d1tql75",
-								"updated": "20221003183243"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "取任意范围的随机数 例如  "
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "code",
-									"TextMarkTextContent": "$[RANDOM % 6 ]"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "   可以取出 0~5 的共 6 个随机数"
-								}
-							]
-						},
-						{
-							"ID": "20221003183024-g1pw5jv",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003183024-g1pw5jv",
-								"updated": "20221003183248"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "\t\t\t\t\t"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "code",
-									"TextMarkTextContent": "$[RANDOM % 6 + 3 ]"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "  可以取出 2~8 的共6个随机数"
-								}
-							]
-						}
-					]
-				}
-			]
+				"id": "20220930214403-4ypkf1l"
+			}
+		},
+		{
+			"ID": "20220930214452-ilz25n9",
+			"Type": "NodeWidget",
+			"Data": "\u003ciframe src=\"/widgets/Note Map\" data-src=\"/widgets/Note Map\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20220930214452-ilz25n9",
+				"updated": "20220930214452"
+			}
+		},
+		{
+			"ID": "20220930214943-e5113xk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20220930214943-e5113xk"
+			}
 		},
 		{
 			"ID": "20220930222011-qr9hzbi",
-			"Type": "NodeHeading",
-			"HeadingLevel": 3,
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930222011-qr9hzbi",
-				"updated": "20221003194749"
-			},
-			"Children": [
-				{
-					"Type": "NodeText",
-					"Data": "2.1.10 数组"
-				}
-			]
-		},
-		{
-			"ID": "20221003194750-fygtzvi",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003194750-fygtzvi",
-				"updated": "20221003212456"
-			},
-			"Children": [
-				{
-					"ID": "20221003194805-my5twmz",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003194805-my5twmz",
-						"updated": "20221003194805"
-					},
-					"Children": [
-						{
-							"ID": "20221003194805-iidjy3n",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003194805-iidjy3n",
-								"updated": "20221003194840"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "shell只支持一维数组，初始化时不需要指定数组大小。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003195028-nzdecau",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003195028-nzdecau",
-						"updated": "20221003212456"
-					},
-					"Children": [
-						{
-							"ID": "20221003195028-ke2mcu8",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003195028-ke2mcu8",
-								"updated": "20221003212456"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "my_array=(A B \"C\" D)\n\necho \"第一个元素为: ${my_array[0]}\"\necho \"第二个元素为: ${my_array[1]}\"\necho \"第三个元素为: ${my_array[2]}\"\necho \"第四个元素为: ${my_array[3]}\"\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
+				"id": "20220930222011-qr9hzbi"
+			}
 		},
 		{
 			"ID": "20220930222012-ghsrqp8",
-			"Type": "NodeList",
-			"ListData": {},
+			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20220930222012-ghsrqp8",
-				"updated": "20221003212613"
-			},
-			"Children": [
-				{
-					"ID": "20221003212458-p687ior",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212458-p687ior",
-						"updated": "20221003212458"
-					},
-					"Children": [
-						{
-							"ID": "20221003212458-eee2x5n",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212458-eee2x5n",
-								"updated": "20221003212510"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "不要求所有元素的类型相同"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221003212512-d1c5ym9",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212512-d1c5ym9",
-						"updated": "20221003212613"
-					},
-					"Children": [
-						{
-							"ID": "20221003212512-0wrapgn",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212512-0wrapgn",
-								"updated": "20221003212613"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "获取数组中所有的元素"
-								}
-							]
-						},
-						{
-							"ID": "20221003212614-nhx4x13",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003212614-nhx4x13",
-								"updated": "20221003212727"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "${nums[*]} \t# 将元素视为一个整体\n${nums[@]}\t# 将元素视为单独个体\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212735-hvxp5jc",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212735-hvxp5jc",
-				"updated": "20221003212901"
-			},
-			"Children": [
-				{
-					"ID": "20221003212846-zpy4ism",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212846-zpy4ism",
-						"updated": "20221003212901"
-					},
-					"Children": [
-						{
-							"ID": "20221003212846-23x7z4w",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212846-23x7z4w",
-								"updated": "20221003212901"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "获取数组元素个数"
-								}
-							]
-						},
-						{
-							"ID": "20221003212902-3tzd0cw",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003212902-3tzd0cw",
-								"updated": "20221003212908"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "${#array_name[@]}\n${#array_name[*]}\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212739-m6bjkfc",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212739-m6bjkfc",
-				"updated": "20221003213054"
-			},
-			"Children": [
-				{
-					"ID": "20221003212957-85cp4fl",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003212957-85cp4fl",
-						"updated": "20221003213054"
-					},
-					"Children": [
-						{
-							"ID": "20221003212957-rvydcw3",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003212957-rvydcw3",
-								"updated": "20221003212957"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "如果某个元素是字符串，还可以通过指定下标的方式获得该元素的长度"
-								}
-							]
-						},
-						{
-							"ID": "20221003213011-52d344j",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003213011-52d344j",
-								"updated": "20221003213054"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "${#arr[2]}  \t# 假设2号元素是字符串，获取字符串的长度\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212740-xn9z56p",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212740-xn9z56p",
-				"updated": "20221003213232"
-			},
-			"Children": [
-				{
-					"ID": "20221003213205-vpcu0gj",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003213205-vpcu0gj",
-						"updated": "20221003213232"
-					},
-					"Children": [
-						{
-							"ID": "20221003213205-ndruah6",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213205-ndruah6",
-								"updated": "20221003213212"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "数组拼接"
-								}
-							]
-						},
-						{
-							"ID": "20221003213215-1kz0lzc",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213215-1kz0lzc",
-								"updated": "20221003213215"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "所谓 Shell 数组拼接（数组合并），就是将两个数组连接成一个数组。"
-								}
-							]
-						},
-						{
-							"ID": "20221003213215-ss0dzno",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213215-ss0dzno",
-								"updated": "20221003213224"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "拼接数组的思路是：先利用"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "code",
-									"TextMarkTextContent": "@"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "或"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "code",
-									"TextMarkTextContent": "*"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，将数组扩展成列表，然后再合并到一起。具体格式如下："
-								}
-							]
-						},
-						{
-							"ID": "20221003213224-36wzesj",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221003213224-36wzesj",
-								"updated": "20221003213232"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "array_new=(${array1[@]}  ${array2[@]})\narray_new=(${array1[*]}  ${array2[*]})\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						},
-						{
-							"ID": "20221003213215-a702c7s",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213215-a702c7s",
-								"updated": "20221003213215"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "两种方式是等价的，选择其一即可。其中，array1 和 array2 是需要拼接的数组，array_new 是拼接后形成的新数组。"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221003212740-90n7eoz",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221003212740-90n7eoz",
-				"updated": "20221003213320"
-			},
-			"Children": [
-				{
-					"ID": "20221003213252-m1mdime",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221003213252-m1mdime",
-						"updated": "20221003213320"
-					},
-					"Children": [
-						{
-							"ID": "20221003213252-a6ih2ls",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213252-a6ih2ls",
-								"updated": "20221003213257"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "删除数组元素"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-xpbp0me",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-xpbp0me",
-								"updated": "20221003213309"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "在 Shell 中，使用 "
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "unset "
-								},
-								{
-									"Type": "NodeText",
-									"Data": "关键字来"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "删除数组元素"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，具体格式如下：unset array_name[index]"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-unat214",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-unat214",
-								"updated": "20221003213300"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "其中，array_name 表示数组名，index 表示数组下标。"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-xkl6cv7",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-xkl6cv7",
-								"updated": "20221003213317"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "如果"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "不写下标"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，而是写成下面的形式：unset array_name"
-								}
-							]
-						},
-						{
-							"ID": "20221003213300-qiwaaal",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221003213300-qiwaaal",
-								"updated": "20221003213320"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "那么就是"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "删除整个数组"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "，所有元素都会消失。"
-								}
-							]
-						}
-					]
-				}
-			]
+				"id": "20220930222012-ghsrqp8"
+			}
 		},
 		{
 			"ID": "20220930161452-vv098mx",
@@ -8748,12 +7478,12 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20220930020921-dy3fi33",
-				"updated": "20221003222145"
+				"updated": "20220930155023"
 			},
 			"Children": [
 				{
 					"Type": "NodeText",
-					"Data": "\t"
+					"Data": "\t~~~shell"
 				}
 			]
 		},

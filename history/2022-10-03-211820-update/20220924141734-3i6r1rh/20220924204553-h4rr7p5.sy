@@ -7,7 +7,7 @@
 		"id": "20220924204553-h4rr7p5",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924204608-yyftd47\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001220645-tij50ei\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:9999.2001953125,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001220645-msnglsr\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:63,\u0026amp;quot;focusEnd\u0026amp;quot;:63}",
 		"title": "资料库",
-		"updated": "20221003211832"
+		"updated": "20221003211815"
 	},
 	"Children": [
 		{
@@ -2297,7 +2297,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221003211217-bo9l258",
-				"updated": "20221003211832"
+				"updated": "20221003211815"
 			},
 			"Children": [
 				{
@@ -2352,7 +2352,7 @@
 					"IsFencedCodeBlock": true,
 					"Properties": {
 						"id": "20221003211102-4s0w70j",
-						"updated": "20221003211832"
+						"updated": "20221003211815"
 					},
 					"Children": [
 						{
@@ -2365,7 +2365,7 @@
 						},
 						{
 							"Type": "NodeCodeBlockCode",
-							"Data": "#!/bin/bash\n#创建一个随机数，并统计各数字出现的次数\nread -p \"请输入要取多少次数字：\"  n\nread -p \"请输入数字的下限\" min\nread -p \"请输入数字的上限\" max\nsize=$(($max-$min+1))\t\t# 随机数的长度\ncount=()\t\t\t# 初始化一个空数组\nfor((j=0;j\u003csize+1;j++))         # 数组初始化为0\ndo\n        count[$j]=0\ndone\n\n\nfor ((i=0;i\u003cn;i++))                             # 取随机数并记录次数\ndo\n        num=$(($RANDOM%$size+$min))             # 取范围内的一个随机数\n#       echo \"第 $i 次，结果为 $num\" \n        count[$num-1]=$((${count[$num-1]}+1))   # 对随机取到的数字的计数值加1\ndone\n\necho “随机数$min~$max,取 $n 次值的结果如下\nfor((k=min;k\u003csize+min;k++))\ndo\n        echo \"数字 $k  出现 ${count[$k-1]} 次  \"\ndone\n\n"
+							"Data": "#!/bin/bash\n#创建一个随机数，并统计各数字出现的次数\nread -p \"请输入要取多少次数字：\"  n\nread -p \"请输入数字的下限\" min\nread -p \"请输入数字的上限\" max\nsize=$(($max-$min+1))\t\t# 随机数的长度\ncount=()\t\t\t# 初始化一个空数组\nfor((j=0;j\u003csize+1;j++))         # 数组初始化为0\ndo\n        count[$j]=0\ndone\n\n\nfor ((i=0;i\u003cn;i++))                             # 取随机数并记录次数\ndo\n        num=$(($RANDOM%$size+$min))             # 取范围内的一个随机数\n#       echo \"第 $i 次，结果为 $num\" \n        count[$num-1]=$((${count[$num-1]}+1))   # 对随机取到的数字的计数值加1\n\ndone\necho “随机数$min~$max,取$n 次值的结果如下\nfor((k=min;k\u003csize+min;k++))\ndo\n        echo \"数字 $k  出现 ${count[$k-1]} 次  \"\ndone\n\n"
 						},
 						{
 							"Type": "NodeCodeBlockFenceCloseMarker",
