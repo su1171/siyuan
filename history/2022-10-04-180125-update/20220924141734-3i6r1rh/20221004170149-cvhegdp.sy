@@ -1,0 +1,391 @@
+{
+	"ID": "20221004170149-cvhegdp",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221004170149-cvhegdp",
+		"title": "nginx",
+		"updated": "20221004180123"
+	},
+	"Children": [
+		{
+			"ID": "20221004170153-68za3pg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221004170153-68za3pg",
+				"updated": "20221004170204"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx基础"
+				}
+			]
+		},
+		{
+			"ID": "20221004170204-0e1u1jl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221004170204-0e1u1jl",
+				"updated": "20221004170219"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx介绍"
+				}
+			]
+		},
+		{
+			"ID": "20221004170220-jxz4mr7",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221004170220-jxz4mr7",
+				"updated": "20221004170233"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx常见版本"
+				}
+			]
+		},
+		{
+			"ID": "20221004170233-qzq66jn",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221004170233-qzq66jn",
+				"updated": "20221004171249"
+			},
+			"Children": [
+				{
+					"ID": "20221004170302-am0q5id",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170302-am0q5id",
+						"updated": "20221004170302"
+					},
+					"Children": [
+						{
+							"ID": "20221004170302-7myx7gq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170302-7myx7gq",
+								"updated": "20221004170314"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "nginx开源版"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004170315-d1zig5v",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170315-d1zig5v"
+					},
+					"Children": [
+						{
+							"ID": "20221004170317-l40qdz1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170317-l40qdz1",
+								"updated": "20221004170414"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "nginx plus 商业版"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004170339-975s2la",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170339-975s2la",
+						"updated": "20221004170551"
+					},
+					"Children": [
+						{
+							"ID": "20221004170339-d13a7ug",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170339-d13a7ug",
+								"updated": "20221004170504"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "openresty 开源"
+								}
+							]
+						},
+						{
+							"ID": "20221004170530-h04q5mx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170530-h04q5mx",
+								"updated": "20221004170551"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "将 nginx 与Lua进行了结合"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004170351-2ly67is",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170351-2ly67is",
+						"updated": "20221004171249"
+					},
+					"Children": [
+						{
+							"ID": "20221004170351-wqq8x3p",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170351-wqq8x3p",
+								"updated": "20221004170507"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "tengine  开源"
+								}
+							]
+						},
+						{
+							"ID": "20221004171232-72vmn75",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004171232-72vmn75",
+								"updated": "20221004171249"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "以模块化的方式对nginx进行了拓展"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004170149-fm10qdt",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221004170149-fm10qdt",
+				"updated": "20221004171345"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.1.2 nginx编译安装"
+				}
+			]
+		},
+		{
+			"ID": "20221004171347-sgnbgva",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221004171347-sgnbgva",
+				"updated": "20221004180123"
+			},
+			"Children": [
+				{
+					"ID": "20221004172314-a3bsktn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221004172314-a3bsktn",
+						"updated": "20221004172314"
+					},
+					"Children": [
+						{
+							"ID": "20221004172314-kxua6jb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172314-kxua6jb",
+								"updated": "20221004172325"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "获取nginx的源码包"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004172326-ghyzpjd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221004172326-ghyzpjd"
+					},
+					"Children": [
+						{
+							"ID": "20221004172326-592zfhu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172326-592zfhu",
+								"updated": "20221004172332"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "解压源码包"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004172333-v7bw3gn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221004172333-v7bw3gn"
+					},
+					"Children": [
+						{
+							"ID": "20221004172333-4s2rux3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172333-4s2rux3",
+								"updated": "20221004180005"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "进行编译安装 （指定安装路径 "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "--prefix=路径"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "）"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004172344-ya0nom4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20221004172344-ya0nom4",
+						"updated": "20221004180123"
+					},
+					"Children": [
+						{
+							"ID": "20221004172344-pwfsvuh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172344-pwfsvuh",
+								"updated": "20221004172418"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "可能会缺少依赖环境 （）"
+								}
+							]
+						},
+						{
+							"ID": "20221004180114-cheqx8p",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004180114-cheqx8p",
+								"updated": "20221004180123"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004171348-4tahql3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004171348-4tahql3"
+			}
+		},
+		{
+			"ID": "20221004171348-oo44uyg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004171348-oo44uyg"
+			}
+		},
+		{
+			"ID": "20221004171348-6jirr72",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004171348-6jirr72"
+			}
+		}
+	]
+}

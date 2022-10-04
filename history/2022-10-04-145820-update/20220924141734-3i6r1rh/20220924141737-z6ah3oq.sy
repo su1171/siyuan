@@ -8,7 +8,7 @@
 		"id": "20220924141737-z6ah3oq",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220924142530-z39h3uh\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20220930161452-vv098mx\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:469.6000061035156,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220924182618-27hrufv\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:11}",
 		"title": "云计算",
-		"updated": "20221004171919"
+		"updated": "20221004145735"
 	},
 	"Children": [
 		{
@@ -1793,75 +1793,9 @@
 		},
 		{
 			"ID": "20220924183138-7ihuonb",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20220924183138-7ihuonb",
-				"updated": "20221004171919"
-			},
-			"Children": [
-				{
-					"ID": "20221004171807-py6ugs9",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221004171807-py6ugs9",
-						"updated": "20221004171919"
-					},
-					"Children": [
-						{
-							"ID": "20221004171807-fb0hsmr",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221004171807-fb0hsmr",
-								"updated": "20221004171818"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "编译安装常见选项"
-								}
-							]
-						},
-						{
-							"ID": "20221004171819-j7h3x6e",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221004171819-j7h3x6e",
-								"updated": "20221004171919"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "./configure --prefix=路径\t\t\t# 指定安装路径\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ID": "20221004171759-s689vja",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221004171759-s689vja"
+				"id": "20220924183138-7ihuonb"
 			}
 		},
 		{

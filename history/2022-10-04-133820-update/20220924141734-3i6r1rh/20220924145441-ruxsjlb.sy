@@ -7,7 +7,7 @@
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220930002750-lqs0k2p\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001150313-6hh6429\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:3401.60009765625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001223413-jf6oyr5\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20221004134230"
+		"updated": "20221004133731"
 	},
 	"Children": [
 		{
@@ -19192,7 +19192,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221004132151-fjm2bmx",
-				"updated": "20221004134230"
+				"updated": "20221004133731"
 			},
 			"Children": [
 				{
@@ -19802,7 +19802,7 @@
 					"Type": "NodeSuperBlock",
 					"Properties": {
 						"id": "20221004133707-zu8pt6k",
-						"updated": "20221004134230"
+						"updated": "20221004133731"
 					},
 					"Children": [
 						{
@@ -19856,81 +19856,8 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221004132945-ovp5pfk",
-								"updated": "20221004134053"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "\t直接输出计算结果"
-								}
-							]
-						},
-						{
-							"ID": "20221004134054-rafbl8f",
-							"Type": "NodeList",
-							"ListData": {},
-							"Properties": {
-								"id": "20221004134054-rafbl8f",
-								"updated": "20221004134230"
-							},
-							"Children": [
-								{
-									"ID": "20221004134057-76zgze6",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"id": "20221004134057-76zgze6",
-										"updated": "20221004134230"
-									},
-									"Children": [
-										{
-											"ID": "20221004134057-yl344vu",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221004134057-yl344vu",
-												"updated": "20221004134136"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "格式\t\t"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "echo \u0026quot;计算式\u0026quot; | bc"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "  "
-												}
-											]
-										},
-										{
-											"ID": "20221004134154-qadaj6o",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221004134154-qadaj6o",
-												"updated": "20221004134230"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "\t赋值   \t"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "变量=$(echo \u0026quot;计算式\u0026quot; | bc )   "
-												}
-											]
-										}
-									]
-								}
-							]
+								"updated": "20221004133708"
+							}
 						},
 						{
 							"Type": "NodeSuperBlockCloseMarker"
