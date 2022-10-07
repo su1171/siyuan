@@ -2,6 +2,7 @@
   "logLevel": "debug",
   "appearance": {
     "mode": 0,
+    "modeOS": false,
     "darkThemes": [
       "Dark+",
       "midnight"
@@ -194,7 +195,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "0px",
+              "size": "270px",
               "type": "left"
             },
             {
@@ -203,18 +204,19 @@
                   "children": [
                     {
                       "children": {
-                        "action": "",
-                        "blockId": "20220924141737-z6ah3oq",
+                        "action": "cb-get-all",
+                        "blockId": "20221004145412-4fkiyn3",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
-                          "endId": "20221001143855-8wafklz",
-                          "focusEnd": 37,
-                          "focusId": "20221004171819-j7h3x6e",
-                          "focusStart": 37,
-                          "scrollTop": 4037,
-                          "startId": "20220924142530-z39h3uh"
+                          "endId": "20221002135519-5kx9be9",
+                          "focusEnd": 0,
+                          "focusId": "20221008035238-8nfwy44",
+                          "focusStart": 0,
+                          "scrollTop": 2519,
+                          "startId": "20221004145412-4fkiyn3",
+                          "zoomInId": "20221004145412-4fkiyn3"
                         }
                       },
                       "docIcon": "",
@@ -230,11 +232,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20220929211029-j2rk9en",
                         "scrollAttr": {
-                          "endId": "20221004150402-tmhnp17",
-                          "focusEnd": 0,
-                          "focusId": "20220930153941-ww8lcv7",
-                          "focusStart": 0,
-                          "scrollTop": 656,
+                          "endId": "20221005194849-mg9cb5l",
+                          "focusEnd": 11,
+                          "focusId": "20221005194849-m8mawhy",
+                          "focusStart": 11,
+                          "scrollTop": 1492,
                           "startId": "20220930153941-ww8lcv7"
                         }
                       },
@@ -244,7 +246,6 @@
                       "title": "大纲"
                     },
                     {
-                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20221004170149-cvhegdp",
@@ -252,11 +253,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221004170149-cvhegdp",
                         "scrollAttr": {
-                          "endId": "20221004212424-05feprz",
-                          "focusEnd": 0,
-                          "focusId": "20221004212424-05feprz",
-                          "focusStart": 0,
-                          "scrollTop": 2275.020263671875,
+                          "endId": "20221007210137-yw00w4y",
+                          "focusEnd": 2,
+                          "focusId": "20221008023704-05wmhwe",
+                          "focusStart": 2,
+                          "scrollTop": 5273,
                           "startId": "20221004170153-68za3pg"
                         }
                       },
@@ -266,19 +267,20 @@
                       "title": "nginx"
                     },
                     {
+                      "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20221003144631-zq4r51y",
+                        "blockId": "20220924145441-ruxsjlb",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924145441-ruxsjlb",
                         "scrollAttr": {
                           "endId": "20221003152214-bqn1rni",
-                          "focusEnd": 4,
-                          "focusId": "20221004134057-yl344vu",
-                          "focusStart": 4,
-                          "scrollTop": 34976,
-                          "startId": "20220924153653-luku8g6"
+                          "focusEnd": 0,
+                          "focusId": "20221003161222-9dew46g",
+                          "focusStart": 0,
+                          "scrollTop": 2211.04638671875,
+                          "startId": "20221004132151-fjm2bmx"
                         }
                       },
                       "docIcon": "",
@@ -298,7 +300,7 @@
                           "focusEnd": 5,
                           "focusId": "20221003211102-4s0w70j",
                           "focusStart": 5,
-                          "scrollTop": 11609,
+                          "scrollTop": 13106,
                           "startId": "20220924204608-yyftd47"
                         }
                       },
@@ -316,9 +318,9 @@
                         "rootId": "20221001085750-qmjsuml",
                         "scrollAttr": {
                           "endId": "20221001090326-mrxeggy",
-                          "focusEnd": 7,
-                          "focusId": "20221001085750-2ipyxf9",
-                          "focusStart": 7,
+                          "focusEnd": 0,
+                          "focusId": "20221001090326-mrxeggy",
+                          "focusStart": 0,
                           "scrollTop": 0,
                           "startId": "20221001085757-s5ambuk"
                         }
@@ -403,10 +405,10 @@
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
-            "width": 199
+            "width": 270
           },
           "type": "outline"
         },
@@ -492,15 +494,15 @@
     "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
-    "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
+    "192.168.31.31",
     "127.0.0.1"
   ],
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.2.1",
+    "kernelVersion": "2.3.0",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -627,8 +629,8 @@
           "default": "F3"
         },
         "openBy": {
-          "custom": "⌘.",
-          "default": "⌘."
+          "custom": "⌥,",
+          "default": "⌥,"
         },
         "outline": {
           "custom": "⌥O",
@@ -869,6 +871,10 @@
         "custom": "⌥5",
         "default": "⌥5"
       },
+      "dataHistory": {
+        "custom": "⌥H",
+        "default": "⌥H"
+      },
       "enter": {
         "custom": "⌥→",
         "default": "⌥→"
@@ -900,10 +906,6 @@
       "graphView": {
         "custom": "⌥8",
         "default": "⌥8"
-      },
-      "history": {
-        "custom": "⌥H",
-        "default": "⌥H"
       },
       "inbox": {
         "custom": "⌥6",

@@ -1,0 +1,1374 @@
+{
+	"ID": "20221004170149-cvhegdp",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221004170149-cvhegdp",
+		"title": "nginx",
+		"updated": "20221005145931"
+	},
+	"Children": [
+		{
+			"ID": "20221004170153-68za3pg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221004170153-68za3pg",
+				"updated": "20221004170204"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx基础"
+				}
+			]
+		},
+		{
+			"ID": "20221004170204-0e1u1jl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221004170204-0e1u1jl",
+				"updated": "20221004170219"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx介绍"
+				}
+			]
+		},
+		{
+			"ID": "20221004170220-jxz4mr7",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221004170220-jxz4mr7",
+				"updated": "20221004170233"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx常见版本"
+				}
+			]
+		},
+		{
+			"ID": "20221004170233-qzq66jn",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221004170233-qzq66jn",
+				"updated": "20221004170551"
+			},
+			"Children": [
+				{
+					"ID": "20221004170302-am0q5id",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170302-am0q5id",
+						"updated": "20221004170302"
+					},
+					"Children": [
+						{
+							"ID": "20221004170302-7myx7gq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170302-7myx7gq",
+								"updated": "20221004170314"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "nginx开源版"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004170315-d1zig5v",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170315-d1zig5v"
+					},
+					"Children": [
+						{
+							"ID": "20221004170317-l40qdz1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170317-l40qdz1",
+								"updated": "20221004170414"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "nginx plus 商业版"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004170339-975s2la",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170339-975s2la",
+						"updated": "20221004170551"
+					},
+					"Children": [
+						{
+							"ID": "20221004170339-d13a7ug",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170339-d13a7ug",
+								"updated": "20221004170504"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "openresty 开源"
+								}
+							]
+						},
+						{
+							"ID": "20221004170530-h04q5mx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170530-h04q5mx",
+								"updated": "20221004170551"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "将 nginx 与Lua进行了结合"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004170351-2ly67is",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004170351-2ly67is"
+					},
+					"Children": [
+						{
+							"ID": "20221004170351-wqq8x3p",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004170351-wqq8x3p",
+								"updated": "20221004170507"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "tengine  开源"
+								}
+							]
+						},
+						{
+							"ID": "20221004171232-72vmn75",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004171232-72vmn75",
+								"updated": "20221004171249"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "以模块化的方式对nginx进行了拓展"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221005145554-n2qqb5h",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221005145554-n2qqb5h",
+				"updated": "20221005145602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.1.2 其他软件"
+				}
+			]
+		},
+		{
+			"ID": "20221005145638-dqb1j02",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221005145638-dqb1j02"
+			}
+		},
+		{
+			"ID": "20221005145658-4y42mhr",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"custom-type": "map",
+				"id": "20221005145658-4y42mhr",
+				"updated": "20221005145931"
+			},
+			"Children": [
+				{
+					"ID": "20221005145702-h64bkle",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221005145702-h64bkle",
+						"updated": "20221005145702"
+					},
+					"Children": [
+						{
+							"ID": "20221005145702-cc1svea",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221005145702-cc1svea",
+								"updated": "20221005145723"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "nginx"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221005145704-lcqcpw5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221005145704-lcqcpw5",
+						"updated": "20221005145931"
+					},
+					"Children": [
+						{
+							"ID": "20221005145704-efmm2wb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221005145704-efmm2wb",
+								"updated": "20221005145737"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvs"
+								}
+							]
+						},
+						{
+							"ID": "20221005145750-8e6if0g",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221005145750-8e6if0g",
+								"updated": "20221005145931"
+							},
+							"Children": [
+								{
+									"ID": "20221005145748-9pkniiq",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221005145748-9pkniiq"
+									},
+									"Children": [
+										{
+											"ID": "20221005145748-d9wzsbp",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221005145748-d9wzsbp",
+												"updated": "20221005145822"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "lvs相对于nginx来说负载均衡能力更强"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221005145823-f1uctic",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221005145823-f1uctic"
+									},
+									"Children": [
+										{
+											"ID": "20221005145823-opxhl9n",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221005145823-opxhl9n",
+												"updated": "20221005145829"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "但功能较少"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221005145859-u82tfyu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221005145859-u82tfyu",
+										"updated": "20221005145931"
+									},
+									"Children": [
+										{
+											"ID": "20221005145859-anm1fkw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221005145859-anm1fkw",
+												"updated": "20221005145931"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "基于DR模型，请求时经过代理服务器，返回时不经过"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221005145658-yrtad1e",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221005145658-yrtad1e"
+			}
+		},
+		{
+			"ID": "20221005145658-kks8nyv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221005145658-kks8nyv"
+			}
+		},
+		{
+			"ID": "20221004181158-81nft5s",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221004181158-81nft5s",
+				"updated": "20221004181208"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx的安装配置"
+				}
+			]
+		},
+		{
+			"ID": "20221004170149-fm10qdt",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221004170149-fm10qdt",
+				"updated": "20221004181216"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.2.2 nginx编译安装"
+				}
+			]
+		},
+		{
+			"ID": "20221004171347-sgnbgva",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221004171347-sgnbgva",
+				"updated": "20221004180719"
+			},
+			"Children": [
+				{
+					"ID": "20221004172314-a3bsktn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221004172314-a3bsktn",
+						"updated": "20221004172314"
+					},
+					"Children": [
+						{
+							"ID": "20221004172314-kxua6jb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172314-kxua6jb",
+								"updated": "20221004172325"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "获取nginx的源码包"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004172326-ghyzpjd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221004172326-ghyzpjd"
+					},
+					"Children": [
+						{
+							"ID": "20221004172326-592zfhu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172326-592zfhu",
+								"updated": "20221004172332"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "解压源码包"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004172333-v7bw3gn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221004172333-v7bw3gn",
+						"updated": "20221004180719"
+					},
+					"Children": [
+						{
+							"ID": "20221004172333-4s2rux3",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172333-4s2rux3",
+								"updated": "20221004180005"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "进行编译安装 （指定安装路径 "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "--prefix=路径"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "）"
+								}
+							]
+						},
+						{
+							"ID": "20221004180611-dbtn257",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221004180611-dbtn257",
+								"updated": "20221004180719"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "c2hlbGw="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "./configure --prefix=/usr/local/nginx\n\nmake\n\nmake install\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004172344-ya0nom4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20221004172344-ya0nom4"
+					},
+					"Children": [
+						{
+							"ID": "20221004172344-pwfsvuh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004172344-pwfsvuh",
+								"updated": "20221004172418"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "可能会缺少依赖环境 （）"
+								}
+							]
+						},
+						{
+							"ID": "20221004180114-cheqx8p",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004180114-cheqx8p",
+								"updated": "20221004180145"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "缺少 gcc 编译器\t"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "yum -y install gcc"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221004180146-08zsx34",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004180146-08zsx34",
+								"updated": "20221004180303"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "缺少 prel 库\t\t"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "yum -y install pcre  pcre-devel"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221004180305-o0cy1qm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004180305-o0cy1qm",
+								"updated": "20221004180355"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "缺少 zlib 库\t\t"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "yum -y install zlib  zlib-devel"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004171348-4tahql3",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221004171348-4tahql3",
+				"updated": "20221004181127"
+			},
+			"Children": [
+				{
+					"ID": "20221004180847-xu055wh",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20221004180847-xu055wh",
+						"updated": "20221004180847"
+					},
+					"Children": [
+						{
+							"ID": "20221004180847-lut3aru",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004180847-lut3aru",
+								"updated": "20221004180855"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "启动nginx"
+								}
+							]
+						},
+						{
+							"ID": "20221004180856-mbsdhc7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004180856-mbsdhc7",
+								"updated": "20221004180948"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "进入nginx安装目录下的sbin目录，运行 "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "./nginx "
+								},
+								{
+									"Type": "NodeText",
+									"Data": " 启动nginx"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004181041-l14io57",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ni4=",
+						"Num": 6
+					},
+					"Properties": {
+						"id": "20221004181041-l14io57"
+					},
+					"Children": [
+						{
+							"ID": "20221004181041-9bgwzvj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004181041-9bgwzvj",
+								"updated": "20221004181112"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用浏览器验证nginx的启动情况。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221004181112-74rnhsc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ny4=",
+						"Num": 7
+					},
+					"Properties": {
+						"id": "20221004181112-74rnhsc",
+						"updated": "20221004181127"
+					},
+					"Children": [
+						{
+							"ID": "20221004181112-gcaqekh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004181112-gcaqekh",
+								"updated": "20221004181127"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "注意关闭防火墙"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004171348-oo44uyg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221004171348-oo44uyg",
+				"updated": "20221004181233"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.2.2 nginx的常用操作"
+				}
+			]
+		},
+		{
+			"ID": "20221004181233-78bynne",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004181233-78bynne"
+			}
+		},
+		{
+			"ID": "20221004181246-fyfrumc",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221004181246-fyfrumc",
+				"updated": "20221004181528"
+			},
+			"Children": [
+				{
+					"ID": "20221004181248-npz5ugg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004181248-npz5ugg",
+						"updated": "20221004181528"
+					},
+					"Children": [
+						{
+							"ID": "20221004181248-a992scg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004181248-a992scg",
+								"updated": "20221004181252"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "常用命令"
+								}
+							]
+						},
+						{
+							"ID": "20221004181253-1cz8eb4",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004181253-1cz8eb4",
+								"updated": "20221004181319"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "进入nginx的安装目录中的sbin目录后"
+								}
+							]
+						},
+						{
+							"ID": "20221004181320-gigmjfa",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221004181320-gigmjfa",
+								"updated": "20221004181528"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "c2hlbGw="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "./nginx\t\t\t# nginx启动\n./nginx\t-s stop\t\t# nginx关闭\n./nginx -s quit\t\t# nginx优雅关闭，完成当前正在运行的任务后，关闭\n./nginx -s reload\t# nginx重新加载配置\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004181234-m61sf4d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004181234-m61sf4d"
+			}
+		},
+		{
+			"ID": "20221004171348-6jirr72",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221004171348-6jirr72",
+				"updated": "20221004181644"
+			},
+			"Children": [
+				{
+					"ID": "20221004181644-o6c4lxb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004181644-o6c4lxb",
+						"updated": "20221004181644"
+					},
+					"Children": [
+						{
+							"ID": "20221004181644-raci36y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004181644-raci36y",
+								"updated": "20221004181655"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "nginx安装成系统服务"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004181700-am20zm9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004181700-am20zm9",
+				"updated": "20221004185036"
+			}
+		},
+		{
+			"ID": "20221004181701-2kx6on8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221004181701-2kx6on8",
+				"updated": "20221004185044"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx配置"
+				}
+			]
+		},
+		{
+			"ID": "20221004185044-dhlhmiq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004185044-dhlhmiq",
+				"updated": "20221004185135"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx的主配置文件在 /usr/local/nginx/conf/nginx.conf  中"
+				}
+			]
+		},
+		{
+			"ID": "20221004185142-moil301",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004185142-moil301",
+				"updated": "20221004185149"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "nginx的最小配置"
+				}
+			]
+		},
+		{
+			"ID": "20221004185135-ph8nedd",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"custom-render": "scroll",
+				"id": "20221004185135-ph8nedd",
+				"updated": "20221004193152"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "c2hlbGw="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "\nworker_processes  1;\t\t\t# 启动多少个worker进程 建议等于CPU核心数\n\nevents {\t\t\t\t# events 模块主要是nginx 和用户交互网络连接优化的配置内容\n    worker_connections  1024;\t\t# 每个worker可以创建多少个链接\n}\n\nhttp {\n    include       mime.types;\t\t# 将其他配置文件引入  \tmime.types 文件内容 是服务端告诉客户端浏览器以什么方式解析当前文件类型\n    default_type  application/octet-stream;\t\t# 默认解析类型设置，若未在mime.types 中匹配到，则以默认的方式解析\n\n    sendfile        on;\t\t\t\t\t# 高效文件传输模式。 若未开启，则客户端请求某个文件时，由nginx将文件读取到nginx的内存中，再由系统转发给客户\n\t\t\t\t\t\t\t# 若开启，则nginx向系统发送信号，由系统将文件转发给客户，少去了nginx读取文件的过程。\n    keepalive_timeout  65;\t\t\t\t# 保持连接超时的时间\n\n    server {\t\t\t\t\t\t# 一个server代表一个续集主机（vhost），之间互不干扰\n        listen       80;\t\t\t\t# 监听的端口号\n        server_name  localhost;\t\t\t\t# 域名或主机名或ip\n\n        location / {\t\t\t\t\t# 用来匹配 URI（url域名后的部分（资源目录））\n            root   html;\t\t\t\t# 指定当前匹配上的uri的根目录    相对路径 （以nginx的主目录为标准）\n            index  index.html index.htm;\t\t# 指定默认页面\n        }\n        error_page   500 502 503 504  /50x.html;\t# 若出错 为 500 502 .... 则显示 根目录下的 50x.html 页面\n        location = /50x.html {\t\t\t\t# 若 uri 中匹配到了 50x.html 则指定 html 文件夹为根目录\n            root   html;\n        }\n    }\n}\n\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221004185045-4nuulhj",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221004185045-4nuulhj",
+				"updated": "20221004211255"
+			},
+			"Children": [
+				{
+					"ID": "20221004201658-om1ee12",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004201658-om1ee12",
+						"updated": "20221004211255"
+					},
+					"Children": [
+						{
+							"ID": "20221004201658-v7hbour",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004201658-v7hbour",
+								"updated": "20221004201701"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "虚拟主机"
+								}
+							]
+						},
+						{
+							"ID": "20221004201701-2x34x3t",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221004201701-2x34x3t",
+								"updated": "20221004211038"
+							},
+							"Children": [
+								{
+									"ID": "20221004211000-af2usfv",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221004211000-af2usfv",
+										"updated": "20221004211038"
+									},
+									"Children": [
+										{
+											"ID": "20221004211000-38k4brg",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004211000-38k4brg",
+												"updated": "20221004211000"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "以端口号做区分"
+												}
+											]
+										},
+										{
+											"ID": "20221004211006-315qcb8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004211006-315qcb8",
+												"updated": "20221004211038"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "添加一个server，更改监听的端口号"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221004201724-7dhfych",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221004201724-7dhfych",
+								"updated": "20221004211255"
+							},
+							"Children": [
+								{
+									"ID": "20221004211044-vfmcynz",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221004211044-vfmcynz",
+										"updated": "20221004211255"
+									},
+									"Children": [
+										{
+											"ID": "20221004211044-ntfuo75",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004211044-ntfuo75",
+												"updated": "20221004211044"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "以域名做区分"
+												}
+											]
+										},
+										{
+											"ID": "20221004211046-lq4nzn6",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004211046-lq4nzn6",
+												"updated": "20221004211130"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "需要购买域名后，将域名的二级域名适配规则更改"
+												}
+											]
+										},
+										{
+											"ID": "20221004211132-dpixy7f",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004211132-dpixy7f",
+												"updated": "20221004211255"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "然后添加一个server在server_name这项添加域名与二级域名，与原server的域名做出区分。"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004210952-6bep4k6",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221004210952-6bep4k6",
+				"updated": "20221004213302"
+			},
+			"Children": [
+				{
+					"ID": "20221004212248-iy77fjk",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221004212248-iy77fjk",
+						"updated": "20221004213302"
+					},
+					"Children": [
+						{
+							"ID": "20221004212248-y1ch32t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221004212248-y1ch32t",
+								"updated": "20221004212258"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "server_name 的匹配规则"
+								}
+							]
+						},
+						{
+							"ID": "20221004212302-ibcy1he",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221004212302-ibcy1he",
+								"updated": "20221004213302"
+							},
+							"Children": [
+								{
+									"ID": "20221004212259-wi3apul",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221004212259-wi3apul"
+									},
+									"Children": [
+										{
+											"ID": "20221004212259-tzot2we",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004212259-tzot2we",
+												"updated": "20221004212417"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "一个server的server_name 可以添加多个 域名 "
+												}
+											]
+										},
+										{
+											"ID": "20221004212420-fk6yq6q",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004212420-fk6yq6q",
+												"updated": "20221004212503"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "格式："
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "server_name  vio.taobao.com vio1.taobao.com \t"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "# 可将多个域名指向同一server"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221004212754-a9kstv9",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221004212754-a9kstv9"
+									},
+									"Children": [
+										{
+											"ID": "20221004212754-enn590a",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004212754-enn590a",
+												"updated": "20221004213130"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "不同配置格式的优先级也不相同，与server的"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "先后顺序无关"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221004213229-qsla1yt",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221004213229-qsla1yt",
+										"updated": "20221004213302"
+									},
+									"Children": [
+										{
+											"ID": "20221004213229-2c7zkj3",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221004213229-2c7zkj3",
+												"updated": "20221004213235"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "匹配优先级"
+												}
+											]
+										},
+										{
+											"ID": "20221004213236-mtgpz9a",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221004213236-mtgpz9a",
+												"updated": "20221004213302"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "c2hlbGw="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "1. 精确的名字\t\t\t\t\t\t# 高\n2. 以*号开头的最长通配符名称，例如 *.example.org\n3. 以*号结尾的最长通配符名称，例如 mail.*\n4. 第一个匹配的正则表达式（在配置文件中出现的顺序）\t\t# 低\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221004212424-05feprz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221004212424-05feprz"
+			}
+		}
+	]
+}
