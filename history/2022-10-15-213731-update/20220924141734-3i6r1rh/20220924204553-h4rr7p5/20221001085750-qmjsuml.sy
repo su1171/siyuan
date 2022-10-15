@@ -6,7 +6,7 @@
 		"id": "20221001085750-qmjsuml",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20221001085757-s5ambuk\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001090326-mrxeggy\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:0,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001090326-mrxeggy\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "文档",
-		"updated": "20221015213754"
+		"updated": "20221015213723"
 	},
 	"Children": [
 		{
@@ -145,13 +145,6 @@
 			]
 		},
 		{
-			"ID": "20221015213754-y0ab1uk",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221015213754-y0ab1uk"
-			}
-		},
-		{
 			"ID": "20221015213554-ssdt63m",
 			"Type": "NodeParagraph",
 			"Properties": {
@@ -162,17 +155,9 @@
 				{
 					"Type": "NodeTextMark",
 					"TextMarkType": "a",
-					"TextMarkAHref": "I:\\Users\\su\\Downloads\\Documents\\mysql\\基础版MySQL课件",
-					"TextMarkTextContent": "笔记"
+					"TextMarkAHref": "I:\\Users\\su\\Downloads\\Documents\\mysql\\基础版MySQL课件"
 				}
 			]
-		},
-		{
-			"ID": "20221015213746-6yksfmn",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221015213746-6yksfmn"
-			}
 		}
 	]
 }

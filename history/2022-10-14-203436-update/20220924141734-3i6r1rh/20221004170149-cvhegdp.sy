@@ -5,7 +5,7 @@
 	"Properties": {
 		"id": "20221004170149-cvhegdp",
 		"title": "nginx",
-		"updated": "20221004180719"
+		"updated": "20221014163248"
 	},
 	"Children": [
 		{
@@ -620,7 +620,7 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221004180146-08zsx34",
-								"updated": "20221015172331"
+								"updated": "20221004180303"
 							},
 							"Children": [
 								{
@@ -634,7 +634,7 @@
 								},
 								{
 									"Type": "NodeText",
-									"Data": "\t\t用于解析正则表达式"
+									"Data": "​"
 								}
 							]
 						},
@@ -643,7 +643,7 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221004180305-o0cy1qm",
-								"updated": "20221015172347"
+								"updated": "20221004180355"
 							},
 							"Children": [
 								{
@@ -657,7 +657,7 @@
 								},
 								{
 									"Type": "NodeText",
-									"Data": "\t\t用于压缩和解压缩"
+									"Data": "​"
 								}
 							]
 						}
@@ -3148,79 +3148,13 @@
 			]
 		},
 		{
-			"ID": "20221014211603-mtonzt0",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221014211603-mtonzt0",
-				"updated": "20221014212034"
-			},
-			"Children": [
-				{
-					"ID": "20221014211605-zrrmd0y",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221014211605-zrrmd0y",
-						"updated": "20221014212034"
-					},
-					"Children": [
-						{
-							"ID": "20221014211605-8wsh3lp",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221014211605-8wsh3lp",
-								"updated": "20221014211616"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "keepalived 最小配置"
-								}
-							]
-						},
-						{
-							"ID": "20221014211618-fuvl8ox",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221014211618-fuvl8ox",
-								"updated": "20221014212034"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "! Configuration File for keepalived\n\nglobal_defs {\n   router_id LVS_DEVEL\n}\n\nvrrp_instance VI_1 {\n    state MASTER\n    interface ens33\n    virtual_router_id 51\t# 通过此id 相同则 组入同一集群 #设置VRID标记，多个集群不能重复(0..255)\n    priority 100\n    advert_int 1\n    authentication {\n        auth_type PASS\n        auth_pass 1111\n    }\n    virtual_ipaddress {\n        192.168.100.156/24\n    }\n}\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"ID": "20221013152536-2b5hriu",
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
 				"custom-list-guides": "1",
 				"id": "20221013152536-2b5hriu",
-				"updated": "20221014214723"
+				"updated": "20221014163248"
 			},
 			"Children": [
 				{
@@ -3232,7 +3166,7 @@
 					},
 					"Properties": {
 						"id": "20221014161842-sgs8djw",
-						"updated": "20221014214723"
+						"updated": "20221014163248"
 					},
 					"Children": [
 						{
@@ -3419,7 +3353,7 @@
 							"ListData": {},
 							"Properties": {
 								"id": "20221014163247-0je8ld3",
-								"updated": "20221014214723"
+								"updated": "20221014163248"
 							},
 							"Children": [
 								{
@@ -3430,7 +3364,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"fold": "0",
+										"fold": "1",
 										"id": "20221014163248-wyx4d50",
 										"updated": "20221014163738"
 									},
@@ -3503,7 +3437,7 @@
 									"Properties": {
 										"fold": "0",
 										"id": "20221014163933-4ote0t9",
-										"updated": "20221014214723"
+										"updated": "20221014175112"
 									},
 									"Children": [
 										{
@@ -3520,6 +3454,14 @@
 													"TextMarkTextContent": "LVS配置"
 												}
 											]
+										},
+										{
+											"ID": "20221014175104-rs0eymt",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221014175104-rs0eymt",
+												"updated": "20221014175112"
+											}
 										},
 										{
 											"ID": "20221014163942-8yq5alg",
@@ -3542,7 +3484,7 @@
 											"Properties": {
 												"custom-render": "scroll",
 												"id": "20221014165314-eu4s6ic",
-												"updated": "20221014214723"
+												"updated": "20221014165323"
 											},
 											"Children": [
 												{
@@ -3555,7 +3497,7 @@
 												},
 												{
 													"Type": "NodeCodeBlockCode",
-													"Data": "virtual_server 192.168.202.200 23 {        //VIP地址，要和vrrp_instance模块中的virtual_ipaddress地址一致\n　　　　delay_loop 6   #健康检查时间间隔 \n　　　　lb_algo rr 　　#lvs调度算法rr|wrr|lc|wlc|lblc|sh|dh \n　　　　lb_kind DR    #负载均衡转发规则NAT|DR|RUN \n　　　　persistence_timeout 5 #会话保持时间 \n　　　　protocol TCP    #使用的协议 \n　　　　persistence_granularity \u003cNETMASK\u003e #lvs会话保持粒度 \n　　　　virtualhost \u003cstring\u003e    #检查的web服务器的虚拟主机（host：头） \n　　　　sorry_server\u003cIPADDR\u003e \u003cport\u003e #备用机，所有realserver失效后启用\n\n\nreal_server 192.168.200.5 23 {             //RS的真实IP地址\n            weight 1 #默认为1,0为失效\n            inhibit_on_failure #在服务器健康检查失效时，将其设为0，而不是直接从ipvs中删除 \n            notify_up \u003cstring\u003e | \u003cquoted-string\u003e #在检测到server up后执行脚本\n            notify_down \u003cstring\u003e | \u003cquoted-string\u003e #在检测到server down后执行脚本\n        \n\t\t\tTCP_CHECK {                    //常用\n\t\t\t            connect_timeout 3 #连接超时时间\n\t\t\t            nb_get_retry 3 #重连次数\n\t\t\t            delay_before_retry 3 #重连间隔时间\n\t\t\t            connect_port 23  #健康检查的端口\n\t\t\t            bindto \u003cip\u003e   \n\t\t\t          }\n\t\n\t\t\tHTTP_GET | SSL_GET{          //不常用\n\t\t\t    url{ #检查url，可以指定多个\n\t\t\t         path /\n\t\t\t         digest \u003cstring\u003e #检查后的摘要信息\n\t\t\t         status_code 200 #检查的返回状态码\n\t\t\t        }\n\t\t\t    connect_port \u003cport\u003e \n\t\t\t    bindto \u003cIPADD\u003e\n\t\t\t    connect_timeout 5\n\t\t\t    nb_get_retry 3\n\t\t\t    delay_before_retry 2\n\t\t\t    }\n\t\n\t\t\tSMTP_CHECK{                 //不常用\n\t\t\t    host{\n\t\t\t    connect_ip \u003cIP ADDRESS\u003e\n\t\t\t    connect_port \u003cport\u003e #默认检查25端口\n\t\t\t    bindto \u003cIP ADDRESS\u003e\n\t\t\t         }\n\t\t\t    connect_timeout 5\n\t\t\t    retry 3\n\t\t\t    delay_before_retry 2\n\t\t\t    helo_name \u003cstring\u003e | \u003cquoted-string\u003e #smtp helo请求命令参数，可选\n\t\t\t    }\n\t\t\t \n\t\t\tMISC_CHECK{                 //不常用\n\t\t\t    misc_path \u003cstring\u003e | \u003cquoted-string\u003e #外部脚本路径\n\t\t\t    misc_timeout #脚本执行超时时间\n\t\t\t    misc_dynamic #如设置该项，则退出状态码会用来动态调整服务器的权重，返回0 正常，不修改；返回1，\n\t\n\t\t\t　　检查失败，权重改为0；返回2-255，正常，权重设置为：返回状态码-2\n\t\t\t    }\n\t\t\t}\n"
+													"Data": "virtual_server 192.168.202.200 23 {        //VIP地址，要和vrrp_instance模块中的virtual_ipaddress地址一致\n　　　　delay_loop 6   #健康检查时间间隔 \n　　　　lb_algo rr 　　#lvs调度算法rr|wrr|lc|wlc|lblc|sh|dh \n　　　　lb_kind DR    #负载均衡转发规则NAT|DR|RUN \n　　　　persistence_timeout 5 #会话保持时间 \n　　　　protocol TCP    #使用的协议 \n　　　　persistence_granularity \u003cNETMASK\u003e #lvs会话保持粒度 \n　　　　virtualhost \u003cstring\u003e    #检查的web服务器的虚拟主机（host：头） \n　　　　sorry_server\u003cIPADDR\u003e \u003cport\u003e #备用机，所有realserver失效后启用\n\n\nreal_server 192.168.200.5 23 {             //RS的真实IP地址\n            weight 1 #默认为1,0为失效\n            inhibit_on_failure #在服务器健康检查失效时，将其设为0，而不是直接从ipvs中删除 \n            notify_up \u003cstring\u003e | \u003cquoted-string\u003e #在检测到server up后执行脚本\n            notify_down \u003cstring\u003e | \u003cquoted-string\u003e #在检测到server down后执行脚本\n          \n\t\t\tTCP_CHECK {                    //常用\n\t\t\t            connect_timeout 3 #连接超时时间\n\t\t\t            nb_get_retry 3 #重连次数\n\t\t\t            delay_before_retry 3 #重连间隔时间\n\t\t\t            connect_port 23  #健康检查的端口的端口\n\t\t\t            bindto \u003cip\u003e   \n\t\t\t          }\n\t\t\n\t\t\tHTTP_GET | SSL_GET{          //不常用\n\t\t\t    url{ #检查url，可以指定多个\n\t\t\t         path /\n\t\t\t         digest \u003cstring\u003e #检查后的摘要信息\n\t\t\t         status_code 200 #检查的返回状态码\n\t\t\t        }\n\t\t\t    connect_port \u003cport\u003e \n\t\t\t    bindto \u003cIPADD\u003e\n\t\t\t    connect_timeout 5\n\t\t\t    nb_get_retry 3\n\t\t\t    delay_before_retry 2\n\t\t\t    }\n\t\t\n\t\t\tSMTP_CHECK{                 //不常用\n\t\t\t    host{\n\t\t\t    connect_ip \u003cIP ADDRESS\u003e\n\t\t\t    connect_port \u003cport\u003e #默认检查25端口\n\t\t\t    bindto \u003cIP ADDRESS\u003e\n\t\t\t         }\n\t\t\t    connect_timeout 5\n\t\t\t    retry 3\n\t\t\t    delay_before_retry 2\n\t\t\t    helo_name \u003cstring\u003e | \u003cquoted-string\u003e #smtp helo请求命令参数，可选\n\t\t\t    }\n\t\t\t \n\t\t\tMISC_CHECK{                 //不常用\n\t\t\t    misc_path \u003cstring\u003e | \u003cquoted-string\u003e #外部脚本路径\n\t\t\t    misc_timeout #脚本执行超时时间\n\t\t\t    misc_dynamic #如设置该项，则退出状态码会用来动态调整服务器的权重，返回0 正常，不修改；返回1，\n\t\t\n\t\t\t　　检查失败，权重改为0；返回2-255，正常，权重设置为：返回状态码-2\n\t\t\t    }\n\t\t\t}\n"
 												},
 												{
 													"Type": "NodeCodeBlockFenceCloseMarker",

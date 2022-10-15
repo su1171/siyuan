@@ -7,7 +7,7 @@
 		"id": "20220924145441-ruxsjlb",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20220930002750-lqs0k2p\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221001150313-6hh6429\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:3401.60009765625,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221001223413-jf6oyr5\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "命令详解",
-		"updated": "20221015170822"
+		"updated": "20221015145704"
 	},
 	"Children": [
 		{
@@ -21373,20 +21373,25 @@
 															"Data": "\n-r, --resolve 把 IP 解释为域名，把端口号解释为协议名称"
 														}
 													]
-												},
+												}
+											]
+										},
+										{
+											"ID": "20221015145727-mg1stbe",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221015145727-mg1stbe"
+											},
+											"Children": [
 												{
 													"ID": "20221015145727-0hiogwt",
 													"Type": "NodeParagraph",
 													"Properties": {
-														"id": "20221015145727-0hiogwt",
-														"updated": "20221015145843"
-													}
-												},
-												{
-													"ID": "20221015145735-234bt03",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221015145735-234bt03"
+														"id": "20221015145727-0hiogwt"
 													}
 												}
 											]
@@ -21422,7 +21427,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221012141029-q2hpv25",
-				"updated": "20221015152355"
+				"updated": "20221015145635"
 			},
 			"Children": [
 				{
@@ -21438,7 +21443,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221012141025-q5r49z6",
-						"updated": "20221015152355"
+						"updated": "20221015145635"
 					},
 					"Children": [
 						{
@@ -21450,7 +21455,7 @@
 							},
 							"Properties": {
 								"id": "20221012141030-lakr8qb",
-								"updated": "20221015152355"
+								"updated": "20221015145635"
 							},
 							"Children": [
 								{
@@ -21493,839 +21498,717 @@
 									]
 								},
 								{
-									"ID": "20221015152052-59prpji",
-									"Type": "NodeList",
-									"ListData": {},
+									"ID": "20221012141552-l2zd4kb",
+									"Type": "NodeSuperBlock",
 									"Properties": {
-										"id": "20221015152052-59prpji",
-										"updated": "20221015152355"
+										"custom-render": "scroll",
+										"id": "20221012141552-l2zd4kb",
+										"updated": "20221012141552"
 									},
 									"Children": [
 										{
-											"ID": "20221015152053-ie03dnj",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221012141515-gxa5z3t",
+											"Type": "NodeList",
+											"ListData": {},
 											"Properties": {
-												"id": "20221015152053-ie03dnj",
-												"updated": "20221015152355"
+												"id": "20221012141515-gxa5z3t",
+												"updated": "20221012141552"
 											},
 											"Children": [
 												{
-													"ID": "20221015152053-tazja82",
-													"Type": "NodeParagraph",
+													"ID": "20221012141527-pmbrafm",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
 													"Properties": {
-														"id": "20221015152053-tazja82",
-														"updated": "20221015152057"
+														"id": "20221012141527-pmbrafm",
+														"updated": "20221012141527"
 													},
 													"Children": [
 														{
-															"Type": "NodeText",
-															"Data": "常用选项"
-														}
-													]
-												},
-												{
-													"ID": "20221015152058-yuqvv8h",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221015152058-yuqvv8h",
-														"updated": "20221015152347"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "-anpt\t显示tcp连接"
-														}
-													]
-												},
-												{
-													"ID": "20221015152319-mwj5o02",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221015152319-mwj5o02",
-														"updated": "20221015152355"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "-anpu\t显示udp连接"
+															"ID": "20221012141527-d71jxi3",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141527-d71jxi3",
+																"updated": "20221012141527"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-a或--all 显示所有连线中的Socket。"
+																}
+															]
 														}
 													]
 												}
 											]
-										}
-									]
-								},
-								{
-									"ID": "20221015152034-s8aqs27",
-									"Type": "NodeList",
-									"ListData": {},
-									"Properties": {
-										"id": "20221015152034-s8aqs27",
-										"updated": "20221015152051"
-									},
-									"Children": [
+										},
 										{
-											"ID": "20221015152036-r3523th",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
+											"ID": "20221012141515-5ljvjgb",
+											"Type": "NodeList",
+											"ListData": {},
 											"Properties": {
-												"id": "20221015152036-r3523th",
-												"updated": "20221015152051"
+												"id": "20221012141515-5ljvjgb",
+												"updated": "20221012141552"
 											},
 											"Children": [
 												{
-													"ID": "20221015152036-52oi8xi",
-													"Type": "NodeParagraph",
+													"ID": "20221012141515-nyp0hst",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
 													"Properties": {
-														"id": "20221015152036-52oi8xi",
-														"updated": "20221015152045"
+														"id": "20221012141515-nyp0hst",
+														"updated": "20221012141515"
 													},
 													"Children": [
 														{
-															"Type": "NodeText",
-															"Data": "详细选项"
-														}
-													]
-												},
-												{
-													"ID": "20221012141552-l2zd4kb",
-													"Type": "NodeSuperBlock",
-													"Properties": {
-														"custom-render": "scroll",
-														"id": "20221012141552-l2zd4kb",
-														"updated": "20221015152051"
-													},
-													"Children": [
-														{
-															"Type": "NodeSuperBlockOpenMarker"
-														},
-														{
-															"Type": "NodeSuperBlockLayoutMarker",
-															"Data": "row"
-														},
-														{
-															"ID": "20221012141515-gxa5z3t",
-															"Type": "NodeList",
-															"ListData": {},
+															"ID": "20221012141515-vf2p8v9",
+															"Type": "NodeParagraph",
 															"Properties": {
-																"id": "20221012141515-gxa5z3t",
-																"updated": "20221012141552"
-															},
-															"Children": [
-																{
-																	"ID": "20221012141527-pmbrafm",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141527-pmbrafm",
-																		"updated": "20221012141527"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141527-d71jxi3",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141527-d71jxi3",
-																				"updated": "20221012141527"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-a或--all 显示所有连线中的Socket。"
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														},
-														{
-															"ID": "20221012141515-5ljvjgb",
-															"Type": "NodeList",
-															"ListData": {},
-															"Properties": {
-																"id": "20221012141515-5ljvjgb",
+																"id": "20221012141515-vf2p8v9",
 																"updated": "20221012141515"
 															},
 															"Children": [
 																{
-																	"ID": "20221012141515-nyp0hst",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-nyp0hst",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-vf2p8v9",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-vf2p8v9",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-A\u003c网络类型\u003e或--\u003c网络类型\u003e 列出该网络类型连线中的相关地址。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-7a9v7d7",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-7a9v7d7",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-ldhvggc",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-ldhvggc",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-c或--continuous 持续列出网络状态。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-s6gog8l",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-s6gog8l",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-h8nc77c",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-h8nc77c",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-C或--cache 显示路由器配置的快取信息。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-ksg27ce",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-ksg27ce",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-qq97t9u",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-qq97t9u",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-e或--extend 显示网络其他相关信息。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-wfobn7x",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-wfobn7x",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-ag0t3sw",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-ag0t3sw",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-F或--fib 显示路由缓存。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-09qr054",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-09qr054",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-623mdh0",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-623mdh0",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-g或--groups 显示多重广播功能群组组员名单。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-n9uki35",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-n9uki35",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-kjx5ppl",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-kjx5ppl",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-h或--"
-																				},
-																				{
-																					"Type": "NodeText",
-																					"Data": "help"
-																				},
-																				{
-																					"Type": "NodeText",
-																					"Data": " 在线帮助。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-aaeerm7",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-aaeerm7",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-jwi159q",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-jwi159q",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-i或--interfaces 显示网络界面信息表单。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-vk49n6f",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-vk49n6f",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-liko3or",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-liko3or",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-l或--listening 显示监控中的服务器的Socket。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-9z8nlze",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-9z8nlze",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-iinj0n7",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-iinj0n7",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-M或--masquerade 显示伪装的网络连线。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-p8l1jl3",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-p8l1jl3",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-3tdklih",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-3tdklih",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-n或--numeric 直接使用IP地址，而不通过域名服务器。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-n26eev4",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-n26eev4",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-79l3k3g",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-79l3k3g",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-N或--netlink或--symbolic 显示网络硬件外围设备的符号连接名称。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-t3a5ict",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-t3a5ict",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-bty65le",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-bty65le",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-o或--timers 显示计时器。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-vc9txix",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-vc9txix",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-4zf6dx0",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-4zf6dx0",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-p或--programs 显示正在使用Socket的程序识别码和程序名称。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-lg79fdl",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-lg79fdl",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-4q7ap8f",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-4q7ap8f",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-r或--route 显示Routing Table。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-i3hqyae",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-i3hqyae",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-xkm1k4k",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-xkm1k4k",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-s或--statistics 显示网络工作信息统计表。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-6i7s6wq",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-6i7s6wq",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-c0snwda",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-c0snwda",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-t或--t"
-																				},
-																				{
-																					"Type": "NodeText",
-																					"Data": "cp"
-																				},
-																				{
-																					"Type": "NodeText",
-																					"Data": " 显示TCP传输协议的连线状况。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-pzpantn",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-pzpantn",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-oku8ffi",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-oku8ffi",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-u或--udp 显示UDP传输协议的连线状况。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-cfob1w5",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-cfob1w5",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-vaojx9d",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-vaojx9d",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-v或--verbose 显示指令执行过程。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-px7fshn",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-px7fshn",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-9t4h250",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-9t4h250",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-V或--version 显示版本信息。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-kv8vrjf",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-kv8vrjf",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-31bc597",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-31bc597",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-w或--raw 显示RAW传输协议的连线状况。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-aj3pa2e",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-aj3pa2e",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-q71y26v",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-q71y26v",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "-x或--unix 此参数的效果和指定\"-A unix\"参数相同。"
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	"ID": "20221012141515-8nv6y1u",
-																	"Type": "NodeListItem",
-																	"ListData": {
-																		"BulletChar": 42,
-																		"Marker": "Kg=="
-																	},
-																	"Properties": {
-																		"id": "20221012141515-8nv6y1u",
-																		"updated": "20221012141515"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221012141515-f9oepyp",
-																			"Type": "NodeParagraph",
-																			"Properties": {
-																				"id": "20221012141515-f9oepyp",
-																				"updated": "20221012141515"
-																			},
-																			"Children": [
-																				{
-																					"Type": "NodeText",
-																					"Data": "--ip或--inet 此参数的效果和指定\"-A inet\"参数相同。"
-																				}
-																			]
-																		}
-																	]
+																	"Type": "NodeText",
+																	"Data": "-A\u003c网络类型\u003e或--\u003c网络类型\u003e 列出该网络类型连线中的相关地址。"
 																}
 															]
-														},
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-7a9v7d7",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-7a9v7d7",
+														"updated": "20221012141515"
+													},
+													"Children": [
 														{
-															"Type": "NodeSuperBlockCloseMarker"
+															"ID": "20221012141515-ldhvggc",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-ldhvggc",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-c或--continuous 持续列出网络状态。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-s6gog8l",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-s6gog8l",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-h8nc77c",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-h8nc77c",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-C或--cache 显示路由器配置的快取信息。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-ksg27ce",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-ksg27ce",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-qq97t9u",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-qq97t9u",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-e或--extend 显示网络其他相关信息。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-wfobn7x",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-wfobn7x",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-ag0t3sw",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-ag0t3sw",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-F或--fib 显示路由缓存。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-09qr054",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-09qr054",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-623mdh0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-623mdh0",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-g或--groups 显示多重广播功能群组组员名单。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-n9uki35",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-n9uki35",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-kjx5ppl",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-kjx5ppl",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-h或--help 在线帮助。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-aaeerm7",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-aaeerm7",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-jwi159q",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-jwi159q",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-i或--interfaces 显示网络界面信息表单。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-vk49n6f",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-vk49n6f",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-liko3or",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-liko3or",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-l或--listening 显示监控中的服务器的Socket。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-9z8nlze",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-9z8nlze",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-iinj0n7",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-iinj0n7",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-M或--masquerade 显示伪装的网络连线。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-p8l1jl3",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-p8l1jl3",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-3tdklih",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-3tdklih",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-n或--numeric 直接使用IP地址，而不通过域名服务器。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-n26eev4",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-n26eev4",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-79l3k3g",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-79l3k3g",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-N或--netlink或--symbolic 显示网络硬件外围设备的符号连接名称。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-t3a5ict",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-t3a5ict",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-bty65le",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-bty65le",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-o或--timers 显示计时器。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-vc9txix",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-vc9txix",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-4zf6dx0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-4zf6dx0",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-p或--programs 显示正在使用Socket的程序识别码和程序名称。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-lg79fdl",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-lg79fdl",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-4q7ap8f",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-4q7ap8f",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-r或--route 显示Routing Table。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-i3hqyae",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-i3hqyae",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-xkm1k4k",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-xkm1k4k",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-s或--statistics 显示网络工作信息统计表。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-6i7s6wq",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-6i7s6wq",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-c0snwda",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-c0snwda",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-t或--tcp 显示TCP传输协议的连线状况。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-pzpantn",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-pzpantn",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-oku8ffi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-oku8ffi",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-u或--udp 显示UDP传输协议的连线状况。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-cfob1w5",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-cfob1w5",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-vaojx9d",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-vaojx9d",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-v或--verbose 显示指令执行过程。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-px7fshn",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-px7fshn",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-9t4h250",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-9t4h250",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-V或--version 显示版本信息。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-kv8vrjf",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-kv8vrjf",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-31bc597",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-31bc597",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-w或--raw 显示RAW传输协议的连线状况。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-aj3pa2e",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-aj3pa2e",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-q71y26v",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-q71y26v",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "-x或--unix 此参数的效果和指定\"-A unix\"参数相同。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221012141515-8nv6y1u",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221012141515-8nv6y1u",
+														"updated": "20221012141515"
+													},
+													"Children": [
+														{
+															"ID": "20221012141515-f9oepyp",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221012141515-f9oepyp",
+																"updated": "20221012141515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "--ip或--inet 此参数的效果和指定\"-A inet\"参数相同。"
+																}
+															]
 														}
 													]
 												}
 											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
 										}
 									]
 								}
@@ -25181,6 +25064,27 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221015143250-dufh5xd"
+			}
+		},
+		{
+			"ID": "20221015143250-5plfx62",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015143250-5plfx62"
+			}
+		},
+		{
+			"ID": "20221015143250-5lt5hex",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015143250-5lt5hex"
+			}
+		},
+		{
+			"ID": "20221015143250-q07zmnm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015143250-q07zmnm"
 			}
 		},
 		{

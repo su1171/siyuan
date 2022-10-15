@@ -5,7 +5,7 @@
 	"Properties": {
 		"id": "20221004170149-cvhegdp",
 		"title": "nginx",
-		"updated": "20221004180719"
+		"updated": "20221014163343"
 	},
 	"Children": [
 		{
@@ -620,7 +620,7 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221004180146-08zsx34",
-								"updated": "20221015172331"
+								"updated": "20221004180303"
 							},
 							"Children": [
 								{
@@ -634,7 +634,7 @@
 								},
 								{
 									"Type": "NodeText",
-									"Data": "\t\t用于解析正则表达式"
+									"Data": "​"
 								}
 							]
 						},
@@ -643,7 +643,7 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221004180305-o0cy1qm",
-								"updated": "20221015172347"
+								"updated": "20221004180355"
 							},
 							"Children": [
 								{
@@ -657,7 +657,7 @@
 								},
 								{
 									"Type": "NodeText",
-									"Data": "\t\t用于压缩和解压缩"
+									"Data": "​"
 								}
 							]
 						}
@@ -3148,79 +3148,12 @@
 			]
 		},
 		{
-			"ID": "20221014211603-mtonzt0",
-			"Type": "NodeList",
-			"ListData": {},
-			"Properties": {
-				"id": "20221014211603-mtonzt0",
-				"updated": "20221014212034"
-			},
-			"Children": [
-				{
-					"ID": "20221014211605-zrrmd0y",
-					"Type": "NodeListItem",
-					"ListData": {
-						"BulletChar": 42,
-						"Marker": "Kg=="
-					},
-					"Properties": {
-						"id": "20221014211605-zrrmd0y",
-						"updated": "20221014212034"
-					},
-					"Children": [
-						{
-							"ID": "20221014211605-8wsh3lp",
-							"Type": "NodeParagraph",
-							"Properties": {
-								"id": "20221014211605-8wsh3lp",
-								"updated": "20221014211616"
-							},
-							"Children": [
-								{
-									"Type": "NodeText",
-									"Data": "keepalived 最小配置"
-								}
-							]
-						},
-						{
-							"ID": "20221014211618-fuvl8ox",
-							"Type": "NodeCodeBlock",
-							"IsFencedCodeBlock": true,
-							"Properties": {
-								"id": "20221014211618-fuvl8ox",
-								"updated": "20221014212034"
-							},
-							"Children": [
-								{
-									"Type": "NodeCodeBlockFenceOpenMarker",
-									"Data": "```"
-								},
-								{
-									"Type": "NodeCodeBlockFenceInfoMarker",
-									"CodeBlockInfo": "c2hlbGw="
-								},
-								{
-									"Type": "NodeCodeBlockCode",
-									"Data": "! Configuration File for keepalived\n\nglobal_defs {\n   router_id LVS_DEVEL\n}\n\nvrrp_instance VI_1 {\n    state MASTER\n    interface ens33\n    virtual_router_id 51\t# 通过此id 相同则 组入同一集群 #设置VRID标记，多个集群不能重复(0..255)\n    priority 100\n    advert_int 1\n    authentication {\n        auth_type PASS\n        auth_pass 1111\n    }\n    virtual_ipaddress {\n        192.168.100.156/24\n    }\n}\n"
-								},
-								{
-									"Type": "NodeCodeBlockFenceCloseMarker",
-									"Data": "```"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"ID": "20221013152536-2b5hriu",
 			"Type": "NodeList",
 			"ListData": {},
 			"Properties": {
-				"custom-list-guides": "1",
 				"id": "20221013152536-2b5hriu",
-				"updated": "20221014214723"
+				"updated": "20221014163136"
 			},
 			"Children": [
 				{
@@ -3232,7 +3165,7 @@
 					},
 					"Properties": {
 						"id": "20221014161842-sgs8djw",
-						"updated": "20221014214723"
+						"updated": "20221014161842"
 					},
 					"Children": [
 						{
@@ -3250,11 +3183,11 @@
 							]
 						},
 						{
-							"ID": "20221014163824-kyryv8s",
+							"ID": "20221014161859-f8xs88l",
 							"Type": "NodeList",
 							"ListData": {},
 							"Properties": {
-								"id": "20221014163824-kyryv8s"
+								"id": "20221014161859-f8xs88l"
 							},
 							"Children": [
 								{
@@ -3265,9 +3198,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"fold": "1",
-										"id": "20221014161857-sopm4u4",
-										"updated": "20221014163825"
+										"id": "20221014161857-sopm4u4"
 									},
 									"Children": [
 										{
@@ -3275,13 +3206,12 @@
 											"Type": "NodeParagraph",
 											"Properties": {
 												"id": "20221014161857-qdlupg1",
-												"updated": "20221014163905"
+												"updated": "20221014161905"
 											},
 											"Children": [
 												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "全局配置"
+													"Type": "NodeText",
+													"Data": "全局配置"
 												}
 											]
 										},
@@ -3311,269 +3241,95 @@
 													"Data": "```"
 												}
 											]
-										},
-										{
-											"ID": "20221014163750-l0qzkfv",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163750-l0qzkfv"
-											}
 										}
 									]
 								}
 							]
-						},
+						}
+					]
+				},
+				{
+					"ID": "20221014163009-myocbws",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221014163009-myocbws",
+						"updated": "20221014163136"
+					},
+					"Children": [
 						{
-							"ID": "20221014163828-p4a91m5",
-							"Type": "NodeList",
-							"ListData": {},
-							"Properties": {
-								"id": "20221014163828-p4a91m5"
-							},
-							"Children": [
-								{
-									"ID": "20221014163009-myocbws",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"fold": "1",
-										"id": "20221014163009-myocbws",
-										"updated": "20221014163828"
-									},
-									"Children": [
-										{
-											"ID": "20221014163009-98rf7yy",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163009-98rf7yy",
-												"updated": "20221014163903"
-											},
-											"Children": [
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "同步组"
-												}
-											]
-										},
-										{
-											"ID": "20221014163021-al3un37",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163021-al3un37",
-												"updated": "20221014163855"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "VRRPD 的配置是 Keepalived 比较重要的配置，主要分为两个部分 VRRP 同步组和 VRRP实例，也就是想要使用 VRRP 进行高可用选举，那么就一定需要配置一个VRRP实例，在实例中来定义 VIP、服务器角色等。\n不使用Sync Group的话，如果机器（或者说router）有两个网段，一个内网一个外网，每个网段开启一个VRRP实例，假设VRRP配置为检查内网，那么当外网出现问题时，VRRPD认为自己仍然健康，那么不会发生Master和Backup的切换，从而导致了问题。Sync group就是为了解决这个问题，可以把两个实例都放进一个Sync Group，这样的话，"
-												},
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "group里面任何一个实例出现问题都会发生切换"
-												},
-												{
-													"Type": "NodeText",
-													"Data": "。"
-												}
-											]
-										},
-										{
-											"ID": "20221014163105-xyrkhhw",
-											"Type": "NodeCodeBlock",
-											"IsFencedCodeBlock": true,
-											"Properties": {
-												"id": "20221014163105-xyrkhhw",
-												"updated": "20221014163116"
-											},
-											"Children": [
-												{
-													"Type": "NodeCodeBlockFenceOpenMarker",
-													"Data": "```"
-												},
-												{
-													"Type": "NodeCodeBlockFenceInfoMarker",
-													"CodeBlockInfo": "c2hlbGw="
-												},
-												{
-													"Type": "NodeCodeBlockCode",
-													"Data": "vrrp_sync_group VG_1{ #监控多个网段的实例\ngroup {\n　　　　VI_1 #实例名\n　　　　VI_2\n　　　　......\n}\nnotify_master /path/xx.sh 　　　　#指定当切换到master时，执行的脚本\nnetify_backup /path/xx.sh 　　　　#指定当切换到backup时，执行的脚本\nnotify_fault \"path/xx.sh VG_1\"   #故障时执行的脚本\nnotify /path/xx.sh \nsmtp_alert 　　#使用global_defs中提供的邮件地址和smtp服务器发送邮件通知\n}\n"
-												},
-												{
-													"Type": "NodeCodeBlockFenceCloseMarker",
-													"Data": "```"
-												}
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ID": "20221014163247-0je8ld3",
-							"Type": "NodeList",
-							"ListData": {},
-							"Properties": {
-								"id": "20221014163247-0je8ld3",
-								"updated": "20221014214723"
-							},
-							"Children": [
-								{
-									"ID": "20221014163248-wyx4d50",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"fold": "0",
-										"id": "20221014163248-wyx4d50",
-										"updated": "20221014163738"
-									},
-									"Children": [
-										{
-											"ID": "20221014163248-e4wwpfo",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163248-e4wwpfo",
-												"updated": "20221014163900"
-											},
-											"Children": [
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "实例配置"
-												}
-											]
-										},
-										{
-											"ID": "20221014163258-fp77zgx",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163258-fp77zgx",
-												"updated": "20221014163308"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "VRRP实例就表示在上面开启了VRRP协议，这个实例说明了VRRP的一些特征，比如主从，VRID等，可以在每个interface上开启一个实例。"
-												}
-											]
-										},
-										{
-											"ID": "20221014163323-nfkbekh",
-											"Type": "NodeCodeBlock",
-											"IsFencedCodeBlock": true,
-											"Properties": {
-												"id": "20221014163323-nfkbekh",
-												"updated": "20221014163343"
-											},
-											"Children": [
-												{
-													"Type": "NodeCodeBlockFenceOpenMarker",
-													"Data": "```"
-												},
-												{
-													"Type": "NodeCodeBlockFenceInfoMarker",
-													"CodeBlockInfo": "c2hlbGw="
-												},
-												{
-													"Type": "NodeCodeBlockCode",
-													"Data": "vrrp_instance VI_1 {  \n    state MASTER         \t#指定实例初始状态，实际的MASTER和BACKUP是选举决定的。\n    interface eth0       \t#指定实例绑定的网卡\n    virtual_router_id 51 \t#设置VRID标记，多个集群不能重复(0..255)\n    priority 100         \t#设置优先级，优先级高的会被竞选为Master，Master要高于BACKUP至少50\n    advert_int 1         \t#检查的时间间隔，默认1s\n    nopreempt            \t#设置为不抢占，说明：这个配置只能在BACKUP主机上面设置\n    preempt_delay        \t#抢占延迟，默认5分钟\n    debug                \t#debug级别\n    authentication {     \t#设置认证\n        auth_type PASS    \t#认证方式，支持PASS和AH，官方建议使用PASS\n        auth_pass 1111    \t#认证的密码\n    }\n    virtual_ipaddress {     \t#设置VIP，可以设置多个，用于切换时的地址绑定。格式：#\u003cIPADDR\u003e/\u003cMASK\u003e brd \u003cIPADDR\u003e dev \u003cSTRING\u003e scope \u003cSCOPT\u003e label \u003cLABE\n        192.168.200.16/24 dev eth0 label eth0:1\n        192.168.200.17/24 dev eth1 label eth1:1\n        192.168.200.18\n    }\n}\n"
-												},
-												{
-													"Type": "NodeCodeBlockFenceCloseMarker",
-													"Data": "```"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221014163933-4ote0t9",
-									"Type": "NodeListItem",
-									"ListData": {
-										"BulletChar": 42,
-										"Marker": "Kg=="
-									},
-									"Properties": {
-										"fold": "0",
-										"id": "20221014163933-4ote0t9",
-										"updated": "20221014214723"
-									},
-									"Children": [
-										{
-											"ID": "20221014163933-ju8nxbd",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163933-ju8nxbd",
-												"updated": "20221014163952"
-											},
-											"Children": [
-												{
-													"Type": "NodeTextMark",
-													"TextMarkType": "strong",
-													"TextMarkTextContent": "LVS配置"
-												}
-											]
-										},
-										{
-											"ID": "20221014163942-8yq5alg",
-											"Type": "NodeParagraph",
-											"Properties": {
-												"id": "20221014163942-8yq5alg",
-												"updated": "20221014164003"
-											},
-											"Children": [
-												{
-													"Type": "NodeText",
-													"Data": "虚拟服务器virtual_server定义块 ，虚拟服务器定义是keepalived框架最重要的项目了，是keepalived.conf必不可少的部分。 该部分是用来管理LVS的，是实现keepalive和LVS相结合的模块。ipvsadm命令可以实现的管理在这里都可以通过参数配置实现，注意：real_server是被包含在viyual_server模块中的，是子模块。"
-												}
-											]
-										},
-										{
-											"ID": "20221014165314-eu4s6ic",
-											"Type": "NodeCodeBlock",
-											"IsFencedCodeBlock": true,
-											"Properties": {
-												"custom-render": "scroll",
-												"id": "20221014165314-eu4s6ic",
-												"updated": "20221014214723"
-											},
-											"Children": [
-												{
-													"Type": "NodeCodeBlockFenceOpenMarker",
-													"Data": "```"
-												},
-												{
-													"Type": "NodeCodeBlockFenceInfoMarker",
-													"CodeBlockInfo": "c2hlbGw="
-												},
-												{
-													"Type": "NodeCodeBlockCode",
-													"Data": "virtual_server 192.168.202.200 23 {        //VIP地址，要和vrrp_instance模块中的virtual_ipaddress地址一致\n　　　　delay_loop 6   #健康检查时间间隔 \n　　　　lb_algo rr 　　#lvs调度算法rr|wrr|lc|wlc|lblc|sh|dh \n　　　　lb_kind DR    #负载均衡转发规则NAT|DR|RUN \n　　　　persistence_timeout 5 #会话保持时间 \n　　　　protocol TCP    #使用的协议 \n　　　　persistence_granularity \u003cNETMASK\u003e #lvs会话保持粒度 \n　　　　virtualhost \u003cstring\u003e    #检查的web服务器的虚拟主机（host：头） \n　　　　sorry_server\u003cIPADDR\u003e \u003cport\u003e #备用机，所有realserver失效后启用\n\n\nreal_server 192.168.200.5 23 {             //RS的真实IP地址\n            weight 1 #默认为1,0为失效\n            inhibit_on_failure #在服务器健康检查失效时，将其设为0，而不是直接从ipvs中删除 \n            notify_up \u003cstring\u003e | \u003cquoted-string\u003e #在检测到server up后执行脚本\n            notify_down \u003cstring\u003e | \u003cquoted-string\u003e #在检测到server down后执行脚本\n        \n\t\t\tTCP_CHECK {                    //常用\n\t\t\t            connect_timeout 3 #连接超时时间\n\t\t\t            nb_get_retry 3 #重连次数\n\t\t\t            delay_before_retry 3 #重连间隔时间\n\t\t\t            connect_port 23  #健康检查的端口\n\t\t\t            bindto \u003cip\u003e   \n\t\t\t          }\n\t\n\t\t\tHTTP_GET | SSL_GET{          //不常用\n\t\t\t    url{ #检查url，可以指定多个\n\t\t\t         path /\n\t\t\t         digest \u003cstring\u003e #检查后的摘要信息\n\t\t\t         status_code 200 #检查的返回状态码\n\t\t\t        }\n\t\t\t    connect_port \u003cport\u003e \n\t\t\t    bindto \u003cIPADD\u003e\n\t\t\t    connect_timeout 5\n\t\t\t    nb_get_retry 3\n\t\t\t    delay_before_retry 2\n\t\t\t    }\n\t\n\t\t\tSMTP_CHECK{                 //不常用\n\t\t\t    host{\n\t\t\t    connect_ip \u003cIP ADDRESS\u003e\n\t\t\t    connect_port \u003cport\u003e #默认检查25端口\n\t\t\t    bindto \u003cIP ADDRESS\u003e\n\t\t\t         }\n\t\t\t    connect_timeout 5\n\t\t\t    retry 3\n\t\t\t    delay_before_retry 2\n\t\t\t    helo_name \u003cstring\u003e | \u003cquoted-string\u003e #smtp helo请求命令参数，可选\n\t\t\t    }\n\t\t\t \n\t\t\tMISC_CHECK{                 //不常用\n\t\t\t    misc_path \u003cstring\u003e | \u003cquoted-string\u003e #外部脚本路径\n\t\t\t    misc_timeout #脚本执行超时时间\n\t\t\t    misc_dynamic #如设置该项，则退出状态码会用来动态调整服务器的权重，返回0 正常，不修改；返回1，\n\t\n\t\t\t　　检查失败，权重改为0；返回2-255，正常，权重设置为：返回状态码-2\n\t\t\t    }\n\t\t\t}\n"
-												},
-												{
-													"Type": "NodeCodeBlockFenceCloseMarker",
-													"Data": "```"
-												}
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ID": "20221014163810-vegim62",
+							"ID": "20221014163009-98rf7yy",
 							"Type": "NodeParagraph",
 							"Properties": {
-								"id": "20221014163810-vegim62",
-								"updated": "20221014163812"
+								"id": "20221014163009-98rf7yy",
+								"updated": "20221014163019"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "同步组"
+								}
+							]
+						},
+						{
+							"ID": "20221014163121-oy1da66",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221014163121-oy1da66"
 							}
+						},
+						{
+							"ID": "20221014163021-al3un37",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221014163021-al3un37",
+								"updated": "20221014163136"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "VRRPD 的配置是 Keepalived 比较重要的配置，主要分为两个部分 VRRP 同步组和 VRRP实例，也就是想要使用 VRRP 进行高可用选举，那么就一定需要配置一个VRRP实例，在实例中来定义 VIP、服务器角色等。\nVRRP Sync Groups\n不使用Sync Group的话，如果机器（或者说router）有两个网段，一个内网一个外网，每个网段开启一个VRRP实例，假设VRRP配置为检查内网，那么当外网出现问题时，VRRPD认为自己仍然健康，那么不会发生Master和Backup的切换，从而导致了问题。Sync group就是为了解决这个问题，可以把两个实例都放进一个Sync Group，这样的话，"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "group里面任何一个实例出现问题都会发生切换"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "。"
+								}
+							]
+						},
+						{
+							"ID": "20221014163105-xyrkhhw",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221014163105-xyrkhhw",
+								"updated": "20221014163116"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "c2hlbGw="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "vrrp_sync_group VG_1{ #监控多个网段的实例\ngroup {\n　　　　VI_1 #实例名\n　　　　VI_2\n　　　　......\n}\nnotify_master /path/xx.sh 　　　　#指定当切换到master时，执行的脚本\nnetify_backup /path/xx.sh 　　　　#指定当切换到backup时，执行的脚本\nnotify_fault \"path/xx.sh VG_1\"   #故障时执行的脚本\nnotify /path/xx.sh \nsmtp_alert 　　#使用global_defs中提供的邮件地址和smtp服务器发送邮件通知\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
 						}
 					]
 				}
@@ -3585,6 +3341,86 @@
 			"Properties": {
 				"id": "20221014163055-bxyts44"
 			}
+		},
+		{
+			"ID": "20221014163247-0je8ld3",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221014163247-0je8ld3",
+				"updated": "20221014163343"
+			},
+			"Children": [
+				{
+					"ID": "20221014163248-wyx4d50",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221014163248-wyx4d50",
+						"updated": "20221014163343"
+					},
+					"Children": [
+						{
+							"ID": "20221014163248-e4wwpfo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221014163248-e4wwpfo",
+								"updated": "20221014163258"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "实例配置"
+								}
+							]
+						},
+						{
+							"ID": "20221014163258-fp77zgx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221014163258-fp77zgx",
+								"updated": "20221014163308"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "VRRP实例就表示在上面开启了VRRP协议，这个实例说明了VRRP的一些特征，比如主从，VRID等，可以在每个interface上开启一个实例。"
+								}
+							]
+						},
+						{
+							"ID": "20221014163323-nfkbekh",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221014163323-nfkbekh",
+								"updated": "20221014163343"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "c2hlbGw="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "vrrp_instance VI_1 {  \n    state MASTER         \t#指定实例初始状态，实际的MASTER和BACKUP是选举决定的。\n    interface eth0       \t#指定实例绑定的网卡\n    virtual_router_id 51 \t#设置VRID标记，多个集群不能重复(0..255)\n    priority 100         \t#设置优先级，优先级高的会被竞选为Master，Master要高于BACKUP至少50\n    advert_int 1         \t#检查的时间间隔，默认1s\n    nopreempt            \t#设置为不抢占，说明：这个配置只能在BACKUP主机上面设置\n    preempt_delay        \t#抢占延迟，默认5分钟\n    debug                \t#debug级别\n    authentication {     \t#设置认证\n        auth_type PASS    \t#认证方式，支持PASS和AH，官方建议使用PASS\n        auth_pass 1111    \t#认证的密码\n    }\n    virtual_ipaddress {     \t#设置VIP，可以设置多个，用于切换时的地址绑定。格式：#\u003cIPADDR\u003e/\u003cMASK\u003e brd \u003cIPADDR\u003e dev \u003cSTRING\u003e scope \u003cSCOPT\u003e label \u003cLABE\n        192.168.200.16/24 dev eth0 label eth0:1\n        192.168.200.17/24 dev eth1 label eth1:1\n        192.168.200.18\n    }\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"ID": "20221014163310-2v7es9l",
