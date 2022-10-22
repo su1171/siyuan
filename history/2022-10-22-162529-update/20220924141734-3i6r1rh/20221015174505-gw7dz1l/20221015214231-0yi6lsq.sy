@@ -1,0 +1,675 @@
+{
+	"ID": "20221015214231-0yi6lsq",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221015214231-0yi6lsq",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20221018092605-eduqpin\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221018140754-210wbzh\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:1197,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221018140754-210wbzh\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
+		"title": "sql资料库",
+		"updated": "20221022162414"
+	},
+	"Children": [
+		{
+			"ID": "20221018092605-eduqpin",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221018092605-eduqpin",
+				"updated": "20221018092612"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "sql文档"
+				}
+			]
+		},
+		{
+			"ID": "20221018092612-59iocj7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092612-59iocj7",
+				"updated": "20221018092617"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "assets/第04章_运算符-20221018092617-8zdjtv1.pdf",
+					"TextMarkTextContent": "第04章_运算符.pdf"
+				}
+			]
+		},
+		{
+			"ID": "20221018092613-4xb5x3p",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092613-4xb5x3p"
+			}
+		},
+		{
+			"ID": "20221018092613-w8em76b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092613-w8em76b"
+			}
+		},
+		{
+			"ID": "20221018092613-c994eoz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092613-c994eoz"
+			}
+		},
+		{
+			"ID": "20221018092614-iinfuk8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092614-iinfuk8"
+			}
+		},
+		{
+			"ID": "20221018092614-raue1xt",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092614-raue1xt"
+			}
+		},
+		{
+			"ID": "20221018092614-yry2a6s",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092614-yry2a6s"
+			}
+		},
+		{
+			"ID": "20221018092614-yc0zumi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018092614-yc0zumi"
+			}
+		},
+		{
+			"ID": "20221015214231-af0j8x8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015214231-af0j8x8",
+				"updated": "20221015214555"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221015214555-o87v0z0.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221015214553-fmdd7qg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015214553-fmdd7qg",
+				"updated": "20221015220242"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221015220242-a7u5r6x.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221015220338-xzgn4kb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015220338-xzgn4kb",
+				"updated": "20221015220339"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221015220339-g6wgxua.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221018140754-210wbzh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018140754-210wbzh",
+				"updated": "20221018140754"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221018140754-2au7y8w.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221022101606-mlvnqiz",
+			"Type": "NodeIFrame",
+			"Data": "\u003ciframe src=\"https://www.jianguoyun.com/p/DTcBZVsQkr6GCxjE0N8EIAA\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 979px; height: 468px;\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20221022101606-mlvnqiz",
+				"updated": "20221022101606"
+			}
+		},
+		{
+			"ID": "20221022154230-sun5uem",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221022154230-sun5uem",
+				"updated": "20221022154230"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "max-width: 623px;",
+						"style": "width: 613px;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221022154230-x0e78sr.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"width: 613px;\" parent-style=\"max-width: 623px;\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221022155441-arvn0kp",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221022155441-arvn0kp",
+				"updated": "20221022155641"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221022155436-sit0l62",
+					"Type": "NodeCodeBlock",
+					"IsFencedCodeBlock": true,
+					"Properties": {
+						"id": "20221022155436-sit0l62",
+						"updated": "20221022155536"
+					},
+					"Children": [
+						{
+							"Type": "NodeCodeBlockFenceOpenMarker",
+							"Data": "```"
+						},
+						{
+							"Type": "NodeCodeBlockFenceInfoMarker",
+							"CodeBlockInfo": "c3Fs"
+						},
+						{
+							"Type": "NodeCodeBlockCode",
+							"Data": "储备：建表操作：\nCREATE TABLE `t_dept` (\n`id` INT(11) NOT NULL AUTO_INCREMENT,\n`deptName` VARCHAR(30) DEFAULT NULL,\n`address` VARCHAR(40) DEFAULT NULL,\nPRIMARY KEY (`id`)\n) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;\n\nCREATE TABLE `t_emp` (\n`id` INT(11) NOT NULL AUTO_INCREMENT,\n`name` VARCHAR(20) DEFAULT NULL,\n`age` INT(3) DEFAULT NULL,\n`deptId` INT(11) DEFAULT NULL,\nempno int not null,\nPRIMARY KEY (`id`),\nKEY `idx_dept_id` (`deptId`)\n#CONSTRAINT `fk_dept_id` FOREIGN KEY (`deptId`) REFERENCES `t_dept` (`id`)\n) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;\n\nINSERT INTO t_dept(deptName,address) VALUES('华山','华山');\nINSERT INTO t_dept(deptName,address) VALUES('丐帮','洛阳');\nINSERT INTO t_dept(deptName,address) VALUES('峨眉','峨眉山');\nINSERT INTO t_dept(deptName,address) VALUES('武当','武当山');\nINSERT INTO t_dept(deptName,address) VALUES('明教','光明顶');\nINSERT INTO t_dept(deptName,address) VALUES('少林','少林寺');\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('风清扬',90,1,100001);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('岳不群',50,1,100002);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('令狐冲',24,1,100003);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('洪七公',70,2,100004);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('乔峰',35,2,100005);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('灭绝师太',70,3,100006);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('周芷若',20,3,100007);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('张三丰',100,4,100008);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('张无忌',25,5,100009);\nINSERT INTO t_emp(NAME,age,deptId,empno) VALUES('韦小宝',18,null,100010);\n"
+						},
+						{
+							"Type": "NodeCodeBlockFenceCloseMarker",
+							"Data": "```"
+						}
+					]
+				},
+				{
+					"ID": "20221022155438-unq72r5",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155438-unq72r5",
+						"updated": "20221022155625"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "【题目】 #1.所有有门派的人员信息 （ A、B两表共有）"
+						}
+					]
+				},
+				{
+					"ID": "20221022155629-ue5i91f",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155629-ue5i91f"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": " #2.列出所有用户，并显示其机构信息 （A的全集）"
+						}
+					]
+				},
+				{
+					"ID": "20221022155631-ilhhsnw",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155631-ilhhsnw"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": " #3.列出所有门派 （B的全集）"
+						}
+					]
+				},
+				{
+					"ID": "20221022155633-rkucynx",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155633-rkucynx"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": " #4.所有不入门派的人员 （A的独有）"
+						}
+					]
+				},
+				{
+					"ID": "20221022155634-rei1rqm",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155634-rei1rqm"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": " #5.所有没人入的门派 （B的独有）"
+						}
+					]
+				},
+				{
+					"ID": "20221022155635-knwj03w",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155635-knwj03w"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": " #6.列出所有人员和机构的对照关系 (AB全有) #MySQL Full Join的实现 因为MySQL不支持FULL JOIN,下面是替代方法 #left join + union(可去除重复数据)+ right join "
+						}
+					]
+				},
+				{
+					"ID": "20221022155641-p6ah4tg",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155641-p6ah4tg"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "#7.列出所有没入派的人员和没人入的门派 （A的独有+B的独有）"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221022160440-784fn9y",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221022160440-784fn9y",
+				"updated": "20221022160435"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221022155616-kfx4g9z",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022155616-kfx4g9z",
+						"updated": "20221022160440"
+					},
+					"Children": [
+						{
+							"Type": "NodeImage",
+							"Data": "span",
+							"Properties": {
+								"parent-style": "max-width: 342px;",
+								"style": "width: 332px;"
+							},
+							"Children": [
+								{
+									"Type": "NodeBang"
+								},
+								{
+									"Type": "NodeOpenBracket"
+								},
+								{
+									"Type": "NodeLinkText",
+									"Data": "image"
+								},
+								{
+									"Type": "NodeCloseBracket"
+								},
+								{
+									"Type": "NodeOpenParen"
+								},
+								{
+									"Type": "NodeLinkDest",
+									"Data": "assets/image-20221022160326-a5igkuv.png"
+								},
+								{
+									"Type": "NodeCloseParen"
+								}
+							]
+						},
+						{
+							"Type": "NodeKramdownSpanIAL",
+							"Data": "{: style=\"width: 332px;\" parent-style=\"max-width: 342px;\"}"
+						}
+					]
+				},
+				{
+					"ID": "20221022160435-ha1x3l1",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221022160435-ha1x3l1"
+					},
+					"Children": [
+						{
+							"Type": "NodeImage",
+							"Data": "span",
+							"Properties": {
+								"parent-style": "max-width: 418px;",
+								"style": "width: 408px;"
+							},
+							"Children": [
+								{
+									"Type": "NodeBang"
+								},
+								{
+									"Type": "NodeOpenBracket"
+								},
+								{
+									"Type": "NodeLinkText",
+									"Data": "image"
+								},
+								{
+									"Type": "NodeCloseBracket"
+								},
+								{
+									"Type": "NodeOpenParen"
+								},
+								{
+									"Type": "NodeLinkDest",
+									"Data": "assets/image-20221022160328-rp6p2x7.png"
+								},
+								{
+									"Type": "NodeCloseParen"
+								}
+							]
+						},
+						{
+							"Type": "NodeKramdownSpanIAL",
+							"Data": "{: style=\"width: 408px;\" parent-style=\"max-width: 418px;\"}"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "​"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221022160329-pu5gr17",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221022160329-pu5gr17",
+				"updated": "20221022160501"
+			}
+		},
+		{
+			"ID": "20221022160429-ji4udn9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221022160429-ji4udn9",
+				"updated": "20221022162337"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221022162337-r6wfbf4.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221022162414-iyjlstm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221022162414-iyjlstm",
+				"updated": "20221022162414"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221022162414-bvlu9b8.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		}
+	]
+}

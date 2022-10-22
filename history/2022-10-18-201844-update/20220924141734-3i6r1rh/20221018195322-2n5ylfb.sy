@@ -1,0 +1,200 @@
+{
+	"ID": "20221018195322-2n5ylfb",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221018195322-2n5ylfb",
+		"title": "阿里云",
+		"updated": "20221018201700"
+	},
+	"Children": [
+		{
+			"ID": "20221018195329-7cuwbhc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018195329-7cuwbhc"
+			}
+		},
+		{
+			"ID": "20221018195329-4kpttva",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221018195329-4kpttva",
+				"updated": "20221018195339"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "基础概念"
+				}
+			]
+		},
+		{
+			"ID": "20221018195339-uelvqfj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018195339-uelvqfj"
+			}
+		},
+		{
+			"ID": "20221018195340-2cahb0m",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221018195340-2cahb0m",
+				"updated": "20221018200806"
+			},
+			"Children": [
+				{
+					"ID": "20221018195346-roci4nr",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221018195346-roci4nr",
+						"updated": "20221018195346"
+					},
+					"Children": [
+						{
+							"ID": "20221018195346-mbbwts1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221018195346-mbbwts1",
+								"updated": "20221018195353"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "提供服务的模式"
+								}
+							]
+						},
+						{
+							"ID": "20221018195353-la60g78",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221018195353-la60g78",
+								"updated": "20221018195442"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ISSA      基础设施及服务\nPAAS   平台及服务   "
+								},
+								{
+									"Type": "NodeBr",
+									"Data": "br"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "SAAS   软件即服务"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221018195446-akv17k5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"fold": "0",
+						"id": "20221018195446-akv17k5",
+						"updated": "20221018200806"
+					},
+					"Children": [
+						{
+							"ID": "20221018195446-3a3i9o9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221018195446-3a3i9o9",
+								"updated": "20221018195515"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "地域与可用区"
+								}
+							]
+						},
+						{
+							"ID": "20221018200720-rxwc64q",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221018200720-rxwc64q",
+								"updated": "20221018200747"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "同一地域的可用区之间是内网连接，"
+								}
+							]
+						},
+						{
+							"ID": "20221018200747-1r6hrsh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221018200747-1r6hrsh",
+								"updated": "20221018200806"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "地域与地域之间是公网连接。"
+								}
+							]
+						},
+						{
+							"ID": "20221018195322-mfzlkf2",
+							"Type": "NodeIFrame",
+							"Data": "\u003ciframe src=\"https://www.processon.com/embed/634e951cf346fb0728d5b17b\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 875px; height: 442px;\"\u003e\u003c/iframe\u003e",
+							"Properties": {
+								"id": "20221018195322-mfzlkf2",
+								"updated": "20221018200007"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221018195822-92sg5gw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018195822-92sg5gw"
+			}
+		},
+		{
+			"ID": "20221018201253-i0b7mzr",
+			"Type": "NodeIFrame",
+			"Data": "\u003ciframe src=\"https://www.edrawmax.cn/online/share.html?code=2b9f970e4ede11eda6d29d476c4e733c\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 1105px; height: 608px;\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20221018201253-i0b7mzr",
+				"updated": "20221018201339"
+			}
+		},
+		{
+			"ID": "20221018201432-qq2yone",
+			"Type": "NodeIFrame",
+			"Data": "\u003ciframe src=\"https://www.edrawmax.cn/online/share.html?code=2b9f970e4ede11eda6d29d476c4e733c\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 811px; height: 387px;\"\u003e\u003c/iframe\u003e",
+			"Properties": {
+				"id": "20221018201432-qq2yone",
+				"updated": "20221018201700"
+			}
+		},
+		{
+			"ID": "20221018201703-6c1n537",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221018201703-6c1n537"
+			}
+		}
+	]
+}

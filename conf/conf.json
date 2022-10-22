@@ -195,7 +195,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "219px",
+              "size": "270px",
               "type": "left"
             },
             {
@@ -205,17 +205,17 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220924141737-z6ah3oq",
+                        "blockId": "20220930170943-coz08c2",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
-                          "endId": "20220924183849-ifmhmmf",
-                          "focusEnd": 5,
-                          "focusId": "20221004171819-j7h3x6e",
-                          "focusStart": 5,
-                          "scrollTop": 5201,
-                          "startId": "20220924142530-z39h3uh"
+                          "endId": "20220924184123-i953le7",
+                          "focusEnd": 9,
+                          "focusId": "20220930170943-coz08c2",
+                          "focusStart": 9,
+                          "scrollTop": 1988,
+                          "startId": "20221005215332-ba58dmk"
                         }
                       },
                       "docIcon": "",
@@ -233,9 +233,9 @@
                         "scrollAttr": {
                           "endId": "20221013152132-gjedwp2",
                           "focusEnd": 0,
-                          "focusId": "20221013152132-gjedwp2",
+                          "focusId": "20220930153941-ww8lcv7",
                           "focusStart": 0,
-                          "scrollTop": 1969,
+                          "scrollTop": 1677,
                           "startId": "20220930153941-ww8lcv7"
                         }
                       },
@@ -247,80 +247,16 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221015174505-gw7dz1l",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015174505-gw7dz1l",
-                        "scrollAttr": {
-                          "endId": "20221015213805-1tbn7tb",
-                          "focusEnd": 8,
-                          "focusId": "20221015202146-tuwwzvw",
-                          "focusStart": 8,
-                          "scrollTop": 657,
-                          "startId": "20221015174515-qh3tmsa"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "MySQL"
-                    },
-                    {
-                      "active": true,
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015213822-vs8hvq7",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015213822-vs8hvq7",
-                        "scrollAttr": {
-                          "endId": "20221015213842-vdu5wmg",
-                          "focusEnd": 15,
-                          "focusId": "20221015220027-x70mqn0",
-                          "focusStart": 15,
-                          "scrollTop": 547.7225341796875,
-                          "startId": "20221015213822-gyd334t"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql详解"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015214231-0yi6lsq",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015214231-0yi6lsq",
-                        "scrollAttr": {
-                          "endId": "20221015220338-xzgn4kb",
-                          "focusEnd": 0,
-                          "focusId": "20221015220338-xzgn4kb",
-                          "focusStart": 0,
-                          "scrollTop": 430,
-                          "startId": "20221015214231-af0j8x8"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql资料库"
-                    },
-                    {
-                      "children": {
-                        "action": "",
                         "blockId": "20221004170149-cvhegdp",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20221004170149-cvhegdp",
                         "scrollAttr": {
                           "endId": "20221007210137-yw00w4y",
-                          "focusEnd": 52,
-                          "focusId": "20221004180305-o0cy1qm",
-                          "focusStart": 52,
-                          "scrollTop": 849,
+                          "focusEnd": 15,
+                          "focusId": "20221021185339-nfwshks",
+                          "focusStart": 15,
+                          "scrollTop": 8488,
                           "startId": "20221004170153-68za3pg"
                         }
                       },
@@ -332,23 +268,44 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220924145441-ruxsjlb",
+                        "blockId": "20221015174505-gw7dz1l",
                         "instance": "Editor",
                         "mode": "wysiwyg",
-                        "rootId": "20220924145441-ruxsjlb",
+                        "rootId": "20221015174505-gw7dz1l",
                         "scrollAttr": {
-                          "endId": "20221003152214-bqn1rni",
+                          "endId": "20221015213805-1tbn7tb",
                           "focusEnd": 0,
-                          "focusId": "20221015143250-cdr8pw7",
+                          "focusId": "20221015174515-qh3tmsa",
                           "focusStart": 0,
-                          "scrollTop": 5436,
-                          "startId": "20221005220828-e8pk5sq"
+                          "scrollTop": 135,
+                          "startId": "20221015174515-qh3tmsa"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "命令详解"
+                      "title": "MySQL"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221015214231-0yi6lsq",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221015214231-0yi6lsq",
+                        "scrollAttr": {
+                          "endId": "20221022165725-24w7k3m",
+                          "focusEnd": 0,
+                          "focusId": "20221022165725-24w7k3m",
+                          "focusStart": 0,
+                          "scrollTop": 5074,
+                          "startId": "20221018092605-eduqpin"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "sql资料库"
                     },
                     {
                       "children": {
@@ -358,11 +315,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221001085750-qmjsuml",
                         "scrollAttr": {
-                          "endId": "20221015213746-6yksfmn",
-                          "focusEnd": 0,
-                          "focusId": "20221015213746-6yksfmn",
-                          "focusStart": 0,
-                          "scrollTop": 109,
+                          "endId": "20221018195017-juzn014",
+                          "focusEnd": 119,
+                          "focusId": "20221018195037-tpofcn5",
+                          "focusStart": 119,
+                          "scrollTop": 203,
                           "startId": "20221001085757-s5ambuk"
                         }
                       },
@@ -370,10 +327,69 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "文档"
+                    },
+                    {
+                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20221015213822-vs8hvq7",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221015213822-vs8hvq7",
+                        "scrollAttr": {
+                          "endId": "20221022101248-ud47zdv",
+                          "focusEnd": 0,
+                          "focusId": "20221022171539-tzc22v5",
+                          "focusStart": 0,
+                          "scrollTop": 5609.55517578125,
+                          "startId": "20221015213822-gyd334t"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "sql详解"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924145441-ruxsjlb",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924145441-ruxsjlb",
+                        "scrollAttr": {
+                          "endId": "20221021212410-kfp1n1y",
+                          "scrollTop": 3384,
+                          "startId": "20221017144308-bmf7twc"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "命令详解"
                     }
                   ],
                   "height": "",
                   "instance": "Wnd",
+                  "width": "1377px"
+                },
+                {
+                  "children": [
+                    {
+                      "active": true,
+                      "children": {
+                        "instance": "Asset",
+                        "path": "assets/第06章_多表查询-20221018195040-4djkaxi.pdf"
+                      },
+                      "icon": "iconPDF",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "第06章_多表查询-20221018195040-4djkaxi.pdf"
+                    }
+                  ],
+                  "height": "",
+                  "instance": "Wnd",
+                  "resize": "lr",
                   "width": ""
                 }
               ],
@@ -436,17 +452,17 @@
         {
           "hotkeyLangId": "fileTree",
           "icon": "iconFiles",
-          "show": true,
+          "show": false,
           "size": {
             "height": 0,
-            "width": 219
+            "width": 225
           },
           "type": "file"
         },
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
             "width": 270
@@ -505,7 +521,7 @@
           "show": false,
           "size": {
             "height": 424,
-            "width": 594
+            "width": 539
           },
           "type": "globalGraph"
         }
@@ -535,9 +551,9 @@
     "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
-    "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
+    "192.168.1.11",
     "127.0.0.1"
   ],
   "accessAuthCode": "",
@@ -1033,7 +1049,7 @@
     "virtualRefDoc": true
   },
   "stat": {
-    "docCount": 17
+    "docCount": 18
   },
   "api": {
     "token": "uin95woksk9wpovr"
