@@ -195,7 +195,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "0px",
+              "size": "275px",
               "type": "left"
             },
             {
@@ -203,19 +203,20 @@
                 {
                   "children": [
                     {
+                      "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20220930170943-coz08c2",
+                        "blockId": "20220924141737-z6ah3oq",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
-                          "endId": "20220924184123-i953le7",
-                          "focusEnd": 9,
-                          "focusId": "20220930170943-coz08c2",
-                          "focusStart": 9,
-                          "scrollTop": 1987,
-                          "startId": "20221005215332-ba58dmk"
+                          "endId": "20221001143855-8wafklz",
+                          "focusEnd": 1,
+                          "focusId": "20220930155139-kjyno8w",
+                          "focusStart": 1,
+                          "scrollTop": 4926.87353515625,
+                          "startId": "20221004145411-45kvl0v"
                         }
                       },
                       "docIcon": "",
@@ -256,7 +257,7 @@
                           "focusEnd": 0,
                           "focusId": "20221027202234-jc8k0xt",
                           "focusStart": 0,
-                          "scrollTop": 1615,
+                          "scrollTop": 1396,
                           "startId": "20221015174515-qh3tmsa"
                         }
                       },
@@ -273,11 +274,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221015214231-0yi6lsq",
                         "scrollAttr": {
-                          "endId": "20221024110004-cyxz797",
+                          "endId": "20221028161802-817udny",
                           "focusEnd": 0,
-                          "focusId": "20221024110004-cyxz797",
+                          "focusId": "20221028161802-817udny",
                           "focusStart": 0,
-                          "scrollTop": 5450,
+                          "scrollTop": 5704,
                           "startId": "20221018092605-eduqpin"
                         }
                       },
@@ -287,7 +288,6 @@
                       "title": "sql资料库"
                     },
                     {
-                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20221015213822-vs8hvq7",
@@ -295,11 +295,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221022101248-ud47zdv",
-                          "focusEnd": 39,
-                          "focusId": "20221027223502-qukp2ta",
-                          "focusStart": 39,
-                          "scrollTop": 9564.5498046875,
+                          "endId": "20221028151337-o68ypw8",
+                          "focusEnd": 361,
+                          "focusId": "20221028145733-p6pf6ac",
+                          "focusStart": 361,
+                          "scrollTop": 10220,
                           "startId": "20221015213822-gyd334t"
                         }
                       },
@@ -307,69 +307,6 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "sql详解"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221002204547-ccg5hvu",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20220924204553-h4rr7p5",
-                        "scrollAttr": {
-                          "endId": "20221013100122-9lqspnn",
-                          "focusEnd": 2,
-                          "focusId": "20221002204547-ccg5hvu",
-                          "focusStart": 2,
-                          "scrollTop": 14180,
-                          "startId": "20220925211914-g1oqshn"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "资料库"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221001085750-qmjsuml",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221001085750-qmjsuml",
-                        "scrollAttr": {
-                          "endId": "20221027184504-9133zoc",
-                          "focusEnd": 13,
-                          "focusId": "20221001085750-2ipyxf9",
-                          "focusStart": 13,
-                          "scrollTop": 547,
-                          "startId": "20221001085757-s5ambuk"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "文档"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221004130820-y9ciu2f",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20220924145441-ruxsjlb",
-                        "scrollAttr": {
-                          "endId": "20221004132151-fjm2bmx",
-                          "focusEnd": 20,
-                          "focusId": "20221027211248-3ovxdbp",
-                          "focusStart": 20,
-                          "scrollTop": 2103,
-                          "startId": "20221003152434-vnou393"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "命令详解"
                     }
                   ],
                   "height": "",
@@ -455,10 +392,10 @@
         {
           "hotkeyLangId": "fileTree",
           "icon": "iconFiles",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
-            "width": 225
+            "width": 275
           },
           "type": "file"
         },
@@ -551,13 +488,11 @@
   },
   "readonly": false,
   "localIPs": [
-    "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
-    "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
-    "192.168.43.74",
+    "192.168.1.11",
     "127.0.0.1"
   ],
   "accessAuthCode": "",
@@ -1053,7 +988,7 @@
     "virtualRefDoc": true
   },
   "stat": {
-    "docCount": 18
+    "docCount": 67
   },
   "api": {
     "token": "uin95woksk9wpovr"

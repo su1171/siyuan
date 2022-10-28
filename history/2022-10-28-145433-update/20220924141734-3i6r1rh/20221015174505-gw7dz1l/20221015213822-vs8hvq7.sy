@@ -5,7 +5,7 @@
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
 		"title": "sql详解",
-		"updated": "20221028155952"
+		"updated": "20221028145319"
 	},
 	"Children": [
 		{
@@ -5844,7 +5844,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221028144506-z5l46mk",
-				"updated": "20221028155952"
+				"updated": "20221028145319"
 			},
 			"Children": [
 				{
@@ -5860,7 +5860,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221027093743-3ec87gp",
-						"updated": "20221028155952"
+						"updated": "20221028145319"
 					},
 					"Children": [
 						{
@@ -5872,7 +5872,7 @@
 							},
 							"Properties": {
 								"id": "20221028144815-alykt1n",
-								"updated": "20221028155952"
+								"updated": "20221028145319"
 							},
 							"Children": [
 								{
@@ -5890,29 +5890,6 @@
 									]
 								},
 								{
-									"ID": "20221028154103-o05vgxd",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221028154103-o05vgxd",
-										"updated": "20221028154647"
-									},
-									"Children": [
-										{
-											"Type": "NodeText",
-											"Data": "对"
-										},
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "分组后的结果"
-										},
-										{
-											"Type": "NodeText",
-											"Data": "进行条件筛选，使用 group by 后有可能使用 group by 。若不使用 group by 则一般不使用 having 。"
-										}
-									]
-								},
-								{
 									"ID": "20221028144821-1hwrea5",
 									"Type": "NodeParagraph",
 									"Properties": {
@@ -5925,95 +5902,6 @@
 											"Data": "如果过滤条件中出现了 组合函数则使用 HAVING 替换 WHERE ，HAVING 声明在 group by 之后。"
 										}
 									]
-								},
-								{
-									"ID": "20221028145733-p6pf6ac",
-									"Type": "NodeCodeBlock",
-									"IsFencedCodeBlock": true,
-									"Properties": {
-										"id": "20221028145733-p6pf6ac",
-										"updated": "20221028155952"
-									},
-									"Children": [
-										{
-											"Type": "NodeCodeBlockFenceOpenMarker",
-											"Data": "```"
-										},
-										{
-											"Type": "NodeCodeBlockFenceInfoMarker",
-											"CodeBlockInfo": "c3Fs"
-										},
-										{
-											"Type": "NodeCodeBlockCode",
-											"Data": "# 练习1： 查询各个部门中最高工资大于10000的部门信息\nSELECT department_id,MAX(salary)\nFROM employees\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 ;\n\n# 练习2： 查询department_id 为（10，20，30，40）的部门中最高工资大于10000的部门信息\n# 方式1\nSELECT department_id,MAX(salary)\nFROM employees\nWHERE department_id IN (10,20,30,40)\t# 添加一个where ，此种方式效率较高\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 ;\n\n# 方式2\nSELECT department_id,MAX(salary)\nFROM employees\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 AND department_id IN (10,20,30,40);\t# 添加一个过滤条件，此方式效率低\n"
-										},
-										{
-											"Type": "NodeCodeBlockFenceCloseMarker",
-											"Data": "```"
-										}
-									]
-								},
-								{
-									"ID": "20221028161708-v1kkmlt",
-									"Type": "NodeList",
-									"ListData": {},
-									"Properties": {
-										"id": "20221028161708-v1kkmlt",
-										"updated": "20221028161850"
-									},
-									"Children": [
-										{
-											"ID": "20221028161818-rwb797e",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"id": "20221028161818-rwb797e",
-												"updated": "20221028161850"
-											},
-											"Children": [
-												{
-													"ID": "20221028161818-bdzeagv",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221028161818-bdzeagv",
-														"updated": "20221028161834"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "having 与 where 的对比"
-														}
-													]
-												},
-												{
-													"ID": "20221028161835-wgscwhy",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221028161835-wgscwhy",
-														"updated": "20221028161850"
-													},
-													"Children": [
-														{
-															"Type": "NodeTextMark",
-															"TextMarkType": "a",
-															"TextMarkAHref": "siyuan://blocks/20221028161802-817udny",
-															"TextMarkTextContent": "图"
-														}
-													]
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221028161742-y64y398",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221028161742-y64y398"
-									}
 								}
 							]
 						}
@@ -6080,68 +5968,6 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221022101248-ud47zdv"
-			}
-		},
-		{
-			"ID": "20221028150005-y1h8qd1",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221028150005-y1h8qd1"
-			}
-		},
-		{
-			"ID": "20221028150005-kf8m4mz",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221028150005-kf8m4mz"
-			}
-		},
-		{
-			"ID": "20221028150006-fol5itm",
-			"Type": "NodeCodeBlock",
-			"IsFencedCodeBlock": true,
-			"Properties": {
-				"id": "20221028150006-fol5itm",
-				"updated": "20221028150024"
-			},
-			"Children": [
-				{
-					"Type": "NodeCodeBlockFenceOpenMarker",
-					"Data": "```"
-				},
-				{
-					"Type": "NodeCodeBlockFenceInfoMarker",
-					"CodeBlockInfo": "c2hlbGw="
-				},
-				{
-					"Type": "NodeCodeBlockCode",
-					"Data": "echo “12323132”\n"
-				},
-				{
-					"Type": "NodeCodeBlockFenceCloseMarker",
-					"Data": "```"
-				}
-			]
-		},
-		{
-			"ID": "20221028150131-eu6zkgo",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221028150131-eu6zkgo"
-			}
-		},
-		{
-			"ID": "20221028151337-avwcmrr",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221028151337-avwcmrr"
-			}
-		},
-		{
-			"ID": "20221028151337-o68ypw8",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221028151337-o68ypw8"
 			}
 		}
 	]

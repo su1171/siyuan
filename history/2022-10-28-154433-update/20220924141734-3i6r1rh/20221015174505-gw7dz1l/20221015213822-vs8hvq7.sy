@@ -5,7 +5,7 @@
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
 		"title": "sql详解",
-		"updated": "20221028155952"
+		"updated": "20221028154432"
 	},
 	"Children": [
 		{
@@ -5844,7 +5844,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221028144506-z5l46mk",
-				"updated": "20221028155952"
+				"updated": "20221028154432"
 			},
 			"Children": [
 				{
@@ -5860,7 +5860,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221027093743-3ec87gp",
-						"updated": "20221028155952"
+						"updated": "20221028154432"
 					},
 					"Children": [
 						{
@@ -5872,7 +5872,7 @@
 							},
 							"Properties": {
 								"id": "20221028144815-alykt1n",
-								"updated": "20221028155952"
+								"updated": "20221028154432"
 							},
 							"Children": [
 								{
@@ -5894,7 +5894,7 @@
 									"Type": "NodeParagraph",
 									"Properties": {
 										"id": "20221028154103-o05vgxd",
-										"updated": "20221028154647"
+										"updated": "20221028154432"
 									},
 									"Children": [
 										{
@@ -5908,7 +5908,7 @@
 										},
 										{
 											"Type": "NodeText",
-											"Data": "进行条件筛选，使用 group by 后有可能使用 group by 。若不使用 group by 则一般不使用 having 。"
+											"Data": "进行条件筛选，having 一般情况下出现 "
 										}
 									]
 								},
@@ -5932,7 +5932,7 @@
 									"IsFencedCodeBlock": true,
 									"Properties": {
 										"id": "20221028145733-p6pf6ac",
-										"updated": "20221028155952"
+										"updated": "20221028153905"
 									},
 									"Children": [
 										{
@@ -5945,7 +5945,7 @@
 										},
 										{
 											"Type": "NodeCodeBlockCode",
-											"Data": "# 练习1： 查询各个部门中最高工资大于10000的部门信息\nSELECT department_id,MAX(salary)\nFROM employees\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 ;\n\n# 练习2： 查询department_id 为（10，20，30，40）的部门中最高工资大于10000的部门信息\n# 方式1\nSELECT department_id,MAX(salary)\nFROM employees\nWHERE department_id IN (10,20,30,40)\t# 添加一个where ，此种方式效率较高\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 ;\n\n# 方式2\nSELECT department_id,MAX(salary)\nFROM employees\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 AND department_id IN (10,20,30,40);\t# 添加一个过滤条件，此方式效率低\n"
+											"Data": "# 练习： 查询各个部门中最高工资大于10000的部门信息\nSELECT department_id,MAX(salary)\nFROM employees\nGROUP BY department_id   \nHAVING MAX(salary)\u003e10000 ;\n"
 										},
 										{
 											"Type": "NodeCodeBlockFenceCloseMarker",
@@ -5954,65 +5954,10 @@
 									]
 								},
 								{
-									"ID": "20221028161708-v1kkmlt",
-									"Type": "NodeList",
-									"ListData": {},
-									"Properties": {
-										"id": "20221028161708-v1kkmlt",
-										"updated": "20221028161850"
-									},
-									"Children": [
-										{
-											"ID": "20221028161818-rwb797e",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"id": "20221028161818-rwb797e",
-												"updated": "20221028161850"
-											},
-											"Children": [
-												{
-													"ID": "20221028161818-bdzeagv",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221028161818-bdzeagv",
-														"updated": "20221028161834"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "having 与 where 的对比"
-														}
-													]
-												},
-												{
-													"ID": "20221028161835-wgscwhy",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221028161835-wgscwhy",
-														"updated": "20221028161850"
-													},
-													"Children": [
-														{
-															"Type": "NodeTextMark",
-															"TextMarkType": "a",
-															"TextMarkAHref": "siyuan://blocks/20221028161802-817udny",
-															"TextMarkTextContent": "图"
-														}
-													]
-												}
-											]
-										}
-									]
-								},
-								{
-									"ID": "20221028161742-y64y398",
+									"ID": "20221028153901-6dsl85q",
 									"Type": "NodeParagraph",
 									"Properties": {
-										"id": "20221028161742-y64y398"
+										"id": "20221028153901-6dsl85q"
 									}
 								}
 							]
