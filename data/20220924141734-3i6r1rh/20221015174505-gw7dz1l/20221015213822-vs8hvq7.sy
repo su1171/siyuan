@@ -5,7 +5,7 @@
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
 		"title": "sql详解",
-		"updated": "20221022171539"
+		"updated": "20221027223612"
 	},
 	"Children": [
 		{
@@ -1988,7 +1988,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221018134639-q1hyvwf",
-				"updated": "20221018141359"
+				"updated": "20221027163232"
 			},
 			"Children": [
 				{
@@ -2004,7 +2004,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221018101849-hrljfdl",
-						"updated": "20221018141151"
+						"updated": "20221027163232"
 					},
 					"Children": [
 						{
@@ -2016,7 +2016,7 @@
 							},
 							"Properties": {
 								"id": "20221018134640-vswz4o3",
-								"updated": "20221018141151"
+								"updated": "20221027163232"
 							},
 							"Children": [
 								{
@@ -2024,12 +2024,13 @@
 									"Type": "NodeParagraph",
 									"Properties": {
 										"id": "20221018134640-5o4hr9v",
-										"updated": "20221018134646"
+										"updated": "20221027163232"
 									},
 									"Children": [
 										{
-											"Type": "NodeText",
-											"Data": "排序"
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "排序"
 										}
 									]
 								},
@@ -3225,7 +3226,7 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
+																"fold": "0",
 																"id": "20221022102131-zehkfyp",
 																"updated": "20221022153619"
 															},
@@ -3482,7 +3483,7 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
+																"fold": "0",
 																"id": "20221022153929-nex4rd1",
 																"updated": "20221022165929"
 															},
@@ -3967,7 +3968,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221022154042-crqnome",
-				"updated": "20221022171531"
+				"updated": "20221027093730"
 			},
 			"Children": [
 				{
@@ -4692,24 +4693,1164 @@
 			]
 		},
 		{
-			"ID": "20221018141909-gbxk4ke",
+			"ID": "20221027093733-aab3pp0",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221018141909-gbxk4ke"
+				"id": "20221027093733-aab3pp0"
 			}
 		},
 		{
-			"ID": "20221022171539-5t4jkr4",
+			"ID": "20221027093740-b3pbwxv",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221027093740-b3pbwxv",
+				"updated": "20221027101330"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221027093733-j9gl6mo",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221027093733-j9gl6mo",
+						"updated": "20221027101330"
+					},
+					"Children": [
+						{
+							"ID": "20221027093746-q1y3866",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221027093746-q1y3866",
+								"updated": "20221027101330"
+							},
+							"Children": [
+								{
+									"ID": "20221027093746-ri7fs8w",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027093746-ri7fs8w",
+										"updated": "20221027093825"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "单行函数_流程控制"
+										}
+									]
+								},
+								{
+									"ID": "20221027093829-2hzu901",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221027093829-2hzu901",
+										"updated": "20221027101330"
+									},
+									"Children": [
+										{
+											"ID": "20221027101241-yd0lbsb",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027101241-yd0lbsb"
+											},
+											"Children": [
+												{
+													"ID": "20221027101241-ntzvigp",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101241-ntzvigp",
+														"updated": "20221027101244"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "IF(value,value1,value2)"
+														}
+													]
+												},
+												{
+													"ID": "20221027101245-v172jhu",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101245-v172jhu",
+														"updated": "20221027101253"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "如果value的值为TRUE，返回value1， 否则返回value2"
+														}
+													]
+												},
+												{
+													"ID": "20221027101254-dlitsr9",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101254-dlitsr9",
+														"updated": "20221027101306"
+													},
+													"Children": [
+														{
+															"Type": "NodeImage",
+															"Data": "span",
+															"Children": [
+																{
+																	"Type": "NodeBang"
+																},
+																{
+																	"Type": "NodeOpenBracket"
+																},
+																{
+																	"Type": "NodeLinkText",
+																	"Data": "image"
+																},
+																{
+																	"Type": "NodeCloseBracket"
+																},
+																{
+																	"Type": "NodeOpenParen"
+																},
+																{
+																	"Type": "NodeLinkDest",
+																	"Data": "assets/image-20221027101306-bm1gq3u.png"
+																},
+																{
+																	"Type": "NodeCloseParen"
+																}
+															]
+														},
+														{
+															"Type": "NodeText",
+															"Data": "​"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221027101308-3k180ha",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027101308-3k180ha",
+												"updated": "20221027101330"
+											},
+											"Children": [
+												{
+													"ID": "20221027101308-orfgh0q",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101308-orfgh0q",
+														"updated": "20221027101313"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "IFNULL(value1, value2)"
+														}
+													]
+												},
+												{
+													"ID": "20221027101314-o95hb3j",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101314-o95hb3j",
+														"updated": "20221027101320"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "如果value1不为NULL，返回value1，否 则返回value2"
+														}
+													]
+												},
+												{
+													"ID": "20221027101321-odrr5iu",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101321-odrr5iu",
+														"updated": "20221027101330"
+													},
+													"Children": [
+														{
+															"Type": "NodeImage",
+															"Data": "span",
+															"Children": [
+																{
+																	"Type": "NodeBang"
+																},
+																{
+																	"Type": "NodeOpenBracket"
+																},
+																{
+																	"Type": "NodeLinkText",
+																	"Data": "image"
+																},
+																{
+																	"Type": "NodeCloseBracket"
+																},
+																{
+																	"Type": "NodeOpenParen"
+																},
+																{
+																	"Type": "NodeLinkDest",
+																	"Data": "assets/image-20221027101330-5gpibw2.png"
+																},
+																{
+																	"Type": "NodeCloseParen"
+																}
+															]
+														},
+														{
+															"Type": "NodeText",
+															"Data": "​"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221027093826-fej521e",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027093826-fej521e"
+											},
+											"Children": [
+												{
+													"ID": "20221027093826-lxhat2q",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027093826-lxhat2q",
+														"updated": "20221027093954"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "CASE WHEN 条件1 THEN 结果1 WHEN 条件2 THEN 结果2 .... [ELSE resultn] END"
+														}
+													]
+												},
+												{
+													"ID": "20221027094032-1rp2mi5",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027094032-1rp2mi5",
+														"updated": "20221027094041"
+													},
+													"Children": [
+														{
+															"Type": "NodeImage",
+															"Data": "span",
+															"Children": [
+																{
+																	"Type": "NodeBang"
+																},
+																{
+																	"Type": "NodeOpenBracket"
+																},
+																{
+																	"Type": "NodeLinkText",
+																	"Data": "image"
+																},
+																{
+																	"Type": "NodeCloseBracket"
+																},
+																{
+																	"Type": "NodeOpenParen"
+																},
+																{
+																	"Type": "NodeLinkDest",
+																	"Data": "assets/image-20221027094041-upkaynh.png"
+																},
+																{
+																	"Type": "NodeCloseParen"
+																}
+															]
+														},
+														{
+															"Type": "NodeText",
+															"Data": "​"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221027093958-z45brdh",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027093958-z45brdh"
+											},
+											"Children": [
+												{
+													"ID": "20221027093958-4ar2nom",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027093958-4ar2nom",
+														"updated": "20221027101056"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "CASE expr WHEN 常量值1 THEN 值1 WHEN 常量值1 THEN 值1 .... [ELSE 值n] END"
+														}
+													]
+												},
+												{
+													"ID": "20221027101021-26bmesv",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027101021-26bmesv",
+														"updated": "20221027101041"
+													},
+													"Children": [
+														{
+															"Type": "NodeImage",
+															"Data": "span",
+															"Children": [
+																{
+																	"Type": "NodeBang"
+																},
+																{
+																	"Type": "NodeOpenBracket"
+																},
+																{
+																	"Type": "NodeLinkText",
+																	"Data": "image"
+																},
+																{
+																	"Type": "NodeCloseBracket"
+																},
+																{
+																	"Type": "NodeOpenParen"
+																},
+																{
+																	"Type": "NodeLinkDest",
+																	"Data": "assets/image-20221027101041-lqsueak.png"
+																},
+																{
+																	"Type": "NodeCloseParen"
+																}
+															]
+														},
+														{
+															"Type": "NodeText",
+															"Data": "​"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221027093733-9gq5cn1",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221027093733-9gq5cn1",
+						"updated": "20221027093741"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221027093734-e3npl0v",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221022171539-5t4jkr4"
+				"id": "20221027093734-e3npl0v"
 			}
 		},
 		{
-			"ID": "20221022171539-tzc22v5",
+			"ID": "20221027102746-balomul",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221027102746-balomul",
+				"updated": "20221027105007"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221027093742-w32zmn5",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221027093742-w32zmn5",
+						"updated": "20221027105007"
+					},
+					"Children": [
+						{
+							"ID": "20221027102748-fdxjb4i",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221027102748-fdxjb4i",
+								"updated": "20221027105007"
+							},
+							"Children": [
+								{
+									"ID": "20221027102748-fs3736l",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027102748-fs3736l",
+										"updated": "20221027102751"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "DUAL"
+										}
+									]
+								},
+								{
+									"ID": "20221027102753-fcoj6bp",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027102753-fcoj6bp",
+										"updated": "20221027105007"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "伪表 "
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221027093743-lkbwy3z",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221027093743-lkbwy3z",
+						"updated": "20221027102747"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221027093743-yhtz9v3",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221022171539-tzc22v5"
+				"id": "20221027093743-yhtz9v3"
+			}
+		},
+		{
+			"ID": "20221027112639-kj94r96",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221027112639-kj94r96",
+				"updated": "20221027220211"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221027093743-yemid3h",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221027093743-yemid3h",
+						"updated": "20221027220211"
+					},
+					"Children": [
+						{
+							"ID": "20221027112640-8my782i",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221027112640-8my782i",
+								"updated": "20221027220211"
+							},
+							"Children": [
+								{
+									"ID": "20221027112640-j8ospfq",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027112640-j8ospfq",
+										"updated": "20221027220211"
+									},
+									"Children": [
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "聚合函数"
+										}
+									]
+								},
+								{
+									"ID": "20221027112643-pcajdwk",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027112643-pcajdwk",
+										"updated": "20221027112708"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "输入多个值，输出一个值"
+										}
+									]
+								},
+								{
+									"ID": "20221027112710-havs9kf",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221027112710-havs9kf",
+										"updated": "20221027130809"
+									},
+									"Children": [
+										{
+											"ID": "20221027112709-5te7tps",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027112709-5te7tps"
+											},
+											"Children": [
+												{
+													"ID": "20221027112709-pxvl7wd",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027112709-pxvl7wd",
+														"updated": "20221027112731"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "AVG / SUM "
+														}
+													]
+												},
+												{
+													"ID": "20221027112755-3p0qnnc",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027112755-3p0qnnc",
+														"updated": "20221027113444"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "AVG（） 求平均值，只适用于数值类型"
+														}
+													]
+												},
+												{
+													"ID": "20221027112812-hrjl424",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027112812-hrjl424",
+														"updated": "20221027113453"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "SUM（） 求和 ，只适用于数值类型"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221027113846-748jvxx",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027113846-748jvxx"
+											},
+											"Children": [
+												{
+													"ID": "20221027113846-bopojik",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027113846-bopojik",
+														"updated": "20221027113852"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "MAX / MIN "
+														}
+													]
+												},
+												{
+													"ID": "20221027113852-o8zogbq",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027113852-o8zogbq",
+														"updated": "20221027114051"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "MAX（） 取最大值，适用于数值，字符串，时间类型"
+														}
+													]
+												},
+												{
+													"ID": "20221027113910-d79l9pc",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027113910-d79l9pc",
+														"updated": "20221027113924"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "MIN ( )\t取最小值"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221027114425-ymeq72x",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "0",
+												"id": "20221027114425-ymeq72x",
+												"updated": "20221027130809"
+											},
+											"Children": [
+												{
+													"ID": "20221027114425-x2sewsj",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027114425-x2sewsj",
+														"updated": "20221027114429"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "COUNT "
+														}
+													]
+												},
+												{
+													"ID": "20221027114431-dd9yji9",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027114431-dd9yji9",
+														"updated": "20221027114914"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "统计某个字段出现的次数，不是null 就加1"
+														}
+													]
+												},
+												{
+													"ID": "20221027114454-7v2gfhq",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027114454-7v2gfhq",
+														"updated": "20221027130655"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "统计字段数量"
+														}
+													]
+												},
+												{
+													"ID": "20221027130655-gpw9wff",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027130655-gpw9wff",
+														"updated": "20221027130735"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "COUNT（*）\t\t\t推荐使用"
+														}
+													]
+												},
+												{
+													"ID": "20221027130705-40lxcm8",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027130705-40lxcm8",
+														"updated": "20221027130740"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "COUNT(1)\t\t\t推荐使用"
+														}
+													]
+												},
+												{
+													"ID": "20221027130715-8ffvnq3",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027130715-8ffvnq3",
+														"updated": "20221027130809"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "COUNT（具体字段）\t结果不一定正确，空字段不统计"
+														}
+													]
+												},
+												{
+													"ID": "20221027114450-76db8dc",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027114450-76db8dc"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221027093743-bskssl8",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221027093743-bskssl8",
+						"updated": "20221027112639"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221027093743-d6hvof2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221027093743-d6hvof2"
+			}
+		},
+		{
+			"ID": "20221027132115-r0akavb",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221027132115-r0akavb",
+				"updated": "20221027223612"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221027093743-h51ohou",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221027093743-h51ohou",
+						"updated": "20221027223612"
+					},
+					"Children": [
+						{
+							"ID": "20221027132116-52s9gmb",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221027132116-52s9gmb",
+								"updated": "20221027223612"
+							},
+							"Children": [
+								{
+									"ID": "20221027132116-dehoe61",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027132116-dehoe61",
+										"updated": "20221027132124"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "GROUP BY"
+										}
+									]
+								},
+								{
+									"ID": "20221027132125-er7k0ka",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221027132125-er7k0ka",
+										"updated": "20221027132127"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "分组"
+										}
+									]
+								},
+								{
+									"ID": "20221027164105-oqilzof",
+									"Type": "NodeCodeBlock",
+									"IsFencedCodeBlock": true,
+									"Properties": {
+										"id": "20221027164105-oqilzof",
+										"updated": "20221027220601"
+									},
+									"Children": [
+										{
+											"Type": "NodeCodeBlockFenceOpenMarker",
+											"Data": "```"
+										},
+										{
+											"Type": "NodeCodeBlockFenceInfoMarker",
+											"CodeBlockInfo": "c3Fs"
+										},
+										{
+											"Type": "NodeCodeBlockCode",
+											"Data": " # 1. 求各部门的平均薪资\nSELECT department_id,AVG(salary)\nFROM employees\nGROUP BY department_id ;\t# 指定以某个字段进行分组\n"
+										},
+										{
+											"Type": "NodeCodeBlockFenceCloseMarker",
+											"Data": "```"
+										}
+									]
+								},
+								{
+									"ID": "20221027220556-fx0k1e8",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221027220556-fx0k1e8",
+										"updated": "20221027223612"
+									},
+									"Children": [
+										{
+											"ID": "20221027220602-ihfpgnk",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027220602-ihfpgnk",
+												"updated": "20221027220602"
+											},
+											"Children": [
+												{
+													"ID": "20221027220602-2qifj4m",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027220602-2qifj4m",
+														"updated": "20221027220607"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "二级分组"
+														}
+													]
+												},
+												{
+													"ID": "20221027220608-nhrnf2q",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027220608-nhrnf2q",
+														"updated": "20221027220839"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "在一级分组的基础上，进行二次分组 ，类似"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "block-ref",
+															"TextMarkBlockRefID": "20221018134639-q1hyvwf",
+															"TextMarkBlockRefSubtype": "s",
+															"TextMarkTextContent": "order by"
+														},
+														{
+															"Type": "NodeText",
+															"Data": " 的二级排序"
+														}
+													]
+												},
+												{
+													"ID": "20221027220647-14jw5sc",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221027220647-14jw5sc",
+														"updated": "20221027221244"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "# 2. 查询各个部门及工种的平均薪资\nSELECT department_id,job_id,AVG(salary)\nFROM employees\nGROUP BY department_id ,job_id\t\t# 进行二次分组\nORDER BY department_id ;\t\t# 排序，非必要\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												},
+												{
+													"ID": "20221027221727-ke20adu",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027221727-ke20adu",
+														"updated": "20221027221912"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "注意：在select 出现的非多行函数的字段，必须出现在 group by 中，反之在 group by 中出现的字段不一定要出现在 select 中。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221027222456-g9adsqn",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221027222456-g9adsqn",
+												"updated": "20221027223612"
+											},
+											"Children": [
+												{
+													"ID": "20221027222456-tvpckpn",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027222456-tvpckpn",
+														"updated": "20221027222511"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "with rollup"
+														}
+													]
+												},
+												{
+													"ID": "20221027222513-2ljzm0g",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027222513-2ljzm0g",
+														"updated": "20221027222608"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "在 GROUP BY 中使用 WITH ROLLUP 关键字，可以添加一行总计"
+														}
+													]
+												},
+												{
+													"ID": "20221027222611-ewr3ogq",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221027222611-ewr3ogq",
+														"updated": "20221027222732"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "SELECT department_id,AVG(salary)\nFROM employees\nGROUP BY department_id WITH ROLLUP ;\t# 使用 WITH ROLLUP 关键字，添加一行总计\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												},
+												{
+													"ID": "20221027222735-qqw4bx0",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027222735-qqw4bx0",
+														"updated": "20221027223340"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "a",
+															"TextMarkAHref": "siyuan://blocks/20221024110004-cyxz797",
+															"TextMarkTextContent": "结果\t"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "最后一行 可以理解为"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "将所有数据归入一个总计组"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "，对总计组进行了运算的结果"
+														}
+													]
+												},
+												{
+													"ID": "20221027223502-qukp2ta",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221027223502-qukp2ta",
+														"updated": "20221027223612"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "WITH ROLLUP 关键字 与 ORDER BY 排序   "
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "不能同时使用。"
+														},
+														{
+															"Type": "NodeBr",
+															"Data": "br"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221027220510-iudx54p",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221027220510-iudx54p",
+						"updated": "20221027220521"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221027093743-grfi6kr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221027093743-grfi6kr"
+			}
+		},
+		{
+			"ID": "20221027093743-3ec87gp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221027093743-3ec87gp"
+			}
+		},
+		{
+			"ID": "20221027093743-1lz5qjx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221027093743-1lz5qjx"
 			}
 		},
 		{

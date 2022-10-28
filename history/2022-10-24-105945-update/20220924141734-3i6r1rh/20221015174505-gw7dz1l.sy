@@ -1,0 +1,217 @@
+{
+	"ID": "20221015174505-gw7dz1l",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221015174505-gw7dz1l",
+		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20221015174515-qh3tmsa\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221015202146-tid8ybg\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:0,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221015174515-qh3tmsa\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0,\u0026amp;quot;zoomInId\u0026amp;quot;:\u0026amp;quot;20221015174515-qh3tmsa\u0026amp;quot;}",
+		"title": "MySQL",
+		"updated": "20221024105921"
+	},
+	"Children": [
+		{
+			"ID": "20221015174515-qh3tmsa",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221015174515-qh3tmsa",
+				"updated": "20221015200714"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "sql单词"
+				}
+			]
+		},
+		{
+			"ID": "20221015200715-bz2arzj",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"custom-render": "scroll",
+				"id": "20221015200715-bz2arzj",
+				"updated": "20221015200722"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "c3Fs"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "----------------------表关键字---------------------\nselect --  查询\nfrom    -- 从哪里 \nwhere  -- 条件\ngroup by -- 按照..分组\norder by  -- 按照 ... 排序\nhaving  -- 对分组后的结果进行 条件筛选\nasc -- 升序\ndesc -- 降序\n\n--多表--\ninner join  -- 内连接\nleft join \t--左外连接\nright join  --右外连接\nfull join    --全外连接 \nnatural join  --自然连接\n\nunion        -- 合并去重\nunion all  --合并不去重\nintersect  --交集\nminus  --差集\n------------聚合函数----------------------\nsum --求和\navg --求平均\ncount --计数\nmax  --最大\nmin --最小\n------------数据库对象关键字-----------------\ntablespace --表空间\nuser -- 用户\ntable  -- 表\nconstraints --表的约束\nsequence -- 序列\nindex --索引\nview --视图\nsynonym 同义词\n\nfunction --函数\nprocedure --存储过程\ntrigger --触发器\n-----------------DML(数据操纵语言) 关键字--------------\nselect --查询数据\ninsert  --插入数据\nupdate -- 更新数据\ndelete --删除数据\n------------------DDL(数据定义语言)关键字---------------------\ncreate --创建\nalter   --修改\ndrop --删除\n----------------DCL(数据库控制语言)----------------\ngrant --授权\nrevoke --收回权限\nrollback --回滚\ncommit --提交\n------------------------------------函数-------------------------------\n---字符串函数---\nconcat --连接字符串\ninstr --返回字符所在字符串位置\nlength  -- 计算长度\nlower  --小写\nupper  --大写\ntrim  --去空格\nreplace --替换\nsubstr  --截取字符串部分数据\n\n--数值函数--\nabs(x)  --返回x的绝对值\nceil(6.5)  --\u003e7  --向上取整\nfloor(6.5)--\u003e6  --向下取整\nmod(x,y) -- X除以Y的余数\npower(2,5) -- 2的5次方\nround(x,y) 四舍五入,保留y位小数\ntrunc(x,y) 保留y位小数,不进行四舍五入计算\n------日期函数----\nadd_months(日期,月数) -- 日期加上月数后 是几号\nlast_day(日期) 指定日期当月最后一天是几号\nmonths_between(日期1,日期2)   -- 日期1和日期2之间的月数\n-----转换函数-----\nto_char  转换\nto_date  将时间字符串变成日期格式\nto_number\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221015200924-8yjh3s7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015200924-8yjh3s7"
+			}
+		},
+		{
+			"ID": "20221015174532-0qk15h4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015174532-0qk15h4",
+				"updated": "20221015200910"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "a",
+					"TextMarkAHref": "https://blog.csdn.net/simplexingfupeng/article/details/107893416",
+					"TextMarkTextContent": "详细单词"
+				}
+			]
+		},
+		{
+			"ID": "20221015174505-esqo4jn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015174505-esqo4jn",
+				"updated": "20221015174505"
+			}
+		},
+		{
+			"ID": "20221015202146-czk5r15",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015202146-czk5r15"
+			}
+		},
+		{
+			"ID": "20221015202146-tid8ybg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015202146-tid8ybg"
+			}
+		},
+		{
+			"ID": "20221015202146-tuwwzvw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221015202146-tuwwzvw",
+				"updated": "20221015202156"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "基本的sql语句"
+				}
+			]
+		},
+		{
+			"ID": "20221015202156-uq4p6wa",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221015202156-uq4p6wa",
+				"updated": "20221015202203"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "语句分类"
+				}
+			]
+		},
+		{
+			"ID": "20221015202203-8vw6okb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015202203-8vw6okb",
+				"updated": "20221015202206"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221015202206-r76z631.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221015213521-0kd79of",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015213521-0kd79of"
+			}
+		},
+		{
+			"ID": "20221015213805-2nq1r4l",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015213805-2nq1r4l"
+			}
+		},
+		{
+			"ID": "20221015213805-2mji4mg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221015213805-2mji4mg"
+			}
+		},
+		{
+			"ID": "20221015213805-1tbn7tb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221015213805-1tbn7tb",
+				"updated": "20221024105907"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "练习表 结构"
+				}
+			]
+		},
+		{
+			"ID": "20221024105928-maagqvz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221024105928-maagqvz"
+			}
+		}
+	]
+}

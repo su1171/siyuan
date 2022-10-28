@@ -195,7 +195,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "270px",
+              "size": "0px",
               "type": "left"
             },
             {
@@ -214,7 +214,7 @@
                           "focusEnd": 9,
                           "focusId": "20220930170943-coz08c2",
                           "focusStart": 9,
-                          "scrollTop": 1988,
+                          "scrollTop": 1987,
                           "startId": "20221005215332-ba58dmk"
                         }
                       },
@@ -247,37 +247,16 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221004170149-cvhegdp",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221004170149-cvhegdp",
-                        "scrollAttr": {
-                          "endId": "20221007210137-yw00w4y",
-                          "focusEnd": 15,
-                          "focusId": "20221021185339-nfwshks",
-                          "focusStart": 15,
-                          "scrollTop": 8488,
-                          "startId": "20221004170153-68za3pg"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "nginx"
-                    },
-                    {
-                      "children": {
-                        "action": "",
                         "blockId": "20221015174505-gw7dz1l",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20221015174505-gw7dz1l",
                         "scrollAttr": {
-                          "endId": "20221015213805-1tbn7tb",
+                          "endId": "20221027202234-jc8k0xt",
                           "focusEnd": 0,
-                          "focusId": "20221015174515-qh3tmsa",
+                          "focusId": "20221027202234-jc8k0xt",
                           "focusStart": 0,
-                          "scrollTop": 135,
+                          "scrollTop": 1615,
                           "startId": "20221015174515-qh3tmsa"
                         }
                       },
@@ -294,11 +273,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221015214231-0yi6lsq",
                         "scrollAttr": {
-                          "endId": "20221022165725-24w7k3m",
+                          "endId": "20221024110004-cyxz797",
                           "focusEnd": 0,
-                          "focusId": "20221022165725-24w7k3m",
+                          "focusId": "20221024110004-cyxz797",
                           "focusStart": 0,
-                          "scrollTop": 5074,
+                          "scrollTop": 5450,
                           "startId": "20221018092605-eduqpin"
                         }
                       },
@@ -306,27 +285,6 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "sql资料库"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221001085750-qmjsuml",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221001085750-qmjsuml",
-                        "scrollAttr": {
-                          "endId": "20221018195017-juzn014",
-                          "focusEnd": 119,
-                          "focusId": "20221018195037-tpofcn5",
-                          "focusStart": 119,
-                          "scrollTop": 203,
-                          "startId": "20221001085757-s5ambuk"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "文档"
                     },
                     {
                       "active": true,
@@ -338,10 +296,10 @@
                         "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
                           "endId": "20221022101248-ud47zdv",
-                          "focusEnd": 0,
-                          "focusId": "20221022171539-tzc22v5",
-                          "focusStart": 0,
-                          "scrollTop": 5609.55517578125,
+                          "focusEnd": 39,
+                          "focusId": "20221027223502-qukp2ta",
+                          "focusStart": 39,
+                          "scrollTop": 9564.5498046875,
                           "startId": "20221015213822-gyd334t"
                         }
                       },
@@ -353,14 +311,59 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220924145441-ruxsjlb",
+                        "blockId": "20221002204547-ccg5hvu",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924204553-h4rr7p5",
+                        "scrollAttr": {
+                          "endId": "20221013100122-9lqspnn",
+                          "focusEnd": 2,
+                          "focusId": "20221002204547-ccg5hvu",
+                          "focusStart": 2,
+                          "scrollTop": 14180,
+                          "startId": "20220925211914-g1oqshn"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "资料库"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221001085750-qmjsuml",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221001085750-qmjsuml",
+                        "scrollAttr": {
+                          "endId": "20221027184504-9133zoc",
+                          "focusEnd": 13,
+                          "focusId": "20221001085750-2ipyxf9",
+                          "focusStart": 13,
+                          "scrollTop": 547,
+                          "startId": "20221001085757-s5ambuk"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "文档"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221004130820-y9ciu2f",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924145441-ruxsjlb",
                         "scrollAttr": {
-                          "endId": "20221021212410-kfp1n1y",
-                          "scrollTop": 3384,
-                          "startId": "20221017144308-bmf7twc"
+                          "endId": "20221004132151-fjm2bmx",
+                          "focusEnd": 20,
+                          "focusId": "20221027211248-3ovxdbp",
+                          "focusStart": 20,
+                          "scrollTop": 2103,
+                          "startId": "20221003152434-vnou393"
                         }
                       },
                       "docIcon": "",
@@ -462,7 +465,7 @@
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": true,
+          "show": false,
           "size": {
             "height": 0,
             "width": 270
@@ -551,9 +554,10 @@
     "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
+    "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
-    "192.168.1.11",
+    "192.168.43.74",
     "127.0.0.1"
   ],
   "accessAuthCode": "",
