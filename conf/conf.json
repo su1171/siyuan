@@ -195,7 +195,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "275px",
+              "size": "270px",
               "type": "left"
             },
             {
@@ -203,20 +203,19 @@
                 {
                   "children": [
                     {
-                      "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20220924141737-z6ah3oq",
+                        "blockId": "20220924182927-m55ft1t",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
-                          "endId": "20221001143855-8wafklz",
-                          "focusEnd": 1,
-                          "focusId": "20220930155139-kjyno8w",
-                          "focusStart": 1,
-                          "scrollTop": 4926.87353515625,
-                          "startId": "20221004145411-45kvl0v"
+                          "endId": "20221003142912-uszc06a",
+                          "focusEnd": 4,
+                          "focusId": "20221001153112-6y71ddo",
+                          "focusStart": 4,
+                          "scrollTop": 3008,
+                          "startId": "20220925173746-xjjlb8q"
                         }
                       },
                       "docIcon": "",
@@ -248,27 +247,6 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221015174505-gw7dz1l",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015174505-gw7dz1l",
-                        "scrollAttr": {
-                          "endId": "20221027202234-jc8k0xt",
-                          "focusEnd": 0,
-                          "focusId": "20221027202234-jc8k0xt",
-                          "focusStart": 0,
-                          "scrollTop": 1396,
-                          "startId": "20221015174515-qh3tmsa"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "MySQL"
-                    },
-                    {
-                      "children": {
-                        "action": "",
                         "blockId": "20221015214231-0yi6lsq",
                         "instance": "Editor",
                         "mode": "wysiwyg",
@@ -276,9 +254,9 @@
                         "scrollAttr": {
                           "endId": "20221028161802-817udny",
                           "focusEnd": 0,
-                          "focusId": "20221028161802-817udny",
+                          "focusId": "20221018092605-eduqpin",
                           "focusStart": 0,
-                          "scrollTop": 5704,
+                          "scrollTop": 5701,
                           "startId": "20221018092605-eduqpin"
                         }
                       },
@@ -295,11 +273,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221028151337-o68ypw8",
-                          "focusEnd": 361,
-                          "focusId": "20221028145733-p6pf6ac",
-                          "focusStart": 361,
-                          "scrollTop": 10220,
+                          "endId": "20221028150005-kf8m4mz",
+                          "focusEnd": 0,
+                          "focusId": "20221028144503-2g3fvy6",
+                          "focusStart": 0,
+                          "scrollTop": 11063,
                           "startId": "20221015213822-gyd334t"
                         }
                       },
@@ -307,29 +285,53 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "sql详解"
-                    }
-                  ],
-                  "height": "",
-                  "instance": "Wnd",
-                  "width": "1377px"
-                },
-                {
-                  "children": [
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924145441-ruxsjlb",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220924145441-ruxsjlb",
+                        "scrollAttr": {
+                          "endId": "20221003152214-bqn1rni",
+                          "focusEnd": 0,
+                          "focusId": "20221030181108-8ef1flb",
+                          "focusStart": 0,
+                          "scrollTop": 2180,
+                          "startId": "20221021212410-kfp1n1y"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "命令详解"
+                    },
                     {
                       "active": true,
                       "children": {
-                        "instance": "Asset",
-                        "path": "assets/第06章_多表查询-20221018195040-4djkaxi.pdf"
+                        "action": "",
+                        "blockId": "20221004181701-2kx6on8",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221004170149-cvhegdp",
+                        "scrollAttr": {
+                          "endId": "20221004185142-moil301",
+                          "focusEnd": 27,
+                          "focusId": "20221020160010-xuidgv9",
+                          "focusStart": 27,
+                          "scrollTop": 1951.6448974609375,
+                          "startId": "20221005145658-4y42mhr"
+                        }
                       },
-                      "icon": "iconPDF",
+                      "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "第06章_多表查询-20221018195040-4djkaxi.pdf"
+                      "title": "nginx"
                     }
                   ],
                   "height": "",
                   "instance": "Wnd",
-                  "resize": "lr",
                   "width": ""
                 }
               ],
@@ -392,7 +394,7 @@
         {
           "hotkeyLangId": "fileTree",
           "icon": "iconFiles",
-          "show": true,
+          "show": false,
           "size": {
             "height": 0,
             "width": 275
@@ -402,7 +404,7 @@
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
             "width": 270
@@ -488,8 +490,10 @@
   },
   "readonly": false,
   "localIPs": [
+    "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
+    "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
     "192.168.1.11",
@@ -988,7 +992,7 @@
     "virtualRefDoc": true
   },
   "stat": {
-    "docCount": 67
+    "docCount": 17
   },
   "api": {
     "token": "uin95woksk9wpovr"

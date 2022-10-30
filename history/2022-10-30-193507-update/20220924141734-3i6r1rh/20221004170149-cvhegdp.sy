@@ -6,7 +6,7 @@
 		"id": "20221004170149-cvhegdp",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20221004170153-68za3pg\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221007210137-yw00w4y\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:12027,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20221018164851-cp3mtss\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:13,\u0026amp;quot;focusEnd\u0026amp;quot;:13}",
 		"title": "nginx",
-		"updated": "20221030193921"
+		"updated": "20221030193114"
 	},
 	"Children": [
 		{
@@ -2063,7 +2063,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20221011144242-j2oeofh",
-				"updated": "20221030193921"
+				"updated": "20221011144309"
 			},
 			"Children": [
 				{
@@ -2076,7 +2076,7 @@
 					"Properties": {
 						"fold": "0",
 						"id": "20221011144248-gt8fg9w",
-						"updated": "20221030193921"
+						"updated": "20221011144309"
 					},
 					"Children": [
 						{
@@ -2135,21 +2135,12 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221011144259-oryaic2",
-								"updated": "20221030193916"
+								"updated": "20221011144259"
 							},
 							"Children": [
 								{
 									"Type": "NodeText",
-									"Data": "= 开头"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "表示精确匹配"
-								},
-								{
-									"Type": "NodeText",
-									"Data": "; 如: A 中只匹配根目录结尾的请求，后面不能带任何字符串."
+									"Data": "= 开头表示精确匹配; 如: A 中只匹配根目录结尾的请求，后面不能带任何字符串."
 								}
 							]
 						},
@@ -2172,21 +2163,12 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221011144259-vqdfo7c",
-								"updated": "20221030193855"
+								"updated": "20221011144259"
 							},
 							"Children": [
 								{
 									"Type": "NodeText",
-									"Data": "~ 开头表示"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "区分大小写的正则匹配"
-								},
-								{
-									"Type": "NodeText",
-									"Data": ";"
+									"Data": "~ 开头表示区分大小写的正则匹配;"
 								}
 							]
 						},
@@ -2195,17 +2177,12 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221011144259-rgx909o",
-								"updated": "20221030193858"
+								"updated": "20221011144259"
 							},
 							"Children": [
 								{
 									"Type": "NodeText",
-									"Data": "~* 开头表示"
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "不区分大小写的正则匹配;"
+									"Data": "~* 开头表示不区分大小写的正则匹配;"
 								}
 							]
 						},
@@ -2214,21 +2191,12 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20221011144259-l3wbbz3",
-								"updated": "20221030193921"
+								"updated": "20221011144259"
 							},
 							"Children": [
 								{
 									"Type": "NodeText",
-									"Data": "/ "
-								},
-								{
-									"Type": "NodeTextMark",
-									"TextMarkType": "strong",
-									"TextMarkTextContent": "通用匹配, 如果没有其它匹配,任何请求都会匹配到"
-								},
-								{
-									"Type": "NodeText",
-									"Data": ";"
+									"Data": "/ 通用匹配, 如果没有其它匹配,任何请求都会匹配到;"
 								}
 							]
 						}

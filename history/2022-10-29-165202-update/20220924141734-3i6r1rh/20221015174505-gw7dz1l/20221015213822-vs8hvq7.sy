@@ -5,7 +5,7 @@
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
 		"title": "sql详解",
-		"updated": "20221030210749"
+		"updated": "20221029165140"
 	},
 	"Children": [
 		{
@@ -6158,7 +6158,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221029111630-xh4v5vu",
-				"updated": "20221030210749"
+				"updated": "20221029114617"
 			},
 			"Children": [
 				{
@@ -6174,7 +6174,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221029111622-tx8lc2a",
-						"updated": "20221030210749"
+						"updated": "20221029114617"
 					},
 					"Children": [
 						{
@@ -6186,7 +6186,7 @@
 							},
 							"Properties": {
 								"id": "20221029111632-m660kku",
-								"updated": "20221030210749"
+								"updated": "20221029114617"
 							},
 							"Children": [
 								{
@@ -6210,7 +6210,7 @@
 									"ListData": {},
 									"Properties": {
 										"id": "20221029111642-4coumry",
-										"updated": "20221030210749"
+										"updated": "20221029114617"
 									},
 									"Children": [
 										{
@@ -6320,126 +6320,6 @@
 													]
 												}
 											]
-										},
-										{
-											"ID": "20221030210506-ndopad3",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"id": "20221030210506-ndopad3",
-												"updated": "20221030210749"
-											},
-											"Children": [
-												{
-													"ID": "20221030210506-cvzo7sd",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221030210506-cvzo7sd",
-														"updated": "20221030210512"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "多行子查询"
-														}
-													]
-												},
-												{
-													"ID": "20221030210513-omyjwr4",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221030210513-omyjwr4",
-														"updated": "20221030210557"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "内查询返回多行数据的子查询叫做多行子查询"
-														}
-													]
-												},
-												{
-													"ID": "20221030210716-csethvf",
-													"Type": "NodeList",
-													"ListData": {},
-													"Properties": {
-														"id": "20221030210716-csethvf",
-														"updated": "20221030210749"
-													},
-													"Children": [
-														{
-															"ID": "20221030210724-dmlm39u",
-															"Type": "NodeListItem",
-															"ListData": {
-																"BulletChar": 42,
-																"Marker": "Kg=="
-															},
-															"Properties": {
-																"id": "20221030210724-dmlm39u",
-																"updated": "20221030210749"
-															},
-															"Children": [
-																{
-																	"ID": "20221030210724-gcjqtwz",
-																	"Type": "NodeParagraph",
-																	"Properties": {
-																		"id": "20221030210724-gcjqtwz",
-																		"updated": "20221030210733"
-																	},
-																	"Children": [
-																		{
-																			"Type": "NodeText",
-																			"Data": "多行子查询操作符"
-																		}
-																	]
-																},
-																{
-																	"ID": "20221030210738-aw69qf7",
-																	"Type": "NodeList",
-																	"ListData": {},
-																	"Properties": {
-																		"id": "20221030210738-aw69qf7",
-																		"updated": "20221030210749"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221030210733-v65zxys",
-																			"Type": "NodeListItem",
-																			"ListData": {
-																				"BulletChar": 42,
-																				"Marker": "Kg=="
-																			},
-																			"Properties": {
-																				"id": "20221030210733-v65zxys",
-																				"updated": "20221030210749"
-																			},
-																			"Children": [
-																				{
-																					"ID": "20221030210733-l2bfx0f",
-																					"Type": "NodeParagraph",
-																					"Properties": {
-																						"id": "20221030210733-l2bfx0f",
-																						"updated": "20221030210749"
-																					},
-																					"Children": [
-																						{
-																							"Type": "NodeText",
-																							"Data": "IN \t\t等于列表"
-																						}
-																					]
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														}
-													]
-												}
-											]
 										}
 									]
 								}
@@ -6536,6 +6416,63 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221028150005-kf8m4mz"
+			}
+		},
+		{
+			"ID": "20221029165140-cbohv3v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221029165140-cbohv3v",
+				"updated": "20221029165140"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "#!/bin/bash\n##by linuxfan 20150611\n#1.卸载已经安装rpm包\nrpm -qa |grep php\nif [ $? -eq 0 ];then\nrpm -e php php-mysql --nodeps\nfi\n#2.安装mcrypt支持，安装的顺序必须libmcrypt--\u003emhash--\u003emcrypt，每安装都必须ln链接到系统库中，echo \"/usr/local/lib/\" \u003e\u003e/etc/ld.conf\u0026\u0026ldconfig\n##########install mcrypt###########\ntar zxvf /root/libmcrypt-2.5.8.tar.gz -C /usr/src/\ncd /usr/src/libmcrypt-2.5.8/\n./configure \u0026\u0026make \u0026\u0026make install\nln -s /usr/local/lib/libmcrypt.* /usr/lib"
+				}
+			]
+		},
+		{
+			"ID": "20221029165140-l84zm0s",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221029165140-l84zm0s",
+				"updated": "20221029165140"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "tar zxvf /root/mhash-0.9.9.9.tar.gz -C /usr/src/\ncd /usr/src/mhash-0.9.9.9/\n./configure \u0026\u0026make \u0026\u0026make install\nln -s /usr/local/lib/libmhash* /usr/lib/"
+				}
+			]
+		},
+		{
+			"ID": "20221029165140-vxt89va",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221029165140-vxt89va",
+				"updated": "20221029165140"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "tar zxvf /root/mcrypt-2.6.8.tar.gz -C /usr/src/\ncd /usr/src/mcrypt-2.6.8/\n./configure \u0026\u0026make \u0026\u0026make install\n#3.安装php\n##############install php #############\nyum -y install libxml2-* zlib-*\nPHV=php-5.3.28\ntar zxvf /root/$PHV.tar.gz -C /usr/src/\ncd /usr/src/$PHV/\n./configure --prefix=/usr/local/php5 --with-mcrypt --with-apxs2=/usr/local/httpd/bin/apxs --with-mysql=/usr/local/mysql/ "
+				},
+				{
+					"Type": "NodeBr",
+					"Data": "br"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " --with-config-file-path=/usr/local/php5 --enable-mbstring \u0026\u0026make \u0026\u0026make install\nif [ -e /usr/local/php5 ]\nthen\necho \"php install success.\"\nfi"
+				}
+			]
+		},
+		{
+			"ID": "20221028151337-o68ypw8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221028151337-o68ypw8"
 			}
 		}
 	]

@@ -5,12 +5,13 @@
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
 		"title": "sql详解",
-		"updated": "20221030210749"
+		"updated": "20221029101105"
 	},
 	"Children": [
 		{
 			"ID": "20221015213822-gyd334t",
-			"Type": "NodeParagraph",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
 			"Properties": {
 				"id": "20221015213822-gyd334t",
 				"updated": "20221015213856"
@@ -6154,355 +6155,6 @@
 			}
 		},
 		{
-			"ID": "20221029111630-xh4v5vu",
-			"Type": "NodeSuperBlock",
-			"Properties": {
-				"id": "20221029111630-xh4v5vu",
-				"updated": "20221030210749"
-			},
-			"Children": [
-				{
-					"Type": "NodeSuperBlockOpenMarker"
-				},
-				{
-					"Type": "NodeSuperBlockLayoutMarker",
-					"Data": "row"
-				},
-				{
-					"ID": "20221029111622-tx8lc2a",
-					"Type": "NodeList",
-					"ListData": {},
-					"Properties": {
-						"id": "20221029111622-tx8lc2a",
-						"updated": "20221030210749"
-					},
-					"Children": [
-						{
-							"ID": "20221029111632-m660kku",
-							"Type": "NodeListItem",
-							"ListData": {
-								"BulletChar": 42,
-								"Marker": "Kg=="
-							},
-							"Properties": {
-								"id": "20221029111632-m660kku",
-								"updated": "20221030210749"
-							},
-							"Children": [
-								{
-									"ID": "20221029111632-7k7ohtz",
-									"Type": "NodeParagraph",
-									"Properties": {
-										"id": "20221029111632-7k7ohtz",
-										"updated": "20221029112046"
-									},
-									"Children": [
-										{
-											"Type": "NodeTextMark",
-											"TextMarkType": "strong",
-											"TextMarkTextContent": "子查询"
-										}
-									]
-								},
-								{
-									"ID": "20221029111642-4coumry",
-									"Type": "NodeList",
-									"ListData": {},
-									"Properties": {
-										"id": "20221029111642-4coumry",
-										"updated": "20221030210749"
-									},
-									"Children": [
-										{
-											"ID": "20221029111649-kr1pihk",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"fold": "0",
-												"id": "20221029111649-kr1pihk",
-												"updated": "20221029112040"
-											},
-											"Children": [
-												{
-													"ID": "20221029111649-2a4lq1d",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221029111649-2a4lq1d",
-														"updated": "20221029111901"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "子查询的分类"
-														}
-													]
-												},
-												{
-													"ID": "20221029111657-qobmye1",
-													"Type": "NodeIFrame",
-													"Data": "\u003ciframe src=\"https://www.jianguoyun.com/p/DU2HIDkQkr6GCxj11t8EIAA\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 1001px; height: 396px;\"\u003e\u003c/iframe\u003e",
-													"Properties": {
-														"id": "20221029111657-qobmye1",
-														"updated": "20221029111720"
-													}
-												}
-											]
-										},
-										{
-											"ID": "20221029112040-w7md3fj",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"id": "20221029112040-w7md3fj",
-												"updated": "20221029114617"
-											},
-											"Children": [
-												{
-													"ID": "20221029112040-p558kmr",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221029112040-p558kmr",
-														"updated": "20221029112220"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "单行子查询"
-														}
-													]
-												},
-												{
-													"ID": "20221029112258-93gt4f7",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221029112258-93gt4f7",
-														"updated": "20221029112332"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "单行操作符 \t\u003e\t\u003c \t\u003e=\t\u003c=\t=\t!="
-														}
-													]
-												},
-												{
-													"ID": "20221029113017-kfb6q11",
-													"Type": "NodeCodeBlock",
-													"IsFencedCodeBlock": true,
-													"Properties": {
-														"custom-render": "scroll",
-														"id": "20221029113017-kfb6q11",
-														"updated": "20221029114617"
-													},
-													"Children": [
-														{
-															"Type": "NodeCodeBlockFenceOpenMarker",
-															"Data": "```"
-														},
-														{
-															"Type": "NodeCodeBlockFenceInfoMarker",
-															"CodeBlockInfo": "c3Fs"
-														},
-														{
-															"Type": "NodeCodeBlockCode",
-															"Data": "# 查询工资大于149号员工的员工信息\nSELECT last_name , salary \nFROM employees \nWHERE salary \u003e (\n\t\tSELECT  salary \n\t\tFROM employees\n\t\tWHERE employee_id = 149 \n\t\t) ;\n\n# 查询job_id与141员工相同，salary比143号员工多的员工姓名，job_id和工资\nSELECT last_name , job_id,salary \nFROM employees \nWHERE salary \u003e (\n \t\tSELECT  salary \n\t\tFROM employees\n\t\tWHERE employee_id = 143\n)\nAND job_id = (\n\tSELECT  job_id \n\tFROM employees\n\tWHERE employee_id = 141\n);\n\n# 查询公司工资最少的员工的last_name ,job_id ,salary\nSELECT last_name ,job_id ,salary\nFROM employees\nWHERE salary = (\n\t\tSELECT MIN(salary)\n\t\tFROM employees\n\t\t);\n"
-														},
-														{
-															"Type": "NodeCodeBlockFenceCloseMarker",
-															"Data": "```"
-														}
-													]
-												}
-											]
-										},
-										{
-											"ID": "20221030210506-ndopad3",
-											"Type": "NodeListItem",
-											"ListData": {
-												"BulletChar": 42,
-												"Marker": "Kg=="
-											},
-											"Properties": {
-												"id": "20221030210506-ndopad3",
-												"updated": "20221030210749"
-											},
-											"Children": [
-												{
-													"ID": "20221030210506-cvzo7sd",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221030210506-cvzo7sd",
-														"updated": "20221030210512"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "多行子查询"
-														}
-													]
-												},
-												{
-													"ID": "20221030210513-omyjwr4",
-													"Type": "NodeParagraph",
-													"Properties": {
-														"id": "20221030210513-omyjwr4",
-														"updated": "20221030210557"
-													},
-													"Children": [
-														{
-															"Type": "NodeText",
-															"Data": "内查询返回多行数据的子查询叫做多行子查询"
-														}
-													]
-												},
-												{
-													"ID": "20221030210716-csethvf",
-													"Type": "NodeList",
-													"ListData": {},
-													"Properties": {
-														"id": "20221030210716-csethvf",
-														"updated": "20221030210749"
-													},
-													"Children": [
-														{
-															"ID": "20221030210724-dmlm39u",
-															"Type": "NodeListItem",
-															"ListData": {
-																"BulletChar": 42,
-																"Marker": "Kg=="
-															},
-															"Properties": {
-																"id": "20221030210724-dmlm39u",
-																"updated": "20221030210749"
-															},
-															"Children": [
-																{
-																	"ID": "20221030210724-gcjqtwz",
-																	"Type": "NodeParagraph",
-																	"Properties": {
-																		"id": "20221030210724-gcjqtwz",
-																		"updated": "20221030210733"
-																	},
-																	"Children": [
-																		{
-																			"Type": "NodeText",
-																			"Data": "多行子查询操作符"
-																		}
-																	]
-																},
-																{
-																	"ID": "20221030210738-aw69qf7",
-																	"Type": "NodeList",
-																	"ListData": {},
-																	"Properties": {
-																		"id": "20221030210738-aw69qf7",
-																		"updated": "20221030210749"
-																	},
-																	"Children": [
-																		{
-																			"ID": "20221030210733-v65zxys",
-																			"Type": "NodeListItem",
-																			"ListData": {
-																				"BulletChar": 42,
-																				"Marker": "Kg=="
-																			},
-																			"Properties": {
-																				"id": "20221030210733-v65zxys",
-																				"updated": "20221030210749"
-																			},
-																			"Children": [
-																				{
-																					"ID": "20221030210733-l2bfx0f",
-																					"Type": "NodeParagraph",
-																					"Properties": {
-																						"id": "20221030210733-l2bfx0f",
-																						"updated": "20221030210749"
-																					},
-																					"Children": [
-																						{
-																							"Type": "NodeText",
-																							"Data": "IN \t\t等于列表"
-																						}
-																					]
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														}
-													]
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ID": "20221029111622-u0kjrir",
-					"Type": "NodeParagraph",
-					"Properties": {
-						"id": "20221029111622-u0kjrir",
-						"updated": "20221029111630"
-					}
-				},
-				{
-					"Type": "NodeSuperBlockCloseMarker"
-				}
-			]
-		},
-		{
-			"ID": "20221029111622-78td54j",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221029111622-78td54j"
-			}
-		},
-		{
-			"ID": "20221029112207-34c7uj3",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221029112207-34c7uj3"
-			}
-		},
-		{
-			"ID": "20221029112207-2fp5px0",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221029112207-2fp5px0"
-			}
-		},
-		{
-			"ID": "20221029112207-bhd0m40",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221029112207-bhd0m40"
-			}
-		},
-		{
-			"ID": "20221029112207-14q3iua",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221029112207-14q3iua"
-			}
-		},
-		{
-			"ID": "20221029112207-pc4kh84",
-			"Type": "NodeParagraph",
-			"Properties": {
-				"id": "20221029112207-pc4kh84"
-			}
-		},
-		{
 			"ID": "20221015213842-vdu5wmg",
 			"Type": "NodeHeading",
 			"HeadingLevel": 1,
@@ -6536,6 +6188,54 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221028150005-kf8m4mz"
+			}
+		},
+		{
+			"ID": "20221028150006-fol5itm",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221028150006-fol5itm",
+				"updated": "20221028150024"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "c2hlbGw="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "echo “12323132”\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221028150131-eu6zkgo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221028150131-eu6zkgo"
+			}
+		},
+		{
+			"ID": "20221028151337-avwcmrr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221028151337-avwcmrr"
+			}
+		},
+		{
+			"ID": "20221028151337-o68ypw8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221028151337-o68ypw8"
 			}
 		}
 	]
