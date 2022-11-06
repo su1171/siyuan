@@ -1,14 +1,12 @@
 /* 表格块 */
 
-@import (css) url(/appearance/themes/Dark+/style/module/config.css);
-@import (css) url(/widgets/custom.css);
 
 .b3-typography,
 .protyle-wysiwyg {
     table {
         /* 表格 */
         background-color: var(--custom-block-table-background-color);
-        margin: 4px 2px 1px 1px;
+        // margin: 1px 1px 1px 0px;
 
         thead {
             /* 表头 */
@@ -40,7 +38,17 @@
                 // background-color: var(--custom-block-table-hover-background-color);
                 outline: 1px solid var(--b3-theme-on-surface);
             }
+
+            th,
+            td {
+                &:hover {
+                    /* 鼠标悬浮单元格 */
+                    // outline: 2px solid var(--b3-theme-secondary);
+                    // border: 1px solid var(--b3-theme-secondary);
+                    box-shadow: 0 0 0 1px var(--b3-theme-secondary) inset;
+                    // box-sizing: border-box;
+                }
+            }
         }
     }
-
 }

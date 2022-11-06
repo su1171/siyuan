@@ -1,11 +1,8 @@
 /* 表格块 */
-@import url(/appearance/themes/Dark+/style/module/config.css);
-@import url(/widgets/custom.css);
 .b3-typography table,
 .protyle-wysiwyg table {
   /* 表格 */
   background-color: var(--custom-block-table-background-color);
-  margin: 4px 2px 1px 1px;
 }
 .b3-typography table thead,
 .protyle-wysiwyg table thead {
@@ -31,4 +28,11 @@
 .protyle-wysiwyg table tr:hover {
   /* 鼠标悬浮行 */
   outline: 1px solid var(--b3-theme-on-surface);
+}
+.b3-typography table tr th:hover,
+.protyle-wysiwyg table tr th:hover,
+.b3-typography table tr td:hover,
+.protyle-wysiwyg table tr td:hover {
+  /* 鼠标悬浮单元格 */
+  box-shadow: 0 0 0 1px var(--b3-theme-secondary) inset;
 }

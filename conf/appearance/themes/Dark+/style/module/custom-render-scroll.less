@@ -1,7 +1,5 @@
 /* 块过长时设置块内纵向滚动条 */
 
-@import (css) url(/appearance/themes/Dark+/style/module/config.css);
-@import (css) url(/widgets/custom.css);
 
 .protyle-content {
     [data-node-id] {
@@ -9,6 +7,12 @@
         &[custom-render~=scroll],
         &[custom-render~="滚屏"],
         &[custom-render~="滚动"] {
+
+            // >.protyle-icons,
+            >.protyle-action {
+                /* 右上角悬浮控件 */
+                position: sticky;
+            }
 
             &.table table::-webkit-scrollbar-track,
             &:not(.table)::-webkit-scrollbar-track {

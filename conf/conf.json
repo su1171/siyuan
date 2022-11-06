@@ -8,16 +8,16 @@
       "midnight"
     ],
     "lightThemes": [
-      "blue-dog",
       "Dark+",
-      "daylight",
-      "notion-theme",
       "OneNote",
-      "Zhang-Light"
+      "Zhang-Light",
+      "blue-dog",
+      "daylight",
+      "notion-theme"
     ],
     "themeDark": "Dark+",
     "themeLight": "Dark+",
-    "themeVer": "1.3.1",
+    "themeVer": "1.3.7",
     "icons": [
       "ant",
       "material",
@@ -86,10 +86,18 @@
     "emoji": [],
     "virtualBlockRef": true,
     "virtualBlockRefExclude": "",
+    "virtualBlockRefInclude": "",
     "blockRefDynamicAnchorTextMaxLen": 96,
     "plantUMLServePath": "https://www.plantuml.com/plantuml/svg/~1",
     "fullWidth": true,
-    "katexMacros": "{}"
+    "katexMacros": "{}",
+    "readOnly": false,
+    "embedBlockBreadcrumb": true,
+    "listLogicalOutdent": false,
+    "floatWindowMode": 0,
+    "dynamicLoadBlocks": 48,
+    "justify": false,
+    "rtl": false
   },
   "export": {
     "paragraphBeginningSpace": true,
@@ -195,7 +203,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "270px",
+              "size": "248px",
               "type": "left"
             },
             {
@@ -205,17 +213,14 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220924182927-m55ft1t",
+                        "blockId": "20220924141737-z6ah3oq",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
-                          "endId": "20221003142912-uszc06a",
-                          "focusEnd": 4,
-                          "focusId": "20221001153112-6y71ddo",
-                          "focusStart": 4,
-                          "scrollTop": 3008,
-                          "startId": "20220925173746-xjjlb8q"
+                          "endId": "20221004142308-23yg4ez",
+                          "scrollTop": 2154,
+                          "startId": "20221011153643-4fuy2wd"
                         }
                       },
                       "docIcon": "",
@@ -226,16 +231,13 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221005194849-0rz6h3d",
+                        "blockId": "20220929211029-j2rk9en",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220929211029-j2rk9en",
                         "scrollAttr": {
                           "endId": "20221013152132-gjedwp2",
-                          "focusEnd": 0,
-                          "focusId": "20220930153941-ww8lcv7",
-                          "focusStart": 0,
-                          "scrollTop": 1677,
+                          "scrollTop": 1135,
                           "startId": "20220930153941-ww8lcv7"
                         }
                       },
@@ -247,48 +249,6 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221015214231-0yi6lsq",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015214231-0yi6lsq",
-                        "scrollAttr": {
-                          "endId": "20221028161802-817udny",
-                          "focusEnd": 0,
-                          "focusId": "20221018092605-eduqpin",
-                          "focusStart": 0,
-                          "scrollTop": 5701,
-                          "startId": "20221018092605-eduqpin"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql资料库"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015213822-vs8hvq7",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015213822-vs8hvq7",
-                        "scrollAttr": {
-                          "endId": "20221028150005-kf8m4mz",
-                          "focusEnd": 0,
-                          "focusId": "20221028144503-2g3fvy6",
-                          "focusStart": 0,
-                          "scrollTop": 11063,
-                          "startId": "20221015213822-gyd334t"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql详解"
-                    },
-                    {
-                      "children": {
-                        "action": "",
                         "blockId": "20220924145441-ruxsjlb",
                         "instance": "Editor",
                         "mode": "wysiwyg",
@@ -296,10 +256,10 @@
                         "scrollAttr": {
                           "endId": "20221003152214-bqn1rni",
                           "focusEnd": 0,
-                          "focusId": "20221030181108-8ef1flb",
+                          "focusId": "20221015143250-z5famdx",
                           "focusStart": 0,
-                          "scrollTop": 2180,
-                          "startId": "20221021212410-kfp1n1y"
+                          "scrollTop": 3614,
+                          "startId": "20221015143250-z5famdx"
                         }
                       },
                       "docIcon": "",
@@ -311,23 +271,44 @@
                       "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20221004181701-2kx6on8",
+                        "blockId": "20221106190343-vgclys7",
                         "instance": "Editor",
                         "mode": "wysiwyg",
-                        "rootId": "20221004170149-cvhegdp",
+                        "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221004185142-moil301",
-                          "focusEnd": 27,
-                          "focusId": "20221020160010-xuidgv9",
-                          "focusStart": 27,
-                          "scrollTop": 1951.6448974609375,
-                          "startId": "20221005145658-4y42mhr"
+                          "endId": "20221106160013-2c9kv57",
+                          "focusEnd": 10,
+                          "focusId": "20221106181748-eychhc3",
+                          "focusStart": 10,
+                          "scrollTop": 3509.805908203125,
+                          "startId": "20221027112639-kj94r96"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "nginx"
+                      "title": "sql详解"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221022101606-mlvnqiz",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221015214231-0yi6lsq",
+                        "scrollAttr": {
+                          "endId": "20221028161802-817udny",
+                          "focusEnd": 0,
+                          "focusId": "20221022101606-mlvnqiz",
+                          "focusStart": 0,
+                          "scrollTop": 4731,
+                          "startId": "20221018092605-eduqpin"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "sql资料库"
                     }
                   ],
                   "height": "",
@@ -394,17 +375,17 @@
         {
           "hotkeyLangId": "fileTree",
           "icon": "iconFiles",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
-            "width": 275
+            "width": 248
           },
           "type": "file"
         },
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": true,
+          "show": false,
           "size": {
             "height": 0,
             "width": 270
@@ -502,7 +483,7 @@
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.3.0",
+    "kernelVersion": "2.4.9",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -513,12 +494,14 @@
     "confDir": "F:\\0901\\MarkDown教程\\siyuan\\conf",
     "dataDir": "F:\\0901\\MarkDown教程\\siyuan\\data",
     "networkServe": false,
+    "fixedPort": false,
     "networkProxy": {
       "scheme": "",
       "host": "",
       "port": ""
     },
-    "uploadErrLog": false,
+    "uploadErrLog": true,
+    "disableGoogleAnalytics": false,
     "downloadInstallPkg": false
   },
   "keymap": {
@@ -962,7 +945,10 @@
     "enabled": false,
     "mode": 1,
     "synced": 0,
-    "stat": ""
+    "stat": "",
+    "generateConflictDoc": false,
+    "provider": 0,
+    "s3": null
   },
   "search": {
     "document": true,
@@ -992,7 +978,7 @@
     "virtualRefDoc": true
   },
   "stat": {
-    "docCount": 17
+    "docCount": 15
   },
   "api": {
     "token": "uin95woksk9wpovr"

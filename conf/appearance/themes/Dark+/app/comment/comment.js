@@ -10,6 +10,7 @@ import {
 } from './utils.js'
 import {
   querySQL,
+  searchEmbedBlock,
   insertBlock,
   appendBlock,
   deleteBlock,
@@ -19,7 +20,9 @@ import {
 const VERSION_LE_2_1_14 = compareVersion(
   window.siyuan.config.system.kernelVersion,
   '2.1.14',
-) <= 0; // 当前版本号 <= v2.1.14
+) <= 0 // 当前版本号 <= v2.1.14
+
+const lute = window.Lute.New()
 
 class Comment {
 
@@ -73,26 +76,40 @@ class Comment {
         let quoteId = node.getAttribute('style');
         if (quoteId && quoteId.indexOf('quote') > -1) {
           quoteId = quoteId.replace("quote-", "")  //移除 style 属性中用于表示的“quote”,获得原始 id
-          let sql = `select * from blocks as b left join attributes as a on b.id = a.block_id where a.name = 'custom-quote-id' and a.value = '${quoteId}' and b.type = 'p' order by b.created`,
-            res = await querySQL(sql),
+          let sql = `select b.* from blocks as b left join attributes as a on b.id = a.block_id where a.name = 'custom-quote-id' and a.value = '${quoteId}' and b.type = 'p' order by b.created`,
+            // res = await querySQL(sql),
+            res = await searchEmbedBlock(sql, quoteId),
             quote = node.innerText,
-            comments = res.data
+            // comments = res.data
+            comments = res?.data?.blocks ?? []
           html += `<div class="quote">${quote}<span class="delete-quote" data-quote-id="${quoteId}">移除引文</span></div>`
 
-          if (res.data.length > 0) {
-            for (let key in comments) {
+          if (comments.length > 0) {
+            for (let index in comments) {
+              // html += `
+              //   <div class="list-item">
+              //     <div class="header">
+              //       <div class="date">${formatSYDate(comments[index].block['created'])}</div>
+              //       <div class="actions">
+              //         <div class="delete-comment" data-quote-id="${quoteId}" data-comment-id="${comments[index].block['block_id']}">移除评论</div>
+              //         <div class="delete-comment" data-quote-id="${quoteId}" data-comment-id="${comments[index].block['block_id']}"><a href="siyuan://blocks/${comments[index].block['block_id']}">跳转到评论</a></div>
+              //       </div>
+              //     </div>
+              //     <div class="comment .protyle-wysiwyg">${lute.Md2HTML(comments[index].block.markdown)}</div>
+              //   </div>
+              // `
               html += `
-              <div class="list-item">
-                <div class="header">
-                  <div class="date">${formatSYDate(comments[key]['created'])}</div>
-                  <div class="actions">
-                    <div class="delete-comment" data-quote-id="${quoteId}" data-comment-id="${comments[key]['block_id']}">移除评论</div>
-                    <div class="delete-comment" data-quote-id="${quoteId}" data-comment-id="${comments[key]['block_id']}"><a href="siyuan://blocks/${comments[key]['block_id']}">跳转到评论</a></div>
+                <div class="list-item">
+                  <div class="header">
+                    <div class="date">${formatSYDate(comments[index].block.id)}</div>
+                    <div class="actions">
+                      <div class="delete-comment" data-quote-id="${quoteId}" data-comment-id="${comments[index].block.id}">移除评论</div>
+                      <div class="delete-comment" data-quote-id="${quoteId}" data-comment-id="${comments[index].block.id}"><a href="siyuan://blocks/${comments[index].block.id}">跳转到评论</a></div>
+                    </div>
                   </div>
+                  <div class="comment protyle-wysiwyg">${comments[index].block.content}</div>
                 </div>
-                <div class="comment">${comments[key]['content']}</div>
-              </div>
-            `
+              `
             }
           } else {
             html += `<div class="list-item"><div class="header"><div class="date">暂无评论</div></div></div>`
@@ -201,7 +218,7 @@ class Comment {
     // 评论内容块
     // let commentHtml = `<div data-node-id="${createBlockId()}" custom-quote-id="${quoteId}" data-type="NodeParagraph" class="p" updated="${createBlockId(false)}" data-eof="true"><div contenteditable="true" spellcheck="false">${this.input.innerHTML}</div><div class="protyle-attr"></div></div>`
     let commentMd = `
-${this.input.innerHTML}
+${this.input.innerText}
 {: custom-quote-id="${quoteId}" custom-quote-type="${config.attrs.type.comment}" custom-quote-time="${dateFormat("YYYY-mm-dd HH:MM:SS", new Date())}"}
 `
 

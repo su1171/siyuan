@@ -1,0 +1,7 @@
+{
+  "THEME-custom-tooldock": "{\"position\":{\"left\":\"\",\"right\":\"20.7962vw\",\"top\":\"\",\"bottom\":\"0vh\",\"width\":\"calc(var(--custom-dock-width) * 25)\",\"height\":\"\"}}",
+  "local-bazaar": "{\"theme\":\"0\",\"template\":\"0\",\"icon\":\"0\",\"widget\":\"0\"}",
+  "local-codelang": "sql",
+  "local-docinfo": "{\"id\":\"20221102204117-yzqu328\",\"action\":[\"cb-get-hl\",\"cb-get-context\"]}",
+  "local-searchedata": "{\"idPath\":\"\",\"hPath\":\"\",\"types\":{\"document\":true,\"heading\":true,\"list\":true,\"listItem\":true,\"codeBlock\":true,\"htmlBlock\":true,\"mathBlock\":true,\"table\":true,\"blockquote\":true,\"superBlock\":true,\"paragraph\":true},\"list\":[\"公网源\",\"keepalive\",\"后台\"],\"k\":\"公网源\"}"
+}

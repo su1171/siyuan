@@ -1,6 +1,4 @@
 /* 表格标题自动编号 */
-@import url(/appearance/themes/Dark+/style/module/config.css);
-@import url(/widgets/custom.css);
 .protyle-wysiwyg[custom-auto-num-t] {
   counter-reset: t-counter;
 }

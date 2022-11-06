@@ -20,15 +20,20 @@ import {
 import {
     getEditors,
     setBlockDOMAttrs,
+    countElementIndex,
+    getTooltipDirection,
+    setTooltipDirection,
 } from './dom.js';
 import { Iterator } from './misc.js';
+import { drag } from './drag.js';
 import { compareVersion } from './string.js';
 import {
+    getBlockBreadcrumb,
     getBlockByID,
     getBlockAttrs,
     setBlockAttrs,
     pushMsg,
-    pushErrMsg
+    pushErrMsg,
 } from './api.js';
 
 import {
@@ -69,7 +74,7 @@ function createToolbarItem(toolbarConfig, className) {
     ) { // 按钮是否有多个状态且有默认状态
         const status = toolbarConfig.status[toolbarConfig.status.default];
         icon = status.icon;
-        label = status.label;
+        label = status.label[language] || toolbarConfig.label.other;
         label += (status.hotkey && status.hotkey().enable !== false) ? ` [${printHotKey(status.hotkey())}]` : '';
     }
     else { // 按钮没有多个状态
@@ -80,7 +85,9 @@ function createToolbarItem(toolbarConfig, className) {
 
     item.id = toolbarConfig.id;
     item.className = className || "toolbar__item b3-tooltips b3-tooltips__sw";
-    item.setAttribute('aria-label', label);
+    // item.setAttribute('aria-label', label);
+    item.ariaLabel = label;
+    // item.title = label;
     item.innerHTML = `<svg><use xlink:href="${icon}"></use></svg>`;
     return item;
 }
@@ -93,7 +100,7 @@ function itemStateLoad(id, states, node) {
         // 存在自定义配置
         const conf = states[id];
         // console.log(conf, conf.state, conf.state == null);
-        const state = conf.state == null ? conf.default : conf.state;
+        const state = conf.state ?? conf.default ?? false;
         // console.log(state);
         if (state) setTimeout(() => node.click(), 0);
     }
@@ -102,61 +109,251 @@ function itemStateLoad(id, states, node) {
 /* 工具栏添加 */
 function toolbarItemListPush(item) {
     toolbarItemList.push(item);
-    let toolbar = document.getElementById('toolbar');
-    let windowControls = document.getElementById('windowControls');
-    let custom_toolbar = document.getElementById(config.theme.toolbar.id);
+    const toolbar = document.getElementById('toolbar');
+    const windowControls = document.getElementById('windowControls');
+    var custom_toolbar = document.getElementById(config.theme.toolbar.id);
 
     if (window.theme.clientMode !== 'mobile' && toolbar) {
         if (!custom_toolbar) {
-            /* 自定义菜单项容器 */
+            /* 自定义工具栏按钮的容器 */
             custom_toolbar = document.createElement('div');
             custom_toolbar.id = config.theme.toolbar.id;
-            custom_toolbar.className = 'fn__flex';
             custom_toolbar.style.display = 'none';
 
-            /* 更多按钮 */
-            let more = createToolbarItem(config.theme.toolbar.more);
-            more.addEventListener('click', () => {
-                let status, language = window.theme.languageMode;
-                if (custom_toolbar.style.display === 'none') {
-                    // 显示自定义工具栏
-                    status = config.theme.toolbar.more.status.unfold
-                    custom_toolbar.style.display = null;
-                    custom.theme.toolbar[config.theme.toolbar.more.id].state = true;
-                }
-                else {
-                    // 隐藏自定义工具栏
-                    status = config.theme.toolbar.more.status.fold
-                    custom_toolbar.style.display = 'none';
-                    custom.theme.toolbar[config.theme.toolbar.more.id].state = false;
-                }
-                more.setAttribute('aria-label', status.label[language] || status.label.other);
-                more.firstChild.firstChild.setAttribute('xlink:href', status.icon);
-                setTimeout(async () => saveCustomFile(custom), 0);
-            });
-
             /* 分割线 */
-            let divider_before = document.createElement('div');
-            let divider_after = document.createElement('div');
+            const divider_before = document.createElement('div');
+            const divider_after = document.createElement('div');
             divider_before.className = 'protyle-toolbar__divider';
             divider_after.className = 'protyle-toolbar__divider';
 
-            itemStateLoad(config.theme.toolbar.more.id, custom.theme.toolbar, more);
+            /* 将自定义工具栏添加到自定义悬浮菜单栏中 */
+            const custom_tooldock = document.createElement('div');
+            custom_tooldock.id = config.theme.tooldock.id;
 
+            /* 重置工具栏按钮 */
+            const reset = createToolbarItem(config.theme.tooldock.reset);
+            reset.style.display = 'none'; // 默认隐藏
+
+            /* 更多按钮 */
+            const more = createToolbarItem(config.theme.toolbar.more);
+            more.addEventListener('dblclick', e => {
+                /* 取消其他默认事件处理 */
+                e.preventDefault();
+                e.stopPropagation();
+
+                // if (drag.status.flags.dragging) return; // 拖拽时忽略点击事件(无效)
+                let status, language = window.theme.languageMode;
+                const rect = more.getBoundingClientRect();
+                const x = Math.round(rect.x);
+                const y = Math.round(rect.y);
+                const width = Math.round(rect.width);
+                const height = Math.round(rect.height);
+
+                if (custom_toolbar.style.display === 'none') {
+                    /* 重新更改定位 */
+                    custom_tooldock.style.left = `${100 * (x - more.offsetLeft) / document.documentElement.offsetWidth}vw`;
+                    custom_tooldock.style.top = `${100 * (y - more.offsetTop) / document.documentElement.offsetHeight}vh`;;
+                    custom_tooldock.style.right = null;
+                    custom_tooldock.style.bottom = null;
+
+                    // 显示自定义工具栏
+                    status = config.theme.toolbar.more.status.unfold
+                    custom_toolbar.style.display = null;
+                    custom.theme.toolbar[config.theme.toolbar.more.id].fold = false;
+                }
+                else {
+                    /* 重新更改定位 */
+                    const x_center = (x + width / 2) / document.documentElement.offsetWidth;
+                    const y_center = (y + height / 2) / document.documentElement.offsetHeight;
+                    if (x_center < 0.5) {
+                        custom_tooldock.style.right = null;
+                        custom_tooldock.style.left = `${100 * (x - more.offsetLeft) / document.documentElement.offsetWidth}vw`;
+                    }
+                    else {
+                        custom_tooldock.style.left = null;
+                        custom_tooldock.style.right = `${100 - (100 * (x + width + more.offsetLeft) / document.documentElement.offsetWidth)}vw`;
+                    }
+                    if (y_center < 0.5) {
+                        custom_tooldock.style.bottom = null;
+                        custom_tooldock.style.top = `${100 * (y - more.offsetTop) / document.documentElement.offsetHeight}vh`;
+                    }
+                    else {
+                        custom_tooldock.style.top = null;
+                        custom_tooldock.style.bottom = `${100 - (100 * (y + height + more.offsetTop) / document.documentElement.offsetHeight)}vh`;;
+                    }
+
+                    custom_tooldock.style.width = `calc(var(--custom-dock-width) * 1)`;
+                    custom_tooldock.style.height = null;
+
+                    // 隐藏自定义工具栏
+                    custom_toolbar.style.display = 'none';
+                    status = config.theme.toolbar.more.status.fold
+                    custom.theme.toolbar[config.theme.toolbar.more.id].fold = true;
+                }
+                // more.setAttribute('aria-label', status.label[language] || status.label.other);
+                more.ariaLabel = status.label[language] || status.label.other;
+                // more.title = status.label[language] || status.label.other;
+                more.firstChild.firstChild.setAttribute('xlink:href', status.icon);
+                setTimeout(async () => saveCustomFile(custom), 0);
+            }, true);
+
+            /* 悬浮事件处理 */
+            function float(..._) {
+                custom_tooldock.style.top = `${custom_tooldock.offsetTop}px`;
+                custom_tooldock.style.left = `${custom_tooldock.offsetLeft}px`;
+                custom_tooldock.classList.add(...config.theme.tooldock.classes);
+                reset.style.display = null; // 显示重置工具栏按钮
+                custom.theme.toolbar[config.theme.toolbar.more.id].state = true;
+                setTimeout(async () => saveCustomFile(custom), 0);
+            };
+
+            /* 悬浮工具栏 */
+            custom_tooldock.addEventListener(
+                'mousedown',
+                float,
+                {
+                    capture: true,
+                    once: true,
+                },
+            );
+
+            /* 重置工具栏 */
+            reset.addEventListener('click', () => {
+                /* 若工具栏是展开的, 则折叠工具栏 */
+                if (custom_toolbar.style.display !== 'none') {
+                    more.dispatchEvent(new Event('dblclick'));
+                }
+                reset.style.display = 'none'; // 隐藏重置按钮
+
+                /* 删除样式 */
+                custom_tooldock.style.left = null;
+                custom_tooldock.style.right = null;
+                custom_tooldock.style.top = null;
+                custom_tooldock.style.bottom = null;
+                custom_tooldock.style.width = null;
+                custom_tooldock.style.height = null;
+
+                /* 移除工具栏悬浮类 */
+                custom_tooldock.classList.remove(...config.theme.tooldock.classes);
+
+                /* 点击后再次悬浮功能 */
+                custom_tooldock.addEventListener(
+                    'mousedown',
+                    float,
+                    {
+                        capture: true,
+                        once: true,
+                    },
+                );
+
+                /* 保存状态 */
+                custom.theme.toolbar[config.theme.toolbar.more.id].state = false;
+                setTimeout(async () => saveCustomFile(custom), 0);
+            });
+
+            /**注册鼠标拖动事件
+             * 由于该事件注册在当前节点的子节点处
+             * 且同为 mousedown 事件
+             * 且在事件捕获时处理
+             * 因此当前处理完成后即可调用
+             */
+            drag.register(
+                more,
+                custom_tooldock,
+                document.documentElement,
+                // document.getElementById('layouts'),
+                drag.handler.move,
+                (e, that, ..._) => { // 使用预处理方法调整宽度
+                    let multiple = 1;
+                    if (custom_toolbar.style.display !== 'none') { // 已展开
+                        if (custom_tooldock.offsetLeft <= 0) {
+                            /* 遇到左边界时压缩宽度 */
+                            multiple = 1;
+                        }
+                        else {
+                            /* 遇到右边界时压缩宽度 */
+                            const item_count = custom_tooldock.querySelectorAll('.toolbar__item').length;
+                            const x = e.clientX - that.status.drag.position.x;
+                            multiple = Math.min(
+                                item_count,
+                                Math.max(
+                                    1,
+                                    Math.floor(
+                                        (document.body.offsetWidth - x - 1)
+                                        / (more.offsetWidth + more.offsetLeft * 2)
+                                    ),
+                                ),
+                            );
+                        }
+                    }
+                    else { // 已折叠
+                        multiple = 1;
+                    }
+                    custom_tooldock.style.width = `calc(var(--custom-dock-width) * ${multiple})`;
+                },
+                undefined,
+                (..._) => { // 拖动完成回调方法
+                    /* 调整提示标签 */
+                    setTooltipDirection(
+                        getTooltipDirection,
+                        ...custom_tooldock.querySelectorAll('.toolbar__item'),
+                    );
+
+                    /* 保存当前位置 */
+                    localStorage.setItem(config.theme.tooldock.key, JSON.stringify({
+                        position: {
+                            left: custom_tooldock.style.left,
+                            right: custom_tooldock.style.right,
+                            top: custom_tooldock.style.top,
+                            bottom: custom_tooldock.style.bottom,
+                            width: custom_tooldock.style.width,
+                            height: custom_tooldock.style.height,
+                        },
+                    }));
+
+                },
+            );
+
+            /* 添加自定义工具按钮至浮动工具栏 */
+            custom_tooldock.appendChild(more);
+            custom_tooldock.appendChild(custom_toolbar);
+
+            /* 添加到界面 */
             if (windowControls) {
                 toolbar.insertBefore(divider_before, windowControls);
-                toolbar.insertBefore(more, windowControls);
-                toolbar.insertBefore(custom_toolbar, windowControls);
+                toolbar.insertBefore(reset, windowControls);
+                toolbar.insertBefore(custom_tooldock, windowControls);
                 if (windowControls.childElementCount > 0) // 存在窗口控制按钮, 插入分割线
                     toolbar.insertBefore(divider_after, windowControls);
             }
             else {
                 toolbar.appendChild(divider_before);
-                toolbar.appendChild(more);
-                toolbar.appendChild(custom_toolbar);
+                toolbar.appendChild(reset);
+                toolbar.appendChild(custom_tooldock);
+            }
+
+            /* 恢复状态 */
+            const conf = custom.theme.toolbar[config.theme.toolbar.more.id];
+            const state = conf?.state
+                ?? conf?.default
+                ?? false;
+            if (state) {
+                const position = JSON.parse(localStorage.getItem(config.theme.tooldock.key))?.position;
+                if (position) {
+                    float(); // 悬浮
+                    if (!conf.fold) more.dispatchEvent(new Event('dblclick')); // 展开
+                    /* 设置位置 */
+                    custom_tooldock.style.left = position.left;
+                    custom_tooldock.style.right = position.right;
+                    custom_tooldock.style.top = position.top;
+                    custom_tooldock.style.bottom = position.bottom;
+                    custom_tooldock.style.width = position.width;
+                    custom_tooldock.style.height = position.height;
+                }
             }
         }
 
+        /* 工具栏按钮排序 */
         toolbarItemList = toolbarItemList.sort((a, b) => a.index - b.index);
         for (let item of toolbarItemList) {
             if (item.display) {
@@ -166,6 +363,7 @@ function toolbarItemListPush(item) {
         }
     }
 
+    /* 恢复保存的状态 */
     itemStateLoad(item.id, custom.theme.toolbar, item.node);
 }
 
@@ -284,7 +482,7 @@ function toolbarItemInit(toolbarConfig, handler, svgClassIndex = 0) {
 
     // 在工具栏添加按钮
     let node = toolbarItemInsert(toolbarConfig);
-    let listener = (e) => e.addEventListener('click', (_) => fn());
+    let listener = e => e.addEventListener('click', (_) => fn());
 
     // 是否禁用该按钮
     toolbarItemChangeStatu(
@@ -675,6 +873,69 @@ const TASK_HANDLER = {
         }
         else pushErrMsg(params.message.error);
     },
+    /* 显示嵌入块查询结果的路径 */
+    // REF [思源笔记渲染 SQL 文档路径代码 - 链滴](https://ld246.com/article/1665129901544)
+    'show-hpath': async (e, id, params) => {
+        // TODO
+        /* 定位到嵌入块的 DOM */
+        document.querySelectorAll(`.render-node[data-node-id="${id}"]`).forEach(block => {
+            const callback = () => {
+                // console.log('callback');
+                /* 遍历嵌入块的查询结果的 DOM */
+                let counter = 0;
+                const results = block.parentElement.querySelectorAll(`.render-node[data-node-id="${block.dataset.nodeId}"]>.protyle-wysiwyg__embed`);
+                // console.log(block, results);
+                const length = results.length.toString().length;
+                results.forEach(result => {
+                    const index = ++counter;
+                    // console.log(index);
+                    setTimeout(async () => {
+                        /* 使用 API /api/filetree/getFullHPathByID 查询完整路径 */
+                        const breadcurmb = await getBlockBreadcrumb(result.dataset.id);
+                        if (breadcurmb) {
+                            /* 将路径插入每个查询结果中 */
+                            let nodes = []; // 文档路径 HTML 节点列表
+                            const paths = breadcurmb[0].name.split('/'); // 文档路径节点列表
+                            for (let i = 0; i < paths.length; ++i)
+                                nodes.push(`<span data-type="kbd">${paths[i]}</span>`);
+                            let crumb = document.createElement('div');
+                            crumb.classList.add('p');
+                            crumb.style.outline = '2px solid var(--b3-theme-on-surface-light)'
+                            crumb.style.borderRadius = '2px';
+                            crumb.setAttribute('data-node-id', '');
+                            crumb.setAttribute('data-type', 'NodeParagraph');
+                            // [关于格式化：如何在javascript中将整数格式化为特定长度？ | 码农家园](https://www.codenong.com/1127905/)
+                            crumb.innerHTML = `<div contenteditable="false" spellcheck="false"><span data-type="code">#${index.toString().padStart(length, '0')}</span>: ${nodes.join('&gt;')}</div>`;
+                            result.parentElement.insertBefore(crumb, result);
+                        }
+                    }, 0);
+                });
+            };
+            callback();
+            const observer = new MutationObserver((mutationList, observer) => {
+                for (let i = mutationList.length - 1; i >= 0; --i) {
+                    const mutation = mutationList[i];
+                    // console.log(mutation);
+                    if (mutation.type === 'childList'
+                        && mutation.addedNodes.length >= 2
+                        && mutation.nextSibling?.classList.contains('protyle-attr')
+                    ) {
+                        // setTimeout(callback(), 0);
+                        callback();
+                        break;
+                    }
+                }
+            });
+            observer.observe(block, {
+                // attributeFilter: ['data-render'], // 声明哪些属性名会被监听的数组
+                // attributeOldValue: true, // 记录上一次被监听的节点的属性变化
+                childList: true,
+                attributes: false,
+                characterData: false,
+            });
+            observer.takeRecords();
+        });
+    },
 };
 
 /**
@@ -698,14 +959,14 @@ function createMenuItemNode(language, config, id, type, subtype, className = 'b3
                 eval(config.value),
             ));
             if (config.click.enable) {
-                if (config.click.callback) node.addEventListener('click', async (e) => await config.click.callback(e, id));
+                if (config.click.callback) node.addEventListener('click', async e => await config.click.callback(e, id));
                 else {
                     let handlers = [];
                     config.click.tasks.forEach((task) => {
-                        if (TASK_HANDLER[task.type]) handlers.push(async (e) => TASK_HANDLER[task.type](e, id, task.params));
+                        if (TASK_HANDLER[task.type]) handlers.push(async e => TASK_HANDLER[task.type](e, id, task.params));
                     });
-                    node.addEventListener('click', (e) => {
-                        handlers.forEach((handler) => handler(e));
+                    node.addEventListener('click', e => {
+                        handlers.forEach((handler) => handlere);
                     });
                 }
             };
@@ -753,13 +1014,13 @@ function createMenuItemNode(language, config, id, type, subtype, className = 'b3
                 }
             }
             if (config.click.enable) {
-                if (config.click.callback) node.addEventListener('click', async (e) => await config.click.callback(e, id));
+                if (config.click.callback) node.addEventListener('click', async e => await config.click.callback(e, id));
                 else {
                     let handlers = [];
                     config.click.tasks.forEach((task) => {
-                        if (TASK_HANDLER[task.type]) handlers.push(async (e) => TASK_HANDLER[task.type](e, id, task.params));
+                        if (TASK_HANDLER[task.type]) handlers.push(async e => TASK_HANDLER[task.type](e, id, task.params));
                     });
-                    node.addEventListener('click', (e) => {
+                    node.addEventListener('click', e => {
                         handlers.forEach((handler) => handler(e));
                     });
                 }

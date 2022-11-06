@@ -1,6 +1,4 @@
 /* 图片标题自动编号 */
-@import url(/appearance/themes/Dark+/style/module/config.css);
-@import url(/widgets/custom.css);
 .protyle-wysiwyg[custom-auto-num-f] {
   counter-reset: f-counter;
 }

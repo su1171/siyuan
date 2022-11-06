@@ -3,8 +3,6 @@
  * REF [royc01/notion-theme](https://github.com/royc01/notion-theme/blob/c5e535a8f40a97c1d42384a7715ced88261dd59f/theme.css#L1444-L1577)
  */
 
-@import (css) url(/appearance/themes/Dark+/style/module/config.css);
-@import (css) url(/widgets/custom.css);
 
 // 高度
 @height: calc(50% - var(--custom-list-guides-line-width) / 2);
@@ -16,7 +14,7 @@
     // height: calc(50% - var(--custom-list-guides-line-width) / 2);
     height: @height;
     border-left: var(--custom-list-guides-line-width) solid var(--b3-theme-on-surface);
-    width: 2em;
+    width: calc(2em - var(--custom-list-guides-line-width));
 }
 
 .protyle-content {
@@ -26,6 +24,22 @@
     [custom-type~="脑图"],
     [custom-type~=mind-map],
     [custom-type~=map] {
+        &[data-node-id].list {
+
+            &,
+            &>[data-node-id].li {
+                >.protyle-attr {
+                    /* 列表块属性标签 */
+                    top: 0;
+
+                    >.protyle-attr--refcount {
+                        /* 引用数按钮 */
+                        right: 2px;
+                    }
+                }
+            }
+        }
+
         [data-node-id] {
             &.li {
                 /* 列表项文字设置居中 */
@@ -66,6 +80,7 @@
                     /* 上导航线 */
                     .guides();
                     top: @height;
+                    left: 0;
                     border-top: var(--custom-list-guides-line-width) solid var(--b3-theme-on-surface);
                 }
 
@@ -77,15 +92,10 @@
                 }
 
                 &[data-subtype="u"] {
-                    &::after {
-                        /* 修复无序列表前导线错位问题 */
-                        bottom: calc(50% - var(--custom-list-guides-line-width) / 3);
-                    }
-
                     >div.protyle-action {
                         /* 无序列表标志 */
                         top: calc(50%);
-                        left: calc(2em - 16px);
+                        left: calc(2em - 20px);
                     }
                 }
 
@@ -127,12 +137,32 @@
                         align-items: center;
                         display: flex;
 
-                        >div[contenteditable][spellcheck] {
-                            /* 文字框 */
-                            white-space: pre; // 保留换行
-                            outline: 1px solid var(--b3-theme-on-surface);
-                            border-radius: var(--custom-border-radius);
-                            padding: 0 0.5em;
+                        /* 块内边距 */
+                        padding: 4px;
+
+                        /* 叶子节点的轮廓 */
+                        outline: 1px solid var(--b3-theme-on-surface);
+                        border-radius: var(--custom-border-radius);
+
+                        // 文字框
+                        &:is(.p, .h1, .h2, .h3, .h4, .h5, .h6) {
+                            /* 段落块/标题块内边距为 0 */
+                            padding: 0;
+
+                            >[contenteditable][spellcheck] {
+                                white-space: pre; // 保留换行
+                                padding: 0 0.5em;
+                            }
+                        }
+
+                        // 公式块
+                        &:is(.render-node[data-type="NodeMathBlock"]) {
+                            min-height: 0 !important;
+
+                            .katex-display {
+                                margin: 0;
+                                padding: 0.25em;
+                            }
                         }
                     }
 
@@ -158,7 +188,7 @@
                     position: absolute;
                     left: -1em;
                     top: @height;
-                    border-top: var(--custom-list-guides-line-width) solid var(--b3-theme-on-surface);
+                    border-bottom: var(--custom-list-guides-line-width) solid var(--b3-theme-on-surface);
                     width: 2em;
                     height: 0;
                 }

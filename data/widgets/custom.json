@@ -3,7 +3,8 @@
         "toolbar": {
             "custom-toolbar-more": {
                 "default": true,
-                "state": true
+                "state": true,
+                "fold": false
             },
             "toolbar-theme-location-record": {
                 "default": false,
@@ -23,7 +24,7 @@
             },
             "toolbar-theme-style-guides": {
                 "default": false,
-                "state": false
+                "state": true
             },
             "toolbar-theme-style-mark": {
                 "default": false,
@@ -39,7 +40,7 @@
             },
             "toolbar-theme-dock-fold": {
                 "default": false,
-                "state": true
+                "state": false
             },
             "toolbar-theme-readonly": {
                 "default": false,
@@ -49,7 +50,7 @@
         "location": {},
         "dock": {
             "file": {
-                "fold": true
+                "fold": false
             },
             "outline": {
                 "fold": false

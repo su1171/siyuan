@@ -83,12 +83,14 @@ Recommend the video author's beautiful theme.
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/tswwe"><img src="https://avatars.githubusercontent.com/u/36465489?v=4?s=100" width="100px;" alt=""/><br /><sub><b>thxnder</b></sub></a><br /><a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/commits?author=tswwe" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/langzhou"><img src="https://avatars.githubusercontent.com/u/6987229?v=4?s=100" width="100px;" alt=""/><br /><sub><b>langzhou</b></sub></a><br /><a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/commits?author=langzhou" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/royc01"><img src="https://avatars.githubusercontent.com/u/38906705?v=4?s=100" width="100px;" alt=""/><br /><sub><b>royc01</b></sub></a><br /><a href="#ideas-royc01" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/commits?author=royc01" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/UserZYF"><img src="https://avatars.githubusercontent.com/u/38289979?v=4?s=100" width="100px;" alt=""/><br /><sub><b>UserZYF</b></sub></a><br /><a href="#video-UserZYF" title="Videos">📹</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/tswwe"><img src="https://avatars.githubusercontent.com/u/36465489?v=4?s=100" width="100px;" alt="thxnder"/><br /><sub><b>thxnder</b></sub></a><br /><a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/commits?author=tswwe" title="Code">💻</a> <a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues?q=author%3Atswwe" title="Bug reports">🐛</a></td>
+      <td align="center"><a href="https://github.com/langzhou"><img src="https://avatars.githubusercontent.com/u/6987229?v=4?s=100" width="100px;" alt="langzhou"/><br /><sub><b>langzhou</b></sub></a><br /><a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/commits?author=langzhou" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/royc01"><img src="https://avatars.githubusercontent.com/u/38906705?v=4?s=100" width="100px;" alt="royc01"/><br /><sub><b>royc01</b></sub></a><br /><a href="#ideas-royc01" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/commits?author=royc01" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/UserZYF"><img src="https://avatars.githubusercontent.com/u/38289979?v=4?s=100" width="100px;" alt="UserZYF"/><br /><sub><b>UserZYF</b></sub></a><br /><a href="#video-UserZYF" title="Videos">📹</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
@@ -803,6 +805,7 @@ Download the release package in [Releases](https://github.com/Zuoqiu-Yingyi/siyu
 | **[UserZYF](https://github.com/UserZYF)**           | [UserZYF/zhang-light](https://github.com/UserZYF/zhang-light)                                                                                         | *Unknown*                                                                                      |
 | **[langzhou](https://github.com/langzhou)**         | [langzhou/siyuan-note](https://github.com/langzhou/siyuan-note)                                                                                       | *Unknown*                                                                                      |
 | **[royc01](https://github.com/royc01)**             | [royc01/notion-theme](https://github.com/royc01/notion-theme)                                                                                         | *Unknown*                                                                                      |
+| **[shawroger](https://ld246.com/member/shawroger)** | [思源笔记渲染 SQL 文档路径代码 - 链滴](https://ld246.com/article/1665129901544)                                                                       | *Unknown*                                                                                      |
 
 注: 排序不分先后  
 ps: Sort in no particular order.

@@ -1,18 +1,15 @@
 /* 弹出菜单 */
 
-@import (css) url(/appearance/themes/Dark+/style/module/config.css);
-@import (css) url(/widgets/custom.css);
-
-// 移动端菜单
-#model,
-// 全局右键菜单
-#commonMenu {
-    background-color: var(--custom-popover-function-menu-background-color);
-    backdrop-filter: var(--custom-backdrop-popover-filter);
-}
+// // 移动端菜单
+// #model,
+// // 全局右键菜单
+// #commonMenu,
 
 // 菜单
-#commonMenu {
+.b3-menu {
+    background-color: var(--custom-popover-function-menu-background-color);
+    backdrop-filter: var(--custom-backdrop-popover-filter);
+    padding: var(--custom-popover-menu-padding-width);
 
     .b3-menu__item {
         /* 菜单项 */
@@ -27,6 +24,7 @@
             /* 子菜单 */
             background-color: var(--custom-popover-function-menu-background-color);
             backdrop-filter: var(--custom-backdrop-popover-filter);
+            padding: var(--custom-popover-menu-padding-width);
         }
     }
 
@@ -34,6 +32,14 @@
         /* 菜单分割线 */
         height: 2px;
         background-color: var(--custom-popover-menu-separator-color);
+    }
+
+    .b3-menu__action {
+        &:hover {
+            /* 菜单按钮控件 */
+            color: var(--b3-theme-surface);
+            background-color: var(--b3-theme-on-surface);
+        }
     }
 
     >*:not(.emojis) {
@@ -50,14 +56,23 @@
 .b3-list.b3-list--background {
 
     /* REF: [第一个子元素在未超过父元素高度的情况下设置margin-top导致出现竖向滚动条的问题_Andrasen的博客-CSDN博客](https://blog.csdn.net/Andrasen/article/details/105676175) */
-    padding: var(--custom-popover-menu-padding-width);
+    padding: var(--custom-popover-menu-padding-width) !important;
     // background-color: var(--custom-popover-menu-background-color);
     // backdrop-filter: var(--custom-backdrop-popover-filter);
     background-color: transparent !important;
     backdrop-filter: none;
+    // 块引用搜索结果宽度设置为自动宽度
     width: var(--custom-popover-menu-width) !important;
     outline: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--custom-popover-menu-outline-color);
     overflow-x: visible !important;
+
+    .b3-list-item {
+        /* 菜单项 */
+        margin: 0 !important;
+        // border-radius: 0;
+        border-radius: var(--custom-border-radius);
+    }
+
     // '/' 菜单
     &.b3-menu.hint--menu,
     // 引用搜索菜单
@@ -70,9 +85,10 @@
     &#menu {
         background-color: var(--custom-popover-function-menu-background-color) !important;
         backdrop-filter: var(--custom-backdrop-popover-filter);
+        box-sizing: border-box;
     }
 
-    &.b3-menu.hint--menu {
+    &.hint--menu {
         /* '/' 菜单 */
         column-count: 4;
         column-gap: 1em;
@@ -80,6 +96,10 @@
         // column-fill: auto;
         // height: 32em !important;
         max-height: none !important;
+
+        >.b3-list-item {
+            width: 100% !important;
+        }
 
         >.emojis {
             /* 表情菜单 */
@@ -93,7 +113,7 @@
 
             &:first-of-type {
                 /* 第1条分割线 */
-                height: 35px;
+                height: 34px;
                 background-color: transparent;
 
                 +button {
@@ -141,13 +161,15 @@
 
             &:nth-of-type(4) {
                 /* 第4条分割线 */
-                height: 0;
-                background-color: transparent;
+                display: none;
+                // height: 0;
+                // background-color: transparent;
             }
         }
 
     }
 
+    // '/' 菜单>模板/挂件等二次选择菜单
     .protyle-util &,
     // 快捷键设置菜单
     #keymapList>&,
@@ -167,6 +189,7 @@
 
     &:not(ul),
     &.b3-tab-bar,
+    .sy__backlink &,
     #historyContainer & {
         >.b3-list-item {
             &:extend(#searchPanel>.b3-list-item all);
@@ -175,6 +198,9 @@
 
     // 历史对话框中的列表
     #historyContainer & {
+        outline: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--custom-popover-menu-outline-color);
+        padding-bottom: 0 !important;
+
         >.b3-list-item {
             &:hover:not(.b3-list-item--focus) {
                 background-color: var(--b3-list-hover);
@@ -198,19 +224,19 @@
         margin-top: 0 !important;
     }
 
-    /* padding-top: var(--custom-popover-menu-padding-width); */
+    /* padding-top: var(--custom-popover-menu-margin-width); */
     /* border-bottom: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--b3-theme-on-surface); */
-    margin: var(--custom-popover-menu-padding-width) 0;
-    /* padding: 0.5em; */
+    margin: var(--custom-popover-menu-margin-width) 0 !important;
+    // padding: 0.5em;
     outline: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--custom-popover-menu-outline-color);
 
-    &:last-child {
+    &:last-child:not(.fn_none) {
         /* 补偿最后一项 */
         margin-bottom: 0 !important;
     }
 
     &button {
-        margin: var(--custom-popover-menu-padding-width) auto !important;
+        margin: var(--custom-popover-menu-margin-width) auto !important;
     }
 
     .b3-list-item__meta {
@@ -228,7 +254,6 @@
             color: var(--custom-popover-menu-attribute-color);
         }
     }
-
 
 }
 
@@ -278,7 +303,6 @@
 .b3-menu.b3-list.b3-list--background.hint--menu>.b3-list-item:nth-last-of-type(1) {
     column-span: all;
 } */
-
 
 /* .b3-menu.b3-list.b3-list--background.hint--menu>.b3-list-item:last-child>div.b3-list-item__first {
     margin: auto;

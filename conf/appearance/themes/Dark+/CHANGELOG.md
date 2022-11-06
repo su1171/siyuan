@@ -1,5 +1,99 @@
 # 更改日志 | CHANGE LOG
 
+## v1.3.7/2022-10-27
+
+- [v1.3.6 <=> v1.3.7](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.6...v1.3.7)
+- 调整大纲栏列表辅助线样式 | Adjusted the style of outline panel guides.
+- 关系图背景设置为半透明 | The diagram background is set to semi-transparent.
+- 修复悬浮工具栏折叠展开时的位置问题 | Fixed the position issue when the floating toolbar was collapsed and expanded.
+- [#129](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/129) 调整纵向排序标签页关闭按钮位置 | Adjust the position of the close button for vertical sorting tabs.
+- 调整块滚动条位置 | Adjusted the position of blocks scroll bar.
+- [#130](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/130) 启动时不重置面板展开状态 | The panel expansion state is not reset at startup.
+- [#133](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/133) 修复 macOS 系统窗口控件与工具栏按钮重叠问题 | Fixed the issue of macOS system window controls overlapping toolbar buttons.
+- [#134](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/134) 调整列表脑图视图与表格视图引用数样式 | Adjusted the style issue of list brain map view and table view reference number.
+- 移除`块滚动条跟随滚动`功能 | Remove the feature of `Block scroll bar follow scroll`.
+  - REF: [Issue #4612 · siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/4612)
+- 修复快捷键设置界面列表辅助线样式 | Fixed the list guide style of shortcut key setting interface.
+- 修复全屏关系图工具栏样式异常问题 | Fixed the issue of abnormal toolbar style in full screen diagram.
+- 评论功能兼容 `v2.4.2` | Comment function compatible with `v2.4.2`.
+- 调整移动端侧边面板样式 | Adjusted the style of mobile side panel.
+- 修复列表辅助线样式 | Fixed list guide style.
+
+## v1.3.6/2022-10-21
+
+- [v1.3.5 <=> v1.3.6](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.5...v1.3.6)
+- 调整页签按钮样式 | Adjusted the style of tab bar button.
+- 鼠标移出窗口时结束拖拽 | End dragging when the mouse moves out of the window.
+- 优化鼠标移出窗口时结束拖拽 | Optimized to end dragging when the mouse moves out of the window.
+- [#122](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/122) 修复悬浮工具栏无法在标题栏拖拽问题 | Fixed the issue that the floating toolbar could not be dragged in the title bar.
+- 修复快捷键设置界面列表辅助线样式 | Fixed the list guide style of shortcut key setting interface.
+- 保存悬浮工具栏的位置与状态 | Save the position and state of the floating toolbar.
+- 修复悬浮工具栏折叠展开时的位置问题 | Fixed the position issue when the floating toolbar was collapsed and expanded.
+- 适配 `v2.4.2` | Adaptive `v2.4.2`.
+- 调整面包屑样式 | Adjusted the style of breadcrumb.
+- 调整代码块样式 | Adjusted the style of code block.
+- 调整页签图标样式 | Adjusted the style of tab icon.
+- 调整嵌入块样式 | Adjusted the style of embed block.
+
+## v1.3.5/2022-10-17
+
+- [v1.3.4 <=> v1.3.5](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.4...v1.3.5)
+- 修复历史对话框与集市对话框的页签样式问题 | Fixed the issue of the tab style of the History dialog box and the Market dialog box.
+- 修复纵向排列选项卡后页签错位问题 | Fixed the issue of misalignment of tabs in portrait orientation.
+- 调整页签按钮样式 | Adjusted the style of tab bar button.
+- 修复无法划选文本问题 | Fixed an issue where text could not be sized.
+
+## v1.3.4/2022-10-17
+
+- [v1.3.3 <=> v1.3.4](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.3...v1.3.4)
+- 实现浮窗预览某个块的方法 `popover` | Implement a method `popover` to preview a block using popover window.
+- 新增自定义 CSS 变量 `--custom-template-preview-width` 与 `--custom-template-preview-min-width` 设置模板预览窗口的宽度 | Add the custom CSS variable `--custom-template-preview-width` and `--custom-template-preview-min-width` to customize the width of the template preview window.
+- 兼容删除线样式与背景/前景色样式 | Compatible with strikethrough styles and background/foreground colors.
+- 移除只读模式 | Remove read-only mode.
+  - REF: [Issue #2648 · siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2648)
+- 移除嵌入块`显示查询结果路径`功能 | Remove the `Display Query Results` Path' feature for embedded blocks.
+  - REF: [Issue #2985 · siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/issues/2985)
+- 调整面包屑样式 | Adjust the style of breadcrumb.
+- 移除 CSS 模块中对配置文件的引用 | Removes the reference to the configuration files in the CSS module.
+- 调整反色显示模式色相转换 | Adjusts the inverted display mode Hue transformation.
+- 反向链接面板项应用搜索列表样式 | Backlinks panel items apply the list style of search results.
+- 适配 `v2.4.1` | Adaptive `v2.4.1`.
+- 添加悬浮工具栏 | Add a floating toolbar.
+
+## v1.3.3/2022-10-12
+
+- [v1.3.2 <=> v1.3.3](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.2...v1.3.3)
+- 面包屑样式应用于反链面板 | The breadcrumb style is applied to the reverse chain panel.
+- 移除可编辑反链面板编辑区右侧外边框 | Removes the margin to the right of the editable backchain panel editing area.
+- jupyter 客户端使用消息队列处理接收到的消息 | The jupyter client uses Message Queuing to process the received messages.
+- 为嵌入块菜单添加 `显示查询结果路径` 功能 | Added the `Display Query Results' Path` feature for the embedded block menu.
+- 调整反链面板面包屑样式 | Adjust the breadcrumb style of backlink panel.
+- [#103](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/103) 修复列表脑图视图辅助线错位问题 | Fixed the issue of misalignment of guides in the brain map view of the list.
+- 调整列表脑图视图块内间距 | Adjust the padding within the block in the brain map view of the list.
+- 为 Zotero 的 PDF 跳转链接添加图标 | Add an icon to Zotero's PDF link.
+- 调整图片导出预览模式中的样式 | Adjust the style of images in export preview mode.
+- 调整嵌入块样式 | Adjust the style of embedded block.
+- 添加自定义 CSS 变量 `--custom-tab-bar-item-min-width` 以调整非钉住的页签项最小宽度 | Add the custom CSS variable `--custom-tab-bar-item-min-width` to adjust the minimum width of non-pinned tabs.
+- 调整大纲面板的列表辅助线 | Adjuct the list guides of the outline panel.
+- 调整悬浮窗口中悬浮输入文本框的样式 | Restyle the hover input text box in the popover window.
+- 调整悬浮提示框的样式 | Adjust the style of the tooltip.
+
+## v1.3.2/2022-09-30
+
+- [v1.3.1 <=> v1.3.2](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.1...v1.3.2)
+- 添加页签项下拉列表控件样式 | Add the style of tab drop down list control.
+- [#105](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/105) 评论支持输入 markdown 及渲染 | Comments support markdown and rendering.
+- 新增 TheBrain URL Scheme 超链接 `brain://` 图标 | Added the URL Scheme link `brain://` icon of TheBrain.
+- 修复叠加样式的标记元素无法显示的问题 | Fixed the issue of marked elements that apply multiple styles can't displayed.
+- 移除文档树的列表辅助线 | Removes the list guides of the document tree.
+- [#106](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/106) 修复复制当前文档大纲为有序/无需列表功能开关混淆问题 | Fixed the confusing issue with the two switch of coping the current document outline as ordered/unordered list feature.
+- 调整删除线元素颜色 | Adjusted the color of strikethrough line elements.
+- 优化视频时间戳 | Optimized video timestamps.
+- 调整列表脑图视图中公式块样式 | Adjust the formula block style in the brain map view of list.
+- 为表格添加鼠标悬浮的单元格边框 | Add a mouse-hovered cell border to the table.
+- 使用明亮主题时支持以明亮颜色导出 | Export in light colors is supported when using the Bright theme.
+- 调整加载中区域的背景颜色 | Adjusts the background color of the area being loaded.
+
 ## v1.3.1/2022-09-22
 
 - [v1.3.0 <=> v1.3.1](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.0...v1.3.1)
@@ -416,7 +510,7 @@
 - 增加 Monaco Editor 复制当前页面链接功能 | Add a function to copy the current page's link to the clipboard in the Monaco Editor.
 - 增加 Monaco Editor 复制当前页面完整链接功能 | Add a function to copy the current page's full link to the clipboard in the Monaco Editor.
 - 在自述文件中添加项目依赖 | Add project dependencies in the README file.
-- 新增 `calibre` URL Scheme 超链接图标 | Added `evernote` URL Scheme link icon.
+- 新增 `calibre` URL Scheme 超链接图标 | Added `calibre` URL Scheme link icon.
 - 增加 Monaco Editor 在 VS Code 中打开文件/目录功能 | Add a function to open file and directory in VS Code in the Monaco Editor.
 - 视频时间戳功能支持单击视频内部触发 | Support click to trigger the video timestamp function in the video player.
 - 调整收集箱面板背景颜色 | Adjust the background color of the collection panel.
