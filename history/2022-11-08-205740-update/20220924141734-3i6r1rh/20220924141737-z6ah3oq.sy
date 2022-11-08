@@ -8,7 +8,7 @@
 		"id": "20220924141737-z6ah3oq",
 		"scroll": "{\u0026amp;quot;startId\u0026amp;quot;:\u0026amp;quot;20221011153643-4fuy2wd\u0026amp;quot;,\u0026amp;quot;endId\u0026amp;quot;:\u0026amp;quot;20221005201549-ew01xad\u0026amp;quot;,\u0026amp;quot;scrollTop\u0026amp;quot;:2991.003173828125,\u0026amp;quot;focusId\u0026amp;quot;:\u0026amp;quot;20220930001932-myssfgk\u0026amp;quot;,\u0026amp;quot;focusStart\u0026amp;quot;:0,\u0026amp;quot;focusEnd\u0026amp;quot;:0}",
 		"title": "云计算",
-		"updated": "20221108205857"
+		"updated": "20221108205711"
 	},
 	"Children": [
 		{
@@ -1739,7 +1739,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20220927173009-hitxzo7",
-				"updated": "20221108205857"
+				"updated": "20221108205711"
 			},
 			"Children": [
 				{
@@ -1751,7 +1751,7 @@
 					},
 					"Properties": {
 						"id": "20220929221723-g67gcy4",
-						"updated": "20221108205857"
+						"updated": "20220929221723"
 					},
 					"Children": [
 						{
@@ -1759,14 +1759,15 @@
 							"Type": "NodeParagraph",
 							"Properties": {
 								"id": "20220929221723-w8ddzyr",
-								"updated": "20221108205857"
+								"updated": "20220929222030"
 							},
 							"Children": [
 								{
 									"Type": "NodeTextMark",
-									"TextMarkType": "a",
-									"TextMarkAHref": "siyuan://blocks/20221103104406-exebzoh",
-									"TextMarkTextContent": "yum源优先级配置"
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20220929093047-03vloji",
+									"TextMarkBlockRefSubtype": "d",
+									"TextMarkTextContent": "yum源优先级设置"
 								}
 							]
 						}

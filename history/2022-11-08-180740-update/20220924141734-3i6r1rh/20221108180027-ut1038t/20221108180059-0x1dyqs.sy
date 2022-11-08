@@ -1,0 +1,20 @@
+{
+	"ID": "20221108180059-0x1dyqs",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221108180059-0x1dyqs",
+		"title": "tomcat",
+		"updated": "20221108180107"
+	},
+	"Children": [
+		{
+			"ID": "20221108180059-78m4gci",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108180059-78m4gci",
+				"updated": "20221108180059"
+			}
+		}
+	]
+}

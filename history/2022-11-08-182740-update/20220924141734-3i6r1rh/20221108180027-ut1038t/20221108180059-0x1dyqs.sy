@@ -1,0 +1,66 @@
+{
+	"ID": "20221108180059-0x1dyqs",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221108180059-0x1dyqs",
+		"title": "tomcat",
+		"updated": "20221108182119"
+	},
+	"Children": [
+		{
+			"ID": "20221108180059-78m4gci",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221108180059-78m4gci",
+				"updated": "20221108181938"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "tomcat安装"
+				}
+			]
+		},
+		{
+			"ID": "20221108182026-5a95wdp",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221108182026-5a95wdp",
+				"updated": "20221108182119"
+			},
+			"Children": [
+				{
+					"ID": "20221108182030-ehpxv28",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221108182030-ehpxv28",
+						"updated": "20221108182119"
+					},
+					"Children": [
+						{
+							"ID": "20221108182030-3kwle4m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221108182030-3kwle4m",
+								"updated": "20221108182119"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "tomcat安装之前需要部署java环境"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

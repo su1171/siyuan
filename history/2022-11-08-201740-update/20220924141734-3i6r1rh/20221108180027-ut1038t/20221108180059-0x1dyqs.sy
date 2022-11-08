@@ -1,0 +1,463 @@
+{
+	"ID": "20221108180059-0x1dyqs",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221108180059-0x1dyqs",
+		"title": "tomcat",
+		"updated": "20221108201321"
+	},
+	"Children": [
+		{
+			"ID": "20221108180059-78m4gci",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221108180059-78m4gci",
+				"updated": "20221108181938"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "tomcat安装"
+				}
+			]
+		},
+		{
+			"ID": "20221108182026-5a95wdp",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221108182026-5a95wdp",
+				"updated": "20221108201213"
+			},
+			"Children": [
+				{
+					"ID": "20221108182030-ehpxv28",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221108182030-ehpxv28",
+						"updated": "20221108201213"
+					},
+					"Children": [
+						{
+							"ID": "20221108182030-3kwle4m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221108182030-3kwle4m",
+								"updated": "20221108201213"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "tomcat安装前需要部署java环境"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221108195319-vxkh6y6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195319-vxkh6y6"
+			}
+		},
+		{
+			"ID": "20221108195326-2ugevpf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195326-2ugevpf"
+			}
+		},
+		{
+			"ID": "20221108195326-gfdevwz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195326-gfdevwz"
+			}
+		},
+		{
+			"ID": "20221108195326-9rv8xuw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195326-9rv8xuw"
+			}
+		},
+		{
+			"ID": "20221108195327-uirld5p",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195327-uirld5p"
+			}
+		},
+		{
+			"ID": "20221108195327-po65qyv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195327-po65qyv"
+			}
+		},
+		{
+			"ID": "20221108195327-q2orno0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108195327-q2orno0"
+			}
+		},
+		{
+			"ID": "20221108195327-kivka8e",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221108195327-kivka8e",
+				"updated": "20221108195333"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "尾部"
+				}
+			]
+		},
+		{
+			"ID": "20221108195622-e89f0ot",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221108195622-e89f0ot",
+				"updated": "20221108201321"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221108195333-2zbomlc",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221108195333-2zbomlc",
+						"updated": "20221108201321"
+					},
+					"Children": [
+						{
+							"ID": "20221108195336-xdxlarz",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221108195336-xdxlarz",
+								"updated": "20221108201321"
+							},
+							"Children": [
+								{
+									"ID": "20221108195336-8xlxp5d",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221108195336-8xlxp5d",
+										"updated": "20221108195400"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "jvm\tjre \tjdk\t的关系"
+										}
+									]
+								},
+								{
+									"ID": "20221108195624-g9flfkl",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221108195624-g9flfkl",
+										"updated": "20221108201321"
+									},
+									"Children": [
+										{
+											"ID": "20221108195911-jhm9pvf",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221108195911-jhm9pvf",
+												"updated": "20221108195911"
+											},
+											"Children": [
+												{
+													"ID": "20221108195911-ko8gpjz",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108195911-ko8gpjz",
+														"updated": "20221108200045"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "jvm"
+														}
+													]
+												},
+												{
+													"ID": "20221108195917-mw15t86",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108195917-mw15t86",
+														"updated": "20221108200114"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "java虚拟机"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "，java代码为了在各个平台运行，所以使用了基于虚拟机的运行方式"
+														}
+													]
+												},
+												{
+													"ID": "20221108200115-d2i5ax7",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200115-d2i5ax7",
+														"updated": "20221108200204"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "优点：可移植性高，跨平台性好"
+														}
+													]
+												},
+												{
+													"ID": "20221108200205-n4rhzcj",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200205-n4rhzcj",
+														"updated": "20221108200219"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "缺点：占用资源高"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221108200346-6kkxs3v",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221108200346-6kkxs3v"
+											},
+											"Children": [
+												{
+													"ID": "20221108200346-vxx1638",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200346-vxx1638",
+														"updated": "20221108200628"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "jre"
+														}
+													]
+												},
+												{
+													"ID": "20221108200350-e1vgjoq",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200350-e1vgjoq",
+														"updated": "20221108200630"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "java运行环境"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "，安装jre可以得到jvm以及相关依赖。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221108200459-7haph6t",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221108200459-7haph6t",
+												"updated": "20221108201321"
+											},
+											"Children": [
+												{
+													"ID": "20221108200459-bt08wij",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200459-bt08wij",
+														"updated": "20221108200632"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "jdk"
+														}
+													]
+												},
+												{
+													"ID": "20221108200502-cq8eu02",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200502-cq8eu02",
+														"updated": "20221108201321"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "java开发环境"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "，包括了jre与一些相关工具与命令。一般使用jdk（具体使用哪个版本根据代码需求）"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221108200712-shelia9",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221108200712-shelia9",
+												"updated": "20221108200751"
+											},
+											"Children": [
+												{
+													"ID": "20221108200712-5plsopz",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200712-5plsopz",
+														"updated": "20221108200751"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "图示"
+														}
+													]
+												},
+												{
+													"ID": "20221108200715-6oek3k1",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221108200715-6oek3k1",
+														"updated": "20221108200745"
+													},
+													"Children": [
+														{
+															"Type": "NodeImage",
+															"Data": "span",
+															"Properties": {
+																"parent-style": "max-width: 442px; display: block;",
+																"style": "width: 432px;"
+															},
+															"Children": [
+																{
+																	"Type": "NodeBang"
+																},
+																{
+																	"Type": "NodeOpenBracket"
+																},
+																{
+																	"Type": "NodeLinkText",
+																	"Data": "image"
+																},
+																{
+																	"Type": "NodeCloseBracket"
+																},
+																{
+																	"Type": "NodeOpenParen"
+																},
+																{
+																	"Type": "NodeLinkDest",
+																	"Data": "assets/image-20221108200740-q1z9ce3.png"
+																},
+																{
+																	"Type": "NodeCloseParen"
+																}
+															]
+														},
+														{
+															"Type": "NodeKramdownSpanIAL",
+															"Data": "{: style=\"width: 432px;\" parent-style=\"max-width: 442px; display: block;\"}"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221108195619-11gu34t",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221108195619-11gu34t",
+						"updated": "20221108195623"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221108201246-yy8f8sr",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221108201246-yy8f8sr",
+				"updated": "20221108201256"
+			}
+		}
+	]
+}

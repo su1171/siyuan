@@ -4,9 +4,8 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221027112639-kj94r96\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221106160013-2c9kv57\u0026quot;,\u0026quot;scrollTop\u0026quot;:3400,\u0026quot;focusId\u0026quot;:\u0026quot;20221106190628-xtw9qzz\u0026quot;,\u0026quot;focusStart\u0026quot;:5,\u0026quot;focusEnd\u0026quot;:5}",
 		"title": "sql详解",
-		"updated": "20221106190343"
+		"updated": "20221108173455"
 	},
 	"Children": [
 		{
@@ -6920,7 +6919,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221106162254-6wi0i0u",
-				"updated": "20221106190343"
+				"updated": "20221108173455"
 			},
 			"Children": [
 				{
@@ -6936,7 +6935,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221029112207-34c7uj3",
-						"updated": "20221106190343"
+						"updated": "20221108173455"
 					},
 					"Children": [
 						{
@@ -6948,7 +6947,7 @@
 							},
 							"Properties": {
 								"id": "20221106181507-f9ests1",
-								"updated": "20221106190343"
+								"updated": "20221108173455"
 							},
 							"Children": [
 								{
@@ -6972,7 +6971,7 @@
 									"ListData": {},
 									"Properties": {
 										"id": "20221106181527-wrbqort",
-										"updated": "20221106190343"
+										"updated": "20221108173455"
 									},
 									"Children": [
 										{
@@ -7500,8 +7499,9 @@
 												"Marker": "Kg=="
 											},
 											"Properties": {
-												"fold": "1",
-												"id": "20221106193617-4h8vuwu"
+												"fold": "0",
+												"id": "20221106193617-4h8vuwu",
+												"updated": "20221108173455"
 											},
 											"Children": [
 												{
@@ -7524,7 +7524,7 @@
 													"ListData": {},
 													"Properties": {
 														"id": "20221108170025-rwmbe92",
-														"updated": "20221108170027"
+														"updated": "20221108173455"
 													},
 													"Children": [
 														{
@@ -7535,7 +7535,6 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
 																"id": "20221108170027-dav43it",
 																"updated": "20221108170027"
 															},
@@ -7591,7 +7590,6 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
 																"id": "20221108170036-ber48ma"
 															},
 															"Children": [
@@ -7660,7 +7658,6 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
 																"id": "20221108170040-hig47jf"
 															},
 															"Children": [
@@ -7715,7 +7712,6 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
 																"id": "20221108170057-r0b0vpr"
 															},
 															"Children": [
@@ -7770,7 +7766,6 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
 																"id": "20221108170102-ggwenp2"
 															},
 															"Children": [
@@ -7825,7 +7820,6 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
 																"id": "20221108172134-lq2vnqd"
 															},
 															"Children": [
@@ -7880,8 +7874,8 @@
 																"Marker": "Kg=="
 															},
 															"Properties": {
-																"fold": "1",
-																"id": "20221108172739-93m1hsn"
+																"id": "20221108172739-93m1hsn",
+																"updated": "20221108173455"
 															},
 															"Children": [
 																{
