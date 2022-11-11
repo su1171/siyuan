@@ -162,7 +162,6 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
 | 所有块<br/>all types of blocks                                                           | `render`                 | `invert`<br/>`反色`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                             | 将图片渲染为反色<br/>Render all images as inverted colors.                                      |
 | 所有块<br/>all types of blocks                                                           | `mark`                   | `display`<br/>`显示`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                            | 显示标记文本<br/>Display marked text.                                                           |
 | 文档块<br/>document blocks                                                               | `location`               | 块 ID<br/>block ID                                                                                                                                                                                                                                                                       | 当前文档浏览位置<br/>The current document browsing location.                                    |
-| 文档块<br/>document blocks                                                               | `background`             | `01` ~ `12`                                                                                                                                                                                                                                                                              | 设置文档的自定义背景图片<br/>Sets a custom background image for the document.                   |
 | 文档块<br/>document blocks                                                               | `auto-num-h`             | `0`<br/>`false`<br/>`禁用`<br/>`关闭`<br/>                                                                                                                                                                                                                                               | 禁用该文档子标题的自动编号<br/>Disables automatic numbering of subheading in the document.      |
 | 文档块<br/>document blocks                                                               | `auto-num-f`             | `图`<br/>`图片`<br/>`Fig.`<br/>`figure`<br/>`Figure`<br/>`FIGURE`                                                                                                                                                                                                                        | 启用该文档中图片的自动编号<br/>Enable automatic numbering of pictures in the document.          |
 | 文档块<br/>document blocks                                                               | `auto-num-t`             | `表`<br/>`表格`<br/>`Tab.`<br/>`table`<br/>`Table`<br/>`TABLE`                                                                                                                                                                                                                           | 启用该文档中表格的自动编号<br/>Enable automatic numbering of tables in the document.            |
@@ -178,7 +177,6 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
 | 视频块/音频块<br/>video blocks/audio blocks                                              | `time`                   | `ss`<br/>`ss.ms`<br/>`mm:ss`<br/>`mm:ss.ms`<br/>`hh:mm:ss`<br/>`hh:mm:ss.ms`                                                                                                                                                                                                             | 时间戳<br/>Timestamp.                                                                           |
 | 列表块 & 文档块<br/>list blocks & document blocks                                        | `type`                   | `table`<br/>`表格`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                              | 列表渲染为表格<br/>Renders the list as a table.                                                 |
 | 列表块 & 文档块<br/>list blocks & document blocks                                        | `type`                   | `脑图`<br/>`map`<br/>`导图`<br/>`mind-map`<br/>`思维导图`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                       | 列表渲染为思维导图<br/>Renders the list as a mind map.                                          |
-| 列表块<br/>list blocks                                                                   | `list-guides`            | 任何值<br/>Any value                                                                                                                                                                                                                                                                     | 启用动态列表辅助线<br/>Enable dynamic list guides.                                              |
 | 表格块<br/>table blocks                                                                  | `table-width`            | `auto`<br/>`自动`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                               | 启动表格内容自动换行<br/>Enable table content wraps.                                            |
 | 表格块<br/>table blocks                                                                  | `table-width`            | `equal`<br/>`等宽`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                              | 启动单元格等宽<br/>Enable equal cell.                                                           |
 | 段落块<br/>paragraph blocks                                                              | `type`                   | `图标题`<br/>`表标题`<br/>`figure-title`<br/>`table-title`<br/>(使用空格分隔多个属性值 \| Separate multiple attribute values with spaces)                                                                                                                                                | 图标题/表标题自动计数<br/>Figure titles/table titles are counted automatically.                 |
@@ -323,10 +321,14 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
     - `data/emojis/`
   - <img alt="widgets" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/widgets.svg" style="height: 1em; width: 1em;" /> `widgets/`: 挂件文件目录 | Widget file directory
     - `data/widgets/`
+  - <img alt="snippets" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/snippets.svg" style="height: 1em; width: 1em;" /> `snippets/`: 片段文件目录 | Snippet file directory
+    - `data/snippets/`
   - <img alt="appearance" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/appearance.svg" style="height: 1em; width: 1em;" /> `appearance/`: 外观文件目录 | Appearance file directory
     - `conf/appearance/`
   - <img alt="export" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/export.svg" style="height: 1em; width: 1em;" /> `export/`: 导出文件目录 | Export file directory
     - `temp/export/`
+  - <img alt="history" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/history.svg" style="height: 1em; width: 1em;" /> `history/`: 历史文件目录 | History file directory
+    - `temp/history/`
 - 指向资源文件目录下常见文件的超链接显示图标  
   Hyperlinks to common files under the resource file directory display icons.
   - <img alt="pdf" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/pdf.svg" style="height: 1em; width: 1em;" />: PDF
@@ -340,6 +342,7 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
   - <img alt="asset" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/asset.svg" style="height: 1em; width: 1em;" />: Other
 - 指向第三方资源(`URL Scheme`)的超链接显示图标  
   Hyperlinks(`URL Scheme`) to the third-party resource displays icons.
+  - <img alt="brain" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/thebrain.svg" style="height: 1em; width: 1em;" />: `brain:` [TheBrain](https://www.thebrain.com/)
   - <img alt="bookxnote" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/bookxnote.svg" style="height: 1em; width: 1em;" />: `bookxnotepro:` [BookxNote Pro](https://www.bookxnotepro.com/)
   - <img alt="calibre" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/calibre.png" style="height: 1em; width: 1em;" />: `calibre:` [calibre - E-book management](https://calibre-ebook.com/)
   - <img alt="everything" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/everything.svg" style="height: 1em; width: 1em;" />: `es:` [Everything](https://www.voidtools.com/)
@@ -360,6 +363,7 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
   - <img alt="ticktick" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/ticktick.svg" style="height: 1em; width: 1em;" />: `ticktick:` [TickTick](https://ticktick.com/)
   - <img alt="vscode" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/vscode.svg" style="height: 1em; width: 1em;" />: `vscode:` [Visual Studio Code](https://code.visualstudio.com/)
   - <img alt="zotero" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/zotero.svg" style="height: 1em; width: 1em;" />: `zotero:` [Zotero](https://www.zotero.org/)
+    - <img alt="zotero-PDF" src="https://cdn.jsdelivr.net/gh/Zuoqiu-Yingyi/siyuan-theme-dark-plus/icon/zotero-light.ico" style="height: 1em; width: 1em;" />: `zotero://open-pdf/`
 - 使用 URL 参数 `id=<内容块 ID>` 从浏览器外跳转到 Web 端的指定块(必须已经打开至少一个页签)  
   Jump from outside the browser to a specified block on the web side using the URL parameter `id=<content block ID>` (at least one tab must already be open)
   - 示例: `http(s)://host:port/stage/build/desktop/?id=20220128124308-bancmue`  
@@ -503,10 +507,6 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
     - 记录当前文档浏览位置 | Records the current document browsing location.
     - 使用 <kbd>鼠标右键</kbd> 单击文档右侧的滑块, 可以跳转到当前文档浏览位置  
       You can click on a slider on the right side of the current document to jump to where the document was last browsed using the <kbd>Right Mouse Button</kbd>.
-  - `background`: 属性名 | key
-    - `01` ~ `12`: 属性值 | value
-    - 适用于文档块 | Applies to document blocks
-    - 设置文档的自定义背景图片 | Sets a custom background image for the document.
   - `auto-num-h`: 属性名 | key
     - `0` / `false` / `禁用` / `关闭`: 属性值 | value
     - 适用于文档块 | Applies to document blocks
@@ -584,11 +584,6 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
     - `图标题` 或 `表标题` | `figure-title` or `table-title`: 属性值 | value
       - 适用于段落块 | Applies to paragraph blocks
       - 图标题/表标题自动计数 | Figure titles/table titles are counted automatically
-  - `list-guides`: 属性名 | key
-    - 适用于列表块 | Applies to list blocks
-    - 属性值可以设置为任意字符(不可为空)  
-      The attribute value can be set to any character(not nullable).
-    - 启用动态列表辅助线 | Enable dynamic list guides
   - `table-width`: 属性名 | key
     - 适用于表格块 | Applies to table blocks
     - 设置表格宽度样式 | Sets the table width style.

@@ -183,12 +183,12 @@
     --custom-z-index-max: 2147483647;
 
     /* 背景图片 | Background image */
-    --custom-background-image: url("/appearance/themes/Dark+/image/background (05).jpg");
+    --custom-background-image: url(/appearance/themes/Dark+/image/background-main.jpg);
     /* 背景颜色 | Background color */
     --custom-background-color: transparent;
 
     /* 对话框背景图片 | Dialog background image */
-    --custom-background-image-dialog: url("/appearance/themes/Dark+/image/background (01).jpg");
+    --custom-background-image-dialog: url(/appearance/themes/Dark+/image/background-dialog.jpg);
 
     /* 标签图标 | The icon of tag */
     --custom-span-tag-icon: url(/appearance/themes/Dark+/icon/tag.svg);
@@ -305,7 +305,7 @@
     --custom-tab-bar-background-color: var(--custom-transparent);
     /* 编辑区页签栏最小高度 | The min height of the  edit area tab bar */
     --custom-tab-bar-min-height: calc(var(--custom-dock-width));
-    /* 非钉住页签项最小宽度 */
+    /* 非钉住页签项最小宽度 | The minimum width of a non-pinned tab item */
     --custom-tab-bar-item-min-width: none;
     /* 页签图标大小 | The size of the tab bar icon */
     --custom-tab-bar-icon-size: 1.25em;
@@ -652,7 +652,9 @@
     --b3-border-color: var(--custom-components-light);
 }
 
-/*动画效果*/
+/* 👇动画效果👇 */
+
+/* 旋转 */
 @keyframes rotateMain {
     50% {
         transform: rotateZ(180deg);
@@ -680,11 +682,9 @@
 @keyframes danmaku {
     0% {
         transform: translateX(100%);
-        -webkit-transform: translateX(100%);
     }
 
     100% {
         transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
     }
 }

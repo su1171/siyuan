@@ -61,19 +61,13 @@ function styleHandle(id, innerHTML = null, href = null) {
         return false;
     } else {
         if (innerHTML) {
-            style = document.createElement('style');
-            style.id = id;
-            style.innerHTML = innerHTML;
-            document.head.appendChild(style);
+            // document.head.appendChild(style);
+            window.theme.loadStyle(innerHTML, id, 'beforeend', document.head);
             return true;
         }
         if (href) {
-            style = document.createElement('link');
-            style.id = id;
-            style.rel = 'stylesheet';
-            style.type = 'text/css';
-            style.href = href;
-            document.head.appendChild(style);
+            // document.head.appendChild(style);
+            window.theme.loadLink(href, id, 'beforeend', document.head);
             return true;
         }
         return false;
@@ -142,6 +136,7 @@ function jump(id, callback = null) {
         // ref.setAttribute("data-type", "block-ref");
         // ref.setAttribute("data-subtype", "s");
         // ref.setAttribute("data-id", id);
+        ref.style.display = 'none';
         ref.dataset.type = "block-ref";
         ref.dataset.subtype = "s";
         ref.dataset.id = id;
@@ -161,6 +156,7 @@ function popover(id, callback = null) {
     const editor = document.querySelector('.protyle-wysiwyg [data-node-id] [contenteditable][spellcheck]');
     if (editor) {
         let span = document.createElement("span");
+        span.style.display = 'none';
         span.classList.add('protyle-wysiwyg__embed');
         span.dataset.id = id;
         editor.appendChild(span);

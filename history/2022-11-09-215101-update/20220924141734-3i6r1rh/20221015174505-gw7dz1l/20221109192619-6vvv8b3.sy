@@ -1,0 +1,352 @@
+{
+	"ID": "20221109192619-6vvv8b3",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221109192619-6vvv8b3",
+		"title": "MySQL运维篇",
+		"updated": "20221109215054"
+	},
+	"Children": [
+		{
+			"ID": "20221109192628-sfai0q0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221109192628-sfai0q0"
+			}
+		},
+		{
+			"ID": "20221109192823-7ap04tv",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221109192823-7ap04tv",
+				"updated": "20221109215054"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221109192619-hawq0ly",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221109192619-hawq0ly",
+						"updated": "20221109215054"
+					},
+					"Children": [
+						{
+							"ID": "20221109192824-n9exk9g",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221109192824-n9exk9g",
+								"updated": "20221109215054"
+							},
+							"Children": [
+								{
+									"ID": "20221109192824-68t4lbf",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221109192824-68t4lbf",
+										"updated": "20221109192828"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "日志"
+										}
+									]
+								},
+								{
+									"ID": "20221109192904-id1ybh9",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221109192904-id1ybh9",
+										"updated": "20221109192948"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "mysql中的日志分为四种，分别是错误日志，二进制日志，查询日志，慢查询日志。"
+										}
+									]
+								},
+								{
+									"ID": "20221109192828-v5rk2nz",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221109192828-v5rk2nz",
+										"updated": "20221109215054"
+									},
+									"Children": [
+										{
+											"ID": "20221109192830-846v511",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221109192830-846v511",
+												"updated": "20221109192830"
+											},
+											"Children": [
+												{
+													"ID": "20221109192830-a6olta4",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109192830-a6olta4",
+														"updated": "20221109192841"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "错误日志"
+														}
+													]
+												},
+												{
+													"ID": "20221109212024-87y5zm8",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109212024-87y5zm8",
+														"updated": "20221109212156"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "当数据库出现任何故障导致无法正常使用时，建议首先查看此日志。"
+														}
+													]
+												},
+												{
+													"ID": "20221109212157-c3edt0x",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109212157-c3edt0x",
+														"updated": "20221109212432"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "此日志默认开启，默认存放目录  /var/log/ , 默认日志文件名  mysqld.log  "
+														}
+													]
+												},
+												{
+													"ID": "20221109212500-gw5j3vz",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109212500-gw5j3vz",
+														"updated": "20221109212843"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "查看日志位置  show  variables like '%log_error%'; "
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221109192842-2h375hb",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221109192842-2h375hb",
+												"updated": "20221109215054"
+											},
+											"Children": [
+												{
+													"ID": "20221109192842-jirzzz5",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109192842-jirzzz5",
+														"updated": "20221109213810"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "二进制日志"
+														}
+													]
+												},
+												{
+													"ID": "20221109213750-ikr92e8",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109213750-ikr92e8",
+														"updated": "20221109213934"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "二进制日志（BINLOG）中记录了所有的DDL（数据定义语言）语句和DML（数据操作语言）语句，但不包括数据查询语句。"
+														}
+													]
+												},
+												{
+													"ID": "20221109214900-ik44q1q",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109214900-ik44q1q",
+														"updated": "20221109214926"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "作用"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "：1. 灾难时的数据恢复"
+														}
+													]
+												},
+												{
+													"ID": "20221109214929-q54xrra",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109214929-q54xrra",
+														"updated": "20221109214946"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "\t   2. mysql的主从复制"
+														}
+													]
+												},
+												{
+													"ID": "20221109214948-p5b505r",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109214948-p5b505r",
+														"updated": "20221109215018"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "在MySQL 8 中，二进制日志默认是开启的"
+														}
+													]
+												},
+												{
+													"ID": "20221109215025-mpbd09c",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109215025-mpbd09c",
+														"updated": "20221109215054"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "查看日志信息 show  variables like '%log_bin%';"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221109192853-zdopixo",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221109192853-zdopixo"
+											},
+											"Children": [
+												{
+													"ID": "20221109192853-d4m2u0w",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109192853-d4m2u0w",
+														"updated": "20221109192856"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "查询日志"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221109192857-8sxrfzl",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221109192857-8sxrfzl"
+											},
+											"Children": [
+												{
+													"ID": "20221109192857-2hhbbw3",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221109192857-2hhbbw3",
+														"updated": "20221109192901"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "慢查询日志"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221109192818-i6bcjru",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221109192818-i6bcjru",
+						"updated": "20221109192824"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221109192818-4bovgwo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221109192818-4bovgwo"
+			}
+		},
+		{
+			"ID": "20221109192818-5u4un67",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221109192818-5u4un67"
+			}
+		}
+	]
+}

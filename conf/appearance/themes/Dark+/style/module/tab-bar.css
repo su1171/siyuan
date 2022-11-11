@@ -1,5 +1,5 @@
 /* 页签 */
-.layout__center > div > [data-type="wnd"][data-id] > :first-child {
+.layout__center [data-type="wnd"][data-id] > .fn__flex:first-child {
   /* 页签项 */
   justify-content: space-between;
   background-color: var(--custom-tab-bar-background-color);
@@ -35,6 +35,8 @@
   min-width: 0;
   mask-image: none;
   -webkit-mask-image: none;
+  text-align: unset;
+  flex-grow: 1;
 }
 .layout-tab-bar .item .item__close {
   padding: 4px !important;

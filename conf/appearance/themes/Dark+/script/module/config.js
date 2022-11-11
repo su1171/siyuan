@@ -591,30 +591,12 @@ export var config = {
                     random: true, // 是否随机选择自定义背景图片
                     default: false, // 是否默认使用自定义背景图片
                     light: [ // 自定义亮色背景图片 URL 列表
-                        `${THEME_PATHNAME}/image/light/background (01).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (02).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (03).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (04).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (05).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (06).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (07).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (08).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (09).jpeg`,
-                        `${THEME_PATHNAME}/image/light/background (10).jpeg`,
+                        `${THEME_PATHNAME}/image/light/background-main.jpg`,
+                        `${THEME_PATHNAME}/image/light/background-dialog.jpg`,
                     ],
                     dark: [ // 自定义暗色背景图片 URL 列表
-                        `${THEME_PATHNAME}/image/background (01).jpg`,
-                        `${THEME_PATHNAME}/image/background (02).jpg`,
-                        `${THEME_PATHNAME}/image/background (03).jpg`,
-                        `${THEME_PATHNAME}/image/background (04).jpg`,
-                        `${THEME_PATHNAME}/image/background (05).jpg`,
-                        `${THEME_PATHNAME}/image/background (06).jpg`,
-                        `${THEME_PATHNAME}/image/background (07).jpg`,
-                        `${THEME_PATHNAME}/image/background (08).jpg`,
-                        `${THEME_PATHNAME}/image/background (09).jpg`,
-                        `${THEME_PATHNAME}/image/background (10).jpg`,
-                        `${THEME_PATHNAME}/image/background (11).jpg`,
-                        `${THEME_PATHNAME}/image/background (12).jpg`,
+                        `${THEME_PATHNAME}/image/dark/background-main.jpg`,
+                        `${THEME_PATHNAME}/image/dark/background-dialog.jpg`,
                     ],
                 },
             },
@@ -829,6 +811,11 @@ export var config = {
                 goto: {
                     enable: true, // 滑块跳转浏览位置功能开关
                 },
+            },
+            focus: {
+                enable: true, // 当前光标所在块开关
+                id: 'theme-focus-block', // 当前光标所在块的 HTML 元素 id
+                className: 'theme-focus', // 光标所在块 CSS 类名
             },
             record: {
                 enable: true, // 记录浏览位置开关
@@ -1112,8 +1099,8 @@ export var config = {
                                 mode: "button",
                                 icon: "#iconPlay",
                                 label: {
-                                    zh_CN: "运行代码",
-                                    other: "Run Code",
+                                    zh_CN: "运行代码 (转义输出: ✔ 控制字符: ✔)",
+                                    other: "Run Code (Escape: ✔ cntrl: ✔)",
                                 },
                                 click: {
                                     enable: true,
@@ -1121,7 +1108,7 @@ export var config = {
                                     tasks: [
                                         {
                                             type: 'jupyter-run-code',
-                                            params: { escaped: false },
+                                            params: { escaped: true, cntrl: true },
                                         },
                                     ],
                                 },
@@ -1132,8 +1119,8 @@ export var config = {
                                 mode: "button",
                                 icon: "#iconPlay",
                                 label: {
-                                    zh_CN: "运行代码 (转义输出结果)",
-                                    other: "Run Code (Escape Output)",
+                                    zh_CN: "运行代码 (转义输出: ✔ 控制字符: ✖)",
+                                    other: "Run Code (Escape: ✔ cntrl: ✖)",
                                 },
                                 click: {
                                     enable: true,
@@ -1141,7 +1128,47 @@ export var config = {
                                     tasks: [
                                         {
                                             type: 'jupyter-run-code',
-                                            params: { escaped: true },
+                                            params: { escaped: true, cntrl: false },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: { NodeCodeBlock: { enable: true, subtype: { null: true } } },
+                                mode: "button",
+                                icon: "#iconPlay",
+                                label: {
+                                    zh_CN: "运行代码 (转义输出: ✖ 控制字符: ✔)",
+                                    other: "Run Code (Escape: ✖ cntrl: ✔)",
+                                },
+                                click: {
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'jupyter-run-code',
+                                            params: { escaped: false, cntrl: true },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: { NodeCodeBlock: { enable: true, subtype: { null: true } } },
+                                mode: "button",
+                                icon: "#iconPlay",
+                                label: {
+                                    zh_CN: "运行代码 (转义输出: ✖ 控制字符: ✖)",
+                                    other: "Run Code (Escape: ✖ cntrl: ✖)",
+                                },
+                                click: {
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'jupyter-run-code',
+                                            params: { escaped: false, cntrl: false },
                                         },
                                     ],
                                 },
@@ -1704,8 +1731,6 @@ export var config = {
                                 enable: true,
                                 type: {
                                     NodeDocument: { enable: true },
-                                    NodeList: { enable: true },
-                                    NodeTable: { enable: true },
                                 },
                                 mode: "separator",
                             },
@@ -1985,41 +2010,6 @@ export var config = {
                                             params: {
                                                 'custom-render': [
                                                     'outline',
-                                                    null,
-                                                ],
-                                            },
-                                        },
-                                    ],
-                                },
-                            },
-                            {
-                                enable: true,
-                                type: {
-                                    NodeList: {
-                                        enable: true, // 是否在该块类型启用菜单项
-                                        subtype: { // 是否在该子类型启用菜单项
-                                            u: true,
-                                            o: true,
-                                            t: true,
-                                        },
-                                    },
-                                },
-                                mode: "button",
-                                icon: "#iconIndent",
-                                label: {
-                                    zh_CN: "列表辅助线",
-                                    other: "List Guides",
-                                },
-                                accelerator: "list-guides: 1",
-                                click: {
-                                    enable: true,
-                                    callback: null,
-                                    tasks: [
-                                        {
-                                            type: 'attr-switch',
-                                            params: {
-                                                'custom-list-guides': [
-                                                    '1',
                                                     null,
                                                 ],
                                             },
