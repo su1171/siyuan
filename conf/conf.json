@@ -75,11 +75,11 @@
     "sort": 4
   },
   "editor": {
-    "fontSize": 20,
+    "fontSize": 17,
     "fontFamily": "",
     "codeSyntaxHighlightLineNum": true,
     "codeTabSpaces": 0,
-    "codeLineWrap": false,
+    "codeLineWrap": true,
     "codeLigatures": false,
     "displayBookmarkIcon": true,
     "displayNetImgMark": true,
@@ -205,7 +205,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "252px",
+              "size": "278px",
               "type": "left"
             },
             {
@@ -249,49 +249,6 @@
                       "title": "大纲"
                     },
                     {
-                      "active": true,
-                      "children": {
-                        "action": "",
-                        "blockId": "20221109192619-6vvv8b3",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221109192619-6vvv8b3",
-                        "scrollAttr": {
-                          "endId": "20221111163252-pufdl4o",
-                          "focusEnd": 0,
-                          "focusId": "20221111163252-pufdl4o",
-                          "focusStart": 0,
-                          "scrollTop": 3695.593505859375,
-                          "startId": "20221109192628-sfai0q0"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "MySQL运维篇"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221108180059-0x1dyqs",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221108180059-0x1dyqs",
-                        "scrollAttr": {
-                          "endId": "20221110093910-24cefr2",
-                          "focusEnd": 0,
-                          "focusId": "20221110093910-24cefr2",
-                          "focusStart": 0,
-                          "scrollTop": 5838,
-                          "startId": "20221108180059-78m4gci"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "tomcat"
-                    },
-                    {
                       "children": {
                         "action": "",
                         "blockId": "20221015214231-0yi6lsq",
@@ -300,7 +257,7 @@
                         "rootId": "20221015214231-0yi6lsq",
                         "scrollAttr": {
                           "endId": "20221028161802-817udny",
-                          "scrollTop": 1522,
+                          "scrollTop": 1195,
                           "startId": "20221018092605-eduqpin"
                         }
                       },
@@ -317,12 +274,9 @@
                         "mode": "wysiwyg",
                         "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221106162254-6wi0i0u",
-                          "focusEnd": 11,
-                          "focusId": "20221106181641-4j1cwi2",
-                          "focusStart": 11,
-                          "scrollTop": 4268,
-                          "startId": "20221028144506-z5l46mk"
+                          "endId": "20221022101248-ud47zdv",
+                          "scrollTop": 2991,
+                          "startId": "20221111230407-ucsygv1"
                         }
                       },
                       "docIcon": "",
@@ -332,24 +286,68 @@
                     },
                     {
                       "children": {
+                        "action": "cb-get-all",
+                        "blockId": "20220927204519-rh17aix",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20220927091552-afp35hu",
+                        "scrollAttr": {
+                          "endId": "20220927204519-rh17aix",
+                          "focusEnd": 24,
+                          "focusId": "20220927205157-6wpd2q8",
+                          "focusStart": 24,
+                          "scrollTop": 0,
+                          "startId": "20220927204519-rh17aix",
+                          "zoomInId": "20220927204519-rh17aix"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "2022年09月27日"
+                    },
+                    {
+                      "children": {
                         "action": "",
-                        "blockId": "20220924145441-ruxsjlb",
+                        "blockId": "20220925152952-913xa61",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "rootId": "20220924145441-ruxsjlb",
                         "scrollAttr": {
-                          "endId": "20221003152214-bqn1rni",
-                          "focusEnd": 100,
-                          "focusId": "20221109131232-2nhdvyl",
-                          "focusStart": 100,
-                          "scrollTop": 4675,
-                          "startId": "20221015143250-z5famdx"
+                          "endId": "20220925135233-dtqanrz",
+                          "focusEnd": 27,
+                          "focusId": "20220925193607-7nq17a2",
+                          "focusStart": 27,
+                          "scrollTop": 2823,
+                          "startId": "20220925135217-oaqshof"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
                       "title": "命令详解"
+                    },
+                    {
+                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20221109192619-6vvv8b3",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "rootId": "20221109192619-6vvv8b3",
+                        "scrollAttr": {
+                          "endId": "20221111230612-e475bto",
+                          "focusEnd": 0,
+                          "focusId": "20221113234044-nwahskb",
+                          "focusStart": 0,
+                          "scrollTop": 6124.8525390625,
+                          "startId": "20221109192628-sfai0q0"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "MySQL运维篇"
                     },
                     {
                       "children": {
@@ -437,7 +435,7 @@
         {
           "hotkeyLangId": "fileTree",
           "icon": "iconFiles",
-          "show": true,
+          "show": false,
           "size": {
             "height": 0,
             "width": 252
@@ -447,10 +445,10 @@
         {
           "hotkeyLangId": "outline",
           "icon": "iconAlignCenter",
-          "show": false,
+          "show": true,
           "size": {
             "height": 0,
-            "width": 230
+            "width": 278
           },
           "type": "outline"
         },
@@ -554,15 +552,15 @@
     "appDir": "D:\\Program Files (x86)\\siyuan\\resources",
     "confDir": "F:\\0901\\MarkDown教程\\siyuan\\conf",
     "dataDir": "F:\\0901\\MarkDown教程\\siyuan\\data",
-    "networkServe": false,
+    "networkServe": true,
     "fixedPort": false,
     "networkProxy": {
       "scheme": "",
       "host": "",
       "port": ""
     },
-    "uploadErrLog": true,
-    "disableGoogleAnalytics": false,
+    "uploadErrLog": false,
+    "disableGoogleAnalytics": true,
     "downloadInstallPkg": false
   },
   "keymap": {
