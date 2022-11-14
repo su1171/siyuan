@@ -6,7 +6,7 @@
 		"id": "20221109192619-6vvv8b3",
 		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221109192628-sfai0q0\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221111230612-e475bto\u0026quot;,\u0026quot;scrollTop\u0026quot;:438.1780090332031,\u0026quot;focusId\u0026quot;:\u0026quot;20221109192857-2hhbbw3\u0026quot;,\u0026quot;focusStart\u0026quot;:5,\u0026quot;focusEnd\u0026quot;:5}",
 		"title": "MySQL运维篇",
-		"updated": "20221114231702"
+		"updated": "20221114231057"
 	},
 	"Children": [
 		{
@@ -3345,7 +3345,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221111230615-iufvxeq",
-				"updated": "20221114231702"
+				"updated": "20221114231057"
 			},
 			"Children": [
 				{
@@ -3367,7 +3367,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221111230611-sxnjnk5",
-						"updated": "20221114231702"
+						"updated": "20221114231057"
 					},
 					"Children": [
 						{
@@ -3379,7 +3379,7 @@
 							},
 							"Properties": {
 								"id": "20221113215420-ncgbbcc",
-								"updated": "20221114231702"
+								"updated": "20221114231057"
 							},
 							"Children": [
 								{
@@ -3403,7 +3403,7 @@
 									"ListData": {},
 									"Properties": {
 										"id": "20221111230629-zu8vjby",
-										"updated": "20221114231702"
+										"updated": "20221114231057"
 									},
 									"Children": [
 										{
@@ -4283,7 +4283,6 @@
 												"Marker": "Kg=="
 											},
 											"Properties": {
-												"fold": "1",
 												"id": "20221113223033-sb8ivog"
 											},
 											"Children": [
@@ -4405,7 +4404,7 @@
 											},
 											"Properties": {
 												"id": "20221113224314-ofir4oz",
-												"updated": "20221114231702"
+												"updated": "20221114231057"
 											},
 											"Children": [
 												{
@@ -4429,7 +4428,7 @@
 													"ListData": {},
 													"Properties": {
 														"id": "20221113224326-gecygvx",
-														"updated": "20221114231702"
+														"updated": "20221114231057"
 													},
 													"Children": [
 														{
@@ -4695,7 +4694,7 @@
 															"Properties": {
 																"fold": "0",
 																"id": "20221114092230-ehbwnvi",
-																"updated": "20221114231702"
+																"updated": "20221114231057"
 															},
 															"Children": [
 																{
@@ -4719,7 +4718,7 @@
 																	"ListData": {},
 																	"Properties": {
 																		"id": "20221114092240-2n4s3b4",
-																		"updated": "20221114231702"
+																		"updated": "20221114231057"
 																	},
 																	"Children": [
 																		{
@@ -5580,7 +5579,7 @@
 																			"Properties": {
 																				"fold": "0",
 																				"id": "20221114213140-lnyb3cx",
-																				"updated": "20221114231702"
+																				"updated": "20221114231057"
 																			},
 																			"Children": [
 																				{
@@ -5617,7 +5616,7 @@
 																					"ListData": {},
 																					"Properties": {
 																						"id": "20221114225145-6pwjc9m",
-																						"updated": "20221114231702"
+																						"updated": "20221114231057"
 																					},
 																					"Children": [
 																						{
@@ -6740,9 +6739,9 @@
 																								"Marker": "Kg=="
 																							},
 																							"Properties": {
-																								"fold": "1",
+																								"fold": "0",
 																								"id": "20221114225211-1lto9uw",
-																								"updated": "20221114231702"
+																								"updated": "20221114231057"
 																							},
 																							"Children": [
 																								{
@@ -6783,7 +6782,7 @@
 																									"Type": "NodeParagraph",
 																									"Properties": {
 																										"id": "20221114230832-9bedfx2",
-																										"updated": "20221114231702"
+																										"updated": "20221114231057"
 																									},
 																									"Children": [
 																										{
@@ -6794,8 +6793,8 @@
 																											"Type": "NodeImage",
 																											"Data": "span",
 																											"Properties": {
-																												"parent-style": "max-width: 631px;",
-																												"style": "width: 621px;"
+																												"parent-style": "max-width: 767px; display: block;",
+																												"style": "width: 757px;"
 																											},
 																											"Children": [
 																												{
@@ -6816,7 +6815,7 @@
 																												},
 																												{
 																													"Type": "NodeLinkDest",
-																													"Data": "assets/image-20221114231702-3ad6e1q.png"
+																													"Data": "assets/image-20221114230834-zkgviv9.png"
 																												},
 																												{
 																													"Type": "NodeCloseParen"
@@ -6825,11 +6824,7 @@
 																										},
 																										{
 																											"Type": "NodeKramdownSpanIAL",
-																											"Data": "{: style=\"width: 621px;\" parent-style=\"max-width: 631px;\"}"
-																										},
-																										{
-																											"Type": "NodeText",
-																											"Data": "​"
+																											"Data": "{: style=\"width: 757px;\" parent-style=\"max-width: 767px; display: block;\"}"
 																										}
 																									]
 																								},

@@ -5,9 +5,9 @@
 	"Properties": {
 		"custom-render": "outline",
 		"id": "20220927222811-w84kvtc",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20220927223200-1o9723c\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221114101626-o1im7q9\u0026quot;,\u0026quot;scrollTop\u0026quot;:1580.9462890625,\u0026quot;focusId\u0026quot;:\u0026quot;20220930163813-iwvsu3b\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0,\u0026quot;zoomInId\u0026quot;:\u0026quot;20220927223200-1o9723c\u0026quot;}",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20220927223200-1o9723c\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221028152409-nvii5ir\u0026quot;,\u0026quot;scrollTop\u0026quot;:0,\u0026quot;focusId\u0026quot;:\u0026quot;20220927223200-1o9723c\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0,\u0026quot;zoomInId\u0026quot;:\u0026quot;20220927223200-1o9723c\u0026quot;}",
 		"title": "2022年09月27日",
-		"updated": "20221114101601"
+		"updated": "20221114124118"
 	},
 	"Children": [
 		{
@@ -476,7 +476,6 @@
 					"Type": "NodeParagraph",
 					"Properties": {
 						"id": "20221114100027-zbaojbz",
-						"style": "background-color: var(--b3-font-background9);",
 						"updated": "20221114100027"
 					},
 					"Children": [
@@ -493,7 +492,6 @@
 						"custom-20221114100123-1dhunon": "true",
 						"custom-20221114101601-6damn12": "true",
 						"id": "20221114100027-528ml2i",
-						"style": "background-color: var(--b3-font-background9);",
 						"updated": "20221114101601"
 					},
 					"Children": [
@@ -503,16 +501,9 @@
 						},
 						{
 							"Type": "NodeTextMark",
-							"Properties": {
-								"parent-style": "background-color: var(--b3-font-background9);"
-							},
 							"TextMarkType": "inline-memo",
 							"TextMarkInlineMemoContent": "12345672345234",
 							"TextMarkTextContent": "customer"
-						},
-						{
-							"Type": "NodeKramdownSpanIAL",
-							"Data": "{: parent-style=\"background-color: var(--b3-font-background9);\"}"
 						},
 						{
 							"Type": "NodeText",
@@ -521,7 +512,6 @@
 						{
 							"Type": "NodeTextMark",
 							"Properties": {
-								"parent-style": "background-color: var(--b3-font-background9);",
 								"style": "quote-20221114100123-1dhunon"
 							},
 							"TextMarkType": "strong",
@@ -529,7 +519,7 @@
 						},
 						{
 							"Type": "NodeKramdownSpanIAL",
-							"Data": "{: style=\"quote-20221114100123-1dhunon\" parent-style=\"background-color: var(--b3-font-background9);\"}"
+							"Data": "{: style=\"quote-20221114100123-1dhunon\"}"
 						},
 						{
 							"Type": "NodeText",
@@ -538,7 +528,6 @@
 						{
 							"Type": "NodeTextMark",
 							"Properties": {
-								"parent-style": "background-color: var(--b3-font-background9);",
 								"style": "quote-20221114101601-6damn12"
 							},
 							"TextMarkType": "strong",
@@ -546,7 +535,7 @@
 						},
 						{
 							"Type": "NodeKramdownSpanIAL",
-							"Data": "{: style=\"quote-20221114101601-6damn12\" parent-style=\"background-color: var(--b3-font-background9);\"}"
+							"Data": "{: style=\"quote-20221114101601-6damn12\"}"
 						},
 						{
 							"Type": "NodeText",

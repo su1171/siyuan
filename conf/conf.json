@@ -221,7 +221,7 @@
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
                           "endId": "20221004142308-23yg4ez",
-                          "scrollTop": 2380,
+                          "scrollTop": 2379,
                           "startId": "20221011153643-4fuy2wd"
                         }
                       },
@@ -249,24 +249,7 @@
                       "title": "大纲"
                     },
                     {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015214231-0yi6lsq",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20221015214231-0yi6lsq",
-                        "scrollAttr": {
-                          "endId": "20221028161802-817udny",
-                          "scrollTop": 1195,
-                          "startId": "20221018092605-eduqpin"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql资料库"
-                    },
-                    {
+                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20221015213822-vs8hvq7",
@@ -274,9 +257,12 @@
                         "mode": "wysiwyg",
                         "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221022101248-ud47zdv",
-                          "scrollTop": 2991,
-                          "startId": "20221111230407-ucsygv1"
+                          "endId": "20221113105458-6ks6ndr",
+                          "focusEnd": 3,
+                          "focusId": "20221111221613-club07u",
+                          "focusStart": 3,
+                          "scrollTop": 4720.93017578125,
+                          "startId": "20221029112207-pc4kh84"
                         }
                       },
                       "docIcon": "",
@@ -328,7 +314,6 @@
                       "title": "命令详解"
                     },
                     {
-                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20221109192619-6vvv8b3",
@@ -336,11 +321,11 @@
                         "mode": "wysiwyg",
                         "rootId": "20221109192619-6vvv8b3",
                         "scrollAttr": {
-                          "endId": "20221111230612-e475bto",
-                          "focusEnd": 0,
-                          "focusId": "20221113234044-nwahskb",
-                          "focusStart": 0,
-                          "scrollTop": 6124.8525390625,
+                          "endId": "20221114092349-2k5hg2h",
+                          "focusEnd": 10,
+                          "focusId": "20221114213140-p8nuq4x",
+                          "focusStart": 10,
+                          "scrollTop": 5866,
                           "startId": "20221109192628-sfai0q0"
                         }
                       },
@@ -348,27 +333,6 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "MySQL运维篇"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20220924204553-h4rr7p5",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "rootId": "20220924204553-h4rr7p5",
-                        "scrollAttr": {
-                          "endId": "20221013100214-s9ww0kz",
-                          "focusEnd": 0,
-                          "focusId": "20220926152037-t3vrc6k",
-                          "focusStart": 0,
-                          "scrollTop": 16573,
-                          "startId": "20220926152129-btlc3wz"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "资料库"
                     }
                   ],
                   "height": "",

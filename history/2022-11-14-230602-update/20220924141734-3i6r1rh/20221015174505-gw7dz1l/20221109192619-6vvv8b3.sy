@@ -6,7 +6,7 @@
 		"id": "20221109192619-6vvv8b3",
 		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221109192628-sfai0q0\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221111230612-e475bto\u0026quot;,\u0026quot;scrollTop\u0026quot;:438.1780090332031,\u0026quot;focusId\u0026quot;:\u0026quot;20221109192857-2hhbbw3\u0026quot;,\u0026quot;focusStart\u0026quot;:5,\u0026quot;focusEnd\u0026quot;:5}",
 		"title": "MySQL运维篇",
-		"updated": "20221114231702"
+		"updated": "20221114225201"
 	},
 	"Children": [
 		{
@@ -3345,7 +3345,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221111230615-iufvxeq",
-				"updated": "20221114231702"
+				"updated": "20221114225201"
 			},
 			"Children": [
 				{
@@ -3367,7 +3367,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221111230611-sxnjnk5",
-						"updated": "20221114231702"
+						"updated": "20221114225201"
 					},
 					"Children": [
 						{
@@ -3379,7 +3379,7 @@
 							},
 							"Properties": {
 								"id": "20221113215420-ncgbbcc",
-								"updated": "20221114231702"
+								"updated": "20221114225201"
 							},
 							"Children": [
 								{
@@ -3403,7 +3403,7 @@
 									"ListData": {},
 									"Properties": {
 										"id": "20221111230629-zu8vjby",
-										"updated": "20221114231702"
+										"updated": "20221114225201"
 									},
 									"Children": [
 										{
@@ -4283,7 +4283,6 @@
 												"Marker": "Kg=="
 											},
 											"Properties": {
-												"fold": "1",
 												"id": "20221113223033-sb8ivog"
 											},
 											"Children": [
@@ -4405,7 +4404,7 @@
 											},
 											"Properties": {
 												"id": "20221113224314-ofir4oz",
-												"updated": "20221114231702"
+												"updated": "20221114225201"
 											},
 											"Children": [
 												{
@@ -4429,7 +4428,7 @@
 													"ListData": {},
 													"Properties": {
 														"id": "20221113224326-gecygvx",
-														"updated": "20221114231702"
+														"updated": "20221114225201"
 													},
 													"Children": [
 														{
@@ -4695,7 +4694,7 @@
 															"Properties": {
 																"fold": "0",
 																"id": "20221114092230-ehbwnvi",
-																"updated": "20221114231702"
+																"updated": "20221114225201"
 															},
 															"Children": [
 																{
@@ -4719,7 +4718,7 @@
 																	"ListData": {},
 																	"Properties": {
 																		"id": "20221114092240-2n4s3b4",
-																		"updated": "20221114231702"
+																		"updated": "20221114225201"
 																	},
 																	"Children": [
 																		{
@@ -5580,7 +5579,7 @@
 																			"Properties": {
 																				"fold": "0",
 																				"id": "20221114213140-lnyb3cx",
-																				"updated": "20221114231702"
+																				"updated": "20221114225201"
 																			},
 																			"Children": [
 																				{
@@ -5617,7 +5616,7 @@
 																					"ListData": {},
 																					"Properties": {
 																						"id": "20221114225145-6pwjc9m",
-																						"updated": "20221114231702"
+																						"updated": "20221114225201"
 																					},
 																					"Children": [
 																						{
@@ -6740,9 +6739,7 @@
 																								"Marker": "Kg=="
 																							},
 																							"Properties": {
-																								"fold": "1",
-																								"id": "20221114225211-1lto9uw",
-																								"updated": "20221114231702"
+																								"id": "20221114225211-1lto9uw"
 																							},
 																							"Children": [
 																								{
@@ -6764,141 +6761,34 @@
 																									"Type": "NodeParagraph",
 																									"Properties": {
 																										"id": "20221114230509-aev3ulz",
-																										"updated": "20221114231043"
+																										"updated": "20221114230557"
 																									},
 																									"Children": [
 																										{
 																											"Type": "NodeText",
-																											"Data": "user标签主要是当前mycat中间件的"
-																										},
-																										{
-																											"Type": "NodeTextMark",
-																											"TextMarkType": "strong",
-																											"TextMarkTextContent": "用户及权限管理"
+																											"Data": "user标签主要是当前mycat中间件的用户管理配置"
 																										}
 																									]
-																								},
+																								}
+																							]
+																						},
+																						{
+																							"ID": "20221114230602-ku2ps5m",
+																							"Type": "NodeListItem",
+																							"ListData": {
+																								"BulletChar": 42,
+																								"Marker": "Kg=="
+																							},
+																							"Properties": {
+																								"id": "20221114230602-ku2ps5m"
+																							},
+																							"Children": [
 																								{
-																									"ID": "20221114230832-9bedfx2",
+																									"ID": "20221114230602-76slbcx",
 																									"Type": "NodeParagraph",
 																									"Properties": {
-																										"id": "20221114230832-9bedfx2",
-																										"updated": "20221114231702"
-																									},
-																									"Children": [
-																										{
-																											"Type": "NodeText",
-																											"Data": "​"
-																										},
-																										{
-																											"Type": "NodeImage",
-																											"Data": "span",
-																											"Properties": {
-																												"parent-style": "max-width: 631px;",
-																												"style": "width: 621px;"
-																											},
-																											"Children": [
-																												{
-																													"Type": "NodeBang"
-																												},
-																												{
-																													"Type": "NodeOpenBracket"
-																												},
-																												{
-																													"Type": "NodeLinkText",
-																													"Data": "image"
-																												},
-																												{
-																													"Type": "NodeCloseBracket"
-																												},
-																												{
-																													"Type": "NodeOpenParen"
-																												},
-																												{
-																													"Type": "NodeLinkDest",
-																													"Data": "assets/image-20221114231702-3ad6e1q.png"
-																												},
-																												{
-																													"Type": "NodeCloseParen"
-																												}
-																											]
-																										},
-																										{
-																											"Type": "NodeKramdownSpanIAL",
-																											"Data": "{: style=\"width: 621px;\" parent-style=\"max-width: 631px;\"}"
-																										},
-																										{
-																											"Type": "NodeText",
-																											"Data": "​"
-																										}
-																									]
-																								},
-																								{
-																									"ID": "20221114231111-ml0fj09",
-																									"Type": "NodeList",
-																									"ListData": {},
-																									"Properties": {
-																										"id": "20221114231111-ml0fj09",
-																										"updated": "20221114231141"
-																									},
-																									"Children": [
-																										{
-																											"ID": "20221114231108-0cj0avf",
-																											"Type": "NodeListItem",
-																											"ListData": {
-																												"BulletChar": 42,
-																												"Marker": "Kg=="
-																											},
-																											"Properties": {
-																												"fold": "1",
-																												"id": "20221114231108-0cj0avf",
-																												"updated": "20221114231141"
-																											},
-																											"Children": [
-																												{
-																													"ID": "20221114231108-wkuy4xy",
-																													"Type": "NodeParagraph",
-																													"Properties": {
-																														"id": "20221114231108-wkuy4xy",
-																														"updated": "20221114231121"
-																													},
-																													"Children": [
-																														{
-																															"Type": "NodeText",
-																															"Data": "user标签代码"
-																														}
-																													]
-																												},
-																												{
-																													"ID": "20221114231121-pf7nloe",
-																													"Type": "NodeCodeBlock",
-																													"IsFencedCodeBlock": true,
-																													"Properties": {
-																														"id": "20221114231121-pf7nloe",
-																														"updated": "20221114231141"
-																													},
-																													"Children": [
-																														{
-																															"Type": "NodeCodeBlockFenceOpenMarker",
-																															"Data": "```"
-																														},
-																														{
-																															"Type": "NodeCodeBlockFenceInfoMarker",
-																															"CodeBlockInfo": "eG1s"
-																														},
-																														{
-																															"Type": "NodeCodeBlockCode",
-																															"Data": "\u003c!-- 登录mycat的用户名；密码；schemas：这个用户可以访问的逻辑数据库 --\u003e\n\t\u003cuser name=\"root\" defaultAccount=\"true\"\u003e\n\t\t\u003cproperty name=\"password\"\u003e123456\u003c/property\u003e\n\t\t\u003cproperty name=\"schemas\"\u003eTESTDB\u003c/property\u003e\n\t\n\t\t\u003c!-- 表级 DML 权限设置 --\u003e\n\t\t\u003c!-- \t\n\t\t\u003cprivileges check=\"false\"\u003e\n\t\t\t\u003cschema name=\"TESTDB\" dml=\"0110\" \u003e\n\t\t\t\t\u003ctable name=\"tb01\" dml=\"0000\"\u003e\u003c/table\u003e\n\t\t\t\t\u003ctable name=\"tb02\" dml=\"1111\"\u003e\u003c/table\u003e\n\t\t\t\u003c/schema\u003e\n\t\t\u003c/privileges\u003e\t\n\t\t --\u003e\n\t\u003c/user\u003e\n\t\u003c!-- 登录mycat的用户名；密码；schemas：这个用户可以访问的逻辑数据库；readonly：这个用户只能读 --\u003e\n\t\u003cuser name=\"user\"\u003e\n\t\t\u003cproperty name=\"password\"\u003euser\u003c/property\u003e\n\t\t\u003cproperty name=\"schemas\"\u003eTESTDB\u003c/property\u003e\n\t\t\u003cproperty name=\"readOnly\"\u003etrue\u003c/property\u003e\n\t\u003c/user\u003e\n"
-																														},
-																														{
-																															"Type": "NodeCodeBlockFenceCloseMarker",
-																															"Data": "```"
-																														}
-																													]
-																												}
-																											]
-																										}
-																									]
+																										"id": "20221114230602-76slbcx"
+																									}
 																								}
 																							]
 																						}
