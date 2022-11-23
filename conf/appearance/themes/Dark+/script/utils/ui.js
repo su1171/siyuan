@@ -18,29 +18,36 @@ import {
     editBlockKramdown,
 } from './markdown.js';
 import {
+    getEditor,
     getEditors,
     setBlockDOMAttrs,
     countElementIndex,
     getTooltipDirection,
     setTooltipDirection,
+    requestFullscreen,
 } from './dom.js';
 import { Iterator } from './misc.js';
 import { drag } from './drag.js';
 import { compareVersion } from './string.js';
 import {
+    sql,
     getBlockBreadcrumb,
     getBlockByID,
     getBlockAttrs,
+    getBlockIndex,
     setBlockAttrs,
     pushMsg,
     pushErrMsg,
 } from './api.js';
 
 import {
-    runCode,
+    getConf,
+    runCell,
+    restartKernel,
     closeConnection,
 } from '/appearance/themes/Dark+/app/jupyter/js/run.js';
 
+const jupyterConf = getConf();
 var toolbarItemList = [];
 
 /**
@@ -852,10 +859,30 @@ const TASK_HANDLER = {
     },
     /* 处理输入框内容 */
     'handle-input-value': async (e, id, params) => params.handler(e, id, params),
-    /* 运行代码 */
-    'jupyter-run-code': runCode,
     /* 关闭会话 */
     'jupyter-close-connection': closeConnection,
+    /* 重启内核 */
+    'jupyter-restart-kernel': restartKernel,
+    /* 运行单元格 */
+    'jupyter-run-cell': runCell,
+    /* 运行所有单元格 */
+    'jupyter-run-all-cells': async (e, id, params) => {
+        const stmt = `SELECT a.block_id FROM attributes AS a WHERE a.root_id = '${id}' AND a.name = '${jupyterConf.jupyter.attrs.code.type.key}' AND a.value = '${jupyterConf.jupyter.attrs.code.type.value}';`;
+        const rows = await sql(stmt);
+        if (rows && rows.length > 0) {
+            for (let i = 0; i < rows.length; ++i) {
+                const index = await getBlockIndex(rows[i].block_id);
+                if (!index) return;
+                rows[i].index = index;
+            }
+            rows.sort((a, b) => a.index - b.index);
+            const call = async i => {
+                if (i < rows.length)
+                    runCell(e, rows[i].block_id, params, async _ => call(i + 1));
+            };
+            call(0);
+        }
+    },
     /* 归档页签 */
     'tab-archive': async (e, id, params) => {
         const editors = getEditors().filter(editor => {
@@ -873,10 +900,14 @@ const TASK_HANDLER = {
         }
         else pushErrMsg(params.message.error);
     },
+    /* 全屏显示 iframe 块/挂件块 */
+    'full-screen': async (e, id, params) => {
+        requestFullscreen(id);
+    },
     /* 显示嵌入块查询结果的路径 */
     // REF [思源笔记渲染 SQL 文档路径代码 - 链滴](https://ld246.com/article/1665129901544)
+    // @deprecated
     'show-hpath': async (e, id, params) => {
-        // TODO
         /* 定位到嵌入块的 DOM */
         document.querySelectorAll(`.render-node[data-node-id="${id}"]`).forEach(block => {
             const callback = () => {

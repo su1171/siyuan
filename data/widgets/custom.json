@@ -36,7 +36,7 @@
             },
             "toolbar-theme-typewriter-switch": {
                 "default": false,
-                "state": false
+                "state": true
             },
             "toolbar-theme-dock-fold": {
                 "default": false,

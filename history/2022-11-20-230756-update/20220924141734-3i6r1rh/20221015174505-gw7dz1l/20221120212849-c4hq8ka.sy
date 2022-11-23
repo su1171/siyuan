@@ -1,0 +1,420 @@
+{
+	"ID": "20221120212849-c4hq8ka",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221120212849-c4hq8ka",
+		"title": "redis",
+		"updated": "20221120230202"
+	},
+	"Children": [
+		{
+			"ID": "20221120212907-ty8yby5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120212907-ty8yby5"
+			}
+		},
+		{
+			"ID": "20221120212930-qxm7vsx",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221120212930-qxm7vsx",
+				"updated": "20221120230202"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221120212909-4dais19",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221120212909-4dais19",
+						"updated": "20221120230202"
+					},
+					"Children": [
+						{
+							"ID": "20221120212932-wq89tf6",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221120212932-wq89tf6",
+								"updated": "20221120230202"
+							},
+							"Children": [
+								{
+									"ID": "20221120212932-lnif1um",
+									"Type": "NodeHeading",
+									"HeadingLevel": 1,
+									"Properties": {
+										"id": "20221120212932-lnif1um",
+										"updated": "20221120212945"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "redis安装"
+										}
+									]
+								},
+								{
+									"ID": "20221120212946-cld8u0m",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221120212946-cld8u0m",
+										"updated": "20221120230202"
+									},
+									"Children": [
+										{
+											"ID": "20221120212958-mjtwx8t",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221120212958-mjtwx8t",
+												"updated": "20221120212958"
+											},
+											"Children": [
+												{
+													"ID": "20221120212958-hdde78e",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120212958-hdde78e",
+														"updated": "20221120213007"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "前置条件"
+														}
+													]
+												},
+												{
+													"ID": "20221120213008-1viqr77",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120213008-1viqr77",
+														"updated": "20221120213522"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "gcc编译器"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221120213510-bhsrsbe",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221120213510-bhsrsbe"
+											},
+											"Children": [
+												{
+													"ID": "20221120213510-6q96ozv",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120213510-6q96ozv",
+														"updated": "20221120213537"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "编译安装redis"
+														}
+													]
+												},
+												{
+													"ID": "20221120213538-pkizs3k",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221120213538-pkizs3k",
+														"updated": "20221120225747"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c2g="
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "tar zxvf redis-4.0.9.tar.gz\ncd redis-4.0.9\nmake\nmake install\n# 默认安装路径\t/usr/local/bin\n\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221120225804-nnp4av7",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221120225804-nnp4av7"
+											},
+											"Children": [
+												{
+													"ID": "20221120225804-o7p1cb5",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120225804-o7p1cb5",
+														"updated": "20221120225831"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis目录"
+														}
+													]
+												},
+												{
+													"ID": "20221120225833-tg4rhka",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120225833-tg4rhka",
+														"updated": "20221120225914"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis-benchmark //用于进行redis性能测试的工具"
+														}
+													]
+												},
+												{
+													"ID": "20221120225915-f36jj3z",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120225915-f36jj3z",
+														"updated": "20221120225929"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis-check-dump //用于修复出问题的dump.rdb文件"
+														}
+													]
+												},
+												{
+													"ID": "20221120225934-etysxfn",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120225934-etysxfn",
+														"updated": "20221120225934"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis-cli //redis的客户端"
+														}
+													]
+												},
+												{
+													"ID": "20221120225941-1vojln4",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120225941-1vojln4",
+														"updated": "20221120225950"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis-server //redis的服务端"
+														}
+													]
+												},
+												{
+													"ID": "20221120225951-2whsjwp",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120225951-2whsjwp",
+														"updated": "20221120225956"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis-check-aof //用于修复出问题的AOF文件"
+														}
+													]
+												},
+												{
+													"ID": "20221120230001-18gvqdo",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120230001-18gvqdo",
+														"updated": "20221120230002"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis-sentinel //用于集群管理"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221120230020-uf9g547",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221120230020-uf9g547",
+												"updated": "20221120230202"
+											},
+											"Children": [
+												{
+													"ID": "20221120230020-d6l62ev",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120230020-d6l62ev",
+														"updated": "20221120230027"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "redis启动方式"
+														}
+													]
+												},
+												{
+													"ID": "20221120230027-1fik1x5",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120230027-1fik1x5",
+														"updated": "20221120230144"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "前台启动"
+														}
+													]
+												},
+												{
+													"ID": "20221120230048-mauh5lx",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120230048-mauh5lx",
+														"updated": "20221120230202"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "执行命令 redis-server"
+														}
+													]
+												},
+												{
+													"ID": "20221120230033-g6phzme",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120230033-g6phzme",
+														"updated": "20221120230146"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "后台启动（推荐）"
+														}
+													]
+												},
+												{
+													"ID": "20221120230040-zy1rlxl",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221120230040-zy1rlxl"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221120212917-n0mswal",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221120212917-n0mswal",
+						"updated": "20221120212931"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221120212918-pdo0dut",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120212918-pdo0dut"
+			}
+		},
+		{
+			"ID": "20221120212918-jx7zooy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120212918-jx7zooy"
+			}
+		},
+		{
+			"ID": "20221120212918-dcuo7kg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120212918-dcuo7kg"
+			}
+		},
+		{
+			"ID": "20221120212918-mhvifvu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120212918-mhvifvu"
+			}
+		},
+		{
+			"ID": "20221120212849-rp1tu8d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120212849-rp1tu8d",
+				"updated": "20221120212849"
+			}
+		}
+	]
+}

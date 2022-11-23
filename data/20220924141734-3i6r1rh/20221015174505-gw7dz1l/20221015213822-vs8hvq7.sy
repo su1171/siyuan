@@ -6,7 +6,7 @@
 		"id": "20221015213822-vs8hvq7",
 		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221027112639-kj94r96\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221106160013-2c9kv57\u0026quot;,\u0026quot;scrollTop\u0026quot;:3400,\u0026quot;focusId\u0026quot;:\u0026quot;20221106190628-xtw9qzz\u0026quot;,\u0026quot;focusStart\u0026quot;:5,\u0026quot;focusEnd\u0026quot;:5}",
 		"title": "sql详解",
-		"updated": "20221113200527"
+		"updated": "20221116213441"
 	},
 	"Children": [
 		{
@@ -3926,7 +3926,7 @@
 								"Num": -1
 							},
 							"Properties": {
-								"fold": "1",
+								"fold": "0",
 								"id": "20221022155309-5dbxft7",
 								"updated": "20221022170055"
 							},
@@ -4059,7 +4059,7 @@
 								"Num": -1
 							},
 							"Properties": {
-								"fold": "1",
+								"fold": "0",
 								"id": "20221022163617-r18zbpe",
 								"updated": "20221022170109"
 							},
@@ -8663,11 +8663,2388 @@
 			}
 		},
 		{
+			"ID": "20221115210653-nqems7x",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221115210653-nqems7x",
+				"updated": "20221116130311"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221115210648-7msloec",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221115210648-7msloec",
+						"updated": "20221116130311"
+					},
+					"Children": [
+						{
+							"ID": "20221115210654-0pts6eh",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221115210654-0pts6eh",
+								"updated": "20221115210654"
+							},
+							"Children": [
+								{
+									"ID": "20221115210654-fzwchuz",
+									"Type": "NodeHeading",
+									"HeadingLevel": 2,
+									"Properties": {
+										"id": "20221115210654-fzwchuz",
+										"updated": "20221115210707"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "mysql"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "约束"
+										}
+									]
+								},
+								{
+									"ID": "20221115210659-3l7qjby",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221115210659-3l7qjby",
+										"updated": "20221115211121"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "约束概述"
+										}
+									]
+								},
+								{
+									"ID": "20221115211121-5znwfoq",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221115211121-5znwfoq",
+										"updated": "20221115211128"
+									},
+									"Children": [
+										{
+											"ID": "20221115211128-xjlgums",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221115211128-xjlgums",
+												"updated": "20221115211128"
+											},
+											"Children": [
+												{
+													"ID": "20221115211128-fzhhwtk",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211128-fzhhwtk",
+														"updated": "20221115211136"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "为什么需要约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115211136-xuu80vk",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211136-xuu80vk",
+														"updated": "20221115211138"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "数据完整性（D"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "at"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "a Integrity）是指数据的精确性（Accuracy）和可靠性（Reliability）。"
+														}
+													]
+												},
+												{
+													"ID": "20221115211143-qh6w3zv",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211143-qh6w3zv"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "它是防止数据库中 存在不符合语义规定的数据和防止因错误信息的输入输出造成无效操作或错误信息而提出的。"
+														}
+													]
+												},
+												{
+													"ID": "20221115211154-n983mbu",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211154-n983mbu",
+														"updated": "20221115211406"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "为了保证数据的完整性，SQL规范"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "以约束的方式对表数据进行额外的条件限制"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "。从以下四个方面考虑："
+														}
+													]
+												},
+												{
+													"ID": "20221115211330-lud7pus",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211330-lud7pus",
+														"updated": "20221115211350"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "实体完整性"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "（Entity Integrity） ：例如，同一个表中，不能存在两条完全相同无法区分的记录 "
+														}
+													]
+												},
+												{
+													"ID": "20221115211338-mds7sql",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211338-mds7sql",
+														"updated": "20221115211352"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "域完整性"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "（Domain Integrity） ：例如：年龄范围0-120，性别范围“男/女” "
+														}
+													]
+												},
+												{
+													"ID": "20221115211340-30pt49c",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211340-30pt49c",
+														"updated": "20221115211354"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "引用完整性"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "（Referential Integrity） ：例如：员工所在部门，在部门表中要能找到这个部门 "
+														}
+													]
+												},
+												{
+													"ID": "20221115211343-58iwgb3",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115211343-58iwgb3",
+														"updated": "20221115211356"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "用户自定义完整性"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "（User-defined Integrity） ：例如：用户名唯一、密码不能为空等，本部门 经理的工资不得高于本部门职工的平均工资的5倍。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115212243-1uqtvqq",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221115212243-1uqtvqq"
+											},
+											"Children": [
+												{
+													"ID": "20221115212243-0q8yp0t",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115212243-0q8yp0t",
+														"updated": "20221115212251"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "约束的定义"
+														}
+													]
+												},
+												{
+													"ID": "20221115212252-vdbmfit",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115212252-vdbmfit",
+														"updated": "20221115212321"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "对表中的字段的限制"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115212354-rmm9m76",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221115212354-rmm9m76"
+											},
+											"Children": [
+												{
+													"ID": "20221115212354-ocr7qrd",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115212354-ocr7qrd",
+														"updated": "20221115212403"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "约束的分类"
+														}
+													]
+												},
+												{
+													"ID": "20221115212403-j6qyh1r",
+													"Type": "NodeIFrame",
+													"Data": "\u003ciframe sandbox=\"allow-forms allow-presentation allow-same-origin allow-scripts allow-modals\" src=\"https://www.jianguoyun.com/p/DY82JB8Qkr6GCxi6tuUEIAA\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 1135px; height: 432px;\"\u003e\u003c/iframe\u003e",
+													"Properties": {
+														"id": "20221115212403-j6qyh1r",
+														"updated": "20221115213617"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221115213828-1tej64t",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"fold": "1",
+								"id": "20221115213828-1tej64t"
+							},
+							"Children": [
+								{
+									"ID": "20221115213828-u3zw3xz",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221115213828-u3zw3xz",
+										"updated": "20221115214529"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "not null (非空约束)"
+										}
+									]
+								},
+								{
+									"ID": "20221115214530-4q8ttey",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221115214530-4q8ttey",
+										"updated": "20221115214559"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "作用：限制某个字段的值不能为空"
+										}
+									]
+								},
+								{
+									"ID": "20221115214600-1q114tc",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221115214600-1q114tc",
+										"updated": "20221115214716"
+									},
+									"Children": [
+										{
+											"ID": "20221115214716-99ls8cn",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221115214716-99ls8cn",
+												"updated": "20221115214716"
+											},
+											"Children": [
+												{
+													"ID": "20221115214716-mimd4dk",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115214716-mimd4dk",
+														"updated": "20221115214716"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "特点："
+														}
+													]
+												},
+												{
+													"ID": "20221115214646-pvbaknm",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115214646-pvbaknm",
+														"updated": "20221115214652"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "默认所有的类型的值都可以是NULL，包括INT、FLO"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "AT"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "等数据类型 "
+														}
+													]
+												},
+												{
+													"ID": "20221115214655-29duhws",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115214655-29duhws",
+														"updated": "20221115214947"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "非空约束只能出现在表对象的列上，只能某个列单独限定非空，"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "不能组合非空"
+														}
+													]
+												},
+												{
+													"ID": "20221115214701-puq9xmx",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115214701-puq9xmx"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": " 一个表可以有很多列都分别限定了非空 空字符串''不等于NULL，0也不等于NULL"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115214724-2lopnrt",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221115214724-2lopnrt"
+											},
+											"Children": [
+												{
+													"ID": "20221115214724-tatre6x",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115214724-tatre6x",
+														"updated": "20221115215105"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "添加非空约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115215116-e5q68af",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115215116-e5q68af",
+														"updated": "20221115215551"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "建表时添加约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115215106-gb0y16j",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115215106-gb0y16j",
+														"updated": "20221115215114"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "CREATE TABLE 表名称(\n字段名 数据类型,\n字段名 数据类型 NOT NULL,\n字段名 数据类型 NOT NULL\n);\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												},
+												{
+													"ID": "20221115215552-c58rant",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115215552-c58rant",
+														"updated": "20221115215713"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "建表后添加约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115215615-8qtbzd8",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115215615-8qtbzd8",
+														"updated": "20221115215648"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "alter table 表名称 modify 字段名 数据类型 not null;\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115215951-xn4gjus",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221115215951-xn4gjus"
+											},
+											"Children": [
+												{
+													"ID": "20221115215951-yj7uc6e",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115215951-yj7uc6e",
+														"updated": "20221115220000"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "删除非空约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115220001-huylcoh",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115220001-huylcoh",
+														"updated": "20221115220043"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "# 方法1\nalter table 表名称 modify 字段名 数据类型 NULL;\t\t#去掉not null，相当于修改某个非注解字段，该字段允许为空\n# 方法2\nalter table 表名称 modify 字段名 数据类型;\t\t\t#去掉not null，相当于修改某个非注解字段，该字段允许为空\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221115220219-b0zuqig",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"fold": "1",
+								"id": "20221115220219-b0zuqig",
+								"updated": "20221115223040"
+							},
+							"Children": [
+								{
+									"ID": "20221115220219-lmdsgne",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221115220219-lmdsgne",
+										"updated": "20221115220244"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "unique (唯一性约束)"
+										}
+									]
+								},
+								{
+									"ID": "20221115220246-blljrfh",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221115220246-blljrfh",
+										"updated": "20221115220311"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "用来限制某个字段的值不能重复"
+										}
+									]
+								},
+								{
+									"ID": "20221115220311-toa3elb",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221115220311-toa3elb",
+										"updated": "20221115223040"
+									},
+									"Children": [
+										{
+											"ID": "20221115220336-qwscpvq",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221115220336-qwscpvq",
+												"updated": "20221115220336"
+											},
+											"Children": [
+												{
+													"ID": "20221115220336-088k0ec",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220336-088k0ec",
+														"updated": "20221115220336"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "特点："
+														}
+													]
+												},
+												{
+													"ID": "20221115220338-cxqna33",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220338-cxqna33",
+														"updated": "20221115220419"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "\t同一个表"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "可以有多个唯一约束"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "。 "
+														}
+													]
+												},
+												{
+													"ID": "20221115220404-ja5s6rv",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220404-ja5s6rv",
+														"updated": "20221115220425"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "\t唯一约束可以是某一个列的值唯一，也"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "可以多个列组合"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "的值唯一。 "
+														}
+													]
+												},
+												{
+													"ID": "20221115220346-hkts3xs",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220346-hkts3xs",
+														"updated": "20221115222425"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "\t唯一性约束"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "允许列值为空"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "。 且为空不受唯一性约束的限制。"
+														}
+													]
+												},
+												{
+													"ID": "20221115220351-r8tl4l0",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220351-r8tl4l0"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "\t在创建唯一约束的时候，如果不给唯一约束命名，就默认和列名相同。 "
+														}
+													]
+												},
+												{
+													"ID": "20221115220352-m6g61cs",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220352-m6g61cs",
+														"updated": "20221115220450"
+													},
+													"Children": [
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "\tMySQL会给唯一约束的列上默认创建一个唯一索引。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115220456-4sb77z2",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221115220456-4sb77z2",
+												"updated": "20221115223040"
+											},
+											"Children": [
+												{
+													"ID": "20221115220456-969a95v",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220456-969a95v",
+														"updated": "20221115220647"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "添加唯一约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115220647-02g8uo1",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115220647-02g8uo1",
+														"updated": "20221115220700"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "建表时添加唯一约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115220700-beo9tjy",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115220700-beo9tjy",
+														"updated": "20221115221145"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "# 列级约束\ncreate table 表名称(\n字段名 数据类型,\n字段名 数据类型 unique,\n字段名 数据类型 unique key,\n字段名 数据类型\n);\n# 表级约束\ncreate table 表名称(\n字段名 数据类型,\n字段名 数据类型,\n字段名 数据类型,\t\t# 注意行末的逗号\n[constraint 约束名] unique key(字段名)\n);\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												},
+												{
+													"ID": "20221115222641-k9z6wcq",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115222641-k9z6wcq",
+														"updated": "20221115222658"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "建表后添加唯一约束"
+														}
+													]
+												},
+												{
+													"ID": "20221115222659-cmp2012",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115222659-cmp2012",
+														"updated": "20221115223040"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "#字段列表中如果是一个字段，表示该列的值唯一。如果是两个或更多个字段，那么复合唯一，即多个字段的组合是唯一的\n#方式1：\nalter table 表名称 add [constraint 约束名] unique key(字段列表);\n#方式2：\nalter table 表名称 modify 字段名 字段类型 unique;\n\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221116120333-1pcc5md",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221116120333-1pcc5md"
+											},
+											"Children": [
+												{
+													"ID": "20221116120333-o640the",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116120333-o640the",
+														"updated": "20221116120354"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "复合的唯一约束"
+														}
+													]
+												},
+												{
+													"ID": "20221116120616-x79gtf2",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116120616-x79gtf2",
+														"updated": "20221116120644"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "复合的唯一约束：多个字段的组合是唯一即可"
+														}
+													]
+												},
+												{
+													"ID": "20221116120357-sbzr851",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221116120357-sbzr851",
+														"updated": "20221116121230"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "create table 表名称(\n字段名 数据类型,\n字段名 数据类型,\nunique key(字段1，字段2) \t\t-- 字段列表中写的是多个字段名，多个字段名用逗号分隔，表示那么是复合唯一，即多个字段的组合是唯一的\n);\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221116121343-kuzbrid",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221116121343-kuzbrid"
+											},
+											"Children": [
+												{
+													"ID": "20221116121343-3g9orle",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116121343-3g9orle",
+														"updated": "20221116121358"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "删除唯一性约束"
+														}
+													]
+												},
+												{
+													"ID": "20221116121359-z0sskk8",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116121359-z0sskk8",
+														"updated": "20221116121433"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "添加唯一性约束的列上也会自动创建唯一索引。\n删除唯一约束只能通过删除唯一索引的方式删除。\n删除时需要指定唯一索引名，唯一索引名就和唯一约束名一样。\n如果创建唯一约束时未指定名称，如果是单列，就默认和列名相同；如果是组合列，那么默认和() 中排在第一个的列名相同。也可以自定义唯一性约束名。"
+														}
+													]
+												},
+												{
+													"ID": "20221116121505-q6jvgaj",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221116121505-q6jvgaj",
+														"updated": "20221116121859"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "SELECT * FROM information_schema.table_constraints WHERE table_name = '表名'; \t-- 查看都有哪些约束\nALTER TABLE USER DROP INDEX 约束名;\t\t--删除唯一约束\n-- 可以通过 show index from 表名称; 查看表的索引\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221116122025-981gglc",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"fold": "0",
+								"id": "20221116122025-981gglc"
+							},
+							"Children": [
+								{
+									"ID": "20221116122025-e7mictg",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221116122025-e7mictg",
+										"updated": "20221116122105"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "primary key (主键约束）"
+										}
+									]
+								},
+								{
+									"ID": "20221116122106-dnvurx0",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221116122106-dnvurx0",
+										"updated": "20221116122217"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "用来"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "唯一标识"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "表中的一行记录。"
+										}
+									]
+								},
+								{
+									"ID": "20221116122220-yy6e995",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221116122220-yy6e995"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "主键约束"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "相当于唯一约束+非空约束的组合"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "，主键约束列不允许重复，也不允许出现空值。"
+										}
+									]
+								},
+								{
+									"ID": "20221116122241-1wvj1sy",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221116122241-1wvj1sy",
+										"updated": "20221116122559"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "一个表最多"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "只能有一个主键约束"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "，建立主键约束可以在列级别创建，也可以在表级别上创建。\n"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": " 主键约束对应着表中的一列或者多列（复合主键）"
+										},
+										{
+											"Type": "NodeText",
+											"Data": " 如果是多列组合的复合主键约束，那么这些列都不允许为空值，并且组合的值不允许重复。\n "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "MySQL的主键名总是PRIMARY"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "，就算自己命名了主键约束名也没用。\n 当创建主键约束时，系统默认会在所在的列或列组合上"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "建立对应的主键索引"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "（能够根据主键查询 的，就根据主键查询，效率更高）。\n如果删除主键约束了，主键约束对应的索引就自动删除了。 需要注意的一点是，不要修改主键字段的值。因为主键是数据记录的唯一标识，如果修改了主键的 值，就有可能会破坏数据的完整性。"
+										}
+									]
+								},
+								{
+									"ID": "20221116122605-xzx0z53",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221116122605-xzx0z53",
+										"updated": "20221116123105"
+									},
+									"Children": [
+										{
+											"ID": "20221116123105-xurnqbv",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221116123105-xurnqbv",
+												"updated": "20221116123105"
+											},
+											"Children": [
+												{
+													"ID": "20221116123105-oq3xvhh",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116123105-oq3xvhh",
+														"updated": "20221116123126"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "创建表时添加主键约束"
+														}
+													]
+												},
+												{
+													"ID": "20221116123127-lxfk0im",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221116123127-lxfk0im",
+														"updated": "20221116124105"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "create table 表名称(\n字段名 数据类型 primary key, \t\t--列级模式\n字段名 数据类型\n);\ncreate table 表名称(\n字段名 数据类型,\n字段名 数据类型,\n primary key(字段名) \t-- 表级模式\n);\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221116124004-tv23ibq",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221116124004-tv23ibq"
+											},
+											"Children": [
+												{
+													"ID": "20221116124004-952r7ih",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116124004-952r7ih",
+														"updated": "20221116124027"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "创建复合主键约束"
+														}
+													]
+												},
+												{
+													"ID": "20221116124137-70mt2e7",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116124137-70mt2e7",
+														"updated": "20221116124151"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "多个字段的"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "strong",
+															"TextMarkTextContent": "组合是唯一且不为空"
+														},
+														{
+															"Type": "NodeText",
+															"Data": "即可"
+														}
+													]
+												},
+												{
+													"ID": "20221116124028-1uh7u4f",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221116124028-1uh7u4f",
+														"updated": "20221116124058"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "create table 表名称(\n字段名 数据类型,\n字段名 数据类型,\nprimary key(字段1，字段2) \t\t-- 字段列表中写的是多个字段名，多个字段名用逗号分隔\n);\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												},
+												{
+													"ID": "20221116124741-pn4d28n",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116124741-pn4d28n",
+														"updated": "20221116124803"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "建表后创建主键约束"
+														}
+													]
+												},
+												{
+													"ID": "20221116124804-cw56uu6",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221116124804-cw56uu6",
+														"updated": "20221116124825"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "ALTER TABLE 表名称 \nADD PRIMARY KEY(字段列表); \t--字段列表可以是一个字段，也可以是多个字段，如果是多个字段的话，是复合主键\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221116124958-34ius2m",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221116124958-34ius2m"
+											},
+											"Children": [
+												{
+													"ID": "20221116124958-3jqegk9",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116124958-3jqegk9",
+														"updated": "20221116125009"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "删除主键约束"
+														}
+													]
+												},
+												{
+													"ID": "20221116125009-o3oxznt",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221116125009-o3oxznt",
+														"updated": "20221116125234"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "alter table 表名称 \ndrop primary key;\t-- 一张表只能有一个主键约束，所以只需指定表名，删除主键约束后，非空约束还存在。\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221116130047-kli1fyd",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221116130047-kli1fyd",
+								"updated": "20221116130311"
+							},
+							"Children": [
+								{
+									"ID": "20221116130047-d8hot2k",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221116130047-d8hot2k",
+										"updated": "20221116130129"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "AUTO_INCREMENT(自增列)"
+										}
+									]
+								},
+								{
+									"ID": "20221116130059-jc4v5yt",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221116130059-jc4v5yt",
+										"updated": "20221116130227"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "作用：某个字段的值自增"
+										}
+									]
+								},
+								{
+									"ID": "20221116130228-h32okwr",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221116130228-h32okwr",
+										"updated": "20221116130311"
+									},
+									"Children": [
+										{
+											"ID": "20221116130311-dvqt2ez",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221116130311-dvqt2ez",
+												"updated": "20221116130311"
+											},
+											"Children": [
+												{
+													"ID": "20221116130311-bhe834r",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116130311-bhe834r",
+														"updated": "20221116130311"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "特点："
+														}
+													]
+												},
+												{
+													"ID": "20221116130245-ybbsxsl",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116130245-ybbsxsl",
+														"updated": "20221116130333"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "\t（1）一个表最多只能有一个自增长列\n\t（2）当需要产生唯一标识符或顺序值时，可设置自增长\n\t（3）自增长列约束的列必须是键列（主键列，唯一键列）\n\t（4）自增约束的列的数据类型必须是整数类型\n\t（5）如果自增列指定了 0 和 null，会在当前最大值的基础上自增；如果自增列手动指定了具体值，直接赋值为具体值。"
+														}
+													]
+												},
+												{
+													"ID": "20221116154330-t2sk0x5",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221116154330-t2sk0x5"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221115214122-88b5qki",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"fold": "1",
+								"id": "20221115214122-88b5qki",
+								"updated": "20221115221332"
+							},
+							"Children": [
+								{
+									"ID": "20221115214122-1wkatnc",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221115214122-1wkatnc",
+										"updated": "20221115214128"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "查看约束"
+										}
+									]
+								},
+								{
+									"ID": "20221115221249-xggy4a4",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221115221249-xggy4a4",
+										"updated": "20221115221255"
+									}
+								},
+								{
+									"ID": "20221115214217-fbnneza",
+									"Type": "NodeCodeBlock",
+									"IsFencedCodeBlock": true,
+									"Properties": {
+										"id": "20221115214217-fbnneza",
+										"updated": "20221116121224"
+									},
+									"Children": [
+										{
+											"Type": "NodeCodeBlockFenceOpenMarker",
+											"Data": "```"
+										},
+										{
+											"Type": "NodeCodeBlockFenceInfoMarker",
+											"CodeBlockInfo": "c3Fs"
+										},
+										{
+											"Type": "NodeCodeBlockCode",
+											"Data": "-- information_schema数据库名（系统库）\n-- table_constraints表名称（专门存储各个表的约束）\nSELECT * FROM information_schema.table_constraints\nWHERE table_name = '表名称';\n-- 也可使用desc 查看表结构，来简单的查看约束\n"
+										},
+										{
+											"Type": "NodeCodeBlockFenceCloseMarker",
+											"Data": "```"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221115210648-lh5nylt",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221115210648-lh5nylt",
+						"updated": "20221115210653"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221115210649-jmmeg6r",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221115210649-jmmeg6r"
+			}
+		},
+		{
+			"ID": "20221115100756-ys7z0fg",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221115100756-ys7z0fg",
+				"updated": "20221115115506"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221115100750-qbjwgah",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221115100750-qbjwgah",
+						"updated": "20221115115506"
+					},
+					"Children": [
+						{
+							"ID": "20221115100757-nh5wlbh",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221115100757-nh5wlbh",
+								"updated": "20221115115506"
+							},
+							"Children": [
+								{
+									"ID": "20221115100757-obz0656",
+									"Type": "NodeHeading",
+									"HeadingLevel": 2,
+									"Properties": {
+										"id": "20221115100757-obz0656",
+										"updated": "20221115100821"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "MySQL触发器"
+										}
+									]
+								},
+								{
+									"ID": "20221115100824-f5ns1li",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221115100824-f5ns1li",
+										"updated": "20221115101018"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "mysql从5.0.2 版本开始支持触发器"
+										}
+									]
+								},
+								{
+									"ID": "20221115101018-yttrbz6",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221115101018-yttrbz6",
+										"updated": "20221115101040"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "触发器是由 "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "事件"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "来触发 某个操作，这些"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "事件包括 INSERT 、 UPDATE 、 DELETE 事件"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "。所谓事件就是指 用户的动作或者触发某项行为。如果定义了触发程序，当数据库执行这些语句时候，就相当于事件发生 了，就会 自动 激发触发器执行相应的操作。"
+										}
+									]
+								},
+								{
+									"ID": "20221115101043-7mgycqv",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221115101043-7mgycqv"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": " "
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "当对数据表中的数据执行插入、更新和删除操作，需要自动执行一些数据库逻辑时，可以使用触发器来 实现。"
+										}
+									]
+								},
+								{
+									"ID": "20221115101046-lth0vlv",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221115101046-lth0vlv",
+										"updated": "20221115115506"
+									},
+									"Children": [
+										{
+											"ID": "20221115102002-zd9sr2z",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221115102002-zd9sr2z",
+												"updated": "20221115102356"
+											},
+											"Children": [
+												{
+													"ID": "20221115102002-yyp1mnk",
+													"Type": "NodeHeading",
+													"HeadingLevel": 3,
+													"Properties": {
+														"id": "20221115102002-yyp1mnk",
+														"updated": "20221115102014"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "创建触发器"
+														}
+													]
+												},
+												{
+													"ID": "20221115102324-2qd0ww4",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115102324-2qd0ww4",
+														"updated": "20221115102325"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "表名 ：表示触发器监控的对象。"
+														}
+													]
+												},
+												{
+													"ID": "20221115102332-yyi50hh",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115102332-yyi50hh"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": " BEFORE|AFTER ：表示触发的时间。BEFORE 表示在事件之前触发；AFTER 表示在事件之后触发。 "
+														}
+													]
+												},
+												{
+													"ID": "20221115102335-4or6d89",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115102335-4or6d89",
+														"updated": "20221115102356"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "INSERT|UPDATE|DELETE ：表示触发的事件。 INSERT 表示插入记录时触发； UPDATE 表示更新记录时触发； DELETE 表示删除记录时触发。 "
+														}
+													]
+												},
+												{
+													"ID": "20221115102350-ahqfilu",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115102350-ahqfilu"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "触发器执行的语句块 ：可以是单条SQL语句，也可以是由BEGIN…END结构组成的复合语句块。"
+														}
+													]
+												},
+												{
+													"ID": "20221115102014-avfntqt",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115102014-avfntqt",
+														"updated": "20221115102320"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "CREATE TRIGGER 触发器名称 \n{BEFORE|AFTER} {INSERT|UPDATE|DELETE} ON 表名\nFOR EACH ROW\n触发器执行的语句块;\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115111238-nuf4l58",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221115111238-nuf4l58",
+												"updated": "20221115111238"
+											},
+											"Children": [
+												{
+													"ID": "20221115111238-t291vhh",
+													"Type": "NodeHeading",
+													"HeadingLevel": 3,
+													"Properties": {
+														"id": "20221115111238-t291vhh",
+														"updated": "20221115111320"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "查看触发器"
+														}
+													]
+												},
+												{
+													"ID": "20221115111322-3o5xvts",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115111322-3o5xvts",
+														"updated": "20221115111416"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "查看触发器是查看数据库中已经存在的触发器的定义、状态和语法信息等。"
+														}
+													]
+												},
+												{
+													"ID": "20221115111418-hgnmzod",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115111418-hgnmzod",
+														"updated": "20221115111503"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "SHOW TRIGGERS\\G\t\t\t# 方式1：查看当前数据库的所有触发器的定义\nSHOW CREATE TRIGGER 触发器名\t# 方式2：查看当前数据库中某个触发器的定义\nSELECT * FROM information_schema.TRIGGERS;\t# 方式3：从系统库information_schema的TRIGGERS表中查询“salary_check_trigger”触发器的信息\n\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115111532-ruq147a",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221115111532-ruq147a",
+												"updated": "20221115111532"
+											},
+											"Children": [
+												{
+													"ID": "20221115111532-ho9twx3",
+													"Type": "NodeHeading",
+													"HeadingLevel": 3,
+													"Properties": {
+														"id": "20221115111532-ho9twx3",
+														"updated": "20221115111542"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "删除触发器"
+														}
+													]
+												},
+												{
+													"ID": "20221115111539-sf1t64u",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221115111539-sf1t64u",
+														"updated": "20221115111548"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "触发器也是数据库对象，删除触发器也用DROP语句，语法格式如下："
+														}
+													]
+												},
+												{
+													"ID": "20221115111557-4nlga4o",
+													"Type": "NodeCodeBlock",
+													"IsFencedCodeBlock": true,
+													"Properties": {
+														"id": "20221115111557-4nlga4o",
+														"updated": "20221115111604"
+													},
+													"Children": [
+														{
+															"Type": "NodeCodeBlockFenceOpenMarker",
+															"Data": "```"
+														},
+														{
+															"Type": "NodeCodeBlockFenceInfoMarker",
+															"CodeBlockInfo": "c3Fs"
+														},
+														{
+															"Type": "NodeCodeBlockCode",
+															"Data": "DROP TRIGGER IF EXISTS 触发器名称;\n"
+														},
+														{
+															"Type": "NodeCodeBlockFenceCloseMarker",
+															"Data": "```"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221115115017-jzqqwvi",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "0",
+												"id": "20221115115017-jzqqwvi",
+												"updated": "20221115115506"
+											},
+											"Children": [
+												{
+													"ID": "20221115115017-6nq3b66",
+													"Type": "NodeHeading",
+													"HeadingLevel": 3,
+													"Properties": {
+														"id": "20221115115017-6nq3b66",
+														"updated": "20221115115041"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "触发器的优缺点"
+														}
+													]
+												},
+												{
+													"ID": "20221115115030-cbvukzx",
+													"Type": "NodeList",
+													"ListData": {},
+													"Properties": {
+														"id": "20221115115030-cbvukzx",
+														"updated": "20221115115506"
+													},
+													"Children": [
+														{
+															"ID": "20221115115032-pkv3r7q",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"fold": "0",
+																"id": "20221115115032-pkv3r7q",
+																"updated": "20221115115032"
+															},
+															"Children": [
+																{
+																	"ID": "20221115115032-dll0o8m",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221115115032-dll0o8m",
+																		"updated": "20221115115035"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "优点"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221115115052-vzv0f83",
+																	"Type": "NodeList",
+																	"ListData": {
+																		"Typ": 1
+																	},
+																	"Properties": {
+																		"id": "20221115115052-vzv0f83",
+																		"updated": "20221115115055"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221115115055-8pr5jzr",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"Typ": 1,
+																				"Delimiter": 46,
+																				"Marker": "MS4=",
+																				"Num": 1
+																			},
+																			"Properties": {
+																				"id": "20221115115055-8pr5jzr",
+																				"updated": "20221115115055"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221115115055-iv8z26e",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221115115055-iv8z26e",
+																						"updated": "20221115115056"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "触发器可以确保数据的完整性"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221115115104-aprixt8",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"Typ": 1,
+																				"Delimiter": 46,
+																				"Marker": "Mi4=",
+																				"Num": 2
+																			},
+																			"Properties": {
+																				"id": "20221115115104-aprixt8"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221115115104-f32gi3t",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221115115104-f32gi3t",
+																						"updated": "20221115115105"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "触发器可以帮助我们记录操作日志。"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221115115109-hz5eojc",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"Typ": 1,
+																				"Delimiter": 46,
+																				"Marker": "My4=",
+																				"Num": 3
+																			},
+																			"Properties": {
+																				"id": "20221115115109-hz5eojc"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221115115109-cj0ml6z",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221115115109-cj0ml6z",
+																						"updated": "20221115115110"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "触发器还可以用在操作数据前，对数据进行合法性检查。"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221115115036-fsclazc",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"fold": "0",
+																"id": "20221115115036-fsclazc"
+															},
+															"Children": [
+																{
+																	"ID": "20221115115036-k93p89e",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221115115036-k93p89e",
+																		"updated": "20221115115038"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "缺点"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221115115115-7rc4rqu",
+																	"Type": "NodeList",
+																	"ListData": {
+																		"Typ": 1
+																	},
+																	"Properties": {
+																		"id": "20221115115115-7rc4rqu",
+																		"updated": "20221115115118"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221115115118-u8pv0g1",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"Typ": 1,
+																				"Delimiter": 46,
+																				"Marker": "MS4=",
+																				"Num": 1
+																			},
+																			"Properties": {
+																				"id": "20221115115118-u8pv0g1",
+																				"updated": "20221115115118"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221115115118-j3g44b6",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221115115118-j3g44b6",
+																						"updated": "20221115115122"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "触发器最大的一个问题就是可读性差。"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221115115130-o8g6vaz",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"Typ": 1,
+																				"Delimiter": 46,
+																				"Marker": "Mi4=",
+																				"Num": 2
+																			},
+																			"Properties": {
+																				"id": "20221115115130-o8g6vaz"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221115115130-zxuqg73",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221115115130-zxuqg73",
+																						"updated": "20221115115131"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "相关数据的变更，可能会导致触发器出错。"
+																						}
+																					]
+																				},
+																				{
+																					"ID": "20221115115134-igjjnxy",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221115115134-igjjnxy",
+																						"updated": "20221115115137"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "特别是数据表结构的变更，都可能会导致触发器出错，进而影响数据操作的正常运行。这些都会由于触 发器本身的隐蔽性，影响到应用中错误原因排查的效率。"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221115115357-po5d5t1",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"fold": "1",
+																"id": "20221115115357-po5d5t1",
+																"updated": "20221115115506"
+															},
+															"Children": [
+																{
+																	"ID": "20221115115357-z7zqtj0",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221115115357-z7zqtj0",
+																		"updated": "20221115115405"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "注意点"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221115115405-jfa9p0i",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221115115405-jfa9p0i",
+																		"updated": "20221115115506"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "注意，"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "strong",
+																			"TextMarkTextContent": "如果在子表中定义了外键约束，并且外键指定了ON UPDATE/DELETE CASCADE/SET NULL子句"
+																		},
+																		{
+																			"Type": "NodeText",
+																			"Data": "，此 时"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "strong",
+																			"TextMarkTextContent": "修改父表被引用的键值或删除父表被引用的记录行时，也会引起子表的修改和删除操作"
+																		},
+																		{
+																			"Type": "NodeText",
+																			"Data": "，此时"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "strong",
+																			"TextMarkTextContent": "基于子 表的UPDATE和DELETE语句定义的触发器并不会被激活"
+																		},
+																		{
+																			"Type": "NodeText",
+																			"Data": "。"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221115115416-n9tsemh",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221115115416-n9tsemh"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": " 例如：基于子表员工表（t_employee）的DELETE语句定义了触发器t1，而子表的部门编号（did）字段定 义了外键约束引用了父表部门表（t_department）的主键列部门编号（did），并且该外键加了“ON DELETE SET NULL”子句，那么如果此时删除父表部门表（t_department）在子表员工表（t_employee） 有匹配记录的部门记录时，会引起子表员工表（t_employee）匹配记录的部门编号（did）修改为NULL， mysql\u003e update demo.membermaster set memberdeposit=20 where memberid = 2; ERROR 1054 (42S22): Unknown column 'aa' in 'field list' 但是此时不会激活触发器t1。只有直接对子表员工表（t_employee）执行DELETE语句时才会激活触发器 t1"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221115100751-ukgsdfp",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221115100751-ukgsdfp",
+						"updated": "20221115115008"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221115100751-gkd6qik",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221115100751-gkd6qik"
+			}
+		},
+		{
 			"ID": "20221111220444-sdh6gs1",
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221111220444-sdh6gs1",
-				"updated": "20221111225944"
+				"updated": "20221116213441"
 			},
 			"Children": [
 				{
@@ -8727,7 +11104,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221111221531-9234r03",
-						"updated": "20221111223641"
+						"updated": "20221116213441"
 					},
 					"Children": [
 						{
@@ -8886,6 +11263,61 @@
 										{
 											"Type": "NodeCodeBlockCode",
 											"Data": "DROP USER '要删除的用户名'@'可登录IP' ; \t\t# 方式1\n# 方式2 不推荐。此方式系统会有残留信息\ndelete from mysql.user where user = '要删除的用户名' and host = '可登录IP';\n"
+										},
+										{
+											"Type": "NodeCodeBlockFenceCloseMarker",
+											"Data": "```"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221116212158-zm099zu",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221116212158-zm099zu",
+								"updated": "20221116213441"
+							},
+							"Children": [
+								{
+									"ID": "20221116212158-uc9q6u5",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221116212158-uc9q6u5",
+										"updated": "20221116212220"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "查看用户信息"
+										}
+									]
+								},
+								{
+									"ID": "20221116212221-11911kn",
+									"Type": "NodeCodeBlock",
+									"IsFencedCodeBlock": true,
+									"Properties": {
+										"id": "20221116212221-11911kn",
+										"updated": "20221116213441"
+									},
+									"Children": [
+										{
+											"Type": "NodeCodeBlockFenceOpenMarker",
+											"Data": "```"
+										},
+										{
+											"Type": "NodeCodeBlockFenceInfoMarker",
+											"CodeBlockInfo": "c3Fs"
+										},
+										{
+											"Type": "NodeCodeBlockCode",
+											"Data": "select user,host,authentication_string from mysql.user;\n"
 										},
 										{
 											"Type": "NodeCodeBlockFenceCloseMarker",

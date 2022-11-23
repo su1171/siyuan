@@ -1,9 +1,12 @@
 export {
-    runCode, // 运行代码
+    getConf, // 获取配置
+    runCell, // 运行单元格
+    restartKernel, // 重启内核
     closeConnection, // 关闭连接
 }
 
 import {
+    jupyter,
     upload,
     queryBlock,
     getBlockAttrs,
@@ -187,7 +190,7 @@ async function messageHandle(msg_id, msg_type, message, websocket) {
                 const doc_attrs = {
                     [config.jupyter.attrs.other.prompt]: promptFormat(
                         websocket.kernel.language,
-                        websocket.kernel.name,
+                        websocket.kernel.display_name,
                         i18n(execution_state, lang),
                     )
                 };
@@ -286,7 +289,7 @@ async function messageHandle(msg_id, msg_type, message, websocket) {
                         if (text) markdowns.push(text);
                     }
                 }
-                let code_index = message_info.index;
+                let code_index = `${message_info.index}`;
                 let output_index, output_style;
                 switch (status) {
                     case 'ok': // 成功
@@ -427,7 +430,32 @@ function createSendMessage(
     };
 }
 
-async function runCode(e, code_id, params) {
+function getConf() {
+    return config;
+}
+
+async function restartKernel(e, doc_id, params) {
+    /* 关闭当前会话 */
+    await closeConnection(e, doc_id, params);
+
+    /* 获得文档块的块属性 */
+    const doc_attrs = await getBlockAttrs(doc_id);
+    if (!doc_attrs) return;
+
+    const kernel_id = doc_attrs[config.jupyter.attrs.kernel.id];
+    const kernel = await jupyter.kernels.restart(kernel_id);
+    if (kernel) {
+        await setBlockAttrs(doc_id, {
+            [config.jupyter.attrs.other.prompt]: promptFormat(
+                doc_attrs[config.jupyter.attrs.kernel.language],
+                doc_attrs[config.jupyter.attrs.kernel.display_name],
+                i18n(kernel?.execution_state, lang),
+            ),
+        }); // 更新文档块的属性
+    }
+}
+
+async function runCell(e, code_id, params, opened = null) {
     /* 获得代码块 */
     let code_block, output_block;
     code_block = await queryBlock(code_id);
@@ -441,7 +469,7 @@ async function runCode(e, code_id, params) {
     let code_attrs = await getBlockAttrs(code_id);
     if (!code_attrs) return;
 
-    /* 获得代码块所在文档块 */
+    /* 获得代码块所在文档块的块属性 */
     const doc_attrs = await getBlockAttrs(doc_id);
     if (!doc_attrs) return;
 
@@ -480,8 +508,9 @@ async function runCode(e, code_id, params) {
         code_attrs = {}, output_attrs = {};
 
         /* 设置块序号 */
-        websocket.index += 1; // 更新消息序号
-        const index = String(websocket.index);
+        websocket.index++; // 更新消息序号
+        // const index = String(websocket.index);
+        const index = '*';
         code_attrs[config.jupyter.attrs.code.index] = index;
         output_attrs[config.jupyter.attrs.output.index] = index;
 
@@ -499,7 +528,7 @@ async function runCode(e, code_id, params) {
             code: code_id,
             output: output_id,
             params: params,
-            index: index,
+            index: websocket.index,
         };
         const message = JSON.stringify(createSendMessage( // 创建消息
             code_block.content,
@@ -508,22 +537,23 @@ async function runCode(e, code_id, params) {
             websocket.version,
             msg_id,
         ));
-        websocket.ws.send(message); // 发送消息
-
         await setBlockAttrs(code_id, code_attrs); // 更新代码块的属性
         await setBlockAttrs(output_id, output_attrs); // 更新输出块的属性
+
+        websocket.ws.send(message); // 发送消息
     }
 
-    if (websockets[doc_id]
-        && websockets[doc_id].ws
-        && websockets[doc_id].ws.readyState === WebSocket.OPEN
-    ) {
+    if (websockets?.[doc_id]?.ws?.readyState === WebSocket.OPEN) {
         websocket = websockets[doc_id];
-        run();
+        await run();
+        if (typeof opened === 'function') opened(websocket);
     }
     else {
+        // websockets?.[doc_id]?.ws?.close();
+
         const kernel_id = doc_attrs[config.jupyter.attrs.kernel.id];
         const kernel_name = doc_attrs[config.jupyter.attrs.kernel.name];
+        const kernel_display_name = doc_attrs[config.jupyter.attrs.kernel.display_name];
         const kernel_language = doc_attrs[config.jupyter.attrs.kernel.language];
         const session_id = doc_attrs[config.jupyter.attrs.session.id];
 
@@ -538,6 +568,7 @@ async function runCode(e, code_id, params) {
             kernel: {
                 id: kernel_id,
                 name: kernel_name,
+                display_name: kernel_display_name,
                 language: kernel_language,
             },
             session: session_id,
@@ -547,6 +578,7 @@ async function runCode(e, code_id, params) {
             flag: false,
             queue: new Queue(),
         };
+
         /** 消息队列处理
          *  REF [JavaScript 通过队列实现异步流控制 - 从过去穿越到现在 - 博客园](https://www.cnblogs.com/liaozhenting/p/8681527.html)
          */
@@ -572,7 +604,8 @@ async function runCode(e, code_id, params) {
         };
         websocket.ws.onopen = async e => {
             console.log(e);
-            run();
+            await run();
+            if (typeof opened === 'function') opened(websocket);
         };
         websocket.ws.onerror = async e => {
             console.warn(e);
@@ -588,5 +621,5 @@ async function runCode(e, code_id, params) {
 
 /* 关闭当前活动连接 */
 async function closeConnection(e, doc_id, params) {
-    if (websockets[doc_id]) websockets[doc_id].ws.close();
+    websockets?.[doc_id]?.ws?.close();
 }

@@ -186,6 +186,24 @@ window.theme.themeMode = (() => {
 })();
 
 /**
+ * 获取窗口宽高模式
+ * @return {string} landscape 或 portrait
+ */
+window.theme.orientation = () => {
+    /* 根据浏览器主题判断颜色模式 */
+    switch (true) {
+        case window.matchMedia('(orientation: landscape)').matches:
+            /* 宽 > 高 */
+            return 'landscape';
+        case window.matchMedia('(orientation: portrait)').matches:
+            /* 高 > 宽 */
+            return 'portrait';
+        default:
+            return null;
+    }
+};
+
+/**
  * 获取客户端模式
  * @return {string} 'app' 或 'desktop' 或 'mobile'
  */
@@ -288,6 +306,7 @@ window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/scrip
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/blockattrs.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/doc.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/dock.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/fullscreen.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/goto.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/invert.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/location.js"), undefined, true);

@@ -6,7 +6,8 @@
     "darkThemes": [
       "Dark+",
       "Savor",
-      "midnight"
+      "midnight",
+      "mini-vlook"
     ],
     "lightThemes": [
       "Dark+",
@@ -15,11 +16,12 @@
       "Zhang-Light",
       "blue-dog",
       "daylight",
+      "mini-vlook",
       "notion-theme"
     ],
     "themeDark": "Dark+",
     "themeLight": "Dark+",
-    "themeVer": "1.4.0",
+    "themeVer": "1.5.0",
     "icons": [
       "ant",
       "material",
@@ -205,7 +207,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "278px",
+              "size": "280px",
               "type": "left"
             },
             {
@@ -218,10 +220,14 @@
                         "blockId": "20220924141737-z6ah3oq",
                         "instance": "Editor",
                         "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
                         "rootId": "20220924141737-z6ah3oq",
                         "scrollAttr": {
-                          "endId": "20221004142308-23yg4ez",
-                          "scrollTop": 2379,
+                          "endId": "20221005201549-ew01xad",
+                          "focusEnd": 0,
+                          "focusId": "20220930001932-myssfgk",
+                          "focusStart": 0,
+                          "scrollTop": 2798,
                           "startId": "20221011153643-4fuy2wd"
                         }
                       },
@@ -236,10 +242,14 @@
                         "blockId": "20220929211029-j2rk9en",
                         "instance": "Editor",
                         "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
                         "rootId": "20220929211029-j2rk9en",
                         "scrollAttr": {
                           "endId": "20221013152132-gjedwp2",
-                          "scrollTop": 1135,
+                          "focusEnd": 0,
+                          "focusId": "20220930153941-ww8lcv7",
+                          "focusStart": 0,
+                          "scrollTop": 1665,
                           "startId": "20220930153941-ww8lcv7"
                         }
                       },
@@ -249,20 +259,42 @@
                       "title": "大纲"
                     },
                     {
-                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924204553-h4rr7p5",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20220924204553-h4rr7p5",
+                        "scrollAttr": {
+                          "endId": "20221013100214-s9ww0kz",
+                          "focusEnd": 0,
+                          "focusId": "20220926152037-t3vrc6k",
+                          "focusStart": 0,
+                          "scrollTop": 0,
+                          "startId": "20220926152129-btlc3wz"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "资料库"
+                    },
+                    {
                       "children": {
                         "action": "",
                         "blockId": "20221015213822-vs8hvq7",
                         "instance": "Editor",
                         "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
                         "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221113105458-6ks6ndr",
-                          "focusEnd": 3,
-                          "focusId": "20221111221613-club07u",
-                          "focusStart": 3,
-                          "scrollTop": 4720.93017578125,
-                          "startId": "20221029112207-pc4kh84"
+                          "endId": "20221027112639-kj94r96",
+                          "focusEnd": 2,
+                          "focusId": "20221022162352-phzp8xa",
+                          "focusStart": 2,
+                          "scrollTop": 5132,
+                          "startId": "20221020134546-74aprr5"
                         }
                       },
                       "docIcon": "",
@@ -272,67 +304,89 @@
                     },
                     {
                       "children": {
-                        "action": "cb-get-all",
-                        "blockId": "20220927204519-rh17aix",
+                        "action": "",
+                        "blockId": "20221015174505-gw7dz1l",
                         "instance": "Editor",
                         "mode": "wysiwyg",
-                        "rootId": "20220927091552-afp35hu",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221015174505-gw7dz1l",
                         "scrollAttr": {
-                          "endId": "20220927204519-rh17aix",
-                          "focusEnd": 24,
-                          "focusId": "20220927205157-6wpd2q8",
-                          "focusStart": 24,
+                          "endId": "20221101104229-jookzwv",
                           "scrollTop": 0,
-                          "startId": "20220927204519-rh17aix",
-                          "zoomInId": "20220927204519-rh17aix"
+                          "startId": "20221015174515-qh3tmsa"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "2022年09月27日"
+                      "title": "数据库"
+                    },
+                    {
+                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20221120212849-c4hq8ka",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221120212849-c4hq8ka",
+                        "scrollAttr": {
+                          "endId": "20221123202823-c9n5023",
+                          "focusEnd": 4,
+                          "focusId": "20221123185402-orc55tw",
+                          "focusStart": 4,
+                          "scrollTop": 3041.831787109375,
+                          "startId": "20221120212907-ty8yby5"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "redis"
                     },
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220925152952-913xa61",
+                        "blockId": "20221122163317-8vk1uqu",
                         "instance": "Editor",
                         "mode": "wysiwyg",
-                        "rootId": "20220924145441-ruxsjlb",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221122163317-8vk1uqu",
                         "scrollAttr": {
-                          "endId": "20220925135233-dtqanrz",
-                          "focusEnd": 27,
-                          "focusId": "20220925193607-7nq17a2",
-                          "focusStart": 27,
-                          "scrollTop": 2823,
-                          "startId": "20220925135217-oaqshof"
+                          "endId": "20221122171409-u1n1hov",
+                          "focusEnd": 0,
+                          "focusId": "20221122171409-u1n1hov",
+                          "focusStart": 0,
+                          "scrollTop": 18551,
+                          "startId": "20221122163348-b4nyp6j"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "命令详解"
+                      "title": "面试题"
                     },
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221109192619-6vvv8b3",
+                        "blockId": "20221018195322-2n5ylfb",
                         "instance": "Editor",
                         "mode": "wysiwyg",
-                        "rootId": "20221109192619-6vvv8b3",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221018195322-2n5ylfb",
                         "scrollAttr": {
-                          "endId": "20221114092349-2k5hg2h",
-                          "focusEnd": 10,
-                          "focusId": "20221114213140-p8nuq4x",
-                          "focusStart": 10,
-                          "scrollTop": 5866,
-                          "startId": "20221109192628-sfai0q0"
+                          "endId": "20221018201703-6c1n537",
+                          "focusEnd": 0,
+                          "focusId": "20221018195346-mbbwts1",
+                          "focusStart": 0,
+                          "scrollTop": 109,
+                          "startId": "20221018195329-7cuwbhc"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "MySQL运维篇"
+                      "title": "阿里云"
                     }
                   ],
                   "height": "",
@@ -402,7 +456,7 @@
           "show": false,
           "size": {
             "height": 0,
-            "width": 252
+            "width": 298
           },
           "type": "file"
         },
@@ -412,7 +466,7 @@
           "show": true,
           "size": {
             "height": 0,
-            "width": 278
+            "width": 280
           },
           "type": "outline"
         },
@@ -506,7 +560,7 @@
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.4.12",
+    "kernelVersion": "2.5.1",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -984,12 +1038,15 @@
       "accessKey": "",
       "secretKey": "",
       "bucket": "",
-      "region": ""
+      "region": "",
+      "pathStyle": false,
+      "skipTlsVerify": false
     },
     "webdav": {
       "endpoint": "",
       "username": "",
-      "password": ""
+      "password": "",
+      "skipTlsVerify": false
     }
   },
   "search": {
@@ -1014,13 +1071,22 @@
     "backlinkMentionAlias": false,
     "backlinkMentionAnchor": true,
     "backlinkMentionDoc": true,
+    "backlinkMentionKeywordsLimit": 512,
     "virtualRefName": true,
     "virtualRefAlias": false,
     "virtualRefAnchor": true,
-    "virtualRefDoc": true
+    "virtualRefDoc": true,
+    "virtualRefKeywordsLimit": 512
   },
   "stat": {
-    "docCount": 18
+    "treeCount": 19,
+    "cTreeCount": 100,
+    "blockCount": 5574,
+    "cBlockCount": 10000,
+    "dataSize": 444783768,
+    "cDataSize": 3145728,
+    "assetsSize": 225365722,
+    "cAssetsSize": 2097152
   },
   "api": {
     "token": "uin95woksk9wpovr"

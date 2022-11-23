@@ -28,6 +28,8 @@ export {
     countElementIndex, // 计算当前节点是上级节点的第几个节点
     getTooltipDirection, // 计算当前节点应使用的提示方向
     setTooltipDirection, // 设置提示信息朝向方向
+    requestFullscreen, // 请求全屏
+    requestFullscreenBlock, // 请求对指定的块全屏
 };
 
 import { url2id } from './misc.js';
@@ -201,10 +203,8 @@ async function getTargetBlockIndex(target) {
         const scroll = top
             .parentElement
             .parentElement
-            .nextElementSibling
-            .nextElementSibling
-            .nextElementSibling; // 块滚动条
-        const MAX = parseInt(scroll.firstElementChild.max); // 当前文档的块数
+            .querySelector('protyle-scroll__bar'); // 块滚动条
+        const MAX = parseInt(scroll?.firstElementChild.max); // 当前文档的块数
         let index = parseInt(top.dataset.nodeIndex); // 当前块序号
         let first_index = parseInt(top.parentElement.firstElementChild.dataset.nodeIndex);
         let offset = first_index ? 0 : 1; // 块序号偏移量, 如果是从 0 开始, 则偏移量为 1
@@ -718,4 +718,48 @@ function setTooltipDirection(classname, ...items) {
         item.classList.remove(...tooltips_class_list);
         item.classList.add(classname(item));
     });
+}
+
+/**
+ * 请求对指定的块全屏
+ * @params {HTMLElement} block: 块元素
+ */
+function requestFullscreenBlock(block) {
+    let element;
+    switch (block?.dataset.type) {
+        case 'NodeVideo':
+            element = block.querySelector('video');
+            break;
+        case 'NodeIFrame':
+        case 'NodeWidget':
+            element = block.querySelector('iframe');
+            break;
+        default:
+            element = block;
+            break;
+    }
+    element?.requestFullscreen();
+}
+
+/**
+ * 请求对指定 ID 的块全屏
+ * @params {string} id: 块 ID
+ */
+function requestFullscreen(id) {
+    // console.log();
+    const block = document.querySelector(`.protyle-wysiwyg--select[data-node-id="${id}"]`);
+    if (block) {
+        requestFullscreenBlock(block);
+    }
+    else { // 可能是文档块标
+        // console.log(getEditor(id));
+        const protyle = getEditor(id)?.protyle;
+        if (protyle) {
+            /* 窗口内全屏 */
+            protyle?.element.classList.toggle('fullscreen');
+
+            /* 屏幕全屏 */
+            // protyle?.element.requestFullscreen();
+        }
+    }
 }

@@ -1,5 +1,32 @@
 # 更改日志 | CHANGE LOG
 
+## v1.5.0/2022-11-15
+
+- [v1.4.0 <=> v1.5.0](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.4.0...v1.5.0)
+- jupyter 控制台富文本使用零宽空格设置边界 | jupyter console rich text uses zero-width spaces to set boundaries.
+- 将 jupyter 的样式配置文件引用添加到 `theme.css` 方便导出 | Add jupyter style config reference to `theme.css` for easy export.
+- jupyter 运行阻塞时块序号设置为 `*` | jupyter block number set to `*` when running is blocked.
+- 为文档块菜单添加 jupyter `重启内核` 菜单项 | Add jupyter `Restart Kernel` menu item to document block menu.
+- 为文档块菜单添加 jupyter `运行所有单元格` 菜单项 | Add jupyter Run All Cells` menu item to document block menu.
+- [#154](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues/154) 调整表格单元格边框颜色 | Adjust table cell border color.
+  - 添加 CSS 自定义变量 `--custom-block-table-cell-border-color` | Add CSS custom variable `--custom-block-table-cell-border-color`.
+- 双击 `iframe 块` / `挂件块`全屏显示块内容 | Double click `iframe block` / `widget block` to display block content in full screen.
+- 调整折叠的列表项的样式 | Adjust the style of the folded list item.
+  - REF: https://ld246.com/article/1668079616719/comment/1668156458492?r=shuoying#comments
+- 双击块标全屏显示该块 | Double click the block mark to display the block in full screen.
+- 调整渲染块全屏模式时的样式 | Adjust the style when rendering the block in full screen mode.
+- 为块全屏显示模式添加滚动条 | Add scroll bar to block full screen display mode.
+- 调整部分按钮图标 | Adjust some button icons.
+- 实现 jupyter 导入的 markdown 单元格解析 | Implement jupyter imported markdown cell parsing.
+- 调整粗体颜色与标题字重 | Adjust bold color and title font weight.
+- 代码块折叠时显示首行 | Display the first line when the code block is folded.
+- 代码块控件栏使用 `sticky` 样式 | Code block control bar uses `sticky` style.
+- 背景图片支持横向背景图片与纵向背景图片 | Background image supports horizontal background image and vertical background image.
+  - `--custom-background-image-landscape`: 横向背景图片 | Horizontal background image.
+  - `--custom-background-image-portrait`: 纵向背景图片 | Vertical background image.
+- 更换背景图片功能支持分别设置航向背景图片与纵向背景图片 | The change background image function supports setting the horizontal background image and vertical background image separately.
+- 调整快滚动条位置 | Adjust the position of the fast scroll bar.
+
 ## v1.4.0/2022-11-06
 
 - [v1.3.7 <=> v1.4.0](https:///github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/compare/v1.3.7...v1.4.0)
