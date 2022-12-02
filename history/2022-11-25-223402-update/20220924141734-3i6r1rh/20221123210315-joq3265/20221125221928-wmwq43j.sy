@@ -1,0 +1,451 @@
+{
+	"ID": "20221125221928-wmwq43j",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221125221928-wmwq43j",
+		"title": "ssh",
+		"updated": "20221125222516"
+	},
+	"Children": [
+		{
+			"ID": "20221125221928-pyilxtu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125221928-pyilxtu",
+				"updated": "20221125222504"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "服务名称：sshd"
+				}
+			]
+		},
+		{
+			"ID": "20221125222052-gy42v2y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222052-gy42v2y",
+				"updated": "20221125222249"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "服务端主程序：/usr/sbin/sshd"
+				}
+			]
+		},
+		{
+			"ID": "20221125222054-p7a4pmq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222054-p7a4pmq",
+				"updated": "20221125222247"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "服务端配置文件：/etc/ssh/sshd_config"
+				}
+			]
+		},
+		{
+			"ID": "20221125222056-ev29pdu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222056-ev29pdu"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "客户端配置文件：/etc/ssh/ssh_config"
+				}
+			]
+		},
+		{
+			"ID": "20221125222058-38sqrxi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222058-38sqrxi"
+			}
+		},
+		{
+			"ID": "20221125222516-hpqynvi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-hpqynvi",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "修改ssh端口"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-3nuu880",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-3nuu880",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "ssh默认为22端口，如果需要修改成其它端口，则可以修改/etc/ssh/sshd_config文件，将"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-46xmsgz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-46xmsgz",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "#Port 22"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-w4cxst2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-w4cxst2",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "注释去掉，修改成需要的端口（比如8888），然后使用如下命令重启ssh服务"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-ea0orgj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-ea0orgj",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "service sshd restart"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-a52qljs",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-a52qljs",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "二、关闭root用户远程ssh登录的权限"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-gvl3hb5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-gvl3hb5",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "如果不希望root用户远程登录，可以按照如下修改："
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-o64lopk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-o64lopk",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "vi /etc/ssh/sshd_config"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-88iiivm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-88iiivm",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "将"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-vmfnczg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-vmfnczg",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "#PermitRootLogin yes"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-a1avmld",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-a1avmld",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "注释去掉，yes改为no，重启ssh服务（这里最好reboot一下）"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-nprkmj0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-nprkmj0",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "三、禁止某些特定用户远程登录"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-fhwutuk",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221125222516-fhwutuk",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"ID": "20221125222516-z24qhwp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221125222516-z24qhwp",
+						"updated": "20221125222516"
+					},
+					"Children": [
+						{
+							"ID": "20221125222516-3nymygd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221125222516-3nymygd",
+								"updated": "20221125222516"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "修改/etc/pam.d/sshd"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-c0shm9v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-c0shm9v",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "在#%PAM-1.0后加入一行："
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-7xa3jo6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-7xa3jo6",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "auth       required     pam_listfile.so item=user sense=allow file=/etc/ssh_users onerr=fail"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-igegn16",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221125222516-igegn16",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"ID": "20221125222516-dyml909",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221125222516-dyml909",
+						"updated": "20221125222516"
+					},
+					"Children": [
+						{
+							"ID": "20221125222516-kyr7wew",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221125222516-kyr7wew",
+								"updated": "20221125222516"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "启用用户远程登录（例如允许chb远程登录）："
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-0c4l9t3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-0c4l9t3",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "echo chb\u003e\u003e /etc/ssh_users"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-rzcc24u",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221125222516-rzcc24u",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"ID": "20221125222516-9xu5ar0",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221125222516-9xu5ar0",
+						"updated": "20221125222516"
+					},
+					"Children": [
+						{
+							"ID": "20221125222516-5haymf5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221125222516-5haymf5",
+								"updated": "20221125222516"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "禁止用户远程登录："
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-xo49r9b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-xo49r9b",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "rm –rf /etc/ssh_users"
+				}
+			]
+		},
+		{
+			"ID": "20221125222516-q6yl71r",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222516-q6yl71r",
+				"updated": "20221125222516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "如上示例只是简单删除文件，其实如果不允许某个用户登录，则将该用户从ssh_users文件中删除即可"
+				}
+			]
+		},
+		{
+			"ID": "20221125222514-0tsjfp3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125222514-0tsjfp3"
+			}
+		}
+	]
+}

@@ -1,0 +1,1043 @@
+{
+	"ID": "20221123210335-piep0wm",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221123210335-piep0wm",
+		"title": "rsync",
+		"updated": "20221124003607"
+	},
+	"Children": [
+		{
+			"ID": "20221123210341-4z8jm3d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221123210341-4z8jm3d"
+			}
+		},
+		{
+			"ID": "20221123210354-2huvmqo",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221123210354-2huvmqo",
+				"updated": "20221123224958"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221123210350-rw2lpbp",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221123210350-rw2lpbp",
+						"updated": "20221123224958"
+					},
+					"Children": [
+						{
+							"ID": "20221123210356-cx0yg1d",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221123210356-cx0yg1d",
+								"updated": "20221123224958"
+							},
+							"Children": [
+								{
+									"ID": "20221123210356-vqiri4l",
+									"Type": "NodeHeading",
+									"HeadingLevel": 2,
+									"Properties": {
+										"id": "20221123210356-vqiri4l",
+										"updated": "20221123210401"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "简介"
+										}
+									]
+								},
+								{
+									"ID": "20221123210505-91z6vxw",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221123210505-91z6vxw",
+										"updated": "20221123210505"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "rsync（Remote Sync）远程同步工具，以实现快速、安全、高效的异地备份，如构建Web镜像站点。"
+										}
+									]
+								},
+								{
+									"ID": "20221123210505-36j85f2",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221123210505-36j85f2",
+										"updated": "20221123210505"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "         rsync是一个开源的快速备份工具，可以在不同主机之间镜像同步整个目录树，​"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "支持增量备份"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​，保持连接和权限，且采用优化同步算法，传输前执行压缩，因此非常适用于异地备份、镜像服务器等应用。"
+										}
+									]
+								},
+								{
+									"ID": "20221123212816-9998l85",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221123212816-9998l85",
+										"updated": "20221123224958"
+									},
+									"Children": [
+										{
+											"ID": "20221123212823-6bw836a",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221123212823-6bw836a",
+												"updated": "20221123212823"
+											},
+											"Children": [
+												{
+													"ID": "20221123212823-fqm0hx5",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221123212823-fqm0hx5",
+														"updated": "20221123212835"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "作用"
+														}
+													]
+												},
+												{
+													"ID": "20221123212835-gysen8c",
+													"Type": "NodeList",
+													"ListData": {
+														"Typ": 1
+													},
+													"Properties": {
+														"id": "20221123212835-gysen8c",
+														"updated": "20221123213516"
+													},
+													"Children": [
+														{
+															"ID": "20221123213516-3giefmk",
+															"Type": "NodeListItem",
+															"ListData": {
+																"Typ": 1,
+																"Delimiter": 46,
+																"Marker": "MS4=",
+																"Num": 1
+															},
+															"Properties": {
+																"id": "20221123213516-3giefmk",
+																"updated": "20221123213516"
+															},
+															"Children": [
+																{
+																	"ID": "20221123213516-2nip4zb",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213516-2nip4zb",
+																		"updated": "20221123213516"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "主要用于跨主机的文件实时同步（备份）"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221123213520-gtpxcvu",
+															"Type": "NodeListItem",
+															"ListData": {
+																"Typ": 1,
+																"Delimiter": 46,
+																"Marker": "Mi4=",
+																"Num": 2
+															},
+															"Properties": {
+																"id": "20221123213520-gtpxcvu"
+															},
+															"Children": [
+																{
+																	"ID": "20221123213520-issdpeb",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213520-issdpeb",
+																		"updated": "20221123213615"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "类似cp命令，将本地主机的一个文件复制到另一个位置下"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221123213615-9uf3sso",
+															"Type": "NodeListItem",
+															"ListData": {
+																"Typ": 1,
+																"Delimiter": 46,
+																"Marker": "My4=",
+																"Num": 3
+															},
+															"Properties": {
+																"id": "20221123213615-9uf3sso"
+															},
+															"Children": [
+																{
+																	"ID": "20221123213615-25bjbxk",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213615-25bjbxk",
+																		"updated": "20221123213658"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "将本地主机的文件推送到远程主机，也可以从远程主机拉取文件到本地"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221123213825-o7mr00w",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221123213825-o7mr00w"
+											},
+											"Children": [
+												{
+													"ID": "20221123213825-uuugiwj",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221123213825-uuugiwj",
+														"updated": "20221123213828"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "模式"
+														}
+													]
+												},
+												{
+													"ID": "20221123213830-0t5dc36",
+													"Type": "NodeList",
+													"ListData": {},
+													"Properties": {
+														"id": "20221123213830-0t5dc36",
+														"updated": "20221123213832"
+													},
+													"Children": [
+														{
+															"ID": "20221123213832-62pvuel",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"id": "20221123213832-62pvuel",
+																"updated": "20221123213832"
+															},
+															"Children": [
+																{
+																	"ID": "20221123213832-gr5yuec",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213832-gr5yuec",
+																		"updated": "20221123213836"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "shell模式"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123213836-kqdvor9",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213836-kqdvor9",
+																		"updated": "20221123213855"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "就是本地复制功能（不常用）"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221123213903-jqhdko6",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"id": "20221123213903-jqhdko6"
+															},
+															"Children": [
+																{
+																	"ID": "20221123213903-d67pb03",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213903-d67pb03",
+																		"updated": "20221123213912"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "远程shell模式"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123213912-g5iww2d",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213912-g5iww2d",
+																		"updated": "20221123213931"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "利用ssh来实现数据的加密传输到主机"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221123213933-82yl37v",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"id": "20221123213933-82yl37v"
+															},
+															"Children": [
+																{
+																	"ID": "20221123213933-qntgel3",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213933-qntgel3",
+																		"updated": "20221123213945"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "守护进程模式（服务器模式）"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123213946-1bilg7u",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123213946-1bilg7u",
+																		"updated": "20221123214102"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync监听某个端口"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221123214003-crt4vru",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"id": "20221123214003-crt4vru"
+															},
+															"Children": [
+																{
+																	"ID": "20221123214003-gjmsxua",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123214003-gjmsxua",
+																		"updated": "20221123214011"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "列表模式"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123214011-dtbflb9",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123214011-dtbflb9",
+																		"updated": "20221123214033"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "与ls 类似（不常用）"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221123214245-jlhvisv",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221123214245-jlhvisv",
+												"updated": "20221123224958"
+											},
+											"Children": [
+												{
+													"ID": "20221123214245-zqk0ylq",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221123214245-zqk0ylq",
+														"updated": "20221123214250"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "注意"
+														}
+													]
+												},
+												{
+													"ID": "20221123214251-e9fwx5g",
+													"Type": "NodeList",
+													"ListData": {
+														"Typ": 1
+													},
+													"Properties": {
+														"id": "20221123214251-e9fwx5g",
+														"updated": "20221123224958"
+													},
+													"Children": [
+														{
+															"ID": "20221123214254-kvbnj8q",
+															"Type": "NodeListItem",
+															"ListData": {
+																"Typ": 1,
+																"Delimiter": 46,
+																"Marker": "MS4=",
+																"Num": 1
+															},
+															"Properties": {
+																"id": "20221123214254-kvbnj8q",
+																"updated": "20221123214254"
+															},
+															"Children": [
+																{
+																	"ID": "20221123214254-kc1ttbp",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123214254-kc1ttbp",
+																		"updated": "20221123214316"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "要保证各个主机的时间一致"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221123215204-vm2ka79",
+															"Type": "NodeListItem",
+															"ListData": {
+																"Typ": 1,
+																"Delimiter": 46,
+																"Marker": "Mi4=",
+																"Num": 2
+															},
+															"Properties": {
+																"id": "20221123215204-vm2ka79",
+																"updated": "20221123224958"
+															},
+															"Children": [
+																{
+																	"ID": "20221123215204-a7ghrfo",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123215204-a7ghrfo",
+																		"updated": "20221123215229"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "实现文件的实时同步需要其它软件的配合"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123215234-aiusgn0",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123215234-aiusgn0",
+																		"updated": "20221123215247"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync+inotify"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123215248-w1gpgoo",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123215248-w1gpgoo",
+																		"updated": "20221123215257"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync+sersync"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123215258-zzkkddp",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123215258-zzkkddp",
+																		"updated": "20221123224958"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync：只负责传递文件到远程主机"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221123222345-a4pwcs7",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221123222345-a4pwcs7",
+																		"updated": "20221123222421"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "inotify/sersync：将发生了改变的文件找出来"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221123210350-hex9hec",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221123210350-hex9hec"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221123210351-z8704ui",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221123210351-z8704ui"
+			}
+		},
+		{
+			"ID": "20221123225314-eovvqxm",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221123225314-eovvqxm",
+				"updated": "20221124003607"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221123210351-4zr2sat",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20221123210351-4zr2sat",
+						"updated": "20221124003607"
+					},
+					"Children": [
+						{
+							"ID": "20221123225315-yyvh6wk",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20221123225315-yyvh6wk",
+								"updated": "20221124003607"
+							},
+							"Children": [
+								{
+									"ID": "20221123225315-s38h1xx",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221123225315-s38h1xx",
+										"updated": "20221123225329"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "rsync工作模式"
+										}
+									]
+								},
+								{
+									"ID": "20221123225330-ru2ku8j",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221123225330-ru2ku8j",
+										"updated": "20221124003607"
+									},
+									"Children": [
+										{
+											"ID": "20221123225332-13y9rr0",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"fold": "1",
+												"id": "20221123225332-13y9rr0",
+												"updated": "20221123225332"
+											},
+											"Children": [
+												{
+													"ID": "20221123225332-hcu1a41",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221123225332-hcu1a41",
+														"updated": "20221123225334"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "local"
+														}
+													]
+												},
+												{
+													"ID": "20221123225335-ichetc2",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221123225335-ichetc2",
+														"updated": "20221123225348"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "rsync 与cp 功能相同"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221123233449-rpf55pw",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221123233449-rpf55pw",
+												"updated": "20221124003607"
+											},
+											"Children": [
+												{
+													"ID": "20221123233449-42xb5vx",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221123233449-42xb5vx",
+														"updated": "20221123235259"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "远程传输"
+														}
+													]
+												},
+												{
+													"ID": "20221124003444-arso4gq",
+													"Type": "NodeList",
+													"ListData": {},
+													"Properties": {
+														"id": "20221124003444-arso4gq",
+														"updated": "20221124003607"
+													},
+													"Children": [
+														{
+															"ID": "20221124003559-jqe8hu1",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"fold": "0",
+																"id": "20221124003559-jqe8hu1",
+																"updated": "20221124003607"
+															},
+															"Children": [
+																{
+																	"ID": "20221124003559-qpu8u1x",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003559-qpu8u1x",
+																		"updated": "20221124003559"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "通过远程shell访问模式："
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-ubruifu",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-ubruifu",
+																		"updated": "20221124003607"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "拉取（pull）："
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-ol73zi3",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-ol73zi3",
+																		"updated": "20221124003607"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  [选项]  [用户@主机：源文件]  [目标文件]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-opww1nk",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-opww1nk",
+																		"updated": "20221124003607"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "推送（push）："
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-6jabv54",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-6jabv54",
+																		"updated": "20221124003607"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  [选项]  [源文件]  [用户@主机：目标文件]"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221124003552-0zlws1c",
+													"Type": "NodeList",
+													"ListData": {},
+													"Properties": {
+														"id": "20221124003552-0zlws1c"
+													},
+													"Children": [
+														{
+															"ID": "20221124003458-90wgd1e",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"fold": "0",
+																"id": "20221124003458-90wgd1e",
+																"updated": "20221124003458"
+															},
+															"Children": [
+																{
+																	"ID": "20221124003458-ujg9scd",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003458-ujg9scd",
+																		"updated": "20221124003458"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "守护进程模式："
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-cmhv4yk",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-cmhv4yk",
+																		"updated": "20221124003444"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "拉取（pull）："
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-lffkw01",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-lffkw01",
+																		"updated": "20221124003444"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  [选项]  [用户@主机：：源文件]  [目标文件]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-6k618zc",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-6k618zc",
+																		"updated": "20221124003444"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  [选项]  [rsync://用户@主机：端口 /源文件]   [目标文件]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-wqeann1",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-wqeann1",
+																		"updated": "20221124003444"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "推送（push）："
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-luzg98y",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-luzg98y",
+																		"updated": "20221124003444"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  [选项]  [源文件]  [用户@主机：：目标文件]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124003444-0u05n7l",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124003444-0u05n7l",
+																		"updated": "20221124003444"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  [选项]  [源文件]  [rsync://用户@主机：端口 /目标文件]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221124000833-5s9mf15",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221124000833-5s9mf15",
+																		"updated": "20221124001202"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "rsync  -avz -e \"ssh -p22\"   /root/123.txt   root@192.168.100.105:/tmp/"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221123210351-hyh5ben",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221123210351-hyh5ben",
+						"updated": "20221123225314"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221123210351-q4ddy5s",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221123210351-q4ddy5s"
+			}
+		},
+		{
+			"ID": "20221123210351-lszjz4y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221123210351-lszjz4y",
+				"updated": "20221123212641"
+			}
+		},
+		{
+			"ID": "20221123210351-11zm4lc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221123210351-11zm4lc"
+			}
+		},
+		{
+			"ID": "20221123210335-bxzfzc1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221123210335-bxzfzc1",
+				"updated": "20221123210335"
+			}
+		}
+	]
+}

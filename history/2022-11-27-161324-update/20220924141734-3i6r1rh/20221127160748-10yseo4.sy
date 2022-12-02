@@ -1,0 +1,245 @@
+{
+	"ID": "20221127160748-10yseo4",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221127160748-10yseo4",
+		"title": "docker",
+		"updated": "20221127161148"
+	},
+	"Children": [
+		{
+			"ID": "20221127160800-5n8h2tn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221127160800-5n8h2tn"
+			}
+		},
+		{
+			"ID": "20221127161011-7iub53k",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221127161011-7iub53k",
+				"updated": "20221127161148"
+			},
+			"Children": [
+				{
+					"ID": "20221127161031-0az1ns1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221127161031-0az1ns1",
+						"updated": "20221127161148"
+					},
+					"Children": [
+						{
+							"ID": "20221127161031-pszaoyi",
+							"Type": "NodeHeading",
+							"HeadingLevel": 1,
+							"Properties": {
+								"id": "20221127161031-pszaoyi",
+								"updated": "20221127161034"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "docker基础篇"
+								}
+							]
+						},
+						{
+							"ID": "20221127161043-9f40q2o",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221127161043-9f40q2o",
+								"updated": "20221127161148"
+							},
+							"Children": [
+								{
+									"ID": "20221127161038-iaay3lc",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221127161038-iaay3lc",
+										"updated": "20221127161148"
+									},
+									"Children": [
+										{
+											"ID": "20221127161046-jlht1uc",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127161046-jlht1uc",
+												"updated": "20221127161056"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker简介"
+												}
+											]
+										},
+										{
+											"ID": "20221127161057-6yv1zmp",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127161057-6yv1zmp",
+												"updated": "20221127161148"
+											},
+											"Children": [
+												{
+													"ID": "20221127161148-x12t4wb",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161148-x12t4wb",
+														"updated": "20221127161148"
+													},
+													"Children": [
+														{
+															"ID": "20221127161148-zxk30p6",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161148-zxk30p6",
+																"updated": "20221127161314"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "为什么用docker"
+																}
+															]
+														},
+														{
+															"ID": "20221127161201-pyzjkhu",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161201-pyzjkhu",
+																"updated": "20221127161208"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Docker之所以发展如此迅速，也是因为它对此给出了一个标准化的解决方案-----"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "系统平滑移植，容器虚拟化技术"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161201-cq3n6q5",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161201-cq3n6q5",
+																"updated": "20221127161217"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "环境配置相当麻烦，换一台机器，就要重来一次，费力费时。很多人想到，能不能从根本上解决问题，软件可以带环境安装？也就是说，安装的时候，把原始环境一模一样地复制过来。"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "开发人员利用 Docker 可以消除协作编码时“在我的机器上可正常工作”的问题"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161218-zrz4j2y",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161218-zrz4j2y",
+																"updated": "20221127161308"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "开发需要清楚的告诉运维部署团队，用的全部配置文件+所有软件环境。不过，即便如此，仍然常常发生部署失败的状况。Docker的出现使得Docker得以"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "打破过去「程序即应用」的观念"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。透过镜像(images)将作业系统核心除外，运作应用程式所需要的系统环境，由下而上打包，"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "达到应用程式跨平台间的无缝接轨运作"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127161317-vpfgeaf",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221127161317-vpfgeaf"
+													},
+													"Children": [
+														{
+															"ID": "20221127161317-fl32g82",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161317-fl32g82"
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221127161243-emn6hui",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221127161243-emn6hui"
+			}
+		}
+	]
+}

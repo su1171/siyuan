@@ -1,0 +1,1100 @@
+{
+	"ID": "20221127160748-10yseo4",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221127160748-10yseo4",
+		"title": "docker",
+		"updated": "20221127161043"
+	},
+	"Children": [
+		{
+			"ID": "20221127160800-5n8h2tn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221127160800-5n8h2tn"
+			}
+		},
+		{
+			"ID": "20221127161011-7iub53k",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221127161011-7iub53k",
+				"updated": "20221127161043"
+			},
+			"Children": [
+				{
+					"ID": "20221127161031-0az1ns1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221127161031-0az1ns1",
+						"updated": "20221127161043"
+					},
+					"Children": [
+						{
+							"ID": "20221127161031-pszaoyi",
+							"Type": "NodeHeading",
+							"HeadingLevel": 1,
+							"Properties": {
+								"id": "20221127161031-pszaoyi",
+								"updated": "20221127161034"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "docker基础篇"
+								}
+							]
+						},
+						{
+							"ID": "20221127161043-9f40q2o",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221127161043-9f40q2o"
+							},
+							"Children": [
+								{
+									"ID": "20221127161038-iaay3lc",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221127161038-iaay3lc"
+									},
+									"Children": [
+										{
+											"ID": "20221127161046-jlht1uc",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127161046-jlht1uc",
+												"updated": "20221127161056"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker简介"
+												}
+											]
+										},
+										{
+											"ID": "20221127161057-6yv1zmp",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127161057-6yv1zmp",
+												"updated": "20221127161148"
+											},
+											"Children": [
+												{
+													"ID": "20221127161148-x12t4wb",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161148-x12t4wb",
+														"updated": "20221127161148"
+													},
+													"Children": [
+														{
+															"ID": "20221127161148-zxk30p6",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161148-zxk30p6",
+																"updated": "20221127161314"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "为什么用docker"
+																}
+															]
+														},
+														{
+															"ID": "20221127161201-pyzjkhu",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161201-pyzjkhu",
+																"updated": "20221127161208"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Docker之所以发展如此迅速，也是因为它对此给出了一个标准化的解决方案-----"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "系统平滑移植，容器虚拟化技术"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161201-cq3n6q5",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161201-cq3n6q5",
+																"updated": "20221127161217"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "环境配置相当麻烦，换一台机器，就要重来一次，费力费时。很多人想到，能不能从根本上解决问题，软件可以带环境安装？也就是说，安装的时候，把原始环境一模一样地复制过来。"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "开发人员利用 Docker 可以消除协作编码时“在我的机器上可正常工作”的问题"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161218-zrz4j2y",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161218-zrz4j2y",
+																"updated": "20221127161308"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "开发需要清楚的告诉运维部署团队，用的全部配置文件+所有软件环境。不过，即便如此，仍然常常发生部署失败的状况。Docker的出现使得Docker得以"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "打破过去「程序即应用」的观念"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。透过镜像(images)将作业系统核心除外，运作应用程式所需要的系统环境，由下而上打包，"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "达到应用程式跨平台间的无缝接轨运作"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127161317-vpfgeaf",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161317-vpfgeaf"
+													},
+													"Children": [
+														{
+															"ID": "20221127161317-fl32g82",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161317-fl32g82",
+																"updated": "20221127161442"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker的理念"
+																}
+															]
+														},
+														{
+															"ID": "20221127161341-ehbag9c",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161341-ehbag9c",
+																"updated": "20221127161359"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Docker是基于Go语言实现的云开源项目。\nDocker的主要目标是“Build，Ship and Run Any App,Anywhere”，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或数据库应用等等）及其运行环境能够做到“"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "一次镜像，处处运行"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "”。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161341-8tmvfmi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161341-8tmvfmi",
+																"updated": "20221127161504"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux容器技术的出现就解决了这样一个问题，而 Docker 就是在它的基础上发展过来的。将"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "应用打成镜像，通过镜像成为运行在Docker容器上面的实例，而 Docker容器在任何操作系统上都是一致的，这就实现了跨平台、跨服务器"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127161512-zsxc6vg",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161512-zsxc6vg"
+													},
+													"Children": [
+														{
+															"ID": "20221127161512-bzf6qb5",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161512-bzf6qb5",
+																"updated": "20221127161515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "总结"
+																}
+															]
+														},
+														{
+															"ID": "20221127161516-i67mipv",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161516-i67mipv",
+																"updated": "20221127161541"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "解决了"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "运行环境和配置问题"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "的"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "软件容器"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，方便做持续集成并有助于整体发布的容器虚拟化技术。"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221127161611-timb0yz",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221127161611-timb0yz"
+									},
+									"Children": [
+										{
+											"ID": "20221127161611-hhuu12y",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127161611-hhuu12y",
+												"updated": "20221127161630"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "容器与虚拟机比较"
+												}
+											]
+										},
+										{
+											"ID": "20221127161630-04lw2w2",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127161630-04lw2w2",
+												"updated": "20221127161655"
+											},
+											"Children": [
+												{
+													"ID": "20221127161655-3t79q7m",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161655-3t79q7m",
+														"updated": "20221127161655"
+													},
+													"Children": [
+														{
+															"ID": "20221127161655-d539flb",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161655-d539flb",
+																"updated": "20221127162041"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "传统虚拟机技术"
+																}
+															]
+														},
+														{
+															"ID": "20221127161712-9mg2b7m",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161712-9mg2b7m",
+																"updated": "20221127161712"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "虚拟机（virtual machine）就是带环境安装的一种解决方案。\n它可以在一种操作系统里面运行另一种操作系统，比如在Windows10系统里面运行Linux系统CentOS7。应用程序对此毫无感知，因为虚拟机看上去跟真实系统一模一样，而对于底层系统来说，虚拟机就是一个普通文件，不需要了就删掉，对其他部分毫无影响。这类虚拟机完美的运行了另一套系统，能够使应用程序，操作系统和硬件三者之间的逻辑不变。"
+																},
+																{
+																	"Type": "NodeBr",
+																	"Data": "br"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "Win10\tVMWare\tCentos7\t各种cpu、内存网络额配置+各种软件\t虚拟机实例"
+																}
+															]
+														},
+														{
+															"ID": "20221127161801-yu2v0j7",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161801-yu2v0j7",
+																"updated": "20221127162023"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "display: block; max-width: 467px;",
+																		"style": "width: 457px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "image"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/image-20221127162018-mw9vay1.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 457px;\" parent-style=\"display: block; max-width: 467px;\"}"
+																}
+															]
+														},
+														{
+															"ID": "20221127161712-hjaeuj1",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161712-hjaeuj1",
+																"updated": "20221127161712"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "虚拟机的缺点：\n1    资源占用多               2    冗余步骤多                 3    启动慢"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127162044-051j0dm",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127162044-051j0dm"
+													},
+													"Children": [
+														{
+															"ID": "20221127162044-n7o78st",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127162044-n7o78st",
+																"updated": "20221127162113"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "容器虚拟化技术"
+																}
+															]
+														},
+														{
+															"ID": "20221127162114-fdh5asb",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162114-fdh5asb",
+																"updated": "20221127162128"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux容器(Linux Containers，缩写为 LXC)\nLinux容器是与系统其他部分隔离开的"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "一系列进程"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，从另一个镜像运行，并由该镜像提供支持进程所需的全部文件。容器提供的镜像包含了应用的所有依赖项，因而在从开发到测试再到生产的整个过程中，它都具有可移植性和一致性。"
+																}
+															]
+														},
+														{
+															"ID": "20221127162257-g4bkq9z",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162257-g4bkq9z",
+																"updated": "20221127162302"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "max-width: 481px; display: block;",
+																		"style": "width: 471px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "image"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/image-20221127162257-jseb29r.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 471px;\" parent-style=\"max-width: 481px; display: block;\"}"
+																}
+															]
+														},
+														{
+															"ID": "20221127162114-lpk68i3",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162114-lpk68i3",
+																"updated": "20221127162145"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux 容器"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "不是"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "模拟一个完整的操作系统而是对"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "进程进行隔离"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。有了容器，就可以将软件运行所需的所有资源打包到一个隔离的容器中。容器与虚拟机不同，不需要捆绑一整套操作系统，只需要软件工作所需的库资源和设置。系统因此而变得高效轻量并保证部署在任何环境中的软件都能始终如一地运行。"
+																}
+															]
+														},
+														{
+															"ID": "20221127162321-nclqp1d",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162321-nclqp1d",
+																"updated": "20221127162701"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统的虚拟机则是在硬件层面上实现虚拟化。与传统的虚拟机相比，docker优势体现在启动速度快，占用体积小。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127162815-n5qe70e",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127162815-n5qe70e"
+													},
+													"Children": [
+														{
+															"ID": "20221127162815-k5x1nov",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127162815-k5x1nov",
+																"updated": "20221127162819"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "对比"
+																}
+															]
+														},
+														{
+															"ID": "20221127162820-0eyey0v",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162820-0eyey0v",
+																"updated": "20221127162827"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": " Docker 和传统虚拟化方式的不同之处："
+																}
+															]
+														},
+														{
+															"ID": "20221127162827-4o1p7p5",
+															"Type": "NodeList",
+															"ListData": {
+																"Typ": 1
+															},
+															"Properties": {
+																"id": "20221127162827-4o1p7p5",
+																"updated": "20221127162827"
+															},
+															"Children": [
+																{
+																	"ID": "20221127162827-0f0czjp",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "MS4=",
+																		"Num": 1
+																	},
+																	"Properties": {
+																		"id": "20221127162827-0f0czjp",
+																		"updated": "20221127162827"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127162827-q9prh0l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127162827-q9prh0l",
+																				"updated": "20221127162854"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "传统虚拟机技术是"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "虚拟出一套硬件"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "后，在其上"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "运行一个完整操作系统"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，在该系统上"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "再运行所需应用进程"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "；"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127162831-8t9pf0u",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "Mi4=",
+																		"Num": 2
+																	},
+																	"Properties": {
+																		"id": "20221127162831-8t9pf0u"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127162831-bzrk4bq",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127162831-bzrk4bq",
+																				"updated": "20221127162902"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "容器内的应用进程"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "直接运行于宿主的内核"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，容器内没有自己的内核且也没有进行硬件虚拟。因此容器要比传统虚拟机"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "更为轻便"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127162839-lpbqfkl",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "My4=",
+																		"Num": 3
+																	},
+																	"Properties": {
+																		"id": "20221127162839-lpbqfkl"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127162839-eb96qjt",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127162839-eb96qjt",
+																				"updated": "20221127162908"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "每个"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "容器之间互相隔离"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，每个容器有自己的文件系统 ，容器之间进程不会相互影响，能区分计算资源。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127164258-uv7h6yc",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127164258-uv7h6yc"
+													},
+													"Children": [
+														{
+															"ID": "20221127164258-quyia54",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127164258-quyia54",
+																"updated": "20221127164614"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker优点"
+																}
+															]
+														},
+														{
+															"ID": "20221127164322-szcwd3m",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221127164322-szcwd3m",
+																"updated": "20221127164335"
+															},
+															"Children": [
+																{
+																	"ID": "20221127164335-zeyt6i7",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164335-zeyt6i7",
+																		"updated": "20221127164335"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164335-y4xdjwq",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164335-y4xdjwq",
+																				"updated": "20221127164358"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更快的应用交付和部署"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164446-263o63d",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164446-263o63d",
+																				"updated": "20221127164454"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "传统的应用开发完成后，需要提供一堆安装程序和配置说明文档，安装部署后需根据配置文档进行繁杂的配置才能正常运行。Docker化之后只需要交付少量容器镜像文件，在正式生产环境加载镜像并运行即可，应用安装配置在镜像里已经内置好，大大节省部署配置和测试验证时间。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127164359-e2am2x5",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164359-e2am2x5"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164359-yvpzvdw",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164359-yvpzvdw",
+																				"updated": "20221127164414"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更便捷的升级和扩缩容"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164457-tkufsap",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164457-tkufsap",
+																				"updated": "20221127164508"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "随着微服务架构和Docker的发展，大量的应用会通过微服务方式架构，应用的开发构建将变成搭乐高积木一样，每个Docker容器将变成一块“积木”，应用的升级将变得非常容易。当现有的容器不足以支撑业务处理时，可通过镜像运行新的容器进行快速扩容，使应用系统的扩容从原先的天级变成分钟级甚至秒级。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127164414-dn3x9jr",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164414-dn3x9jr"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164414-j7p4zrh",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164414-j7p4zrh",
+																				"updated": "20221127164422"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更简单的系统运维"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164510-1wj9kyf",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164510-1wj9kyf",
+																				"updated": "20221127164520"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "应用容器化运行后，生产环境运行的应用可与开发、测试环境的应用高度一致，容器会将应用程序相关的环境和状态完全封装起来，不会因为底层基础架构和操作系统的不一致性给应用带来影响，产生新的BUG。当出现程序异常时，也可以通过测试环境的相同容器进行快速定位和修复。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127164423-yqi9qdn",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164423-yqi9qdn"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164423-cfxz60f",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164423-cfxz60f",
+																				"updated": "20221127164436"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更高效的计算资源利用"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164523-s2ulp0u",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164523-s2ulp0u",
+																				"updated": "20221127164536"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "Docker是内核级虚拟化，其不像传统的虚拟化技术一样需要额外的Hypervisor支持，所以在一台物理机上可以运行很多个容器实例，可大大提升物理服务器的CPU和内存的利用率。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221127164647-daxue7q",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221127164647-daxue7q"
+									},
+									"Children": [
+										{
+											"ID": "20221127164647-oiyt90z",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127164647-oiyt90z",
+												"updated": "20221127164654"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker安装"
+												}
+											]
+										},
+										{
+											"ID": "20221127164654-6dpa00w",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221127164654-6dpa00w"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221127161243-emn6hui",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221127161243-emn6hui"
+			}
+		}
+	]
+}

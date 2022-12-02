@@ -1,0 +1,4710 @@
+{
+	"ID": "20221127160748-10yseo4",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221127160748-10yseo4",
+		"title": "docker",
+		"updated": "20221128233238"
+	},
+	"Children": [
+		{
+			"ID": "20221127160800-5n8h2tn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221127160800-5n8h2tn"
+			}
+		},
+		{
+			"ID": "20221127161011-7iub53k",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221127161011-7iub53k",
+				"updated": "20221128233238"
+			},
+			"Children": [
+				{
+					"ID": "20221127161031-0az1ns1",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221127161031-0az1ns1",
+						"updated": "20221128233238"
+					},
+					"Children": [
+						{
+							"ID": "20221127161031-pszaoyi",
+							"Type": "NodeHeading",
+							"HeadingLevel": 1,
+							"Properties": {
+								"id": "20221127161031-pszaoyi",
+								"updated": "20221127161034"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "docker基础篇"
+								}
+							]
+						},
+						{
+							"ID": "20221127161043-9f40q2o",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221127161043-9f40q2o",
+								"updated": "20221128233238"
+							},
+							"Children": [
+								{
+									"ID": "20221127161038-iaay3lc",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221127161038-iaay3lc"
+									},
+									"Children": [
+										{
+											"ID": "20221127161046-jlht1uc",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127161046-jlht1uc",
+												"updated": "20221127161056"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker简介"
+												}
+											]
+										},
+										{
+											"ID": "20221127161057-6yv1zmp",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127161057-6yv1zmp",
+												"updated": "20221127161148"
+											},
+											"Children": [
+												{
+													"ID": "20221127161148-x12t4wb",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161148-x12t4wb",
+														"updated": "20221127161148"
+													},
+													"Children": [
+														{
+															"ID": "20221127161148-zxk30p6",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161148-zxk30p6",
+																"updated": "20221127161314"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "为什么用docker"
+																}
+															]
+														},
+														{
+															"ID": "20221127161201-pyzjkhu",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161201-pyzjkhu",
+																"updated": "20221127161208"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Docker之所以发展如此迅速，也是因为它对此给出了一个标准化的解决方案-----"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "系统平滑移植，容器虚拟化技术"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161201-cq3n6q5",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161201-cq3n6q5",
+																"updated": "20221127161217"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "环境配置相当麻烦，换一台机器，就要重来一次，费力费时。很多人想到，能不能从根本上解决问题，软件可以带环境安装？也就是说，安装的时候，把原始环境一模一样地复制过来。"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "开发人员利用 Docker 可以消除协作编码时“在我的机器上可正常工作”的问题"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161218-zrz4j2y",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161218-zrz4j2y",
+																"updated": "20221127161308"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "开发需要清楚的告诉运维部署团队，用的全部配置文件+所有软件环境。不过，即便如此，仍然常常发生部署失败的状况。Docker的出现使得Docker得以"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "打破过去「程序即应用」的观念"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。透过镜像(images)将作业系统核心除外，运作应用程式所需要的系统环境，由下而上打包，"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "达到应用程式跨平台间的无缝接轨运作"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127161317-vpfgeaf",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161317-vpfgeaf"
+													},
+													"Children": [
+														{
+															"ID": "20221127161317-fl32g82",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161317-fl32g82",
+																"updated": "20221127161442"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker的理念"
+																}
+															]
+														},
+														{
+															"ID": "20221127161341-ehbag9c",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161341-ehbag9c",
+																"updated": "20221127161359"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Docker是基于Go语言实现的云开源项目。\nDocker的主要目标是“Build，Ship and Run Any App,Anywhere”，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "数据库"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "应用等等）及其运行环境能够做到“"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "一次镜像，处处运行"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "”。"
+																}
+															]
+														},
+														{
+															"ID": "20221127161341-8tmvfmi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161341-8tmvfmi",
+																"updated": "20221127161504"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux容器技术的出现就解决了这样一个问题，而 Docker 就是在它的基础上发展过来的。将"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "应用打成镜像，通过镜像成为运行在Docker容器上面的实例，而 Docker容器在任何操作系统上都是一致的，这就实现了跨平台、跨服务器"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127161512-zsxc6vg",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161512-zsxc6vg"
+													},
+													"Children": [
+														{
+															"ID": "20221127161512-bzf6qb5",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161512-bzf6qb5",
+																"updated": "20221127161515"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "总结"
+																}
+															]
+														},
+														{
+															"ID": "20221127161516-i67mipv",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161516-i67mipv",
+																"updated": "20221127161541"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "解决了"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "运行环境和配置问题"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "的"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "软件容器"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，方便做持续集成并有助于整体发布的容器虚拟化技术。"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221127161611-timb0yz",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221127161611-timb0yz"
+									},
+									"Children": [
+										{
+											"ID": "20221127161611-hhuu12y",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127161611-hhuu12y",
+												"updated": "20221127161630"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "容器与虚拟机比较"
+												}
+											]
+										},
+										{
+											"ID": "20221127161630-04lw2w2",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127161630-04lw2w2",
+												"updated": "20221127161655"
+											},
+											"Children": [
+												{
+													"ID": "20221127161655-3t79q7m",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127161655-3t79q7m",
+														"updated": "20221127161655"
+													},
+													"Children": [
+														{
+															"ID": "20221127161655-d539flb",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127161655-d539flb",
+																"updated": "20221127162041"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "传统虚拟机技术"
+																}
+															]
+														},
+														{
+															"ID": "20221127161712-9mg2b7m",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161712-9mg2b7m",
+																"updated": "20221127161712"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "虚拟机（virtual machine）就是带环境安装的一种解决方案。\n它可以在一种操作系统里面运行另一种操作系统，比如在Windows10系统里面运行Linux系统CentOS7。应用程序对此毫无感知，因为虚拟机看上去跟真实系统一模一样，而对于底层系统来说，虚拟机就是一个普通文件，不需要了就删掉，对其他部分毫无影响。这类虚拟机完美的运行了另一套系统，能够使应用程序，操作系统和硬件三者之间的逻辑不变。"
+																},
+																{
+																	"Type": "NodeBr",
+																	"Data": "br"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "Win10\tVMWare\tCentos7\t各种cpu、内存网络额配置+各种软件\t虚拟机实例"
+																}
+															]
+														},
+														{
+															"ID": "20221127161801-yu2v0j7",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161801-yu2v0j7",
+																"updated": "20221127162023"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "display: block; max-width: 467px;",
+																		"style": "width: 457px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "image"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/image-20221127162018-mw9vay1.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 457px;\" parent-style=\"display: block; max-width: 467px;\"}"
+																}
+															]
+														},
+														{
+															"ID": "20221127161712-hjaeuj1",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127161712-hjaeuj1",
+																"updated": "20221127161712"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "虚拟机的缺点：\n1    资源占用多               2    冗余步骤多                 3    启动慢"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127162044-051j0dm",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127162044-051j0dm"
+													},
+													"Children": [
+														{
+															"ID": "20221127162044-n7o78st",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127162044-n7o78st",
+																"updated": "20221127162113"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "容器虚拟化技术"
+																}
+															]
+														},
+														{
+															"ID": "20221127162114-fdh5asb",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162114-fdh5asb",
+																"updated": "20221127162128"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux容器(Linux Containers，缩写为 LXC)\nLinux容器是与系统其他部分隔离开的"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "一系列进程"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，从另一个镜像运行，并由该镜像提供支持进程所需的全部文件。容器提供的镜像包含了应用的所有依赖项，因而在从开发到测试再到生产的整个过程中，它都具有可移植性和一致性。"
+																}
+															]
+														},
+														{
+															"ID": "20221127162257-g4bkq9z",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162257-g4bkq9z",
+																"updated": "20221127162302"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "max-width: 481px; display: block;",
+																		"style": "width: 471px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "image"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/image-20221127162257-jseb29r.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 471px;\" parent-style=\"max-width: 481px; display: block;\"}"
+																}
+															]
+														},
+														{
+															"ID": "20221127162114-lpk68i3",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162114-lpk68i3",
+																"updated": "20221127162145"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux 容器"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "不是"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "模拟一个完整的操作系统而是对"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "进程进行隔离"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。有了容器，就可以将软件运行所需的所有资源打包到一个隔离的容器中。容器与虚拟机不同，不需要捆绑一整套操作系统，只需要软件工作所需的库资源和设置。系统因此而变得高效轻量并保证部署在任何环境中的软件都能始终如一地运行。"
+																}
+															]
+														},
+														{
+															"ID": "20221127162321-nclqp1d",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162321-nclqp1d",
+																"updated": "20221127162701"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统的虚拟机则是在硬件层面上实现虚拟化。与传统的虚拟机相比，docker优势体现在启动速度快，占用体积小。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127162815-n5qe70e",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127162815-n5qe70e"
+													},
+													"Children": [
+														{
+															"ID": "20221127162815-k5x1nov",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127162815-k5x1nov",
+																"updated": "20221127162819"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "对比"
+																}
+															]
+														},
+														{
+															"ID": "20221127162820-0eyey0v",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127162820-0eyey0v",
+																"updated": "20221127162827"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": " Docker 和传统虚拟化方式的不同之处："
+																}
+															]
+														},
+														{
+															"ID": "20221127162827-4o1p7p5",
+															"Type": "NodeList",
+															"ListData": {
+																"Typ": 1
+															},
+															"Properties": {
+																"id": "20221127162827-4o1p7p5",
+																"updated": "20221127162827"
+															},
+															"Children": [
+																{
+																	"ID": "20221127162827-0f0czjp",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "MS4=",
+																		"Num": 1
+																	},
+																	"Properties": {
+																		"id": "20221127162827-0f0czjp",
+																		"updated": "20221127162827"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127162827-q9prh0l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127162827-q9prh0l",
+																				"updated": "20221127162854"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "传统虚拟机技术是"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "虚拟出一套硬件"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "后，在其上"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "运行一个完整操作系统"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，在该系统上"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "再运行所需应用进程"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "；"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127162831-8t9pf0u",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "Mi4=",
+																		"Num": 2
+																	},
+																	"Properties": {
+																		"id": "20221127162831-8t9pf0u"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127162831-bzrk4bq",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127162831-bzrk4bq",
+																				"updated": "20221127162902"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "容器内的应用进程"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "直接运行于宿主的内核"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，容器内没有自己的内核且也没有进行硬件虚拟。因此容器要比传统虚拟机"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "更为轻便"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127162839-lpbqfkl",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "My4=",
+																		"Num": 3
+																	},
+																	"Properties": {
+																		"id": "20221127162839-lpbqfkl"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127162839-eb96qjt",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127162839-eb96qjt",
+																				"updated": "20221127162908"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "每个"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "容器之间互相隔离"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，每个容器有自己的文件系统 ，容器之间进程不会相互影响，能区分计算资源。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127164258-uv7h6yc",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127164258-uv7h6yc"
+													},
+													"Children": [
+														{
+															"ID": "20221127164258-quyia54",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127164258-quyia54",
+																"updated": "20221127164614"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker优点"
+																}
+															]
+														},
+														{
+															"ID": "20221127164322-szcwd3m",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221127164322-szcwd3m",
+																"updated": "20221127164335"
+															},
+															"Children": [
+																{
+																	"ID": "20221127164335-zeyt6i7",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164335-zeyt6i7",
+																		"updated": "20221127164335"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164335-y4xdjwq",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164335-y4xdjwq",
+																				"updated": "20221127164358"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更快的应用交付和部署"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164446-263o63d",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164446-263o63d",
+																				"updated": "20221127164454"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "传统的应用开发完成后，需要提供一堆安装程序和配置说明"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "文档"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，安装部署后需根据配置"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "文档"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "进行繁杂的配置才能正常运行。Docker化之后只需要交付少量容器镜像文件，在正式生产环境加载镜像并运行即可，应用安装配置在镜像里已经内置好，大大节省部署配置和测试验证时间。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127164359-e2am2x5",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164359-e2am2x5"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164359-yvpzvdw",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164359-yvpzvdw",
+																				"updated": "20221127164414"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更便捷的升级和扩缩容"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164457-tkufsap",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164457-tkufsap",
+																				"updated": "20221127164508"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "随着微"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "架构和Docker的发展，大量的应用会通过微"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "方式架构，应用的开发构建将变成搭乐高积木一样，每个Docker容器将变成一块“积木”，应用的升级将变得非常容易。当现有的容器不足以支撑业务处理时，可通过镜像运行新的容器进行快速扩容，使应用系统的扩容从原先的天级变成分钟级甚至秒级。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127164414-dn3x9jr",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164414-dn3x9jr"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164414-j7p4zrh",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164414-j7p4zrh",
+																				"updated": "20221127164422"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更简单的系统运维"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164510-1wj9kyf",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164510-1wj9kyf",
+																				"updated": "20221127164520"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "应用容器化运行后，生产环境运行的应用可与开发、测试环境的应用高度一致，容器会将应用程序相关的环境和状态完全封装起来，不会因为底层基础架构和操作系统的不一致性给应用带来影响，产生新的BUG。当出现程序异常时，也可以通过测试环境的相同容器进行快速定位和修复。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127164423-yqi9qdn",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127164423-yqi9qdn"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127164423-cfxz60f",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164423-cfxz60f",
+																				"updated": "20221127164436"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "更高效的计算资源利用"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127164523-s2ulp0u",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127164523-s2ulp0u",
+																				"updated": "20221127164536"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "Docker是内核级虚拟化，其不像传统的虚拟化技术一样需要额外的Hypervisor支持，所以在一台物理机上可以运行很多个容器实例，可大大提升物理"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "器的CPU和内存的利用率。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127212138-xdts8hd",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127212138-xdts8hd"
+													},
+													"Children": [
+														{
+															"ID": "20221127212138-pmaxrw0",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127212138-pmaxrw0",
+																"updated": "20221127212614"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker为什么快"
+																}
+															]
+														},
+														{
+															"ID": "20221127212149-ydkw7o0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127212149-ydkw7o0",
+																"updated": "20221127212533"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "(1)docker有着比虚拟机更少的抽象层"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "\n   由于docker不需要Hypervisor(虚拟机)实现硬件资源虚拟化,运行在docker容器上的程序直接使用的都是实际物理机的硬件资源。因此在CPU、内存利用率上docker将会在效率上有明显优势。\n"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "(2)docker利用的是宿主机的内核,而不需要加载操作系统OS内核"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "\n   当新建一个容器时,docker不需要和虚拟机一样重新加载一个操作系统内核。进而避免引寻、加载操作系统内核返回等比较费时费资源的过程,当新建一个虚拟机时,虚拟机软件需要加载OS,返回新建过程是分钟级别的。而docker由于直接利用宿主机的操作系统,则省略了返回过程,因此新建一个docker容器只需要几秒钟。"
+																}
+															]
+														},
+														{
+															"ID": "20221127212240-9pmfwwv",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127212240-9pmfwwv",
+																"updated": "20221127212517"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "siyuan://blocks/20221127212412-k3sv713",
+																	"TextMarkTextContent": "docker与VM架构对比"
+																}
+															]
+														},
+														{
+															"ID": "20221127212259-rn40wio",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127212259-rn40wio",
+																"updated": "20221127212335"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "max-width: 556px; display: block;",
+																		"style": "width: 546px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "image"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/image-20221127212300-6qq55ev.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 546px;\" parent-style=\"max-width: 556px; display: block;\"}"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221127164647-daxue7q",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221127164647-daxue7q"
+									},
+									"Children": [
+										{
+											"ID": "20221127164647-oiyt90z",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127164647-oiyt90z",
+												"updated": "20221127164654"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker安装"
+												}
+											]
+										},
+										{
+											"ID": "20221127164654-6dpa00w",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127164654-6dpa00w",
+												"updated": "20221127170731"
+											},
+											"Children": [
+												{
+													"ID": "20221127170731-8ht5v03",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127170731-8ht5v03",
+														"updated": "20221127170731"
+													},
+													"Children": [
+														{
+															"ID": "20221127170731-12eg243",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127170731-12eg243",
+																"updated": "20221127190404"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装前提"
+																}
+															]
+														},
+														{
+															"ID": "20221127170740-xd7gvvl",
+															"Type": "NodeList",
+															"ListData": {
+																"Typ": 1
+															},
+															"Properties": {
+																"id": "20221127170740-xd7gvvl",
+																"updated": "20221127192117"
+															},
+															"Children": [
+																{
+																	"ID": "20221127192117-6bar15e",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "MS4=",
+																		"Num": 1
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127192117-6bar15e",
+																		"updated": "20221127192117"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127192117-8rsthcv",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127192117-8rsthcv",
+																				"updated": "20221127192117"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "Linux系统内核版本为 3.8以上"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127170817-yra34uf",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127170817-yra34uf",
+																				"updated": "20221127170831"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "查看系统内核版本\nuname -r"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127192136-uhlrk8e",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "Mi4=",
+																		"Num": 2
+																	},
+																	"Properties": {
+																		"id": "20221127192136-uhlrk8e"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127192136-tymqlyl",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127192136-tymqlyl",
+																				"updated": "20221127192147"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "有gcc环境"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127192147-rry8d1t",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127192147-rry8d1t",
+																				"updated": "20221127192205"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "yum -y install gcc gcc-c++\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127192238-zkhysld",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"Typ": 1,
+																		"Delimiter": 46,
+																		"Marker": "My4=",
+																		"Num": 3
+																	},
+																	"Properties": {
+																		"id": "20221127192238-zkhysld"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127192238-tp2pf1a",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127192238-tp2pf1a",
+																				"updated": "20221127192435"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "安装yum增强工具包"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127192250-0r63y6u",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127192250-0r63y6u",
+																				"updated": "20221127192254"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "yum install -y yum-utils\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127190005-03xry25",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127190005-03xry25"
+													},
+													"Children": [
+														{
+															"ID": "20221127190005-6yef76r",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127190005-6yef76r",
+																"updated": "20221127190023"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "docker的基本构成"
+																}
+															]
+														},
+														{
+															"ID": "20221127190023-lc1cnqt",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221127190023-lc1cnqt",
+																"updated": "20221127190025"
+															},
+															"Children": [
+																{
+																	"ID": "20221127190025-1oaknk0",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127190025-1oaknk0",
+																		"updated": "20221127190025"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127190025-49sl9u5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190025-49sl9u5",
+																				"updated": "20221127190354"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "镜像（image）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127190105-vagoz34",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190105-vagoz34",
+																				"updated": "20221127190140"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "Docker 镜像（Image）就是一个"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "只读的模板"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "。镜像可以用来创建 Docker 容器，一个镜像可以创建很多容器。\n它也相当于是一个root文件系统。比如官方镜像 centos:7 就包含了完整的一套 centos:7 最小系统的 root 文件系统。\n相当于容器的“源代码”，docker镜像文件类似于Java的类模板，而docker容器实例类似于java中new出来的实例对象。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127190038-bx5k0c8",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127190038-bx5k0c8"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127190038-o7evo9q",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190038-o7evo9q",
+																				"updated": "20221127190047"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "容器（container）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127190159-g1w6okc",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190159-g1w6okc",
+																				"updated": "20221127190311"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "1 从面向对象角度\nDocker 利用容器（Container）独立运行的一个或一组应用，应用程序或"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "运行在容器里面，容器就类似于一个虚拟化的运行环境，容器是用镜像创建的运行实例。就像是Java中的类和实例对象一样，"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "镜像是静态的定义，容器是镜像运行时的实体"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "。容器为镜像提供了一个标准的和隔离的运行环境，它可以被启动、开始、停止、删除。每个容器都是"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "相互隔离"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "的、保证安全的平台"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127190159-3mvbx42",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190159-3mvbx42",
+																				"updated": "20221127190159"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "2 从镜像容器角度\n可以把容器看做是一个简易版的 Linux 环境（包括root用户权限、进程空间、用户空间和网络空间等）和运行在其中的应用程序。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127190048-kke6djl",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127190048-kke6djl"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127190048-bp88qb4",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190048-bp88qb4",
+																				"updated": "20221127190100"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "仓库（repository）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127190316-0ozgwkx",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190316-0ozgwkx",
+																				"updated": "20221127190328"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "仓库（Repository）是集中存放镜像文件的场所。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127190341-242vho0",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190341-242vho0",
+																				"updated": "20221127190341"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "类似于\nMaven仓库，存放各种jar包的地方；\ngithub仓库，存放各种git项目的地方；\nDocker公司提供的官方registry被称为Docker Hub，存放各种镜像模板的地方。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127190341-q6wb2sc",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127190341-q6wb2sc",
+																				"updated": "20221127190341"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "仓库分为公开仓库（Public）和私有仓库（Private）两种形式。\n最大的公开仓库是 Docker Hub(https://hub.docker.com/)，\n存放了数量庞大的镜像供用户下载。国内的公开仓库包括"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "阿里云"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": " 、网易云等"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127190427-kjqolh9",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127190427-kjqolh9"
+													},
+													"Children": [
+														{
+															"ID": "20221127190427-p8l2mdt",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127190427-p8l2mdt",
+																"updated": "20221127192034"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装"
+																}
+															]
+														},
+														{
+															"ID": "20221127192037-j12qubg",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221127192037-j12qubg",
+																"updated": "20221127192039"
+															},
+															"Children": [
+																{
+																	"ID": "20221127192039-wde6i4l",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127192039-wde6i4l",
+																		"updated": "20221127192039"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127192039-s082l45",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221127192039-s082l45",
+																				"updated": "20221127192058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "卸载旧版本"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127192044-s1mslsx",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127192044-s1mslsx",
+																				"updated": "20221127192048"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": " sudo yum remove docker \\\n                  docker-client \\\n                  docker-client-latest \\\n                  docker-common \\\n                  docker-latest \\\n                  docker-latest-logrotate \\\n                  docker-logrotate \\\n                  docker-engine\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127205025-275e35i",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127205025-275e35i"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127205025-5678gbx",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221127205025-5678gbx",
+																				"updated": "20221127205052"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "添加repo源"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127205052-x7a6zhy",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127205052-x7a6zhy",
+																				"updated": "20221127205100"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "使用阿里的源"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127205028-bc6n7z7",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127205028-bc6n7z7",
+																				"updated": "20221127205203"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo\nyum makecache fast\t\t\t# 重新建立缓存\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127205207-iplniji",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127205207-iplniji"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127205207-ghfa3f1",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221127205207-ghfa3f1",
+																				"updated": "20221127205253"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "安装docker"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127205217-kl12cmu",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127205217-kl12cmu",
+																				"updated": "20221127205235"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "yum -y install docker-ce docker-ce-cli containerd.io\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127205258-pmbayej",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127205258-pmbayej"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127205258-4fl39ot",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221127205258-4fl39ot",
+																				"updated": "20221127205308"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "启动docker"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127205308-ekx7qic",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127205308-ekx7qic",
+																				"updated": "20221127205356"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "systemctl start docker\ndocker version\t\t# 查看docker版本\ndocker run hello-world\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127205832-w99nt2a",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127205832-w99nt2a"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127205832-k2p7a6j",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221127205832-k2p7a6j",
+																				"updated": "20221127205838"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "卸载docker"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127205839-mrpnjgv",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221127205839-mrpnjgv",
+																				"updated": "20221127205911"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "systemctl stop docker\nyum remove docker-ce docker-ce-cli containerd.io\nrm -rf /var/lib/docker\nrm -rf /var/lib/containerd\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127210402-t8mk164",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127210402-t8mk164"
+													},
+													"Children": [
+														{
+															"ID": "20221127210402-4g31uvf",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127210402-4g31uvf",
+																"updated": "20221127210422"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "阿里云"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "镜像加速器"
+																}
+															]
+														},
+														{
+															"ID": "20221127210423-udxljqk",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127210423-udxljqk",
+																"updated": "20221127210459"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "打开"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "阿里云"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "-容器镜像"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "服务"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "-镜像工具-镜像加速器"
+																}
+															]
+														},
+														{
+															"ID": "20221127210500-6wmrz63",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127210500-6wmrz63",
+																"updated": "20221127210507"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "复制加速器地址"
+																}
+															]
+														},
+														{
+															"ID": "20221127210848-uo5wv61",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221127210848-uo5wv61",
+																"updated": "20221127210901"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "运行以下代码"
+																}
+															]
+														},
+														{
+															"ID": "20221127210614-pv65uzi",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221127210614-pv65uzi",
+																"updated": "20221127210841"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "c2g="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "sudo mkdir -p /etc/docker\nsudo tee /etc/docker/daemon.json \u003c\u003c-'EOF'\n{\n  \"registry-mirrors\": [\"https://bet0g157.mirror.aliyuncs.com\"]\n}\nEOF\nsudo systemctl daemon-reload\nsudo systemctl restart docker\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221127212625-ght31j4",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "0",
+										"id": "20221127212625-ght31j4",
+										"updated": "20221127214014"
+									},
+									"Children": [
+										{
+											"ID": "20221127212625-ic4zeei",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221127212625-ic4zeei",
+												"updated": "20221127212642"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker常用命令"
+												}
+											]
+										},
+										{
+											"ID": "20221127213957-vf3cz79",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221127213957-vf3cz79",
+												"updated": "20221127214014"
+											},
+											"Children": [
+												{
+													"ID": "20221127213954-3esr57f",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "0",
+														"id": "20221127213954-3esr57f",
+														"updated": "20221127214014"
+													},
+													"Children": [
+														{
+															"ID": "20221127213954-twu07q5",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127213954-twu07q5",
+																"updated": "20221127214011"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "镜像命令"
+																}
+															]
+														},
+														{
+															"ID": "20221127214005-xhqwmok",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221127214005-xhqwmok",
+																"updated": "20221127214014"
+															},
+															"Children": [
+																{
+																	"ID": "20221127214014-7ov9x09",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127214014-7ov9x09",
+																		"updated": "20221127214014"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127214014-qpxxefl",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214014-qpxxefl",
+																				"updated": "20221127214027"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker images"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127214027-rprnp7i",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214027-rprnp7i",
+																				"updated": "20221127214046"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "列出当前主机的所有镜像"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127214237-e1ouob9",
+																			"Type": "NodeSuperBlock",
+																			"Properties": {
+																				"id": "20221127214237-e1ouob9"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeSuperBlockOpenMarker"
+																				},
+																				{
+																					"Type": "NodeSuperBlockLayoutMarker",
+																					"Data": "row"
+																				},
+																				{
+																					"ID": "20221127214121-mhb0ibq",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221127214121-mhb0ibq",
+																						"updated": "20221127214346"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "\t镜像的仓库源\t镜像的标签的版本\t镜像id\t\t\t状态\t\t\t\t镜像大小"
+																						}
+																					]
+																				},
+																				{
+																					"ID": "20221127214046-0bbtkzf",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221127214046-0bbtkzf",
+																						"updated": "20221127214116"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "​"
+																						},
+																						{
+																							"Type": "NodeImage",
+																							"Data": "span",
+																							"Children": [
+																								{
+																									"Type": "NodeBang"
+																								},
+																								{
+																									"Type": "NodeOpenBracket"
+																								},
+																								{
+																									"Type": "NodeLinkText",
+																									"Data": "image"
+																								},
+																								{
+																									"Type": "NodeCloseBracket"
+																								},
+																								{
+																									"Type": "NodeOpenParen"
+																								},
+																								{
+																									"Type": "NodeLinkDest",
+																									"Data": "assets/image-20221127214116-md6vzqu.png"
+																								},
+																								{
+																									"Type": "NodeCloseParen"
+																								}
+																							]
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "​"
+																						}
+																					]
+																				},
+																				{
+																					"Type": "NodeSuperBlockCloseMarker"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127214423-xhpaszo",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214423-xhpaszo",
+																				"updated": "20221127214432"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "选项"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127214432-15x0h9l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214432-15x0h9l",
+																				"updated": "20221127214501"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-a\t列出本地所有的镜像（含历史映像层）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127214502-m14nswu",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214502-m14nswu",
+																				"updated": "20221127214517"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-q\t只显示镜像id"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127214537-7j9b54c",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127214537-7j9b54c"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127214537-ec08q0l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214537-ec08q0l",
+																				"updated": "20221127214627"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker search  \u003c镜像名\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127214628-rc2sd8w",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214628-rc2sd8w",
+																				"updated": "20221127214646"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "在远程仓库中搜索镜像"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127215024-y90kuby",
+																			"Type": "NodeSuperBlock",
+																			"Properties": {
+																				"id": "20221127215024-y90kuby"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeSuperBlockOpenMarker"
+																				},
+																				{
+																					"Type": "NodeSuperBlockLayoutMarker",
+																					"Data": "row"
+																				},
+																				{
+																					"ID": "20221127214915-lz0lkx9",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221127214915-lz0lkx9",
+																						"updated": "20221127215016"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "镜像名称\t\t\t\t\t\t\t\t镜像说明\t\t\t\t\t\t点赞数\t\t\t是否官方\t\t是否是自动构建的"
+																						}
+																					]
+																				},
+																				{
+																					"ID": "20221127214834-7m1g961",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221127214834-7m1g961",
+																						"updated": "20221127214913"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "​"
+																						},
+																						{
+																							"Type": "NodeImage",
+																							"Data": "span",
+																							"Children": [
+																								{
+																									"Type": "NodeBang"
+																								},
+																								{
+																									"Type": "NodeOpenBracket"
+																								},
+																								{
+																									"Type": "NodeLinkText",
+																									"Data": "image"
+																								},
+																								{
+																									"Type": "NodeCloseBracket"
+																								},
+																								{
+																									"Type": "NodeOpenParen"
+																								},
+																								{
+																									"Type": "NodeLinkDest",
+																									"Data": "assets/image-20221127214913-ckql8pr.png"
+																								},
+																								{
+																									"Type": "NodeCloseParen"
+																								}
+																							]
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "​"
+																						}
+																					]
+																				},
+																				{
+																					"Type": "NodeSuperBlockCloseMarker"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127215150-tu9m2nt",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127215150-tu9m2nt",
+																				"updated": "20221127215157"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "参数"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127215157-zibvow4",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127215157-zibvow4",
+																				"updated": "20221127215236"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t--limit N\t\t只列出N个镜像，默认25个"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127214647-66ebxb2",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127214647-66ebxb2"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127214647-zgnj9wh",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127214647-zgnj9wh",
+																				"updated": "20221127215358"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker pull \u003c镜像名\u003e[:tag]"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127215402-lkhotgr",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127215402-lkhotgr",
+																				"updated": "20221127215446"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "下载镜像 ，没有加tag就下载最新版"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127215503-0uicpqt",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127215503-0uicpqt"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127215503-m5vfuhp",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127215503-m5vfuhp",
+																				"updated": "20221127220603"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker system df"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127220605-dn8tq3a",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127220605-dn8tq3a",
+																				"updated": "20221127220619"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "查看镜像/容器/数据卷所占的空间"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127220622-64ihp2l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127220622-64ihp2l",
+																				"updated": "20221127220652"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeImage",
+																					"Data": "span",
+																					"Properties": {
+																						"parent-style": "max-width: 633px; display: block;",
+																						"style": "width: 623px;"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeBang"
+																						},
+																						{
+																							"Type": "NodeOpenBracket"
+																						},
+																						{
+																							"Type": "NodeLinkText",
+																							"Data": "image"
+																						},
+																						{
+																							"Type": "NodeCloseBracket"
+																						},
+																						{
+																							"Type": "NodeOpenParen"
+																						},
+																						{
+																							"Type": "NodeLinkDest",
+																							"Data": "assets/image-20221127220646-79bk3z6.png"
+																						},
+																						{
+																							"Type": "NodeCloseParen"
+																						}
+																					]
+																				},
+																				{
+																					"Type": "NodeKramdownSpanIAL",
+																					"Data": "{: style=\"width: 623px;\" parent-style=\"max-width: 633px; display: block;\"}"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127220737-u1wqaxy",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127220737-u1wqaxy"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127220737-wzey9xa",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127220737-wzey9xa",
+																				"updated": "20221127220944"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker  rmi  \u003c镜像名或id\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127220802-wmps4e3",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127220802-wmps4e3",
+																				"updated": "20221127220819"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "删除当前主机上的镜像"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127220822-cjii0uj",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127220822-cjii0uj",
+																				"updated": "20221127220824"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "选项"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127220825-x5bzi06",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127220825-x5bzi06",
+																				"updated": "20221127220834"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-f \t\t强制删除"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221127221750-r0d8ic2",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221127221750-r0d8ic2"
+													},
+													"Children": [
+														{
+															"ID": "20221127221750-v7gddxw",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221127221750-v7gddxw",
+																"updated": "20221127221759"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "容器命令"
+																}
+															]
+														},
+														{
+															"ID": "20221127221800-2owqzge",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221127221800-2owqzge",
+																"updated": "20221127221802"
+															},
+															"Children": [
+																{
+																	"ID": "20221127221802-im89etw",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127221802-im89etw",
+																		"updated": "20221127221802"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127221802-gj8914h",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127221802-gj8914h",
+																				"updated": "20221127231116"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker run \u003c镜像名或镜像id\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127222750-m12sbn5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127222750-m12sbn5",
+																				"updated": "20221127223449"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "选项： "
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127222812-ydt8o72",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127222812-ydt8o72",
+																				"updated": "20221127222843"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t--name=\"容器的新名字\"\t\t为容器指定一个名称"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127222851-z8p6vau",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127222851-z8p6vau",
+																				"updated": "20221127222949"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-d\t\t\t\t后台运行容器并返回容器id，即启动守护式容器（后台运行）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127223012-s653ktn",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127223012-s653ktn",
+																				"updated": "20221127223046"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-i\t\t\t\t以交互模式运行容器，通常与 -t 同时使用"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127223047-9vuqd7o",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127223047-9vuqd7o",
+																				"updated": "20221127223120"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-t\t\t\t\t为容器重新分配一个伪终端，通常与 -i 同时使用"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127223126-5rzqbj9",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127223126-5rzqbj9",
+																				"updated": "20221127223158"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-P\t\t\t\t随机端口映射，大写P"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127223159-i1h23ej",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127223159-i1h23ej",
+																				"updated": "20221127223318"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-p 主机端口:容器内端口\t\t指定端口映射，小写p 格式    "
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127223320-8jrd3sg",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127223320-8jrd3sg"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127222721-8o5kexg",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127222721-8o5kexg"
+																			}
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127230023-hd87d4y",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127230023-hd87d4y"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127230023-1hvp588",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230023-1hvp588",
+																				"updated": "20221127230029"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker ps"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230031-udwokqb",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230031-udwokqb",
+																				"updated": "20221127230046"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "列出当前正在运行的容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230048-4way48d",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230048-4way48d",
+																				"updated": "20221127230053"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "选项"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230054-9b73csc",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230054-9b73csc",
+																				"updated": "20221127230848"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-a\t\t列出所有正在运行的容器和"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "未运行的"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230719-tema3gw",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230719-tema3gw",
+																				"updated": "20221127230801"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-l\t\t显示最近创建的容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230901-qgl6aj9",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230901-qgl6aj9",
+																				"updated": "20221127230932"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-q\t\t只显示容器编号"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230935-ccavw0s",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230935-ccavw0s",
+																				"updated": "20221127231031"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-n \u003cN\u003e\t只显示最近创建的N个容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127230802-u6tx52l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127230802-u6tx52l",
+																				"updated": "20221127230816"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127231644-o3a3r6t",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127231644-o3a3r6t"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127231644-bptfqza",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127231644-bptfqza",
+																				"updated": "20221127231716"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker start \u003c容器id或容器名\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127231717-bb6qq62",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127231717-bb6qq62",
+																				"updated": "20221127231731"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "启动已经停止的容器"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127232028-tvnym0a",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127232028-tvnym0a"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127232028-mlf4cp2",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232028-mlf4cp2",
+																				"updated": "20221127232046"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker restart \u003c容器id或容器名\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127232047-p1bzt2x",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232047-p1bzt2x",
+																				"updated": "20221127232053"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "重启容器"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127232053-x10m5b6",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127232053-x10m5b6"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127232053-4jbz9ce",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232053-4jbz9ce",
+																				"updated": "20221127232105"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker kill \u003c容器id或容器名\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127232106-6wnng44",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232106-6wnng44",
+																				"updated": "20221127232121"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "强制停止容器，杀死容器"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127232122-ualmenb",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127232122-ualmenb"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127232122-mgo2gc2",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232122-mgo2gc2",
+																				"updated": "20221127232240"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker "
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "rm"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": " \u003c容器id或容器名\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127232241-5mtxubr",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232241-5mtxubr",
+																				"updated": "20221127232253"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "删除"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "已停止"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "的容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127232431-1bi0kqs",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232431-1bi0kqs",
+																				"updated": "20221127232434"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "选项"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127232437-78lslq5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127232437-78lslq5",
+																				"updated": "20221127232458"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-f \t\t强制删除容器，可以删除正在运行的容器"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128001159-i10so1t",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128001159-i10so1t"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128001159-dq4vhll",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001159-dq4vhll",
+																				"updated": "20221128001426"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker exec  \u003c容器id\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001242-yuw4vu3",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001242-yuw4vu3",
+																				"updated": "20221128001806"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "可以在"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "正在运行的容器"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "内直接执行任意命令"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001651-t8j2fta",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001651-t8j2fta",
+																				"updated": "20221128001707"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker exec  -it \u003c容器id\u003e /bin/bash"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001810-8suk2gu",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001810-8suk2gu",
+																				"updated": "20221128002111"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "启用一个新的bash终端，使用exit退出不会停止容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001354-edclv2k",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001354-edclv2k",
+																				"updated": "20221128001413"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "选项"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001415-xx9de4f",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001415-xx9de4f",
+																				"updated": "20221128001415"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-d\t\t\t\t后台运行容器并返回容器id，即启动守护式容器（后台运行）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001415-cg5gzm8",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001415-cg5gzm8",
+																				"updated": "20221128001415"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-i\t\t\t\t以交互模式运行容器，通常与 -t 同时使用"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001415-ynkvwto",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001415-ynkvwto",
+																				"updated": "20221128001415"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t-t\t\t\t\t为容器重新分配一个伪终端，通常与 -i 同时使用"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128001431-sooo649",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128001431-sooo649"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128001431-j1dta58",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001431-j1dta58",
+																				"updated": "20221128001450"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker  "
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "at"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "tach \u003c容器id\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128002553-ofts6l5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128002553-ofts6l5",
+																				"updated": "20221128002554"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker "
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "at"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "tach 本质是直接连接到了上次旧的bash"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128001451-q83rmle",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128001451-q83rmle",
+																				"updated": "20221128002120"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "直接进入正在运行的容器，不启用新的bash，使用exit退出，将导致容器停止"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128003926-2t67397",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128003926-2t67397"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128003926-iw2ak2l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128003926-iw2ak2l",
+																				"updated": "20221128004124"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker "
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "cp"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": " 容器id:容器内路径   主机路径"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128004036-37tdk63",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128004036-37tdk63",
+																				"updated": "20221128004057"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "将容器内的文件复制到主机"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128004335-s15hrii",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128004335-s15hrii"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128004335-mcghyuz",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128004335-mcghyuz",
+																				"updated": "20221128004444"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker export   容器id   \u003e  xxx."
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "tar"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128004445-5b3oe6y",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128004445-5b3oe6y",
+																				"updated": "20221128004954"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "将容器作为一个 镜像 进行导出"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128004510-r6biyvy",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128004510-r6biyvy"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128004510-crsdap2",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128004510-crsdap2",
+																				"updated": "20221128004639"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker  import"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128004640-8vd2lyt",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128004640-8vd2lyt",
+																				"updated": "20221128004716"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "将导出的容器，作为新的镜像导入。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128004717-hk7eahf",
+																			"Type": "NodeCodeBlock",
+																			"IsFencedCodeBlock": true,
+																			"Properties": {
+																				"id": "20221128004717-hk7eahf",
+																				"updated": "20221128004853"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeCodeBlockFenceOpenMarker",
+																					"Data": "```"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceInfoMarker",
+																					"CodeBlockInfo": "c2g="
+																				},
+																				{
+																					"Type": "NodeCodeBlockCode",
+																					"Data": "cat  xxx.tar | docker import - 镜像所属/镜像名:镜像版本号\n"
+																				},
+																				{
+																					"Type": "NodeCodeBlockFenceCloseMarker",
+																					"Data": "```"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221127231121-jtgzqdi",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127231121-jtgzqdi"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127231121-h9h12hf",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221127231121-h9h12hf",
+																				"updated": "20221128000504"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "退出容器"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127231249-lt6i4hi",
+																			"Type": "NodeList",
+																			"ListData": {},
+																			"Properties": {
+																				"id": "20221127231249-lt6i4hi",
+																				"updated": "20221127231251"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221127231251-gijkrz2",
+																					"Type": "NodeListItem",
+																					"ListData": {
+																						"BulletChar": 42,
+																						"Marker": "Kg=="
+																					},
+																					"Properties": {
+																						"id": "20221127231251-gijkrz2",
+																						"updated": "20221127231251"
+																					},
+																					"Children": [
+																						{
+																							"ID": "20221127231251-h9a0bkk",
+																							"Type": "NodeParagraph",
+																							"Properties": {
+																								"id": "20221127231251-h9a0bkk",
+																								"updated": "20221127231302"
+																							},
+																							"Children": [
+																								{
+																									"Type": "NodeText",
+																									"Data": "容器内 exit"
+																								}
+																							]
+																						},
+																						{
+																							"ID": "20221127231304-v6psrbk",
+																							"Type": "NodeParagraph",
+																							"Properties": {
+																								"id": "20221127231304-v6psrbk",
+																								"updated": "20221127231322"
+																							},
+																							"Children": [
+																								{
+																									"Type": "NodeText",
+																									"Data": "run 进去容器，exit 退出，容器停止"
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					"ID": "20221127231323-udwrdv5",
+																					"Type": "NodeListItem",
+																					"ListData": {
+																						"BulletChar": 42,
+																						"Marker": "Kg=="
+																					},
+																					"Properties": {
+																						"id": "20221127231323-udwrdv5"
+																					},
+																					"Children": [
+																						{
+																							"ID": "20221127231323-526e6gn",
+																							"Type": "NodeParagraph",
+																							"Properties": {
+																								"id": "20221127231323-526e6gn",
+																								"updated": "20221127231340"
+																							},
+																							"Children": [
+																								{
+																									"Type": "NodeText",
+																									"Data": "容器内 ctrl+p+q"
+																								}
+																							]
+																						},
+																						{
+																							"ID": "20221127231341-omlya61",
+																							"Type": "NodeParagraph",
+																							"Properties": {
+																								"id": "20221127231341-omlya61",
+																								"updated": "20221127231403"
+																							},
+																							"Children": [
+																								{
+																									"Type": "NodeText",
+																									"Data": "run 进去容器，ctrl+p+q退出容器，容器不停止"
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221128000101-6blwoe2",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221128000101-6blwoe2"
+													},
+													"Children": [
+														{
+															"ID": "20221128000101-imghjl0",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221128000101-imghjl0",
+																"updated": "20221128000136"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "日志命令"
+																}
+															]
+														},
+														{
+															"ID": "20221128000058-4p227cb",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221128000058-4p227cb",
+																"updated": "20221128000058"
+															},
+															"Children": [
+																{
+																	"ID": "20221127233455-wp7otmt",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221127233455-wp7otmt"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221127233455-4yn4fv4",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127233455-4yn4fv4",
+																				"updated": "20221127235652"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker logs \u003c容器id\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221127235653-fpvscnv",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221127235653-fpvscnv",
+																				"updated": "20221127235704"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "查看容器日志"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128000253-im1c9ws",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128000253-im1c9ws"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128000253-nywu1fc",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128000253-nywu1fc",
+																				"updated": "20221128000616"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker "
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "top"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "  \u003c容器ID\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128000555-irs04ho",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128000555-irs04ho",
+																				"updated": "20221128000609"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "查看容器内运行的进程"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128000643-s3u4uea",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128000643-s3u4uea"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128000643-0jn8pdk",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128000643-0jn8pdk",
+																				"updated": "20221128000707"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker inspect \u003c容器ID\u003e"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128000708-zp1bhay",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128000708-zp1bhay",
+																				"updated": "20221128000822"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "获取容器/镜像的元数据。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221128005212-1x58elz",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221128005212-1x58elz",
+														"updated": "20221128005722"
+													},
+													"Children": [
+														{
+															"ID": "20221128005212-ii5963e",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221128005212-ii5963e",
+																"updated": "20221128005226"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "其它"
+																}
+															]
+														},
+														{
+															"ID": "20221128005226-3d4av07",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221128005226-3d4av07",
+																"updated": "20221128005722"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "max-width: 577px; display: block;",
+																		"style": "width: 567px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "图像"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/图像-20221128005714-ufw6yi3.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 567px;\" parent-style=\"max-width: 577px; display: block;\"}"
+																}
+															]
+														},
+														{
+															"ID": "20221128005745-0r7y1tn",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"custom-render": "scroll",
+																"id": "20221128005745-0r7y1tn",
+																"updated": "20221128010412"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "c2g="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "attach\t\t\t\t\t# 当前 shell 下 attach 连接指定运行镜像\nbuild   \t\t\t   \t# 通过 Dockerfile 定制镜像\ncommit \t\t\t\t\t# 提交当前容器为新的镜像\ncp      \t\t\t \t#从容器中拷贝指定文件或者目录到宿主机中\ncreate  \t\t\t\t# 创建一个新的容器，同 run，但不启动容器\ndiff    \t\t\t   \t# 查看 docker 容器变化\nevents  \t\t\t  \t# 从 docker 服务获取容器实时事件\nexec    \t\t\t   \t# 在已存在的容器上运行命令\nexport  \t\t\t   \t# 导出容器的内容流作为一个 tar 归档文件[对应 import ]\nhistory \t\t\t   \t# 展示一个镜像形成历史\nimages  \t\t\t   \t# 列出系统当前镜像\nimport  \t\t\t   \t# 从tar包中的内容创建一个新的文件系统映像[对应export]\ninfo    \t\t\t   \t# 显示系统相关信息\ninspect \t\t\t   \t# 查看容器详细信息\nkill    \t\t\t   \t# kill 指定 docker 容器\nload    \t\t\t   \t# 从一个 tar 包中加载一个镜像[对应 save]\nlogin   \t\t\t   \t# 注册或者登陆一个 docker 源服务器\nlogout  \t\t\t   \t# 从当前 Docker registry 退出\nlogs    \t\t\t   \t# 输出当前容器日志信息\nport    \t\t\t   \t# 查看映射端口对应的容器内部源端口\npause   \t\t\t   \t# 暂停容器\nps      \t\t\t   \t# 列出容器列表\npull    \t\t\t   \t# 从docker镜像源服务器拉取指定镜像或者库镜像\npush    \t\t\t   \t# 推送指定镜像或者库镜像至docker源服务器\nrestart \t\t\t   \t# 重启运行的容器\nrm      \t\t\t   \t# 移除一个或者多个容器\nrmi     \t\t\t   \t# 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除]\nrun     \t\t\t   \t# 创建一个新的容器并运行一个命令\nsave    \t\t\t   \t# 保存一个镜像为一个 tar 包[对应 load]\nsearch  \t\t\t   \t# 在 docker hub 中搜索镜像\nstart   \t\t\t   \t# 启动容器\nstop    \t\t\t   \t# 停止容器\ntag     \t\t\t   \t# 给源中镜像打标签\ntop     \t\t\t   \t# 查看容器中运行的进程信息\nunpause \t\t\t   \t# 取消暂停容器\nversion \t\t\t   \t# 查看 docker 版本号\nwait    \t\t\t   \t# 截取容器停止时的退出状态值\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221128141512-h45vpcl",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "0",
+										"id": "20221128141512-h45vpcl",
+										"updated": "20221128233238"
+									},
+									"Children": [
+										{
+											"ID": "20221128141512-4yshx05",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221128141512-4yshx05",
+												"updated": "20221128141537"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "docker镜像"
+												}
+											]
+										},
+										{
+											"ID": "20221128141543-vaakdpx",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221128141543-vaakdpx",
+												"updated": "20221128233238"
+											},
+											"Children": [
+												{
+													"ID": "20221128141653-mitkl86",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221128141653-mitkl86",
+														"updated": "20221128141653"
+													},
+													"Children": [
+														{
+															"ID": "20221128141653-fcwuam4",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221128141653-fcwuam4",
+																"updated": "20221128141708"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "什么是镜像"
+																}
+															]
+														},
+														{
+															"ID": "20221128141710-2itlmat",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221128141710-2itlmat",
+																"updated": "20221128141744"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "镜像\n是一种轻量级、可执行的独立软件包，它"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "包含运行某个软件所需的所有内容"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，我们把应用程序和配置依赖打包好形成一个可交付的运行环境(包括代码、运行时需要的库、环境变量和配置文件等)，这个"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "打包好的运行环境就是image镜像文件"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "。"
+																}
+															]
+														},
+														{
+															"ID": "20221128141710-mgbc14d",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221128141710-mgbc14d",
+																"updated": "20221128141710"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "只有通过这个镜像文件才能生成Docker容器实例(类似Java中new出来一个对象)。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221128141716-wruqnm5",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221128141716-wruqnm5"
+													},
+													"Children": [
+														{
+															"ID": "20221128141716-dduvezg",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221128141716-dduvezg",
+																"updated": "20221128152343"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "镜像与分层"
+																}
+															]
+														},
+														{
+															"ID": "20221128154131-fpkthid",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221128154131-fpkthid",
+																"updated": "20221128154135"
+															},
+															"Children": [
+																{
+																	"ID": "20221128154135-j0b383h",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128154135-j0b383h",
+																		"updated": "20221128154135"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128154135-g94g878",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221128154135-g94g878",
+																				"updated": "20221128154237"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "分层的概念"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128141911-e8gvw81",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128141911-e8gvw81",
+																				"updated": "20221128152845"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "Docker 镜像由一些松耦合的只读镜像层组成。镜像可以通过分层来进行继承"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128152640-cjicp3t",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128152640-cjicp3t",
+																				"updated": "20221128152903"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "unionFS（联合文件系统）：是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下(unite several directories into a single virtual filesystem)。Union 文件系统是 Docker 镜像的基础。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128152809-gyj9pyy",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128152809-gyj9pyy",
+																				"updated": "20221128152831"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t特性：一次同时加载多个文件系统，但从外面看起来，只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128152358-wdkde0g",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128152358-wdkde0g",
+																				"updated": "20221128152401"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeImage",
+																					"Data": "span",
+																					"Properties": {
+																						"parent-style": "display: block; max-width: 404px;",
+																						"style": "width: 394px;"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeBang"
+																						},
+																						{
+																							"Type": "NodeOpenBracket"
+																						},
+																						{
+																							"Type": "NodeLinkText",
+																							"Data": "image"
+																						},
+																						{
+																							"Type": "NodeCloseBracket"
+																						},
+																						{
+																							"Type": "NodeOpenParen"
+																						},
+																						{
+																							"Type": "NodeLinkDest",
+																							"Data": "assets/image-20221128152359-u8fr2wg.png"
+																						},
+																						{
+																							"Type": "NodeCloseParen"
+																						}
+																					]
+																				},
+																				{
+																					"Type": "NodeKramdownSpanIAL",
+																					"Data": "{: style=\"width: 394px;\" parent-style=\"display: block; max-width: 404px;\"}"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128152501-ka1c4ed",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128152501-ka1c4ed",
+																				"updated": "20221128152501"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "所有的 Docker 镜像都起始于一个基础镜像层，当进行修改或增加新的内容时，就会在当前镜像层之上，创建新的镜像层。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128152501-3ckvawx",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128152501-3ckvawx",
+																				"updated": "20221128152501"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "举一个简单的例子，假如基于 Ubuntu Linux 16.04 创建一个新的镜像，这就是新镜像的第一层；如果在该镜像中添加 "
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "a",
+																					"TextMarkAHref": "http://c.biancheng.net/python/",
+																					"TextMarkTextContent": "Python"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": " 包，就会在基础镜像层之上创建第二个镜像层；如果继续添加一个安全补丁，就会创建第三个镜像层。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128153114-k1bkkoe",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128153114-k1bkkoe"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128153114-nvxi8p1",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221128153114-nvxi8p1",
+																				"updated": "20221128154231"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "镜像加载原理"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128153140-4xaycec",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128153140-4xaycec",
+																				"updated": "20221128153519"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "docker的镜像实际上由一层一层的文件系统组成，这种层级的文件系统UnionFS。\nbootfs(boot file system)主要包含bootloader和kernel, bootloader主要是引导加载kernel, Linux刚启动时会加载bootfs文件系统，"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "在Docker镜像的最底层是引导文件系统bootfs"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "。这一层与我们典型的Linux/Unix系统是一样的，包含boot加载器和内核。当boot加载完成之后整个内核就都在内存中了，此时内存的使用权   已由bootfs转交给内核，此时系统也会卸载bootfs。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128153140-xw5byvr",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128153140-xw5byvr",
+																				"updated": "20221128153140"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "rootfs (root file system) ，在bootfs之上。包含的就是典型 Linux 系统中的 /dev, /proc, /bin, /etc 等标准目录和文件。rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128153648-0b8d02l",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128153648-0b8d02l"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128153648-t7rfpe6",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221128153648-t7rfpe6",
+																				"updated": "20221128154228"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "为什么需要分层"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128153703-wu5dobu",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128153703-wu5dobu",
+																				"updated": "20221128153703"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "镜像分层最大的一个好处就是共享资源，方便复制迁移，就是为了复用。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128153703-8tssg5t",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128153703-8tssg5t",
+																				"updated": "20221128153703"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "比如说有多个镜像都从相同的 base 镜像构建而来，那么 Docker Host 只需在磁盘上保存一份 base 镜像；\n同时内存中也只需加载一份 base 镜像，就可以为所有容器服务了。而且镜像的每一层都可以被共享。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221128154005-2xwyugs",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"fold": "1",
+																		"id": "20221128154005-2xwyugs"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128154005-jnwr0r5",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221128154005-jnwr0r5",
+																				"updated": "20221128154234"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "容器层与镜像层"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128154016-dygjq63",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128154016-dygjq63",
+																				"updated": "20221128154107"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "Docker"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "镜像层都是只读的"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "容器层是可写的"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "\n当容器启动时，一个新的可写层被加载到镜像的顶部。\n这一层通常被称作“容器层”，“容器层”之下的都叫“镜像层”。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128154029-46c19ll",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128154029-46c19ll",
+																				"updated": "20221128154031"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "当容器启动时，一个新的可写层被加载到镜像的顶部。这一层通常被称作“容器层”，“容器层”之下的都叫“镜像层”。\n所有对容器的改动 - 无论添加、删除、还是修改文件都只会发生在容器层中。只有容器层是可写的，容器层下面的所有镜像层都是只读的。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221128154049-ftt7alx",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221128154049-ftt7alx",
+																				"updated": "20221128154053"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeImage",
+																					"Data": "span",
+																					"Properties": {
+																						"parent-style": "display: block; max-width: 325px;",
+																						"style": "width: 315px;"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeBang"
+																						},
+																						{
+																							"Type": "NodeOpenBracket"
+																						},
+																						{
+																							"Type": "NodeLinkText",
+																							"Data": "image"
+																						},
+																						{
+																							"Type": "NodeCloseBracket"
+																						},
+																						{
+																							"Type": "NodeOpenParen"
+																						},
+																						{
+																							"Type": "NodeLinkDest",
+																							"Data": "assets/image-20221128154050-qiapolp.png"
+																						},
+																						{
+																							"Type": "NodeCloseParen"
+																						}
+																					]
+																				},
+																				{
+																					"Type": "NodeKramdownSpanIAL",
+																					"Data": "{: style=\"width: 315px;\" parent-style=\"display: block; max-width: 325px;\"}"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221128233149-i7qeaa0",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221128233149-i7qeaa0",
+														"updated": "20221128233238"
+													},
+													"Children": [
+														{
+															"ID": "20221128233149-cimv96i",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221128233149-cimv96i",
+																"updated": "20221128233209"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "自定义镜像"
+																}
+															]
+														},
+														{
+															"ID": "20221128233210-cvpmhg6",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221128233210-cvpmhg6",
+																"updated": "20221128233238"
+															},
+															"Children": [
+																{
+																	"ID": "20221128233235-tu7ilhq",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221128233235-tu7ilhq",
+																		"updated": "20221128233238"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221128233235-q4r1q5i",
+																			"Type": "NodeHeading",
+																			"HeadingLevel": 4,
+																			"Properties": {
+																				"id": "20221128233235-q4r1q5i",
+																				"updated": "20221128233238"
+																			}
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221127161243-emn6hui",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221127161243-emn6hui"
+			}
+		}
+	]
+}

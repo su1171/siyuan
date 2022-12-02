@@ -207,7 +207,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "280px",
+              "size": "291px",
               "type": "left"
             },
             {
@@ -227,7 +227,7 @@
                           "focusEnd": 0,
                           "focusId": "20220930001932-myssfgk",
                           "focusStart": 0,
-                          "scrollTop": 2798,
+                          "scrollTop": 2797,
                           "startId": "20221011153643-4fuy2wd"
                         }
                       },
@@ -249,7 +249,7 @@
                           "focusEnd": 0,
                           "focusId": "20220930153941-ww8lcv7",
                           "focusStart": 0,
-                          "scrollTop": 1665,
+                          "scrollTop": 1664,
                           "startId": "20220930153941-ww8lcv7"
                         }
                       },
@@ -261,81 +261,17 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220924204553-h4rr7p5",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20220924204553-h4rr7p5",
-                        "scrollAttr": {
-                          "endId": "20221013100214-s9ww0kz",
-                          "focusEnd": 0,
-                          "focusId": "20220926152037-t3vrc6k",
-                          "focusStart": 0,
-                          "scrollTop": 0,
-                          "startId": "20220926152129-btlc3wz"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "资料库"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015213822-vs8hvq7",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221015213822-vs8hvq7",
-                        "scrollAttr": {
-                          "endId": "20221027112639-kj94r96",
-                          "focusEnd": 2,
-                          "focusId": "20221022162352-phzp8xa",
-                          "focusStart": 2,
-                          "scrollTop": 5132,
-                          "startId": "20221020134546-74aprr5"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql详解"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015174505-gw7dz1l",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221015174505-gw7dz1l",
-                        "scrollAttr": {
-                          "endId": "20221101104229-jookzwv",
-                          "scrollTop": 0,
-                          "startId": "20221015174515-qh3tmsa"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "数据库"
-                    },
-                    {
-                      "active": true,
-                      "children": {
-                        "action": "",
                         "blockId": "20221120212849-c4hq8ka",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
                         "rootId": "20221120212849-c4hq8ka",
                         "scrollAttr": {
-                          "endId": "20221123202823-c9n5023",
-                          "focusEnd": 4,
-                          "focusId": "20221123185402-orc55tw",
-                          "focusStart": 4,
-                          "scrollTop": 3041.831787109375,
+                          "endId": "20221122111444-h757xaj",
+                          "focusEnd": 2,
+                          "focusId": "20221120231119-yc6o523",
+                          "focusStart": 2,
+                          "scrollTop": 738,
                           "startId": "20221120212907-ty8yby5"
                         }
                       },
@@ -347,46 +283,163 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221122163317-8vk1uqu",
+                        "blockId": "20221202215024-d0tm9ja",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221122163317-8vk1uqu",
+                        "rootId": "20221202215024-d0tm9ja",
                         "scrollAttr": {
-                          "endId": "20221122171409-u1n1hov",
+                          "endId": "20221202215024-3gp10h0",
                           "focusEnd": 0,
-                          "focusId": "20221122171409-u1n1hov",
+                          "focusId": "20221202215031-2nufreg",
                           "focusStart": 0,
-                          "scrollTop": 18551,
-                          "startId": "20221122163348-b4nyp6j"
+                          "scrollTop": 0,
+                          "startId": "20221202215031-2nufreg"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "面试题"
+                      "title": "工具"
+                    },
+                    {
+                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20221202215033-1bbchyv",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221202215033-1bbchyv",
+                        "scrollAttr": {
+                          "endId": "20221203001109-r8tyu6s",
+                          "focusEnd": 9,
+                          "focusId": "20221203045636-en4a7sz",
+                          "focusStart": 9,
+                          "scrollTop": 1442.4820556640625,
+                          "startId": "20221202215046-hbeerwz"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "ansible"
                     },
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221018195322-2n5ylfb",
+                        "blockId": "20221123210315-joq3265",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221018195322-2n5ylfb",
+                        "rootId": "20221123210315-joq3265",
                         "scrollAttr": {
-                          "endId": "20221018201703-6c1n537",
+                          "endId": "20221125222846-10c7c2d",
                           "focusEnd": 0,
-                          "focusId": "20221018195346-mbbwts1",
+                          "focusId": "20221123210332-6yxdth9",
                           "focusStart": 0,
-                          "scrollTop": 109,
-                          "startId": "20221018195329-7cuwbhc"
+                          "scrollTop": 0,
+                          "startId": "20221123210332-6yxdth9"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "阿里云"
+                      "title": "服务"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221127212351-sh4qlst",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221127212351-sh4qlst",
+                        "scrollAttr": {
+                          "endId": "20221127212413-0ayx4ci",
+                          "focusEnd": 0,
+                          "focusId": "20221127212351-8wvumdi",
+                          "focusStart": 0,
+                          "scrollTop": 108,
+                          "startId": "20221127212351-8wvumdi"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "docker资料"
+                    },
+                    {
+                      "children": {
+                        "config": {
+                          "group": 1,
+                          "hPath": "",
+                          "hasReplace": false,
+                          "idPath": "",
+                          "k": "免交互",
+                          "list": [
+                            "免交互",
+                            "",
+                            "cp",
+                            "killall",
+                            "nginx 变量",
+                            "请求",
+                            "所属",
+                            "属主",
+                            "useradd",
+                            "常用",
+                            "case",
+                            "io",
+                            "单线程",
+                            "if",
+                            "mount",
+                            "特殊",
+                            "selinux",
+                            "keep",
+                            "gtid",
+                            "DELIMI",
+                            "DELI",
+                            "jdk",
+                            "show master logs",
+                            "show master status",
+                            "show master status;",
+                            "nfs",
+                            "tar",
+                            "forma",
+                            "like",
+                            "sed",
+                            "新特性",
+                            "systemctl",
+                            " yum",
+                            "优先 yum",
+                            "yum",
+                            "公网源",
+                            "keepalive",
+                            "后台"
+                          ],
+                          "method": 0,
+                          "r": "",
+                          "replaceList": [],
+                          "types": {
+                            "blockquote": true,
+                            "codeBlock": true,
+                            "document": true,
+                            "heading": true,
+                            "htmlBlock": true,
+                            "list": true,
+                            "listItem": true,
+                            "mathBlock": true,
+                            "paragraph": true,
+                            "superBlock": true,
+                            "table": true
+                          }
+                        },
+                        "instance": "Search"
+                      },
+                      "icon": "iconSearch",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "搜索"
                     }
                   ],
                   "height": "",
@@ -466,7 +519,7 @@
           "show": true,
           "size": {
             "height": 0,
-            "width": 280
+            "width": 291
           },
           "type": "outline"
         },
@@ -560,7 +613,7 @@
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.5.1",
+    "kernelVersion": "2.5.2",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -1032,7 +1085,7 @@
     "synced": 0,
     "stat": "",
     "generateConflictDoc": false,
-    "provider": 0,
+    "provider": 2,
     "s3": {
       "endpoint": "",
       "accessKey": "",
@@ -1079,13 +1132,13 @@
     "virtualRefKeywordsLimit": 512
   },
   "stat": {
-    "treeCount": 19,
+    "treeCount": 27,
     "cTreeCount": 100,
-    "blockCount": 5574,
+    "blockCount": 6377,
     "cBlockCount": 10000,
-    "dataSize": 444783768,
+    "dataSize": 464757478,
     "cDataSize": 3145728,
-    "assetsSize": 225365722,
+    "assetsSize": 244844509,
     "cAssetsSize": 2097152
   },
   "api": {
