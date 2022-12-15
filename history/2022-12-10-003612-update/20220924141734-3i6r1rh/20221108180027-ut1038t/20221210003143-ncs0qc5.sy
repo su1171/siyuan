@@ -1,0 +1,200 @@
+{
+	"ID": "20221210003143-ncs0qc5",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221210003143-ncs0qc5",
+		"title": "2022年12月10日",
+		"updated": "20221210003353"
+	},
+	"Children": [
+		{
+			"ID": "20221210003143-jp7w2u9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210003143-jp7w2u9",
+				"updated": "20221210003143"
+			}
+		},
+		{
+			"ID": "20221210003148-p2syow0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210003148-p2syow0"
+			}
+		},
+		{
+			"ID": "20221210003153-gx84tab",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221210003153-gx84tab",
+				"updated": "20221210003353"
+			},
+			"Children": [
+				{
+					"ID": "20221210003203-9izm40e",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221210003203-9izm40e",
+						"updated": "20221210003353"
+					},
+					"Children": [
+						{
+							"ID": "20221210003203-bn1flif",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221210003203-bn1flif",
+								"updated": "20221210003215"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "安装前准备"
+								}
+							]
+						},
+						{
+							"ID": "20221210003215-lmajbnq",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210003215-lmajbnq",
+								"updated": "20221210003353"
+							},
+							"Children": [
+								{
+									"ID": "20221210003218-kbynx0f",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221210003218-kbynx0f",
+										"updated": "20221210003218"
+									},
+									"Children": [
+										{
+											"ID": "20221210003218-ep2fp4o",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210003218-ep2fp4o",
+												"updated": "20221210003228"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "关闭防火墙"
+												}
+											]
+										},
+										{
+											"ID": "20221210003228-1y182at",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210003228-1y182at",
+												"updated": "20221210003240"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "eWFtbA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "systemctl stop firewalld\nsystemctl disable firewalld\nsystemctl status firewalld\nsetenforce 0\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221210003345-2g4hfti",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20221210003345-2g4hfti",
+										"updated": "20221210003353"
+									},
+									"Children": [
+										{
+											"ID": "20221210003345-ezq94b9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210003345-ezq94b9",
+												"updated": "20221210003351"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "配置yum源"
+												}
+											]
+										},
+										{
+											"ID": "20221210003351-qymr47b",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210003351-qymr47b",
+												"updated": "20221210003353"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker"
+												},
+												{
+													"Type": "NodeCodeBlockCode"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221210003238-pci0ktu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210003238-pci0ktu"
+			}
+		}
+	]
+}

@@ -4,9 +4,9 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20221015213822-vs8hvq7",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221027112639-kj94r96\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221106160013-2c9kv57\u0026quot;,\u0026quot;scrollTop\u0026quot;:3400,\u0026quot;focusId\u0026quot;:\u0026quot;20221106190628-xtw9qzz\u0026quot;,\u0026quot;focusStart\u0026quot;:5,\u0026quot;focusEnd\u0026quot;:5}",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221027112639-kj94r96\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221022101248-ud47zdv\u0026quot;,\u0026quot;scrollTop\u0026quot;:16262.5390625,\u0026quot;focusId\u0026quot;:\u0026quot;20221113094900-a0akted\u0026quot;,\u0026quot;focusStart\u0026quot;:6,\u0026quot;focusEnd\u0026quot;:6}",
 		"title": "sql详解",
-		"updated": "20221116213441"
+		"updated": "20221214042930"
 	},
 	"Children": [
 		{
@@ -7099,7 +7099,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221106162254-6wi0i0u",
-				"updated": "20221108171006"
+				"updated": "20221214042930"
 			},
 			"Children": [
 				{
@@ -7152,7 +7152,7 @@
 					"IsFencedCodeBlock": true,
 					"Properties": {
 						"id": "20221106162300-o3uh7yn",
-						"updated": "20221106182112"
+						"updated": "20221214042930"
 					},
 					"Children": [
 						{
@@ -7165,7 +7165,7 @@
 						},
 						{
 							"Type": "NodeCodeBlockCode",
-							"Data": "CREATE \tDATABASE 数据库名 ; \t# 方式1\nCREATE \tDATABASE 数据库名 CHARACTER SET 'gpk|utf8' ;\t# 方式2:  指明要使用的字符集，并创建数据库\nCREATE \tDATABASE IF NOT EXISTS 数据库名 CHARACTER SET 'gpk|utf8' ;\t# 方式3 推荐: 如果数据库不存在，则创建；数据库存在则不创建\nSHOW DATABASES ;\t\t# 查看数据库\nSHOW CREATE DATABASES 数据库名; \t# 查看数据库字符集信息\nSHOW VARIABLES LIKE 'character_%'\t# 查看当前mysql数据库的所有属性的字符编码\n"
+							"Data": "CREATE \tDATABASE 数据库名 ; \t# 方式1\nCREATE \tDATABASE 数据库名 CHARACTER SET 'gpk|utf8' ;\t# 方式2:  指明要使用的字符集，并创建数据库\nCREATE \tDATABASE IF NOT EXISTS 数据库名 CHARACTER SET 'gpk|utf8' ;\t# 方式3 推荐: 如果数据库不存在，则创建；数据库存在则不创建\nSHOW DATABASES ;\t\t# 查看数据库\nSHOW CREATE DATABASES 数据库名; \t# 查看数据库字符集信息\nSHOW VARIABLES LIKE 'character_%';\t# 查看当前mysql数据库的所有属性的字符编码\n"
 						},
 						{
 							"Type": "NodeCodeBlockFenceCloseMarker",
@@ -11044,7 +11044,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221111220444-sdh6gs1",
-				"updated": "20221116213441"
+				"updated": "20221210195411"
 			},
 			"Children": [
 				{
@@ -11350,7 +11350,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221111223906-ge4he57",
-						"updated": "20221111225944"
+						"updated": "20221210195411"
 					},
 					"Children": [
 						{
@@ -11417,7 +11417,7 @@
 							},
 							"Properties": {
 								"id": "20221111225326-xzj6lpr",
-								"updated": "20221111225326"
+								"updated": "20221210195411"
 							},
 							"Children": [
 								{
@@ -11440,7 +11440,7 @@
 									"IsFencedCodeBlock": true,
 									"Properties": {
 										"id": "20221111225348-ujslrj0",
-										"updated": "20221111225628"
+										"updated": "20221210195411"
 									},
 									"Children": [
 										{
@@ -11453,7 +11453,7 @@
 										},
 										{
 											"Type": "NodeCodeBlockCode",
-											"Data": "alter user '用户名'@'可登录主机名' identified by '新密码' ;\nSET PASSWORD FOR '用户名'@'可登录主机名' = '新密码';\n"
+											"Data": "alter user '用户名'@'可登录主机名' identified by '新密码' ;\nALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';\nSET PASSWORD FOR '用户名'@'可登录主机名' = '新密码';\n"
 										},
 										{
 											"Type": "NodeCodeBlockFenceCloseMarker",

@@ -4,9 +4,9 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20221004170149-cvhegdp",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221004170153-68za3pg\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221126170403-o18dlhc\u0026quot;,\u0026quot;scrollTop\u0026quot;:1858,\u0026quot;focusId\u0026quot;:\u0026quot;20221126170403-o18dlhc\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221004170153-68za3pg\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221126170403-o18dlhc\u0026quot;,\u0026quot;scrollTop\u0026quot;:1965,\u0026quot;focusId\u0026quot;:\u0026quot;20221210072652-0tw7jh8\u0026quot;,\u0026quot;focusStart\u0026quot;:32,\u0026quot;focusEnd\u0026quot;:32}",
 		"title": "nginx",
-		"updated": "20221130145905"
+		"updated": "20221210072701"
 	},
 	"Children": [
 		{
@@ -2289,7 +2289,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"fold": "1",
+										"fold": "0",
 										"id": "20221011144248-gt8fg9w",
 										"updated": "20221126164608"
 									},
@@ -2731,7 +2731,7 @@
 			"ListData": {},
 			"Properties": {
 				"id": "20221004212424-05feprz",
-				"updated": "20221126172919"
+				"updated": "20221210072701"
 			},
 			"Children": [
 				{
@@ -2744,7 +2744,7 @@
 					"Properties": {
 						"fold": "0",
 						"id": "20221126164707-yj3guor",
-						"updated": "20221126172919"
+						"updated": "20221210072701"
 					},
 					"Children": [
 						{
@@ -2768,7 +2768,7 @@
 							"ListData": {},
 							"Properties": {
 								"id": "20221007190825-78bfjzs",
-								"updated": "20221126162712"
+								"updated": "20221210072701"
 							},
 							"Children": [
 								{
@@ -2781,7 +2781,7 @@
 									"Properties": {
 										"fold": "0",
 										"id": "20221126162705-h7h83t3",
-										"updated": "20221126162712"
+										"updated": "20221210072701"
 									},
 									"Children": [
 										{
@@ -2841,7 +2841,45 @@
 											"Children": [
 												{
 													"Type": "NodeText",
-													"Data": "proxy_pass 与 root ，index 条目二选一"
+													"Data": "proxy"
+												},
+												{
+													"Type": "NodeBackslash",
+													"Data": "span",
+													"Children": [
+														{
+															"Type": "NodeBackslashContent",
+															"Data": "_"
+														}
+													]
+												},
+												{
+													"Type": "NodeText",
+													"Data": "pa"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "ss "
+												},
+												{
+													"Type": "NodeText",
+													"Data": "与 root ，index 条目二选一"
+												}
+											]
+										},
+										{
+											"ID": "20221210072652-0tw7jh8",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210072652-0tw7jh8",
+												"updated": "20221210072701"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "a",
+													"TextMarkAHref": "https://www.jb51.net/article/227243.htm",
+													"TextMarkTextContent": "https://www.jb51.net/article/227243.htm"
 												}
 											]
 										},

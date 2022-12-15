@@ -1,0 +1,184 @@
+{
+	"ID": "20221211030311-bkhr76x",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221211030311-bkhr76x",
+		"title": "2022年12月11日",
+		"updated": "20221211032435"
+	},
+	"Children": [
+		{
+			"ID": "20221211030311-tfrrjl1",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221211030311-tfrrjl1",
+				"updated": "20221211032435"
+			},
+			"Children": [
+				{
+					"ID": "20221211030319-76ygif8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221211030319-76ygif8",
+						"updated": "20221211032435"
+					},
+					"Children": [
+						{
+							"ID": "20221211030319-zuk3lys",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221211030319-zuk3lys",
+								"updated": "20221211030319"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "变量"
+								}
+							]
+						},
+						{
+							"ID": "20221211030321-lgvue3r",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221211030321-lgvue3r",
+								"updated": "20221211030409"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "在剧本中，通过vars_files 指定变量文件，通过group_vars 指定主机组共享变量文件"
+								}
+							]
+						},
+						{
+							"ID": "20221211031053-wvqongs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221211031053-wvqongs",
+								"updated": "20221211031159"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "变量开头时，需要使用双引号引起来 \"{{ name }}\""
+								}
+							]
+						},
+						{
+							"ID": "20221211032023-e6n7aby",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221211032023-e6n7aby",
+								"updated": "20221211032040"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "根据主机清单自动识别变量"
+								}
+							]
+						},
+						{
+							"ID": "20221211032040-jlewuvq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221211032040-jlewuvq",
+								"updated": "20221211032435"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeImage",
+									"Data": "span",
+									"Properties": {
+										"parent-style": "max-width: 522px;",
+										"style": "width: 512px;"
+									},
+									"Children": [
+										{
+											"Type": "NodeBang"
+										},
+										{
+											"Type": "NodeOpenBracket"
+										},
+										{
+											"Type": "NodeLinkText",
+											"Data": "image"
+										},
+										{
+											"Type": "NodeCloseBracket"
+										},
+										{
+											"Type": "NodeOpenParen"
+										},
+										{
+											"Type": "NodeLinkDest",
+											"Data": "assets/image-20221211032042-el4czst.png"
+										},
+										{
+											"Type": "NodeCloseParen"
+										}
+									]
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"width: 512px;\" parent-style=\"max-width: 522px;\"}"
+								},
+								{
+									"Type": "NodeImage",
+									"Data": "span",
+									"Children": [
+										{
+											"Type": "NodeBang"
+										},
+										{
+											"Type": "NodeOpenBracket"
+										},
+										{
+											"Type": "NodeLinkText",
+											"Data": "image"
+										},
+										{
+											"Type": "NodeCloseBracket"
+										},
+										{
+											"Type": "NodeOpenParen"
+										},
+										{
+											"Type": "NodeLinkDest",
+											"Data": "assets/image-20221211032435-xbfv2vk.png"
+										},
+										{
+											"Type": "NodeCloseParen"
+										}
+									]
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221211031051-v4dgij0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221211031051-v4dgij0"
+			}
+		}
+	]
+}

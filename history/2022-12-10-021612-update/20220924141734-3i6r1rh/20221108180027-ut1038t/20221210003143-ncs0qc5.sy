@@ -1,0 +1,1194 @@
+{
+	"ID": "20221210003143-ncs0qc5",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221210003143-ncs0qc5",
+		"title": "2022年12月10日",
+		"updated": "20221210021126"
+	},
+	"Children": [
+		{
+			"ID": "20221210003143-jp7w2u9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210003143-jp7w2u9",
+				"updated": "20221210003143"
+			}
+		},
+		{
+			"ID": "20221210003148-p2syow0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210003148-p2syow0"
+			}
+		},
+		{
+			"ID": "20221210003153-gx84tab",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221210003153-gx84tab",
+				"updated": "20221210021126"
+			},
+			"Children": [
+				{
+					"ID": "20221210003203-9izm40e",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221210003203-9izm40e",
+						"updated": "20221210005623"
+					},
+					"Children": [
+						{
+							"ID": "20221210003203-bn1flif",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221210003203-bn1flif",
+								"updated": "20221210003215"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "安装前准备"
+								}
+							]
+						},
+						{
+							"ID": "20221210003215-lmajbnq",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210003215-lmajbnq",
+								"updated": "20221210005623"
+							},
+							"Children": [
+								{
+									"ID": "20221210003218-kbynx0f",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221210003218-kbynx0f",
+										"updated": "20221210003218"
+									},
+									"Children": [
+										{
+											"ID": "20221210003218-ep2fp4o",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210003218-ep2fp4o",
+												"updated": "20221210003228"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "关闭防火墙"
+												}
+											]
+										},
+										{
+											"ID": "20221210003228-1y182at",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210003228-1y182at",
+												"updated": "20221210003240"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "eWFtbA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "systemctl stop firewalld\nsystemctl disable firewalld\nsystemctl status firewalld\nsetenforce 0\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221210003345-2g4hfti",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221210003345-2g4hfti"
+									},
+									"Children": [
+										{
+											"ID": "20221210003345-ezq94b9",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210003345-ezq94b9",
+												"updated": "20221210003351"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "配置yum源"
+												}
+											]
+										},
+										{
+											"ID": "20221210003351-qymr47b",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210003351-qymr47b",
+												"updated": "20221210004805"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "eWFtbA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "cd /etc/yum.repos.d \u0026\u0026 mkdir bak \u0026\u003e /dev/null\nmv *.repo bak \u0026\u0026 wget http://mirrors.aliyun.com/repo/Centos-7.repo\nsed -i \"s/gpgcheck=1/gpgcheck=0/\" Centos-7.repo\nyum -y clean all \u0026\u0026 yum makecache\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221210005355-x9h0hzg",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "My4=",
+										"Num": 3
+									},
+									"Properties": {
+										"id": "20221210005355-x9h0hzg",
+										"updated": "20221210005623"
+									},
+									"Children": [
+										{
+											"ID": "20221210005355-e1tlufi",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210005355-e1tlufi",
+												"updated": "20221210005410"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "安装编译环境"
+												}
+											]
+										},
+										{
+											"ID": "20221210005411-i28695c",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210005411-i28695c",
+												"updated": "20221210005623"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "eWFtbA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "yum -y install gcc gcc-c++ make \n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221210004912-qdyxk11",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221210004912-qdyxk11",
+						"updated": "20221210021126"
+					},
+					"Children": [
+						{
+							"ID": "20221210004912-n3yy0b4",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221210004912-n3yy0b4",
+								"updated": "20221210004941"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "编译安装lnmp"
+								}
+							]
+						},
+						{
+							"ID": "20221210004942-ob3xzzt",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221210004942-ob3xzzt",
+								"updated": "20221210021126"
+							},
+							"Children": [
+								{
+									"ID": "20221210004946-2h647zu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221210004946-2h647zu",
+										"updated": "20221210004946"
+									},
+									"Children": [
+										{
+											"ID": "20221210004946-8lizlzm",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221210004946-8lizlzm",
+												"updated": "20221210010517"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "编译安装nginx"
+												}
+											]
+										},
+										{
+											"ID": "20221210005030-spj2w06",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221210005030-spj2w06",
+												"updated": "20221210005100"
+											},
+											"Children": [
+												{
+													"ID": "20221210005100-0wr2vv8",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221210005100-0wr2vv8",
+														"updated": "20221210005100"
+													},
+													"Children": [
+														{
+															"ID": "20221210005100-c1aalz7",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210005100-c1aalz7",
+																"updated": "20221210005128"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装前准备"
+																}
+															]
+														},
+														{
+															"ID": "20221210005128-lcl4dzt",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210005128-lcl4dzt",
+																"updated": "20221210010024"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "eWFtbA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "tar -zf nginx-1.12.2.tar.gz -C /usr/src\nyum -y install pcre-devel pcre zlib-devel zlib  popt-devel openssl-devel openssl\nuseradd -M -s /sbin/nologin nginx\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210005533-uqdeduq",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221210005533-uqdeduq"
+													},
+													"Children": [
+														{
+															"ID": "20221210005533-gvrv62z",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210005533-gvrv62z",
+																"updated": "20221210005543"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "编译安装nginx"
+																}
+															]
+														},
+														{
+															"ID": "20221210005543-b6lhed1",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210005543-b6lhed1",
+																"updated": "20221210010102"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "cd /usr/src/nginx-1.12.2\n ./configure --prefix=/usr/local/nginx --user=nginx --group=nginx --with-file-aio --with-http_stub_status_module --with-http_gzip_static_module --with-http_flv_module --with-http_ssl_module --with-pcre \u0026\u0026 make \u0026\u0026 make install\nln -s /usr/local/nginx/sbin/nginx /usr/local/sbin/\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210010119-fvu0mw8",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20221210010119-fvu0mw8"
+													},
+													"Children": [
+														{
+															"ID": "20221210010119-lejl6mc",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210010119-lejl6mc",
+																"updated": "20221210010221"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "测试nginx"
+																}
+															]
+														},
+														{
+															"ID": "20221210010148-9utu4v7",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210010148-9utu4v7",
+																"updated": "20221210010232"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": " nginx\nnetstat -anpt |grep 80\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221210010518-c19klue",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221210010518-c19klue"
+									},
+									"Children": [
+										{
+											"ID": "20221210010518-cskrpnw",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221210010518-cskrpnw",
+												"updated": "20221210010529"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "编译安装mysql"
+												}
+											]
+										},
+										{
+											"ID": "20221210010529-ovk7vfq",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221210010529-ovk7vfq",
+												"updated": "20221210010532"
+											},
+											"Children": [
+												{
+													"ID": "20221210010532-35sp9an",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221210010532-35sp9an",
+														"updated": "20221210010532"
+													},
+													"Children": [
+														{
+															"ID": "20221210010532-n4wnrlc",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210010532-n4wnrlc",
+																"updated": "20221210010559"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装前准备"
+																}
+															]
+														},
+														{
+															"ID": "20221210010559-bjnl070",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210010559-bjnl070",
+																"updated": "20221210011055"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "yum -y install ncurses ncurses-devel cmake\nuseradd -M -s /sbin/nologin mysql\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210010635-3bgspuv",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221210010635-3bgspuv"
+													},
+													"Children": [
+														{
+															"ID": "20221210010635-z9qnh7x",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210010635-z9qnh7x",
+																"updated": "20221210010642"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装数据库"
+																}
+															]
+														},
+														{
+															"ID": "20221210010642-e7jsqn8",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210010642-e7jsqn8",
+																"updated": "20221210010709"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "tar xf mysql-5.5.22.tar.gz -C /usr/src/\ncd /usr/src/mysql-5.5.22/\ncmake -DCMAKE_INSTALL_PREFIX=/usr/local/mysql -DDEFAULT_CHARSET=utf8 -DDEFAULT_COLLATION=utf8_general_ci -DWITH_EXTRA_CHARSETS=all -DSYSCONFDIR=/etc/\nmake \u0026\u0026make install\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210011059-fp10z05",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20221210011059-fp10z05"
+													},
+													"Children": [
+														{
+															"ID": "20221210011059-403ete5",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210011059-403ete5",
+																"updated": "20221210011106"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "配置数据库"
+																}
+															]
+														},
+														{
+															"ID": "20221210011106-s4xq2jr",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210011106-s4xq2jr",
+																"updated": "20221210011922"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "chown mysql:mysql /usr/local/mysql/ -R\n/bin/cp support-files/my-medium.cnf /etc/my.cnf\n/bin/cp support-files/mysql.server /etc/init.d/mysqld\nchmod +x /etc/init.d/mysqld\nchkconfig --add mysqld\necho \"PATH=$PATH:/usr/local/mysql/bin\" \u003e\u003e/etc/profile\nsource /etc/profile\ncd /usr/local/mysql/scripts/\n ./mysql_install_db --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data --user=mysql\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210011925-7d9gn83",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "NC4=",
+														"Num": 4
+													},
+													"Properties": {
+														"id": "20221210011925-7d9gn83"
+													},
+													"Children": [
+														{
+															"ID": "20221210011925-1gxyikr",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210011925-1gxyikr",
+																"updated": "20221210011928"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "测试"
+																}
+															]
+														},
+														{
+															"ID": "20221210011929-qwck536",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210011929-qwck536",
+																"updated": "20221210012013"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": " /etc/init.d/mysqld start\nss -anpt | grep 3306\nmysqladmin -uroot password 123123\n mysql -uroot -p123123\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221210012150-dv5i0ul",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221210012150-dv5i0ul"
+									},
+									"Children": [
+										{
+											"ID": "20221210012150-sjw8hkl",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221210012150-sjw8hkl",
+												"updated": "20221210012159"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "安装php"
+												}
+											]
+										},
+										{
+											"ID": "20221210012203-g01nk6k",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221210012203-g01nk6k",
+												"updated": "20221210012207"
+											},
+											"Children": [
+												{
+													"ID": "20221210012207-yv47tfe",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221210012207-yv47tfe",
+														"updated": "20221210012207"
+													},
+													"Children": [
+														{
+															"ID": "20221210012207-t2jc8wj",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210012207-t2jc8wj",
+																"updated": "20221210012232"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装前准备"
+																}
+															]
+														},
+														{
+															"ID": "20221210012232-e1mo00p",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210012232-e1mo00p",
+																"updated": "20221210013214"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "准备安装包 libmcrypt mhash mcrypt \nyum -y install libxml2-devel gd zlib-devel libpng-devel libjpeg-devel\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														},
+														{
+															"ID": "20221210013016-c6l2boq",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210013016-c6l2boq",
+																"updated": "20221210013101"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "tar zxvf libmcrypt-2.5.8.tar.gz -C /usr/src/\ncd /usr/src/libmcrypt-2.5.8/\n./configure \u0026\u0026make \u0026\u0026make install\n ln -s /usr/local/lib/libmcrypt.* /usr/lib64/ \n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														},
+														{
+															"ID": "20221210013054-707ttd1",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210013054-707ttd1",
+																"updated": "20221210013122"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "tar zxvf mhash-0.9.9.9.tar.gz -C /usr/src/\ncd /usr/src/mhash-0.9.9.9/\n./configure \u0026\u0026make \u0026\u0026make install\nln -s /usr/local/lib/libmhash* /usr/lib64/\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														},
+														{
+															"ID": "20221210013133-z3nquuq",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210013133-z3nquuq",
+																"updated": "20221210013159"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "tar zxvf mcrypt-2.6.8.tar.gz -C /usr/src/\ncd /usr/src/mcrypt-2.6.8/\n./configure \u0026\u0026make \u0026\u0026make install\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210012621-motxw1n",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221210012621-motxw1n"
+													},
+													"Children": [
+														{
+															"ID": "20221210012621-batgqws",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210012621-batgqws",
+																"updated": "20221210012635"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "编译安装"
+																}
+															]
+														},
+														{
+															"ID": "20221210012636-1o3tkw3",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210012636-1o3tkw3",
+																"updated": "20221210012708"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "tar zxvf php-5.3.28.tar.gz -C /usr/src/\ncd /usr/src/php-5.3.28/\n./configure --prefix=/usr/local/php5 --with-gd --with-zlib --with-mysql=/usr/local/mysql --with-config-file-path=/usr/local/php5 --enable-mbstring --enable-fpm  --with-jpeg-dir=/usr/lib\nmake \u0026\u0026make install\nls /usr/local/php5/\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221210014102-1f91nyk",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20221210014102-1f91nyk"
+													},
+													"Children": [
+														{
+															"ID": "20221210014102-p1byi3z",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210014102-p1byi3z",
+																"updated": "20221210014105"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "优化"
+																}
+															]
+														},
+														{
+															"ID": "20221210014356-qwo18go",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221210014356-qwo18go"
+															}
+														},
+														{
+															"ID": "20221210014107-4854lj8",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221210014107-4854lj8",
+																"updated": "20221210015600"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "cd /usr/src/php-5.3.28 \ncp php.ini-development /usr/local/php5/php.ini\nln -s /usr/local/php5/bin/* /usr/local/bin/\nln -s /usr/local/php5/sbin/* /usr/local/sbin/\n tar zxvf ZendGuardLoader-php-5.3-linux-glibc23-x86_64.tar.gz\n cp ZendGuardLoader-php-5.3-linux-glibc23-x86_64/php-5.3.x/ZendGuardLoader.so  /usr/local/php5/\n\ncat \u003e\u003e /usr/local/php5/php.ini \u003c\u003c END\n[Zend Guard]\nzend_extension=/usr/local/php5/ZendGuardLoader.so\nzend_loader.enable=1\nzend_loader.disable_licensing=0\nzend_loader.obfuscation_level_support=3\nEND\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221210014427-ei2acew",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "0",
+										"id": "20221210014427-ei2acew",
+										"updated": "20221210021126"
+									},
+									"Children": [
+										{
+											"ID": "20221210014427-t2dyrtd",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210014427-t2dyrtd",
+												"updated": "20221210015006"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "配置nginx处理php"
+												}
+											]
+										},
+										{
+											"ID": "20221210015909-iqhzyjh",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210015909-iqhzyjh",
+												"updated": "20221210015913"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "php配置"
+												}
+											]
+										},
+										{
+											"ID": "20221210015006-hvrewde",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210015006-hvrewde",
+												"updated": "20221210015856"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "YmFzaA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "cd /usr/local/php5/etc/\ncat \u003e\u003e php-fpm.conf \u003c\u003c END\n[global]\npid = run/php-fpm.pid\n[www]\nuser = nginx\ngroup = nginx\nlisten = 127.0.0.1:9000\npm = dynamic\npm.max_children = 50\npm.start_servers = 20\npm.min_spare_servers = 5\npm.max_spare_servers = 35\nEND\n\n# 启动php-fpm\n/usr/local/sbin/php-fpm\nnetstat -utpln |grep php\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										},
+										{
+											"ID": "20221210015746-6ddiv2q",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210015746-6ddiv2q",
+												"updated": "20221210015918"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "nginx配置"
+												}
+											]
+										},
+										{
+											"ID": "20221210021011-pd66q0m",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210021011-pd66q0m",
+												"updated": "20221210021110"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "/usr/local/nginx/conf/nginx.conf"
+												}
+											]
+										},
+										{
+											"ID": "20221210015918-54a7o85",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221210015918-54a7o85",
+												"updated": "20221210021126"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "YmFzaA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "# /usr/local/nginx/conf/nginx.conf 文件中添加\nlocation ~\\.php {      \t\t\t\t\t##访问.php页面的配置段\n\t    root /var/www/haha/; \t\t\t##php网页文档根目录，html代表安装nginx的目录下的html目录\n\t    fastcgi_pass 127.0.0.1:9000;\t\t##php-fpm的监听地址和端口号\n\t    fastcgi_index index.php;\t\t\t##指定php首页文件\n\t    include fastcgi.conf;\t\t\t##包括fastcgi.conf样本配置\n\t}\n\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

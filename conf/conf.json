@@ -96,7 +96,7 @@
     "fullWidth": true,
     "katexMacros": "{}",
     "readOnly": false,
-    "embedBlockBreadcrumb": true,
+    "embedBlockBreadcrumb": false,
     "listLogicalOutdent": false,
     "floatWindowMode": 0,
     "dynamicLoadBlocks": 48,
@@ -207,7 +207,7 @@
               ],
               "direction": "tb",
               "instance": "Layout",
-              "size": "291px",
+              "size": "283px",
               "type": "left"
             },
             {
@@ -217,106 +217,17 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20220924141737-z6ah3oq",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20220924141737-z6ah3oq",
-                        "scrollAttr": {
-                          "endId": "20221005201549-ew01xad",
-                          "focusEnd": 0,
-                          "focusId": "20220930001932-myssfgk",
-                          "focusStart": 0,
-                          "scrollTop": 2797,
-                          "startId": "20221011153643-4fuy2wd"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": true,
-                      "title": "云计算"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20220929211029-j2rk9en",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20220929211029-j2rk9en",
-                        "scrollAttr": {
-                          "endId": "20221013152132-gjedwp2",
-                          "focusEnd": 0,
-                          "focusId": "20220930153941-ww8lcv7",
-                          "focusStart": 0,
-                          "scrollTop": 1664,
-                          "startId": "20220930153941-ww8lcv7"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": true,
-                      "title": "大纲"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221120212849-c4hq8ka",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221120212849-c4hq8ka",
-                        "scrollAttr": {
-                          "endId": "20221122111444-h757xaj",
-                          "focusEnd": 2,
-                          "focusId": "20221120231119-yc6o523",
-                          "focusStart": 2,
-                          "scrollTop": 738,
-                          "startId": "20221120212907-ty8yby5"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "redis"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221202215024-d0tm9ja",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221202215024-d0tm9ja",
-                        "scrollAttr": {
-                          "endId": "20221202215024-3gp10h0",
-                          "focusEnd": 0,
-                          "focusId": "20221202215031-2nufreg",
-                          "focusStart": 0,
-                          "scrollTop": 0,
-                          "startId": "20221202215031-2nufreg"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "工具"
-                    },
-                    {
-                      "active": true,
-                      "children": {
-                        "action": "",
                         "blockId": "20221202215033-1bbchyv",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
                         "rootId": "20221202215033-1bbchyv",
                         "scrollAttr": {
-                          "endId": "20221203001109-r8tyu6s",
-                          "focusEnd": 9,
-                          "focusId": "20221203045636-en4a7sz",
-                          "focusStart": 9,
-                          "scrollTop": 1442.4820556640625,
+                          "endId": "20221203011600-d40lvp2",
+                          "focusEnd": 0,
+                          "focusId": "20221202215046-hbeerwz",
+                          "focusStart": 0,
+                          "scrollTop": 6257,
                           "startId": "20221202215046-hbeerwz"
                         }
                       },
@@ -328,46 +239,46 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221123210315-joq3265",
+                        "blockId": "20221015213822-vs8hvq7",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221123210315-joq3265",
+                        "rootId": "20221015213822-vs8hvq7",
                         "scrollAttr": {
-                          "endId": "20221125222846-10c7c2d",
-                          "focusEnd": 0,
-                          "focusId": "20221123210332-6yxdth9",
-                          "focusStart": 0,
-                          "scrollTop": 0,
-                          "startId": "20221123210332-6yxdth9"
+                          "endId": "20221022101248-ud47zdv",
+                          "focusEnd": 85,
+                          "focusId": "20221109161102-jp5cscv",
+                          "focusStart": 85,
+                          "scrollTop": 10311,
+                          "startId": "20221027112639-kj94r96"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "服务"
+                      "title": "sql详解"
                     },
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221127212351-sh4qlst",
+                        "blockId": "20221127221426-hprxioq",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221127212351-sh4qlst",
+                        "rootId": "20221127221426-hprxioq",
                         "scrollAttr": {
-                          "endId": "20221127212413-0ayx4ci",
+                          "endId": "20221127221426-r692m6g",
                           "focusEnd": 0,
-                          "focusId": "20221127212351-8wvumdi",
+                          "focusId": "20221127221435-0cc56pk",
                           "focusStart": 0,
-                          "scrollTop": 108,
-                          "startId": "20221127212351-8wvumdi"
+                          "scrollTop": 0,
+                          "startId": "20221127221435-0cc56pk"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "docker资料"
+                      "title": "docker问题"
                     },
                     {
                       "children": {
@@ -375,11 +286,23 @@
                           "group": 1,
                           "hPath": "",
                           "hasReplace": false,
-                          "idPath": "",
-                          "k": "免交互",
+                          "idPath": [],
+                          "k": "五链",
+                          "layout": 0,
                           "list": [
-                            "免交互",
+                            "五链",
+                            "mysql -e",
+                            "nginx  ",
+                            "nginx  匹配",
+                            "nginx ",
+                            "nginx 支持",
+                            "nginx 编码",
+                            "刷新权限",
+                            "ali",
                             "",
+                            "计划",
+                            "watch",
+                            "免交互",
                             "cp",
                             "killall",
                             "nginx 变量",
@@ -420,6 +343,7 @@
                           "method": 0,
                           "r": "",
                           "replaceList": [],
+                          "sort": 0,
                           "types": {
                             "blockquote": true,
                             "codeBlock": true,
@@ -440,6 +364,95 @@
                       "instance": "Tab",
                       "pin": false,
                       "title": "搜索"
+                    },
+                    {
+                      "active": true,
+                      "children": {
+                        "action": "",
+                        "blockId": "20221127160748-10yseo4",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221127160748-10yseo4",
+                        "scrollAttr": {
+                          "endId": "20221216034938-08p9s22",
+                          "focusEnd": 62,
+                          "focusId": "20221216041841-7j0r9zt",
+                          "focusStart": 62,
+                          "scrollTop": 1137.5101318359375,
+                          "startId": "20221127160800-5n8h2tn"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "docker"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221122163317-8vk1uqu",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221122163317-8vk1uqu",
+                        "scrollAttr": {
+                          "endId": "20221122171409-u1n1hov",
+                          "focusEnd": 5,
+                          "focusId": "20221215235052-7yrad24",
+                          "focusStart": 5,
+                          "scrollTop": 185,
+                          "startId": "20221122163348-b4nyp6j"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "面试题"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221109192619-6vvv8b3",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221109192619-6vvv8b3",
+                        "scrollAttr": {
+                          "endId": "20221111230612-e475bto",
+                          "focusEnd": 3,
+                          "focusId": "20221111152022-umizaaz",
+                          "focusStart": 3,
+                          "scrollTop": 5914,
+                          "startId": "20221109192628-sfai0q0"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "MySQL运维篇"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20221120212849-c4hq8ka",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20221120212849-c4hq8ka",
+                        "scrollAttr": {
+                          "endId": "20221122111444-h757xaj",
+                          "focusEnd": 45,
+                          "focusId": "20221120231742-g26aj1o",
+                          "focusStart": 36,
+                          "scrollTop": 956,
+                          "startId": "20221120212907-ty8yby5"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "redis"
                     }
                   ],
                   "height": "",
@@ -509,7 +522,7 @@
           "show": false,
           "size": {
             "height": 0,
-            "width": 298
+            "width": 240
           },
           "type": "file"
         },
@@ -519,7 +532,7 @@
           "show": true,
           "size": {
             "height": 0,
-            "width": 291
+            "width": 283
           },
           "type": "outline"
         },
@@ -564,8 +577,8 @@
           "icon": "iconGraph",
           "show": false,
           "size": {
-            "height": 354,
-            "width": 420
+            "height": 0,
+            "width": 360
           },
           "type": "graph"
         },
@@ -574,8 +587,8 @@
           "icon": "iconGlobalGraph",
           "show": false,
           "size": {
-            "height": 424,
-            "width": 539
+            "height": 0,
+            "width": 360
           },
           "type": "globalGraph"
         }
@@ -587,7 +600,7 @@
           "show": false,
           "size": {
             "height": 0,
-            "width": 373
+            "width": 360
           },
           "type": "backlink"
         }
@@ -613,7 +626,7 @@
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.5.2",
+    "kernelVersion": "2.5.4",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -632,7 +645,8 @@
     },
     "uploadErrLog": false,
     "disableGoogleAnalytics": true,
-    "downloadInstallPkg": false
+    "downloadInstallPkg": false,
+    "autoLaunch": false
   },
   "keymap": {
     "editor": {
@@ -1093,13 +1107,15 @@
       "bucket": "",
       "region": "",
       "pathStyle": false,
-      "skipTlsVerify": false
+      "skipTlsVerify": false,
+      "timeout": 30
     },
     "webdav": {
       "endpoint": "",
       "username": "",
       "password": "",
-      "skipTlsVerify": false
+      "skipTlsVerify": false,
+      "timeout": 30
     }
   },
   "search": {
@@ -1132,13 +1148,13 @@
     "virtualRefKeywordsLimit": 512
   },
   "stat": {
-    "treeCount": 27,
+    "treeCount": 29,
     "cTreeCount": 100,
-    "blockCount": 6377,
+    "blockCount": 7184,
     "cBlockCount": 10000,
-    "dataSize": 464757478,
+    "dataSize": 470246452,
     "cDataSize": 3145728,
-    "assetsSize": 244844509,
+    "assetsSize": 246608175,
     "cAssetsSize": 2097152
   },
   "api": {
