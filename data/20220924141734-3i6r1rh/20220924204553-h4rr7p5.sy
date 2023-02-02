@@ -7,7 +7,7 @@
 		"id": "20220924204553-h4rr7p5",
 		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20220926152129-btlc3wz\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221013100214-s9ww0kz\u0026quot;,\u0026quot;scrollTop\u0026quot;:0,\u0026quot;focusId\u0026quot;:\u0026quot;20220926152037-t3vrc6k\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
 		"title": "资料库",
-		"updated": "20221109140919"
+		"updated": "20221220003315"
 	},
 	"Children": [
 		{
@@ -3178,6 +3178,13 @@
 			]
 		},
 		{
+			"ID": "20221220003315-pam8uw8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221220003315-pam8uw8"
+			}
+		},
+		{
 			"ID": "20221011163300-6dx70cz",
 			"Type": "NodeParagraph",
 			"Properties": {
@@ -3220,6 +3227,7 @@
 								"Marker": "Kg=="
 							},
 							"Properties": {
+								"fold": "1",
 								"id": "20221011163314-cu3dbj5",
 								"updated": "20221011165049"
 							},

@@ -30,9 +30,21 @@
 .protyle-content > .protyle-title {
   /* 标题 */
 }
+.protyle-content > .protyle-title .protyle-attr .protyle-attr--refcount {
+  /* 块引用计数 */
+  background-color: transparent;
+  box-shadow: 0 0 var(--custom-toolbar-tiem-active-box-shadow-spread) 0 var(--custom-box-shadow-color);
+  z-index: 1;
+}
 .protyle-content > .protyle-title .protyle-title__input {
   /*编辑区文件名*/
   background: transparent;
+}
+.protyle-content > .protyle-wysiwyg .protyle-attr .protyle-attr--refcount {
+  /* 块引用计数 */
+  background-color: transparent;
+  box-shadow: 0 0 var(--custom-toolbar-tiem-active-box-shadow-spread) 0 var(--custom-box-shadow-color);
+  z-index: 1;
 }
 .protyle-content > .protyle-wysiwyg .dragover__top {
   box-shadow: 0 -4px 0 var(--custom-drag-top-shadow-color);
@@ -50,14 +62,28 @@
   width: 15px;
   right: 8px;
   margin: 0 4px;
+  padding: 0;
 }
 .protyle-scroll .protyle-scroll__bar {
   right: -98px;
 }
 .protyle-preview {
-  /* 内容 */
+  /* 导出预览 */
   background-color: transparent;
   backdrop-filter: none;
+}
+.protyle-preview .protyle-preview__action {
+  /* 预览样式选择栏 */
+  background-color: var(--custom-components-deep);
+}
+.protyle-preview .protyle-preview__action > button {
+  /* 预览样式选择按钮 */
+  background-color: transparent;
+  border-radius: var(--custom-border-radius);
+}
+.protyle-preview .protyle-preview__action > button:hover {
+  /* 鼠标悬浮 */
+  background-color: var(--b3-theme-background-light);
 }
 .protyle-preview > .b3-typography {
   padding-left: var(--custom-editor-padding-left) !important;

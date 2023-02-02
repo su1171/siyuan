@@ -164,13 +164,13 @@
   --custom-background-attachment-landscape: fixed;
   --custom-background-attachment-portrait: var(--custom-background-attachment-landscape);
   /* 多幅背景图像的混合模式 | Blending mode for multiple background images */
-  --custom-background-blend-mode-landscape: initial;
+  --custom-background-blend-mode-landscape: unset;
   --custom-background-blend-mode-portrait: var(--custom-background-blend-mode-landscape);
   /* 背景图片绘制区域 | Background image drawing area */
-  --custom-background-clip-landscape: initial;
+  --custom-background-clip-landscape: unset;
   --custom-background-clip-portrait: var(--custom-background-clip-landscape);
   /* 背景图像相对位置的基点 | The base point for the relative position of the background image */
-  --custom-background-origin-landscape: initial;
+  --custom-background-origin-landscape: unset;
   --custom-background-origin-portrait: var(--custom-background-origin-landscape);
   /* 背景图片位置 | Background color */
   --custom-background-position-landscape: center;
@@ -190,6 +190,8 @@
   --custom-span-tag-icon: url(/appearance/themes/Dark+/icon/tag.svg);
   /* 块引用波浪线动画图标 | The icon of wavy line animation */
   --custom-span-ref-animation-icon: url(/appearance/themes/Dark+/icon/wavy-line.svg);
+  /* 行内代码文本颜色 | Inline code text color */
+  --custom-span-code-color: var(--b3-theme-on-background);
   /* 图片反色滤波器 | Image inverted filter */
   --custom-image-filter-invert: invert(100%);
   /* 背景图片滤波器 | Background image filter */
@@ -313,6 +315,14 @@
   --custom-block-quote-background-color: var(--custom-transparent-lighter);
   /* 超级块背景颜色 | The background color of super block */
   --custom-block-super-background-color: var(--custom-transparent-lighter);
+  /* 超级块外边距 | The margin of super block */
+  --custom-block-super-margin: 0.25em;
+  /* 超级块内边距 | The padding of super block */
+  --custom-block-super-padding: calc(0.5em - var(--custom-block-super-margin));
+  /* 超级块块属性标识位置偏移量 | The position offset of superblock attribute identifies */
+  --custom-block-super-attr-offset: -16px;
+  /* 超级块之间的间距 | The spacing between superblocks */
+  --custom-block-super-spacing: calc(var(--custom-block-super-margin) - var(--custom-block-super-attr-offset) - 2px);
   /* 表格块背景颜色 | The background color of table block */
   --custom-block-table-background-color: transparent;
   /* 表格块单元格边框颜色 | The color of table block cell borders */
@@ -327,6 +337,8 @@
   --custom-block-table-hover-background-color: var(--custom-components-light);
   /* 列表转换成的表格鼠标悬浮背景颜色 | The background color of the mouse hover row of the table converted by a list */
   --custom-list-table-hover-background-color: #FFF1;
+  /* 列表转换成的看板最小宽度 | The min width of the board coverted by a list */
+  --custom-list-board-min-width: calc(25% - var(--custom-editor-padding-right) / 4);
   /* 弹出菜单 | popover menu */
   /* 弹出功能菜单背景颜色 | The background color of the popover function menu */
   --custom-popover-function-menu-background-color: var(--custom-transparent-deep);
@@ -348,6 +360,7 @@
   --custom-popover-menu-outline-style: solid;
   /* 弹出菜单轮廓颜色 | The outline color of the popover menu */
   --custom-popover-menu-outline-color: var(--b3-scroll-color);
+  --custom-popover-menu-focus-outline-color: var(--b3-theme-on-surface-light);
   /* 弹出菜单输入框最小宽度 | The min width of the popover menu input */
   /* --custom-popover-menu-input-min-width: 50vw; */
   --custom-popover-menu-input-min-width: none;
@@ -413,7 +426,9 @@
   /* 思源标记阴影颜色 | The shadow color of mark */
   --custom-span-mark-shadow-color: var(--b3-theme-on-primary);
   /* 思源标记阴影宽度 | The shadow width of mark */
-  --custom-span-mark-shadow-width: 4px;
+  --custom-span-mark-shadow-width: 2px;
+  /* 闪卡标记颜色 | Flash card marker color */
+  --custom-riff-decks-color: var(--b3-theme-primary-light);
   /* 思源加粗文本颜色 | The color of bold text */
   /* 原样式 | Original style */
   /* --custom-span-strong-color: var(--b3-protyle-inline-strong-color); */
@@ -489,19 +504,11 @@
   --custom-scroll-max-height: 50vh;
   /* 表格单元格等宽启用时单元格宽度 | Table cell width when cell equal function is enabled */
   --custom-table-cell-equal-width: 256px;
-  /* 自定义背景图片路径 | The file path of customize background image. */
-  --custom-background-01: url("/appearance/themes/Dark+/image/background (01).jpg");
-  --custom-background-02: url("/appearance/themes/Dark+/image/background (02).jpg");
-  --custom-background-03: url("/appearance/themes/Dark+/image/background (03).jpg");
-  --custom-background-04: url("/appearance/themes/Dark+/image/background (04).jpg");
-  --custom-background-05: url("/appearance/themes/Dark+/image/background (05).jpg");
-  --custom-background-06: url("/appearance/themes/Dark+/image/background (06).jpg");
-  --custom-background-07: url("/appearance/themes/Dark+/image/background (07).jpg");
-  --custom-background-08: url("/appearance/themes/Dark+/image/background (08).jpg");
-  --custom-background-09: url("/appearance/themes/Dark+/image/background (09).jpg");
-  --custom-background-10: url("/appearance/themes/Dark+/image/background (10).jpg");
-  --custom-background-11: url("/appearance/themes/Dark+/image/background (11).jpg");
-  --custom-background-12: url("/appearance/themes/Dark+/image/background (12).jpg");
+  /* 未激活的窗口 */
+  /* 窗口标题栏背景颜色 | The window title bar background color */
+  --custom-window-inactive-title-bar-background-color: var(--b3-theme-background);
+  /* 窗口标题栏颜色 | The window title bar color */
+  --custom-window-inactive-title-bar-color: var(--b3-theme-on-surface-light);
 }
 @media (orientation: landscape) {
   :root {
@@ -555,6 +562,7 @@
         "EmojiSymbols",
         "Win10 Emoji";
   --b3-font-family-code: "Sarasa Mono SC",
+
         "JetBrainsMono-Regular",
         mononoki,
         Consolas,
@@ -562,6 +570,8 @@
         Menlo,
         Courier,
         monospace,
+
+        "SimHei",
 
         "Win10 Emoji",
         "Apple Color Emoji",

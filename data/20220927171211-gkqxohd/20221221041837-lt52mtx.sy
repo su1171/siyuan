@@ -1,0 +1,333 @@
+{
+	"ID": "20221221041837-lt52mtx",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221221041837-lt52mtx",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221221041850-e3e8j3z\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221221041916-fn6grrp\u0026quot;,\u0026quot;scrollTop\u0026quot;:0,\u0026quot;focusId\u0026quot;:\u0026quot;20221221041850-e3e8j3z\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"title": "乱七八槽",
+		"updated": "20221221041916"
+	},
+	"Children": [
+		{
+			"ID": "20221221041850-e3e8j3z",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041850-e3e8j3z"
+			}
+		},
+		{
+			"ID": "20221221041916-t48tiv4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-t48tiv4",
+				"updated": "20221221041916"
+			}
+		},
+		{
+			"ID": "20221221041916-7r36yiu",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221221041916-7r36yiu",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Golang开源流媒体"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "服务"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "器"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-on1s9sv",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-on1s9sv",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "docker run -it -p 1935:1935 \\ \n -p 8080:8080 -p 4433:4433 \\\n -p 5544:5544 -p 8083:8083 \\\n -p 8084:8084 -p 30000-30100:30000-30100/udp q191201771/lal /lal/bin/lalserver -c /lal/conf/lalserver.conf.json\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-3whq4pg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-3whq4pg",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "docker"
+				},
+				{
+					"Type": "NodeText",
+					"Data": " run -it -p 1935:1935 -p 8080:8080 -p 4433:4433 -p 5544:5544 -p 8083:8083 -p 8084:8084 -p 30000-30100:30000-30100/udp q191201771/lal /lal/bin/lalserver -c /lal/conf/lalserver.conf.json"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-os753a6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-os753a6",
+				"updated": "20221221041916"
+			}
+		},
+		{
+			"ID": "20221221041916-pbx355l",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221221041916-pbx355l",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "srs框架"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-v4eaj2a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-v4eaj2a",
+				"updated": "20221221041916"
+			}
+		},
+		{
+			"ID": "20221221041916-xsxaeiy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-xsxaeiy",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "docker"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-vegzsgi",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-vegzsgi",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "docker run -p 1935:1935 -p 1985:1985 -p 8080:8080 \\\n--name srs \\\n--network woniu_network \\\n--ip 172.0.0.35 \\\n--restart=always \\\n-v /srs/conf/:/usr/local/srs/conf/ \\\n-v /srs/objs/:/usr/local/srs/objs/ \\\nossrs/srs:v4.0.85 \n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-mltj83e",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-mltj83e",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "docker run -p 1935:1935 -p 1985:1985 -p 8080:8080 \\\n--name srs \\\n--restart=always \\\n-v /srs/conf/:/usr/local/srs/conf/ \\\n-v /srs/objs/:/usr/local/srs/objs/ \\\nossrs/srs\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-4u51bb4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-4u51bb4",
+				"updated": "20221221041916"
+			}
+		},
+		{
+			"ID": "20221221041916-2w2p1ui",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-2w2p1ui",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "# 推流地址\nrtmp://47.94.237.30/live/livestream\n\nffmpeg -re i /srs/video/test.mp4  -c copy -f flv \"rtmp://47.94.237.30/live/livestream\"\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-cixfdnt",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-cixfdnt",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "#!/bin/bash\nwhile true\ndo\n  ffmpeg -re -f concat -safe 0 -i /srs/video/jiayouernv/playlist.txt -vcodec copy -acodec aac -b:a 192k -f flv \"rtmp://47.94.237.30/live/livestream\"\ndone\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-e1vnz47",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-e1vnz47",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "/srs/video/jiayouernv/playlist.txt"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-k9zzelt",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-k9zzelt",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "ffmpeg -re -f concat -safe 0 -i /srs/video/jiayouernv/playlist.txt -vcodec copy -acodec aac -b:a 192k -f flv \"rtmp://47.94.237.30/live/livestream\"\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-5nxor30",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221221041916-5nxor30",
+				"updated": "20221221041916"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "YmFzaA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "生成的 /srs/video/jiayouernv/playlist.txt 文件内容是这样的:\nfile '/home/1.mp4'\nfile '/home/2.mp4'\nfile '/home/3.mp4'\nfile '/home/4.mp4'\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221221041916-fn6grrp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221221041916-fn6grrp",
+				"updated": "20221221041916"
+			}
+		}
+	]
+}

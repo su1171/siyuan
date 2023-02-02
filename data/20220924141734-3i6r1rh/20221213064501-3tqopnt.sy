@@ -4,33 +4,49 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20221213064501-3tqopnt",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221213064655-idytr4n\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221213064634-3ds81eb\u0026quot;,\u0026quot;scrollTop\u0026quot;:438.1780090332031,\u0026quot;focusId\u0026quot;:\u0026quot;20221213064655-idytr4n\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221213064655-idytr4n\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221213064634-3ds81eb\u0026quot;,\u0026quot;scrollTop\u0026quot;:2396,\u0026quot;focusId\u0026quot;:\u0026quot;20230131204348-a1d0rpk\u0026quot;,\u0026quot;focusStart\u0026quot;:1059,\u0026quot;focusEnd\u0026quot;:1059}",
 		"title": "2022年12月13日",
-		"updated": "20221213064633"
+		"updated": "20230131204740"
 	},
 	"Children": [
 		{
 			"ID": "20221213064655-idytr4n",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221213064655-idytr4n"
-			}
+				"id": "20221213064655-idytr4n",
+				"updated": "20230131204740"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1."
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20220924201119-2g98nwy",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "pwd"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "\n2.cd\n3.ls\n4.mkdir "
+				}
+			]
 		},
 		{
-			"ID": "20221213064633-m6z2zkm",
-			"Type": "NodeWidget",
-			"Data": "\u003ciframe src=\"/widgets/timeline-sy\" data-src=\"/widgets/timeline-sy\" data-subtype=\"widget\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 1027px; height: 653px;\"\u003e\u003c/iframe\u003e",
-			"Properties": {
-				"id": "20221213064633-m6z2zkm",
-				"updated": "20221213064633"
-			}
-		},
-		{
-			"ID": "20221213064655-ui3k5qx",
+			"ID": "20230131204348-a1d0rpk",
 			"Type": "NodeParagraph",
 			"Properties": {
-				"id": "20221213064655-ui3k5qx"
-			}
+				"id": "20230131204348-a1d0rpk",
+				"updated": "20230131204611"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "5.touch o\n6.cp\n7.rm\n8.mv\n9.ll\n10.echo\n11.cat\n12.which\n13.man\n14.find\n15.type\n16.stat\n17.du\n18.wc(-lwc)\n19.systemctl|service\n20.bash\n21.hostname\n22.exit\n23.init\n24.reboot\n25.mount\n26.umount\n27.passwd\n28.ifconfig\n29.ip\n30.help\n31.cat(cat -n)\n32.less\n33.tail(tail -f)\n34.tac\n35.nl(=cat -n)\n36.date\n37.grep(w/c/n/o/i/v/A/B/E)\n38.uniq(-c)\n39.egrep\n40.gzip(gunzip/bzip2/bunzip2)-.gz/.bz2\n41.tar(zcf/jcf/xf -C/tf)\n42.rpm(qa/qf/qi/ql)\n43.yum（clean all/makecache/install/remove/update）\n44.useradd(-d/-M/-s)\n45.userdel(-r)\n46.usermod\n47.groupadd\n48.groupdel\n49.gpasswd(-a/-d/-M)\n50.id\n51.groups\n52.finger\n53.w\n54.whoami\n55.who\n56.chmod\n57.chown\n58.umask\n59.fdisk\n60.parted\n61.mkfs\n62.mkswap\n63.swapon\n64.swapoff\n65.blkid\n66.pv/scan|create|display|remove\n67.vg/scan/create|display|remove|extend|reduce\n68.lv/scan/create|display|remove|extend|reduce\n69.mdadm\n70.dd\n71.ntsysv\n72.ps（aux可以看什么 -elf可以看什么）\n73.pstree\n74.top\n75.pgrep\n76.pkill\n77.kill\n78.killall\n79.jobs(-l)\n80.fg\n81.bg\n82.at\n83.watch\n84.crontab\n85.chsh\n86.chattr\n87.lsattr\n88.chage\n89.source\n90.export（临时导出变量参数）\n91.visudo\n92.nmap\n93.ln\n94.last|lastlog\n95.lastb\n96.sudo \n97.ethtool\n98.route\n99.netstat\n100.traceroute\n101.nslookup\n102.ifup|ifdown\n103.env\n104.expr\n105.read\n106.bc\n107.sleep\n108.if\n109.while\n110.awk\n111.sed\n112.let\n113.break\n114.rz|sz\n115.nohup\n116.ss\n117.tcpdump\n118.lsof\n119.free\n120.vmstat\n121.mpstat\n122.iostat\n123.sar\n124.ulimit\n125.sort\n126.cut\n127.tr\n128.cgroup\n129.nohup\n130.modprobe\n131.lsmod\n132.ipvsadm\n133.mysqldump（是mysql应用配套工具，数据逻辑备份工具）\n134.mysql（连接数据库的工具）\n135.mysqlbinlog（二进制日志恢复工具）"
+				}
+			]
 		},
 		{
 			"ID": "20221213064634-3ds81eb",

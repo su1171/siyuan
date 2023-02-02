@@ -1,0 +1,27 @@
+{
+	"ID": "20230130094011-kg55gwo",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230130094011-kg55gwo",
+		"title": "Git ",
+		"updated": "20230130094017"
+	},
+	"Children": [
+		{
+			"ID": "20230130094017-lw763q6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230130094017-lw763q6"
+			}
+		},
+		{
+			"ID": "20230130094011-8l624ko",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230130094011-8l624ko",
+				"updated": "20230130094011"
+			}
+		}
+	]
+}

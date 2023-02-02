@@ -1,0 +1,347 @@
+{
+	"ID": "20230201183737-trkm69g",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230201183737-trkm69g",
+		"title": "GFS",
+		"updated": "20230201184119"
+	},
+	"Children": [
+		{
+			"ID": "20230201183949-7levb2u",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230201183949-7levb2u",
+				"updated": "20230201184119"
+			},
+			"Children": [
+				{
+					"ID": "20230201183953-kc4q68c",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230201183953-kc4q68c",
+						"updated": "20230201184119"
+					},
+					"Children": [
+						{
+							"ID": "20230201183953-zen9q50",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20230201183953-zen9q50",
+								"updated": "20230201183959"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "概述"
+								}
+							]
+						},
+						{
+							"ID": "20230201184001-mqogh9m",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230201184001-mqogh9m",
+								"updated": "20230201184029"
+							},
+							"Children": [
+								{
+									"ID": "20230201184029-ihngm34",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230201184029-ihngm34",
+										"updated": "20230201184029"
+									},
+									"Children": [
+										{
+											"ID": "20230201184029-wesn863",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20230201184029-wesn863",
+												"updated": "20230201184036"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "概述"
+												}
+											]
+										},
+										{
+											"ID": "20230201184039-lkcwfzu",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230201184039-lkcwfzu",
+												"updated": "20230201184041"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "GlusterFS（Google File System）是一个开源的分布式文件系统，Gluster借助TCP/IP网络将存储资源分散存储在网络的不同节点，在通过汇聚为客户端提供统一的资源访问，在存储方面具有很强大的横向扩展能力，通过扩展不同的节点可以支持PB级别的存储容量；Bit、Byte、KB、MB、GB、TB、PB、EB、ZB、YB、DB、NB"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20230201184022-kwkxj1r",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230201184022-kwkxj1r",
+								"updated": "20230201184119"
+							},
+							"Children": [
+								{
+									"ID": "20230201184044-05mrodp",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20230201184044-05mrodp",
+										"updated": "20230201184119"
+									},
+									"Children": [
+										{
+											"ID": "20230201184044-lmzfhbh",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20230201184044-lmzfhbh",
+												"updated": "20230201184048"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "特点"
+												}
+											]
+										},
+										{
+											"ID": "20230201184052-lfhomyy",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20230201184052-lfhomyy",
+												"updated": "20230201184059"
+											},
+											"Children": [
+												{
+													"ID": "20230201184059-113qn54",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20230201184059-113qn54",
+														"updated": "20230201184059"
+													},
+													"Children": [
+														{
+															"ID": "20230201184059-thuf55r",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20230201184059-thuf55r",
+																"updated": "20230201184059"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "扩展性与高性能："
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "通过Scale-out架构可以增加存储节点的方式来提高容量和性能（磁盘、计算、I/O资源都可以独立增加），Gluster弹性哈希（Elastic Hash）解决了Gluster服务对元数据服务器的依赖，Gluster采用弹性哈希算法来确定数据在chunk节点中的分布情况，无须元数据服务器，实现了存储的横向扩展，改善了元数据服务器节点的压力以及单点故障；"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230201184052-qeg1rod",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20230201184052-qeg1rod",
+												"updated": "20230201184102"
+											},
+											"Children": [
+												{
+													"ID": "20230201184102-5rku99b",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20230201184102-5rku99b",
+														"updated": "20230201184102"
+													},
+													"Children": [
+														{
+															"ID": "20230201184102-m5zyewh",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20230201184102-m5zyewh",
+																"updated": "20230201184102"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "高可用性："
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "GlusterFS通过配置不同类型的卷，可以对数据进行自动复制（类似于RAID1），即使某节点故障，也不影响数据的访问；"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230201184052-au4wvre",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20230201184052-au4wvre",
+												"updated": "20230201184105"
+											},
+											"Children": [
+												{
+													"ID": "20230201184105-ttt9duk",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20230201184105-ttt9duk",
+														"updated": "20230201184105"
+													},
+													"Children": [
+														{
+															"ID": "20230201184105-parjcsk",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20230201184105-parjcsk",
+																"updated": "20230201184105"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "通用性："
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "GlusterFS没有设置独立的私有数据文件系统，而是采用以往的ext4、ext3等，数据可以通过传统的磁盘访问方式被客户端所访问；"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230201184052-l1d4c8g",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20230201184052-l1d4c8g",
+												"updated": "20230201184119"
+											},
+											"Children": [
+												{
+													"ID": "20230201184119-0e4tgdy",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "NC4=",
+														"Num": 4
+													},
+													"Properties": {
+														"id": "20230201184119-0e4tgdy",
+														"updated": "20230201184119"
+													},
+													"Children": [
+														{
+															"ID": "20230201184119-i755beq",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20230201184119-i755beq",
+																"updated": "20230201184119"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "弹性卷管理："
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "GlusterFS通过将数据存储在逻辑卷上，逻辑卷从逻辑存储池进行独立逻辑划分，逻辑存储池可以在线进行增加和删除，不会导致业务中断，逻辑卷的数量可以根据实际需求进行自行增加和缩减；"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230201183737-ywf2gjf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230201183737-ywf2gjf",
+				"updated": "20230201183737"
+			}
+		}
+	]
+}

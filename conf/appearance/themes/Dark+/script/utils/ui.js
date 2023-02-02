@@ -26,9 +26,15 @@ import {
     setTooltipDirection,
     requestFullscreen,
 } from './dom.js';
-import { Iterator } from './misc.js';
+import {
+    Iterator,
+    fileSelect,
+} from './misc.js';
 import { drag } from './drag.js';
-import { compareVersion } from './string.js';
+import {
+    removeOuterIAL,
+    compareVersion,
+} from './string.js';
 import {
     sql,
     getBlockBreadcrumb,
@@ -36,20 +42,73 @@ import {
     getBlockAttrs,
     getBlockIndex,
     setBlockAttrs,
+    getBlockKramdown,
     pushMsg,
     pushErrMsg,
 } from './api.js';
 
-import {
-    getConf,
-    runCell,
-    restartKernel,
-    closeConnection,
-} from '/appearance/themes/Dark+/app/jupyter/js/run.js';
+// const jupyterConfig = getConf();
+// REF [Web Workers API - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API)
+const jupyterWorker = new Worker(
+    '/appearance/themes/Dark+/app/jupyter/js/run.js',
+    {
+        type: 'module',
+        name: 'ui',
+    },
+);
+const jupyterImportWorker = new Worker(
+    '/appearance/themes/Dark+/app/jupyter/js/import.js',
+    {
+        type: 'module',
+        name: 'ui',
+    },
+);
 
-const jupyterConf = getConf();
+var jupyterConfig;
+
+/* worker 错误捕获 */
+const worker_error_handler = e => {
+    console.error(e);
+};
+
+jupyterWorker.addEventListener('error', worker_error_handler);
+jupyterWorker.addEventListener('messageerror', worker_error_handler);
+
+jupyterImportWorker.addEventListener('error', worker_error_handler);
+jupyterImportWorker.addEventListener('messageerror', worker_error_handler);
+
+jupyterWorker.addEventListener('message', e => {
+    // console.log(e);
+    const data = JSON.parse(e.data);
+    switch (data.type) {
+        case 'call':
+            switch (data.handle) {
+                case 'getConf':
+                    jupyterConfig = data.return;
+                    break;
+                default:
+                    break;
+            }
+            break;
+        default:
+            break;
+    }
+});
+
+
+jupyterWorker.postMessage(JSON.stringify({
+    type: 'call',
+    handle: 'getConf',
+    params: [],
+}));
+jupyterWorker.postMessage(JSON.stringify({
+    type: 'call',
+    handle: 'setLang',
+    params: [window.theme.languageMode],
+}));
+
 var toolbarItemList = [];
-
+var toolbar_timeout_id = null; // 工具栏延时显示定时器
 /**
  * 重置节点, 可所有监听器
  * @node (HTMLElementNode): DOM 节点
@@ -81,7 +140,7 @@ function createToolbarItem(toolbarConfig, className) {
     ) { // 按钮是否有多个状态且有默认状态
         const status = toolbarConfig.status[toolbarConfig.status.default];
         icon = status.icon;
-        label = status.label[language] || toolbarConfig.label.other;
+        label = status.label[language] || status.label.other;
         label += (status.hotkey && status.hotkey().enable !== false) ? ` [${printHotKey(status.hotkey())}]` : '';
     }
     else { // 按钮没有多个状态
@@ -103,9 +162,9 @@ function createToolbarItem(toolbarConfig, className) {
  * 恢复工具栏菜单项用户默认配置
  */
 function itemStateLoad(id, states, node) {
-    if (states[id]) {
+    const conf = states[id];
+    if (conf) {
         // 存在自定义配置
-        const conf = states[id];
         // console.log(conf, conf.state, conf.state == null);
         const state = conf.state ?? conf.default ?? false;
         // console.log(state);
@@ -117,10 +176,11 @@ function itemStateLoad(id, states, node) {
 function toolbarItemListPush(item) {
     toolbarItemList.push(item);
     const toolbar = document.getElementById('toolbar');
-    const windowControls = document.getElementById('windowControls');
-    var custom_toolbar = document.getElementById(config.theme.toolbar.id);
 
     if (window.theme.clientMode !== 'mobile' && toolbar) {
+        const windowControls = document.getElementById('windowControls');
+        var custom_toolbar = document.getElementById(config.theme.toolbar.id);
+
         if (!custom_toolbar) {
             /* 自定义工具栏按钮的容器 */
             custom_toolbar = document.createElement('div');
@@ -307,17 +367,13 @@ function toolbarItemListPush(item) {
                     );
 
                     /* 保存当前位置 */
-                    localStorage.setItem(config.theme.tooldock.key, JSON.stringify({
-                        position: {
-                            left: custom_tooldock.style.left,
-                            right: custom_tooldock.style.right,
-                            top: custom_tooldock.style.top,
-                            bottom: custom_tooldock.style.bottom,
-                            width: custom_tooldock.style.width,
-                            height: custom_tooldock.style.height,
-                        },
-                    }));
-
+                    custom.theme.tooldock.position.left = custom_tooldock.style.left;
+                    custom.theme.tooldock.position.right = custom_tooldock.style.right;
+                    custom.theme.tooldock.position.top = custom_tooldock.style.top;
+                    custom.theme.tooldock.position.bottom = custom_tooldock.style.bottom;
+                    custom.theme.tooldock.position.width = custom_tooldock.style.width;
+                    custom.theme.tooldock.position.height = custom_tooldock.style.height;
+                    setTimeout(async () => saveCustomFile(custom), 0);
                 },
             );
 
@@ -345,10 +401,11 @@ function toolbarItemListPush(item) {
                 ?? conf?.default
                 ?? false;
             if (state) {
-                const position = JSON.parse(localStorage.getItem(config.theme.tooldock.key))?.position;
+                const position = custom.theme.tooldock.position;
                 if (position) {
                     float(); // 悬浮
                     if (!conf.fold) more.dispatchEvent(new Event('dblclick')); // 展开
+
                     /* 设置位置 */
                     custom_tooldock.style.left = position.left;
                     custom_tooldock.style.right = position.right;
@@ -360,18 +417,31 @@ function toolbarItemListPush(item) {
             }
         }
 
-        /* 工具栏按钮排序 */
-        toolbarItemList = toolbarItemList.sort((a, b) => a.index - b.index);
-        for (let item of toolbarItemList) {
-            if (item.display) {
-                let node = document.getElementById(item.id);
-                custom_toolbar.append(node || item.node);
-            }
-        }
-    }
+        /* 将元素插入界面 */
+        custom_toolbar.append(item.node);
 
-    /* 恢复保存的状态 */
-    itemStateLoad(item.id, custom.theme.toolbar, item.node);
+        /* 重新计时 */
+        clearTimeout(toolbar_timeout_id);
+        toolbar_timeout_id = setTimeout(() => {
+            /* 工具栏按钮排序 */
+            toolbarItemList = toolbarItemList.sort((a, b) => a.index - b.index);
+            for (let item of toolbarItemList) {
+                if (item.display) {
+                    let node = document.getElementById(item.id);
+                    custom_toolbar.append(node || item.node);
+                }
+            }
+
+            const custom_tooldock = document.getElementById(config.theme.tooldock.id);
+            if (custom_tooldock) {
+                /* 调整提示标签 */
+                setTooltipDirection(
+                    getTooltipDirection,
+                    ...custom_tooldock.querySelectorAll('.toolbar__item'),
+                );
+            }
+        }, config.theme.toolbar.delay);
+    }
 }
 
 /**
@@ -487,9 +557,10 @@ function toolbarItemChangeStatu(
 function toolbarItemInit(toolbarConfig, handler, svgClassIndex = 0) {
     let fn = () => setTimeout(handler, 0);
 
+    // 添加按钮点击监听器
+    let listener = e => e.addEventListener('click', (_) => fn());
     // 在工具栏添加按钮
     let node = toolbarItemInsert(toolbarConfig);
-    let listener = e => e.addEventListener('click', (_) => fn());
 
     // 是否禁用该按钮
     toolbarItemChangeStatu(
@@ -501,6 +572,9 @@ function toolbarItemInit(toolbarConfig, handler, svgClassIndex = 0) {
         undefined,
         listener,
     )
+
+    // 加载该按钮的原状态
+    itemStateLoad(toolbarConfig.id, custom.theme.toolbar, node);
 
     // 是否设置颜色
     if (svgClassIndex > 0 && svgClassIndex < svgClassList.length) {
@@ -529,7 +603,7 @@ function createMenuItemIconNode(href = '#', style = '', className = 'b3-menu__ic
 /**
  * 创建右键菜单项输入框
  */
-function createMenuItemInputNode(id = null, placeholder = '', value = '', style = '', className = 'b3-text-field fn__size200') {
+function createMenuItemInputNode(id = null, placeholder = '', value = null, style = null, className = 'b3-text-field fn__size200') {
     let span = document.createElement('span');
     span.className = 'b3-menu__label';
 
@@ -550,7 +624,10 @@ function createMenuItemInputNode(id = null, placeholder = '', value = '', style 
     span.appendChild(hr_head);
     span.appendChild(input);
     span.appendChild(hr_tail);
-    return span;
+    return {
+        span,
+        input,
+    }
 }
 
 /**
@@ -607,11 +684,15 @@ function isBlockTypeEnabled(config, type, subtype) {
     if (!config.enable) return false; // 不启用菜单项
     if (!config.type) return true; // 没有设置类型, 全部启用
 
-    // !config.type[type] // 主类型未定义, 不启用
-    // !config.type[type].enable // 主类型被禁用, 不启用
-    if (!config.type[type]
-        || !config.type[type].enable
-    ) return false;
+    // !config.type[type] // 主类型存在
+    if (config.type[type]) {
+        // !config.type[type].enable // 主类型被禁用, 不启用
+        if (!config.type[type].enable) return false;
+    }
+    else { // 主类型不存在
+        return config.type.default?.enable // 应用默认配置
+            ?? false; // 默认配置不存在则不启用
+    }
 
     // config.type[type].subtype // 定义了子类型, 需要判断子类型是否启用
     // !config.type[type].subtype[subtype] // 该子类型未定义或被禁用, 不启用
@@ -851,23 +932,73 @@ const TASK_HANDLER = {
         else
             editDocKramdown(id);
     },
+    /* 选择文件 */
+    'file-select': async (e, id, params) => {
+        fileSelect(params.accept, params.multiple).then(files => {
+            params.files = files;
+            TASK_HANDLER?.[params.callback](e, id, params);
+        });
+    },
     /* 保存输入框内容 */
     'save-input-value': async (e, id, params) => {
-        const value = document.getElementById(params.id).value;
-        eval(`${params.key} = value`);
-        saveCustomFile(custom);
+        const value = e.target.value;
+        // console.log(value);
+        switch (params.mode) {
+            case 'attr':
+                setBlockAttrs(
+                    id,
+                    { [params.key]: value },
+                );
+                break;
+            default:
+                break;
+        }
     },
     /* 处理输入框内容 */
-    'handle-input-value': async (e, id, params) => params.handler(e, id, params),
+    'handler': async (e, id, params) => params.handler(e, id, params),
+    /* 打开全局设置窗口 */
+    'jupyter-open-global-settings': async (e, id, params) => {
+        window.theme.openNewWindow(
+            'browser',
+            params.href,
+            Object.assign({ id: id }, params.urlParams),
+            config.theme.window.windowParams,
+            config.theme.window.menu.template,
+            undefined,
+            undefined,
+            undefined,
+            async (...args) => jupyterWorker.postMessage(JSON.stringify({
+                type: 'call',
+                handle: 'reloadCustomJson',
+                params: [],
+            })),
+        );
+        return null;
+    },
     /* 关闭会话 */
-    'jupyter-close-connection': closeConnection,
+    // 'jupyter-close-connection': closeConnection,
+    'jupyter-close-connection': async (...args) => jupyterWorker.postMessage(JSON.stringify({
+        type: 'call',
+        handle: 'closeConnection',
+        params: args,
+    })),
     /* 重启内核 */
-    'jupyter-restart-kernel': restartKernel,
+    // 'jupyter-restart-kernel': restartKernel,
+    'jupyter-restart-kernel': async (...args) => jupyterWorker.postMessage(JSON.stringify({
+        type: 'call',
+        handle: 'restartKernel',
+        params: args,
+    })),
     /* 运行单元格 */
-    'jupyter-run-cell': runCell,
+    // 'jupyter-run-cell': runCell,
+    'jupyter-run-cell': async (...args) => jupyterWorker.postMessage(JSON.stringify({
+        type: 'call',
+        handle: 'runCell',
+        params: args,
+    })),
     /* 运行所有单元格 */
     'jupyter-run-all-cells': async (e, id, params) => {
-        const stmt = `SELECT a.block_id FROM attributes AS a WHERE a.root_id = '${id}' AND a.name = '${jupyterConf.jupyter.attrs.code.type.key}' AND a.value = '${jupyterConf.jupyter.attrs.code.type.value}';`;
+        const stmt = `SELECT a.block_id FROM attributes AS a WHERE a.root_id = '${id}' AND a.name = '${jupyterConfig.jupyter.attrs.code.type.key}' AND a.value = '${jupyterConfig.jupyter.attrs.code.type.value}';`;
         const rows = await sql(stmt);
         if (rows && rows.length > 0) {
             for (let i = 0; i < rows.length; ++i) {
@@ -876,12 +1007,28 @@ const TASK_HANDLER = {
                 rows[i].index = index;
             }
             rows.sort((a, b) => a.index - b.index);
-            const call = async i => {
-                if (i < rows.length)
-                    runCell(e, rows[i].block_id, params, async _ => call(i + 1));
-            };
-            call(0);
+            const IDs = rows.map(row => row.block_id);
+
+            jupyterWorker.postMessage(JSON.stringify({
+                type: 'call',
+                handle: 'runCells',
+                params: [
+                    e,
+                    IDs,
+                    params,
+                ],
+            }));
         }
+    },
+    /* 导入 *.ipynb */
+    'jupyter-import-ipynb': async (e, id, params) => {
+        /* 读取并解析 ipynb */
+        const ipynb = await params.files[0].text();
+        jupyterImportWorker.postMessage(JSON.stringify({
+            type: 'call',
+            handle: 'importJson',
+            params: [id, ipynb, params.mode],
+        }));
     },
     /* 归档页签 */
     'tab-archive': async (e, id, params) => {
@@ -975,34 +1122,76 @@ const TASK_HANDLER = {
 function createMenuItemNode(language, config, id, type, subtype, className = 'b3-menu__item') {
     let node;
     switch (config.mode.toLowerCase()) {
-        case 'separator':
+        case 'separator': // 分割线
             if (!isBlockTypeEnabled(config, type, subtype)) return null;
             node = createMenuItemSeparatorNode();
             return node;
-        case 'input':
+        case 'input': { // 输入框
             if (!isBlockTypeEnabled(config, type, subtype)) return null;
             node = document.createElement('button');
             node.className = className;
-            node.appendChild(createMenuItemIconNode(config.icon));
-            node.appendChild(createMenuItemInputNode(
+            node.appendChild(createMenuItemIconNode(config.icon)); // 图标
+            const { span, input } = createMenuItemInputNode(
                 config.id,
                 config.placeholder[language] || config.placeholder.other,
-                eval(config.value),
-            ));
-            if (config.click.enable) {
-                if (config.click.callback) node.addEventListener('click', async e => await config.click.callback(e, id));
+            );
+            node.appendChild(span); // 输入框
+
+            /* 备注 */
+            let accelerator = config.accelerator;
+            if (typeof accelerator === 'function') accelerator = printHotKey(accelerator(id));
+            if (typeof accelerator === 'string') node.appendChild(createMenuItemAcceleratorNode(accelerator));
+
+            switch (config.value?.mode) {
+                case 'attr': // 使用块属性初始化 input 内容
+                    getBlockAttrs(id).then(attrs => {
+                        // console.log(attrs);
+                        if (attrs?.[config.value?.key]) input.value = attrs?.[config.value?.key];
+                    });
+                    break;
+                default:
+                    break;
+            }
+
+            /* 绑定事件处理 */
+            function boundTaskHandlers(id, type, taskHandler, element = input) {
+                if (taskHandler.callback)
+                    element.addEventListener(
+                        type,
+                        async e => await taskHandler.callback(e, id),
+                        true,
+                    );
                 else {
                     let handlers = [];
-                    config.click.tasks.forEach((task) => {
+                    taskHandler.tasks.forEach((task) => {
                         if (TASK_HANDLER[task.type]) handlers.push(async e => TASK_HANDLER[task.type](e, id, task.params));
                     });
-                    node.addEventListener('click', e => {
-                        handlers.forEach((handler) => handlere);
-                    });
+                    element.addEventListener(
+                        type,
+                        e => handlers.forEach((handler) => handler(e)),
+                        true,
+                    );
                 }
+            }
+
+            if (config.onchange?.enable) { // 绑定 onchange 事件
+                boundTaskHandlers(
+                    id,
+                    'change',
+                    config.onchange,
+                )
             };
+            if (config.oninput?.enable) { // 绑定 oninput 事件
+                boundTaskHandlers(
+                    id,
+                    'input',
+                    config.oninput,
+                )
+            };
+
             return node;
-        case 'button':
+        }
+        case 'button': // 按钮
             if (!isBlockTypeEnabled(config, type, subtype)) return null;
             node = document.createElement('button');
             node.className = className;
@@ -1030,7 +1219,7 @@ function createMenuItemNode(language, config, id, type, subtype, className = 'b3
             if (config.itemsLoad && config.items && config.items.length > 0) {
                 let subMenuNodes = [];
                 let separator = 0; // 启用的子菜单项数量
-                config.items.forEach((subConfig) => {
+                config.items.forEach(subConfig => {
                     let item = createMenuItemNode(language, subConfig, id, type, subtype); // 创建子菜单项
                     if (item) {
                         subMenuNodes.push(item);
@@ -1040,12 +1229,12 @@ function createMenuItemNode(language, config, id, type, subtype, className = 'b3
                 // 有效节点大于0, 则创建子菜单
                 if (subMenuNodes.length - separator > 0) {
                     let subMenuNode = createMenuItemSubMenuNode(); // 子菜单容器
-                    subMenuNodes.forEach((item) => subMenuNode.appendChild(item));
+                    subMenuNodes.forEach(item => subMenuNode.appendChild(item));
                     node.appendChild(subMenuNode);
                 }
             }
             if (config.click.enable) {
-                if (config.click.callback) node.addEventListener('click', async e => await config.click.callback(e, id));
+                if (config.click.callback) node.addEventListener('click', async e => await config.click.callback(e, id), true);
                 else {
                     let handlers = [];
                     config.click.tasks.forEach((task) => {
@@ -1053,7 +1242,7 @@ function createMenuItemNode(language, config, id, type, subtype, className = 'b3
                     });
                     node.addEventListener('click', e => {
                         handlers.forEach((handler) => handler(e));
-                    });
+                    }, true);
                 }
             };
             return node;
@@ -1074,7 +1263,7 @@ function createMenuItemNode(language, config, id, type, subtype, className = 'b3
 function menuInit(configs, id, type, subtype) {
     let items = [];
     let language = window.theme.languageMode;
-    configs.forEach((config) => {
+    configs.forEach(config => {
         let item = createMenuItemNode(language, config, id, type, subtype);
         if (item) {
             if (config.prefixSeparator) items.push(createMenuItemSeparatorNode());

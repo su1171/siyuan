@@ -15,6 +15,8 @@ import {
 import {
     getFocusedBlock,
     getFocusedDocID,
+    getTargetDocID,
+    getTargetBlock,
     getTargetEditor,
     getTargetBlockIndex,
     setBlockDOMAttrs,
@@ -50,6 +52,7 @@ async function updateBlockSlider() {
 
 /**
  * 更新块滚动条
+ * @deprecated
  */
 async function updateSliderHandler(target, mode = config.theme.location.record.mode) {
     if (target
@@ -75,9 +78,10 @@ async function updateSliderHandler(target, mode = config.theme.location.record.m
 /**
  * 处理焦点事件
  */
-async function focusHandler(e) {
-    // console.log(e);
-    /* 取消当前编辑区 */
+async function focusHandler() {
+    // console.log(document.getSelection()?.focusNode?.parentElement);
+
+    /* 获取当前编辑区 */
     const block = getFocusedBlock(); // 当前光标所在块
     /* 当前块已经设置焦点 */
     if (block?.classList.contains(config.theme.location.focus.className)
@@ -87,8 +91,18 @@ async function focusHandler(e) {
     /* 当前块未设置焦点 */
     const editor = getTargetEditor(block); // 当前光标所在块位于的编辑区
     if (editor) {
-        editor.querySelectorAll(`.${config.theme.location.focus.className}`).forEach(element => element.classList.remove(config.theme.location.focus.className));
-        document.querySelectorAll(`#${config.theme.location.focus.id}`).forEach(element => element.removeAttribute('id'));
+        // editor.querySelectorAll(`.${config.theme.location.focus.className}`).forEach(element => element.classList.remove(config.theme.location.focus.className));
+        // document.querySelectorAll(`#${config.theme.location.focus.id}`).forEach(element => element.removeAttribute('id'));
+
+        let element;
+        while (element = document.getElementById(config.theme.location.focus.id)) {
+            element.removeAttribute('id');
+        }
+
+        Array.prototype.forEach.call(
+            editor.getElementsByClassName(config.theme.location.focus.className),
+            element => element.classList.remove(config.theme.location.focus.className),
+        )
 
         block.classList.add(config.theme.location.focus.className);
         block.id = config.theme.location.focus.id;
@@ -125,7 +139,7 @@ async function goto(docID, scroll, mode = config.theme.location.record.mode) {
  */
 async function back(target) {
     // console.log(target);
-    let scroll;
+    let scroll, protyle;
     // console.log(target.dataset.docType, target.getAttribute('custom-location'))
     if (target.dataset.docType
         && config.theme.regs.id.test(target.getAttribute('custom-location'))
@@ -137,18 +151,20 @@ async function back(target) {
             .nextElementSibling
             .nextElementSibling; // 块滚动条;
     }
-    else if (target && target.localName === 'input' && target.className === 'b3-slider') {
+    else if (target && target.localName === 'input' && target.classList.contains('b3-slider')) {
         scroll = target.parentElement;
     }
     else if (target && target.localName === 'div' && target.classList.contains('protyle-scroll')) {
         scroll = target;
     }
     else return null;
-
-    setTimeout(async () => goto(
-        scroll.parentElement.querySelector('.protyle-background').dataset.nodeId,
-        scroll,
-    ), 0);
+    for (protyle = scroll; protyle && !protyle.classList.contains('protyle'); protyle = protyle.parentElement);
+    if (protyle) {
+        setTimeout(async () => goto(
+            protyle.querySelector('.protyle-background')?.dataset?.nodeId,
+            scroll,
+        ), 0);
+    }
 }
 
 /**
@@ -170,6 +186,17 @@ function record(docID, value, mode = config.theme.location.record.mode) {
                 break;
             default:
                 break;
+        }
+    }
+}
+
+/* 更新浏览位置 */
+function update(e) {
+    if (record_enable) {
+        const block = getTargetBlock(e.target);
+        const docID = getTargetDocID(block);
+        if (block && docID) {
+            record(docID, block.dataset.nodeId);
         }
     }
 }
@@ -261,8 +288,9 @@ setTimeout(() => {
             }
             if (config.theme.location.focus.enable) {
                 // 跟踪当前所在块
-                window.addEventListener('mouseup', focusHandler, true);
-                window.addEventListener('keyup', focusHandler, true);
+                const handler = _ => setTimeout(focusHandler, 0);
+                window.addEventListener('mouseup', handler, true);
+                window.addEventListener('keyup', handler, true);
             }
             if (config.theme.location.record.enable) {
                 // 开关浏览位置记录功能
@@ -274,6 +302,13 @@ setTimeout(() => {
                     'keyup',
                     config.theme.hotkeys.location.record,
                     _ => Fn_recordEnable(),
+                );
+
+                /* 记录浏览位置 */
+                globalEventHandler.addEventHandler(
+                    'dblclick',
+                    config.theme.hotkeys.location.update,
+                    update,
                 );
             }
             if (config.theme.location.clear.enable) {

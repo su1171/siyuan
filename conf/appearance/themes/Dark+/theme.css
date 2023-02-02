@@ -34,10 +34,12 @@
 @import url(/appearance/themes/Dark+/style/module/custom-render-danmaku.css);
 @import url(/appearance/themes/Dark+/style/module/custom-render-invert.css);
 @import url(/appearance/themes/Dark+/style/module/custom-render-scroll.css);
+@import url(/appearance/themes/Dark+/style/module/custom-riff-decks.css);
 @import url(/appearance/themes/Dark+/style/module/custom-render.css);
 @import url(/appearance/themes/Dark+/style/module/custom-table-width.css);
 @import url(/appearance/themes/Dark+/style/module/custom-time.css);
 @import url(/appearance/themes/Dark+/style/module/custom-title.css);
+@import url(/appearance/themes/Dark+/style/module/custom-type-board.css);
 @import url(/appearance/themes/Dark+/style/module/custom-type-map.css);
 @import url(/appearance/themes/Dark+/style/module/custom-type-table.css);
 @import url(/appearance/themes/Dark+/style/module/custom-type-title.css);
@@ -52,6 +54,9 @@
 
 /* 空白页面与空白行 */
 @import url(/appearance/themes/Dark+/style/module/empty.css);
+
+/* 导出面板 */
+@import url(/appearance/themes/Dark+/style/module/export.css);
 
 /* 全屏 */
 @import url(/appearance/themes/Dark+/style/module/fullscreen.css);

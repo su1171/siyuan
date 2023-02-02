@@ -5,6 +5,8 @@ export {
     HTMLDecode, // HTML 反转义
     ialParse, // 内联属性表解析
     ialCreate, // 内联属性表创建
+    removeOuterIAL, // 移除非列表项块的 IAL
+    looseJsonParse, // 解析 loose-json
     getCookie, // 获取指定 cookie 值
     compareVersion, // 比较版本号
 }
@@ -58,6 +60,23 @@ function ialCreate(obj) {
     return `{: ${IAL.join(' ')}}`;
 }
 
+/**
+ * 移除非列表项块的 IAL
+ * @params {string} kramdown: kramdown 源码
+ * @return {string}: 移除块的 IAL
+ */
+function removeOuterIAL(kramdown) {
+    return kramdown.substring(0, kramdown.lastIndexOf('\n'))
+}
+
+/**
+ * 解析 loose-json
+ * @params {string} text: loose-json 字符串
+ * @return {object}: js 对象
+ */
+function looseJsonParse(text) {
+    return Function(`"use strict";return (${text})`)();
+}
 
 /**
  * 获取指定 cookie 值

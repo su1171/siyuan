@@ -47,6 +47,16 @@
                 "state": false
             }
         },
+        "tooldock": {
+            "position": {
+                "left": "",
+                "right": "11.7839vw",
+                "top": "",
+                "bottom": "0vh",
+                "width": "calc(var(--custom-dock-width) * 25)",
+                "height": ""
+            }
+        },
         "location": {},
         "dock": {
             "file": {

@@ -1,0 +1,19 @@
+{
+	"ID": "20230130094011-kg55gwo",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230130094011-kg55gwo",
+		"title": "Git  ",
+		"updated": "20230130102116"
+	},
+	"Children": [
+		{
+			"ID": "20230130102116-owwzomp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230130102116-owwzomp"
+			}
+		}
+	]
+}

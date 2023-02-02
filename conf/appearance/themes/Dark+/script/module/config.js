@@ -1,5 +1,13 @@
 /* 配置文件(可以被 data/widgets/custom.js 覆盖) */
 
+export {
+    config,
+    custom,
+    loadCustomJs,
+    saveCustomFile,
+    loadCustomJson,
+}
+
 import { merge } from './../utils/misc.js';
 import {
     getFile,
@@ -8,8 +16,7 @@ import {
 
 const THEME_PATHNAME = "/appearance/themes/Dark+";
 
-export var config = {
-    token: '', // API token, 无需填写
+const config = {
     custom: {
         // 自定义配置
         path: '/data/widgets/custom.json', // 自定义配置文件路径
@@ -31,23 +38,25 @@ export var config = {
                 // 复制
                 success: {
                     zh_CN: '复制成功',
+                    zh_CHT: '復製成功',
                     other: 'Copy succeeded.',
                 },
                 error: {
                     zh_CN: '复制失败',
+                    zh_CHT: '復製失敗',
                     other: 'Copy failed.',
                 },
             },
             selectDocument: {
                 error: {
                     zh_CN: '请在编辑区中选择文档',
+                    zh_CHT: '請在編輯區中選擇文檔',
                     other: 'Please select the document in the edit area.',
                 },
             }
         },
         tooldock: { // 悬浮栏
             id: 'custom-tooldock', // 悬浮栏 ID
-            key: 'THEME-custom-tooldock', // 保存在 localStorage 的键名
             classes: [ // 样式类名
                 'float-tooldock',
             ],
@@ -56,6 +65,7 @@ export var config = {
                 id: 'custom-tooldock-reset',
                 label: {
                     zh_CN: '重置悬浮工具栏',
+                    zh_CHT: '重置懸浮工具欄',
                     other: 'Reset the Floating Toolbar',
                 },
                 icon: '#iconRefresh',
@@ -64,6 +74,7 @@ export var config = {
         toolbar: {
             // 工具栏
             id: 'custom-toolbar', // 工具栏 ID
+            delay: 250, // 延迟显示工具栏的时间
             more: {
                 id: 'custom-toolbar-more',
                 enable: true,
@@ -73,6 +84,7 @@ export var config = {
                         icon: '#iconFullscreen',
                         label: {
                             zh_CN: '按住拖动\n双击展开扩展工具栏',
+                            zh_CHT: '按住拖動\n雙擊展開擴展工具欄',
                             other: 'Hold Down to Drag\nDouble-click to Expand the Expansion Toolbar',
                         },
                     },
@@ -80,6 +92,7 @@ export var config = {
                         icon: '#iconContract',
                         label: {
                             zh_CN: '按住拖动\n双击收起扩展工具栏',
+                            zh_CHT: '按住拖動\n雙擊收起擴展工具欄',
                             other: 'Hold Down to Drag\nDouble-click to Collapse the Expansion Toolbar',
                         },
                     },
@@ -103,6 +116,7 @@ export var config = {
                     id: 'toolbar-theme-style-itemtext',
                     label: {
                         zh_CN: '完整显示文本内容',
+                        zh_CHT: '完整顯示文本內容',
                         other: 'Full Display Text Content',
                     },
                     icon: '#iconParagraph',
@@ -127,6 +141,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.style.tabbar,
                     label: {
                         zh_CN: '纵向排列选项卡',
+                        zh_CHT: '縱向排列選項卡',
                         other: 'Arrange Tabs Vertically',
                     },
                     icon: '#iconSort',
@@ -151,6 +166,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.style.guides,
                     label: {
                         zh_CN: '列表辅助线',
+                        zh_CHT: '列表輔助線',
                         other: 'List Guides',
                     },
                     icon: '#iconIndent',
@@ -177,6 +193,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.style.mark,
                     label: {
                         zh_CN: '显示标记文本',
+                        zh_CHT: '顯示標記文本',
                         other: 'Displays Mark Text',
                     },
                     icon: '#iconMark',
@@ -203,6 +220,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.style.render,
                     label: {
                         zh_CN: '渲染自定义样式',
+                        zh_CHT: '渲染自定義樣式',
                         other: 'Render Custom Styles',
                     },
                     icon: '#iconTheme',
@@ -231,10 +249,12 @@ export var config = {
                 message: {
                     success: {
                         zh_CN: '时间戳复制成功',
+                        zh_CHT: '時間戳復製成功',
                         other: 'Timestamp copy succeeded.',
                     },
                     error: {
                         zh_CN: '时间戳复制失败',
+                        zh_CHT: '時間戳復製失敗',
                         other: 'Timestamp copy failed.',
                     },
                 },
@@ -260,6 +280,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.reload.window,
                     label: {
                         zh_CN: '重新加载窗口',
+                        zh_CHT: '重新加載窗口',
                         other: 'Reload the Window',
                     },
                     icon: '#iconRefresh',
@@ -293,6 +314,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.doc.heading.fold,
                         label: {
                             zh_CN: '折叠当前文档所有子标题',
+                            zh_CHT: '折疊當前文檔所有子標題',
                             other: 'Collapses Sll Subheadings of the Current Document',
                         },
                         icon: '#iconContract',
@@ -301,10 +323,12 @@ export var config = {
                     message: {
                         success: {
                             zh_CN: '折叠完成, 请刷新当前文档',
+                            zh_CHT: '折疊完成, 請刷新當前文檔',
                             other: 'Collapse completed, please refresh the current document.',
                         },
                         error: {
                             zh_CN: '折叠失败，请在编辑区中选择文档',
+                            zh_CHT: '折疊失敗，請在編輯區中選擇文檔',
                             other: 'Collapse failed, please select the document in the edit area.',
                         },
                     },
@@ -318,6 +342,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.doc.heading.unfold,
                         label: {
                             zh_CN: '展开当前文档所有子标题',
+                            zh_CHT: '展開當前文檔所有子標題',
                             other: 'Expand Sll Subheadings of the Current Document',
                         },
                         icon: '#iconFullscreen',
@@ -326,10 +351,12 @@ export var config = {
                     message: {
                         success: {
                             zh_CN: '展开完成, 请刷新当前文档',
+                            zh_CHT: '展開完成, 請刷新當前文檔',
                             other: 'Expand completed, please refresh the current document.',
                         },
                         error: {
                             zh_CN: '展开失败，请在编辑区中选择文档',
+                            zh_CHT: '展開失敗，請在編輯區中選擇文檔',
                             other: 'Expand failed, please select the document in the edit area.',
                         },
                     },
@@ -344,10 +371,12 @@ export var config = {
                 message: {
                     success: {
                         zh_CN: '复制当前文档大纲完成',
+                        zh_CHT: '復製當前文檔大綱完成',
                         other: 'Copying the current document outline is complete.',
                     },
                     error: {
                         zh_CN: '复制当前文档大纲失败，请在编辑区中选择包含子标题的文档',
+                        zh_CHT: '復製當前文檔大綱失敗，請在編輯區中選擇包含子標題的文檔',
                         other: 'Copying the current document outline failed, please select the document that contains the subheading in the edit area.',
                     },
                 },
@@ -360,6 +389,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.doc.outline.u,
                         label: {
                             zh_CN: '复制当前文档大纲为无序列表',
+                            zh_CHT: '復製當前文檔大綱為無序列表',
                             other: 'Copy the Current Document Outline as an Unordered List',
                         },
                         icon: '#iconList',
@@ -375,6 +405,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.doc.outline.o,
                         label: {
                             zh_CN: '复制当前文档大纲为有序列表',
+                            zh_CHT: '復製當前文檔大綱為有序列表',
                             other: 'Copy the Current Document Outline as an Ordered List',
                         },
                         icon: '#iconOrderedList',
@@ -390,6 +421,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.doc.outline.t,
                         label: {
                             zh_CN: '复制当前文档大纲为任务列表',
+                            zh_CHT: '復製當前文檔大綱為任務列表',
                             other: 'Copy the Current Document Outline as a Task List',
                         },
                         icon: '#iconCheck',
@@ -416,6 +448,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.doc.copy,
                     label: {
                         zh_CN: '复制当前文档内容 (Markdown)',
+                        zh_CHT: '復製當前文檔內容 (Markdown)',
                         other: 'Copy the Current Document Content (Markdown)',
                     },
                     icon: '#iconCopy',
@@ -424,10 +457,12 @@ export var config = {
                 message: {
                     success: {
                         zh_CN: '复制当前文档内容 (Markdown) 成功',
+                        zh_CHT: '復製當前文檔內容 (Markdown) 成功',
                         other: 'Copy the current document content (Markdown) succeeded.',
                     },
                     error: {
                         zh_CN: '复制当前文档内容 (Markdown) 失败',
+                        zh_CHT: '復製當前文檔內容 (Markdown) 失敗',
                         other: 'Copy the current document content (Markdown) failed.',
                     },
                 },
@@ -441,6 +476,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.doc.delete,
                     label: {
                         zh_CN: '删除当前文档内容',
+                        zh_CHT: '刪除當前文檔內容',
                         other: 'Delete the Current Document Content',
                     },
                     icon: '#iconTrashcan',
@@ -456,6 +492,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.doc.cut,
                     label: {
                         zh_CN: '剪切当前文档内容 (Markdown)',
+                        zh_CHT: '剪切當前文檔內容 (Markdown)',
                         other: 'Cut the Current Document Content (Markdown)',
                     },
                     icon: '#iconCut',
@@ -464,10 +501,12 @@ export var config = {
                 message: {
                     success: {
                         zh_CN: '剪切当前文档内容 (Markdown) 成功',
+                        zh_CHT: '剪切當前文檔內容 (Markdown) 成功',
                         other: 'Cut the current document content (Markdown) succeeded.',
                     },
                     error: {
                         zh_CN: '剪切当前文档内容 (Markdown) 失败',
+                        zh_CHT: '剪切當前文檔內容 (Markdown) 失敗',
                         other: 'Cut the current document content (Markdown) failed.',
                     },
                 },
@@ -485,6 +524,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.typewriter.switch,
                     label: {
                         zh_CN: '打字机模式',
+                        zh_CHT: '打字機模式',
                         other: 'Typewriter Mode',
                     },
                     icon: '#iconKeymap',
@@ -510,6 +550,7 @@ export var config = {
                 hotkey: () => config.theme.hotkeys.invert,
                 label: {
                     zh_CN: '反色显示',
+                    zh_CHT: '反色顯示',
                     other: 'Display in Inverse Color',
                 },
                 icon: '#iconDark',
@@ -566,6 +607,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.background.image.web,
                         label: {
                             zh_CN: '更换背景图片 (网络)',
+                            zh_CHT: '更換背景圖片 (網絡)',
                             other: 'Change Background Image (Web)',
                         },
                         icon: '#iconImage',
@@ -606,6 +648,7 @@ export var config = {
                         hotkey: () => config.theme.hotkeys.background.image.custom,
                         label: {
                             zh_CN: '更换背景图片 (自定义)',
+                            zh_CHT: '更換背景圖片 (自定義)',
                             other: 'Change Background Image (Custom)',
                         },
                         icon: '#iconImage',
@@ -652,12 +695,12 @@ export var config = {
                 webPreferences: {
                     nodeIntegration: true, // 是否启用 Node.js 内置模块
                     nativeWindowOpen: true,
-                    // webviewTag: true,
+                    webviewTag: true, // 是否启用 webview 标签 (类似于 iframe 标签)
                     webSecurity: false, // 是否启用 Web 安全
-                    // contextIsolation: false,
-                    // defaultFontFamily: { // 默认字体
-                    //     standard: window.siyuan.config.editor.fontFamily,
-                    // },
+                    contextIsolation: false, // 上下文隔离, 设置 false 之后可以使用 require
+                    defaultFontFamily: { // 默认字体
+                        standard: window.siyuan.config.editor.fontFamily,
+                    },
                 },
             },
             menu: {
@@ -748,6 +791,7 @@ export var config = {
                         id: 'toolbar-theme-window-open-panel',
                         label: {
                             zh_CN: '打开一个新窗口',
+                            zh_CHT: '打開一個新窗口',
                             other: 'Open a New Window',
                         },
                         icon: '#iconExport',
@@ -768,6 +812,7 @@ export var config = {
                             hotkey: () => config.theme.hotkeys.window.open.block.outfocus,
                             label: {
                                 zh_CN: '在新窗口打开当前块',
+                                zh_CHT: '在新窗口打開當前塊',
                                 other: 'Open the Current Block in a New Window',
                             },
                             icon: '#iconExport',
@@ -784,6 +829,7 @@ export var config = {
                             hotkey: () => config.theme.hotkeys.window.open.block.infocus,
                             label: {
                                 zh_CN: '在新窗口打开当前块并聚焦',
+                                zh_CHT: '在新窗口打開當前塊並聚焦',
                                 other: 'Open the Current Block in a New Window and Focus',
                             },
                             icon: '#iconExport',
@@ -792,7 +838,7 @@ export var config = {
                     },
                 },
                 link: {
-                    enable: true, // 新窗口打开当链接/块引用
+                    enable: true, // 新窗口打开链接/块引用
                     outfocus: {
                         enable: true, // 不聚焦
                     },
@@ -801,10 +847,18 @@ export var config = {
                     },
                 },
                 editor: {
-                    enable: true, // 启用新窗口打开当编辑器
+                    enable: true, // 启用新窗口打开编辑器
                     labels: {
-                        openFile: { zh_CN: '打开文件', other: 'Open File', },
-                        open: { zh_CN: '打开', other: 'Open', },
+                        openFile: {
+                            zh_CN: '打开文件',
+                            zh_CHT: '打開文件',
+                            other: 'Open File',
+                        },
+                        open: {
+                            zh_CN: '打开',
+                            zh_CHT: '打開',
+                            other: 'Open',
+                        },
                     },
                     path: {
                         // 路径
@@ -820,6 +874,7 @@ export var config = {
                         message: {
                             error: {
                                 zh_CN: "编辑文档 kramdown 源代码功能仅能在桌面端使用",
+                                zh_CHT: "編輯文檔 kramdown 源代碼功能僅能在桌面端使用",
                                 other: "The feature to edit the kramdown source code of a document is only available on the desktop client",
                             },
                         },
@@ -863,6 +918,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.location.record,
                     label: {
                         zh_CN: '记录浏览位置',
+                        zh_CHT: '記錄瀏覽位置',
                         other: 'Record Browsing Location',
                     },
                     icon: '#iconBookmark',
@@ -878,6 +934,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.location.clear,
                     label: {
                         zh_CN: '清除当前文档浏览位置记录',
+                        zh_CHT: '清除當前文檔瀏覽位置記錄',
                         other: 'Clear the Current Document Browsing Location History',
                     },
                     icon: '#iconTrashcan',
@@ -893,6 +950,7 @@ export var config = {
                 id: 'toolbar-theme-readonly',
                 label: {
                     zh_CN: '只读模式',
+                    zh_CHT: '只讀模式',
                     other: 'Read-Only Mode',
                 },
                 icon: '#iconPreview',
@@ -911,6 +969,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.dock.fold,
                     label: {
                         zh_CN: '专注模式',
+                        zh_CHT: '專註模式',
                         other: 'Focus Mode',
                     },
                     icon: '#iconHideDock',
@@ -929,6 +988,7 @@ export var config = {
                     hotkey: () => config.theme.hotkeys.menu.block,
                     label: {
                         zh_CN: '块菜单增强',
+                        zh_CHT: '塊菜單增強',
                         other: 'Block Menu Enhancements',
                     },
                     icon: '#iconMenu',
@@ -955,6 +1015,7 @@ export var config = {
                         icon: "#iconFont",  // 菜单项图标
                         label: {  // 菜单项标签
                             zh_CN: "常用字体",
+                            zh_CHT: "常用字體",
                             other: "Common Fonts",
                         },
                         accelerator: "",  // 菜单项快捷键
@@ -971,6 +1032,7 @@ export var config = {
                                 icon: "#iconFont",
                                 label: {
                                     zh_CN: "默认字体",
+                                    zh_CHT: "默認字體",
                                     other: "Default Font",
                                     style: `font-family: "${window.siyuan.config.editor.fontFamily}"`,
                                 },
@@ -1019,6 +1081,7 @@ export var config = {
                         icon: "#iconFont",
                         label: {
                             zh_CN: "其他字体",
+                            zh_CHT: "其他字體",
                             other: "Other Fonts",
                         },
                         accelerator: "",
@@ -1069,6 +1132,7 @@ export var config = {
                                 icon: "#iconSettings",
                                 label: {
                                     zh_CN: "全局设置",
+                                    zh_CHT: "全局設置",
                                     other: "Global Settings",
                                 },
                                 click: {
@@ -1076,7 +1140,7 @@ export var config = {
                                     callback: null,
                                     tasks: [
                                         {
-                                            type: 'window-open',
+                                            type: 'jupyter-open-global-settings',
                                             params: {
                                                 href: `${THEME_PATHNAME}/app/jupyter/settings-global.html`,
                                                 urlParams: { lang: window.theme.languageMode },
@@ -1092,6 +1156,7 @@ export var config = {
                                 icon: "#iconFile",
                                 label: {
                                     zh_CN: "文档设置",
+                                    zh_CHT: "文檔設置",
                                     other: "Document Settings",
                                 },
                                 click: {
@@ -1115,6 +1180,7 @@ export var config = {
                                 icon: "#iconClose",
                                 label: {
                                     zh_CN: "关闭连接",
+                                    zh_CHT: "關閉連接",
                                     other: "Close Connection",
                                 },
                                 click: {
@@ -1135,6 +1201,7 @@ export var config = {
                                 icon: "#iconRefresh",
                                 label: {
                                     zh_CN: "重启内核",
+                                    zh_CHT: "重啟內核",
                                     other: "Restart Kernel",
                                 },
                                 click: {
@@ -1155,6 +1222,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行所有单元格 (转义输出: ✔ 控制字符: ✔)",
+                                    zh_CHT: "運行所有單元格 (轉義輸出: ✔ 控製字符: ✔)",
                                     other: "Run All Cells (Escape: ✔ cntrl: ✔)",
                                 },
                                 click: {
@@ -1175,6 +1243,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行所有单元格 (转义输出: ✔ 控制字符: ✖)",
+                                    zh_CHT: "運行所有單元格 (轉義輸出: ✔ 控製字符: ✖)",
                                     other: "Run All Cells (Escape: ✔ cntrl: ✖)",
                                 },
                                 click: {
@@ -1195,6 +1264,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行所有单元格 (转义输出: ✖ 控制字符: ✔)",
+                                    zh_CHT: "運行所有單元格 (轉義輸出: ✖ 控製字符: ✔)",
                                     other: "Run All Cells (Escape: ✖ cntrl: ✔)",
                                 },
                                 click: {
@@ -1215,6 +1285,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行所有单元格 (转义输出: ✖ 控制字符: ✖)",
+                                    zh_CHT: "運行所有單元格 (轉義輸出: ✖ 控製字符: ✖)",
                                     other: "Run All Cells (Escape: ✖ cntrl: ✖)",
                                 },
                                 click: {
@@ -1235,6 +1306,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行代码 (转义输出: ✔ 控制字符: ✔)",
+                                    zh_CHT: "運行代碼 (轉義輸出: ✔ 控製字符: ✔)",
                                     other: "Run Code (Escape: ✔ cntrl: ✔)",
                                 },
                                 click: {
@@ -1255,6 +1327,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行代码 (转义输出: ✔ 控制字符: ✖)",
+                                    zh_CHT: "運行代碼 (轉義輸出: ✔ 控製字符: ✖)",
                                     other: "Run Code (Escape: ✔ cntrl: ✖)",
                                 },
                                 click: {
@@ -1275,6 +1348,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行代码 (转义输出: ✖ 控制字符: ✔)",
+                                    zh_CHT: "運行代碼 (轉義輸出: ✖ 控製字符: ✔)",
                                     other: "Run Code (Escape: ✖ cntrl: ✔)",
                                 },
                                 click: {
@@ -1295,6 +1369,7 @@ export var config = {
                                 icon: "#iconPlay",
                                 label: {
                                     zh_CN: "运行代码 (转义输出: ✖ 控制字符: ✖)",
+                                    zh_CHT: "運行代碼 (轉義輸出: ✖ 控製字符: ✖)",
                                     other: "Run Code (Escape: ✖ cntrl: ✖)",
                                 },
                                 click: {
@@ -1304,6 +1379,60 @@ export var config = {
                                         {
                                             type: 'jupyter-run-cell',
                                             params: { escaped: false, cntrl: false },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: { NodeDocument: { enable: true } },
+                                mode: "button",
+                                icon: "#iconDownload",
+                                accelerator: "*.ipynb",
+                                label: {
+                                    zh_CN: "导入 Jupyter 笔记本 (覆盖)",
+                                    zh_CHT: "導入 Jupyter 筆記本 (覆蓋)",
+                                    other: "Import Jupyter Notebook (Overwrite)",
+                                },
+                                click: {
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'file-select',
+                                            params: {
+                                                accept: ['.ipynb'], // 选择文件类型
+                                                multiple: false, // 是否允许多选
+                                                mode: 'w', // 覆盖当前文档
+                                                callback: 'jupyter-import-ipynb', // 处理方法
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: { NodeDocument: { enable: true } },
+                                mode: "button",
+                                icon: "#iconDownload",
+                                accelerator: "*.ipynb",
+                                label: {
+                                    zh_CN: "导入 Jupyter 笔记本 (追加)",
+                                    zh_CHT: "導入 Jupyter 筆記本 (追加)",
+                                    other: "Import Jupyter Notebook (Append)",
+                                },
+                                click: {
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'file-select',
+                                            params: {
+                                                accept: ['.ipynb'],
+                                                multiple: false,
+                                                mode: 'a', // 在当前文档末尾追加
+                                                callback: 'jupyter-import-ipynb',
+                                            },
                                         },
                                     ],
                                 },
@@ -1322,6 +1451,7 @@ export var config = {
                         icon: "#iconLanguage",
                         label: {
                             zh_CN: "发布",
+                            zh_CHT: "發布",
                             other: "Publish",
                         },
                         accelerator: "",
@@ -1336,6 +1466,7 @@ export var config = {
                                 icon: "#iconTrashcan",
                                 label: {
                                     zh_CN: "删除访问权限",
+                                    zh_CHT: "刪除訪問權限",
                                     other: "Remove Access",
                                 },
                                 click: {
@@ -1358,6 +1489,7 @@ export var config = {
                                 icon: "#iconLanguage",
                                 label: {
                                     zh_CN: "访问权限: 公开",
+                                    zh_CHT: "訪問權限: 公開",
                                     other: "Access: Public",
                                 },
                                 accelerator: "publish-access: public",
@@ -1381,6 +1513,7 @@ export var config = {
                                 icon: "#iconLock",
                                 label: {
                                     zh_CN: "访问权限: 受保护",
+                                    zh_CHT: "訪問權限: 受保護",
                                     other: "Access: Protected",
                                 },
                                 accelerator: "publish-access: protected",
@@ -1404,6 +1537,7 @@ export var config = {
                                 icon: "#iconAccount",
                                 label: {
                                     zh_CN: "访问权限: 私有",
+                                    zh_CHT: "訪問權限: 私有",
                                     other: "Access: Private",
                                 },
                                 accelerator: "publish-access: private",
@@ -1429,6 +1563,7 @@ export var config = {
                             //     value: 'custom.theme.jupyter.server', // eval(value)
                             //     placeholder: { // 占位符
                             //         zh_CN: "访问令牌",
+                            //         zh_CHT: "訪問令牌",
                             //         other: "Token",
                             //     },
                             //     click: {
@@ -1457,6 +1592,7 @@ export var config = {
                         icon: "#iconMore",
                         label: {
                             zh_CN: "更多",
+                            zh_CHT: "更多",
                             other: "More",
                         },
                         accelerator: "",
@@ -1473,6 +1609,7 @@ export var config = {
                                 icon: "#iconExport",
                                 label: {
                                     zh_CN: "在新窗口打开",
+                                    zh_CHT: "在新窗口打開",
                                     other: "Open in a New Window",
                                 },
                                 accelerator: () => config.theme.hotkeys.window.open.block.outfocus,
@@ -1494,6 +1631,7 @@ export var config = {
                                 icon: "#iconFocus",
                                 label: {
                                     zh_CN: "在新窗口打开并聚焦",
+                                    zh_CHT: "在新窗口打開並聚焦",
                                     other: "Open in a New Window and Focus",
                                 },
                                 accelerator: () => config.theme.hotkeys.window.open.block.infocus,
@@ -1522,6 +1660,7 @@ export var config = {
                                 icon: "#iconLanguage",
                                 label: {
                                     zh_CN: "在新窗口打开资源",
+                                    zh_CHT: "在新窗口打開資源",
                                     other: "Open the resource in a New Window",
                                 },
                                 click: {
@@ -1549,6 +1688,7 @@ export var config = {
                                 icon: "#iconPreview",
                                 label: {
                                     zh_CN: "查看 Markdown 源代码",
+                                    zh_CHT: "查看 Markdown 源代碼",
                                     other: "Review the Markdown Source Code",
                                 },
                                 accelerator: () => config.theme.hotkeys.window.open.editor,
@@ -1576,6 +1716,7 @@ export var config = {
                                 icon: "#iconEdit",
                                 label: {
                                     zh_CN: "编辑 Kramdown 源代码",
+                                    zh_CHT: "編輯 Kramdown 源代碼",
                                     other: "Edit the Kramdown Source Code",
                                 },
                                 accelerator: () => config.theme.hotkeys.window.open.markdown,
@@ -1598,34 +1739,60 @@ export var config = {
                             },
                             {
                                 enable: true,
+                                type: {
+                                    NodeDocument: { enable: false },
+                                    default: { enable: true },
+                                },
+                                mode: "separator",
+                            },
+                            {
+                                enable: true,
+                                type: {
+                                    NodeDocument: { enable: false },
+                                    default: { enable: true },
+                                }, mode: "input",
+                                icon: "#iconTheme",
+                                id: 'theme-input-style',
+                                value: {
+                                    mode: 'attr',
+                                    key: 'style',
+                                },
+                                placeholder: { // 占位符
+                                    zh_CN: "块样式",
+                                    zh_CHT: "塊樣式",
+                                    other: "Block Style",
+                                },
+                                accelerator: 'style',
+                                onchange: { // 为 input 绑定 onchange 事件
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'save-input-value',
+                                            params: {
+                                                mode: 'attr',
+                                                key: 'style',
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
                                 type: null,
                                 mode: "separator",
                             },
                             {
                                 enable: true,
                                 type: {
-                                    NodeAudio: { enable: true },
-                                    NodeBlockQueryEmbed: { enable: true },
-                                    NodeBlockquote: { enable: true },
-                                    NodeCodeBlock: { enable: true },
                                     NodeDocument: { enable: false },
-                                    NodeHTMLBlock: { enable: true },
-                                    NodeHeading: { enable: true },
-                                    NodeIFrame: { enable: true },
-                                    NodeList: { enable: true },
-                                    NodeListItem: { enable: true },
-                                    NodeMathBlock: { enable: true },
-                                    NodeParagraph: { enable: true },
-                                    NodeSuperBlock: { enable: true },
-                                    NodeTable: { enable: true },
-                                    NodeThematicBreak: { enable: true },
-                                    NodeVideo: { enable: true },
-                                    NodeWidget: { enable: true },
+                                    default: { enable: true },
                                 },
                                 mode: "button",
                                 icon: "#iconUpload",
                                 label: {
                                     zh_CN: "固定到顶部",
+                                    zh_CHT: "固定到頂部",
                                     other: "Pin to Top",
                                 },
                                 accelerator: "position: top",
@@ -1648,28 +1815,14 @@ export var config = {
                             {
                                 enable: true,
                                 type: {
-                                    NodeAudio: { enable: true },
-                                    NodeBlockQueryEmbed: { enable: true },
-                                    NodeBlockquote: { enable: true },
-                                    NodeCodeBlock: { enable: true },
                                     NodeDocument: { enable: false },
-                                    NodeHTMLBlock: { enable: true },
-                                    NodeHeading: { enable: true },
-                                    NodeIFrame: { enable: true },
-                                    NodeList: { enable: true },
-                                    NodeListItem: { enable: true },
-                                    NodeMathBlock: { enable: true },
-                                    NodeParagraph: { enable: true },
-                                    NodeSuperBlock: { enable: true },
-                                    NodeTable: { enable: true },
-                                    NodeThematicBreak: { enable: true },
-                                    NodeVideo: { enable: true },
-                                    NodeWidget: { enable: true },
+                                    default: { enable: true },
                                 },
                                 mode: "button",
                                 icon: "#iconDownload",
                                 label: {
                                     zh_CN: "固定到底部",
+                                    zh_CHT: "固定到底部",
                                     other: "Pin to Bottom",
                                 },
                                 accelerator: "position: bottom",
@@ -1696,6 +1849,7 @@ export var config = {
                                 icon: "#iconBefore",
                                 label: {
                                     zh_CN: "弹幕",
+                                    zh_CHT: "彈幕",
                                     other: "Danmaku",
                                 },
                                 accelerator: "render: danmaku",
@@ -1722,6 +1876,7 @@ export var config = {
                                 icon: "#iconScrollWrapped",
                                 label: {
                                     zh_CN: "滚屏显示",
+                                    zh_CHT: "滾屏顯示",
                                     other: "Scrolling Display",
                                 },
                                 accelerator: "render: scroll",
@@ -1753,6 +1908,7 @@ export var config = {
                                 icon: "#iconMenu",
                                 label: {
                                     zh_CN: "全宽显示",
+                                    zh_CHT: "全寬顯示",
                                     other: "Full-width Display",
                                 },
                                 accelerator: "width: 100%",
@@ -1779,6 +1935,7 @@ export var config = {
                                 icon: "#iconFullscreen",
                                 label: {
                                     zh_CN: "全屏显示",
+                                    zh_CHT: "全屏顯示",
                                     other: "Full-screen Display",
                                 },
                                 accelerator: () => config.theme.hotkeys.fullscreen.iframe,
@@ -1825,6 +1982,7 @@ export var config = {
                                 icon: "#iconMark",
                                 label: {
                                     zh_CN: "显示标记文本",
+                                    zh_CHT: "顯示標記文本",
                                     other: "Display Marked Text",
                                 },
                                 accelerator: "mark: display",
@@ -1861,6 +2019,7 @@ export var config = {
                                 icon: "#iconEdit",
                                 label: {
                                     zh_CN: "切换书写模式",
+                                    zh_CHT: "切換書寫模式",
                                     other: "Toggle Writing Modes",
                                 },
                                 accelerator: "writing-mode",
@@ -1901,6 +2060,7 @@ export var config = {
                                 icon: "#iconH1", // 子菜单项图标
                                 label: {
                                     zh_CN: "标题自动编号",
+                                    zh_CHT: "標題自動編號",
                                     other: "Automatic Headling Numbering",
                                 },
                                 accelerator: "auto-num-h: 0", // 子菜单项快捷键
@@ -1930,6 +2090,7 @@ export var config = {
                                 icon: "#iconImage",
                                 label: {
                                     zh_CN: "图片自动编号",
+                                    zh_CHT: "圖片自動編號",
                                     other: "Automatic Picture Numbering",
                                 },
                                 accelerator: "auto-num-f: Fig.",
@@ -1963,6 +2124,7 @@ export var config = {
                                 icon: "#iconTable",
                                 label: {
                                     zh_CN: "表格自动编号",
+                                    zh_CHT: "表格自動編號",
                                     other: "Automatic Table Numbering",
                                 },
                                 accelerator: "auto-num-t: Tab.",
@@ -2003,9 +2165,10 @@ export var config = {
                                 icon: "#iconTrashcan",
                                 label: {
                                     zh_CN: "清除浏览位置记录",
+                                    zh_CHT: "清除瀏覽位置記錄",
                                     other: "Clear Browsing Location History",
                                 },
-                                accelerator: "location: null",
+                                accelerator: "",
                                 click: {
                                     enable: true,
                                     callback: null,
@@ -2035,6 +2198,7 @@ export var config = {
                                 icon: "#iconInfo",
                                 label: {
                                     zh_CN: "显示 ID",
+                                    zh_CHT: "顯示 ID",
                                     other: "Display ID",
                                 },
                                 accelerator: "render: id",
@@ -2063,6 +2227,7 @@ export var config = {
                                 icon: "#iconLink",
                                 label: {
                                     zh_CN: "显示超链接",
+                                    zh_CHT: "顯示超鏈接",
                                     other: "Display Hypertext ",
                                 },
                                 accelerator: "render: href",
@@ -2098,6 +2263,7 @@ export var config = {
                                 icon: "#iconSpreadOdd",
                                 label: {
                                     zh_CN: "显示块序号",
+                                    zh_CHT: "顯示塊序號",
                                     other: "Display Block Number",
                                 },
                                 accelerator: "render: index",
@@ -2126,6 +2292,7 @@ export var config = {
                                 icon: "#iconMarkdown",
                                 label: {
                                     zh_CN: "显示块内容",
+                                    zh_CHT: "顯示塊內容",
                                     other: "Display Block Content",
                                 },
                                 accelerator: "render: content",
@@ -2154,6 +2321,7 @@ export var config = {
                                 icon: "#iconMax",
                                 label: {
                                     zh_CN: "显示块轮廓",
+                                    zh_CHT: "顯示塊輪廓",
                                     other: "Display Block Outline",
                                 },
                                 accelerator: "render: outline",
@@ -2189,6 +2357,7 @@ export var config = {
                                 icon: "#iconFile",
                                 label: {
                                     zh_CN: "显示查询结果路径",
+                                    zh_CHT: "顯示查詢結果路徑",
                                     other: "Display Query Results' Path",
                                 },
                                 click: {
@@ -2226,6 +2395,7 @@ export var config = {
                                 icon: "#iconList",
                                 label: {
                                     zh_CN: "列表-默认视图",
+                                    zh_CHT: "列表-默認視圖",
                                     other: "List-Default View",
                                 },
                                 accelerator: "",
@@ -2255,6 +2425,7 @@ export var config = {
                                 icon: "#iconGraph",
                                 label: {
                                     zh_CN: "列表-脑图视图",
+                                    zh_CHT: "列表-腦圖視圖",
                                     other: "List-Mind Map View",
                                 },
                                 accelerator: "type: map",
@@ -2285,6 +2456,7 @@ export var config = {
                                 icon: "#iconTable",
                                 label: {
                                     zh_CN: "列表-表格视图",
+                                    zh_CHT: "列表-表格視圖",
                                     other: "List-Table View",
                                 },
                                 accelerator: "type: table",
@@ -2305,12 +2477,44 @@ export var config = {
                             {
                                 enable: true,
                                 type: {
+                                    NodeDocument: { enable: true },
+                                    NodeList: { enable: true },
+                                    NodeSuperBlock: { enable: true },
+                                    NodeBlockquote: { enable: true },
+                                    NodeBlockQueryEmbed: { enable: true },
+                                },
+                                mode: "button",
+                                icon: "#iconSplitLR",
+                                label: {
+                                    zh_CN: "列表-看板视图",
+                                    zh_CHT: "列表-看板視圖",
+                                    other: "List-Board View",
+                                },
+                                accelerator: "type: board",
+                                click: {
+                                    enable: true,
+                                    callback: null,
+
+                                    tasks: [
+                                        {
+                                            type: 'attr-update',
+                                            params: {
+                                                'custom-type': 'board',
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: {
                                     NodeTable: { enable: true },
                                 },
                                 mode: "button",
                                 icon: "#iconFullscreen",
                                 label: {
                                     zh_CN: "默认宽度",
+                                    zh_CHT: "默認寬度",
                                     other: "Full Width",
                                 },
                                 accelerator: "",
@@ -2336,6 +2540,7 @@ export var config = {
                                 icon: "#iconContract",
                                 label: {
                                     zh_CN: "自动宽度",
+                                    zh_CHT: "自動寬度",
                                     other: "Automatic Width",
                                 },
                                 accelerator: "table-width: auto",
@@ -2361,6 +2566,7 @@ export var config = {
                                 icon: "#iconPause",
                                 label: {
                                     zh_CN: "全等宽度",
+                                    zh_CHT: "全等寬度",
                                     other: "Equal Width",
                                 },
                                 accelerator: "table-width: equal",
@@ -2393,6 +2599,7 @@ export var config = {
                         icon: "#iconBookmark",
                         label: {
                             zh_CN: "归档页签",
+                            zh_CHT: "歸檔頁簽",
                             other: "Archive Tabs",
                         },
                         accelerator: "",
@@ -2407,6 +2614,7 @@ export var config = {
                                 icon: "#iconPreview",
                                 label: {
                                     zh_CN: "包含未修改的页签",
+                                    zh_CHT: "包含未修改的頁簽",
                                     other: "Include Unupdate Tabs",
                                 },
                                 accelerator: "",
@@ -2421,10 +2629,12 @@ export var config = {
                                                 message: {
                                                     success: {
                                                         zh_CN: "归档完成，请刷新书签面板查看",
+                                                        zh_CHT: "歸檔完成，請刷新書簽面板查看",
                                                         other: "Archive completed, please refresh the bookmarks panel to view",
                                                     },
                                                     error: {
                                                         zh_CN: "归档失败，没有符合条件的页签",
+                                                        zh_CHT: "歸檔失敗，沒有符合條件的頁簽",
                                                         other: "Archive failed, no tabs meet the conditions",
                                                     },
                                                 },
@@ -2440,6 +2650,7 @@ export var config = {
                                 icon: "#iconEdit",
                                 label: {
                                     zh_CN: "不包含未修改的页签",
+                                    zh_CHT: "不包含未修改的頁簽",
                                     other: "Not Include Unupdate Tabs",
                                 },
                                 accelerator: "",
@@ -2454,10 +2665,12 @@ export var config = {
                                                 message: {
                                                     success: {
                                                         zh_CN: "归档完成，请刷新书签面板查看",
+                                                        zh_CHT: "歸檔完成，請刷新書簽面板查看",
                                                         other: "Archive completed, please refresh the bookmarks panel to view",
                                                     },
                                                     error: {
                                                         zh_CN: "归档失败，没有符合条件的页签",
+                                                        zh_CHT: "歸檔失敗，沒有符合條件的頁簽",
                                                         other: "Archive failed, no tabs meet the conditions",
                                                     },
                                                 },
@@ -2800,6 +3013,15 @@ export var config = {
                     Alt: true,
                     key: 'L',
                 },
+                update: {
+                    // 更新当前浏览位置(double-click)
+                    enable: true,
+                    CtrlCmd: false,
+                    WinCtrl: false,
+                    Shift: false,
+                    Alt: false,
+                    type: 'dblclick',
+                },
                 clear: {
                     // 移除浏览位置(Ctrl + Shift + Alt + L)
                     enable: true,
@@ -2836,21 +3058,24 @@ export var config = {
     },
 };
 
-try {
-    // 合并配置文件 custom.js
-    const customjs = await import('/widgets/custom.js');
-    if (customjs) {
-        if (customjs.config) merge(config, customjs.config);
-        if (customjs.scripts) customjs.scripts.forEach(_ => eval(_));
+async function loadCustomJs(path = '/widgets/custom.js') {
+    try {
+        // 合并配置文件 custom.js
+        const customjs = await import(path);
+        if (customjs?.config?.custom) merge(config.custom, customjs.config.custom);
+        if (customjs?.config?.theme) merge(config.theme, customjs.config.theme);
+        if (customjs?.scripts) customjs.scripts.forEach(_ => eval(_));
+    } catch (err) {
+        console.warn(err);
+    } finally {
+        console.log(config);
     }
-} catch (err) {
-    console.warn(err);
-} finally {
-    console.log(config);
 }
 
+await loadCustomJs();
+
 // 用户配置
-export var custom = {
+const custom = {
     theme: {
         toolbar: {
             [config.theme.toolbar.more.id]: {
@@ -2867,25 +3092,39 @@ export var custom = {
             [config.theme.dock.fold.toolbar.id]: { default: false }, // 专注模式
             [config.theme.readonly.toolbar.id]: { default: false }, // 只读模式
         },
+        tooldock: {
+            position: {
+                left: "",
+                right: "",
+                top: "",
+                bottom: "",
+                width: "",
+                height: "",
+            }, // 悬浮工具栏位置
+        },
         location: {},
         dock: {},
     },
 };
 
 /* 保存用户配置至文件 */
-export async function saveCustomFile(data = custom, path = config.custom.path) {
+async function saveCustomFile(data = custom, path = config.custom.path) {
     const response = await putFile(path, JSON.stringify(data, undefined, 4));
     // console.log(response);
     return response;
 }
 
-try {
-    // 合并配置文件 custom.json
-    let customjson = await getFile(config.custom.path);
-    if (customjson) customjson = await customjson.json();
-    if (customjson) merge(custom, customjson);
-} catch (err) {
-    console.warn(err);
-} finally {
-    console.log(custom);
+async function loadCustomJson(path = config.custom.path) {
+    try {
+        // 合并配置文件 custom.json
+        let customjson = await getFile(path);
+        if (customjson) customjson = await customjson.json();
+        if (customjson) merge(custom, customjson);
+    } catch (err) {
+        console.warn(err);
+    } finally {
+        console.log(custom);
+    }
 }
+
+await loadCustomJson();

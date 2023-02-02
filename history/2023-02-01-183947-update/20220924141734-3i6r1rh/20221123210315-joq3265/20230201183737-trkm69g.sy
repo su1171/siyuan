@@ -1,0 +1,34 @@
+{
+	"ID": "20230201183737-trkm69g",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230201183737-trkm69g",
+		"title": "GFS",
+		"updated": "20230201183802"
+	},
+	"Children": [
+		{
+			"ID": "20230201183744-mwlfnhy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230201183744-mwlfnhy",
+				"updated": "20230201183802"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "分布式文件存储系统"
+				}
+			]
+		},
+		{
+			"ID": "20230201183737-ywf2gjf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230201183737-ywf2gjf",
+				"updated": "20230201183737"
+			}
+		}
+	]
+}

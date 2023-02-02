@@ -1,0 +1,3466 @@
+{
+	"ID": "20221220003048-hjpeay9",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221220003048-hjpeay9",
+		"title": "防火墙",
+		"updated": "20221220040338"
+	},
+	"Children": [
+		{
+			"ID": "20221220003058-0dv2mnl",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221220003058-0dv2mnl",
+				"updated": "20221220011237"
+			},
+			"Children": [
+				{
+					"ID": "20221220003109-gz2wxbn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221220003109-gz2wxbn",
+						"updated": "20221220011237"
+					},
+					"Children": [
+						{
+							"ID": "20221220003109-2cofbpy",
+							"Type": "NodeHeading",
+							"HeadingLevel": 1,
+							"Properties": {
+								"id": "20221220003109-2cofbpy",
+								"updated": "20221220003114"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "1.10.3 防火墙"
+								}
+							]
+						},
+						{
+							"ID": "20221220003124-jbuvz00",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221220003124-jbuvz00",
+								"updated": "20221220011237"
+							},
+							"Children": [
+								{
+									"ID": "20221220003126-z3rqdr2",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221220003126-z3rqdr2",
+										"updated": "20221220011237"
+									},
+									"Children": [
+										{
+											"ID": "20221220003126-eubsf57",
+											"Type": "NodeHeading",
+											"HeadingLevel": 2,
+											"Properties": {
+												"id": "20221220003126-eubsf57",
+												"updated": "20221220003142"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "简介"
+												}
+											]
+										},
+										{
+											"ID": "20221220003058-ebhtsaw",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221220003058-ebhtsaw",
+												"updated": "20221220011237"
+											},
+											"Children": [
+												{
+													"ID": "20221220003058-2bml5lo",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220003058-2bml5lo",
+														"updated": "20221220003058"
+													},
+													"Children": [
+														{
+															"ID": "20221220003058-ge1s99u",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220003058-ge1s99u",
+																"updated": "20221220003349"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "防火墙常用工具"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-bpfo07p",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221220003058-bpfo07p",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"ID": "20221220003058-u3h9kif",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-u3h9kif",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-zwix7k8",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-zwix7k8",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "iptables：netfilter防火墙配置"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "工具"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "，Centos7之前的默认防火墙；"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003932-csxnuk5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003932-csxnuk5",
+																				"updated": "20221220004033"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "netfilter 是位于内核中的包过滤体系，称为防火墙的内核态，"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220004036-9vb59ms",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220004036-9vb59ms",
+																				"updated": "20221220004110"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "iptables 是防火墙规则管理工具，称为防火墙的用户态"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-ve37zu9",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-ve37zu9",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-wy2lz1q",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-wy2lz1q",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "firewalld：Centos7及之后版本的默认防火墙。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220003058-lztgbqn",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220003058-lztgbqn",
+														"updated": "20221220003058"
+													},
+													"Children": [
+														{
+															"ID": "20221220003058-u335qh1",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220003058-u335qh1",
+																"updated": "20221220003351"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "数据流量的分类"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-1o3h53l",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221220003058-1o3h53l",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"ID": "20221220003058-v9z8kie",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-v9z8kie",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-eia1e8l",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-eia1e8l",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "入站流量（目标地址为防火墙）；"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-4edfamx",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-4edfamx",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-525plu0",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-525plu0",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "出站流量（源地址为防火墙）；"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-2kh4mub",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-2kh4mub",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-94yxaek",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-94yxaek",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "转发流量（源地址、目标地址均不是防火墙，大部分是不允许的）；"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-rylgb8z",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220003058-rylgb8z",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "防火墙配置规则，首先就要弄清楚到底是这3种流量的哪一类，然后才可以根据数据的流向配置不同的规则。"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-p8swbhb",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220003058-p8swbhb",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "Linux的Netfilter防火墙在t"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "cp"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "/ip协议栈中插入5个"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "em",
+																	"TextMarkTextContent": "hook function"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，俗称为钩子（检查点），在各个环节对数据包处理。规则的匹配从上往下逐条检查，匹配后及采取丢弃、放行、修改、重定向等各种措施，如无匹配项，按照默认规则的配置，或放行，或阻止。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220003058-7vrhg9q",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220003058-7vrhg9q",
+														"updated": "20221220003058"
+													},
+													"Children": [
+														{
+															"ID": "20221220003058-9xfvh63",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220003058-9xfvh63",
+																"updated": "20221220003353"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "常见防火墙类别"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-k8dnqgb",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221220003058-k8dnqgb",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"ID": "20221220003058-qzl7ns9",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-qzl7ns9",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-a6yfe04",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-a6yfe04",
+																				"updated": "20221220003850"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "包过滤防火墙：针对IP及端口2个条件进行数据包的安全过滤，不考虑其他任何因素；"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-mnx3arj",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-mnx3arj",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-qc6ofvk",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-qc6ofvk",
+																				"updated": "20221220003831"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "状态防火墙：包括 包过滤 防火墙的所有功能，同时追踪数据包的每一个工作状态，如下图所示：重点多了一个状态检查表！"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-wyu1crn",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-wyu1crn",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "\t"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "a",
+																					"TextMarkAHref": "siyuan://blocks/20221003210838-5cg0lvt",
+																					"TextMarkTextContent": "状态防火墙示意"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220003058-529qzxu",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "0",
+														"id": "20221220003058-529qzxu",
+														"updated": "20221220003058"
+													},
+													"Children": [
+														{
+															"ID": "20221220003058-la82ck7",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220003058-la82ck7",
+																"updated": "20221220003354"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "iptables策略与规则链(5条规则链)"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-k54lsvi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220003058-k54lsvi",
+																"updated": "20221220005144"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\tiptables"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "服务"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "把处理或过滤流量的策略称为规则，多条规则组成一个规则链（chains）。iptables具有"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "5条规则链"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "，处理各个传输环节的数据包，具体如下："
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-2jzx1gd",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221220003058-2jzx1gd",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"ID": "20221220003058-as0pkj5",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-as0pkj5",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-at8j3j7",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-at8j3j7",
+																				"updated": "20221220010933"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "PREROUTING"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "：路由选择前，路由选择前处理数据包；入站包及转发包都可以使用。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-psm4rpa",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-psm4rpa",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-3b5bbng",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-3b5bbng",
+																				"updated": "20221220010903"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "INPUT"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "：路由选择后，目的地为本机，入站包才可以使用。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-lvigyfi",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-lvigyfi",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-hdie3b0",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-hdie3b0",
+																				"updated": "20221220004410"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "OUTPUT"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "：本机产生的数据包对外转发，出站包才可以使用。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-gt7pc2v",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-gt7pc2v",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-h18scj0",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-h18scj0",
+																				"updated": "20221220004412"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "FORWARD"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "：路由选择后，目的不为本机，转发包才可以使用。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-1olxvk3",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220003058-1olxvk3",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-bxspa9n",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-bxspa9n",
+																				"updated": "20221220005429"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "POSTROUTING"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "：离开本机网卡前，路由选择后处理数据包。所有数据包都可以使用，最后一步的处理，如SNAT，地址伪装。"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-guphx2s",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-guphx2s",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "​"
+																				},
+																				{
+																					"Type": "NodeImage",
+																					"Data": "span",
+																					"Properties": {
+																						"parent-style": "max-width: 804px;",
+																						"style": "width: 794px;"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeBang"
+																						},
+																						{
+																							"Type": "NodeOpenBracket"
+																						},
+																						{
+																							"Type": "NodeLinkText",
+																							"Data": "image"
+																						},
+																						{
+																							"Type": "NodeCloseBracket"
+																						},
+																						{
+																							"Type": "NodeOpenParen"
+																						},
+																						{
+																							"Type": "NodeLinkDest",
+																							"Data": "assets/image-20221008181426-scnyhhc.png"
+																						},
+																						{
+																							"Type": "NodeCloseParen"
+																						}
+																					]
+																				},
+																				{
+																					"Type": "NodeKramdownSpanIAL",
+																					"Data": "{: style=\"width: 794px;\" parent-style=\"max-width: 804px;\"}"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "​"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-53b6m10",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-53b6m10",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "a",
+																					"TextMarkAHref": "siyuan://blocks/20221011160215-9zbqi55",
+																					"TextMarkTextContent": "示意图"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-9dkybmi",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-9dkybmi",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "PREROUTING ：路由选择前，主要用于修改IP数据包中的目标地址。（DN"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "AT"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": " 目标地址转换）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-3qjjnjw",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-3qjjnjw",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "POSTROUTING : 路由选择后，主要用于修改数据包的源地址。（SN"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "AT"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": " 源地址转换）"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-synktyx",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220003058-synktyx",
+																				"updated": "20221220004519"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "INPUT  OUTPUT  FORWARD 这三条链不修改IP数据包。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220005830-u4vkqy1",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "0",
+														"id": "20221220005830-u4vkqy1"
+													},
+													"Children": [
+														{
+															"ID": "20221220005830-h4nw37y",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220005830-h4nw37y",
+																"updated": "20221220005852"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "iptables规则表（4表）"
+																}
+															]
+														},
+														{
+															"ID": "20221220005853-71refv0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220005853-71refv0",
+																"updated": "20221220005911"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "默认有四个规则表"
+																}
+															]
+														},
+														{
+															"ID": "20221220005911-gxdgf6l",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221220005911-gxdgf6l",
+																"updated": "20221220005913"
+															},
+															"Children": [
+																{
+																	"ID": "20221220005913-pcmj2x7",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220005913-pcmj2x7",
+																		"updated": "20221220005913"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220005913-tgf21ww",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220005913-tgf21ww",
+																				"updated": "20221220005918"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "raw 表"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220005947-yjicq8s",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220005947-yjicq8s",
+																				"updated": "20221220010012"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "确定是否对数据包进行"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "状态跟踪"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220005926-2jpzoay",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220005926-2jpzoay"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220005926-xe9lnny",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220005926-xe9lnny",
+																				"updated": "20221220005931"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "mangle 表"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220010013-xvadh3r",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220010013-xvadh3r",
+																				"updated": "20221220010030"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "为数据包"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "设置标记"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220005931-yv53s8g",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220005931-yv53s8g"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220005931-xfglbee",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220005931-xfglbee",
+																				"updated": "20221220010151"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "nat 表"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220010031-7hkktxb",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220010031-7hkktxb",
+																				"updated": "20221220010122"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "修改数据包"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "中的  源（或目标）IP地址或端口"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220005937-eu3rh7r",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221220005937-eu3rh7r"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220005937-gfetqr4",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220005937-gfetqr4",
+																				"updated": "20221220010153"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "filter 表"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220010123-qdx8ory",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221220010123-qdx8ory",
+																				"updated": "20221220010149"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "确定"
+																				},
+																				{
+																					"Type": "NodeTextMark",
+																					"TextMarkType": "strong",
+																					"TextMarkTextContent": "是否放行"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "该数据包（过滤）"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220011001-as3r56x",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "0",
+														"id": "20221220011001-as3r56x"
+													},
+													"Children": [
+														{
+															"ID": "20221220011001-xjn1nx5",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220011001-xjn1nx5",
+																"updated": "20221220011052"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "链表关系图"
+																}
+															]
+														},
+														{
+															"ID": "20221220011016-yjbu8mm",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011016-yjbu8mm",
+																"updated": "20221220011032"
+															},
+															"Children": [
+																{
+																	"Type": "NodeImage",
+																	"Data": "span",
+																	"Properties": {
+																		"parent-style": "max-width: 947px; display: block;",
+																		"style": "width: 937px;"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeBang"
+																		},
+																		{
+																			"Type": "NodeOpenBracket"
+																		},
+																		{
+																			"Type": "NodeLinkText",
+																			"Data": "image"
+																		},
+																		{
+																			"Type": "NodeCloseBracket"
+																		},
+																		{
+																			"Type": "NodeOpenParen"
+																		},
+																		{
+																			"Type": "NodeLinkDest",
+																			"Data": "assets/image-20221220011023-2abvi78.png"
+																		},
+																		{
+																			"Type": "NodeCloseParen"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeKramdownSpanIAL",
+																	"Data": "{: style=\"width: 937px;\" parent-style=\"max-width: 947px; display: block;\"}"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220011114-e1sd461",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220011114-e1sd461",
+														"updated": "20221220011237"
+													},
+													"Children": [
+														{
+															"ID": "20221220011114-5jw8zyc",
+															"Type": "NodeHeading",
+															"HeadingLevel": 3,
+															"Properties": {
+																"id": "20221220011114-5jw8zyc",
+																"updated": "20221220011208"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "数据处理流程"
+																}
+															]
+														},
+														{
+															"ID": "20221220011129-kwytmz8",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011129-kwytmz8",
+																"updated": "20221220011129"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "规则表之间的顺序："
+																}
+															]
+														},
+														{
+															"ID": "20221220011129-eeovx2e",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011129-eeovx2e",
+																"updated": "20221220011134"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t\t raw→mangle→nat→filter"
+																}
+															]
+														},
+														{
+															"ID": "20221220011141-g5ux9ek",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011141-g5ux9ek",
+																"updated": "20221220011141"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "规则链之间的顺序："
+																}
+															]
+														},
+														{
+															"ID": "20221220011141-ejwg1kk",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011141-ejwg1kk",
+																"updated": "20221220011141"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         入站：PREROUTING→INPUT"
+																}
+															]
+														},
+														{
+															"ID": "20221220011141-jmzf22d",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011141-jmzf22d",
+																"updated": "20221220011141"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         出站：OUTPUT→POSTROUTING"
+																}
+															]
+														},
+														{
+															"ID": "20221220011141-2usj5lv",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011141-2usj5lv",
+																"updated": "20221220011141"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         转发：PREROUTING→FORWARD→POSTROUTING"
+																}
+															]
+														},
+														{
+															"ID": "20221220011155-c3yjqvr",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011155-c3yjqvr",
+																"updated": "20221220011155"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "规则链内的匹配顺序"
+																}
+															]
+														},
+														{
+															"ID": "20221220011155-inwodyx",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011155-inwodyx",
+																"updated": "20221220011155"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         ·按顺序依次检查，匹配即停止（LOG策略例外）"
+																}
+															]
+														},
+														{
+															"ID": "20221220011155-xnwrxb5",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220011155-xnwrxb5",
+																"updated": "20221220011237"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         ·若找不到相匹配规则，按该链的"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "默认策略"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "处理"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221220003407-tsagrky",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221220003407-tsagrky"
+			}
+		},
+		{
+			"ID": "20221220003408-vqmqc66",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221220003408-vqmqc66"
+			}
+		},
+		{
+			"ID": "20221220003408-den67eu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221220003408-den67eu"
+			}
+		},
+		{
+			"ID": "20221220003408-7oa1isk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221220003408-7oa1isk"
+			}
+		},
+		{
+			"ID": "20221220003058-hcknkrj",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221220003058-hcknkrj",
+				"updated": "20221220035036"
+			},
+			"Children": [
+				{
+					"ID": "20221220012951-xs4awcl",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221220012951-xs4awcl",
+						"updated": "20221220035036"
+					},
+					"Children": [
+						{
+							"ID": "20221220012951-kt3wty1",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221220012951-kt3wty1",
+								"updated": "20221220013005"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "iptables命令"
+								}
+							]
+						},
+						{
+							"ID": "20221220013108-in4olml",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221220013108-in4olml",
+								"updated": "20221220035036"
+							},
+							"Children": [
+								{
+									"ID": "20221220013110-40u1u3n",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221220013110-40u1u3n",
+										"updated": "20221220035025"
+									},
+									"Children": [
+										{
+											"ID": "20221220013110-8wo2pc9",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221220013110-8wo2pc9",
+												"updated": "20221220035025"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "格式"
+												}
+											]
+										},
+										{
+											"ID": "20221220003058-0d20br9",
+											"Type": "NodeSuperBlock",
+											"Properties": {
+												"id": "20221220003058-0d20br9",
+												"updated": "20221220003058"
+											},
+											"Children": [
+												{
+													"Type": "NodeSuperBlockOpenMarker"
+												},
+												{
+													"Type": "NodeSuperBlockLayoutMarker",
+													"Data": "row"
+												},
+												{
+													"ID": "20221220003058-36c5z5x",
+													"Type": "NodeSuperBlock",
+													"Properties": {
+														"id": "20221220003058-36c5z5x",
+														"updated": "20221220003058"
+													},
+													"Children": [
+														{
+															"Type": "NodeSuperBlockOpenMarker"
+														},
+														{
+															"Type": "NodeSuperBlockLayoutMarker",
+															"Data": "row"
+														},
+														{
+															"ID": "20221220003058-snad3qq",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220003058-snad3qq",
+																"updated": "20221220013631"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "iptables   [-t table]   CMD   [option]   [chain]   \u0026lt;rules\u0026gt;    [-j \u0026lt;target\u0026gt;]"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-8ovgm23",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220003058-8ovgm23",
+																"updated": "20221220003058"
+															}
+														},
+														{
+															"Type": "NodeSuperBlockCloseMarker"
+														}
+													]
+												},
+												{
+													"ID": "20221220003058-lmovx1q",
+													"Type": "NodeSuperBlock",
+													"Properties": {
+														"id": "20221220003058-lmovx1q",
+														"updated": "20221220003058"
+													},
+													"Children": [
+														{
+															"Type": "NodeSuperBlockOpenMarker"
+														},
+														{
+															"Type": "NodeSuperBlockLayoutMarker",
+															"Data": "col"
+														},
+														{
+															"ID": "20221220003058-z971v4y",
+															"Type": "NodeSuperBlock",
+															"Properties": {
+																"id": "20221220003058-z971v4y",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeSuperBlockOpenMarker"
+																},
+																{
+																	"Type": "NodeSuperBlockLayoutMarker",
+																	"Data": "row"
+																},
+																{
+																	"ID": "20221220003058-rc0j1za",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-rc0j1za",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "[-t  table]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-jqv3x2v",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-jqv3x2v",
+																		"updated": "20221220011356"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "指定使用的表名，若不指定"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "strong",
+																			"TextMarkTextContent": "默认使用filter表"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-fe05vtk",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-fe05vtk",
+																		"updated": "20221220003058"
+																	}
+																},
+																{
+																	"ID": "20221220003058-tjwo0kp",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-tjwo0kp",
+																		"updated": "20221220020109"
+																	}
+																},
+																{
+																	"Type": "NodeSuperBlockCloseMarker"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-6ku862l",
+															"Type": "NodeSuperBlock",
+															"Properties": {
+																"id": "20221220003058-6ku862l",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeSuperBlockOpenMarker"
+																},
+																{
+																	"Type": "NodeSuperBlockLayoutMarker",
+																	"Data": "row"
+																},
+																{
+																	"ID": "20221220003058-xli2rcp",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-xli2rcp",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "[options]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-12mk0f6",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-12mk0f6",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "​"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "code",
+																			"TextMarkTextContent": "操作选项："
+																		},
+																		{
+																			"Type": "NodeText",
+																			"Data": "​"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-hpecq2o",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-hpecq2o",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-bxao8c1",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-bxao8c1",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-vwb7xod",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-vwb7xod",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "-A：规则链末尾添加规则，常用的添加规则的方式；"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-fq3zhfj",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-fq3zhfj",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-lk3791v",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-lk3791v",
+																						"updated": "20221220013739"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "-I"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "：指定的规则号位置插入一条规则，需要先使用--line-numbers选项确定规则的位置；默认在第一行添加。"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-rxhgulg",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-rxhgulg",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-3qip2mb",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-3qip2mb",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-R：替换掉指定的规则号规则"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-7sp1xef",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-7sp1xef",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-7v66yok",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-7v66yok",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "-D：删除指定的规则号规则"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-5zjsqxr",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-5zjsqxr",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "​"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "code",
+																			"TextMarkTextContent": "查看命令选项："
+																		},
+																		{
+																			"Type": "NodeText",
+																			"Data": "​"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-tb03bsp",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-tb03bsp",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-zwnutgh",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-zwnutgh",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-50nvrty",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-50nvrty",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "-L：列出链中的规则"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-2j0yvnj",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-2j0yvnj",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-xq0zqb4",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-xq0zqb4",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-v：显示详细信息，包括每条规则的匹配包数量和匹配字节数"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-a9s6cqe",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-a9s6cqe",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-mqxijlv",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-mqxijlv",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-n：只显示 IP 地址和端口号码，不显示域名和"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "服务"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "名称"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeSuperBlockCloseMarker"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-vqej4dl",
+															"Type": "NodeSuperBlock",
+															"Properties": {
+																"id": "20221220003058-vqej4dl",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeSuperBlockOpenMarker"
+																},
+																{
+																	"Type": "NodeSuperBlockLayoutMarker",
+																	"Data": "row"
+																},
+																{
+																	"ID": "20221220003058-uptl1kj",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-uptl1kj",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "[chain]"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-8ltg3qm",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-8ltg3qm",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "指定链名称"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-kd59e7t",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-kd59e7t",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "a",
+																			"TextMarkAHref": "siyuan://blocks/20221008181414-2pl7c8s",
+																			"TextMarkTextContent": "五链"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeSuperBlockCloseMarker"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-oa5ue8p",
+															"Type": "NodeSuperBlock",
+															"Properties": {
+																"id": "20221220003058-oa5ue8p",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeSuperBlockOpenMarker"
+																},
+																{
+																	"Type": "NodeSuperBlockLayoutMarker",
+																	"Data": "row"
+																},
+																{
+																	"ID": "20221220003058-5xl3rz1",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-5xl3rz1",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "strong",
+																			"TextMarkTextContent": " \u0026lt;rules\u0026gt;"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-3gk6m9f",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-3gk6m9f",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "匹配条件"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-trfel3z",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-trfel3z",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-4bjnnz1",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-4bjnnz1",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-toyspxe",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-toyspxe",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-s：来源ip"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-u5s40nt",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-u5s40nt",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-e21azrk",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-e21azrk",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-d：目的ip"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-v4m4rr6",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-v4m4rr6",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-9a15cmv",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-9a15cmv",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-p : 协议类型-t"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "cp"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "、udp 、icmp"
+																						}
+																					]
+																				},
+																				{
+																					"ID": "20221220003058-86d2b63",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-86d2b63",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "icmp没有源端口与目的端口"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-z4qrhbz",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-z4qrhbz",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-jwd0rn4",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-jwd0rn4",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "--sport：源端口"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-9qgtnky",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-9qgtnky",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-n6rybmo",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-n6rybmo",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "--dport：目的端口"
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221220003058-vjlhr6t",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-vjlhr6t",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-dc3h3n9",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-dc3h3n9",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeText",
+																							"Data": "-m：扩展用法"
+																						}
+																					]
+																				},
+																				{
+																					"ID": "20221220003058-l7ndnqf",
+																					"Type": "NodeList",
+																					"ListData": {},
+																					"Properties": {
+																						"id": "20221220003058-l7ndnqf",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"ID": "20221220003058-d55chaf",
+																							"Type": "NodeListItem",
+																							"ListData": {
+																								"BulletChar": 42,
+																								"Marker": "Kg=="
+																							},
+																							"Properties": {
+																								"id": "20221220003058-d55chaf",
+																								"updated": "20221220003058"
+																							},
+																							"Children": [
+																								{
+																									"ID": "20221220003058-z8nopcw",
+																									"Type": "NodeParagraph",
+																									"Properties": {
+																										"id": "20221220003058-z8nopcw",
+																										"updated": "20221220003058"
+																									},
+																									"Children": [
+																										{
+																											"Type": "NodeText",
+																											"Data": "conntrack 状态跟踪，共有"
+																										},
+																										{
+																											"Type": "NodeTextMark",
+																											"TextMarkType": "a",
+																											"TextMarkAHref": "siyuan://blocks/20221011163308-zjgjzvv",
+																											"TextMarkTextContent": "五种跟踪状态"
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeSuperBlockCloseMarker"
+																}
+															]
+														},
+														{
+															"ID": "20221220003058-z0crn6h",
+															"Type": "NodeSuperBlock",
+															"Properties": {
+																"id": "20221220003058-z0crn6h",
+																"updated": "20221220003058"
+															},
+															"Children": [
+																{
+																	"Type": "NodeSuperBlockOpenMarker"
+																},
+																{
+																	"Type": "NodeSuperBlockLayoutMarker",
+																	"Data": "row"
+																},
+																{
+																	"ID": "20221220003058-rw5embx",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221220003058-rw5embx",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "-j \u003c操作\u003e"
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-k64er3h",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-k64er3h",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-03c07z2",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-03c07z2",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-ke44j1y",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-ke44j1y",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "ACCEPT"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "  允许数据包通过"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-ctcx75t",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-ctcx75t",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-bo2cfkp",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-bo2cfkp",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-hcwa5yo",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-hcwa5yo",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "DROP"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "  直接丢弃数据包，不给任何回应信息"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-hw4a653",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-hw4a653",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-np3b2xk",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-np3b2xk",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-2eswig2",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-2eswig2",
+																						"updated": "20221220003058"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "REJECT"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "  拒绝数据包通过，必要时会给数据发送端一个响应的信息。"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221220003058-3riw8qz",
+																	"Type": "NodeList",
+																	"ListData": {},
+																	"Properties": {
+																		"id": "20221220003058-3riw8qz",
+																		"updated": "20221220003058"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221220003058-1wpgbmc",
+																			"Type": "NodeListItem",
+																			"ListData": {
+																				"BulletChar": 42,
+																				"Marker": "Kg=="
+																			},
+																			"Properties": {
+																				"id": "20221220003058-1wpgbmc",
+																				"updated": "20221220003058"
+																			},
+																			"Children": [
+																				{
+																					"ID": "20221220003058-aqx9div",
+																					"Type": "NodeParagraph",
+																					"Properties": {
+																						"id": "20221220003058-aqx9div",
+																						"updated": "20221220013035"
+																					},
+																					"Children": [
+																						{
+																							"Type": "NodeTextMark",
+																							"TextMarkType": "strong",
+																							"TextMarkTextContent": "LOG"
+																						},
+																						{
+																							"Type": "NodeText",
+																							"Data": "   在/var/log/messages文件中记录日志信息，然后将数据包传递给下一条规"
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeSuperBlockCloseMarker"
+																}
+															]
+														},
+														{
+															"Type": "NodeSuperBlockCloseMarker"
+														}
+													]
+												},
+												{
+													"Type": "NodeSuperBlockCloseMarker"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221220013649-mrqs2vy",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20221220013649-mrqs2vy",
+										"updated": "20221220035030"
+									},
+									"Children": [
+										{
+											"ID": "20221220013649-72pa89t",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221220013649-72pa89t",
+												"updated": "20221220035030"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "选项"
+												}
+											]
+										},
+										{
+											"ID": "20221220013657-02pb2y9",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221220013657-02pb2y9",
+												"updated": "20221220013715"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "YmFzaA=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "-P 设置默认策略:iptables\n-P INPUT (DROP|ACCEPT)\n-F 清空规则链\n-L 查看规则链\n-A 在规则链的末尾加入新规则\n-I num 在规则链的头部加入新规则\n-D num 删除某一条规则\n-s 匹配来源地址IP/MASK，加叹号\"!\"表示除这个IP外。\n-d 匹配目标地址\n-i 网卡名称 匹配从这块网卡流入的数据\n-o 网卡名称 匹配从这块网卡流出的数据\n-p 匹配协议,如tcp,udp,icmp\n--dport num 匹配目标端口号\n--sport num 匹配来源端口\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221220013137-y8ojez3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "0",
+										"id": "20221220013137-y8ojez3",
+										"updated": "20221220035034"
+									},
+									"Children": [
+										{
+											"ID": "20221220013137-21dmva9",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221220013137-21dmva9",
+												"updated": "20221220035034"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "常用命令"
+												}
+											]
+										},
+										{
+											"ID": "20221220013220-t1z8unb",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221220013220-t1z8unb",
+												"updated": "20221220013222"
+											},
+											"Children": [
+												{
+													"ID": "20221220013222-7hfkmm3",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220013222-7hfkmm3",
+														"updated": "20221220013222"
+													},
+													"Children": [
+														{
+															"ID": "20221220013222-trxlrx0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220013222-trxlrx0",
+																"updated": "20221220013231"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "查看当前规则"
+																}
+															]
+														},
+														{
+															"ID": "20221220013232-eteqf89",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221220013232-eteqf89",
+																"updated": "20221220013333"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "iptables -L -n\niptables -L -n \t--line\t\t# 显示序号\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220013342-452elif",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220013342-452elif"
+													},
+													"Children": [
+														{
+															"ID": "20221220013342-qu6p7h4",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220013342-qu6p7h4",
+																"updated": "20221220013353"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "清空当前规则"
+																}
+															]
+														},
+														{
+															"ID": "20221220013353-tgbl3g1",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221220013353-tgbl3g1",
+																"updated": "20221220013401"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "iptables -F\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220014333-w8agduw",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220014333-w8agduw"
+													},
+													"Children": [
+														{
+															"ID": "20221220014333-2ppmiid",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220014333-2ppmiid",
+																"updated": "20221220014341"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "添加新的规则"
+																}
+															]
+														},
+														{
+															"ID": "20221220014341-f7ysvwn",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221220014341-f7ysvwn",
+																"updated": "20221220015127"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "# -A 在链的末尾追加规则\niptables -A INPUT -p tcp -j ACCEPT\n# -I 在链的开头（或指定序号）追加规则\niptables -I INPUT -p tcp -j ACCEPT\n# 指定序号插入\niptables -I INPUT 2 -p tcp -j ACCEPT\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220015150-3l9r55y",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220015150-3l9r55y"
+													},
+													"Children": [
+														{
+															"ID": "20221220015150-csnngw4",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220015150-csnngw4",
+																"updated": "20221220015158"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "删除规则"
+																}
+															]
+														},
+														{
+															"ID": "20221220015158-gid8mo7",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221220015158-gid8mo7",
+																"updated": "20221220015423"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "# 删除 INPUT 链的第三条规则\niptables -D INPUT 3\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220015646-qhwtxio",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220015646-qhwtxio"
+													},
+													"Children": [
+														{
+															"ID": "20221220015646-z3vokrm",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220015646-z3vokrm",
+																"updated": "20221220015650"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "修改规则"
+																}
+															]
+														},
+														{
+															"ID": "20221220015650-y2n2uhr",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221220015650-y2n2uhr",
+																"updated": "20221220015756"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "# 修改 INPUT 链的第三条规则，为后面的内容\niptables -R INPUT 3  -p tcp -j ACCEPT\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220015828-a70vi16",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221220015828-a70vi16"
+													},
+													"Children": [
+														{
+															"ID": "20221220015828-w63zzcm",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220015828-w63zzcm",
+																"updated": "20221220015848"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "修改默认规则"
+																}
+															]
+														},
+														{
+															"ID": "20221220015842-9t88d2r",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221220015842-9t88d2r",
+																"updated": "20221220015944"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "# 修改 FORWARD 表的默认规则为 DROP\niptables -P FORWARD DROP\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221220022404-5ck18fs",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "0",
+										"id": "20221220022404-5ck18fs",
+										"updated": "20221220035036"
+									},
+									"Children": [
+										{
+											"ID": "20221220022404-vy3a923",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221220022404-vy3a923",
+												"updated": "20221220035036"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "匹配方式"
+												}
+											]
+										},
+										{
+											"ID": "20221220022456-rpcr4wu",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221220022456-rpcr4wu",
+												"updated": "20221220022456"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "通用匹配条件："
+												}
+											]
+										},
+										{
+											"ID": "20221220022456-5rzge6m",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221220022456-5rzge6m",
+												"updated": "20221220035013"
+											},
+											"Children": [
+												{
+													"ID": "20221220023104-u5xseuq",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221220023104-u5xseuq",
+														"updated": "20221220023104"
+													},
+													"Children": [
+														{
+															"ID": "20221220023104-gxw7zbn",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023104-gxw7zbn",
+																"updated": "20221220023104"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "协议匹配：-p 协议名"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023108-en4s55m",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221220023108-en4s55m"
+													},
+													"Children": [
+														{
+															"ID": "20221220023108-1dkjoqr",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023108-1dkjoqr"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "地址匹配：-s 源地址、-d 目的地址"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023110-txt5s13",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20221220023110-txt5s13"
+													},
+													"Children": [
+														{
+															"ID": "20221220023110-t1cyrs3",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023110-t1cyrs3"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "接口匹配：-i 入站网卡、-o出站网卡"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023113-90p8ojw",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "NC4=",
+														"Num": 4
+													},
+													"Properties": {
+														"id": "20221220023113-90p8ojw"
+													},
+													"Children": [
+														{
+															"ID": "20221220023113-7ntrlge",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023113-7ntrlge"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "端口匹配： --sport 源端口   --dport 目标端口"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023115-jetz5os",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "NS4=",
+														"Num": 5
+													},
+													"Properties": {
+														"id": "20221220023115-jetz5os"
+													},
+													"Children": [
+														{
+															"ID": "20221220023115-2je0kdo",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023115-2je0kdo"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "tcp标记匹配： --tcp-flags"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023119-9f21jmj",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Ni4=",
+														"Num": 6
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221220023119-9f21jmj"
+													},
+													"Children": [
+														{
+															"ID": "20221220023119-qcknymt",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023119-qcknymt"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "ICMP类型匹配： --icmp-type"
+																}
+															]
+														},
+														{
+															"ID": "20221220023123-karv2pi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023123-karv2pi",
+																"updated": "20221220023136"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "常见的icmp类型"
+																}
+															]
+														},
+														{
+															"ID": "20221220023136-yc1d57b",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023136-yc1d57b",
+																"updated": "20221220023221"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t8\t\tEcho request--回显请求\t\t一般禁用"
+																}
+															]
+														},
+														{
+															"ID": "20221220023222-wnbn9e0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023222-wnbn9e0",
+																"updated": "20221220023247"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t0\t\tEcho Reply---回显应答"
+																}
+															]
+														},
+														{
+															"ID": "20221220023250-vtg9btm",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023250-vtg9btm",
+																"updated": "20221220023309"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t3\t\tEcho erro--错误回显"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023449-4rbiiyr",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Ny4=",
+														"Num": 7
+													},
+													"Properties": {
+														"id": "20221220023449-4rbiiyr"
+													},
+													"Children": [
+														{
+															"ID": "20221220023449-ulciph0",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023449-ulciph0",
+																"updated": "20221220034929"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "多端口匹配： -m multiport --sports 源端口列表、-m multiport --dports 目的端口列表"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023524-ohhv3et",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "OC4=",
+														"Num": 8
+													},
+													"Properties": {
+														"id": "20221220023524-ohhv3et"
+													},
+													"Children": [
+														{
+															"ID": "20221220023524-2g9565j",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023524-2g9565j",
+																"updated": "20221220034935"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "IP范围匹配：-m iprange --src-range IP范围"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220023534-ovtkomt",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "OS4=",
+														"Num": 9
+													},
+													"Properties": {
+														"id": "20221220023534-ovtkomt"
+													},
+													"Children": [
+														{
+															"ID": "20221220023534-epa1rgw",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220023534-epa1rgw",
+																"updated": "20221220034940"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "mac地址匹配： -m mac --mac-source MAC地址"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221220034947-xoflfpd",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MTAu",
+														"Num": 10
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221220034947-xoflfpd",
+														"updated": "20221220035013"
+													},
+													"Children": [
+														{
+															"ID": "20221220034947-lvbepaq",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220034947-lvbepaq",
+																"updated": "20221220035007"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "连接状态匹配： -m state --state 连接状态"
+																}
+															]
+														},
+														{
+															"ID": "20221220035013-bpk6nws",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220035013-bpk6nws",
+																"updated": "20221220035013"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "常见的连接状态："
+																}
+															]
+														},
+														{
+															"ID": "20221220035013-2x0p757",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220035013-2x0p757",
+																"updated": "20221220035013"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         NEW：新连接，与任何连接无关"
+																}
+															]
+														},
+														{
+															"ID": "20221220035013-jdf3xog",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220035013-jdf3xog",
+																"updated": "20221220035013"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         ESTABLISHED：响应请求或已建立连接的"
+																}
+															]
+														},
+														{
+															"ID": "20221220035013-h7w1jyp",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221220035013-h7w1jyp",
+																"updated": "20221220035013"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "         RELATED：与已连接有相关性的，如FTP数据连接"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221220015827-e0357da",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221220015827-e0357da",
+				"updated": "20221220040338"
+			},
+			"Children": [
+				{
+					"ID": "20221220035046-0rcr8rc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221220035046-0rcr8rc",
+						"updated": "20221220040338"
+					},
+					"Children": [
+						{
+							"ID": "20221220035046-9xf2znd",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221220035046-9xf2znd",
+								"updated": "20221220035052"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "练习"
+								}
+							]
+						},
+						{
+							"ID": "20221220035053-n5amwvj",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221220035053-n5amwvj",
+								"updated": "20221220040338"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "YmFzaA=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "1. 删除已有规则\n在开始创建iptables规则之前，你也许需要删除已有规则。命令如下：\niptables -F\n(or)\niptables –flush\n查看已有规则\niptables -nL\n \n \n2.设置链的默认策略\n链的默认政策设置为”ACCEPT”（接受），若要将INPUT,FORWARD,OUTPUT链设置成”DROP”（拒绝），命令如下：\niptables -P INPUT DROP\niptables -P FORWARD DROP\niptables -P OUTPUT DROP\n当INPUT链和OUTPUT链都设置成DROP时，对于每一个防火墙规则，我们都应该定义两个规则。例如：一个传入另一个传出。在下面所有的例子中，由于我们已将DROP设置成INPUT链和OUTPUT链的默认策略，每种情况我们都将制定两条规则。\n当然，如果你相信你的内部用户,则可以省略上面的最后一行。例如：默认不丢弃所有出站的数据包。在这种情况下,对于每一个防火墙规则要求,你只需要制定一个规则——只对进站的数据包制定规则。\n \n3. 阻止指定IP地址\n例：丢弃来自IP地址x.x.x.x的包\nBLOCK_THIS_IP=\"x.x.x.x\"\niptables -A INPUT -s \"$BLOCK_THIS_IP\" -j DROP\n注：当你在log里发现来自某ip地址的异常记录，可以通过此命令暂时阻止该地址的访问以做更深入分析\n例：阻止来自IP地址x.x.x.x eth0 tcp的包\niptables -A INPUT -i eth0 -s \"$BLOCK_THIS_IP\" -j DROP\niptables -A INPUT -i eth0 -p tcp -s \"$BLOCK_THIS_IP\" -j DROP\n \n \n4. 允许所有SSH的连接请求\n例：允许所有来自外部的SSH连接请求，即只允许进入eth0接口，并且目标端口为22的数据包\niptables -A INPUT -i eth0 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT\n 5. 仅允许来自指定网络的SSH连接请求\n例：仅允许来自于192.168.100.0/24域的用户的ssh连接请求\niptables -A INPUT -i eth0 -p tcp -s 192.168.100.0/24 --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT\n \n \n6.允许http和https的连接请求\n例：允许所有来自web - http的连接请求\niptables -A INPUT -i eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT\n例：允许所有来自web - https的连接请求\niptables -A INPUT -i eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT\n \n \n7. 使用multiport 将多个规则结合在一起\n允许多个端口从外界连入，除了为每个端口都写一条独立的规则外，我们可以用multiport将其组合成一条规则。如下所示：\n例：允许所有ssh,http,https的流量访问\niptables -A INPUT -i eth0 -p tcp -m multiport --dports 22,80,443 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp -m multiport --sports 22,80,443 -m state --state ESTABLISHED -j ACCEPT\n \n \n8. 允许从本地发起的SSH请求\niptables -A OUTPUT -o eth0 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A INPUT -i eth0 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT\n请注意,这与允许ssh连入的规则略有不同。本例在OUTPUT链上，我们允许NEW和ESTABLISHED状态。在INPUT链上，我们只允许ESTABLISHED状态。ssh连入的规则与之相反。\n \n \n9. 仅允许从本地发起到一个指定的网络域的SSH请求\n例：仅允许从内部连接到网域192.168.100.0/24\niptables -A OUTPUT -o eth0 -p tcp -d 192.168.100.0/24 --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A INPUT -i eth0 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT\n 10. 允许从本地发起的HTTPS连接请求\n下面的规则允许输出安全的网络流量。如果你想允许用户访问互联网，这是非常有必要的。在服务器上，这些规则能让你使用wget从外部下载一些文件\niptables -A OUTPUT -o eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A INPUT -i eth0 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT\n注：对于HTTP web流量的外联请求，只需要将上述命令中的端口从443改成80即可。\n \n \n11. 负载平衡传入的网络流量\n使用iptables可以实现传入web流量的负载均衡，我们可以传入web流量负载平衡使用iptables防火墙规则。\n例：使用iptables nth将HTTPS流量负载平衡至三个不同的ip地址。\niptables -A PREROUTING -i eth0 -p tcp --dport 443 -m state --state NEW -m nth --counter 0 --every 3 --packet 0 -j DNAT --to-destination 192.168.1.101:443\niptables -A PREROUTING -i eth0 -p tcp --dport 443 -m state --state NEW -m nth --counter 0 --every 3 --packet 1 -j DNAT --to-destination 192.168.1.102:443\niptables -A PREROUTING -i eth0 -p tcp --dport 443 -m state --state NEW -m nth --counter 0 --every 3 --packet 2 -j DNAT --to-destination 192.168.1.103:443\n \n \n12. 允许外部主机ping内部主机\niptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT\niptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT\n \n \n13. 允许内部主机ping外部主机\niptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT\niptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT\n \n \n14. 允许回环访问 例：在服务器上允许127.0.0.1回环访问。\niptables -A INPUT -i lo -j ACCEPT\niptables -A OUTPUT -o lo -j ACCEPT\n \n \n15. 允许内部网络域外部网络的通信\n防火墙服务器上的其中一个网卡连接到外部，另一个网卡连接到内部服务器，使用以下规则允许内部网络与外部网络的通信。此例中，eth1连接到外部网络(互联网)，eth0连接到内部网络(例如:192.168.1.x)。\niptables -A FORWARD -i eth0 -o eth1 -j ACCEPT\n \n \n16. 允许出站的DNS连接\niptables -A OUTPUT -p udp -o eth0 --dport 53 -j ACCEPT\niptables -A INPUT -p udp -i eth0 --sport 53 -j ACCEPT\n 17. 允许NIS连接\n如果你使用NIS管理用户帐户，你需要允许NIS连接。如果你不允许NIS相关的ypbind连接请求，即使SSH连接请求已被允许，用户仍然无法登录。NIS的端口是动态的，先使用命令rpcinfo –p来知道端口号，此例中为853和850端口。\nrpcinfo -p | grep ypbind\n例：允许来自111端口以及ypbind使用端口的连接请求\niptables -A INPUT -p tcp --dport 111 -j ACCEPT\niptables -A INPUT -p udp --dport 111 -j ACCEPT\niptables -A INPUT -p tcp --dport 853 -j ACCEPT\niptables -A INPUT -p udp --dport 853 -j ACCEPT\niptables -A INPUT -p tcp --dport 850 -j ACCEPT\niptables -A INPUT -p udp --dport 850 -j ACCEPT\n注：当你重启ypbind之后端口将不同，上述命令将无效。有两种解决方案：\n1）使用你NIS的静态IP\n2）编写shell脚本通过“rpcinfo - p”命令自动获取动态端口号,并在上述iptables规则中使用。\n \n \n18. 允许来自指定网络的rsync连接请求\n例：允许来自网络192.168.101.0/24的rsync连接请求\niptables -A INPUT -i eth0 -p tcp -s 192.168.101.0/24 --dport 873 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 873 -m state --state ESTABLISHED -j ACCEPT\n \n \n19. 允许来自指定网络的MySQL连接请求\n很多情况下，MySQL数据库与web服务跑在同一台服务器上。有时候我们仅希望DBA和开发人员从内部网络（192.168.100.0/24）直接登录数据库，可尝试以下命令：\niptables -A INPUT -i eth0 -p tcp -s 192.168.100.0/24 --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 3306 -m state --state ESTABLISHED -j ACCEPT\n \n \n20. 允许Sendmail, Postfix邮件服务\nSendmail和postfix都使用了25端口，因此我们只需要允许来自25端口的连接请求即可。\niptables -A INPUT -i eth0 -p tcp --dport 25 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 25 -m state --state ESTABLISHED -j ACCEPT\n \n \n21. 允许IMAP和IMAPS 例：允许IMAP/IMAP2流量，端口为143\niptables -A INPUT -i eth0 -p tcp --dport 143 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 143 -m state --state ESTABLISHED -j ACCEPT\n例：允许IMAPS流量，端口为993\niptables -A INPUT -i eth0 -p tcp --dport 993 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 993 -m state --state ESTABLISHED -j ACCEPT\n\n22. 允许POP3和POP3S 例：允许POP3访问\niptables -A INPUT -i eth0 -p tcp --dport 110 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 110 -m state --state ESTABLISHED -j ACCEPT\n例：允许POP3S访问\niptables -A INPUT -i eth0 -p tcp --dport 995 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 995 -m state --state ESTABLISHED -j ACCEPT\n \n \n23. 防止DoS攻击\niptables -A INPUT -p tcp --dport 80 -m limit --limit 25/minute --limit-burst 100 -j ACCEPT\n上述例子中： -m limit: 启用limit扩展 –limit 25/minute: 允许最多每分钟25个连接（根据需求更改）。 –limit-burst 100: 只有当连接达到limit-burst水平(此例为100)时才启用上述limit/minute限制。\n \n \n24. 端口转发 例：将来自422端口的流量全部转到22端口。\n这意味着我们既能通过422端口又能通过22端口进行ssh连接。启用DNAT转发。\niptables -t nat -A PREROUTING -p tcp -d 192.168.102.37 --dport 422 -j DNAT --to 192.168.102.37:22\n除此之外，还需要允许连接到422端口的请求\niptables -A INPUT -i eth0 -p tcp --dport 422 -m state --state NEW,ESTABLISHED -j ACCEPT\niptables -A OUTPUT -o eth0 -p tcp --sport 422 -m state --state ESTABLISHED -j ACCEPT\n \n \n25. 记录丢弃的数据表 第一步：新建名为LOGGING的链\niptables -N LOGGING\n第二步：将所有来自INPUT链中的数据包跳转到LOGGING链中\niptables -A INPUT -j LOGGING\n第三步：为这些包自定义个前缀，命名为”IPTables Packet Dropped”\niptables -A LOGGING -m limit --limit 2/min -j LOG --log-prefix \"IPTables Packet Dropped: \" --log-level 7\n第四步：丢弃这些数据包\niptables -A LOGGING -j DROP\n \n \n26. ip映射(NAT)\n假设有一家ISP提供园区Internet接入服务，为了方便管理，该ISP分配给园区用户的IP地址都是伪IP，但是部分用户要求建立自己的WWW服务器对外发布信息。\n我们可以再防火墙的外部网卡上绑定多个合法IP地址，然后通过ip映射使发给其中某一 个IP地址的包转发至内部某一用户的WWW服务器上，然后再将该内部WWW服务器响应包伪装成该合法IP发出的包。\n \n我们假设以下情景:\n该ISP分配给A单位www服务器的ip为:\n伪ip:192.168.1.100\n真实ip:202.110.123.100\n该ISP分配给B单位www服务器的ip为:\n伪ip:192.168.1.200\n真实ip:202.110.123.200\nlinux防火墙的ip地址分别为:\n内网接口eth1:192.168.1.1\n外网接口eth0:202.110.123.1\n然后我们将分配给A、B单位的真实ip绑定到防火墙的外网接口，以root权限执行以下命令:\nifconfig eth0 add 202.110.123.100 netmask 255.255.255.0\nifconfig eth0 add 202.110.123.200 netmask 255.255.255.0\n \n首先，对防火墙接收到的目的ip为202.110.123.100和202.110.123.200的所有数据包进行目的NAT(DNAT):\niptables -A PREROUTING -i eth0 -d 202.110.123.100 -j DNAT --to 192.168.1.100\niptables -A PREROUTING -i eth0 -d 202.110.123.200 -j DNAT --to 192.168.1.200\n \n其次，对防火墙接收到的源ip地址为192.168.1.100和192.168.1.200的数据包进行源NAT(SNAT):\niptables -A POSTROUTING -o eth0 -s 192.168.1.100 -j SNAT --to 202.110.123.100\niptables -A POSTROUTING -o eth0 -s 192.168.1.200 -j SNAT --to 202.110.123.200\n \n这样，所有目的ip为202.110.123.100和202.110.123.200的数据包都将分别被转发给192.168.1.100和192.168.1.200;而所有来自192.168.1.100和192.168.1.200的数据包都将分 别被伪装成由202.110.123.100和202.110.123.200，从而也就实现了ip映射。\n\n\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

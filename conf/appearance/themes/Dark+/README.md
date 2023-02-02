@@ -20,6 +20,14 @@ A dark theme (which also supports light mode, can you imagine that ~) of [SiYuan
 现已上架[思源笔记社区集市](https://github.com/siyuan-note/bazaar), 如果您喜欢本主题, 欢迎为本项目点亮一个⭐!  
 It is now on the shelves of the [Siyuan Notes Community Bazaar](https://github.com/siyuan-note/bazaar). If you like this theme, welcome to light up ⭐ for this project!
 
+## 反馈 | FEEDBACK
+
+- 中文 | Chinese
+  - [Dark+ - 链滴](https://ld246.com/tag/dark%2b)
+  - [Issues · Zuoqiu-Yingyi/siyuan-theme-dark-plus](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues)
+- 英文 | English
+  - [Issues · Zuoqiu-Yingyi/siyuan-theme-dark-plus](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus/issues)
+
 ## 预览 | PREVIEW
 
 ![浅色-relative](./image/README/preview-light.png)
@@ -178,6 +186,7 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
 | 视频块/音频块<br/>video blocks/audio blocks                                              | `time`                   | `ss`<br/>`ss.ms`<br/>`mm:ss`<br/>`mm:ss.ms`<br/>`hh:mm:ss`<br/>`hh:mm:ss.ms`                                                                                                                                                                                                             | 时间戳<br/>Timestamp.                                                                           |
 | 列表块 & 文档块<br/>list blocks & document blocks                                        | `type`                   | `table`<br/>`表格`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                              | 列表渲染为表格<br/>Renders the list as a table.                                                 |
 | 列表块 & 文档块<br/>list blocks & document blocks                                        | `type`                   | `脑图`<br/>`map`<br/>`导图`<br/>`mind-map`<br/>`思维导图`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                       | 列表渲染为思维导图<br/>Renders the list as a mind map.                                          |
+| 列表块 & 文档块<br/>list blocks & document blocks                                        | `type`                   | `看板`<br/>`board`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                              | 列表渲染为看板<br/>Renders the list as a board.                                                 |
 | 表格块<br/>table blocks                                                                  | `table-width`            | `auto`<br/>`自动`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                               | 启动表格内容自动换行<br/>Enable table content wraps.                                            |
 | 表格块<br/>table blocks                                                                  | `table-width`            | `equal`<br/>`等宽`<br/>(可使用空格分隔多个属性值 \| You can separate multiple attribute values with spaces)                                                                                                                                                                              | 启动单元格等宽<br/>Enable equal cell.                                                           |
 | 段落块<br/>paragraph blocks                                                              | `type`                   | `图标题`<br/>`表标题`<br/>`figure-title`<br/>`table-title`<br/>(使用空格分隔多个属性值 \| Separate multiple attribute values with spaces)                                                                                                                                                | 图标题/表标题自动计数<br/>Figure titles/table titles are counted automatically.                 |
@@ -205,13 +214,17 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
 
 #### Jupyter 功能 | JUPYTER FEATURES
 
+注意: 使用浏览器访问思源时该功能可能会被浏览器安全策略阻止, 请使用桌面客户端访问思源以使用该功能  
+Note: When using the browser to access SiYuan, this feature may be blocked by the browser's security policy. Please use the desktop client to access SiYuan to use this feature.
+
 - 添加 Jupyter 服务对思源的信任
   1. 打开文件 `jupyter_lab_config.py` 或 `jupyter_notebook_config.py`
   2. 找到 `c.ServerApp.allow_origin` 或 `c.NotebookApp.allow_origin` 字段
   3. 将该字段设置为思源 `'location.origin'` 或 `'*'`
      - <kbd>Ctrl + Shift + I</kbd> 打开思源的开发者工具, 在控制台中输入 `location.origin` 后回车即可获得
-  4. (可选, Token 认证方案) 找到 `c.ServerApp.token` 字段并将该字段设置为一个足够安全的值
-  5. 保存文件并启动 jupyter 服务
+  4. 将 `c.ServerApp.disable_check_xsrf` 或 `c.NotebookApp.disable_check_xsrf` 字段值设置为 `True`.
+  5. (可选, Token 认证方案) 找到 `c.ServerApp.token` 字段并将该字段设置为一个足够安全的值
+  6. 保存文件并启动 jupyter 服务
 - 登录 Jupyter 服务
   1. <kbd>文档块菜单</kbd> > <kbd>Jupyter</kbd> > <kbd>全局设置</kbd>
   2. 打开全局设置窗口
@@ -259,8 +272,9 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
   2. Find `c.ServerApp.allow_origin` or `c.NotebookApp.allow_origin` field.
   3. Set the field to Siyuan `location.origin` or `*`.
      - <kbd>Ctrl + Shift + I</kbd> open Siyuan's developer tools, then enter `location.origin` in the console.
-  4. (Optional, Token certification scheme) Find `c.ServerApp.token` field and set it to a sufficiently secure value.
-  5. Save the file and start jupyter service.
+  4. Set the value of field `c.ServerApp.disable_check_xsrf` or `c.NotebookApp.disable_check_xsrf` to `True`.
+  5. (Optional, Token certification scheme) Find `c.ServerApp.token` field and set it to a sufficiently secure value.
+  6. Save the file and start jupyter service.
 - Log in to the jupyter service.
   1. <kbd>Doc Block Menu</kbd> > <kbd>Jupyter</kbd> > <kbd>Global Settings</kbd>
   2. Open the Global Settings Window.
@@ -375,12 +389,10 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
   Click on a slider on the right side of the document or current reading progress indicator to jump to where the document was last browsed using the <kbd>Right Mouse Button</kbd>.
 - 使用 <kbd>Shift + 鼠标中键</kbd> 单击块/超链接/块引用在新窗口打开并聚焦  
   Click on a block/link/block-reference to open a window and focus using the <kbd>Shift + Middle Mouse Button</kbd>.
-- 使用 <kbd>Alt + 鼠标中键</kbd> 单击块/超链接/块引用/收集箱项/历史项在新窗口打开 [Monaco 编辑器](https://github.com/microsoft/monaco-editor)并编辑 Markdown 源代码  
-  Click on a block/link/block-reference/inbox/history to open [Monaco Editor](https://github.com/microsoft/monaco-editor) in a new window and edit source code using the <kbd>Alt + Middle Mouse Button</kbd>.
-- 使用 <kbd>Shift + Alt + 鼠标中键</kbd> 单击块/超链接/块引用/历史项在新窗口打开 [Monaco 编辑器](https://github.com/microsoft/monaco-editor)并查看指定块的 Kramdown (Markdown with IAL) 源码  
-  Click on a block/link/block-reference/history to open [Monaco Editor](https://github.com/microsoft/monaco-editor) in a new window and preview the Kramdown (Markdown with IAL) source code of document using the <kbd>Shift + Alt + Middle Mouse Button</kbd>.
-    - 每次打开编辑器时都会更改文档的更新时间  
-      Each time you open the editor, you change the update time of the document.
+- 使用 <kbd>Alt + 鼠标中键</kbd> 单击块/超链接/块引用/收集箱项/历史项/快照项在新窗口打开 [Monaco 编辑器](https://github.com/microsoft/monaco-editor)并编辑 Markdown 源代码  
+  Click on a block/link/block-reference/inbox/history/snapshot to open [Monaco Editor](https://github.com/microsoft/monaco-editor) in a new window and edit source code using the <kbd>Alt + Middle Mouse Button</kbd>.
+- 使用 <kbd>Shift + Alt + 鼠标中键</kbd> 单击块/超链接/块引用/历史项/快照项在新窗口打开 [Monaco 编辑器](https://github.com/microsoft/monaco-editor)并查看指定块的 Kramdown (Markdown with IAL) 源码  
+  Click on a block/link/block-reference/history/snapshot to open [Monaco Editor](https://github.com/microsoft/monaco-editor) in a new window and preview the Kramdown (Markdown with IAL) source code of document using the <kbd>Shift + Alt + Middle Mouse Button</kbd>.
 - 使用快捷键 <kbd>Ctrl/⌘ + 鼠标滚轮</kbd> 可以调整编辑区字体大小  
   Use the shortcut keys <kbd>Ctrl/⌘ + Mouse Wheel</kbd> to adjust the edit area font size.
 - 使用超链接设置块属性  
@@ -417,6 +429,8 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
   Use the shortcut key <kbd>Shift + Alt + G</kbd> to turn on/off list guides (list, table list, mind map list).
 - 使用快捷键 <kbd>Shift + Alt + L</kbd> 启动/关闭记录当前浏览位置功能  
   Use the shortcut key <kbd>Shift + Alt + L</kbd> to turn on/off record the current browsing location.
+  - 开启后可以使用 <kbd>鼠标左键</kbd> 双击文档中的某个块以记住当前位置  
+    Use button <kbd>Left Mouse Button</kbd> double-click a block to record this location when turned on.
   - 开启后可以使用 <kbd>鼠标右键</kbd> 单击文档右侧的滑块, 跳转到文档上次浏览位置  
     You can click on a slider on the right side of the document to jump to where the document was last browsed using the <kbd>Right Mouse Button</kbd> when turned on.
 - 使用快捷键 <kbd>Shift + Alt + M</kbd> 启动/关闭块菜单增强功能  
@@ -584,6 +598,9 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
       - 列表渲染为思维导图 | Renders the list as a mind-map
       - 需要在列表项内纵向排版时, 需要在列表项中插入一个容器块(引述块, 超级块)  
         Please insert a container block (quote block, super block) in list item when it need to lay out vertically.
+    - `看板` / `board`: 属性值 | value
+      - 适用于列表块与文档块 | Applies to list blocks and document blocks
+      - 列表渲染为看板 | Renders the list as a board
     - `图标题` 或 `表标题` | `figure-title` or `table-title`: 属性值 | value
       - 适用于段落块 | Applies to paragraph blocks
       - 图标题/表标题自动计数 | Figure titles/table titles are counted automatically
@@ -650,11 +667,11 @@ PS: The table is generated automatically using [All Contributors · GitHub](http
  *    <workspace>/data/widgets/custom.js
  * 示例功能 | Example function:
  *    自定义背景图片序列
- *        示例中浅色背景图片的目录为 <工作空间>/data/assets/images/background-light
- *        示例中深色背景图片的目录为 <工作空间>/data/assets/images/background-dark
+ *        示例中浅色背景图片的目录为 <工作空间>/data/snippets/images/background-light
+ *        示例中深色背景图片的目录为 <工作空间>/data/snippets/images/background-dark
  *    Custom background image list
- *        The directory of the light background image in the example is <workspace>/data/assets/images/background-light
- *        The directory of the dark background image in the example is <workspace>/data/assets/images/background-dark
+ *        The directory of the light background image in the example is <workspace>/data/snippets/images/background-light
+ *        The directory of the dark background image in the example is <workspace>/data/snippets/images/background-dark
  */
 
 export const config = {
@@ -664,20 +681,34 @@ export const config = {
                 custom: {
                     random: false,
                     default: true,
-                    light: [
-                        '/assets/images/background-light/background-1.png',
-                        '/assets/images/background-light/background-2.png',
-                        '/assets/images/background-light/background-3.png',
-                        '/assets/images/background-light/background-4.png',
-                        '/assets/images/background-light/background-5.png',
-                    ],
-                    dark: [
-                        '/assets/images/background-dark/background-1.png',
-                        '/assets/images/background-dark/background-2.png',
-                        '/assets/images/background-dark/background-3.png',
-                        '/assets/images/background-dark/background-4.png',
-                        '/assets/images/background-dark/background-5.png',
-                    ],
+                    landscape: { // 横屏背景图片 | Landscape background image
+                      light: [
+                          '/snippets/images/background-light/landscape-background-1.png',
+                          '/snippets/images/background-light/landscape-background-2.png',
+                          '/snippets/images/background-light/landscape-background-3.png',
+                          '/snippets/images/background-light/landscape-background-4.png',
+                      ],
+                      dark: [
+                          '/snippets/images/background-dark/landscape-background-1.png',
+                          '/snippets/images/background-dark/landscape-background-2.png',
+                          '/snippets/images/background-dark/landscape-background-3.png',
+                          '/snippets/images/background-dark/landscape-background-4.png',
+                      ],
+                    },
+                    portrait: { // 竖屏背景图片 | Portrait background image
+                      light: [
+                          '/snippets/images/background-light/portrait-background-1.png',
+                          '/snippets/images/background-light/portrait-background-2.png',
+                          '/snippets/images/background-light/portrait-background-3.png',
+                          '/snippets/images/background-light/portrait-background-4.png',
+                      ],
+                      dark: [
+                          '/snippets/images/background-dark/portrait-background-1.png',
+                          '/snippets/images/background-dark/portrait-background-2.png',
+                          '/snippets/images/background-dark/portrait-background-3.png',
+                          '/snippets/images/background-dark/portrait-background-4.png',
+                      ],
+                    },
                 },
             },
         },

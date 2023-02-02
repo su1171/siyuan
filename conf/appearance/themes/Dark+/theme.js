@@ -208,8 +208,10 @@ window.theme.orientation = () => {
  * @return {string} 'app' 或 'desktop' 或 'mobile'
  */
 window.theme.clientMode = (() => {
-    let url = new URL(window.location.href);
+    const url = new URL(window.location.href);
     switch (true) {
+        case url.pathname.startsWith('/stage/build/app/window.html'):
+            return 'window';
         case url.pathname.startsWith('/stage/build/app'):
             return 'app';
         case url.pathname.startsWith('/stage/build/desktop'):
@@ -298,8 +300,17 @@ if (window.siyuan.config.appearance[window.siyuan.config.appearance.mode ? "them
     );
 }
 
+/* 调整窗口控件位置 */
+if (window.theme.clientMode === "window") {
+    const toolbar__window = document.querySelector("body > .toolbar__window");
+    const layouts = document.getElementById("layouts")?.parentElement;
+    if (toolbar__window && layouts) {
+        document.body.insertBefore(toolbar__window, layouts);
+    }
+}
+
 /* 加载 HTML 块中使用的小工具 */
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/html.js"), "text/javascript", undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/html.js"), undefined, true);
 
 /* 加载主题功能 */
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/module/background.js"), undefined, true);
@@ -326,4 +337,5 @@ window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/app/c
 // window.theme.loadScript(window.theme.addURLParam("/widgets/custom.js"));
 
 /* 加载测试模块 */
+// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/test/worker.js"), undefined, true);
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Dark+/script/test/listener.js"), undefined, true);

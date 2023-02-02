@@ -1,0 +1,459 @@
+{
+	"ID": "20230130094011-kg55gwo",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20230130094011-kg55gwo",
+		"title": "Git  ",
+		"updated": "20230130105955"
+	},
+	"Children": [
+		{
+			"ID": "20230130102116-owwzomp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230130102116-owwzomp"
+			}
+		},
+		{
+			"ID": "20230130103657-j81xpvo",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20230130103657-j81xpvo",
+				"updated": "20230130105403"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20230130103648-dwsybpn",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20230130103648-dwsybpn",
+						"updated": "20230130105403"
+					},
+					"Children": [
+						{
+							"ID": "20230130103658-b89rdhu",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20230130103658-b89rdhu",
+								"updated": "20230130105403"
+							},
+							"Children": [
+								{
+									"ID": "20230130103658-veews0k",
+									"Type": "NodeHeading",
+									"HeadingLevel": 2,
+									"Properties": {
+										"id": "20230130103658-veews0k",
+										"updated": "20230130103714"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "git 常用命令"
+										}
+									]
+								},
+								{
+									"ID": "20230130103714-egfjimg",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20230130103714-egfjimg",
+										"updated": "20230130105403"
+									},
+									"Children": [
+										{
+											"ID": "20230130103717-notlmj3",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130103717-notlmj3",
+												"updated": "20230130103717"
+											},
+											"Children": [
+												{
+													"ID": "20230130103717-s3zc9cv",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130103717-s3zc9cv",
+														"updated": "20230130103816"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git config --global user.name  用户名\t\t\t// 设置用户签名"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130103816-4gmaiqw",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130103816-4gmaiqw"
+											},
+											"Children": [
+												{
+													"ID": "20230130103816-oft5gab",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130103816-oft5gab",
+														"updated": "20230130103845"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git config --global user.email  邮箱\t\t\t\t// 设置用户签名"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130103852-zcgw0s3",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130103852-zcgw0s3"
+											},
+											"Children": [
+												{
+													"ID": "20230130103852-yn3fb9z",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130103852-yn3fb9z",
+														"updated": "20230130103911"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git init\t\t\t\t\t\t\t\t\t// 初始化本地库"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130103912-xh5sdu7",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130103912-xh5sdu7"
+											},
+											"Children": [
+												{
+													"ID": "20230130103912-3tic476",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130103912-3tic476",
+														"updated": "20230130103932"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git status \t\t\t\t\t\t\t\t// 查看本地库状态"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130103933-dk05eyr",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130103933-dk05eyr"
+											},
+											"Children": [
+												{
+													"ID": "20230130103933-94924g4",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130103933-94924g4",
+														"updated": "20230130103956"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git add 文件名\t\t\t\t\t\t\t\t// 添加到暂存区"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130103956-7n83iwf",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130103956-7n83iwf"
+											},
+											"Children": [
+												{
+													"ID": "20230130103956-kpg5pjj",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130103956-kpg5pjj",
+														"updated": "20230130104032"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git commit -m \"日志信息\" 文件名\t\t\t\t// 提交到本地库"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130104032-9acmi9u",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130104032-9acmi9u"
+											},
+											"Children": [
+												{
+													"ID": "20230130104032-gzmxh0h",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130104032-gzmxh0h",
+														"updated": "20230130104059"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git reflog \t\t\t\t\t\t\t\t// 查看历史记录"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130104059-xzokwct",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130104059-xzokwct"
+											},
+											"Children": [
+												{
+													"ID": "20230130104059-16u830d",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130104059-16u830d",
+														"updated": "20230130104126"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git reset --hard 版本号\t\t\t\t\t\t// 版本穿梭"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20230130104930-w0jxiym",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130104930-w0jxiym",
+												"updated": "20230130105403"
+											},
+											"Children": [
+												{
+													"ID": "20230130104930-ero81t2",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20230130104930-ero81t2",
+														"updated": "20230130105403"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "git status \t\t\t\t\t\t\t\t// 查看当前状态 "
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230130103648-qhsevu2",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20230130103648-qhsevu2",
+						"updated": "20230130103657"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20230130104133-pdq29s6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230130104133-pdq29s6"
+			}
+		},
+		{
+			"ID": "20230130105908-ivrfa8h",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20230130105908-ivrfa8h",
+				"updated": "20230130105955"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20230130105838-t6rxqn8",
+					"Type": "NodeList",
+					"ListData": {},
+					"Properties": {
+						"id": "20230130105838-t6rxqn8",
+						"updated": "20230130105955"
+					},
+					"Children": [
+						{
+							"ID": "20230130105910-bnvaqyk",
+							"Type": "NodeListItem",
+							"ListData": {
+								"BulletChar": 42,
+								"Marker": "Kg=="
+							},
+							"Properties": {
+								"id": "20230130105910-bnvaqyk",
+								"updated": "20230130105955"
+							},
+							"Children": [
+								{
+									"ID": "20230130105910-72x320z",
+									"Type": "NodeHeading",
+									"HeadingLevel": 2,
+									"Properties": {
+										"id": "20230130105910-72x320z",
+										"updated": "20230130105942"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "git常用操作"
+										}
+									]
+								},
+								{
+									"ID": "20230130105943-nt9aak6",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20230130105943-nt9aak6",
+										"updated": "20230130105955"
+									},
+									"Children": [
+										{
+											"ID": "20230130105946-gger3kw",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20230130105946-gger3kw",
+												"updated": "20230130105955"
+											},
+											"Children": [
+												{
+													"ID": "20230130105946-wudiwax",
+													"Type": "NodeHeading",
+													"HeadingLevel": 3,
+													"Properties": {
+														"id": "20230130105946-wudiwax",
+														"updated": "20230130105955"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230130105838-um7cjlz",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20230130105838-um7cjlz",
+						"updated": "20230130105908"
+					}
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20230130105838-wy8z4gp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230130105838-wy8z4gp"
+			}
+		}
+	]
+}

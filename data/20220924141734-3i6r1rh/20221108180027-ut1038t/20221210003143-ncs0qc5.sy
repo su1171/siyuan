@@ -4,9 +4,9 @@
 	"Type": "NodeDocument",
 	"Properties": {
 		"id": "20221210003143-ncs0qc5",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221210003143-jp7w2u9\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221210022232-msd71pp\u0026quot;,\u0026quot;scrollTop\u0026quot;:0,\u0026quot;focusId\u0026quot;:\u0026quot;20221210022230-2d9y2xo\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221210003143-jp7w2u9\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20230202112000-a4o1p12\u0026quot;,\u0026quot;scrollTop\u0026quot;:202,\u0026quot;focusId\u0026quot;:\u0026quot;20230202112000-a4o1p12\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
 		"title": "lnmp与lnmt架构",
-		"updated": "20221213000615"
+		"updated": "20230202112945"
 	},
 	"Children": [
 		{
@@ -112,7 +112,7 @@
 														"Num": 1
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210003218-kbynx0f",
 														"updated": "20221210003218"
 													},
@@ -170,7 +170,7 @@
 														"Num": 2
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210003345-2g4hfti"
 													},
 													"Children": [
@@ -227,7 +227,7 @@
 														"Num": 3
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210005355-x9h0hzg",
 														"updated": "20221210005623"
 													},
@@ -287,7 +287,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"fold": "1",
+										"fold": "0",
 										"id": "20221210004912-qdyxk11",
 										"updated": "20221210022223"
 									},
@@ -324,7 +324,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210004946-2h647zu",
 														"updated": "20221210004946"
 													},
@@ -536,7 +536,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210010518-c19klue"
 													},
 													"Children": [
@@ -803,7 +803,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210012150-dv5i0ul"
 													},
 													"Children": [
@@ -843,7 +843,7 @@
 																		"Num": 1
 																	},
 																	"Properties": {
-																		"fold": "1",
+																		"fold": "0",
 																		"id": "20221210012207-yv47tfe",
 																		"updated": "20221210012207"
 																	},
@@ -1103,7 +1103,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210014427-ei2acew"
 													},
 													"Children": [
@@ -1228,7 +1228,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210022100-9y8090r",
 														"updated": "20221210022122"
 													},
@@ -1348,7 +1348,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"fold": "1",
+										"fold": "0",
 										"id": "20221210022259-gvlovx0",
 										"updated": "20221210022259"
 									},
@@ -1565,7 +1565,7 @@
 										"Marker": "Kg=="
 									},
 									"Properties": {
-										"fold": "1",
+										"fold": "0",
 										"id": "20221210022259-nu6tz05",
 										"updated": "20221210193601"
 									},
@@ -1602,7 +1602,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210022259-2ibgon8",
 														"updated": "20221210022259"
 													},
@@ -1816,7 +1816,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210022259-apaia71",
 														"updated": "20221210193601"
 													},
@@ -2087,7 +2087,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210022259-mj3h9bm",
 														"updated": "20221210022259"
 													},
@@ -2355,7 +2355,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210022259-hlo2vbe",
 														"updated": "20221210022259"
 													},
@@ -2433,7 +2433,7 @@
 														"Marker": "Kg=="
 													},
 													"Properties": {
-														"fold": "1",
+														"fold": "0",
 														"id": "20221210022259-x7q8u0d",
 														"updated": "20221210082023"
 													},
@@ -2586,6 +2586,334 @@
 			"Type": "NodeParagraph",
 			"Properties": {
 				"id": "20221210065622-il6rmfm"
+			}
+		},
+		{
+			"ID": "20230202111653-empcbwn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230202111653-empcbwn"
+			}
+		},
+		{
+			"ID": "20230202111653-peds2hw",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20230202111653-peds2hw",
+				"updated": "20230202112945"
+			},
+			"Children": [
+				{
+					"ID": "20230202111654-b1xwp3k",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20230202111654-b1xwp3k",
+						"updated": "20230202112945"
+					},
+					"Children": [
+						{
+							"ID": "20230202111654-kzah073",
+							"Type": "NodeHeading",
+							"HeadingLevel": 1,
+							"Properties": {
+								"id": "20230202111654-kzah073",
+								"updated": "20230202111702"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "问题"
+								}
+							]
+						},
+						{
+							"ID": "20230202111702-pufkrq5",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20230202111702-pufkrq5",
+								"updated": "20230202112945"
+							},
+							"Children": [
+								{
+									"ID": "20230202111704-sfcz0f7",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20230202111704-sfcz0f7",
+										"updated": "20230202111704"
+									},
+									"Children": [
+										{
+											"ID": "20230202111704-gk5awsq",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20230202111704-gk5awsq",
+												"updated": "20230202111723"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "lnmp的访问流程？"
+												}
+											]
+										},
+										{
+											"ID": "20230202111815-2wo6tn4",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202111815-2wo6tn4",
+												"updated": "20230202111923"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "第一种情况：访问静态界面"
+												}
+											]
+										},
+										{
+											"ID": "20230202111839-agbctnm",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202111839-agbctnm",
+												"updated": "20230202111840"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "用户通过浏览器访问网站 nginx服务直接进行处理响应静态页面"
+												}
+											]
+										},
+										{
+											"ID": "20230202111843-eafnfax",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202111843-eafnfax",
+												"updated": "20230202111925"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "第二种情况：访问动态界面"
+												}
+											]
+										},
+										{
+											"ID": "20230202111912-2d9xn4o",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202111912-2d9xn4o",
+												"updated": "20230202111937"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "当用户通过浏览器进行访问动态页面时 nginx服务收到请求 发现是动态页面请求无法处理时  会通过fastcgi_pass指令调用FastCGI接口 发送出php服务  php_fpm收到会查看是否能够处理这个请求(是否要调用数据库数据)."
+												}
+											]
+										},
+										{
+											"ID": "20230202111912-acathby",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202111912-acathby",
+												"updated": "20230202111912"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "(1) 能够处理时 会将处理后的信息通过nginx显示给用户"
+												}
+											]
+										},
+										{
+											"ID": "20230202111912-z3xzoln",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202111912-z3xzoln",
+												"updated": "20230202111912"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "(2) 不能响应时 这时会由wrapper线程通过PHP解析器处理 (转换成数据库能理解的指令) 传输给数据库  数据库处理后在发出响应  php --\u003e nginx --\u003e  用户"
+												}
+											]
+										},
+										{
+											"ID": "20230202112012-rkx74mw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202112012-rkx74mw",
+												"updated": "20230202112013"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeImage",
+													"Data": "span",
+													"Children": [
+														{
+															"Type": "NodeBang"
+														},
+														{
+															"Type": "NodeOpenBracket"
+														},
+														{
+															"Type": "NodeLinkText",
+															"Data": "image"
+														},
+														{
+															"Type": "NodeCloseBracket"
+														},
+														{
+															"Type": "NodeOpenParen"
+														},
+														{
+															"Type": "NodeLinkDest",
+															"Data": "assets/image-20230202112013-sbit8kt.png"
+														},
+														{
+															"Type": "NodeCloseParen"
+														}
+													]
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										},
+										{
+											"ID": "20230202112039-24f66oh",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202112039-24f66oh",
+												"updated": "20230202112039"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "Nginx不支持对外部程序的直接调用或者解析，所有的外部程序（包括PHP）必须通过FastCGI接口来调用。\n FastCGI接口在Linux下是socket（这个socket可以是文件socket，也可以是ip socket）。\n 为了调用CGI程序，还需要一个FastCGI的wrapper，这个wrapper绑定在某个固定socket上，如端口或者文件socket。\n 当Nginx将CGI请求发送给这个socket的时候，通过FastCGI接口，wrapper接收到请求，然后派生出一个新的线程，这个线程调用解释器或者外部程序处理脚本并读取返回数据；接着，wrapper再将返回的数据通过FastCGI接口，沿着固定的socket传递给Nginx；最后，Nginx将返回的数据发送给客户端。"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230202112927-4uobajn",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"fold": "1",
+										"id": "20230202112927-4uobajn",
+										"updated": "20230202112945"
+									},
+									"Children": [
+										{
+											"ID": "20230202112927-90l1qmb",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20230202112927-90l1qmb",
+												"updated": "20230202112945"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "什么是fastCGI？"
+												}
+											]
+										},
+										{
+											"ID": "20230202112948-n31dea6",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202112948-n31dea6",
+												"updated": "20230202112948"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "FastCGI是一个可伸缩的、高速的在HTTP服务器的动态脚本语言间通信的接口(在Linux下，FastCGI就是socket，这个socket可以是文件socket或IPsocket)。"
+												}
+											]
+										},
+										{
+											"ID": "20230202112948-3v1lz7r",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202112948-3v1lz7r",
+												"updated": "20230202112948"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "FastCGI采用C/S架构，它可以将HTTP服务器和脚本服务器分开，同时还可以在脚本解析服务器上启动一个或多个服务器来解析守护进程。"
+												}
+											]
+										},
+										{
+											"ID": "20230202112948-om44iv5",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202112948-om44iv5",
+												"updated": "20230202112948"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "当HTTP服务器遇到动态程序的时候，可以将其直接交付给FastCGI进程来执行，然后将得到的结果返回给浏览器。这种方式可以让HTTP服务器专一的处理静态的请求。"
+												}
+											]
+										},
+										{
+											"ID": "20230202112948-ifjowih",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230202112948-ifjowih",
+												"updated": "20230202112948"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "这会很高的提高整个应用系统的性能。"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230202112000-a4o1p12",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230202112000-a4o1p12"
 			}
 		}
 	]

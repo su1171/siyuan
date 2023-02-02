@@ -1,0 +1,1887 @@
+{
+	"ID": "20221219001327-hfgkxdw",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"id": "20221219001327-hfgkxdw",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221219001334-lnasg5v\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221219200455-4npka1l\u0026quot;,\u0026quot;scrollTop\u0026quot;:1193,\u0026quot;focusId\u0026quot;:\u0026quot;20221219212629-m2d20gj\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"title": "lvs",
+		"updated": "20221219234537"
+	},
+	"Children": [
+		{
+			"ID": "20221219001334-lnasg5v",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221219001334-lnasg5v"
+			}
+		},
+		{
+			"ID": "20221219002622-3fyr86p",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221219002622-3fyr86p",
+				"updated": "20221219003832"
+			},
+			"Children": [
+				{
+					"ID": "20221219002637-0tcolmw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221219002637-0tcolmw",
+						"updated": "20221219003832"
+					},
+					"Children": [
+						{
+							"ID": "20221219002637-gtyvkd3",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221219002637-gtyvkd3",
+								"updated": "20221219003159"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "常见负载均衡对比"
+								}
+							]
+						},
+						{
+							"ID": "20221219003134-ibsehyj",
+							"Type": "NodeTable",
+							"TableAligns": [
+								0,
+								0,
+								0
+							],
+							"Properties": {
+								"colgroup": "||",
+								"id": "20221219003134-ibsehyj",
+								"style": "text-align: center;",
+								"updated": "20221219003547"
+							},
+							"Children": [
+								{
+									"Type": "NodeTableHead",
+									"Data": "thead",
+									"Children": [
+										{
+											"Type": "NodeTableRow",
+											"Data": "tr",
+											"Children": [
+												{
+													"Type": "NodeTableCell",
+													"Data": "th",
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "软件"
+														}
+													]
+												},
+												{
+													"Type": "NodeTableCell",
+													"Data": "th",
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "优点"
+														}
+													]
+												},
+												{
+													"Type": "NodeTableCell",
+													"Data": "th",
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "缺点"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableRow",
+									"Data": "tr",
+									"Children": [
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "硬件，F5"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "性能好，有技术支持"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "价格高（10万+）"
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableRow",
+									"Data": "tr",
+									"Children": [
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "lvs"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "工作在四层，效率高，对数据做转发，负载均衡"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "部署维护成本较高"
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableRow",
+									"Data": "tr",
+									"Children": [
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "nginx"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "使用简单，支持4层（1.9版本后）和7层 反向代理 ，"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "处理数据是代理模式，并发较大时性能不好（1w以上）"
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableRow",
+									"Data": "tr",
+									"Children": [
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "haproxy"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "相对复杂，支持4层和7层反向代理"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "td"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221219003235-l4vc00w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221219003235-l4vc00w",
+								"updated": "20221219003750"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "4层负载均衡"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "：传输层  最多识别到端口"
+								}
+							]
+						},
+						{
+							"ID": "20221219003653-jvvr5ia",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221219003653-jvvr5ia",
+								"updated": "20221219003832"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "7层负载均衡"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "：应用层  识别到数据       url uri  http https"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221219003753-gk4cl2u",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221219003753-gk4cl2u",
+				"updated": "20221219005010"
+			},
+			"Children": [
+				{
+					"ID": "20221219004730-o4pcby9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221219004730-o4pcby9",
+						"updated": "20221219005010"
+					},
+					"Children": [
+						{
+							"ID": "20221219004730-ogwck0e",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221219004730-ogwck0e",
+								"updated": "20221219004738"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "arp协议"
+								}
+							]
+						},
+						{
+							"ID": "20221219004738-ka84zpa",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221219004738-ka84zpa",
+								"updated": "20221219005010"
+							},
+							"Children": [
+								{
+									"ID": "20221219004740-dmpk30e",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219004740-dmpk30e",
+										"updated": "20221219004740"
+									},
+									"Children": [
+										{
+											"ID": "20221219004740-d0umcbp",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219004740-d0umcbp",
+												"updated": "20221219004801"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "DNS 域名解析  ，将域名解析为ip地址"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221219004803-bt44aio",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219004803-bt44aio",
+										"updated": "20221219005010"
+									},
+									"Children": [
+										{
+											"ID": "20221219004803-ucvpm9d",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219004803-ucvpm9d",
+												"updated": "20221219005010"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "arp协议   "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "地址解析协议"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "  "
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "将IP解析为mac地址"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "  三层协议，工作在两层"
+												}
+											]
+										},
+										{
+											"ID": "20221219004859-n7l4eqo",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219004859-n7l4eqo",
+												"updated": "20221219004917"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "ip（网络层 3层）"
+												}
+											]
+										},
+										{
+											"ID": "20221219004918-zluscye",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219004918-zluscye",
+												"updated": "20221219193827"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "mac（2层） "
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221219200215-5814meq",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219200215-5814meq"
+									},
+									"Children": [
+										{
+											"ID": "20221219200215-gz1ki8d",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219200215-gz1ki8d",
+												"updated": "20221219200231"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "arp欺骗"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221219200449-f5efsis",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221219200449-f5efsis"
+			}
+		},
+		{
+			"ID": "20221219200455-4npka1l",
+			"Type": "NodeList",
+			"ListData": {},
+			"Properties": {
+				"id": "20221219200455-4npka1l",
+				"updated": "20221219234537"
+			},
+			"Children": [
+				{
+					"ID": "20221219200456-5jbr1af",
+					"Type": "NodeListItem",
+					"ListData": {
+						"BulletChar": 42,
+						"Marker": "Kg=="
+					},
+					"Properties": {
+						"id": "20221219200456-5jbr1af",
+						"updated": "20221219234537"
+					},
+					"Children": [
+						{
+							"ID": "20221219200456-xmlj053",
+							"Type": "NodeHeading",
+							"HeadingLevel": 2,
+							"Properties": {
+								"id": "20221219200456-xmlj053",
+								"updated": "20221219200501"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "lvs"
+								}
+							]
+						},
+						{
+							"ID": "20221219200501-qbqa8q4",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221219200501-qbqa8q4",
+								"updated": "20221219232039"
+							},
+							"Children": [
+								{
+									"ID": "20221219200504-jde8e2c",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219200504-jde8e2c",
+										"updated": "20221219200504"
+									},
+									"Children": [
+										{
+											"ID": "20221219200504-g0a98dd",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219200504-g0a98dd",
+												"updated": "20221219200520"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "内核模块\t\tip_vs"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221219200521-7pk4vpr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219200521-7pk4vpr"
+									},
+									"Children": [
+										{
+											"ID": "20221219200521-daj0a4h",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219200521-daj0a4h",
+												"updated": "20221219200550"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "管理命令\t\tipvsadm  或者 keepalived 控制"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221219200659-2cnthxj",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219200659-2cnthxj",
+										"updated": "20221219213218"
+									},
+									"Children": [
+										{
+											"ID": "20221219200659-kacpazv",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221219200659-kacpazv",
+												"updated": "20221219212007"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "lvs工作模式"
+												}
+											]
+										},
+										{
+											"ID": "20221219200707-f4vpugq",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221219200707-f4vpugq",
+												"updated": "20221219213218"
+											},
+											"Children": [
+												{
+													"ID": "20221219210732-3ef85q5",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "0",
+														"id": "20221219210732-3ef85q5"
+													},
+													"Children": [
+														{
+															"ID": "20221219210732-zacywzr",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219210732-zacywzr",
+																"updated": "20221219212010"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "图示"
+																}
+															]
+														},
+														{
+															"ID": "20221219210736-rwvmx3b",
+															"Type": "NodeIFrame",
+															"Data": "\u003ciframe sandbox=\"allow-forms allow-presentation allow-same-origin allow-scripts allow-modals\" src=\"https://www.jianguoyun.com/p/DW0D8Z8Qkr6GCxj_7uwEIAA\" data-src=\"\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"width: 955px; height: 502px;\"\u003e\u003c/iframe\u003e",
+															"Properties": {
+																"id": "20221219210736-rwvmx3b",
+																"updated": "20221219210739"
+															}
+														}
+													]
+												},
+												{
+													"ID": "20221219202341-4qcn3kr",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219202341-4qcn3kr",
+														"updated": "20221219213218"
+													},
+													"Children": [
+														{
+															"ID": "20221219202341-guqgk2p",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219202341-guqgk2p",
+																"updated": "20221219212014"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "dr模式（直接路由模式）"
+																}
+															]
+														},
+														{
+															"ID": "20221219203457-mvw7k6v",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219203457-mvw7k6v",
+																"updated": "20221219203503"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "a",
+																	"TextMarkAHref": "https://www.bilibili.com/video/BV1nq4y1G7Ug/?p=6\u0026spm_id_from=pageDriver\u0026vd_source=4746cd758b173b9102a13a9f95be0900",
+																	"TextMarkTextContent": "dr模式解析"
+																}
+															]
+														},
+														{
+															"ID": "20221219202420-p7kmfxl",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219202420-p7kmfxl",
+																"updated": "20221219213500"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "lvs修改数据包中目标IP的mac地址 "
+																}
+															]
+														},
+														{
+															"ID": "20221219203517-xxfuhe3",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219203517-xxfuhe3",
+																"updated": "20221219212028"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "特点"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "： 在dr模式中web"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "服务"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "器要有公网"
+																}
+															]
+														},
+														{
+															"ID": "20221219213535-fev8vxg",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219213535-fev8vxg",
+																"updated": "20221219213602"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t\tlvs和web服务器需要在同一个局域网"
+																}
+															]
+														},
+														{
+															"ID": "20221219213612-rgkqpng",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219213612-rgkqpng",
+																"updated": "20221219213639"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t\t用户请求的什么端口，web服务器就要开放什么端口"
+																}
+															]
+														},
+														{
+															"ID": "20221219212022-9q6trcu",
+															"Type": "NodeList",
+															"ListData": {},
+															"Properties": {
+																"id": "20221219212022-9q6trcu",
+																"updated": "20221219213218"
+															},
+															"Children": [
+																{
+																	"ID": "20221219212108-56v4o6i",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221219212108-56v4o6i",
+																		"updated": "20221219212108"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221219212108-huyp6kt",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221219212108-huyp6kt",
+																				"updated": "20221219212108"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "为什么web"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "器需要lo网卡绑定vip？"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221219212111-7t1twb5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221219212111-7t1twb5",
+																				"updated": "20221219212435"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "web"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "器接收到的数据包的目标mac是自己，目标ip却是lvs的vip地址，不绑定的情况下，数据解包到ip发现目标ip不是自己，将丢弃这条数据。\n若直接绑定vip，则会造成局域网内ip冲突，所以需要用回环网卡绑定vip。"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"ID": "20221219212629-qlm90gb",
+																	"Type": "NodeListItem",
+																	"ListData": {
+																		"BulletChar": 42,
+																		"Marker": "Kg=="
+																	},
+																	"Properties": {
+																		"id": "20221219212629-qlm90gb",
+																		"updated": "20221219213218"
+																	},
+																	"Children": [
+																		{
+																			"ID": "20221219212629-m2d20gj",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221219212629-m2d20gj",
+																				"updated": "20221219212923"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "为什么要抑制web"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "器的arp解析？"
+																				}
+																			]
+																		},
+																		{
+																			"ID": "20221219212639-t0drue5",
+																			"Type": "NodeParagraph",
+																			"Properties": {
+																				"id": "20221219212639-t0drue5",
+																				"updated": "20221219213218"
+																			},
+																			"Children": [
+																				{
+																					"Type": "NodeText",
+																					"Data": "如果不抑制web"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "器的arp解析，当路由器进行VIP的arp广播时，会有多台机器（包括lvs，web"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "服务"
+																				},
+																				{
+																					"Type": "NodeText",
+																					"Data": "器）响应，导致arp混淆。"
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219202343-2gspl9v",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219202343-2gspl9v",
+														"updated": "20221219212018"
+													},
+													"Children": [
+														{
+															"ID": "20221219202343-7t85du7",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219202343-7t85du7",
+																"updated": "20221219213345"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "nat模式"
+																}
+															]
+														},
+														{
+															"ID": "20221219202554-lqkywpc",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219202554-lqkywpc",
+																"updated": "20221219213649"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "网络地址转换模式"
+																}
+															]
+														},
+														{
+															"ID": "20221219202733-5j9meey",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219202733-5j9meey",
+																"updated": "20221219202848"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "数据包进入"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "服务"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "器时，lvs将数据包的目标ip修改"
+																}
+															]
+														},
+														{
+															"ID": "20221219202856-a8dxtv8",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219202856-a8dxtv8",
+																"updated": "20221219202937"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "数据包离开"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "服务"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "器时，lvs将数据包的源ip修改"
+																}
+															]
+														},
+														{
+															"ID": "20221219213651-ani8rkk",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219213651-ani8rkk",
+																"updated": "20221219213700"
+															},
+															"Children": [
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "strong",
+																	"TextMarkTextContent": "特点："
+																}
+															]
+														},
+														{
+															"ID": "20221219213702-woph8gp",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219213702-woph8gp",
+																"updated": "20221219213722"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\tlvs与web服务器可以不在同一局域网"
+																}
+															]
+														},
+														{
+															"ID": "20221219213723-jy7rayt",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219213723-jy7rayt",
+																"updated": "20221219213743"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t流量出入都需要经过lvs，效率不高"
+																}
+															]
+														},
+														{
+															"ID": "20221219213744-814pc8f",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219213744-814pc8f",
+																"updated": "20221219213753"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "\t端口可以不用"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219202346-u5sn8co",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"id": "20221219202346-u5sn8co"
+													},
+													"Children": [
+														{
+															"ID": "20221219202346-f1q65wp",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219202346-f1q65wp",
+																"updated": "20221219213348"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "tun模式"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221219222811-9v0igxy",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219222811-9v0igxy",
+										"updated": "20221219232039"
+									},
+									"Children": [
+										{
+											"ID": "20221219222811-9jc2iyq",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221219222811-9jc2iyq",
+												"updated": "20221219222829"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "ipvsadm命令"
+												}
+											]
+										},
+										{
+											"ID": "20221219222832-hf4eqq6",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219222832-hf4eqq6",
+												"updated": "20221219222840"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "ipvsadm命令是LVS在应用层的管理命令，我们可以通过这个命令去管理LVS的配置。\nipvsadm是一个工具，同时它也是一条命令，用于管理LVS的策略规则。"
+												}
+											]
+										},
+										{
+											"ID": "20221219222918-ba4yzae",
+											"Type": "NodeList",
+											"ListData": {},
+											"Properties": {
+												"id": "20221219222918-ba4yzae",
+												"updated": "20221219232039"
+											},
+											"Children": [
+												{
+													"ID": "20221219222923-yf7t70w",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219222923-yf7t70w",
+														"updated": "20221219222923"
+													},
+													"Children": [
+														{
+															"ID": "20221219222923-98qbrmk",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219222923-98qbrmk",
+																"updated": "20221219224200"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "语法"
+																}
+															]
+														},
+														{
+															"ID": "20221219222953-fd4wiaj",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219222953-fd4wiaj",
+																"updated": "20221219223001"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": " ipvsadm -A|E -t|u|f \u003c集群服务地址\u003e [-s \u003c调度算法\u003e] [-p \u003c超时时间\u003e] [-M \u003c掩码\u003e] [-b \u003c标志\u003e]\n ipvsadm -D -t|u|f \u003c集群服务地址\u003e\n ipvsadm -C\n ipvsadm -R\n ipvsadm -S [-n]\n ipvsadm -a|e -t|u|f \u003c集群服务地址\u003e -r \u003c真实服务器地址\u003e [选项]\n ipvsadm -d -t|u|f \u003c集群服务地址\u003e -r \u003c真实服务器地址\u003e\n ipvsadm -L|l [options]\n ipvsadm -Z [-t|u|f \u003c集群服务地址\u003e]\n ipvsadm --set \u003c超时时间\u003e\n ipvsadm --start-daemon \u003c主或备\u003e [--mcast-interface \u003c组播接口\u003e] [--syncid \u003cSID\u003e]\n ipvsadm --stop-daemon \u003c主或备\u003e\n ipvsadm -h\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219223009-0o319n3",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219223009-0o319n3"
+													},
+													"Children": [
+														{
+															"ID": "20221219223009-xu0ddmy",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219223009-xu0ddmy",
+																"updated": "20221219224202"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "子命令"
+																}
+															]
+														},
+														{
+															"ID": "20221219223014-yv088sa",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219223014-yv088sa",
+																"updated": "20221219223023"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "  --add-service     -A        添加一个集群服务，需要使用选项\n  --edit-service    -E        编辑一个集群服务，需要使用选项\n  --delete-service  -D        删除指定集群服务，需要使用选项\n  --clear           -C        删除所有集群服务，包括真实服务器转发策略规则\n  --restore         -R        从标准输入中恢复策略规则\n  --save            -S        保存策略规则到标准输出\n  --add-server      -a        添加一个真实服务器，需要使用选项\n  --edit-server     -e        编辑一个真实服务器，需要使用选项\n  --delete-server   -d        删除一个真实服务器，需要使用选项\n  --list            -L|-l     查看集群服务列表，包括真实服务器转发策略规则\n  --zero            -Z        计数器清零。清除连接数、包转发等数量统计信息\n--set \u003c超时时间\u003e            设置TCP、TCPFIN（TCP关闭连接状态）、UDP连接超时时间，用于\n                             会话保持。一般情况下TCP和UDP超时时间保持默认就好，TCPFIN\n                             可以根据情况设定，指定它则用户请求连接关闭，该连接则会变\n                             为非活跃（InActive）空闲等待状态，在空闲等待时间内，如果\n                             来自同一源IP的请求，则还会转发给后端的同一台真实服务器上\n --start-daemon              开启连接同步守护进程。在选项后面指定自己是Master（主）还\n                             是backup（备），主负载调度器会同步所有策略及连接状态到备\n                             负载调度器，当主故障，备可以接替其工作\n --stop-daemon               停止连接同步守护进程\n --help            -h        显示帮助信息\n\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219223029-x9abxar",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219223029-x9abxar"
+													},
+													"Children": [
+														{
+															"ID": "20221219223029-aqf7ttq",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219223029-aqf7ttq",
+																"updated": "20221219224203"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "选项"
+																}
+															]
+														},
+														{
+															"ID": "20221219223036-77lzt4t",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219223036-77lzt4t",
+																"updated": "20221219223038"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "--tcp-service  -t  \u003c集群服务地址\u003e   允许集群服务使用的传输协议为TCP。\u003cIP:Port\u003e\n --udp-service  -u \u003c集群服务地址\u003e    允许集群服务使用的传输协议为UDP。\u003cIP:Port\u003e\n --fwmark-service  -f \u003c防火墙标识\u003e   使用一个整数值来防火墙标识集群服务，而不是地址、\n                                     端口和协议使用它，我们可以通过结合IPtables将多\n                                     个以调度器为目标的端口定义成一个防火墙标识，由\n                                     ipvsdam通过此项关联标识，则可以实现对一个IP多\n                                     端口调度，即实现后端服务器可以开放多个服务\n --scheduler    -s scheduler         指定集群服务使用的调度算法：rr|wrr|lc|wlc|lblc\n                                     |lblcr|dh|sh|sed|nq，默认为wlc\n --persistent   -p \u003c超时时间\u003e        开启持久化服务，开启它则表示在指定时间内，来自同\n                                     一IP的请求都会转发到后端同一台真实服务器上\n --netmask      -M \u003c网络掩码\u003e        使用网络掩码来屏蔽持久化来源IP的地址范围，默认值\n                                     为255.255.255.255，即所有来源IP请求都会享受持久\n                                     化服务\n --real-server  -r \u003c真实服务器地址\u003e  指定真实服务器的主机IP与端口\n --gatewaying   -g                   指定真实服务器转发工作模式，使用DR模式，默认\n --ipip         -i                   指定真实服务器转发工作模式，使用TUN模式\n --masquerading -m                   指定真实服务器转发工作模式，使用NAT模式\n --weight       -w \u003c权重值\u003e          指定真实服务器的权重值\n --u-threshold  -x \u003c上阀值\u003e          设置转发请求的最大上连接阀值，范围为0~65535，当\n                                     当连接数超过指定上限时，LVS则不会转发请求                                 \n --l-threshold  -y \u003c下阀值\u003e          设置转发请求的下连接阀值，范围为0~65535，当连接\n                                     数降低至指定值时，LVS则继续提供服务，默认值为0\n --mcast-interface interface         设置用于连接同步守护进程的组播接口\n --syncid sid                        设置连接同步守护进程的SID号，用于标识，范围0~255\n --connection   -c                   显示连接信息，一般与\"-l\"连用\n --timeout                           显示TCP、TCPFIN、UDP超时时间信息，一般与\"-l\"连用\n --daemon                            显示连接同步守护信息，一般与\"-l\"连用\n --stats                             显示统计信息，一般与\"-l\"连用\n --rate                              显示转发速率信息，一般与\"-l\"连用\n --exact                             显示数据包和字节计数器的确切值，扩大字符长度\n --thresholds                        显示阀值信息，一般与\"-l\"连用\n --persistent-conn                   显示持久化连接信息，一般与\"-l\"连用\n --numeric      -n                   地址和端口以数字格式显示，一般与\"-l\"连用\n --sched-flags  -b \u003c标识\u003e            设置调度算法的范围标识，用于SH算法，有两个标识：\n                                     sh-fallback，如果真实服务器不可用，则将其转发到\n                                     其他真实服务器上。\n                                     sh-port,将源地址的端口号也添加到散列键=值中\n\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219223041-9fiiktr",
+													"Type": "NodeListItem",
+													"ListData": {
+														"BulletChar": 42,
+														"Marker": "Kg=="
+													},
+													"Properties": {
+														"fold": "0",
+														"id": "20221219223041-9fiiktr",
+														"updated": "20221219232039"
+													},
+													"Children": [
+														{
+															"ID": "20221219223041-ghv1l5g",
+															"Type": "NodeHeading",
+															"HeadingLevel": 4,
+															"Properties": {
+																"id": "20221219223041-ghv1l5g",
+																"updated": "20221219224205"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "常用"
+																}
+															]
+														},
+														{
+															"ID": "20221219223325-nn468ba",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219223325-nn468ba",
+																"updated": "20221219232039"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "# 查看集群\nipvsadm -Ln\n\n# 添加一个集群服务\n# -s 指定集群服务使用的调度算法：rr(轮询)|wrr（加权轮询）|lc|wlc|lblc|lblcr|dh|sh|sed|nq，默认为wlc\nipvsadm -A -t 192.168.1.100:80 -s rr\n# 修改集群服务的调度算法\nipvsadm -E -t 192.168.1.100:80 -s wlc\n# 删除一个集群服务\nipvsadm -D -t 192.168.1.100:80\n# 删除所有集群服务\nipvsadm -C\n\n# 往集群服务中添加一个真实服务器\n#  --gatewaying   -g                   指定真实服务器转发工作模式，使用DR模式，默认\n#  --ipip         -i                   指定真实服务器转发工作模式，使用TUN模式\n#  --masquerading -m                   指定真实服务器转发工作模式，使用NAT模式\n# --weight       -w \u003c权重值\u003e          指定真实服务器的权重值\nipvsadm -a -t 192.168.1.100:80 -r 172.16.16.2:80 -m -w 1\n# 修改集群服务中的一个真实服务器\nipvsadm -e -t 192.168.1.100:80 -r 172.16.16.2:80 -m -w 2\n# 删除集群服务中的一个真实服务器\nipvsadm -d -t 192.168.1.100:80 -r 172.16.16.2:80 \n#  清空转发请求计数器\nipvsadm -Z\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221219222916-9t8rkty",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221219222916-9t8rkty",
+								"updated": "20221219234537"
+							},
+							"Children": [
+								{
+									"ID": "20221219220126-ek79okh",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221219220126-ek79okh",
+										"updated": "20221219234537"
+									},
+									"Children": [
+										{
+											"ID": "20221219220126-r6r55di",
+											"Type": "NodeHeading",
+											"HeadingLevel": 3,
+											"Properties": {
+												"id": "20221219220126-r6r55di",
+												"updated": "20221219220135"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "lvs实验"
+												}
+											]
+										},
+										{
+											"ID": "20221219220135-myvz78g",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221219220135-myvz78g",
+												"updated": "20221219220331"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "目标：使用lvs做两台web服务器的负载均衡"
+												}
+											]
+										},
+										{
+											"ID": "20221219221902-g1rwmzl",
+											"Type": "NodeTable",
+											"TableAligns": [
+												0,
+												0
+											],
+											"Properties": {
+												"colgroup": "|",
+												"id": "20221219221902-g1rwmzl",
+												"style": "text-align: center;",
+												"updated": "20221219222010"
+											},
+											"Children": [
+												{
+													"Type": "NodeTableHead",
+													"Data": "thead",
+													"Children": [
+														{
+															"Type": "NodeTableRow",
+															"Data": "tr",
+															"Children": [
+																{
+																	"Type": "NodeTableCell",
+																	"Data": "th",
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "主机"
+																		}
+																	]
+																},
+																{
+																	"Type": "NodeTableCell",
+																	"Data": "th",
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "程序"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "NodeTableRow",
+													"Data": "tr",
+													"Children": [
+														{
+															"Type": "NodeTableCell",
+															"Data": "td",
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "192.168.100.101"
+																}
+															]
+														},
+														{
+															"Type": "NodeTableCell",
+															"Data": "td",
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "lvs"
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "NodeTableRow",
+													"Data": "tr",
+													"Children": [
+														{
+															"Type": "NodeTableCell",
+															"Data": "td",
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "192.168.100.102"
+																}
+															]
+														},
+														{
+															"Type": "NodeTableCell",
+															"Data": "td",
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "nginx"
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "NodeTableRow",
+													"Data": "tr",
+													"Children": [
+														{
+															"Type": "NodeTableCell",
+															"Data": "td",
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "192.168.100.103"
+																}
+															]
+														},
+														{
+															"Type": "NodeTableCell",
+															"Data": "td",
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "nginx"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "20221219220753-imwl4tu",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221219220753-imwl4tu",
+												"updated": "20221219234537"
+											},
+											"Children": [
+												{
+													"ID": "20221219220756-ikjirem",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219220756-ikjirem",
+														"updated": "20221219220756"
+													},
+													"Children": [
+														{
+															"ID": "20221219220756-1bi6z7b",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219220756-1bi6z7b",
+																"updated": "20221219220826"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "准备两台nginx做web服务器"
+																}
+															]
+														},
+														{
+															"ID": "20221219220826-5gbj6cc",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219220826-5gbj6cc",
+																"updated": "20221219221843"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "yum -y install nginx\n# 修改默认界面为ip\n# 访问测试\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219221854-x07sb32",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219221854-x07sb32"
+													},
+													"Children": [
+														{
+															"ID": "20221219221854-o8fotdt",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219221854-o8fotdt",
+																"updated": "20221219222026"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "安装lvs"
+																}
+															]
+														},
+														{
+															"ID": "20221219222026-g8i7k2a",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219222026-g8i7k2a",
+																"updated": "20221219222608"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "modprobe ip_vs\nlsmod |grep ip_vs\nyum -y install ipvsadm\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219222614-vkxgzl6",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219222614-vkxgzl6"
+													},
+													"Children": [
+														{
+															"ID": "20221219222614-nl1gwsd",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219222614-nl1gwsd",
+																"updated": "20221219222619"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "配置lvs"
+																}
+															]
+														},
+														{
+															"ID": "20221219222619-ua68ghm",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219222619-ua68ghm",
+																"updated": "20221219224839"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "# 手动添加VIP\nip addr add 192.168.100.88/24 dev ens33\nipvsadm --clear\nipvsadm -A -t 192.168.100.88:80 -s wrr\nipvsadm -a -t 192.168.100.88:80 -r 192.168.100.102:80 -g -w 1\nipvsadm -a -t 192.168.100.88:80 -r 192.168.100.103:80 -g -w 1\nipvsadm -ln\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219224842-jy4gdw1",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "NC4=",
+														"Num": 4
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219224842-jy4gdw1"
+													},
+													"Children": [
+														{
+															"ID": "20221219224842-eoegmgz",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219224842-eoegmgz",
+																"updated": "20221219224908"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "配置web服务器lo网卡绑定vip"
+																}
+															]
+														},
+														{
+															"ID": "20221219224931-wioqlqv",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219224931-wioqlqv",
+																"updated": "20221219225451"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "cat \u003c\u003cEND \u003e/etc/sysconfig/network-scripts/ifcfg-lo:0\nDEVICE=lo:0\nIPADDR=192.168.100.88\nNETMASK=255.255.255.255\nONBOOT=yes\nNAME=lo:0\nEND\nsystemctl restart network\nip a \n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219224911-gydx17l",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "NS4=",
+														"Num": 5
+													},
+													"Properties": {
+														"fold": "1",
+														"id": "20221219224911-gydx17l"
+													},
+													"Children": [
+														{
+															"ID": "20221219224911-5af28ko",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219224911-5af28ko",
+																"updated": "20221219224928"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "抑制web服务器arp解析"
+																}
+															]
+														},
+														{
+															"ID": "20221219225307-s2td6bq",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221219225307-s2td6bq",
+																"updated": "20221219225631"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "YmFzaA=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "cat \u003e\u003e/etc/sysctl.conf \u003c\u003cEND\nnet.ipv4.conf.lo.arp_ignore = 1\nnet.ipv4.conf.lo.arp_announce = 2\nnet.ipv4.conf.all.arp_ignore = 1\nnet.ipv4.conf.all.arp_announce = 2\nEND\n[root@real01 ~]# sysctl -p\n\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221219234529-r491a0u",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Ni4=",
+														"Num": 6
+													},
+													"Properties": {
+														"id": "20221219234529-r491a0u",
+														"updated": "20221219234537"
+													},
+													"Children": [
+														{
+															"ID": "20221219234529-ex9i5xd",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221219234529-ex9i5xd",
+																"updated": "20221219234537"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "访问vip测试"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221219225306-fpi8p3s",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221219225306-fpi8p3s"
+			}
+		}
+	]
+}

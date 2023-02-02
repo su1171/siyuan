@@ -5,9 +5,9 @@
 	"Properties": {
 		"custom-location": "20220926205607-fog9eh6",
 		"id": "20220924145441-ruxsjlb",
-		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221012141029-q2hpv25\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221021173249-dy5ycft\u0026quot;,\u0026quot;scrollTop\u0026quot;:8628,\u0026quot;focusId\u0026quot;:\u0026quot;20221021173307-mdy8ti9\u0026quot;,\u0026quot;focusStart\u0026quot;:339,\u0026quot;focusEnd\u0026quot;:339}",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20220925135245-pnwhk0j\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20220925135258-2ggi8p4\u0026quot;,\u0026quot;scrollTop\u0026quot;:2819.199951171875,\u0026quot;focusId\u0026quot;:\u0026quot;20220926155842-9vvep4i\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
 		"title": "命令详解",
-		"updated": "20221015132935"
+		"updated": "20230131094023"
 	},
 	"Children": [
 		{
@@ -6371,7 +6371,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20220925135231-9fe5j9n",
-				"updated": "20220925204824"
+				"updated": "20230131084216"
 			},
 			"Children": [
 				{
@@ -6467,12 +6467,13 @@
 					"ID": "20220925203930-3jnlhhi",
 					"Type": "NodeParagraph",
 					"Properties": {
-						"id": "20220925203930-3jnlhhi"
+						"id": "20220925203930-3jnlhhi",
+						"updated": "20230131084216"
 					},
 					"Children": [
 						{
 							"Type": "NodeText",
-							"Data": "\t\tgrep\t[options] \t[过滤条件]\t文件"
+							"Data": "\t\tgrep\t  [options] \t[过滤条件]\t文件"
 						}
 					]
 				},
@@ -14464,7 +14465,7 @@
 			"Type": "NodeSuperBlock",
 			"Properties": {
 				"id": "20221002200940-el1sjvp",
-				"updated": "20221017152721"
+				"updated": "20230131094023"
 			},
 			"Children": [
 				{
@@ -14480,7 +14481,7 @@
 					"ListData": {},
 					"Properties": {
 						"id": "20221002200449-bwgu3ie",
-						"updated": "20221017152721"
+						"updated": "20230131094023"
 					},
 					"Children": [
 						{
@@ -14492,7 +14493,7 @@
 							},
 							"Properties": {
 								"id": "20221002200941-tvc6lu1",
-								"updated": "20221017152721"
+								"updated": "20230131094023"
 							},
 							"Children": [
 								{
@@ -14500,12 +14501,13 @@
 									"Type": "NodeParagraph",
 									"Properties": {
 										"id": "20221002200941-i6ncwnd",
-										"updated": "20221002200942"
+										"updated": "20230131093727"
 									},
 									"Children": [
 										{
-											"Type": "NodeText",
-											"Data": "ps"
+											"Type": "NodeTextMark",
+											"TextMarkType": "strong",
+											"TextMarkTextContent": "ps"
 										}
 									]
 								},
@@ -14515,7 +14517,7 @@
 									"ListData": {},
 									"Properties": {
 										"id": "20221002201029-lxbu61n",
-										"updated": "20221017152721"
+										"updated": "20230131094023"
 									},
 									"Children": [
 										{
@@ -14527,7 +14529,7 @@
 											},
 											"Properties": {
 												"id": "20221002201029-j2pnuol",
-												"updated": "20221002201712"
+												"updated": "20230131094023"
 											},
 											"Children": [
 												{
@@ -14558,7 +14560,7 @@
 													"Type": "NodeSuperBlock",
 													"Properties": {
 														"id": "20221002201542-3rqktdb",
-														"updated": "20221002201559"
+														"updated": "20230131094023"
 													},
 													"Children": [
 														{
@@ -14580,7 +14582,7 @@
 																"colgroup": "width: 120px;||",
 																"custom-render": "scroll",
 																"id": "20221002201053-u5az3xo",
-																"updated": "20221002201559"
+																"updated": "20230131094023"
 															},
 															"Children": [
 																{
@@ -14641,10 +14643,6 @@
 																			"Type": "NodeTableCell",
 																			"Data": "td",
 																			"Children": [
-																				{
-																					"Type": "NodeBr",
-																					"Data": "br"
-																				},
 																				{
 																					"Type": "NodeText",
 																					"Data": "USER"
@@ -14915,7 +14913,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -D：不可被唤醒的睡眠状态，通常用于 I/O 情况。"
+																					"Data": " -D：不可被唤醒的睡眠状态，通常用于 I/O 情况。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14923,7 +14921,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -R：该进程正在运行。"
+																					"Data": " -R：该进程正在运行。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14931,7 +14929,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -S：该进程处于睡眠状态，可被唤醒。"
+																					"Data": " -S：该进程处于睡眠状态，可被唤醒。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14939,7 +14937,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -T：停止状态，可能是在后台暂停或进程处于除错状态。"
+																					"Data": " -T：停止状态，可能是在后台暂停或进程处于除错状态。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14947,7 +14945,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -W：内存交互状态（从 2.6 内核开始无效）。"
+																					"Data": " -W：内存交互状态（从 2.6 内核开始无效）。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14955,7 +14953,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -X：死掉的进程（应该不会出现）。"
+																					"Data": " -X：死掉的进程（应该不会出现）。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14963,7 +14961,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -Z：僵尸进程。进程已经中止，但是部分程序还在内存当中。"
+																					"Data": " -Z：僵尸进程。进程已经中止，但是部分程序还在内存当中。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14971,7 +14969,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -\u003c：高优先级（以下状态在 BSD 格式中出现）。"
+																					"Data": " -\u003c：高优先级（以下状态在 BSD 格式中出现）。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14979,7 +14977,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -N：低优先级。"
+																					"Data": " -N：低优先级。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14987,7 +14985,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -L：被锁入内存。"
+																					"Data": " -L：被锁入内存。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -14995,7 +14993,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -s：包含子进程。"
+																					"Data": " -s：包含子进程。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -15003,7 +15001,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -l：多线程（小写 L）。"
+																					"Data": " -l：多线程（小写 L）。"
 																				},
 																				{
 																					"Type": "NodeBr",
@@ -15011,7 +15009,7 @@
 																				},
 																				{
 																					"Type": "NodeText",
-																					"Data": "1. -+：位于后台。"
+																					"Data": " -+：位于后台。"
 																				},
 																				{
 																					"Type": "NodeBr",

@@ -13,13 +13,20 @@ export {
     createIAL, // 创建内联属性表字符串
     createStyle, // 创建样式字符串
     isEmptyObject, // 判断对象是否为空
+    isString, // 判断对象是否为字符串
     Output, // 输出解析器
     parseText, // 解析文本
+    parseData, // 解析数据
     markdown2kramdown, // Markdown 转 Kramdown
+    nodeIdMaker, // 块 ID 生成器
+    workerInit, // 初始化 worker
 };
 
 import { config } from './config.js';
-import { jupyter } from './api.js';
+import {
+    upload,
+    jupyter,
+} from './api.js';
 
 /* 消息序列 */
 class Queue {
@@ -87,13 +94,13 @@ function merge(target, ...arg) {
     }, target)
 }
 
-function getCookie(name, cookies = document.cookie) {
+function getCookie(name, cookies = document?.cookie) {
     // from tornado docs: http://www.tornadoweb.org/en/stable/guide/security.html
     const r = cookies.match(`\\b${name}=([^;]*)\\b`);
     return r ? r[1] : undefined;
 }
 
-function setCookie(name, value, cookies = document.cookie) {
+function setCookie(name, value, cookies = document?.cookie) {
     const r = cookies.match(`\\b${name}=([^;]*)\\b`);
     if (r) {
         cookies = cookies.replace(r[0], `${name}=${value}`)
@@ -175,7 +182,9 @@ function base64ToBlob(base64Data, mime) {
     // while (n--) {
     //     buffer[n] = bstr.charCodeAt(n);
     // }
-    let buffer = Buffer.from(base64Data, 'base64');
+
+    // let buffer = Buffer.from(base64Data, 'base64'); // Worker 环境下不支持 Buffer
+    let buffer = Uint8Array.from(atob(base64Data), c => c.charCodeAt(0));
     return new Blob([buffer], { type: mime });
 
     // return new Blob([atob(base64Data)], { type: mime });
@@ -215,17 +224,35 @@ async function URL2DataURL(src, dom) {
 /* HTML 转义 */
 function HTMLEncode(text) {
     // REF: [javascript处理HTML的Encode(转码)和Decode(解码)总结 - 孤傲苍狼 - 博客园](https://www.cnblogs.com/xdp-gacl/p/3722642.html)
-    let temp = document.createElement("div");
-    temp.textContent = text;
-    return temp.innerHTML;;
+    if (self.document) {
+        let temp = document.createElement("div");
+        temp.textContent = text;
+        return temp.innerHTML;
+    }
+    else {
+        return text
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;');
+    }
 }
 
 /* HTML 反转义 */
 function HTMLDecode(text) {
     // REF: [javascript处理HTML的Encode(转码)和Decode(解码)总结 - 孤傲苍狼 - 博客园](https://www.cnblogs.com/xdp-gacl/p/3722642.html)
-    let temp = document.createElement("div");
-    temp.innerHTML = text;
-    return temp.textContent;;
+    if (self.document) {
+        let temp = document.createElement("div");
+        temp.innerHTML = text;
+        return temp.textContent;
+    }
+    else {
+        return text
+            .replaceAll('&quot;', '"')
+            .replaceAll('&gt;', '>')
+            .replaceAll('&lt;', '<')
+            .replaceAll('&amp;', '&');
+    }
 }
 
 /**
@@ -236,7 +263,8 @@ function HTMLDecode(text) {
 function createIAL(obj) {
     let IAL = [];
     for (const key in obj) {
-        IAL.push(`${key}="${HTMLEncode(obj[key]).replaceAll('\n', '_esc_newline_')}"`);
+        if (obj[key])
+            IAL.push(`${key}="${HTMLEncode(obj[key]).replaceAll('\n', '_esc_newline_')}"`);
     }
     return `{: ${IAL.join(' ')}}`;
 }
@@ -297,17 +325,21 @@ class Output {
         const content = this.text.replaceAll('\r\n', '\n');
         const content_length = content.length;
         let ptr = chars.length;
+        let start = src.lastIndexOf('\n') + 1;
         for (let i = 0; i < content_length; ++i) {
             const c = content[i];
             switch (c) {
                 case '\b': // backspace
-                    if (ptr > 0) ptr--;
+                    if (ptr > start) ptr--;
                     break;
                 case '\r': // carriage return
-                    ptr = 0;
+                    ptr = start;
                     break;
+                case '\n': // line feed
+                    start = ptr + 1;
                 default:
                     chars[ptr++] = c;
+                    break;
             }
         }
         this.text = chars.slice(0, ptr).join('');
@@ -317,8 +349,8 @@ class Output {
     /* 解析控制台控制字符 */
     parseCmdControlChars(escaped) {
         const reg = escaped
-            ? config.jupyter.regs.richtext
-            : config.jupyter.regs.params.richtext;
+            ? config.jupyter.regs.escaped.richtext
+            : config.jupyter.regs.richtext;
         this.text = this.text
             .replaceAll(/\x1bc/g, '') // 不解析清屏命令
             .replaceAll(/\x1b\\?\[\\?\?\d+[lh]/g, '') // 不解析光标显示命令
@@ -378,6 +410,7 @@ class Output {
                         }
                         else {
                             switch (num) {
+                                case NaN: // 无效参数
                                 case 0: // 清除样式
                                     mark = {};
                                     style = {};
@@ -582,7 +615,7 @@ class Output {
         return this;
     }
 
-    /* 移除控制台 ANSI 转义序列 */
+    /* 移除控制台 ANSI 转义序列(保留 \b, \r) */
     removeCmdControlChars() {
         this.text = this.text.replaceAll(config.jupyter.regs.ANSIesc, '');
         return this;
@@ -601,6 +634,115 @@ function parseText(text, params) {
     if (params.cntrl) output.parseCmdControlChars(params.escaped);
     else output.removeCmdControlChars();
     return output.toString();
+}
+
+
+/**
+ * 解析数据
+ * @params {object} data: 数据
+ * @params {object} params: 解析选项
+ * @return {string} 解析后的文本
+ */
+async function parseData(data, params) {
+    let filedata;
+    const markdowns = new Queue();
+    for (const mime in data) {
+        // REF [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml)
+        const main = mime.split('/')[0];
+        const sub = mime.split('/')[1];
+        const ext = sub.split('+')[0];
+        const serialized = sub.split('+')[1];
+
+        switch (main) {
+            case 'text':
+                switch (sub) {
+                    case 'plain':
+                        markdowns.enqueue(parseText(data[mime], params), 0);
+                        break;
+                    case 'html':
+                        markdowns.enqueue(`<div>${data[mime]}</div>`, 1);
+                        break;
+                    case 'markdown':
+                        markdowns.enqueue(data[mime], 1);
+                        break;
+                    default:
+                        markdowns.enqueue(`\`\`\`${ext}\n${data[mime]}\n\`\`\``, 2);
+                        break;
+                }
+                break;
+            case 'image':
+                switch (sub) {
+                    case 'svg+xml':
+                        // filedata = Buffer.from(data[mime]).toString('base64');
+                        filedata = btoa(data[mime]);
+                        break;
+                    default:
+                        filedata = data[mime].split('\n')[0];
+                        break;
+                }
+                {
+                    const title = data['text/plain'];
+                    const filename = `jupyter-output.${ext}`;
+                    const response = await upload(
+                        base64ToBlob(filedata, mime),
+                        undefined,
+                        filename,
+                    );
+                    const filepath = response?.data?.succMap[filename];
+                    if (filepath) markdowns.enqueue(`![${filename}](${filepath}${isString(title) ? ` "${title.replaceAll('"', '&quot;')}"` : ''})`, 3);
+                }
+                break;
+            case 'audio':
+                switch (sub) {
+                    default:
+                        filedata = data[mime].split('\n')[0];
+                        break;
+                }
+                {
+                    const filename = `jupyter-output.${ext}`;
+                    const response = await upload(
+                        base64ToBlob(filedata, mime),
+                        undefined,
+                        filename,
+                    );
+                    const filepath = response?.data?.succMap[filename];
+                    if (filepath) markdowns.enqueue(`<audio controls="controls" src="${filepath}" data-src="${filepath}"></audio>`, 3);
+                }
+                break;
+            case 'video':
+                switch (sub) {
+                    default:
+                        filedata = data[mime].split('\n')[0];
+                        break;
+                }
+                {
+                    const filename = `jupyter-output.${ext}`;
+                    const response = await upload(
+                        base64ToBlob(filedata, mime),
+                        undefined,
+                        filename,
+                    );
+                    const filepath = response?.data?.succMap[filename];
+                    if (filepath) markdowns.enqueue(`<video controls="controls" src="${filepath}" data-src="${filepath}"></video>`, 3);
+                }
+                break;
+            case 'application':
+                switch (sub) {
+                    case 'json':
+                        markdowns.enqueue(`\`\`\`json\n${JSON.stringify(data[mime], undefined, 4)}\n\`\`\``, 4);
+                        break;
+                    default:
+                        markdowns.enqueue(parseText(`<${mime}>`, params), 4);
+                        break;
+                }
+                break;
+            default:
+                markdowns.enqueue(parseText(`<${mime}>`, params), 4);
+                break;
+        }
+
+    }
+    return markdowns.items.map((item) => item.value).join('\n');
 }
 
 /**
@@ -623,3 +765,47 @@ function markdown2kramdown(markdown, ial) {
             return markdown;
     }
 }
+
+/**
+ * 返回一个块 ID 生成器
+ * @return {Function}: 块 ID 生成器
+ */
+function nodeIdMaker() {
+    var index = 0;
+    return (time = new Date()) => `${time.toLocaleString().replace(
+        /(\d{4})\/(\d{2})\/(\d{2})\s+(\d{2}):(\d{2}):(\d{2})/,
+        '$1$2$3$4$5$6',
+    )}-${(index++).toString(36).padStart(7, '0')}`;
+}
+
+/* worker 初始化 */
+function workerInit(self) {
+    if (self.name) { // 设置了 DedicatedWorkerGlobalScope.name 后才能正常运行
+        const worker_error_handler = e => {
+            console.error(e);
+        };
+        self.addEventListener('error', worker_error_handler);
+        self.addEventListener('messageerror', worker_error_handler);
+
+        self.addEventListener('message', async e => {
+            // console.log(e);
+            const data = JSON.parse(e.data);
+
+            const message = {
+                type: data.type,
+                handle: data.handle,
+            };
+
+            switch (data.type) {
+                case 'call':
+                    const handle = self?.handlers?.[data.handle];
+                    if (handle) message.return = await handle(...data.params);
+                    break;
+                default:
+                    break;
+            }
+
+            self.postMessage(JSON.stringify(message));
+        });
+    }
+};

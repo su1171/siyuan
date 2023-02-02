@@ -1,36 +1,50 @@
-export {
-    getConf, // 获取配置
-    runCell, // 运行单元格
-    restartKernel, // 重启内核
-    closeConnection, // 关闭连接
-}
-
 import {
     jupyter,
-    upload,
     queryBlock,
     getBlockAttrs,
     setBlockAttrs,
     insertBlock,
     appendBlock,
     updateBlock,
-    deleteBlock,
 } from './api.js';
 import {
     config,
     i18n,
 } from './config.js';
-import { custom } from './../../public/custom.js';
+import {
+    custom,
+    loadCustomJson,
+} from './../../public/custom.js';
 import {
     Queue,
     Output,
     timestampFormat,
-    base64ToBlob,
     promptFormat,
     parseText,
+    parseData,
     markdown2kramdown,
+    workerInit,
 } from './utils.js';
 
+export {
+    getConf, // 获取配置
+    runCell, // 运行单元格
+    runCells, // 运行多个单元格
+    restartKernel, // 重启内核
+    closeConnection, // 关闭连接
+    reloadCustomJson, // 重新加载配置
+}
+
+self.handlers = {
+    getConf,
+    runCell,
+    runCells,
+    restartKernel,
+    closeConnection,
+    reloadCustomJson,
+};
+
+var lang;
 var websockets = {
     // doc_id: { // 文档 ID
     //     ws: WebSocket, // WebSocket 对象
@@ -63,118 +77,6 @@ var websockets = {
     //     queue: new Queue(), // 接收的消息队列
     // },
 };
-
-/* 加载样式 */
-const style = document.getElementById(config.jupyter.id.siyuan.style.id) || document.createElement('link');
-const lang = window.theme.languageMode;
-style.id = config.jupyter.id.siyuan.style.id;
-style.type = 'text/css';
-style.rel = 'stylesheet';
-style.href = config.jupyter.id.siyuan.style.href;
-// document.head.appendChild(style);
-document.getElementById('themeStyle').insertAdjacentElement("afterend", style);
-
-/* 解析数据 */
-async function parseData(data, params) {
-    let file;
-    const markdowns = new Queue();
-    for (const mime in data) {
-        // REF [Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml)
-        const main = mime.split('/')[0];
-        const sub = mime.split('/')[1];
-        const ext = sub.split('+')[0];
-        const serialized = sub.split('+')[1];
-
-        switch (main) {
-            case 'text':
-                switch (sub) {
-                    case 'plain':
-                        markdowns.enqueue(parseText(data[mime], params), 0);
-                        break;
-                    case 'html':
-                        markdowns.enqueue(`<div>${data[mime]}</div>`, 1);
-                        break;
-                    case 'markdown':
-                        markdowns.enqueue(data[mime], 1);
-                        break;
-                    default:
-                        markdowns.enqueue(`\`\`\`${ext}\n${data[mime]}\n\`\`\``, 2);
-                        break;
-                }
-                break;
-            case 'image':
-                switch (sub) {
-                    case 'svg+xml':
-                        file = Buffer.from(data[mime]).toString('base64');
-                        break;
-                    default:
-                        file = data[mime].split('\n')[0];
-                        break;
-                }
-                {
-                    const title = data['text/plain'];
-                    const filename = `jupyter-output.${ext}`;
-                    const response = await upload(
-                        base64ToBlob(file, mime),
-                        undefined,
-                        filename,
-                    );
-                    const filepath = response?.data?.succMap[filename];
-                    if (filepath) markdowns.enqueue(`![${filename}](${filepath}${title ? ` "${title.replaceAll('"', '&quot;')}"` : ''})`, 3);
-                }
-                break;
-            case 'audio':
-                switch (sub) {
-                    default:
-                        file = data[mime].split('\n')[0];
-                        break;
-                }
-                {
-                    const filename = `jupyter-output.${ext}`;
-                    const response = await upload(
-                        base64ToBlob(file, mime),
-                        undefined,
-                        filename,
-                    );
-                    const filepath = response?.data?.succMap[filename];
-                    if (filepath) markdowns.enqueue(`<audio controls="controls" src="${filepath}" data-src="${filepath}"></audio>`, 3);
-                }
-                break;
-            case 'video':
-                switch (sub) {
-                    default:
-                        file = data[mime].split('\n')[0];
-                        break;
-                }
-                {
-                    const filename = `jupyter-output.${ext}`;
-                    const response = await upload(
-                        base64ToBlob(file, mime),
-                        undefined,
-                        filename,
-                    );
-                    const filepath = response?.data?.succMap[filename];
-                    if (filepath) markdowns.enqueue(`<video controls="controls" src="${filepath}" data-src="${filepath}"></video>`, 3);
-                }
-                break;
-            case 'application':
-                switch (sub) {
-                    case 'json':
-                        markdowns.enqueue(`\`\`\`json\n${JSON.stringify(data[mime], undefined, 4)}\n\`\`\``, 4);
-                        break;
-                    default:
-                        markdowns.enqueue(parseText(`<${mime}>`, params), 4);
-                        break;
-                }
-                break;
-            default:
-                markdowns.enqueue(parseText(`<${mime}>`, params), 4);
-                break;
-        }
-
-    }
-    return markdowns.items.map((item) => item.value).join('\n');
-}
 
 /* 回复消息处理 */
 async function messageHandle(msg_id, msg_type, message, websocket) {
@@ -344,22 +246,40 @@ async function messageHandle(msg_id, msg_type, message, websocket) {
         if (msg_type === 'stream') { // 输出流
             if (markdown.indexOf('\r') >= 0 || markdown.indexOf('\b') >= 0) { // 编辑原块
                 if (message_info.current?.id) { // 有上一个块
-                    /* 删除原块 */
-                    if (/^\r\s*$/.test(markdown)) {
-                        await deleteBlock(message_info.current.id);
-                        message_info.current = null;
-                        return;
+                    /* 更新原块内容 */
+                    markdown = new Output(markdown)
+                        .parseControlChars(message_info.current.markdown) // 解析控制字符
+                        .toString();
+
+                    if (/^\s*$/.test(markdown)) { // 更新的都是空白字符
+                        /* 删除原块 */
+                        // await deleteBlock(message_info.current.id);
+                        // message_info.current = null;
+                        // return;
+
+                        /* 更新为空块 */
+                        markdown = '';
                     }
+
+                    let blocks = markdown.split('\n\n'); // 分割块
+
                     /* 更新原块 */
-                    else {
-                        /* 更新原块内容 */
-                        markdown = new Output(markdown)
-                            .parseControlChars(message_info.current.markdown) // 解析控制字符
-                            .toString();
-                        /* 更新块 */
-                        response = await updateBlock(
-                            message_info.current.id,
-                            markdown2kramdown(parseText(markdown, message_info.params), ial),
+                    response = await updateBlock(
+                        message_info.current.id,
+                        markdown2kramdown(
+                            parseText(blocks[0], message_info.params),
+                            blocks.length > 1
+                                ? null
+                                : ial,
+                        ),
+                    );
+
+                    /* 插入剩余块(若有) */
+                    for (let i = 1; i < blocks.length; ++i) {
+                        markdown = blocks[i];
+                        response = await appendBlock(
+                            message_info.output,
+                            markdown2kramdown(parseText(blocks[i], message_info.params), ial),
                         );
                     }
                 }
@@ -390,10 +310,15 @@ async function messageHandle(msg_id, msg_type, message, websocket) {
         }
 
         /* 更新当前块信息 */
-        message_info.current = {
-            id: response?.[0]?.doOperations?.[0]?.id,
-            markdown: markdown,
-        };
+        if (/\n\s*$/.test(markdown)) { // 若以换行为结尾
+            message_info.current = null; // 当前块结束
+        }
+        else { // 若不以换行为结尾
+            message_info.current = { // 当前块可继续处理
+                id: response?.[0]?.doOperations?.[0]?.id,
+                markdown: markdown,
+            };
+        }
     }
 }
 
@@ -430,10 +355,22 @@ function createSendMessage(
     };
 }
 
+/* 设置语言 */
+function setLang(l) {
+    lang = l;
+}
+
+/* 获得 jupyter 配置项 */
 function getConf() {
     return config;
 }
 
+/* 关闭当前活动连接 */
+async function closeConnection(e, doc_id, params) {
+    websockets?.[doc_id]?.ws?.close();
+}
+
+/* 重启内核 */
 async function restartKernel(e, doc_id, params) {
     /* 关闭当前会话 */
     await closeConnection(e, doc_id, params);
@@ -455,6 +392,7 @@ async function restartKernel(e, doc_id, params) {
     }
 }
 
+/* 运行代码单元格 */
 async function runCell(e, code_id, params, opened = null) {
     /* 获得代码块 */
     let code_block, output_block;
@@ -619,7 +557,17 @@ async function runCell(e, code_id, params, opened = null) {
     }
 }
 
-/* 关闭当前活动连接 */
-async function closeConnection(e, doc_id, params) {
-    websockets?.[doc_id]?.ws?.close();
+/* 依次运行多个单元格 */
+async function runCells(e, IDs, params) {
+    const call = async i => {
+        if (i < IDs.length) runCell(e, IDs[i], params, async _ => call(i + 1));
+    };
+    call(0);
 }
+
+/* 重新加载配置 */
+async function reloadCustomJson(...args) {
+    loadCustomJson();
+}
+
+workerInit(self); // 初始化工作线程

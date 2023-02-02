@@ -9,11 +9,13 @@ export {
     getFocusedDocID, // 获得焦点所在文档的 ID
     getFocusedID, // 获得焦点所在的块 ID, 否则获得焦点所在文档的 ID
     getTargetEditor, // 获得指定块位于的编辑区
+    getTargetDocID, // 获得目标的文档 ID
     getTargetBlock, // 获得目标的块
     getTargetBlockID, // 获得目标的块 ID
     getTargetBlockIndex, // 获得目标的块在文档中的索引
     getTargetInboxID, // 获得目标的收件箱 ID
     getTargetHistory, // 获得目标的历史文档路径与 ID
+    getTargetSnapshotDoc, // 获得目标的快照文档 ID
     getTargetHref, // 获得目标超链接
     getBlockMark, // 获得块标记
     getBlockSelected, // 获得块选中
@@ -65,9 +67,13 @@ function getDockFromPanel(panelName) {
  * @return {null} 光标不在块内
  */
 function getFocusedBlock() {
-    let block = window.getSelection()?.focusNode?.parentElement; // 当前光标
-    while (block != null && block.dataset.nodeId == null) block = block.parentElement;
-    return block;
+    if (document.activeElement.classList.contains('protyle-wysiwyg')) {
+        /* 光标在编辑区内 */
+        let block = window.getSelection()?.focusNode?.parentElement; // 当前光标
+        while (block != null && block?.dataset?.nodeId == null) block = block.parentElement;
+        return block;
+    }
+    else return null;
 }
 
 /**
@@ -89,6 +95,12 @@ function getFocusedBlockID() {
  * @return {null} 没有聚焦的文档
  */
 function getFocusedDoc() {
+    /* 点击按钮后焦点就发生了变化, 不能通过 document.activeElement 获取文档 */
+    // const wysiwyg = document.activeElement;
+    // return wysiwyg.classList.contains('protyle-wysiwyg')
+    //     ? wysiwyg
+    //     : null;
+
     return document.querySelector('div.layout__wnd--active div.protyle:not(.fn__none) > div.protyle-content > div.protyle-wysiwyg[data-doc-type]')
         || document.querySelector('#editor > div.protyle-content >  div.protyle-wysiwyg[data-doc-type]')
         || null;
@@ -100,9 +112,19 @@ function getFocusedDoc() {
  * @return {null} 没有聚焦的文档
  */
 function getFocusedDocBackground() {
-    return document.querySelector('div.layout__wnd--active div.protyle:not(.fn__none) > div.protyle-content > div.protyle-background')
-        || document.querySelector('#editor > div.protyle-content > div.protyle-background')
-        || null;
+    // return document.querySelector('div.layout__wnd--active div.protyle:not(.fn__none) > div.protyle-content > div.protyle-background')
+    //     || document.querySelector('#editor > div.protyle-content > div.protyle-background')
+    //     || null;
+
+    const wysiwyg = getFocusedDoc();
+    // console.log(wysiwyg);
+
+    var background = wysiwyg;
+    while (background != null && background.classList.contains('protyle-background') === false)
+        background = background.previousElementSibling;
+    return background
+        ? background
+        : null;
 }
 
 /**
@@ -112,6 +134,7 @@ function getFocusedDocBackground() {
  */
 function getFocusedDocID() {
     let background = getFocusedDocBackground();
+    // console.log(background);
     if (background) {
         return background.dataset.nodeId;
     }
@@ -129,9 +152,9 @@ function getFocusedID() {
 
 /**
  * 获得指定块位于的编辑区
- * @params {HTMLElement} 
+ * @params {HTMLElement} block: 块
  * @return {HTMLElement} 光标所在块位于的编辑区
- * @return {null} 光标不在块内
+ * @return {null} 目标不在块内
  */
 function getTargetEditor(block) {
     while (block != null && !block.classList.contains('protyle-content')) block = block.parentElement;
@@ -139,10 +162,22 @@ function getTargetEditor(block) {
 }
 
 /**
+ * 获得目标的文档 ID
+ * @params {HTMLElement} target: 目标
+ * @return {HTMLElement} 目标文档
+ * @return {null} 目标不在块内
+ */
+function getTargetDocID(block) {
+    const content = getTargetEditor(block);
+    return content?.getElementsByClassName('protyle-background')?.[0]?.dataset?.nodeId
+        ?? null;
+}
+
+/**
  * 获得目标的块
  * @params {HTMLElement} target: 目标
- * @return {HTMLElement} 光标所在块
- * @return {null} 光标不在块内
+ * @return {HTMLElement} 目标所在块
+ * @return {null} 目标不在块内
  */
 function getTargetBlock(target) {
     let element = target;
@@ -289,13 +324,45 @@ function getTargetHistory(target) {
 
     if (element != null) {
         const result = config.theme.regs.historypath.exec(element.dataset.path);
-        if (result
+        if (result?.length > 1
             && element.dataset.type === 'doc'
             && element.classList.contains('b3-list-item')
         ) {
             return {
                 path: element.dataset.path,
                 id: result[1],
+            };
+        }
+    }
+    return null;
+}
+
+/**
+ * 获得目标的快照文档 ID
+ * @params {HTMLElement} target: 目标
+ * @return {object}
+ *      diff: 是否为对比
+ *      id: 快照文件 1
+ *      id2: 快照文件 2
+ * @return {null} 没有找到快照文档
+ */
+function getTargetSnapshotDoc(target) {
+    let element = target;
+    while (element != null && element.localName !== 'li') element = element.parentElement;
+
+    if (element != null) {
+        let node = element;
+        while (node != null && node.classList.contains('b3-dialog__diff')) node = node.parentElement;
+
+        const REG_id = /^[0-9a-f]{40}$/;
+        if (node
+            && REG_id.test(element.dataset?.id)
+            && element.classList.contains('b3-list-item')
+        ) {
+            return {
+                diff: REG_id.test(element.dataset?.id2),
+                id: element.dataset.id,
+                id2: element.dataset.id2,
             };
         }
     }
@@ -423,6 +490,7 @@ function setFontSize(fontSize) {
 .protyle-wysiwyg [data-node-id].li > .protyle-action:after {height: ${fontSize}px;width: ${fontSize}px;margin:-${fontSize / 2}px 0 0 -${fontSize / 2}px}
 .protyle-wysiwyg [data-node-id].li > .protyle-action svg {height: ${Math.max(14, fontSize - 8)}px}
 .protyle-wysiwyg [data-node-id] [spellcheck="false"] {min-height:${height}px}
+.protyle-wysiwyg [data-node-id] {${window.siyuan.config.editor.rtl ? " direction: rtl;" : ""}${window.siyuan.config.editor.justify ? " text-align: justify;" : ""}}
 .protyle-wysiwyg .li {min-height:${height + 8}px}
 .protyle-gutters button svg {height:${height}px}
 .protyle-wysiwyg img.emoji, .b3-typography img.emoji {width:${height - 8}px}

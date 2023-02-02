@@ -21,7 +21,7 @@
     ],
     "themeDark": "Dark+",
     "themeLight": "Dark+",
-    "themeVer": "1.5.0",
+    "themeVer": "1.6.6",
     "icons": [
       "ant",
       "material",
@@ -101,11 +101,14 @@
     "floatWindowMode": 0,
     "dynamicLoadBlocks": 48,
     "justify": false,
-    "rtl": false
+    "rtl": false,
+    "spellcheck": false,
+    "backlinkExpandCount": 0
   },
   "export": {
     "paragraphBeginningSpace": true,
     "addTitle": true,
+    "addFooter": false,
     "blockRefMode": 4,
     "blockEmbedMode": 1,
     "blockRefTextLeft": "",
@@ -216,133 +219,14 @@
                   "children": [
                     {
                       "children": {
-                        "action": "",
-                        "blockId": "20221202215033-1bbchyv",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221202215033-1bbchyv",
-                        "scrollAttr": {
-                          "endId": "20221203011600-d40lvp2",
-                          "focusEnd": 0,
-                          "focusId": "20221202215046-hbeerwz",
-                          "focusStart": 0,
-                          "scrollTop": 6257,
-                          "startId": "20221202215046-hbeerwz"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "ansible"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221015213822-vs8hvq7",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221015213822-vs8hvq7",
-                        "scrollAttr": {
-                          "endId": "20221022101248-ud47zdv",
-                          "focusEnd": 85,
-                          "focusId": "20221109161102-jp5cscv",
-                          "focusStart": 85,
-                          "scrollTop": 10311,
-                          "startId": "20221027112639-kj94r96"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "sql详解"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221127221426-hprxioq",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221127221426-hprxioq",
-                        "scrollAttr": {
-                          "endId": "20221127221426-r692m6g",
-                          "focusEnd": 0,
-                          "focusId": "20221127221435-0cc56pk",
-                          "focusStart": 0,
-                          "scrollTop": 0,
-                          "startId": "20221127221435-0cc56pk"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "docker问题"
-                    },
-                    {
-                      "children": {
                         "config": {
                           "group": 1,
                           "hPath": "",
                           "hasReplace": false,
                           "idPath": [],
-                          "k": "五链",
-                          "layout": 0,
-                          "list": [
-                            "五链",
-                            "mysql -e",
-                            "nginx  ",
-                            "nginx  匹配",
-                            "nginx ",
-                            "nginx 支持",
-                            "nginx 编码",
-                            "刷新权限",
-                            "ali",
-                            "",
-                            "计划",
-                            "watch",
-                            "免交互",
-                            "cp",
-                            "killall",
-                            "nginx 变量",
-                            "请求",
-                            "所属",
-                            "属主",
-                            "useradd",
-                            "常用",
-                            "case",
-                            "io",
-                            "单线程",
-                            "if",
-                            "mount",
-                            "特殊",
-                            "selinux",
-                            "keep",
-                            "gtid",
-                            "DELIMI",
-                            "DELI",
-                            "jdk",
-                            "show master logs",
-                            "show master status",
-                            "show master status;",
-                            "nfs",
-                            "tar",
-                            "forma",
-                            "like",
-                            "sed",
-                            "新特性",
-                            "systemctl",
-                            " yum",
-                            "优先 yum",
-                            "yum",
-                            "公网源",
-                            "keepalive",
-                            "后台"
-                          ],
+                          "k": "mysql 字符集",
                           "method": 0,
                           "r": "",
-                          "replaceList": [],
                           "sort": 0,
                           "types": {
                             "blockquote": true,
@@ -362,33 +246,77 @@
                       },
                       "icon": "iconSearch",
                       "instance": "Tab",
-                      "pin": false,
+                      "pin": true,
                       "title": "搜索"
                     },
                     {
-                      "active": true,
                       "children": {
                         "action": "",
-                        "blockId": "20221127160748-10yseo4",
+                        "blockId": "20221123210315-joq3265",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221127160748-10yseo4",
+                        "rootId": "20221123210315-joq3265",
                         "scrollAttr": {
-                          "endId": "20221216034938-08p9s22",
-                          "focusEnd": 62,
-                          "focusId": "20221216041841-7j0r9zt",
-                          "focusStart": 62,
-                          "scrollTop": 1137.5101318359375,
-                          "startId": "20221127160800-5n8h2tn"
+                          "endId": "20221125222846-10c7c2d",
+                          "focusEnd": 0,
+                          "focusId": "20221125222846-10c7c2d",
+                          "focusStart": 0,
+                          "scrollTop": 0,
+                          "startId": "20221123210332-6yxdth9"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "docker"
+                      "title": "服务"
                     },
                     {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220929211029-j2rk9en",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20220929211029-j2rk9en",
+                        "scrollAttr": {
+                          "endId": "20221013152132-gjedwp2",
+                          "focusEnd": 4,
+                          "focusId": "20221005194849-gzemsej",
+                          "focusStart": 4,
+                          "scrollTop": 700,
+                          "startId": "20220930153941-ww8lcv7"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "大纲"
+                    },
+                    {
+                      "children": {
+                        "action": "",
+                        "blockId": "20220924183821-58kethn",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20220924141734-3i6r1rh",
+                        "rootId": "20220924141737-z6ah3oq",
+                        "scrollAttr": {
+                          "endId": "20220924183548-7ttowrk",
+                          "focusEnd": 0,
+                          "focusId": "20220924182927-xrdrhyf",
+                          "focusStart": 0,
+                          "scrollTop": 808,
+                          "startId": "20220924142530-z39h3uh"
+                        }
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "云计算"
+                    },
+                    {
+                      "active": true,
                       "children": {
                         "action": "",
                         "blockId": "20221122163317-8vk1uqu",
@@ -397,11 +325,11 @@
                         "notebookId": "20220924141734-3i6r1rh",
                         "rootId": "20221122163317-8vk1uqu",
                         "scrollAttr": {
-                          "endId": "20221122171409-u1n1hov",
+                          "endId": "20230202201248-ryqv2kz",
                           "focusEnd": 5,
-                          "focusId": "20221215235052-7yrad24",
+                          "focusId": "20230203001406-prf02xl",
                           "focusStart": 5,
-                          "scrollTop": 185,
+                          "scrollTop": 5192,
                           "startId": "20221122163348-b4nyp6j"
                         }
                       },
@@ -413,46 +341,24 @@
                     {
                       "children": {
                         "action": "",
-                        "blockId": "20221109192619-6vvv8b3",
+                        "blockId": "20221127160748-10yseo4",
                         "instance": "Editor",
                         "mode": "wysiwyg",
                         "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221109192619-6vvv8b3",
+                        "rootId": "20221127160748-10yseo4",
                         "scrollAttr": {
-                          "endId": "20221111230612-e475bto",
-                          "focusEnd": 3,
-                          "focusId": "20221111152022-umizaaz",
-                          "focusStart": 3,
-                          "scrollTop": 5914,
-                          "startId": "20221109192628-sfai0q0"
+                          "endId": "20221218004808-33djjqg",
+                          "focusEnd": 10,
+                          "focusId": "20221127192238-tp2pf1a",
+                          "focusStart": 10,
+                          "scrollTop": 428,
+                          "startId": "20221127160800-5n8h2tn"
                         }
                       },
                       "docIcon": "",
                       "instance": "Tab",
                       "pin": false,
-                      "title": "MySQL运维篇"
-                    },
-                    {
-                      "children": {
-                        "action": "",
-                        "blockId": "20221120212849-c4hq8ka",
-                        "instance": "Editor",
-                        "mode": "wysiwyg",
-                        "notebookId": "20220924141734-3i6r1rh",
-                        "rootId": "20221120212849-c4hq8ka",
-                        "scrollAttr": {
-                          "endId": "20221122111444-h757xaj",
-                          "focusEnd": 45,
-                          "focusId": "20221120231742-g26aj1o",
-                          "focusStart": 36,
-                          "scrollTop": 956,
-                          "startId": "20221120212907-ty8yby5"
-                        }
-                      },
-                      "docIcon": "",
-                      "instance": "Tab",
-                      "pin": false,
-                      "title": "redis"
+                      "title": "docker"
                     }
                   ],
                   "height": "",
@@ -522,7 +428,7 @@
           "show": false,
           "size": {
             "height": 0,
-            "width": 240
+            "width": 244
           },
           "type": "file"
         },
@@ -618,6 +524,7 @@
     "192.168.137.1",
     "192.168.159.1",
     "192.168.100.1",
+    "192.168.110.40",
     "192.168.210.1",
     "192.168.220.1",
     "192.168.31.216",
@@ -626,7 +533,7 @@
   "accessAuthCode": "",
   "system": {
     "id": "05999c9e-8ad6-4610-b46f-a14806b07524",
-    "kernelVersion": "2.5.4",
+    "kernelVersion": "2.7.1",
     "os": "windows",
     "container": "std",
     "isMicrosoftStore": false,
@@ -637,7 +544,6 @@
     "confDir": "F:\\0901\\MarkDown教程\\siyuan\\conf",
     "dataDir": "F:\\0901\\MarkDown教程\\siyuan\\data",
     "networkServe": true,
-    "fixedPort": false,
     "networkProxy": {
       "scheme": "",
       "host": "",
@@ -766,6 +672,10 @@
         "newNameFile": {
           "custom": "F3",
           "default": "F3"
+        },
+        "newNameSettingFile": {
+          "custom": "⌘F3",
+          "default": "⌘F3"
         },
         "openBy": {
           "custom": "⌥,",
@@ -896,8 +806,8 @@
           "default": "⌘K"
         },
         "mark": {
-          "custom": "⌘E",
-          "default": "⌘E"
+          "custom": "⌥D",
+          "default": "⌥D"
         },
         "memo": {
           "custom": "⌥⌘M",
@@ -1010,6 +920,10 @@
         "custom": "⌥H",
         "default": "⌥H"
       },
+      "editMode": {
+        "custom": "⇧⌘G",
+        "default": "⇧⌘G"
+      },
       "enter": {
         "custom": "⌥→",
         "default": "⌥→"
@@ -1062,9 +976,17 @@
         "custom": "⌥2",
         "default": "⌥2"
       },
+      "recentDocs": {
+        "custom": "⌘E",
+        "default": "⌘E"
+      },
       "replace": {
         "custom": "⌘R",
         "default": "⌘R"
+      },
+      "riffCard": {
+        "custom": "⌥0",
+        "default": "⌥0"
       },
       "search": {
         "custom": "⌘F",
@@ -1130,6 +1052,7 @@
     "superBlock": true,
     "paragraph": true,
     "htmlBlock": true,
+    "embedBlock": false,
     "limit": 64,
     "caseSensitive": false,
     "name": true,
@@ -1148,14 +1071,14 @@
     "virtualRefKeywordsLimit": 512
   },
   "stat": {
-    "treeCount": 29,
+    "treeCount": 35,
     "cTreeCount": 100,
-    "blockCount": 7184,
+    "blockCount": 8098,
     "cBlockCount": 10000,
-    "dataSize": 470246452,
-    "cDataSize": 3145728,
-    "assetsSize": 246608175,
-    "cAssetsSize": 2097152
+    "dataSize": 472218154,
+    "cDataSize": 629145600,
+    "assetsSize": 248147174,
+    "cAssetsSize": 419430400
   },
   "api": {
     "token": "uin95woksk9wpovr"
